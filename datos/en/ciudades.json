@@ -1,0 +1,2986 @@
+[
+  {
+    "id": "sumer-uruk",
+    "civilizacion": "sumer",
+    "nombre": "Uruk",
+    "actual": "Uruk",
+    "lat": 31.32,
+    "lon": 45.64
+  },
+  {
+    "id": "sumer-ur",
+    "civilizacion": "sumer",
+    "nombre": "Ur",
+    "actual": "Ur",
+    "lat": 30.96,
+    "lon": 46.1
+  },
+  {
+    "id": "sumer-eridu",
+    "civilizacion": "sumer",
+    "nombre": "Eridu",
+    "actual": "Eridu",
+    "lat": 30.81,
+    "lon": 47.78
+  },
+  {
+    "id": "sumer-lagash",
+    "civilizacion": "sumer",
+    "nombre": "Lagash",
+    "actual": "Al-Muthanna",
+    "lat": 31.13,
+    "lon": 46.8
+  },
+  {
+    "id": "sumer-nippur",
+    "civilizacion": "sumer",
+    "nombre": "Nippur",
+    "actual": "Nippur",
+    "lat": 31.58,
+    "lon": 45.43
+  },
+  {
+    "id": "ebla-ebla",
+    "civilizacion": "ebla",
+    "nombre": "Ebla",
+    "actual": "Tell Mardikh",
+    "lat": 35.8,
+    "lon": 36.78
+  },
+  {
+    "id": "ebla-mari",
+    "civilizacion": "ebla",
+    "nombre": "Mari",
+    "actual": "Tell Hariri",
+    "lat": 34.5,
+    "lon": 40.89
+  },
+  {
+    "id": "akkad-akkad",
+    "civilizacion": "akkad",
+    "nombre": "Akkad",
+    "actual": "Tell Agir",
+    "lat": 33.15,
+    "lon": 44.13
+  },
+  {
+    "id": "akkad-babilonia",
+    "civilizacion": "akkad",
+    "nombre": "Babylon",
+    "actual": "Hillah",
+    "lat": 32.54,
+    "lon": 44.42
+  },
+  {
+    "id": "babilonia-babilonia",
+    "civilizacion": "babilonia",
+    "nombre": "Babylon",
+    "actual": "Hillah, Iraq",
+    "lat": 32.54,
+    "lon": 44.42
+  },
+  {
+    "id": "babilonia-ninive",
+    "civilizacion": "babilonia",
+    "nombre": "Nineveh",
+    "actual": "Mosul, Iraq",
+    "lat": 36.36,
+    "lon": 43.15
+  },
+  {
+    "id": "babilonia-uruk",
+    "civilizacion": "babilonia",
+    "nombre": "Uruk",
+    "actual": "Uruk",
+    "lat": 31.32,
+    "lon": 45.64
+  },
+  {
+    "id": "babilonia-borsippa",
+    "civilizacion": "babilonia",
+    "nombre": "Borsippa",
+    "actual": "Birs Nimrud",
+    "lat": 32.54,
+    "lon": 44.42
+  },
+  {
+    "id": "asiria-ninive",
+    "civilizacion": "asiria",
+    "nombre": "Nineveh",
+    "actual": "Mosul, Iraq",
+    "lat": 36.36,
+    "lon": 43.15
+  },
+  {
+    "id": "asiria-asur",
+    "civilizacion": "asiria",
+    "nombre": "Assur",
+    "actual": "Qalat Sherqat",
+    "lat": 35.46,
+    "lon": 43.26
+  },
+  {
+    "id": "asiria-babilonia",
+    "civilizacion": "asiria",
+    "nombre": "Babylon",
+    "actual": "Hillah, Iraq",
+    "lat": 32.54,
+    "lon": 44.42
+  },
+  {
+    "id": "asiria-dur-katlimmu",
+    "civilizacion": "asiria",
+    "nombre": "Dur-Katlimmu",
+    "actual": "Tell Sheikh Hamad",
+    "lat": 35.1,
+    "lon": 40.6
+  },
+  {
+    "id": "hititas-hattusa",
+    "civilizacion": "hititas",
+    "nombre": "Hattusa",
+    "actual": "Boğazköy, Turkey",
+    "lat": 40.02,
+    "lon": 34.62
+  },
+  {
+    "id": "hititas-tardun",
+    "civilizacion": "hititas",
+    "nombre": "Tarzusa",
+    "actual": "Tarsus, Turkey",
+    "lat": 36.92,
+    "lon": 34.9
+  },
+  {
+    "id": "minoicos-cnoso",
+    "civilizacion": "minoicos",
+    "nombre": "Knossos",
+    "actual": "Heraklion, Crete",
+    "lat": 35.3,
+    "lon": 25.16
+  },
+  {
+    "id": "minoicos-falasarna",
+    "civilizacion": "minoicos",
+    "nombre": "Falasarna",
+    "actual": "Falasarna, Crete",
+    "lat": 35.44,
+    "lon": 24.19
+  },
+  {
+    "id": "micenicos-micenas",
+    "civilizacion": "micenicos",
+    "nombre": "Mycenae",
+    "actual": "Mycenae, Greece",
+    "lat": 37.73,
+    "lon": 22.76
+  },
+  {
+    "id": "micenicos-pilos",
+    "civilizacion": "micenicos",
+    "nombre": "Pilos",
+    "actual": "Pilos, Greece",
+    "lat": 36.8,
+    "lon": 21.68
+  },
+  {
+    "id": "micenicos-tirinto",
+    "civilizacion": "micenicos",
+    "nombre": "Tiryns",
+    "actual": "Tiryns, Greece",
+    "lat": 37.61,
+    "lon": 22.85
+  },
+  {
+    "id": "egipto-tebas",
+    "civilizacion": "egipto",
+    "nombre": "Thebes",
+    "actual": "Luxor, Egypt",
+    "lat": 25.72,
+    "lon": 32.64
+  },
+  {
+    "id": "egipto-menfis",
+    "civilizacion": "egipto",
+    "nombre": "Memphis",
+    "actual": "Mit Rahina, Egypt",
+    "lat": 29.87,
+    "lon": 31.25
+  },
+  {
+    "id": "egipto-gizeh",
+    "civilizacion": "egipto",
+    "nombre": "Giza",
+    "actual": "Giza, Egypt",
+    "lat": 29.98,
+    "lon": 31.13
+  },
+  {
+    "id": "egipto-abidos",
+    "civilizacion": "egipto",
+    "nombre": "Abydos",
+    "actual": "Abydos, Egypt",
+    "lat": 26.18,
+    "lon": 31.92
+  },
+  {
+    "id": "egipto-elefantina",
+    "civilizacion": "egipto",
+    "nombre": "Elefantina",
+    "actual": "Elefantina, Egypt",
+    "lat": 24.09,
+    "lon": 32.9
+  },
+  {
+    "id": "ptolomeos-alexandria",
+    "civilizacion": "ptolomeos",
+    "nombre": "Alexandria",
+    "actual": "Alexandria, Egypt",
+    "lat": 31.2,
+    "lon": 29.92
+  },
+  {
+    "id": "ptolomeos-canopo",
+    "civilizacion": "ptolomeos",
+    "nombre": "Canopus",
+    "actual": "Qanub, Egypt",
+    "lat": 30.2,
+    "lon": 31.13
+  },
+  {
+    "id": "fenicios-tiro",
+    "civilizacion": "fenicios",
+    "nombre": "Tyre",
+    "actual": "Tyre, Lebanon",
+    "lat": 33.27,
+    "lon": 35.19
+  },
+  {
+    "id": "fenicios-sidon",
+    "civilizacion": "fenicios",
+    "nombre": "Sidon",
+    "actual": "Sidon, Lebanon",
+    "lat": 33.56,
+    "lon": 35.46
+  },
+  {
+    "id": "fenicios-biblos",
+    "civilizacion": "fenicios",
+    "nombre": "Byblos",
+    "actual": "Byblos, Lebanon",
+    "lat": 34.12,
+    "lon": 35.48
+  },
+  {
+    "id": "fenicios-cartago",
+    "civilizacion": "fenicios",
+    "nombre": "Carthage",
+    "actual": "Tunis, Tunisia",
+    "lat": 36.85,
+    "lon": 10.32
+  },
+  {
+    "id": "fenicios-utica",
+    "civilizacion": "fenicios",
+    "nombre": "Utica",
+    "actual": "Utica, Tunisia",
+    "lat": 36.96,
+    "lon": 10.31
+  },
+  {
+    "id": "filisteos-gaza",
+    "civilizacion": "filisteos",
+    "nombre": "Gaza",
+    "actual": "Gaza",
+    "lat": 31.52,
+    "lon": 34.47
+  },
+  {
+    "id": "filisteos-ascalon",
+    "civilizacion": "filisteos",
+    "nombre": "Ashkelon",
+    "actual": "Ashkelon",
+    "lat": 31.67,
+    "lon": 34.67
+  },
+  {
+    "id": "filisteos-gath",
+    "civilizacion": "filisteos",
+    "nombre": "Gath",
+    "actual": "Tel Gath",
+    "lat": 32.06,
+    "lon": 34.92
+  },
+  {
+    "id": "filisteos-ecron",
+    "civilizacion": "filisteos",
+    "nombre": "Ekron",
+    "actual": "Tel Miqne",
+    "lat": 31.83,
+    "lon": 34.86
+  },
+  {
+    "id": "israel-jerusalen",
+    "civilizacion": "israel",
+    "nombre": "Jerusalem",
+    "actual": "Jerusalem",
+    "lat": 31.78,
+    "lon": 35.22
+  },
+  {
+    "id": "israel-hebron",
+    "civilizacion": "israel",
+    "nombre": "Hebron",
+    "actual": "Hebron",
+    "lat": 31.53,
+    "lon": 35.1
+  },
+  {
+    "id": "israel-siquem",
+    "civilizacion": "israel",
+    "nombre": "Shechem",
+    "actual": "Nablus",
+    "lat": 32.22,
+    "lon": 35.26
+  },
+  {
+    "id": "israel-samaria",
+    "civilizacion": "israel",
+    "nombre": "Samaria",
+    "actual": "Sebastia",
+    "lat": 32.28,
+    "lon": 35.19
+  },
+  {
+    "id": "israel-sion",
+    "civilizacion": "israel",
+    "nombre": "Zion",
+    "actual": "Mount Zion, Jerusalem",
+    "lat": 31.78,
+    "lon": 35.23
+  },
+  {
+    "id": "aramas-damasco",
+    "civilizacion": "aramas",
+    "nombre": "Damascus",
+    "actual": "Damascus, Syria",
+    "lat": 33.51,
+    "lon": 36.29
+  },
+  {
+    "id": "aramas-harran",
+    "civilizacion": "aramas",
+    "nombre": "Harran",
+    "actual": "Harran, Turkey",
+    "lat": 36.86,
+    "lon": 39.03
+  },
+  {
+    "id": "aramas-alepo",
+    "civilizacion": "aramas",
+    "nombre": "Aleppo",
+    "actual": "Aleppo, Syria",
+    "lat": 36.2,
+    "lon": 37.16
+  },
+  {
+    "id": "seleucidas-antioquia",
+    "civilizacion": "seleucidas",
+    "nombre": "Antioch",
+    "actual": "Antakya, Turkey",
+    "lat": 36.2,
+    "lon": 36.16
+  },
+  {
+    "id": "seleucidas-seleucia-del-tigris",
+    "civilizacion": "seleucidas",
+    "nombre": "Seleucia on the Tigris",
+    "actual": "Tell Umar, Iraq",
+    "lat": 33.47,
+    "lon": 44.09
+  },
+  {
+    "id": "seleucidas-efeso",
+    "civilizacion": "seleucidas",
+    "nombre": "Ephesus",
+    "actual": "Selçuk, Turkey",
+    "lat": 37.94,
+    "lon": 27.34
+  },
+  {
+    "id": "nabateos-petra",
+    "civilizacion": "nabateos",
+    "nombre": "Petra",
+    "actual": "Petra, Jordan",
+    "lat": 30.33,
+    "lon": 35.44
+  },
+  {
+    "id": "nabateos-aila",
+    "civilizacion": "nabateos",
+    "nombre": "Aila",
+    "actual": "Aqaba, Jordan",
+    "lat": 29.53,
+    "lon": 35.01
+  },
+  {
+    "id": "nabateos-avdat",
+    "civilizacion": "nabateos",
+    "nombre": "Avdat",
+    "actual": "Avdat, Israel",
+    "lat": 30.84,
+    "lon": 34.99
+  },
+  {
+    "id": "achaemenidas-persepolis",
+    "civilizacion": "achaemenidas",
+    "nombre": "Persepolis",
+    "actual": "Shiraz, Iran",
+    "lat": 29.94,
+    "lon": 52.89
+  },
+  {
+    "id": "achaemenidas-susa",
+    "civilizacion": "achaemenidas",
+    "nombre": "Susa",
+    "actual": "Shush, Iran",
+    "lat": 32.19,
+    "lon": 48.26
+  },
+  {
+    "id": "achaemenidas-babilonia",
+    "civilizacion": "achaemenidas",
+    "nombre": "Babylon",
+    "actual": "Hillah, Iraq",
+    "lat": 32.54,
+    "lon": 44.42
+  },
+  {
+    "id": "achaemenidas-sardis",
+    "civilizacion": "achaemenidas",
+    "nombre": "Sardis",
+    "actual": "Sardis, Turkey",
+    "lat": 38.48,
+    "lon": 28.04
+  },
+  {
+    "id": "achaemenidas-memfis",
+    "civilizacion": "achaemenidas",
+    "nombre": "Memphis",
+    "actual": "Mit Rahina, Egypt",
+    "lat": 29.87,
+    "lon": 31.25
+  },
+  {
+    "id": "achaemenidas-taxila",
+    "civilizacion": "achaemenidas",
+    "nombre": "Taxila",
+    "actual": "Rawalpindi, Pakistan",
+    "lat": 33.75,
+    "lon": 72.8
+  },
+  {
+    "id": "partos-ctesifon",
+    "civilizacion": "partos",
+    "nombre": "Ctesiphon",
+    "actual": "Baghdad, Iraq",
+    "lat": 33.3,
+    "lon": 44.58
+  },
+  {
+    "id": "partos-hatra",
+    "civilizacion": "partos",
+    "nombre": "Hatra",
+    "actual": "Hatra, Iraq",
+    "lat": 35.58,
+    "lon": 42.72
+  },
+  {
+    "id": "sasanidas-ctesifon",
+    "civilizacion": "sasanidas",
+    "nombre": "Ctesiphon",
+    "actual": "Baghdad, Iraq",
+    "lat": 33.3,
+    "lon": 44.58
+  },
+  {
+    "id": "sasanidas-bishapur",
+    "civilizacion": "sasanidas",
+    "nombre": "Bishapur",
+    "actual": "Bishapur, Iran",
+    "lat": 29.44,
+    "lon": 51.57
+  },
+  {
+    "id": "sasanidas-nishapur",
+    "civilizacion": "sasanidas",
+    "nombre": "Nishapur",
+    "actual": "Nishapur, Iran",
+    "lat": 36.21,
+    "lon": 58.79
+  },
+  {
+    "id": "cartago-cartago",
+    "civilizacion": "cartago",
+    "nombre": "Carthage",
+    "actual": "Tunis, Tunisia",
+    "lat": 36.85,
+    "lon": 10.32
+  },
+  {
+    "id": "cartago-numancia",
+    "civilizacion": "cartago",
+    "nombre": "Numancia",
+    "actual": "Gormaz, Spain",
+    "lat": 41.8,
+    "lon": -2.7
+  },
+  {
+    "id": "cartago-panormo",
+    "civilizacion": "cartago",
+    "nombre": "Panormus",
+    "actual": "Palermo, Italy",
+    "lat": 38.12,
+    "lon": 13.36
+  },
+  {
+    "id": "nubia-napata",
+    "civilizacion": "nubia",
+    "nombre": "Napata",
+    "actual": "Napata, Sudan",
+    "lat": 19.72,
+    "lon": 30.72
+  },
+  {
+    "id": "nubia-meroe",
+    "civilizacion": "nubia",
+    "nombre": "Meroe",
+    "actual": "Meroe, Sudan",
+    "lat": 16.93,
+    "lon": 33.74
+  },
+  {
+    "id": "nubia-elefantina",
+    "civilizacion": "nubia",
+    "nombre": "Elefantina",
+    "actual": "Elefantina, Egypt",
+    "lat": 24.09,
+    "lon": 32.9
+  },
+  {
+    "id": "aksum-axum",
+    "civilizacion": "aksum",
+    "nombre": "Aksum",
+    "actual": "Aksum, Ethiopia",
+    "lat": 14.13,
+    "lon": 38.72
+  },
+  {
+    "id": "aksum-adulis",
+    "civilizacion": "aksum",
+    "nombre": "Adulis",
+    "actual": "Zula, Eritrea",
+    "lat": 15.26,
+    "lon": 39.66
+  },
+  {
+    "id": "aksum-mata",
+    "civilizacion": "aksum",
+    "nombre": "Mata",
+    "actual": "Maïta, Ethiopia",
+    "lat": 14.5,
+    "lon": 38.5
+  },
+  {
+    "id": "etruscos-vulci",
+    "civilizacion": "etruscos",
+    "nombre": "Vulci",
+    "actual": "Vulci, Italy",
+    "lat": 42.42,
+    "lon": 11.7
+  },
+  {
+    "id": "etruscos-tarquinia",
+    "civilizacion": "etruscos",
+    "nombre": "Tarquinia",
+    "actual": "Tarquinia, Italy",
+    "lat": 42.06,
+    "lon": 11.8
+  },
+  {
+    "id": "etruscos-cortona",
+    "civilizacion": "etruscos",
+    "nombre": "Cortona",
+    "actual": "Cortona, Italy",
+    "lat": 43.28,
+    "lon": 11.99
+  },
+  {
+    "id": "griegos-atenas",
+    "civilizacion": "griegos",
+    "nombre": "Athens",
+    "actual": "Athens, Greece",
+    "lat": 37.98,
+    "lon": 23.73
+  },
+  {
+    "id": "griegos-esparta",
+    "civilizacion": "griegos",
+    "nombre": "Sparta",
+    "actual": "Sparta, Greece",
+    "lat": 37.07,
+    "lon": 22.43
+  },
+  {
+    "id": "griegos-corinto",
+    "civilizacion": "griegos",
+    "nombre": "Corinth",
+    "actual": "Corinth, Greece",
+    "lat": 37.94,
+    "lon": 22.93
+  },
+  {
+    "id": "griegos-mileto",
+    "civilizacion": "griegos",
+    "nombre": "Miletus",
+    "actual": "Miletus, Turkey",
+    "lat": 37.53,
+    "lon": 27.28
+  },
+  {
+    "id": "griegos-olimpia",
+    "civilizacion": "griegos",
+    "nombre": "Olympia",
+    "actual": "Olympia, Greece",
+    "lat": 37.64,
+    "lon": 21.63
+  },
+  {
+    "id": "macedonia-pella",
+    "civilizacion": "macedonia",
+    "nombre": "Pella",
+    "actual": "Pella, Greece",
+    "lat": 40.76,
+    "lon": 22.52
+  },
+  {
+    "id": "macedonia-filipos",
+    "civilizacion": "macedonia",
+    "nombre": "Philippi",
+    "actual": "Philippi, Greece",
+    "lat": 40.19,
+    "lon": 23.73
+  },
+  {
+    "id": "macedonia-tarsis",
+    "civilizacion": "macedonia",
+    "nombre": "Tarsus",
+    "actual": "Tarsus, Turkey",
+    "lat": 36.92,
+    "lon": 34.9
+  },
+  {
+    "id": "roma-roma",
+    "civilizacion": "roma",
+    "nombre": "Rome",
+    "actual": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.5
+  },
+  {
+    "id": "roma-pompeya",
+    "civilizacion": "roma",
+    "nombre": "Pompeii",
+    "actual": "Pompeii, Italy",
+    "lat": 40.75,
+    "lon": 14.49
+  },
+  {
+    "id": "roma-ostia",
+    "civilizacion": "roma",
+    "nombre": "Ostia",
+    "actual": "Ostia, Italy",
+    "lat": 41.75,
+    "lon": 12.29
+  },
+  {
+    "id": "roma-cartago",
+    "civilizacion": "roma",
+    "nombre": "Carthage",
+    "actual": "Tunis, Tunisia",
+    "lat": 36.85,
+    "lon": 10.32
+  },
+  {
+    "id": "roma-alexandria",
+    "civilizacion": "roma",
+    "nombre": "Alexandria",
+    "actual": "Alexandria, Egypt",
+    "lat": 31.2,
+    "lon": 29.92
+  },
+  {
+    "id": "roma-lugduno",
+    "civilizacion": "roma",
+    "nombre": "Lugdunum",
+    "actual": "Lyon, France",
+    "lat": 45.76,
+    "lon": 4.83
+  },
+  {
+    "id": "roma-tarraco",
+    "civilizacion": "roma",
+    "nombre": "Tarraco",
+    "actual": "Tarragona, Spain",
+    "lat": 41.12,
+    "lon": 1.25
+  },
+  {
+    "id": "roma-britannia",
+    "civilizacion": "roma",
+    "nombre": "Britannia",
+    "actual": "London, United Kingdom",
+    "lat": 51.51,
+    "lon": -0.13
+  },
+  {
+    "id": "roma-efeso",
+    "civilizacion": "roma",
+    "nombre": "Ephesus",
+    "actual": "Selçuk, Turkey",
+    "lat": 37.94,
+    "lon": 27.34
+  },
+  {
+    "id": "bizantino-constantinopla",
+    "civilizacion": "bizantino",
+    "nombre": "Constantinople",
+    "actual": "Istanbul",
+    "lat": 41.01,
+    "lon": 28.98
+  },
+  {
+    "id": "bizantino-antioquia",
+    "civilizacion": "bizantino",
+    "nombre": "Antioch",
+    "actual": "Antakya, Turkey",
+    "lat": 36.2,
+    "lon": 36.16
+  },
+  {
+    "id": "bizantino-tesalonica",
+    "civilizacion": "bizantino",
+    "nombre": "Thessalonica",
+    "actual": "Thessaloniki, Greece",
+    "lat": 40.64,
+    "lon": 22.94
+  },
+  {
+    "id": "bizantino-ravena",
+    "civilizacion": "bizantino",
+    "nombre": "Ravenna",
+    "actual": "Ravenna, Italy",
+    "lat": 44.42,
+    "lon": 12.2
+  },
+  {
+    "id": "francos-aquisgran",
+    "civilizacion": "francos",
+    "nombre": "Aachen",
+    "actual": "Aachen, Germany",
+    "lat": 50.78,
+    "lon": 6.08
+  },
+  {
+    "id": "francos-paris",
+    "civilizacion": "francos",
+    "nombre": "Paris",
+    "actual": "Paris, France",
+    "lat": 48.86,
+    "lon": 2.35
+  },
+  {
+    "id": "francos-roma",
+    "civilizacion": "francos",
+    "nombre": "Rome",
+    "actual": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.5
+  },
+  {
+    "id": "iberia-cristiana-toledo",
+    "civilizacion": "iberia-cristiana",
+    "nombre": "Toledo",
+    "actual": "Toledo, Spain",
+    "lat": 39.86,
+    "lon": -4.03
+  },
+  {
+    "id": "iberia-cristiana-santiago",
+    "civilizacion": "iberia-cristiana",
+    "nombre": "Santiago",
+    "actual": "Santiago de Compostela, Spain",
+    "lat": 42.88,
+    "lon": -8.54
+  },
+  {
+    "id": "iberia-cristiana-barcelona",
+    "civilizacion": "iberia-cristiana",
+    "nombre": "Barcelona",
+    "actual": "Barcelona, Spain",
+    "lat": 41.39,
+    "lon": 2.17
+  },
+  {
+    "id": "iberia-cristiana-cordoba",
+    "civilizacion": "iberia-cristiana",
+    "nombre": "Córdoba",
+    "actual": "Córdoba, Spain",
+    "lat": 37.89,
+    "lon": -4.78
+  },
+  {
+    "id": "iberia-cristiana-coimbra",
+    "civilizacion": "iberia-cristiana",
+    "nombre": "Coimbra",
+    "actual": "Coimbra, Portugal",
+    "lat": 40.21,
+    "lon": -8.43
+  },
+  {
+    "id": "ottomanos-constantinopla",
+    "civilizacion": "ottomanos",
+    "nombre": "Constantinople",
+    "actual": "Istanbul",
+    "lat": 41.01,
+    "lon": 28.98
+  },
+  {
+    "id": "ottomanos-edirne",
+    "civilizacion": "ottomanos",
+    "nombre": "Edirne",
+    "actual": "Edirne, Turkey",
+    "lat": 41.68,
+    "lon": 26.56
+  },
+  {
+    "id": "ottomanos-el-cairo",
+    "civilizacion": "ottomanos",
+    "nombre": "Cairo",
+    "actual": "Cairo, Egypt",
+    "lat": 30.04,
+    "lon": 31.24
+  },
+  {
+    "id": "ottomanos-bursa",
+    "civilizacion": "ottomanos",
+    "nombre": "Bursa",
+    "actual": "Bursa, Turkey",
+    "lat": 40.19,
+    "lon": 29.06
+  },
+  {
+    "id": "ottomanos-belgrado",
+    "civilizacion": "ottomanos",
+    "nombre": "Belgrade",
+    "actual": "Belgrade, Serbia",
+    "lat": 44.79,
+    "lon": 20.45
+  },
+  {
+    "id": "ottomanos-saray",
+    "civilizacion": "ottomanos",
+    "nombre": "Saray",
+    "actual": "Sarajevo, Bosnia and Herzegovina",
+    "lat": 43.86,
+    "lon": 18.41
+  },
+  {
+    "id": "seljukas-isfahan",
+    "civilizacion": "seljukas",
+    "nombre": "Isfahan",
+    "actual": "Isfahan, Iran",
+    "lat": 32.65,
+    "lon": 51.67
+  },
+  {
+    "id": "seljukas-nishapur",
+    "civilizacion": "seljukas",
+    "nombre": "Nishapur",
+    "actual": "Nishapur, Iran",
+    "lat": 36.21,
+    "lon": 58.79
+  },
+  {
+    "id": "seljukas-konya",
+    "civilizacion": "seljukas",
+    "nombre": "Konya",
+    "actual": "Konya, Turkey",
+    "lat": 37.87,
+    "lon": 32.48
+  },
+  {
+    "id": "mongoles-karakorum",
+    "civilizacion": "mongoles",
+    "nombre": "Karakorum",
+    "actual": "Kharkhorin, Mongolia",
+    "lat": 47.2,
+    "lon": 102.85
+  },
+  {
+    "id": "mongoles-tabriz",
+    "civilizacion": "mongoles",
+    "nombre": "Tabriz",
+    "actual": "Tabriz, Iran",
+    "lat": 38.08,
+    "lon": 46.29
+  },
+  {
+    "id": "mongoles-sarai",
+    "civilizacion": "mongoles",
+    "nombre": "Sarai",
+    "actual": "Selitrennoje, Russia",
+    "lat": 48.63,
+    "lon": 44.99
+  },
+  {
+    "id": "mongoles-bukhara",
+    "civilizacion": "mongoles",
+    "nombre": "Bukhara",
+    "actual": "Bukhara, Uzbekistan",
+    "lat": 39.77,
+    "lon": 64.42
+  },
+  {
+    "id": "mongoles-khanbaliq",
+    "civilizacion": "mongoles",
+    "nombre": "Khanbaliq",
+    "actual": "Beijing, China",
+    "lat": 39.91,
+    "lon": 116.39
+  },
+  {
+    "id": "mongoles-baghdad",
+    "civilizacion": "mongoles",
+    "nombre": "Baghdad",
+    "actual": "Baghdad, Iraq",
+    "lat": 33.31,
+    "lon": 44.36
+  },
+  {
+    "id": "timuridos-samarcanda",
+    "civilizacion": "timuridos",
+    "nombre": "Samarkand",
+    "actual": "Samarkand, Uzbekistan",
+    "lat": 39.65,
+    "lon": 66.96
+  },
+  {
+    "id": "timuridos-herat",
+    "civilizacion": "timuridos",
+    "nombre": "Herat",
+    "actual": "Herat, Afghanistan",
+    "lat": 34.35,
+    "lon": 62.2
+  },
+  {
+    "id": "timuridos-isfahan",
+    "civilizacion": "timuridos",
+    "nombre": "Isfahan",
+    "actual": "Isfahan, Iran",
+    "lat": 32.65,
+    "lon": 51.67
+  },
+  {
+    "id": "safavidas-isfahan",
+    "civilizacion": "safavidas",
+    "nombre": "Isfahan",
+    "actual": "Isfahan, Iran",
+    "lat": 32.65,
+    "lon": 51.67
+  },
+  {
+    "id": "safavidas-qazvin",
+    "civilizacion": "safavidas",
+    "nombre": "Qazvin",
+    "actual": "Qazvin, Iran",
+    "lat": 36.28,
+    "lon": 50
+  },
+  {
+    "id": "safavidas-tabriz",
+    "civilizacion": "safavidas",
+    "nombre": "Tabriz",
+    "actual": "Tabriz, Iran",
+    "lat": 38.08,
+    "lon": 46.29
+  },
+  {
+    "id": "qajar-teheran",
+    "civilizacion": "qajar",
+    "nombre": "Tehran",
+    "actual": "Tehran, Iran",
+    "lat": 35.69,
+    "lon": 51.39
+  },
+  {
+    "id": "qajar-tabriz",
+    "civilizacion": "qajar",
+    "nombre": "Tabriz",
+    "actual": "Tabriz, Iran",
+    "lat": 38.08,
+    "lon": 46.29
+  },
+  {
+    "id": "qajar-mashhad",
+    "civilizacion": "qajar",
+    "nombre": "Mashhad",
+    "actual": "Mashhad, Iran",
+    "lat": 36.3,
+    "lon": 59.6
+  },
+  {
+    "id": "iran-pahlavi-teheran",
+    "civilizacion": "iran-pahlavi",
+    "nombre": "Tehran",
+    "actual": "Tehran, Iran",
+    "lat": 35.69,
+    "lon": 51.39
+  },
+  {
+    "id": "iran-pahlavi-abadan",
+    "civilizacion": "iran-pahlavi",
+    "nombre": "Abadan",
+    "actual": "Abadan, Iran",
+    "lat": 30.35,
+    "lon": 48.67
+  },
+  {
+    "id": "iran-islamico-teheran",
+    "civilizacion": "iran-islamico",
+    "nombre": "Tehran",
+    "actual": "Tehran, Iran",
+    "lat": 35.69,
+    "lon": 51.39
+  },
+  {
+    "id": "iran-islamico-isfahan",
+    "civilizacion": "iran-islamico",
+    "nombre": "Isfahan",
+    "actual": "Isfahan, Iran",
+    "lat": 32.65,
+    "lon": 51.67
+  },
+  {
+    "id": "indus-mohenjo-daro",
+    "civilizacion": "indus",
+    "nombre": "Mohenjo-Daro",
+    "actual": "Mohenjo-Daro, Pakistan",
+    "lat": 27.33,
+    "lon": 68.14
+  },
+  {
+    "id": "indus-harappa",
+    "civilizacion": "indus",
+    "nombre": "Harappa",
+    "actual": "Harappa, Pakistan",
+    "lat": 30.63,
+    "lon": 72.86
+  },
+  {
+    "id": "indus-dholavira",
+    "civilizacion": "indus",
+    "nombre": "Dholavira",
+    "actual": "Khadir, India",
+    "lat": 23.89,
+    "lon": 70.22
+  },
+  {
+    "id": "veda-valmiki",
+    "civilizacion": "veda",
+    "nombre": "Valmiki",
+    "actual": "Valmiki, India",
+    "lat": 25.51,
+    "lon": 83.11
+  },
+  {
+    "id": "veda-taxila",
+    "civilizacion": "veda",
+    "nombre": "Taxila",
+    "actual": "Rawalpindi, Pakistan",
+    "lat": 33.75,
+    "lon": 72.8
+  },
+  {
+    "id": "mauryas-pataliputra",
+    "civilizacion": "mauryas",
+    "nombre": "Pataliputra",
+    "actual": "Patna, India",
+    "lat": 25.61,
+    "lon": 85.14
+  },
+  {
+    "id": "mauryas-taxila",
+    "civilizacion": "mauryas",
+    "nombre": "Taxila",
+    "actual": "Rawalpindi, Pakistan",
+    "lat": 33.75,
+    "lon": 72.8
+  },
+  {
+    "id": "mauryas-ujjain",
+    "civilizacion": "mauryas",
+    "nombre": "Ujjain",
+    "actual": "Ujjain, India",
+    "lat": 23.18,
+    "lon": 75.78
+  },
+  {
+    "id": "guptas-pataliputra",
+    "civilizacion": "guptas",
+    "nombre": "Pataliputra",
+    "actual": "Patna, India",
+    "lat": 25.61,
+    "lon": 85.14
+  },
+  {
+    "id": "guptas-ujjain",
+    "civilizacion": "guptas",
+    "nombre": "Ujjain",
+    "actual": "Ujjain, India",
+    "lat": 23.18,
+    "lon": 75.78
+  },
+  {
+    "id": "guptas-nalanda",
+    "civilizacion": "guptas",
+    "nombre": "Nalanda",
+    "actual": "Bihar, India",
+    "lat": 25.14,
+    "lon": 85.44
+  },
+  {
+    "id": "chola-thanjavur",
+    "civilizacion": "chola",
+    "nombre": "Thanjavur",
+    "actual": "Tamil Nadu, India",
+    "lat": 10.79,
+    "lon": 79.14
+  },
+  {
+    "id": "chola-kanchipuram",
+    "civilizacion": "chola",
+    "nombre": "Kanchipuram",
+    "actual": "Kanchipuram, India",
+    "lat": 12.83,
+    "lon": 79.7
+  },
+  {
+    "id": "chola-anuradhapura",
+    "civilizacion": "chola",
+    "nombre": "Anuradhapura",
+    "actual": "Anuradhapura, Sri Lanka",
+    "lat": 8.31,
+    "lon": 80.41
+  },
+  {
+    "id": "mogol-agra",
+    "civilizacion": "mogol",
+    "nombre": "Agra",
+    "actual": "Agra, India",
+    "lat": 27.18,
+    "lon": 78.01
+  },
+  {
+    "id": "mogol-delhi",
+    "civilizacion": "mogol",
+    "nombre": "Delhi",
+    "actual": "Delhi, India",
+    "lat": 28.61,
+    "lon": 77.21
+  },
+  {
+    "id": "mogol-lahore",
+    "civilizacion": "mogol",
+    "nombre": "Lahore",
+    "actual": "Lahore, Pakistan",
+    "lat": 31.55,
+    "lon": 74.34
+  },
+  {
+    "id": "hola-bombay",
+    "civilizacion": "hola",
+    "nombre": "Bombay",
+    "actual": "Bombay, India",
+    "lat": 19.08,
+    "lon": 72.88
+  },
+  {
+    "id": "hola-delhi",
+    "civilizacion": "hola",
+    "nombre": "Delhi",
+    "actual": "Delhi, India",
+    "lat": 28.61,
+    "lon": 77.21
+  },
+  {
+    "id": "hola-calcuta",
+    "civilizacion": "hola",
+    "nombre": "Calcutta",
+    "actual": "Calcutta, India",
+    "lat": 22.57,
+    "lon": 88.36
+  },
+  {
+    "id": "china-antigua-anyang",
+    "civilizacion": "china-antigua",
+    "nombre": "Anyang",
+    "actual": "Anyang, China",
+    "lat": 36.1,
+    "lon": 114.3
+  },
+  {
+    "id": "china-antigua-chengdu",
+    "civilizacion": "china-antigua",
+    "nombre": "Chengdu",
+    "actual": "Chengdu, China",
+    "lat": 30.66,
+    "lon": 104.06
+  },
+  {
+    "id": "qin-xianyang",
+    "civilizacion": "qin",
+    "nombre": "Xianyang",
+    "actual": "Xianyang, China",
+    "lat": 34.34,
+    "lon": 108.7
+  },
+  {
+    "id": "qin-chengdu",
+    "civilizacion": "qin",
+    "nombre": "Chengdu",
+    "actual": "Chengdu, China",
+    "lat": 30.66,
+    "lon": 104.06
+  },
+  {
+    "id": "han-chang-an",
+    "civilizacion": "han",
+    "nombre": "Chang’an",
+    "actual": "Xi'an, China",
+    "lat": 34.34,
+    "lon": 108.94
+  },
+  {
+    "id": "han-luoyang",
+    "civilizacion": "han",
+    "nombre": "Luoyang",
+    "actual": "Luoyang, China",
+    "lat": 34.62,
+    "lon": 112.45
+  },
+  {
+    "id": "tang-chang-an",
+    "civilizacion": "tang",
+    "nombre": "Chang'an",
+    "actual": "Xi'an, China",
+    "lat": 34.34,
+    "lon": 108.94
+  },
+  {
+    "id": "tang-luoyang",
+    "civilizacion": "tang",
+    "nombre": "Luoyang",
+    "actual": "Luoyang, China",
+    "lat": 34.62,
+    "lon": 112.45
+  },
+  {
+    "id": "song-kaifeng",
+    "civilizacion": "song",
+    "nombre": "Kaifeng",
+    "actual": "Kaifeng, China",
+    "lat": 34.8,
+    "lon": 114.31
+  },
+  {
+    "id": "song-lin-an",
+    "civilizacion": "song",
+    "nombre": "Lin'an",
+    "actual": "Hangzhou, China",
+    "lat": 30.25,
+    "lon": 120.16
+  },
+  {
+    "id": "yuan-dadu",
+    "civilizacion": "yuan",
+    "nombre": "Dadu",
+    "actual": "Beijing, China",
+    "lat": 39.91,
+    "lon": 116.39
+  },
+  {
+    "id": "yuan-shangdu",
+    "civilizacion": "yuan",
+    "nombre": "Shangdu",
+    "actual": "Zhenglan, Mongolia",
+    "lat": 42.32,
+    "lon": 116.1
+  },
+  {
+    "id": "ming-pekin",
+    "civilizacion": "ming",
+    "nombre": "Beijing",
+    "actual": "Beijing, China",
+    "lat": 39.91,
+    "lon": 116.39
+  },
+  {
+    "id": "ming-nankin",
+    "civilizacion": "ming",
+    "nombre": "Nanjing",
+    "actual": "Nanjing, China",
+    "lat": 32.06,
+    "lon": 118.8
+  },
+  {
+    "id": "qing-pekin",
+    "civilizacion": "qing",
+    "nombre": "Beijing",
+    "actual": "Beijing, China",
+    "lat": 39.91,
+    "lon": 116.39
+  },
+  {
+    "id": "qing-canton",
+    "civilizacion": "qing",
+    "nombre": "Canton",
+    "actual": "Guangzhou, China",
+    "lat": 23.13,
+    "lon": 113.26
+  },
+  {
+    "id": "qing-kulang",
+    "civilizacion": "qing",
+    "nombre": "Kulang",
+    "actual": "Chengdu, China",
+    "lat": 30.66,
+    "lon": 104.06
+  },
+  {
+    "id": "china-republicana-nankin",
+    "civilizacion": "china-republicana",
+    "nombre": "Nanjing",
+    "actual": "Nanjing, China",
+    "lat": 32.06,
+    "lon": 118.8
+  },
+  {
+    "id": "china-republicana-shanghai",
+    "civilizacion": "china-republicana",
+    "nombre": "Shanghai",
+    "actual": "Shanghai, China",
+    "lat": 31.23,
+    "lon": 121.47
+  },
+  {
+    "id": "china-popular-pekin",
+    "civilizacion": "china-popular",
+    "nombre": "Beijing",
+    "actual": "Beijing, China",
+    "lat": 39.91,
+    "lon": 116.39
+  },
+  {
+    "id": "china-popular-shanghai",
+    "civilizacion": "china-popular",
+    "nombre": "Shanghai",
+    "actual": "Shanghai, China",
+    "lat": 31.23,
+    "lon": 121.47
+  },
+  {
+    "id": "china-popular-canton",
+    "civilizacion": "china-popular",
+    "nombre": "Canton",
+    "actual": "Guangzhou, China",
+    "lat": 23.13,
+    "lon": 113.26
+  },
+  {
+    "id": "corea-hanseong",
+    "civilizacion": "corea",
+    "nombre": "Hanseong",
+    "actual": "Seoul, Korea",
+    "lat": 37.57,
+    "lon": 126.98
+  },
+  {
+    "id": "corea-gyeongju",
+    "civilizacion": "corea",
+    "nombre": "Gyeongju",
+    "actual": "Gyeongju, Korea",
+    "lat": 35.84,
+    "lon": 129.22
+  },
+  {
+    "id": "coreas-buyeo",
+    "civilizacion": "coreas",
+    "nombre": "Buyeo",
+    "actual": "Buyeo, Korea",
+    "lat": 36.28,
+    "lon": 126.55
+  },
+  {
+    "id": "coreas-gyeongju",
+    "civilizacion": "coreas",
+    "nombre": "Gyeongju",
+    "actual": "Gyeongju, Korea",
+    "lat": 35.84,
+    "lon": 129.22
+  },
+  {
+    "id": "coreas-p-yongyang",
+    "civilizacion": "coreas",
+    "nombre": "Pyongyang",
+    "actual": "Pyongyang, Korea",
+    "lat": 39.02,
+    "lon": 125.75
+  },
+  {
+    "id": "japon-kioto",
+    "civilizacion": "japon",
+    "nombre": "Kyoto",
+    "actual": "Kyoto, Japan",
+    "lat": 35.01,
+    "lon": 135.77
+  },
+  {
+    "id": "japon-edo",
+    "civilizacion": "japon",
+    "nombre": "Edo",
+    "actual": "Tokyo, Japan",
+    "lat": 35.68,
+    "lon": 139.69
+  },
+  {
+    "id": "japon-nara",
+    "civilizacion": "japon",
+    "nombre": "Nara",
+    "actual": "Nara, Japan",
+    "lat": 34.69,
+    "lon": 135.8
+  },
+  {
+    "id": "vietnam-ha-noi",
+    "civilizacion": "vietnam",
+    "nombre": "Hanoi",
+    "actual": "Hanoi, Vietnam",
+    "lat": 21.03,
+    "lon": 105.85
+  },
+  {
+    "id": "vietnam-hue",
+    "civilizacion": "vietnam",
+    "nombre": "Huế",
+    "actual": "Huế, Vietnam",
+    "lat": 16.05,
+    "lon": 107.58
+  },
+  {
+    "id": "vietnam-ai-viet",
+    "civilizacion": "vietnam",
+    "nombre": "Đại Việt",
+    "actual": "Hanoi, Vietnam",
+    "lat": 21.03,
+    "lon": 105.85
+  },
+  {
+    "id": "angkor-angkor",
+    "civilizacion": "angkor",
+    "nombre": "Angkor",
+    "actual": "Siem Reap, Cambodia",
+    "lat": 13.41,
+    "lon": 103.87
+  },
+  {
+    "id": "angkor-angkor-thom",
+    "civilizacion": "angkor",
+    "nombre": "Angkor Thom",
+    "actual": "Siem Reap, Cambodia",
+    "lat": 13.45,
+    "lon": 103.86
+  },
+  {
+    "id": "kushanos-peshawar",
+    "civilizacion": "kushanos",
+    "nombre": "Peshawar",
+    "actual": "Peshawar, Pakistan",
+    "lat": 34.01,
+    "lon": 71.58
+  },
+  {
+    "id": "kushanos-bactria",
+    "civilizacion": "kushanos",
+    "nombre": "Bactria",
+    "actual": "Balkh, Afghanistan",
+    "lat": 36.76,
+    "lon": 66.9
+  },
+  {
+    "id": "kushanos-mathura",
+    "civilizacion": "kushanos",
+    "nombre": "Mathura",
+    "actual": "Mathura, India",
+    "lat": 27.49,
+    "lon": 77.67
+  },
+  {
+    "id": "mali-niani",
+    "civilizacion": "mali",
+    "nombre": "Niani",
+    "actual": "Mali",
+    "lat": 11.42,
+    "lon": -8.91
+  },
+  {
+    "id": "mali-timbuktu",
+    "civilizacion": "mali",
+    "nombre": "Timbuktu",
+    "actual": "Timbuktu, Mali",
+    "lat": 16.77,
+    "lon": -3.01
+  },
+  {
+    "id": "mali-djenne",
+    "civilizacion": "mali",
+    "nombre": "Djenné",
+    "actual": "Djenné, Mali",
+    "lat": 13.91,
+    "lon": -4.55
+  },
+  {
+    "id": "songhai-gao",
+    "civilizacion": "songhai",
+    "nombre": "Gao",
+    "actual": "Gao, Mali",
+    "lat": 16.27,
+    "lon": 0.04
+  },
+  {
+    "id": "songhai-tombouctou",
+    "civilizacion": "songhai",
+    "nombre": "Timbuktu",
+    "actual": "Timbuktu, Mali",
+    "lat": 16.77,
+    "lon": -3.01
+  },
+  {
+    "id": "kanem-kanem",
+    "civilizacion": "kanem",
+    "nombre": "Kanem",
+    "actual": "Lake Chad",
+    "lat": 13.45,
+    "lon": 14.4
+  },
+  {
+    "id": "kanem-bornu",
+    "civilizacion": "kanem",
+    "nombre": "Bornu",
+    "actual": "Maiduguri, Nigeria",
+    "lat": 11.83,
+    "lon": 13.15
+  },
+  {
+    "id": "ashanti-kumasi",
+    "civilizacion": "ashanti",
+    "nombre": "Kumasi",
+    "actual": "Kumasi, Ghana",
+    "lat": 6.69,
+    "lon": -1.62
+  },
+  {
+    "id": "ashanti-gonja",
+    "civilizacion": "ashanti",
+    "nombre": "Gonja",
+    "actual": "Salaga, Ghana",
+    "lat": 9,
+    "lon": -0.83
+  },
+  {
+    "id": "buganda-mengo",
+    "civilizacion": "buganda",
+    "nombre": "Mengo",
+    "actual": "Kampala, Uganda",
+    "lat": 0.35,
+    "lon": 32.58
+  },
+  {
+    "id": "buganda-nakaloke",
+    "civilizacion": "buganda",
+    "nombre": "Nakaloke",
+    "actual": "Nakaloke, Uganda",
+    "lat": 0.35,
+    "lon": 32.53
+  },
+  {
+    "id": "zulu-ulundi",
+    "civilizacion": "zulu",
+    "nombre": "Ulundi",
+    "actual": "Ulundi, South Africa",
+    "lat": -28.34,
+    "lon": 31.42
+  },
+  {
+    "id": "zulu-kwadukuza",
+    "civilizacion": "zulu",
+    "nombre": "KwaDukuza",
+    "actual": "KwaDukuza, South Africa",
+    "lat": -29.87,
+    "lon": 31.02
+  },
+  {
+    "id": "merina-antananarivo",
+    "civilizacion": "merina",
+    "nombre": "Antananarivo",
+    "actual": "Antananarivo, Madagascar",
+    "lat": -18.88,
+    "lon": 47.51
+  },
+  {
+    "id": "merina-antsirabe",
+    "civilizacion": "merina",
+    "nombre": "Antsirabe",
+    "actual": "Antsirabe, Madagascar",
+    "lat": -19.85,
+    "lon": 47.03
+  },
+  {
+    "id": "etiopia-gondar",
+    "civilizacion": "etiopia",
+    "nombre": "Gondar",
+    "actual": "Gondar, Ethiopia",
+    "lat": 12.6,
+    "lon": 37.47
+  },
+  {
+    "id": "etiopia-axum",
+    "civilizacion": "etiopia",
+    "nombre": "Aksum",
+    "actual": "Aksum, Ethiopia",
+    "lat": 14.13,
+    "lon": 38.72
+  },
+  {
+    "id": "etiopia-lalibela",
+    "civilizacion": "etiopia",
+    "nombre": "Lalibela",
+    "actual": "Lalibela, Ethiopia",
+    "lat": 12.03,
+    "lon": 39.04
+  },
+  {
+    "id": "olmecas-la-venta",
+    "civilizacion": "olmecas",
+    "nombre": "La Venta",
+    "actual": "Villamón, Mexico",
+    "lat": 18.11,
+    "lon": -94.03
+  },
+  {
+    "id": "olmecas-san-lorenzo",
+    "civilizacion": "olmecas",
+    "nombre": "San Lorenzo",
+    "actual": "Los Tuxtlas, Mexico",
+    "lat": 18.5,
+    "lon": -95.2
+  },
+  {
+    "id": "zapotecos-monte-alban",
+    "civilizacion": "zapotecos",
+    "nombre": "Monte Albán",
+    "actual": "Oaxaca, Mexico",
+    "lat": 17,
+    "lon": -96.73
+  },
+  {
+    "id": "zapotecos-zaachila",
+    "civilizacion": "zapotecos",
+    "nombre": "Zaachila",
+    "actual": "Oaxaca, Mexico",
+    "lat": 16.99,
+    "lon": -96.72
+  },
+  {
+    "id": "teotihuacan-teotihuacan",
+    "civilizacion": "teotihuacan",
+    "nombre": "Teotihuacán",
+    "actual": "Mexico City",
+    "lat": 19.69,
+    "lon": -98.84
+  },
+  {
+    "id": "teotihuacan-tula",
+    "civilizacion": "teotihuacan",
+    "nombre": "Tula",
+    "actual": "Tula, Mexico",
+    "lat": 20.06,
+    "lon": -99.34
+  },
+  {
+    "id": "mayas-tikal",
+    "civilizacion": "mayas",
+    "nombre": "Tikal",
+    "actual": "Petén, Guatemala",
+    "lat": 17.22,
+    "lon": -89.62
+  },
+  {
+    "id": "mayas-palenque",
+    "civilizacion": "mayas",
+    "nombre": "Palenque",
+    "actual": "Chiapas, Mexico",
+    "lat": 17.51,
+    "lon": -92.03
+  },
+  {
+    "id": "mayas-copan",
+    "civilizacion": "mayas",
+    "nombre": "Copán",
+    "actual": "Copán, Honduras",
+    "lat": 14.76,
+    "lon": -89.05
+  },
+  {
+    "id": "mayas-uxmal",
+    "civilizacion": "mayas",
+    "nombre": "Uxmal",
+    "actual": "Uxmal, Mexico",
+    "lat": 20.38,
+    "lon": -89.64
+  },
+  {
+    "id": "toltecas-tula",
+    "civilizacion": "toltecas",
+    "nombre": "Tula",
+    "actual": "Tula, Mexico",
+    "lat": 20.06,
+    "lon": -99.34
+  },
+  {
+    "id": "toltecas-templo-de-quetzalcoatl",
+    "civilizacion": "toltecas",
+    "nombre": "Temple of Quetzalcóatl",
+    "actual": "Tula, Mexico",
+    "lat": 20.05,
+    "lon": -99.35
+  },
+  {
+    "id": "mexica-tenochtitlan",
+    "civilizacion": "mexica",
+    "nombre": "Tenochtitlan",
+    "actual": "Mexico City",
+    "lat": 19.43,
+    "lon": -99.13
+  },
+  {
+    "id": "mexica-texcoco",
+    "civilizacion": "mexica",
+    "nombre": "Texcoco",
+    "actual": "Texcoco, Mexico",
+    "lat": 19.51,
+    "lon": -98.88
+  },
+  {
+    "id": "mexica-templo-mayor",
+    "civilizacion": "mexica",
+    "nombre": "Great Temple",
+    "actual": "Mexico City",
+    "lat": 19.44,
+    "lon": -99.13
+  },
+  {
+    "id": "taino-ayiti",
+    "civilizacion": "taino",
+    "nombre": "Ayiti",
+    "actual": "Haiti",
+    "lat": 19,
+    "lon": -72.42
+  },
+  {
+    "id": "taino-bonao",
+    "civilizacion": "taino",
+    "nombre": "Bonao",
+    "actual": "La Romana, Dominican Republic",
+    "lat": 18.46,
+    "lon": -70.72
+  },
+  {
+    "id": "muisca-tundunava",
+    "civilizacion": "muisca",
+    "nombre": "Tundunavá",
+    "actual": "Pasca, Colombia",
+    "lat": 4.89,
+    "lon": -73.68
+  },
+  {
+    "id": "muisca-sucre",
+    "civilizacion": "muisca",
+    "nombre": "Sucre",
+    "actual": "Bogotá, Colombia",
+    "lat": 4.6,
+    "lon": -74.08
+  },
+  {
+    "id": "chavin-chavin-de-huantar",
+    "civilizacion": "chavin",
+    "nombre": "Chavín de Huántar",
+    "actual": "Chavín de Huántar, Peru",
+    "lat": -9.42,
+    "lon": -77.07
+  },
+  {
+    "id": "chavin-kuntur-wasi",
+    "civilizacion": "chavin",
+    "nombre": "Kuntur Wasi",
+    "actual": "Ancash, Peru",
+    "lat": -9.13,
+    "lon": -77.2
+  },
+  {
+    "id": "tiwanaku-tiwanaku",
+    "civilizacion": "tiwanaku",
+    "nombre": "Tiwanaku",
+    "actual": "La Paz, Bolivia",
+    "lat": -16.55,
+    "lon": -68.67
+  },
+  {
+    "id": "tiwanaku-pumapunku",
+    "civilizacion": "tiwanaku",
+    "nombre": "Pumapunku",
+    "actual": "La Paz, Bolivia",
+    "lat": -16.51,
+    "lon": -68.78
+  },
+  {
+    "id": "inca-cuzco",
+    "civilizacion": "inca",
+    "nombre": "Cuzco",
+    "actual": "Cusco, Peru",
+    "lat": -13.52,
+    "lon": -71.97
+  },
+  {
+    "id": "inca-quito",
+    "civilizacion": "inca",
+    "nombre": "Quito",
+    "actual": "Quito, Ecuador",
+    "lat": -0.18,
+    "lon": -78.47
+  },
+  {
+    "id": "inca-machu-picchu",
+    "civilizacion": "inca",
+    "nombre": "Machu Picchu",
+    "actual": "Cusco, Peru",
+    "lat": -13.16,
+    "lon": -72.55
+  },
+  {
+    "id": "tairona-ciudad-perdida",
+    "civilizacion": "tairona",
+    "nombre": "Lost City",
+    "actual": "Santa Marta, Colombia",
+    "lat": 10.78,
+    "lon": -74.1
+  },
+  {
+    "id": "tairona-nabusimake",
+    "civilizacion": "tairona",
+    "nombre": "Nabusímake",
+    "actual": "Magangué, Colombia",
+    "lat": 9.25,
+    "lon": -74.78
+  },
+  {
+    "id": "mississipi-cahokia",
+    "civilizacion": "mississipi",
+    "nombre": "Cahokia",
+    "actual": "Collinsville, United States",
+    "lat": 38.66,
+    "lon": -90.06
+  },
+  {
+    "id": "mississipi-etowah",
+    "civilizacion": "mississipi",
+    "nombre": "Etowah",
+    "actual": "Georgia, United States",
+    "lat": 34.2,
+    "lon": -84.6
+  },
+  {
+    "id": "comanche-palo-duro",
+    "civilizacion": "comanche",
+    "nombre": "Palo Duro",
+    "actual": "Canyon, Texas",
+    "lat": 35.34,
+    "lon": -101.65
+  },
+  {
+    "id": "comanche-bend",
+    "civilizacion": "comanche",
+    "nombre": "Bend",
+    "actual": "Fort Sill, Oklahoma",
+    "lat": 34.56,
+    "lon": -98.1
+  },
+  {
+    "id": "anasazi-chaco-canyon",
+    "civilizacion": "anasazi",
+    "nombre": "Chaco Canyon",
+    "actual": "New Mexico, United States",
+    "lat": 36.06,
+    "lon": -107.97
+  },
+  {
+    "id": "anasazi-mesa-verde",
+    "civilizacion": "anasazi",
+    "nombre": "Mesa Verde",
+    "actual": "Colorado, United States",
+    "lat": 37.23,
+    "lon": -108.46
+  },
+  {
+    "id": "navajo-window-rock",
+    "civilizacion": "navajo",
+    "nombre": "Window Rock",
+    "actual": "Arizona, United States",
+    "lat": 35.68,
+    "lon": -109.33
+  },
+  {
+    "id": "navajo-shiprock",
+    "civilizacion": "navajo",
+    "nombre": "Shiprock",
+    "actual": "New Mexico, United States",
+    "lat": 36.79,
+    "lon": -108.99
+  },
+  {
+    "id": "tarahumara-guachochi",
+    "civilizacion": "tarahumara",
+    "nombre": "Guachochi",
+    "actual": "Chihuahua, Mexico",
+    "lat": 27.13,
+    "lon": -107.4
+  },
+  {
+    "id": "tarahumara-urique",
+    "civilizacion": "tarahumara",
+    "nombre": "Urique",
+    "actual": "Chihuahua, Mexico",
+    "lat": 27.4,
+    "lon": -107.5
+  },
+  {
+    "id": "aborigenes-kakadu",
+    "civilizacion": "aborigenes",
+    "nombre": "Kakadu",
+    "actual": "Northern Territory, Australia",
+    "lat": -12.9,
+    "lon": 132.5
+  },
+  {
+    "id": "aborigenes-warlukurlangu",
+    "civilizacion": "aborigenes",
+    "nombre": "Warlukurlangu",
+    "actual": "Yulara, Australia",
+    "lat": -25.24,
+    "lon": 131.08
+  },
+  {
+    "id": "kamilaroi-brewarrina",
+    "civilizacion": "kamilaroi",
+    "nombre": "Brewarrina",
+    "actual": "New South Wales, Australia",
+    "lat": -29.96,
+    "lon": 146.85
+  },
+  {
+    "id": "tiwi-wurrumiyanga",
+    "civilizacion": "tiwi",
+    "nombre": "Wurrumiyanga",
+    "actual": "Tiwi Island, Australia",
+    "lat": -11.05,
+    "lon": 130.55
+  },
+  {
+    "id": "san-tsodilo",
+    "civilizacion": "san",
+    "nombre": "Tsodilo",
+    "actual": "Botswana",
+    "lat": -18.75,
+    "lon": 22.75
+  },
+  {
+    "id": "san-khau",
+    "civilizacion": "san",
+    "nombre": "//Khau",
+    "actual": "Namibia",
+    "lat": -20.5,
+    "lon": 15
+  },
+  {
+    "id": "khoi-cabo",
+    "civilizacion": "khoi",
+    "nombre": "Cape Town",
+    "actual": "Cape Town, South Africa",
+    "lat": -33.92,
+    "lon": 18.42
+  },
+  {
+    "id": "berberes-tingis",
+    "civilizacion": "berberes",
+    "nombre": "Tingis",
+    "actual": "Tangier, Morocco",
+    "lat": 35.77,
+    "lon": -5.81
+  },
+  {
+    "id": "berberes-volubilis",
+    "civilizacion": "berberes",
+    "nombre": "Volubilis",
+    "actual": "Volubilis, Morocco",
+    "lat": 34.09,
+    "lon": -5.37
+  },
+  {
+    "id": "tuareg-agadez",
+    "civilizacion": "tuareg",
+    "nombre": "Agadez",
+    "actual": "Niger",
+    "lat": 16.97,
+    "lon": 7.99
+  },
+  {
+    "id": "tuareg-timbuktu",
+    "civilizacion": "tuareg",
+    "nombre": "Timbuktu",
+    "actual": "Timbuktu, Mali",
+    "lat": 16.77,
+    "lon": -3.01
+  },
+  {
+    "id": "fulani-kano",
+    "civilizacion": "fulani",
+    "nombre": "Kano",
+    "actual": "Kano, Nigeria",
+    "lat": 12,
+    "lon": 8.52
+  },
+  {
+    "id": "fulani-sokoto",
+    "civilizacion": "fulani",
+    "nombre": "Sokoto",
+    "actual": "Sokoto, Nigeria",
+    "lat": 13.06,
+    "lon": 5.24
+  },
+  {
+    "id": "hausa-kano",
+    "civilizacion": "hausa",
+    "nombre": "Kano",
+    "actual": "Kano, Nigeria",
+    "lat": 12,
+    "lon": 8.52
+  },
+  {
+    "id": "hausa-zaria",
+    "civilizacion": "hausa",
+    "nombre": "Zaria",
+    "actual": "Zaria, Nigeria",
+    "lat": 11.08,
+    "lon": 7.72
+  },
+  {
+    "id": "yoruba-ife",
+    "civilizacion": "yoruba",
+    "nombre": "Ife",
+    "actual": "Ife, Nigeria",
+    "lat": 7.47,
+    "lon": 4.57
+  },
+  {
+    "id": "yoruba-oyo",
+    "civilizacion": "yoruba",
+    "nombre": "Oyo",
+    "actual": "Oyo, Nigeria",
+    "lat": 7.9,
+    "lon": 3.93
+  },
+  {
+    "id": "igbo-nri",
+    "civilizacion": "igbo",
+    "nombre": "Nri",
+    "actual": "Anaocha, Nigeria",
+    "lat": 6.1,
+    "lon": 7.4
+  },
+  {
+    "id": "igbo-onitsha",
+    "civilizacion": "igbo",
+    "nombre": "Onitsha",
+    "actual": "Onitsha, Nigeria",
+    "lat": 6.14,
+    "lon": 6.78
+  },
+  {
+    "id": "fon-abomey",
+    "civilizacion": "fon",
+    "nombre": "Abomey",
+    "actual": "Abomey, Benin",
+    "lat": 7.19,
+    "lon": 1.99
+  },
+  {
+    "id": "fon-ouidah",
+    "civilizacion": "fon",
+    "nombre": "Ouidah",
+    "actual": "Ouidah, Benin",
+    "lat": 6.36,
+    "lon": 2.08
+  },
+  {
+    "id": "swahili-kilwa",
+    "civilizacion": "swahili",
+    "nombre": "Kilwa",
+    "actual": "Kilwa, Tanzania",
+    "lat": -8.96,
+    "lon": 39.52
+  },
+  {
+    "id": "swahili-mombasa",
+    "civilizacion": "swahili",
+    "nombre": "Mombasa",
+    "actual": "Mombasa, Kenya",
+    "lat": -4.04,
+    "lon": 39.67
+  },
+  {
+    "id": "swahili-zanzibar",
+    "civilizacion": "swahili",
+    "nombre": "Zanzibar",
+    "actual": "Zanzibar, Tanzania",
+    "lat": -6.16,
+    "lon": 39.2
+  },
+  {
+    "id": "shona-gran-zimbabwe",
+    "civilizacion": "shona",
+    "nombre": "Great Zimbabwe",
+    "actual": "Masvingo, Zimbabwe",
+    "lat": -20.27,
+    "lon": 30.93
+  },
+  {
+    "id": "shona-khami",
+    "civilizacion": "shona",
+    "nombre": "Khami",
+    "actual": "Bulawayo, Zimbabwe",
+    "lat": -20.26,
+    "lon": 28.81
+  },
+  {
+    "id": "luba-kiluba",
+    "civilizacion": "luba",
+    "nombre": "Kiluba",
+    "actual": "Lualaba, DR Congo",
+    "lat": -6.4,
+    "lon": 23.5
+  },
+  {
+    "id": "luba-kakongo",
+    "civilizacion": "luba",
+    "nombre": "Kakongo",
+    "actual": "Kwilu, DR Congo",
+    "lat": -6.1,
+    "lon": 23.4
+  },
+  {
+    "id": "maasai-ngorongoro",
+    "civilizacion": "maasai",
+    "nombre": "Ngorongoro",
+    "actual": "Tanzania",
+    "lat": -3.2,
+    "lon": 35.6
+  },
+  {
+    "id": "maasai-musiara",
+    "civilizacion": "maasai",
+    "nombre": "Musiara",
+    "actual": "Kenya",
+    "lat": -3.8,
+    "lon": 35.3
+  },
+  {
+    "id": "vikingos-kaupang",
+    "civilizacion": "vikingos",
+    "nombre": "Kaupang",
+    "actual": "Vestfold, Norway",
+    "lat": 59.02,
+    "lon": 10.03
+  },
+  {
+    "id": "vikingos-ribe",
+    "civilizacion": "vikingos",
+    "nombre": "Ribe",
+    "actual": "Denmark",
+    "lat": 55.33,
+    "lon": 8.76
+  },
+  {
+    "id": "celtas-hallstatt",
+    "civilizacion": "celtas",
+    "nombre": "Hallstatt",
+    "actual": "Hallstatt, Austria",
+    "lat": 47.56,
+    "lon": 13.65
+  },
+  {
+    "id": "celtas-danebury",
+    "civilizacion": "celtas",
+    "nombre": "Danebury",
+    "actual": "Hampshire, United Kingdom",
+    "lat": 51.14,
+    "lon": -1.85
+  },
+  {
+    "id": "bulgaros-pliska",
+    "civilizacion": "bulgaros",
+    "nombre": "Pliska",
+    "actual": "Bulgaria",
+    "lat": 43,
+    "lon": 27.17
+  },
+  {
+    "id": "bulgaros-preslav",
+    "civilizacion": "bulgaros",
+    "nombre": "Preslav",
+    "actual": "Veliki Preslav, Bulgaria",
+    "lat": 43.16,
+    "lon": 27
+  },
+  {
+    "id": "hungaros-szekesfehervar",
+    "civilizacion": "hungaros",
+    "nombre": "Székesfehérvár",
+    "actual": "Székesfehérvár, Hungary",
+    "lat": 47.2,
+    "lon": 19.6
+  },
+  {
+    "id": "lituanos-vilnius",
+    "civilizacion": "lituanos",
+    "nombre": "Vilnius",
+    "actual": "Vilnius, Lithuania",
+    "lat": 54.69,
+    "lon": 25.28
+  },
+  {
+    "id": "lituanos-kaunas",
+    "civilizacion": "lituanos",
+    "nombre": "Kaunas",
+    "actual": "Kaunas, Lithuania",
+    "lat": 54.9,
+    "lon": 23.9
+  },
+  {
+    "id": "polacos-krakow",
+    "civilizacion": "polacos",
+    "nombre": "Cracow",
+    "actual": "Cracow, Poland",
+    "lat": 50.06,
+    "lon": 19.94
+  },
+  {
+    "id": "polacos-gniezno",
+    "civilizacion": "polacos",
+    "nombre": "Gniezno",
+    "actual": "Gniezno, Poland",
+    "lat": 52.6,
+    "lon": 17.6
+  },
+  {
+    "id": "tibet-lhasa",
+    "civilizacion": "tibet",
+    "nombre": "Lhasa",
+    "actual": "Lhasa, Tibet",
+    "lat": 29.65,
+    "lon": 91.14
+  },
+  {
+    "id": "tibet-samye",
+    "civilizacion": "tibet",
+    "nombre": "Samye",
+    "actual": "Tibet",
+    "lat": 29.25,
+    "lon": 90.9
+  },
+  {
+    "id": "majapahit-trowulan",
+    "civilizacion": "majapahit",
+    "nombre": "Trowulan",
+    "actual": "Trowulan, Indonesia",
+    "lat": -7.61,
+    "lon": 112.38
+  },
+  {
+    "id": "majapahit-palembang",
+    "civilizacion": "majapahit",
+    "nombre": "Palembang",
+    "actual": "Palembang, Indonesia",
+    "lat": -2.99,
+    "lon": 104.76
+  },
+  {
+    "id": "maratha-pune",
+    "civilizacion": "maratha",
+    "nombre": "Pune",
+    "actual": "Pune, India",
+    "lat": 18.52,
+    "lon": 73.86
+  },
+  {
+    "id": "maratha-raigad",
+    "civilizacion": "maratha",
+    "nombre": "Raigad",
+    "actual": "Maharashtra, India",
+    "lat": 18.23,
+    "lon": 73.43
+  },
+  {
+    "id": "sikh-amritsar",
+    "civilizacion": "sikh",
+    "nombre": "Amritsar",
+    "actual": "Amritsar, India",
+    "lat": 31.63,
+    "lon": 74.87
+  },
+  {
+    "id": "sikh-lahore",
+    "civilizacion": "sikh",
+    "nombre": "Lahore",
+    "actual": "Lahore, Pakistan",
+    "lat": 31.55,
+    "lon": 74.34
+  },
+  {
+    "id": "himyaritas-zafar",
+    "civilizacion": "himyaritas",
+    "nombre": "Zafar",
+    "actual": "Yemen",
+    "lat": 14.2,
+    "lon": 44.2
+  },
+  {
+    "id": "himyaritas-marib",
+    "civilizacion": "himyaritas",
+    "nombre": "Marib",
+    "actual": "Yemen",
+    "lat": 15.46,
+    "lon": 45.33
+  },
+  {
+    "id": "benin-ciudad-de-benin",
+    "civilizacion": "benin",
+    "nombre": "Benin City",
+    "actual": "Benin City, Nigeria",
+    "lat": 6.34,
+    "lon": 5.62
+  },
+  {
+    "id": "chimu-chan-chan",
+    "civilizacion": "chimu",
+    "nombre": "Chan Chan",
+    "actual": "Trujillo, Peru",
+    "lat": -8.11,
+    "lon": -79.03
+  },
+  {
+    "id": "wari-huari",
+    "civilizacion": "wari",
+    "nombre": "Huari",
+    "actual": "Ayacucho, Peru",
+    "lat": -13.25,
+    "lon": -75.15
+  },
+  {
+    "id": "xiongnu-longcheng",
+    "civilizacion": "xiongnu",
+    "nombre": "Longcheng",
+    "actual": "Mongolia",
+    "lat": 47.5,
+    "lon": 104
+  },
+  {
+    "id": "liao-yanjing",
+    "civilizacion": "liao",
+    "nombre": "Yanjing",
+    "actual": "Beijing, China",
+    "lat": 39.91,
+    "lon": 116.39
+  },
+  {
+    "id": "jurchen-shangjing",
+    "civilizacion": "jurchen",
+    "nombre": "Shangjing",
+    "actual": "Acheng, China",
+    "lat": 45.54,
+    "lon": 126.53
+  },
+  {
+    "id": "germanos-borrunsberg",
+    "civilizacion": "germanos",
+    "nombre": "Borrunsberg",
+    "actual": "Borrby, Sweden",
+    "lat": 55.2,
+    "lon": 13.4
+  },
+  {
+    "id": "visigodos-toledo",
+    "civilizacion": "visigodos",
+    "nombre": "Toledo",
+    "actual": "Toledo, Spain",
+    "lat": 39.86,
+    "lon": -4.03
+  },
+  {
+    "id": "ostrogodos-ravena",
+    "civilizacion": "ostrogodos",
+    "nombre": "Ravenna",
+    "actual": "Ravenna, Italy",
+    "lat": 44.42,
+    "lon": 12.2
+  },
+  {
+    "id": "vandalos-cartago",
+    "civilizacion": "vandalos",
+    "nombre": "Carthage",
+    "actual": "Tunis, Tunisia",
+    "lat": 36.85,
+    "lon": 10.32
+  },
+  {
+    "id": "lombardos-pavia",
+    "civilizacion": "lombardos",
+    "nombre": "Pavia",
+    "actual": "Pavia, Italy",
+    "lat": 45.19,
+    "lon": 9.16
+  },
+  {
+    "id": "anglosajones-winchester",
+    "civilizacion": "anglosajones",
+    "nombre": "Winchester",
+    "actual": "Winchester, United Kingdom",
+    "lat": 51.06,
+    "lon": -1.31
+  },
+  {
+    "id": "moche-chan-chan",
+    "civilizacion": "moche",
+    "nombre": "Chan Chan",
+    "actual": "Trujillo, Peru",
+    "lat": -8.11,
+    "lon": -79.03
+  },
+  {
+    "id": "nazca-cahuachi",
+    "civilizacion": "nazca",
+    "nombre": "Cahuachi",
+    "actual": "Nasca, Peru",
+    "lat": -14.83,
+    "lon": -74.94
+  },
+  {
+    "id": "mapuche-cauca",
+    "civilizacion": "mapuche",
+    "nombre": "Cauca",
+    "actual": "Temuco, Chile",
+    "lat": -38.74,
+    "lon": -72.59
+  },
+  {
+    "id": "guaranies-asuncion",
+    "civilizacion": "guaranies",
+    "nombre": "Asunción",
+    "actual": "Asunción, Paraguay",
+    "lat": -25.26,
+    "lon": -57.58
+  },
+  {
+    "id": "tupinamba-teso-bety",
+    "civilizacion": "tupinamba",
+    "nombre": "Teso Bety",
+    "actual": "Amazonas, Brazil",
+    "lat": -3,
+    "lon": -60
+  },
+  {
+    "id": "chachapoyas-kuelap",
+    "civilizacion": "chachapoyas",
+    "nombre": "Kuélap",
+    "actual": "Amazonas, Peru",
+    "lat": -6.42,
+    "lon": -77.93
+  },
+  {
+    "id": "diaguitas-tucuman",
+    "civilizacion": "diaguitas",
+    "nombre": "Tucumán",
+    "actual": "San Miguel de Tucumán, Argentina",
+    "lat": -26.82,
+    "lon": -65.22
+  },
+  {
+    "id": "umeyas-damasco",
+    "civilizacion": "umeyas",
+    "nombre": "Damascus",
+    "actual": "Damascus, Syria",
+    "lat": 33.51,
+    "lon": 36.29
+  },
+  {
+    "id": "umeyas-al-andalus",
+    "civilizacion": "umeyas",
+    "nombre": "al-Andalus",
+    "actual": "Córdoba, Spain",
+    "lat": 37.89,
+    "lon": -4.78
+  },
+  {
+    "id": "abasies-bagdad",
+    "civilizacion": "abasies",
+    "nombre": "Baghdad",
+    "actual": "Baghdad, Iraq",
+    "lat": 33.31,
+    "lon": 44.36
+  },
+  {
+    "id": "abasies-samarra",
+    "civilizacion": "abasies",
+    "nombre": "Samarra",
+    "actual": "Samarra, Iraq",
+    "lat": 34.2,
+    "lon": 43.87
+  },
+  {
+    "id": "abasies-cordoba",
+    "civilizacion": "abasies",
+    "nombre": "Córdoba",
+    "actual": "Córdoba, Spain",
+    "lat": 37.89,
+    "lon": -4.78
+  },
+  {
+    "id": "fatimies-el-cairo",
+    "civilizacion": "fatimies",
+    "nombre": "Cairo",
+    "actual": "Cairo, Egypt",
+    "lat": 30.04,
+    "lon": 31.24
+  },
+  {
+    "id": "fatimies-mahdia",
+    "civilizacion": "fatimies",
+    "nombre": "Mahdia",
+    "actual": "Mahdia, Tunisia",
+    "lat": 35.5,
+    "lon": 11.06
+  },
+  {
+    "id": "mamelucos-el-cairo",
+    "civilizacion": "mamelucos",
+    "nombre": "Cairo",
+    "actual": "Cairo, Egypt",
+    "lat": 30.04,
+    "lon": 31.24
+  },
+  {
+    "id": "mamelucos-alepo",
+    "civilizacion": "mamelucos",
+    "nombre": "Aleppo",
+    "actual": "Aleppo, Syria",
+    "lat": 36.2,
+    "lon": 37.16
+  },
+  {
+    "id": "espana-toledo",
+    "civilizacion": "espana",
+    "nombre": "Toledo",
+    "actual": "Toledo, Spain",
+    "lat": 39.86,
+    "lon": -4.03
+  },
+  {
+    "id": "espana-sevilla",
+    "civilizacion": "espana",
+    "nombre": "Seville",
+    "actual": "Seville, Spain",
+    "lat": 37.39,
+    "lon": -5.98
+  },
+  {
+    "id": "espana-potosi",
+    "civilizacion": "espana",
+    "nombre": "Potosí",
+    "actual": "Potosí, Bolivia",
+    "lat": -19.58,
+    "lon": -65.75
+  },
+  {
+    "id": "espana-manila",
+    "civilizacion": "espana",
+    "nombre": "Manila",
+    "actual": "Manila, Philippines",
+    "lat": 14.6,
+    "lon": 120.98
+  },
+  {
+    "id": "espana-tenochtitlan",
+    "civilizacion": "espana",
+    "nombre": "Tenochtitlan",
+    "actual": "Mexico City",
+    "lat": 19.43,
+    "lon": -99.13
+  },
+  {
+    "id": "espana-cuzco",
+    "civilizacion": "espana",
+    "nombre": "Cuzco",
+    "actual": "Cusco, Peru",
+    "lat": -13.52,
+    "lon": -71.97
+  },
+  {
+    "id": "espana-bogota",
+    "civilizacion": "espana",
+    "nombre": "Bogotá",
+    "actual": "Bogotá, Colombia",
+    "lat": 4.6,
+    "lon": -74.08
+  },
+  {
+    "id": "portugal-lisboa",
+    "civilizacion": "portugal",
+    "nombre": "Lisbon",
+    "actual": "Lisbon, Portugal",
+    "lat": 38.72,
+    "lon": -9.14
+  },
+  {
+    "id": "portugal-goa",
+    "civilizacion": "portugal",
+    "nombre": "Goa",
+    "actual": "Goa, India",
+    "lat": 15.5,
+    "lon": 73.83
+  },
+  {
+    "id": "portugal-salvador",
+    "civilizacion": "portugal",
+    "nombre": "Salvador",
+    "actual": "Salvador, Brazil",
+    "lat": -12.97,
+    "lon": -38.5
+  },
+  {
+    "id": "britania-londres",
+    "civilizacion": "britania",
+    "nombre": "London",
+    "actual": "London, United Kingdom",
+    "lat": 51.51,
+    "lon": -0.13
+  },
+  {
+    "id": "britania-bombay",
+    "civilizacion": "britania",
+    "nombre": "Bombay",
+    "actual": "Bombay, India",
+    "lat": 19.08,
+    "lon": 72.88
+  },
+  {
+    "id": "britania-calcuta",
+    "civilizacion": "britania",
+    "nombre": "Calcutta",
+    "actual": "Calcutta, India",
+    "lat": 22.57,
+    "lon": 88.36
+  },
+  {
+    "id": "britania-el-cairo",
+    "civilizacion": "britania",
+    "nombre": "Cairo",
+    "actual": "Cairo, Egypt",
+    "lat": 30.04,
+    "lon": 31.24
+  },
+  {
+    "id": "britania-sydney",
+    "civilizacion": "britania",
+    "nombre": "Sydney",
+    "actual": "Sydney, Australia",
+    "lat": -33.87,
+    "lon": 151.21
+  },
+  {
+    "id": "reino-unido-londres",
+    "civilizacion": "reino-unido",
+    "nombre": "London",
+    "actual": "London, United Kingdom",
+    "lat": 51.51,
+    "lon": -0.13
+  },
+  {
+    "id": "rusia-moscu",
+    "civilizacion": "rusia",
+    "nombre": "Moscow",
+    "actual": "Moscow, Russia",
+    "lat": 55.76,
+    "lon": 37.62
+  },
+  {
+    "id": "rusia-san-petersburgo",
+    "civilizacion": "rusia",
+    "nombre": "Saint Petersburg",
+    "actual": "Saint Petersburg, Russia",
+    "lat": 59.93,
+    "lon": 30.34
+  },
+  {
+    "id": "rusia-nizhni-novgorod",
+    "civilizacion": "rusia",
+    "nombre": "Nizhni Novgorod",
+    "actual": "Russia",
+    "lat": 56.33,
+    "lon": 44
+  },
+  {
+    "id": "rus-kiev-kiev",
+    "civilizacion": "rus-kiev",
+    "nombre": "Kyiv",
+    "actual": "Kyiv, Ukraine",
+    "lat": 50.45,
+    "lon": 30.52
+  },
+  {
+    "id": "rus-kiev-novgorod",
+    "civilizacion": "rus-kiev",
+    "nombre": "Novgorod",
+    "actual": "Veliky Novgorod, Russia",
+    "lat": 58.52,
+    "lon": 31.27
+  },
+  {
+    "id": "napoleon-paris",
+    "civilizacion": "napoleon",
+    "nombre": "Paris",
+    "actual": "Paris, France",
+    "lat": 48.86,
+    "lon": 2.35
+  },
+  {
+    "id": "napoleon-austerlitz",
+    "civilizacion": "napoleon",
+    "nombre": "Austerlitz",
+    "actual": "Slavkov u Brna, Czechia",
+    "lat": 49.13,
+    "lon": 16.76
+  },
+  {
+    "id": "austria-viena",
+    "civilizacion": "austria",
+    "nombre": "Vienna",
+    "actual": "Vienna, Austria",
+    "lat": 48.21,
+    "lon": 16.37
+  },
+  {
+    "id": "austria-praga",
+    "civilizacion": "austria",
+    "nombre": "Prague",
+    "actual": "Prague, Czechia",
+    "lat": 50.08,
+    "lon": 14.44
+  },
+  {
+    "id": "austrohungria-viena",
+    "civilizacion": "austrohungria",
+    "nombre": "Vienna",
+    "actual": "Vienna, Austria",
+    "lat": 48.21,
+    "lon": 16.37
+  },
+  {
+    "id": "austrohungria-budapest",
+    "civilizacion": "austrohungria",
+    "nombre": "Budapest",
+    "actual": "Budapest, Hungary",
+    "lat": 47.5,
+    "lon": 19.04
+  },
+  {
+    "id": "mari-mari",
+    "civilizacion": "mari",
+    "nombre": "Mari",
+    "actual": "Tell Hariri, Syria",
+    "lat": 34.55,
+    "lon": 40.89
+  },
+  {
+    "id": "mari-terqa",
+    "civilizacion": "mari",
+    "nombre": "Terqa",
+    "actual": "Tell Ashara, Syria",
+    "lat": 34.92,
+    "lon": 40.57
+  },
+  {
+    "id": "holanda-amsterdam",
+    "civilizacion": "holanda",
+    "nombre": "Amsterdam",
+    "actual": "Amsterdam, Netherlands",
+    "lat": 52.37,
+    "lon": 4.9
+  },
+  {
+    "id": "holanda-batavia",
+    "civilizacion": "holanda",
+    "nombre": "Batavia",
+    "actual": "Jakarta, Indonesia",
+    "lat": -6.21,
+    "lon": 106.85
+  },
+  {
+    "id": "alemania-berlin",
+    "civilizacion": "alemania",
+    "nombre": "Berlin",
+    "actual": "Berlin, Germany",
+    "lat": 52.52,
+    "lon": 13.4
+  },
+  {
+    "id": "alemania-versalles",
+    "civilizacion": "alemania",
+    "nombre": "Versailles",
+    "actual": "Versailles, France",
+    "lat": 48.8,
+    "lon": 2.13
+  },
+  {
+    "id": "tercerreich-berlin",
+    "civilizacion": "tercerreich",
+    "nombre": "Berlin",
+    "actual": "Berlin, Germany",
+    "lat": 52.52,
+    "lon": 13.4
+  },
+  {
+    "id": "tercerreich-auschwitz",
+    "civilizacion": "tercerreich",
+    "nombre": "Auschwitz",
+    "actual": "Oświęcim, Poland",
+    "lat": 50.03,
+    "lon": 19.18
+  },
+  {
+    "id": "sovietica-moscu",
+    "civilizacion": "sovietica",
+    "nombre": "Moscow",
+    "actual": "Moscow, Russia",
+    "lat": 55.76,
+    "lon": 37.62
+  },
+  {
+    "id": "sovietica-leningrado",
+    "civilizacion": "sovietica",
+    "nombre": "Leningrad",
+    "actual": "Saint Petersburg, Russia",
+    "lat": 59.93,
+    "lon": 30.34
+  },
+  {
+    "id": "estados-unidos-nueva-york",
+    "civilizacion": "estados-unidos",
+    "nombre": "New York",
+    "actual": "New York, United States",
+    "lat": 40.71,
+    "lon": -74.01
+  },
+  {
+    "id": "estados-unidos-washington",
+    "civilizacion": "estados-unidos",
+    "nombre": "Washington",
+    "actual": "Washington, United States",
+    "lat": 38.91,
+    "lon": -77.04
+  },
+  {
+    "id": "estados-unidos-san-francisco",
+    "civilizacion": "estados-unidos",
+    "nombre": "San Francisco",
+    "actual": "San Francisco, United States",
+    "lat": 37.77,
+    "lon": -122.42
+  },
+  {
+    "id": "imperio-brasileno-rio-de-janeiro",
+    "civilizacion": "imperio-brasileno",
+    "nombre": "Rio de Janeiro",
+    "actual": "Rio de Janeiro, Brazil",
+    "lat": -22.91,
+    "lon": -43.17
+  },
+  {
+    "id": "imperio-brasileno-salvador",
+    "civilizacion": "imperio-brasileno",
+    "nombre": "Salvador",
+    "actual": "Salvador, Brazil",
+    "lat": -12.97,
+    "lon": -38.5
+  },
+  {
+    "id": "segundo-imperio-mexicano-ciudad-de-mexico",
+    "civilizacion": "segundo-imperio-mexicano",
+    "nombre": "Mexico City",
+    "actual": "Mexico City",
+    "lat": 19.43,
+    "lon": -99.13
+  },
+  {
+    "id": "segundo-imperio-mexicano-queretaro",
+    "civilizacion": "segundo-imperio-mexicano",
+    "nombre": "Querétaro",
+    "actual": "Querétaro, Mexico",
+    "lat": 20.59,
+    "lon": -100.39
+  },
+  {
+    "id": "mali-moderno-bamako",
+    "civilizacion": "mali-moderno",
+    "nombre": "Bamako",
+    "actual": "Bamako, Mali",
+    "lat": 12.64,
+    "lon": -8
+  },
+  {
+    "id": "mali-moderno-timbuktu",
+    "civilizacion": "mali-moderno",
+    "nombre": "Timbuktu",
+    "actual": "Timbuktu, Mali",
+    "lat": 16.77,
+    "lon": -3.01
+  }
+]

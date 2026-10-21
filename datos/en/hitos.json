@@ -1,0 +1,3662 @@
+[
+  {
+    "id": "sumer-1",
+    "civilizacion": "sumer",
+    "anio": -4000,
+    "texto": "The city of Uruk is founded, the first known city in the world."
+  },
+  {
+    "id": "sumer-2",
+    "civilizacion": "sumer",
+    "anio": -3200,
+    "texto": "Urban revolution: writing is invented at Uruk."
+  },
+  {
+    "id": "sumer-3",
+    "civilizacion": "sumer",
+    "anio": -2334,
+    "texto": "Sargon of Akkad founds the first “empire” in history."
+  },
+  {
+    "id": "sumer-4",
+    "civilizacion": "sumer",
+    "anio": -2112,
+    "texto": "Ur III: the high point of Sumerian centralization."
+  },
+  {
+    "id": "ebla-1",
+    "civilizacion": "ebla",
+    "anio": -2350,
+    "texto": "Foundation of Ebla and of its Palace G."
+  },
+  {
+    "id": "ebla-2",
+    "civilizacion": "ebla",
+    "anio": -2300,
+    "texto": "Ebla monopolizes the trade in incense and cedar wood."
+  },
+  {
+    "id": "ebla-3",
+    "civilizacion": "ebla",
+    "anio": -2250,
+    "texto": "Naram-Sin of Akkad razes it."
+  },
+  {
+    "id": "akkad-1",
+    "civilizacion": "akkad",
+    "anio": -2334,
+    "texto": "Sargon of Akkad unifies southern Mesopotamia."
+  },
+  {
+    "id": "akkad-2",
+    "civilizacion": "akkad",
+    "anio": -2270,
+    "texto": "Naram-Sin proclaims himself god and devastates Mount Carmel."
+  },
+  {
+    "id": "akkad-3",
+    "civilizacion": "akkad",
+    "anio": -2154,
+    "texto": "Sharrukin, or Sarrukin-la, his grandson, is overthrown by the Gutians."
+  },
+  {
+    "id": "mari-1",
+    "civilizacion": "mari",
+    "anio": -2900,
+    "texto": "Foundation of Mari on the Euphrates."
+  },
+  {
+    "id": "mari-2",
+    "civilizacion": "mari",
+    "anio": -2400,
+    "texto": "Zimri-Lim unifies the kingdom and restores the cult of Sin."
+  },
+  {
+    "id": "mari-3",
+    "civilizacion": "mari",
+    "anio": -1761,
+    "texto": "Hammurabi razes Mari."
+  },
+  {
+    "id": "babilonia-1",
+    "civilizacion": "babilonia",
+    "anio": -1894,
+    "texto": "Samsu-iluna founds the Amorite dynasty of Babylon."
+  },
+  {
+    "id": "babilonia-2",
+    "civilizacion": "babilonia",
+    "anio": -1792,
+    "texto": "Hammurabi unifies Mesopotamia and promulgates his code."
+  },
+  {
+    "id": "babilonia-3",
+    "civilizacion": "babilonia",
+    "anio": -1595,
+    "texto": "The Hittites sack Babylon."
+  },
+  {
+    "id": "babilonia-4",
+    "civilizacion": "babilonia",
+    "anio": -626,
+    "texto": "Nebuchadnezzar II rescues Babylon and defeats Assyria."
+  },
+  {
+    "id": "babilonia-5",
+    "civilizacion": "babilonia",
+    "anio": -539,
+    "texto": "Cyrus II of Persia enters Babylon without resistance."
+  },
+  {
+    "id": "asiria-1",
+    "civilizacion": "asiria",
+    "anio": -2025,
+    "texto": "Shamshi-Adad I founds the first Assyrian monarchy."
+  },
+  {
+    "id": "asiria-2",
+    "civilizacion": "asiria",
+    "anio": -911,
+    "texto": "Adad-nirari II begins the imperial drive."
+  },
+  {
+    "id": "asiria-3",
+    "civilizacion": "asiria",
+    "anio": -722,
+    "texto": "Sargon II defeats Israel and deports Samaria."
+  },
+  {
+    "id": "asiria-4",
+    "civilizacion": "asiria",
+    "anio": -669,
+    "texto": "Ashurbanipal consolidates the empire; the library of Nineveh."
+  },
+  {
+    "id": "asiria-5",
+    "civilizacion": "asiria",
+    "anio": -612,
+    "texto": "Nineveh falls to the allied Medes and Babylonians."
+  },
+  {
+    "id": "hititas-1",
+    "civilizacion": "hititas",
+    "anio": -1650,
+    "texto": "Labarna II consolidates the Hittite state at Hattusa."
+  },
+  {
+    "id": "hititas-2",
+    "civilizacion": "hititas",
+    "anio": -1400,
+    "texto": "Mursili I sacks Damascus and Babylon."
+  },
+  {
+    "id": "hititas-3",
+    "civilizacion": "hititas",
+    "anio": -1274,
+    "texto": "The Battle of Kadesh: Ramesses II against the Hittites."
+  },
+  {
+    "id": "hititas-4",
+    "civilizacion": "hititas",
+    "anio": -1258,
+    "texto": "Peace treaty between Ramesses II and Hattusili III."
+  },
+  {
+    "id": "hititas-5",
+    "civilizacion": "hititas",
+    "anio": -1180,
+    "texto": "The city of Hattusa is abandoned."
+  },
+  {
+    "id": "minoicos-1",
+    "civilizacion": "minoicos",
+    "anio": -1900,
+    "texto": "The first Minoan palaces at Knossos."
+  },
+  {
+    "id": "minoicos-2",
+    "civilizacion": "minoicos",
+    "anio": -1620,
+    "texto": "The eruption of Thera, a possible cause of the collapse."
+  },
+  {
+    "id": "minoicos-3",
+    "civilizacion": "minoicos",
+    "anio": -1450,
+    "texto": "The Mycenaeans occupy Crete."
+  },
+  {
+    "id": "micenicos-1",
+    "civilizacion": "micenicos",
+    "anio": -1600,
+    "texto": "The Mycenaeans settle in the Peloponnese."
+  },
+  {
+    "id": "micenicos-2",
+    "civilizacion": "micenicos",
+    "anio": -1400,
+    "texto": "High point of the palaces of Pylos and Tiryns."
+  },
+  {
+    "id": "micenicos-3",
+    "civilizacion": "micenicos",
+    "anio": -1250,
+    "texto": "The war of Troy, according to tradition."
+  },
+  {
+    "id": "micenicos-4",
+    "civilizacion": "micenicos",
+    "anio": -1100,
+    "texto": "The Dorian invasion arrives and there is a general collapse."
+  },
+  {
+    "id": "egipto-1",
+    "civilizacion": "egipto",
+    "anio": -3100,
+    "texto": "Unification of Upper and Lower Egypt; Menes unites the valley."
+  },
+  {
+    "id": "egipto-2",
+    "civilizacion": "egipto",
+    "anio": -2630,
+    "texto": "Old Kingdom: the era of the great pyramids."
+  },
+  {
+    "id": "egipto-3",
+    "civilizacion": "egipto",
+    "anio": -1550,
+    "texto": "New Kingdom: Ahmose expels the Hyksos and the empire is born."
+  },
+  {
+    "id": "egipto-4",
+    "civilizacion": "egipto",
+    "anio": -1479,
+    "texto": "Thutmose II expands his dominion as far as the Euphrates."
+  },
+  {
+    "id": "egipto-5",
+    "civilizacion": "egipto",
+    "anio": -1350,
+    "texto": "Amarna: Akhenaten and the solar cult."
+  },
+  {
+    "id": "egipto-6",
+    "civilizacion": "egipto",
+    "anio": -1069,
+    "texto": "The country is divided between Thebes and Tanis."
+  },
+  {
+    "id": "egipto-7",
+    "civilizacion": "egipto",
+    "anio": -332,
+    "texto": "Alexander the Great enters Egypt."
+  },
+  {
+    "id": "egipto-8",
+    "civilizacion": "egipto",
+    "anio": -30,
+    "texto": "Death of Cleopatra: the end of Egypt’s ancient history."
+  },
+  {
+    "id": "ptolomeos-1",
+    "civilizacion": "ptolomeos",
+    "anio": -305,
+    "texto": "Ptolemy I Soter founds the dynasty at Alexandria."
+  },
+  {
+    "id": "ptolomeos-2",
+    "civilizacion": "ptolomeos",
+    "anio": -290,
+    "texto": "The Library and Museum of Alexandria are completed."
+  },
+  {
+    "id": "ptolomeos-3",
+    "civilizacion": "ptolomeos",
+    "anio": -246,
+    "texto": "The Ptolemies ask the Roman Republic for help against Antiochus III."
+  },
+  {
+    "id": "ptolomeos-4",
+    "civilizacion": "ptolomeos",
+    "anio": -30,
+    "texto": "End of the kingdom after the death of Cleopatra."
+  },
+  {
+    "id": "fenicios-1",
+    "civilizacion": "fenicios",
+    "anio": -1200,
+    "texto": "Refugees from the Canaanite Levant found the Phoenician cities."
+  },
+  {
+    "id": "fenicios-2",
+    "civilizacion": "fenicios",
+    "anio": -814,
+    "texto": "Foundation of Carthage, according to Phoenician tradition."
+  },
+  {
+    "id": "fenicios-3",
+    "civilizacion": "fenicios",
+    "anio": -700,
+    "texto": "Gades (Cádiz) becomes the most important Phoenician colony of Phoenician Spain."
+  },
+  {
+    "id": "fenicios-4",
+    "civilizacion": "fenicios",
+    "anio": -539,
+    "texto": "Cyrus conquers Tyre and ends Phoenician independence."
+  },
+  {
+    "id": "filisteos-1",
+    "civilizacion": "filisteos",
+    "anio": -1200,
+    "texto": "The Sea Peoples arrive in the Levant."
+  },
+  {
+    "id": "filisteos-2",
+    "civilizacion": "filisteos",
+    "anio": -1100,
+    "texto": "The five Philistine cities consolidate."
+  },
+  {
+    "id": "filisteos-3",
+    "civilizacion": "filisteos",
+    "anio": -604,
+    "texto": "Ashkelon falls to the Assyrians; the last Philistine city."
+  },
+  {
+    "id": "israel-1",
+    "civilizacion": "israel",
+    "anio": -1026,
+    "texto": "Saul is anointed as the first king of Israel."
+  },
+  {
+    "id": "israel-2",
+    "civilizacion": "israel",
+    "anio": -970,
+    "texto": "David captures Jerusalem and unifies the twelve tribes."
+  },
+  {
+    "id": "israel-3",
+    "civilizacion": "israel",
+    "anio": -930,
+    "texto": "Death of Solomon; the kingdom is divided."
+  },
+  {
+    "id": "israel-4",
+    "civilizacion": "israel",
+    "anio": -722,
+    "texto": "Nineveh deports the inhabitants of the kingdom of Israel."
+  },
+  {
+    "id": "israel-5",
+    "civilizacion": "israel",
+    "anio": -586,
+    "texto": "Nebuchadnezzar destroys Jerusalem and the Temple."
+  },
+  {
+    "id": "aramas-1",
+    "civilizacion": "aramas",
+    "anio": -1000,
+    "texto": "The Aramaean tribes descend from the Taurus."
+  },
+  {
+    "id": "aramas-2",
+    "civilizacion": "aramas",
+    "anio": -800,
+    "texto": "Damascus becomes the leading Aramaean capital."
+  },
+  {
+    "id": "aramas-3",
+    "civilizacion": "aramas",
+    "anio": -539,
+    "texto": "End of Aramaean political power."
+  },
+  {
+    "id": "seleucidas-1",
+    "civilizacion": "seleucidas",
+    "anio": -312,
+    "texto": "Seleucus I founds the empire after the death of Alexander."
+  },
+  {
+    "id": "seleucidas-2",
+    "civilizacion": "seleucidas",
+    "anio": -280,
+    "texto": "Antiochus I founds the city of Antioch."
+  },
+  {
+    "id": "seleucidas-3",
+    "civilizacion": "seleucidas",
+    "anio": -281,
+    "texto": "War of the Diadochi against Ptolemy."
+  },
+  {
+    "id": "seleucidas-4",
+    "civilizacion": "seleucidas",
+    "anio": -64,
+    "texto": "Rome annexes most of the kingdom."
+  },
+  {
+    "id": "nabateos-1",
+    "civilizacion": "nabateos",
+    "anio": -312,
+    "texto": "The prince Aretas IV consolidates the kingdom."
+  },
+  {
+    "id": "nabateos-2",
+    "civilizacion": "nabateos",
+    "anio": 30,
+    "texto": "The Roman expedition against Arabia loses its commander."
+  },
+  {
+    "id": "nabateos-3",
+    "civilizacion": "nabateos",
+    "anio": 106,
+    "texto": "Trajan annexes the Nabataean kingdom."
+  },
+  {
+    "id": "achaemenidas-1",
+    "civilizacion": "achaemenidas",
+    "anio": -550,
+    "texto": "Cyrus the Great founds the empire and defeats the Medes."
+  },
+  {
+    "id": "achaemenidas-2",
+    "civilizacion": "achaemenidas",
+    "anio": -539,
+    "texto": "Cyrus enters Babylon without resistance."
+  },
+  {
+    "id": "achaemenidas-3",
+    "civilizacion": "achaemenidas",
+    "anio": -522,
+    "texto": "Darius I reforms the administration: satrapies and the Royal Logbook."
+  },
+  {
+    "id": "achaemenidas-4",
+    "civilizacion": "achaemenidas",
+    "anio": -490,
+    "texto": "Marathon: the Greeks repel the invasion."
+  },
+  {
+    "id": "achaemenidas-5",
+    "civilizacion": "achaemenidas",
+    "anio": -331,
+    "texto": "Alexander devastates Persepolis."
+  },
+  {
+    "id": "achaemenidas-6",
+    "civilizacion": "achaemenidas",
+    "anio": -330,
+    "texto": "Death of Darius III; end of the empire."
+  },
+  {
+    "id": "partos-1",
+    "civilizacion": "partos",
+    "anio": -247,
+    "texto": "Arsaces I founds the Parthian dynasty."
+  },
+  {
+    "id": "partos-2",
+    "civilizacion": "partos",
+    "anio": -53,
+    "texto": "Crassus and his legions are annihilated at Carrhae."
+  },
+  {
+    "id": "partos-3",
+    "civilizacion": "partos",
+    "anio": 224,
+    "texto": "Artabanus IV falls before the founder of the Sasanian empire."
+  },
+  {
+    "id": "sasanidas-1",
+    "civilizacion": "sasanidas",
+    "anio": 224,
+    "texto": "Ardashir I founds the Sasanian empire at Ctesiphon."
+  },
+  {
+    "id": "sasanidas-2",
+    "civilizacion": "sasanidas",
+    "anio": 531,
+    "texto": "Khosrow I reorganizes the empire and its administration."
+  },
+  {
+    "id": "sasanidas-3",
+    "civilizacion": "sasanidas",
+    "anio": 590,
+    "texto": "Khosrow II invades Mesopotamia and takes Damascus."
+  },
+  {
+    "id": "sasanidas-4",
+    "civilizacion": "sasanidas",
+    "anio": 602,
+    "texto": "Heraclius sets off the Byzantine war of attrition."
+  },
+  {
+    "id": "sasanidas-5",
+    "civilizacion": "sasanidas",
+    "anio": 651,
+    "texto": "Battle of al-Qadisiyyah: the Sasanian falls before the Arabs."
+  },
+  {
+    "id": "cartago-1",
+    "civilizacion": "cartago",
+    "anio": -814,
+    "texto": "Foundation of Carthage by the Tyrians."
+  },
+  {
+    "id": "cartago-2",
+    "civilizacion": "cartago",
+    "anio": -550,
+    "texto": "Carthage dominates the trade in Saharan gold."
+  },
+  {
+    "id": "cartago-3",
+    "civilizacion": "cartago",
+    "anio": -264,
+    "texto": "First Punic War against Rome."
+  },
+  {
+    "id": "cartago-4",
+    "civilizacion": "cartago",
+    "anio": -146,
+    "texto": "Rome destroys Carthage and erases it from the map."
+  },
+  {
+    "id": "nubia-1",
+    "civilizacion": "nubia",
+    "anio": -1070,
+    "texto": "The kingdom of Kush consolidates."
+  },
+  {
+    "id": "nubia-2",
+    "civilizacion": "nubia",
+    "anio": -750,
+    "texto": "The kingdom of Napata at its height; Kushnapurta unifies Nubia."
+  },
+  {
+    "id": "nubia-3",
+    "civilizacion": "nubia",
+    "anio": -332,
+    "texto": "Egypt conquers Nubia under Nectanebo II."
+  },
+  {
+    "id": "nubia-4",
+    "civilizacion": "nubia",
+    "anio": 350,
+    "texto": "Aksum annexes Meroe."
+  },
+  {
+    "id": "aksum-1",
+    "civilizacion": "aksum",
+    "anio": 100,
+    "texto": "Aksum adopts its own coinage."
+  },
+  {
+    "id": "aksum-2",
+    "civilizacion": "aksum",
+    "anio": 330,
+    "texto": "King Ezana converts to Christianity."
+  },
+  {
+    "id": "aksum-3",
+    "civilizacion": "aksum",
+    "anio": 525,
+    "texto": "Ge’ez becomes the liturgical language."
+  },
+  {
+    "id": "aksum-4",
+    "civilizacion": "aksum",
+    "anio": 940,
+    "texto": "The sultanate of Ifat takes the capital."
+  },
+  {
+    "id": "etruscos-1",
+    "civilizacion": "etruscos",
+    "anio": -800,
+    "texto": "The twelve Etruscan cities are formed."
+  },
+  {
+    "id": "etruscos-2",
+    "civilizacion": "etruscos",
+    "anio": -500,
+    "texto": "Cremona and Vulci dominate the metal trade."
+  },
+  {
+    "id": "etruscos-3",
+    "civilizacion": "etruscos",
+    "anio": -400,
+    "texto": "Rome annexes Etruria, Umbria and Latium."
+  },
+  {
+    "id": "griegos-1",
+    "civilizacion": "griegos",
+    "anio": -800,
+    "texto": "The first poleis and the colonization of the Aegean."
+  },
+  {
+    "id": "griegos-2",
+    "civilizacion": "griegos",
+    "anio": -508,
+    "texto": "Cleisthenes founds Athenian democracy."
+  },
+  {
+    "id": "griegos-3",
+    "civilizacion": "griegos",
+    "anio": -490,
+    "texto": "Marathon."
+  },
+  {
+    "id": "griegos-4",
+    "civilizacion": "griegos",
+    "anio": -431,
+    "texto": "The Peloponnesian War."
+  },
+  {
+    "id": "griegos-5",
+    "civilizacion": "griegos",
+    "anio": -399,
+    "texto": "Death of Socrates."
+  },
+  {
+    "id": "griegos-6",
+    "civilizacion": "griegos",
+    "anio": -146,
+    "texto": "Rome destroys Corinth."
+  },
+  {
+    "id": "macedonia-1",
+    "civilizacion": "macedonia",
+    "anio": -359,
+    "texto": "Philip II reforms the phalanx and conquers the north."
+  },
+  {
+    "id": "macedonia-2",
+    "civilizacion": "macedonia",
+    "anio": -338,
+    "texto": "Philip II wins at Chaeronea and unifies Greece."
+  },
+  {
+    "id": "macedonia-3",
+    "civilizacion": "macedonia",
+    "anio": -334,
+    "texto": "Alexander crosses into Asia."
+  },
+  {
+    "id": "macedonia-4",
+    "civilizacion": "macedonia",
+    "anio": -331,
+    "texto": "Battle of Gaugamela."
+  },
+  {
+    "id": "macedonia-5",
+    "civilizacion": "macedonia",
+    "anio": -323,
+    "texto": "Alexander dies at Babylon."
+  },
+  {
+    "id": "roma-1",
+    "civilizacion": "roma",
+    "anio": -753,
+    "texto": "Mythical foundation of Rome."
+  },
+  {
+    "id": "roma-2",
+    "civilizacion": "roma",
+    "anio": -509,
+    "texto": "Expulsion of the kings: the Republic."
+  },
+  {
+    "id": "roma-3",
+    "civilizacion": "roma",
+    "anio": -264,
+    "texto": "First Punic War."
+  },
+  {
+    "id": "roma-4",
+    "civilizacion": "roma",
+    "anio": -44,
+    "texto": "Assassination of Julius Caesar."
+  },
+  {
+    "id": "roma-5",
+    "civilizacion": "roma",
+    "anio": 27,
+    "texto": "Augustus: the imperial principate."
+  },
+  {
+    "id": "roma-6",
+    "civilizacion": "roma",
+    "anio": 117,
+    "texto": "Death of Trajan: greatest territorial extent."
+  },
+  {
+    "id": "roma-7",
+    "civilizacion": "roma",
+    "anio": 212,
+    "texto": "Constitutio Antoniniana: citizenship for all."
+  },
+  {
+    "id": "roma-8",
+    "civilizacion": "roma",
+    "anio": 476,
+    "texto": "Deposition of Romulus Augustulus: end of the Western Empire."
+  },
+  {
+    "id": "bizantino-1",
+    "civilizacion": "bizantino",
+    "anio": 330,
+    "texto": "Constantine founds Constantinople."
+  },
+  {
+    "id": "bizantino-2",
+    "civilizacion": "bizantino",
+    "anio": 527,
+    "texto": "Justinian: the Corpus iuris civilis and the reconquest of the West."
+  },
+  {
+    "id": "bizantino-3",
+    "civilizacion": "bizantino",
+    "anio": 537,
+    "texto": "Hagia Sophia is consecrated."
+  },
+  {
+    "id": "bizantino-4",
+    "civilizacion": "bizantino",
+    "anio": 622,
+    "texto": "The Arabs take Damascus and besiege Constantinople."
+  },
+  {
+    "id": "bizantino-5",
+    "civilizacion": "bizantino",
+    "anio": 1204,
+    "texto": "The Crusaders sack Constantinople."
+  },
+  {
+    "id": "bizantino-6",
+    "civilizacion": "bizantino",
+    "anio": 1453,
+    "texto": "Fall of Constantinople before Mehmed II."
+  },
+  {
+    "id": "francos-1",
+    "civilizacion": "francos",
+    "anio": 768,
+    "texto": "Charlemagne inherits the Frankish kingdom."
+  },
+  {
+    "id": "francos-2",
+    "civilizacion": "francos",
+    "anio": 800,
+    "texto": "Imperial coronation at St Peter’s."
+  },
+  {
+    "id": "francos-3",
+    "civilizacion": "francos",
+    "anio": 843,
+    "texto": "Treaty of Verdun."
+  },
+  {
+    "id": "francos-4",
+    "civilizacion": "francos",
+    "anio": 877,
+    "texto": "Charles the Bald is defeated by the Vikings at Fontenoy."
+  },
+  {
+    "id": "iberia-cristiana-1",
+    "civilizacion": "iberia-cristiana",
+    "anio": 718,
+    "texto": "Pelagius holds out at Covadonga: the Reconquista is born."
+  },
+  {
+    "id": "iberia-cristiana-2",
+    "civilizacion": "iberia-cristiana",
+    "anio": 1085,
+    "texto": "Alfonso VI conquers Toledo."
+  },
+  {
+    "id": "iberia-cristiana-3",
+    "civilizacion": "iberia-cristiana",
+    "anio": 1143,
+    "texto": "Portugal is born as an independent kingdom."
+  },
+  {
+    "id": "iberia-cristiana-4",
+    "civilizacion": "iberia-cristiana",
+    "anio": 1212,
+    "texto": "Las Navas de Tolosa: the high point of the Reconquista."
+  },
+  {
+    "id": "iberia-cristiana-5",
+    "civilizacion": "iberia-cristiana",
+    "anio": 1479,
+    "texto": "Union of Aragon and Castile."
+  },
+  {
+    "id": "ottomanos-1",
+    "civilizacion": "ottomanos",
+    "anio": 1299,
+    "texto": "Osman I founds the beylik at Bilecik."
+  },
+  {
+    "id": "ottomanos-2",
+    "civilizacion": "ottomanos",
+    "anio": 1453,
+    "texto": "Conquest of Constantinople by Mehmed II."
+  },
+  {
+    "id": "ottomanos-3",
+    "civilizacion": "ottomanos",
+    "anio": 1517,
+    "texto": "Conquest of Cairo: the fall of the Mamluk Sultanate."
+  },
+  {
+    "id": "ottomanos-4",
+    "civilizacion": "ottomanos",
+    "anio": 1520,
+    "texto": "Suleiman the Magnificent: the height of the empire."
+  },
+  {
+    "id": "ottomanos-5",
+    "civilizacion": "ottomanos",
+    "anio": 1683,
+    "texto": "Siege of Vienna: the turning point."
+  },
+  {
+    "id": "ottomanos-6",
+    "civilizacion": "ottomanos",
+    "anio": 1922,
+    "texto": "The Turkish Republic replaces the sultanate."
+  },
+  {
+    "id": "seljukas-1",
+    "civilizacion": "seljukas",
+    "anio": 1037,
+    "texto": "Tughril Beg founds the Seljuk sultanate."
+  },
+  {
+    "id": "seljukas-2",
+    "civilizacion": "seljukas",
+    "anio": 1071,
+    "texto": "Manzikert: the Seljuks capture Anatolia."
+  },
+  {
+    "id": "seljukas-3",
+    "civilizacion": "seljukas",
+    "anio": 1097,
+    "texto": "The First Crusade: a convergence of powers."
+  },
+  {
+    "id": "seljukas-4",
+    "civilizacion": "seljukas",
+    "anio": 1194,
+    "texto": "Fall of the main line in Persia."
+  },
+  {
+    "id": "mongoles-1",
+    "civilizacion": "mongoles",
+    "anio": 1206,
+    "texto": "Temujin is proclaimed Genghis Khan."
+  },
+  {
+    "id": "mongoles-2",
+    "civilizacion": "mongoles",
+    "anio": 1211,
+    "texto": "Invasion of China."
+  },
+  {
+    "id": "mongoles-3",
+    "civilizacion": "mongoles",
+    "anio": 1258,
+    "texto": "Sack of Baghdad: end of the Abbasid Caliphate."
+  },
+  {
+    "id": "mongoles-4",
+    "civilizacion": "mongoles",
+    "anio": 1271,
+    "texto": "Kublai Khan founds the Yuan dynasty."
+  },
+  {
+    "id": "mongoles-5",
+    "civilizacion": "mongoles",
+    "anio": 1347,
+    "texto": "The Black Death reaches Europe."
+  },
+  {
+    "id": "timuridos-1",
+    "civilizacion": "timuridos",
+    "anio": 1370,
+    "texto": "Tamerlane is crowned at Samarkand."
+  },
+  {
+    "id": "timuridos-2",
+    "civilizacion": "timuridos",
+    "anio": 1405,
+    "texto": "Conquest of Damascus."
+  },
+  {
+    "id": "timuridos-3",
+    "civilizacion": "timuridos",
+    "anio": 1453,
+    "texto": "Fall of Constantinople: Tamerlane turns south and marches on Damascus."
+  },
+  {
+    "id": "timuridos-4",
+    "civilizacion": "timuridos",
+    "anio": 1507,
+    "texto": "The Uzbek khans take Samarkand."
+  },
+  {
+    "id": "safavidas-1",
+    "civilizacion": "safavidas",
+    "anio": 1501,
+    "texto": "Ismail I founds the dynasty and declares Shi’ism the official religion."
+  },
+  {
+    "id": "safavidas-2",
+    "civilizacion": "safavidas",
+    "anio": 1598,
+    "texto": "Isfahan is chosen as the capital."
+  },
+  {
+    "id": "safavidas-3",
+    "civilizacion": "safavidas",
+    "anio": 1722,
+    "texto": "The Afghans sack Isfahan."
+  },
+  {
+    "id": "qajar-1",
+    "civilizacion": "qajar",
+    "anio": 1789,
+    "texto": "Agha Mohammad Khan founds the Qajar dynasty."
+  },
+  {
+    "id": "qajar-2",
+    "civilizacion": "qajar",
+    "anio": 1906,
+    "texto": "The Constitutional Revolution."
+  },
+  {
+    "id": "qajar-3",
+    "civilizacion": "qajar",
+    "anio": 1925,
+    "texto": "The dynasty is deposed by Reza Shah."
+  },
+  {
+    "id": "iran-pahlavi-1",
+    "civilizacion": "iran-pahlavi",
+    "anio": 1925,
+    "texto": "Reza Shah is crowned."
+  },
+  {
+    "id": "iran-pahlavi-2",
+    "civilizacion": "iran-pahlavi",
+    "anio": 1951,
+    "texto": "Nationalization of the oil by Mossadegh."
+  },
+  {
+    "id": "iran-pahlavi-3",
+    "civilizacion": "iran-pahlavi",
+    "anio": 1963,
+    "texto": "The White Revolution and the land reform."
+  },
+  {
+    "id": "iran-pahlavi-4",
+    "civilizacion": "iran-pahlavi",
+    "anio": 1979,
+    "texto": "The Islamic Revolution: the shah falls."
+  },
+  {
+    "id": "iran-islamico-1",
+    "civilizacion": "iran-islamico",
+    "anio": 1979,
+    "texto": "Victory of the revolution; the shah goes into exile."
+  },
+  {
+    "id": "iran-islamico-2",
+    "civilizacion": "iran-islamico",
+    "anio": 1980,
+    "texto": "War with Iraq: eight years of static war."
+  },
+  {
+    "id": "iran-islamico-3",
+    "civilizacion": "iran-islamico",
+    "anio": 2009,
+    "texto": "Protests of the Green Movement."
+  },
+  {
+    "id": "iran-islamico-4",
+    "civilizacion": "iran-islamico",
+    "anio": 2022,
+    "texto": "The “Death, death!” protests."
+  },
+  {
+    "id": "indus-1",
+    "civilizacion": "indus",
+    "anio": -3300,
+    "texto": "The first villages of Harappa and Mohenjo-daro."
+  },
+  {
+    "id": "indus-2",
+    "civilizacion": "indus",
+    "anio": -2600,
+    "texto": "High point of the urban culture."
+  },
+  {
+    "id": "indus-3",
+    "civilizacion": "indus",
+    "anio": -1900,
+    "texto": "Urban degradation and the decline of trade."
+  },
+  {
+    "id": "indus-4",
+    "civilizacion": "indus",
+    "anio": -1500,
+    "texto": "The Vedic culture begins."
+  },
+  {
+    "id": "veda-1",
+    "civilizacion": "veda",
+    "anio": -1500,
+    "texto": "The Aryans reach the subcontinent; the Vedic hymns are composed."
+  },
+  {
+    "id": "veda-2",
+    "civilizacion": "veda",
+    "anio": -1000,
+    "texto": "Classical Vedic ritual and the building of sacrificial altars."
+  },
+  {
+    "id": "veda-3",
+    "civilizacion": "veda",
+    "anio": -600,
+    "texto": "The Upanishads begin, along with the philosophical enquiry of the late Vedic period."
+  },
+  {
+    "id": "mauryas-1",
+    "civilizacion": "mauryas",
+    "anio": -543,
+    "texto": "Chandragupta Maurya founds the empire by overthrowing the Nanda dynasty."
+  },
+  {
+    "id": "mauryas-2",
+    "civilizacion": "mauryas",
+    "anio": -261,
+    "texto": "Ashoka ascends the throne."
+  },
+  {
+    "id": "mauryas-3",
+    "civilizacion": "mauryas",
+    "anio": -260,
+    "texto": "War against Kalinga: Ashoka’s turn to Buddhism."
+  },
+  {
+    "id": "mauryas-4",
+    "civilizacion": "mauryas",
+    "anio": -185,
+    "texto": "Fragmentation of the empire into regional kingdoms."
+  },
+  {
+    "id": "guptas-1",
+    "civilizacion": "guptas",
+    "anio": 320,
+    "texto": "Chandragupta I founds the Gupta dynasty."
+  },
+  {
+    "id": "guptas-2",
+    "civilizacion": "guptas",
+    "anio": 415,
+    "texto": "Faxian visits India and describes the Golden Age."
+  },
+  {
+    "id": "guptas-3",
+    "civilizacion": "guptas",
+    "anio": 476,
+    "texto": "End of the empire: the Huns enter India."
+  },
+  {
+    "id": "chola-1",
+    "civilizacion": "chola",
+    "anio": 898,
+    "texto": "Parantaka I takes the throne of Thanjavur."
+  },
+  {
+    "id": "chola-2",
+    "civilizacion": "chola",
+    "anio": 1025,
+    "texto": "Rajaraja I crowns his wife Rajendra as co-sovereign."
+  },
+  {
+    "id": "chola-3",
+    "civilizacion": "chola",
+    "anio": 1025,
+    "texto": "Naval campaign against Srivijaya."
+  },
+  {
+    "id": "chola-4",
+    "civilizacion": "chola",
+    "anio": 1279,
+    "texto": "The last Chola king falls to the Pandyas."
+  },
+  {
+    "id": "mogol-1",
+    "civilizacion": "mogol",
+    "anio": 1526,
+    "texto": "Babur defeats the Lodis at Panipat."
+  },
+  {
+    "id": "mogol-2",
+    "civilizacion": "mogol",
+    "anio": 1556,
+    "texto": "Akbar ascends the throne."
+  },
+  {
+    "id": "mogol-3",
+    "civilizacion": "mogol",
+    "anio": 1600,
+    "texto": "Aurangzeb ascends the throne: greatest territorial power."
+  },
+  {
+    "id": "mogol-4",
+    "civilizacion": "mogol",
+    "anio": 1707,
+    "texto": "Death of Aurangzeb: the crisis becomes general."
+  },
+  {
+    "id": "mogol-5",
+    "civilizacion": "mogol",
+    "anio": 1857,
+    "texto": "The Sepoy Rebellion: end of the empire."
+  },
+  {
+    "id": "hola-1",
+    "civilizacion": "hola",
+    "anio": 1858,
+    "texto": "The Crown takes control after the rebellion of 1857."
+  },
+  {
+    "id": "hola-2",
+    "civilizacion": "hola",
+    "anio": 1947,
+    "texto": "Independence and the partition of India and Pakistan."
+  },
+  {
+    "id": "hola-3",
+    "civilizacion": "hola",
+    "anio": 1974,
+    "texto": "The Pokhran nuclear test."
+  },
+  {
+    "id": "china-antigua-1",
+    "civilizacion": "china-antigua",
+    "anio": -2070,
+    "texto": "Traditional date for the rise of the Xia dynasty."
+  },
+  {
+    "id": "china-antigua-2",
+    "civilizacion": "china-antigua",
+    "anio": -1600,
+    "texto": "Shang: bone script and ritual bronze."
+  },
+  {
+    "id": "china-antigua-3",
+    "civilizacion": "china-antigua",
+    "anio": -1046,
+    "texto": "The Zhou dynasty deposes the Shang."
+  },
+  {
+    "id": "china-antigua-4",
+    "civilizacion": "china-antigua",
+    "anio": -771,
+    "texto": "Fall of the western Zhou capital."
+  },
+  {
+    "id": "qin-1",
+    "civilizacion": "qin",
+    "anio": -221,
+    "texto": "Ying Zheng unifies China and proclaims himself Qin Shi Huangdi."
+  },
+  {
+    "id": "qin-2",
+    "civilizacion": "qin",
+    "anio": -215,
+    "texto": "The unification of the Great Wall begins."
+  },
+  {
+    "id": "qin-3",
+    "civilizacion": "qin",
+    "anio": -210,
+    "texto": "Death of the first emperor."
+  },
+  {
+    "id": "qin-4",
+    "civilizacion": "qin",
+    "anio": -206,
+    "texto": "Liu Bang founds the Han dynasty."
+  },
+  {
+    "id": "han-1",
+    "civilizacion": "han",
+    "anio": -202,
+    "texto": "Liu Bang founds the Han dynasty."
+  },
+  {
+    "id": "han-2",
+    "civilizacion": "han",
+    "anio": -138,
+    "texto": "Zhang Qian travels to the West: the Silk Road is born."
+  },
+  {
+    "id": "han-3",
+    "civilizacion": "han",
+    "anio": 9,
+    "texto": "Wang Mang takes power: the Xin interlude."
+  },
+  {
+    "id": "han-4",
+    "civilizacion": "han",
+    "anio": 105,
+    "texto": "Cai Lun perfects paper."
+  },
+  {
+    "id": "han-5",
+    "civilizacion": "han",
+    "anio": 220,
+    "texto": "End of the dynasty: the Three Kingdoms period."
+  },
+  {
+    "id": "tang-1",
+    "civilizacion": "tang",
+    "anio": 618,
+    "texto": "Li Yuan founds the Tang dynasty."
+  },
+  {
+    "id": "tang-2",
+    "civilizacion": "tang",
+    "anio": 629,
+    "texto": "Xuanzang travels to India in search of Buddhist manuscripts."
+  },
+  {
+    "id": "tang-3",
+    "civilizacion": "tang",
+    "anio": 755,
+    "texto": "The An Lushan rebellion."
+  },
+  {
+    "id": "tang-4",
+    "civilizacion": "tang",
+    "anio": 907,
+    "texto": "Fall of the dynasty."
+  },
+  {
+    "id": "song-1",
+    "civilizacion": "song",
+    "anio": 960,
+    "texto": "Zhao Kuangyin founds the Northern Song."
+  },
+  {
+    "id": "song-2",
+    "civilizacion": "song",
+    "anio": 1040,
+    "texto": "Bi Sheng invents movable-type printing."
+  },
+  {
+    "id": "song-3",
+    "civilizacion": "song",
+    "anio": 1127,
+    "texto": "The Jin sack Kaifeng; the flight to the south."
+  },
+  {
+    "id": "song-4",
+    "civilizacion": "song",
+    "anio": 1279,
+    "texto": "The Mongols take the last Song resistance."
+  },
+  {
+    "id": "yuan-1",
+    "civilizacion": "yuan",
+    "anio": 1271,
+    "texto": "Kublai Khan proclaims the Yuan dynasty."
+  },
+  {
+    "id": "yuan-2",
+    "civilizacion": "yuan",
+    "anio": 1279,
+    "texto": "Final defeat of the Song."
+  },
+  {
+    "id": "yuan-3",
+    "civilizacion": "yuan",
+    "anio": 1345,
+    "texto": "The Black Death and the rebellions advance."
+  },
+  {
+    "id": "yuan-4",
+    "civilizacion": "yuan",
+    "anio": 1368,
+    "texto": "Zhu Yuanzhang expels the Mongols."
+  },
+  {
+    "id": "ming-1",
+    "civilizacion": "ming",
+    "anio": 1368,
+    "texto": "Zhu Yuanzhang founds the Ming dynasty."
+  },
+  {
+    "id": "ming-2",
+    "civilizacion": "ming",
+    "anio": 1405,
+    "texto": "Zheng He begins his ocean expeditions."
+  },
+  {
+    "id": "ming-3",
+    "civilizacion": "ming",
+    "anio": 1420,
+    "texto": "The Forbidden City is built."
+  },
+  {
+    "id": "ming-4",
+    "civilizacion": "ming",
+    "anio": 1644,
+    "texto": "The Manchus enter Beijing: the fall of the Ming."
+  },
+  {
+    "id": "qing-1",
+    "civilizacion": "qing",
+    "anio": 1644,
+    "texto": "The Qing enter Beijing."
+  },
+  {
+    "id": "qing-2",
+    "civilizacion": "qing",
+    "anio": 1736,
+    "texto": "Accession of Yongzheng: the height of the Qing period."
+  },
+  {
+    "id": "qing-3",
+    "civilizacion": "qing",
+    "anio": 1839,
+    "texto": "The Opium War with Britain."
+  },
+  {
+    "id": "qing-4",
+    "civilizacion": "qing",
+    "anio": 1911,
+    "texto": "The Xinhai Revolution: end of the dynasty."
+  },
+  {
+    "id": "china-republicana-1",
+    "civilizacion": "china-republicana",
+    "anio": 1912,
+    "texto": "Sun Yat-sen proclaims the Republic."
+  },
+  {
+    "id": "china-republicana-2",
+    "civilizacion": "china-republicana",
+    "anio": 1928,
+    "texto": "Chiang Kai-shek takes power after the Northern Expedition."
+  },
+  {
+    "id": "china-republicana-3",
+    "civilizacion": "china-republicana",
+    "anio": 1937,
+    "texto": "The Sino-Japanese War begins."
+  },
+  {
+    "id": "china-republicana-4",
+    "civilizacion": "china-republicana",
+    "anio": 1949,
+    "texto": "Proclamation of the People’s Republic of China."
+  },
+  {
+    "id": "china-popular-1",
+    "civilizacion": "china-popular",
+    "anio": 1949,
+    "texto": "Proclamation of the People’s Republic."
+  },
+  {
+    "id": "china-popular-2",
+    "civilizacion": "china-popular",
+    "anio": 1978,
+    "texto": "Deng Xiaoping’s reforms: the market economy."
+  },
+  {
+    "id": "china-popular-3",
+    "civilizacion": "china-popular",
+    "anio": 2001,
+    "texto": "Accession to the WTO."
+  },
+  {
+    "id": "china-popular-4",
+    "civilizacion": "china-popular",
+    "anio": 2020,
+    "texto": "The COVID-19 pandemic and its economic consequences."
+  },
+  {
+    "id": "corea-1",
+    "civilizacion": "corea",
+    "anio": 918,
+    "texto": "The Goryeo dynasty is founded."
+  },
+  {
+    "id": "corea-2",
+    "civilizacion": "corea",
+    "anio": 1234,
+    "texto": "The world’s first metal movable-type printing press."
+  },
+  {
+    "id": "corea-3",
+    "civilizacion": "corea",
+    "anio": 1392,
+    "texto": "Yi Seong-gye founds the Joseon."
+  },
+  {
+    "id": "corea-4",
+    "civilizacion": "corea",
+    "anio": 1592,
+    "texto": "Japanese invasion of Korea."
+  },
+  {
+    "id": "corea-5",
+    "civilizacion": "corea",
+    "anio": 1897,
+    "texto": "Japan installs the protectorate."
+  },
+  {
+    "id": "japon-1",
+    "civilizacion": "japon",
+    "anio": 1868,
+    "texto": "The Meiji Restoration: “the emperor returns to power”."
+  },
+  {
+    "id": "japon-2",
+    "civilizacion": "japon",
+    "anio": 1894,
+    "texto": "The Sino-Japanese War: Japan’s first great victory over China."
+  },
+  {
+    "id": "japon-3",
+    "civilizacion": "japon",
+    "anio": 1904,
+    "texto": "The Russo-Japanese War: the first victorious Asian great power."
+  },
+  {
+    "id": "japon-4",
+    "civilizacion": "japon",
+    "anio": 1941,
+    "texto": "The attack on Pearl Harbor."
+  },
+  {
+    "id": "japon-5",
+    "civilizacion": "japon",
+    "anio": 1945,
+    "texto": "Surrender: end of the Empire."
+  },
+  {
+    "id": "vietnam-1",
+    "civilizacion": "vietnam",
+    "anio": 939,
+    "texto": "Ngô Quyền expels the Chinese rulers from the north and founds the Ngô dynasty."
+  },
+  {
+    "id": "vietnam-2",
+    "civilizacion": "vietnam",
+    "anio": 1288,
+    "texto": "The Vietnamese defeat the Mongols at the Battle of Bạch Đằng."
+  },
+  {
+    "id": "vietnam-3",
+    "civilizacion": "vietnam",
+    "anio": 1428,
+    "texto": "Lê Lợi expels the Chinese: the Lê dynasty is born."
+  },
+  {
+    "id": "vietnam-4",
+    "civilizacion": "vietnam",
+    "anio": 1887,
+    "texto": "France establishes the protectorate."
+  },
+  {
+    "id": "angkor-1",
+    "civilizacion": "angkor",
+    "anio": 802,
+    "texto": "Jayavarman II founds the Javanese empire."
+  },
+  {
+    "id": "angkor-2",
+    "civilizacion": "angkor",
+    "anio": 1113,
+    "texto": "Surya Jayavarman II expands the dominion to the Mekong delta."
+  },
+  {
+    "id": "angkor-3",
+    "civilizacion": "angkor",
+    "anio": 1431,
+    "texto": "Angkor is abandoned."
+  },
+  {
+    "id": "kushanos-1",
+    "civilizacion": "kushanos",
+    "anio": 30,
+    "texto": "Kujula Kadphises founds the line in Gandhara."
+  },
+  {
+    "id": "kushanos-2",
+    "civilizacion": "kushanos",
+    "anio": 150,
+    "texto": "Kanishka dominates almost all of Central Asia."
+  },
+  {
+    "id": "kushanos-3",
+    "civilizacion": "kushanos",
+    "anio": 300,
+    "texto": "Sasanian pressure pushes them towards the north."
+  },
+  {
+    "id": "mali-1",
+    "civilizacion": "mali",
+    "anio": 1235,
+    "texto": "Sunjata Keita founds the empire after the battle of Kirina."
+  },
+  {
+    "id": "mali-2",
+    "civilizacion": "mali",
+    "anio": 1324,
+    "texto": "The pilgrimage of Mansa Musa to Mecca."
+  },
+  {
+    "id": "mali-3",
+    "civilizacion": "mali",
+    "anio": 1360,
+    "texto": "Foundation of Timbuktu as a trading centre."
+  },
+  {
+    "id": "mali-4",
+    "civilizacion": "mali",
+    "anio": 1591,
+    "texto": "Songhai invades and destroys the heart of Mali."
+  },
+  {
+    "id": "songhai-1",
+    "civilizacion": "songhai",
+    "anio": 1464,
+    "texto": "The Songhai dynasty takes control of Gao."
+  },
+  {
+    "id": "songhai-2",
+    "civilizacion": "songhai",
+    "anio": 1493,
+    "texto": "Askia Mohamed is crowned."
+  },
+  {
+    "id": "songhai-3",
+    "civilizacion": "songhai",
+    "anio": 1591,
+    "texto": "Defeat at Tondibi before the forces of the rais of Fez."
+  },
+  {
+    "id": "kanem-1",
+    "civilizacion": "kanem",
+    "anio": 700,
+    "texto": "Foundation of the kingdom of Kanem."
+  },
+  {
+    "id": "kanem-2",
+    "civilizacion": "kanem",
+    "anio": 1220,
+    "texto": "The Sayfawa dynasty reaches its zenith."
+  },
+  {
+    "id": "kanem-3",
+    "civilizacion": "kanem",
+    "anio": 1380,
+    "texto": "Foundation of Bornu on Lake Chad."
+  },
+  {
+    "id": "kanem-4",
+    "civilizacion": "kanem",
+    "anio": 1600,
+    "texto": "Kanem-Bornu fragments."
+  },
+  {
+    "id": "ashanti-1",
+    "civilizacion": "ashanti",
+    "anio": 1701,
+    "texto": "Osei Tutu unifies the Asante."
+  },
+  {
+    "id": "ashanti-2",
+    "civilizacion": "ashanti",
+    "anio": 1824,
+    "texto": "The first Anglo-Ashanti war."
+  },
+  {
+    "id": "ashanti-3",
+    "civilizacion": "ashanti",
+    "anio": 1902,
+    "texto": "The Gold Coast becomes a British colony."
+  },
+  {
+    "id": "buganda-1",
+    "civilizacion": "buganda",
+    "anio": 1300,
+    "texto": "The kingdom of Buganda is formed."
+  },
+  {
+    "id": "buganda-2",
+    "civilizacion": "buganda",
+    "anio": 1666,
+    "texto": "Kabaka Mutesa I opens the kingdom to European contacts."
+  },
+  {
+    "id": "buganda-3",
+    "civilizacion": "buganda",
+    "anio": 1896,
+    "texto": "The great Kabaka war: end of the kingdom."
+  },
+  {
+    "id": "zulu-1",
+    "civilizacion": "zulu",
+    "anio": 1816,
+    "texto": "Shaka Zulu becomes king."
+  },
+  {
+    "id": "zulu-2",
+    "civilizacion": "zulu",
+    "anio": 1828,
+    "texto": "The Mfecane: the migrations and wars in southern Africa."
+  },
+  {
+    "id": "zulu-3",
+    "civilizacion": "zulu",
+    "anio": 1879,
+    "texto": "The Anglo-Zulu War: Isandlwana and Ulundi."
+  },
+  {
+    "id": "zulu-4",
+    "civilizacion": "zulu",
+    "anio": 1897,
+    "texto": "Zululand becomes a colony."
+  },
+  {
+    "id": "merina-1",
+    "civilizacion": "merina",
+    "anio": 1794,
+    "texto": "Andrianampoinimerina unites the Merina clans."
+  },
+  {
+    "id": "merina-2",
+    "civilizacion": "merina",
+    "anio": 1828,
+    "texto": "Foundation of Antananarivo."
+  },
+  {
+    "id": "merina-3",
+    "civilizacion": "merina",
+    "anio": 1896,
+    "texto": "France annexes Madagascar."
+  },
+  {
+    "id": "etiopia-1",
+    "civilizacion": "etiopia",
+    "anio": 1270,
+    "texto": "The Solomonic dynasty is restored."
+  },
+  {
+    "id": "etiopia-2",
+    "civilizacion": "etiopia",
+    "anio": 1896,
+    "texto": "Adwa: the Ethiopians defeat Italy."
+  },
+  {
+    "id": "etiopia-3",
+    "civilizacion": "etiopia",
+    "anio": 1936,
+    "texto": "Italy occupies Ethiopia."
+  },
+  {
+    "id": "etiopia-4",
+    "civilizacion": "etiopia",
+    "anio": 1974,
+    "texto": "The Derg deposes the imperial shah."
+  },
+  {
+    "id": "olmecas-1",
+    "civilizacion": "olmecas",
+    "anio": -1500,
+    "texto": "San Lorenzo becomes the Olmec ceremonial centre."
+  },
+  {
+    "id": "olmecas-2",
+    "civilizacion": "olmecas",
+    "anio": -900,
+    "texto": "The first colossi of La Venta are erected."
+  },
+  {
+    "id": "olmecas-3",
+    "civilizacion": "olmecas",
+    "anio": -400,
+    "texto": "Collapse of the Olmec culture."
+  },
+  {
+    "id": "zapotecos-1",
+    "civilizacion": "zapotecos",
+    "anio": -500,
+    "texto": "Foundation of Monte Albán."
+  },
+  {
+    "id": "zapotecos-2",
+    "civilizacion": "zapotecos",
+    "anio": 300,
+    "texto": "Monte Albán reaches its height as a regional capital."
+  },
+  {
+    "id": "zapotecos-3",
+    "civilizacion": "zapotecos",
+    "anio": 700,
+    "texto": "Mixtec dominance begins."
+  },
+  {
+    "id": "teotihuacan-1",
+    "civilizacion": "teotihuacan",
+    "anio": 100,
+    "texto": "The settlement of Teotihuacán is founded."
+  },
+  {
+    "id": "teotihuacan-2",
+    "civilizacion": "teotihuacan",
+    "anio": 200,
+    "texto": "The building of the Pyramid of the Sun begins."
+  },
+  {
+    "id": "teotihuacan-3",
+    "civilizacion": "teotihuacan",
+    "anio": 450,
+    "texto": "The height of Teotihuacán: some 125,000 inhabitants."
+  },
+  {
+    "id": "teotihuacan-4",
+    "civilizacion": "teotihuacan",
+    "anio": 535,
+    "texto": "Fire and sack: the city burns."
+  },
+  {
+    "id": "mayas-1",
+    "civilizacion": "mayas",
+    "anio": 200,
+    "texto": "The Maya Classic period begins."
+  },
+  {
+    "id": "mayas-2",
+    "civilizacion": "mayas",
+    "anio": 426,
+    "texto": "The Tikal stela: the oldest one securely dated."
+  },
+  {
+    "id": "mayas-3",
+    "civilizacion": "mayas",
+    "anio": 562,
+    "texto": "The Tiwanaku Stone marks the contacts between regions."
+  },
+  {
+    "id": "mayas-4",
+    "civilizacion": "mayas",
+    "anio": 750,
+    "texto": "The Dos Pilas war exhausts Tikal and Calakmul."
+  },
+  {
+    "id": "mayas-5",
+    "civilizacion": "mayas",
+    "anio": 900,
+    "texto": "Abandonment of the southern cities: end of the Classic period."
+  },
+  {
+    "id": "toltecas-1",
+    "civilizacion": "toltecas",
+    "anio": 900,
+    "texto": "Tula is founded."
+  },
+  {
+    "id": "toltecas-2",
+    "civilizacion": "toltecas",
+    "anio": 1000,
+    "texto": "The height of Tula: the Toltec capital."
+  },
+  {
+    "id": "toltecas-3",
+    "civilizacion": "toltecas",
+    "anio": 1150,
+    "texto": "The Chichimecs destroy Tula."
+  },
+  {
+    "id": "mexica-1",
+    "civilizacion": "mexica",
+    "anio": 1428,
+    "texto": "In Tenochtitlan, Moctezuma I founds the Triple Alliance."
+  },
+  {
+    "id": "mexica-2",
+    "civilizacion": "mexica",
+    "anio": 1519,
+    "texto": "Cortés lands at Veracruz."
+  },
+  {
+    "id": "mexica-3",
+    "civilizacion": "mexica",
+    "anio": 1520,
+    "texto": "The Battle of Otumba."
+  },
+  {
+    "id": "mexica-4",
+    "civilizacion": "mexica",
+    "anio": 1521,
+    "texto": "Fall of Tenochtitlan."
+  },
+  {
+    "id": "taino-1",
+    "civilizacion": "taino",
+    "anio": 1200,
+    "texto": "Taíno expansion across the Antilles."
+  },
+  {
+    "id": "taino-2",
+    "civilizacion": "taino",
+    "anio": 1492,
+    "texto": "First contact with Columbus."
+  },
+  {
+    "id": "taino-3",
+    "civilizacion": "taino",
+    "anio": 1502,
+    "texto": "The last independent Taíno cacique is captured."
+  },
+  {
+    "id": "muisca-1",
+    "civilizacion": "muisca",
+    "anio": 800,
+    "texto": "The Muisca ascendancy begins."
+  },
+  {
+    "id": "muisca-2",
+    "civilizacion": "muisca",
+    "anio": 1460,
+    "texto": "Foundation of Tundunavá."
+  },
+  {
+    "id": "muisca-3",
+    "civilizacion": "muisca",
+    "anio": 1537,
+    "texto": "The conqueror Quesada enters Tundunavá."
+  },
+  {
+    "id": "chavin-1",
+    "civilizacion": "chavin",
+    "anio": -900,
+    "texto": "The Chavín expansion begins."
+  },
+  {
+    "id": "chavin-2",
+    "civilizacion": "chavin",
+    "anio": -400,
+    "texto": "The focus of the culture shifts to the coast."
+  },
+  {
+    "id": "tiwanaku-1",
+    "civilizacion": "tiwanaku",
+    "anio": -550,
+    "texto": "Tiwanaku is founded."
+  },
+  {
+    "id": "tiwanaku-2",
+    "civilizacion": "tiwanaku",
+    "anio": 600,
+    "texto": "The height of Tiwanaku: control of the core of the Altiplano."
+  },
+  {
+    "id": "tiwanaku-3",
+    "civilizacion": "tiwanaku",
+    "anio": 1000,
+    "texto": "The collapse of the Altiplano."
+  },
+  {
+    "id": "inca-1",
+    "civilizacion": "inca",
+    "anio": 1438,
+    "texto": "Pachacútec founds the empire after the battle of Cusquispan."
+  },
+  {
+    "id": "inca-2",
+    "civilizacion": "inca",
+    "anio": 1493,
+    "texto": "Quito is occupied."
+  },
+  {
+    "id": "inca-3",
+    "civilizacion": "inca",
+    "anio": 1532,
+    "texto": "Pizarro kidnaps Atahualpa."
+  },
+  {
+    "id": "inca-4",
+    "civilizacion": "inca",
+    "anio": 1533,
+    "texto": "Fall of Cajamarca: end of the Tahuantinsuyo."
+  },
+  {
+    "id": "tairona-1",
+    "civilizacion": "tairona",
+    "anio": 800,
+    "texto": "The Tairona rise in the Sierra Nevada."
+  },
+  {
+    "id": "tairona-2",
+    "civilizacion": "tairona",
+    "anio": 1400,
+    "texto": "The height of the circular villages."
+  },
+  {
+    "id": "tairona-3",
+    "civilizacion": "tairona",
+    "anio": 1600,
+    "texto": "The Tairona peoples almost disappear."
+  },
+  {
+    "id": "mississipi-1",
+    "civilizacion": "mississipi",
+    "anio": 800,
+    "texto": "The mound-builder culture begins."
+  },
+  {
+    "id": "mississipi-2",
+    "civilizacion": "mississipi",
+    "anio": 1200,
+    "texto": "Cahokia reaches its height."
+  },
+  {
+    "id": "mississipi-3",
+    "civilizacion": "mississipi",
+    "anio": 1350,
+    "texto": "Cahokia is abandoned."
+  },
+  {
+    "id": "comanche-1",
+    "civilizacion": "comanche",
+    "anio": 1700,
+    "texto": "The horse and firearms transform the plains."
+  },
+  {
+    "id": "comanche-2",
+    "civilizacion": "comanche",
+    "anio": 1834,
+    "texto": "The Comanches replicate the strategy of Texas and the control of the “Comanche Moon”."
+  },
+  {
+    "id": "comanche-3",
+    "civilizacion": "comanche",
+    "anio": 1875,
+    "texto": "The Comanche reservation is established in Oklahoma."
+  },
+  {
+    "id": "anasazi-1",
+    "civilizacion": "anasazi",
+    "anio": 500,
+    "texto": "Development of the mesa stone villages."
+  },
+  {
+    "id": "anasazi-2",
+    "civilizacion": "anasazi",
+    "anio": 900,
+    "texto": "The height of Cliff Palace and the great pueblos."
+  },
+  {
+    "id": "anasazi-3",
+    "civilizacion": "anasazi",
+    "anio": 1300,
+    "texto": "General abandonment of the villages."
+  },
+  {
+    "id": "holanda-1",
+    "civilizacion": "holanda",
+    "anio": 1581,
+    "texto": "The Act of Abjuration: the Republic is born."
+  },
+  {
+    "id": "holanda-2",
+    "civilizacion": "holanda",
+    "anio": 1602,
+    "texto": "The VOC is founded, the largest company in history up to that time."
+  },
+  {
+    "id": "holanda-3",
+    "civilizacion": "holanda",
+    "anio": 1602,
+    "texto": "Foundation of the Amsterdam Stock Exchange."
+  },
+  {
+    "id": "holanda-4",
+    "civilizacion": "holanda",
+    "anio": 1652,
+    "texto": "The Cape Colony in Dutch hands."
+  },
+  {
+    "id": "holanda-5",
+    "civilizacion": "holanda",
+    "anio": 1795,
+    "texto": "Napoleon occupies the Netherlands."
+  },
+  {
+    "id": "espana-1",
+    "civilizacion": "espana",
+    "anio": 1492,
+    "texto": "Columbus’s first voyage; the fall of Granada."
+  },
+  {
+    "id": "espana-2",
+    "civilizacion": "espana",
+    "anio": 1519,
+    "texto": "Hernán Cortés conquers Tenochtitlan."
+  },
+  {
+    "id": "espana-3",
+    "civilizacion": "espana",
+    "anio": 1588,
+    "texto": "The defeat of the Invincible Armada."
+  },
+  {
+    "id": "espana-4",
+    "civilizacion": "espana",
+    "anio": 1600,
+    "texto": "Treaty of London: Portugal and Spain divide the world."
+  },
+  {
+    "id": "espana-5",
+    "civilizacion": "espana",
+    "anio": 1898,
+    "texto": "The Spanish-American War: end of the empire."
+  },
+  {
+    "id": "portugal-1",
+    "civilizacion": "portugal",
+    "anio": 1415,
+    "texto": "Conquest of Ceuta: the expansion begins."
+  },
+  {
+    "id": "portugal-2",
+    "civilizacion": "portugal",
+    "anio": 1498,
+    "texto": "Vasco da Gama reaches Calicut."
+  },
+  {
+    "id": "portugal-3",
+    "civilizacion": "portugal",
+    "anio": 1510,
+    "texto": "Conquest of Goa."
+  },
+  {
+    "id": "portugal-4",
+    "civilizacion": "portugal",
+    "anio": 1511,
+    "texto": "Conquest of Malacca."
+  },
+  {
+    "id": "portugal-5",
+    "civilizacion": "portugal",
+    "anio": 1999,
+    "texto": "End of Portuguese sovereignty in East Timor."
+  },
+  {
+    "id": "britania-1",
+    "civilizacion": "britania",
+    "anio": 1583,
+    "texto": "Elizabeth I proclaims sovereignty over the seas by which the country is divided."
+  },
+  {
+    "id": "britania-2",
+    "civilizacion": "britania",
+    "anio": 1607,
+    "texto": "The first colonies in Virginia."
+  },
+  {
+    "id": "britania-3",
+    "civilizacion": "britania",
+    "anio": 1763,
+    "texto": "End of the Seven Years’ War: the “empire on which the sun never set” is born."
+  },
+  {
+    "id": "britania-4",
+    "civilizacion": "britania",
+    "anio": 1857,
+    "texto": "The Sepoy Rebellion in India."
+  },
+  {
+    "id": "britania-5",
+    "civilizacion": "britania",
+    "anio": 1885,
+    "texto": "The Berlin Conference: the partition of Africa."
+  },
+  {
+    "id": "britania-6",
+    "civilizacion": "britania",
+    "anio": 1947,
+    "texto": "Independence of India."
+  },
+  {
+    "id": "britania-7",
+    "civilizacion": "britania",
+    "anio": 1997,
+    "texto": "The handover of Hong Kong: end of the empire."
+  },
+  {
+    "id": "reino-unido-1",
+    "civilizacion": "reino-unido",
+    "anio": 1707,
+    "texto": "The Act of Union: Great Britain is born."
+  },
+  {
+    "id": "reino-unido-2",
+    "civilizacion": "reino-unido",
+    "anio": 1801,
+    "texto": "Union with Ireland."
+  },
+  {
+    "id": "reino-unido-3",
+    "civilizacion": "reino-unido",
+    "anio": 1922,
+    "texto": "The Irish Free State is created."
+  },
+  {
+    "id": "reino-unido-4",
+    "civilizacion": "reino-unido",
+    "anio": 1947,
+    "texto": "Loss of India: the greatness of the empire breaks."
+  },
+  {
+    "id": "rusia-1",
+    "civilizacion": "rusia",
+    "anio": 1721,
+    "texto": "Peter the Great proclaims himself emperor."
+  },
+  {
+    "id": "rusia-2",
+    "civilizacion": "rusia",
+    "anio": 1812,
+    "texto": "Napoleon’s invasion: the burning of Moscow."
+  },
+  {
+    "id": "rusia-3",
+    "civilizacion": "rusia",
+    "anio": 1861,
+    "texto": "The emancipation of the serfs."
+  },
+  {
+    "id": "rusia-4",
+    "civilizacion": "rusia",
+    "anio": 1905,
+    "texto": "The Revolution of 1905."
+  },
+  {
+    "id": "rusia-5",
+    "civilizacion": "rusia",
+    "anio": 1917,
+    "texto": "The October Revolution: Nicholas II abdicates."
+  },
+  {
+    "id": "rus-kiev-1",
+    "civilizacion": "rus-kiev",
+    "anio": 862,
+    "texto": "The Vikings Askold and Dir found Novgorod."
+  },
+  {
+    "id": "rus-kiev-2",
+    "civilizacion": "rus-kiev",
+    "anio": 988,
+    "texto": "The baptism of Rus by Vladimir the Great."
+  },
+  {
+    "id": "rus-kiev-3",
+    "civilizacion": "rus-kiev",
+    "anio": 1240,
+    "texto": "Fall of Kiev before the Tartars."
+  },
+  {
+    "id": "napoleon-1",
+    "civilizacion": "napoleon",
+    "anio": 1799,
+    "texto": "The coup of 18 Brumaire."
+  },
+  {
+    "id": "napoleon-2",
+    "civilizacion": "napoleon",
+    "anio": 1804,
+    "texto": "Imperial coronation: the Napoleonic Code is born."
+  },
+  {
+    "id": "napoleon-3",
+    "civilizacion": "napoleon",
+    "anio": 1805,
+    "texto": "The Battle of Austerlitz: his greatest victory."
+  },
+  {
+    "id": "napoleon-4",
+    "civilizacion": "napoleon",
+    "anio": 1812,
+    "texto": "The invasion of Russia."
+  },
+  {
+    "id": "napoleon-5",
+    "civilizacion": "napoleon",
+    "anio": 1815,
+    "texto": "Waterloo: exile to Saint Helena."
+  },
+  {
+    "id": "austria-1",
+    "civilizacion": "austria",
+    "anio": 1804,
+    "texto": "Francis II proclaims himself Emperor of Austria."
+  },
+  {
+    "id": "austria-2",
+    "civilizacion": "austria",
+    "anio": 1815,
+    "texto": "The Congress of Vienna: the redrawing of Europe."
+  },
+  {
+    "id": "austria-3",
+    "civilizacion": "austria",
+    "anio": 1848,
+    "texto": "The revolutions of 1848."
+  },
+  {
+    "id": "austria-4",
+    "civilizacion": "austria",
+    "anio": 1867,
+    "texto": "The Austro-Hungarian compromise."
+  },
+  {
+    "id": "austrohungria-1",
+    "civilizacion": "austrohungria",
+    "anio": 1867,
+    "texto": "The Austro-Hungarian compromise: the Dual Monarchy is born."
+  },
+  {
+    "id": "austrohungria-2",
+    "civilizacion": "austrohungria",
+    "anio": 1883,
+    "texto": "The Triple Alliance with Germany and Italy."
+  },
+  {
+    "id": "austrohungria-3",
+    "civilizacion": "austrohungria",
+    "anio": 1914,
+    "texto": "The assassination of Franz Ferdinand in Sarajevo."
+  },
+  {
+    "id": "austrohungria-4",
+    "civilizacion": "austrohungria",
+    "anio": 1918,
+    "texto": "Dissolution of the empire after the war."
+  },
+  {
+    "id": "alemania-1",
+    "civilizacion": "alemania",
+    "anio": 1871,
+    "texto": "Proclamation of the Empire at Versailles."
+  },
+  {
+    "id": "alemania-2",
+    "civilizacion": "alemania",
+    "anio": 1889,
+    "texto": "Kaiser Wilhelm II."
+  },
+  {
+    "id": "alemania-3",
+    "civilizacion": "alemania",
+    "anio": 1914,
+    "texto": "Declaration of war on Russia and France."
+  },
+  {
+    "id": "alemania-4",
+    "civilizacion": "alemania",
+    "anio": 1918,
+    "texto": "The November Revolution: end of the Empire."
+  },
+  {
+    "id": "tercerreich-1",
+    "civilizacion": "tercerreich",
+    "anio": 1933,
+    "texto": "Hitler comes to power; the Nuremberg Laws."
+  },
+  {
+    "id": "tercerreich-2",
+    "civilizacion": "tercerreich",
+    "anio": 1939,
+    "texto": "Invasion of Poland: the war begins."
+  },
+  {
+    "id": "tercerreich-3",
+    "civilizacion": "tercerreich",
+    "anio": 1941,
+    "texto": "Operation Barbarossa."
+  },
+  {
+    "id": "tercerreich-4",
+    "civilizacion": "tercerreich",
+    "anio": 1942,
+    "texto": "Stalingrad: the turning point."
+  },
+  {
+    "id": "tercerreich-5",
+    "civilizacion": "tercerreich",
+    "anio": 1945,
+    "texto": "Unconditional surrender of Germany."
+  },
+  {
+    "id": "sovietica-1",
+    "civilizacion": "sovietica",
+    "anio": 1922,
+    "texto": "The USSR is formed."
+  },
+  {
+    "id": "sovietica-2",
+    "civilizacion": "sovietica",
+    "anio": 1929,
+    "texto": "First five-year plan: collectivization."
+  },
+  {
+    "id": "sovietica-3",
+    "civilizacion": "sovietica",
+    "anio": 1941,
+    "texto": "The Nazi invasion: the Great Patriotic War."
+  },
+  {
+    "id": "sovietica-4",
+    "civilizacion": "sovietica",
+    "anio": 1945,
+    "texto": "Victory in Berlin."
+  },
+  {
+    "id": "sovietica-5",
+    "civilizacion": "sovietica",
+    "anio": 1957,
+    "texto": "Sputnik: the first satellite."
+  },
+  {
+    "id": "sovietica-6",
+    "civilizacion": "sovietica",
+    "anio": 1989,
+    "texto": "Fall of the Berlin Wall."
+  },
+  {
+    "id": "sovietica-7",
+    "civilizacion": "sovietica",
+    "anio": 1991,
+    "texto": "Dissolution of the Union."
+  },
+  {
+    "id": "estados-unidos-1",
+    "civilizacion": "estados-unidos",
+    "anio": 1776,
+    "texto": "The Declaration of Independence."
+  },
+  {
+    "id": "estados-unidos-2",
+    "civilizacion": "estados-unidos",
+    "anio": 1787,
+    "texto": "The Constitution: the Republic is born."
+  },
+  {
+    "id": "estados-unidos-3",
+    "civilizacion": "estados-unidos",
+    "anio": 1865,
+    "texto": "End of the Civil War and of slavery."
+  },
+  {
+    "id": "estados-unidos-4",
+    "civilizacion": "estados-unidos",
+    "anio": 1917,
+    "texto": "Entry into the First World War."
+  },
+  {
+    "id": "estados-unidos-5",
+    "civilizacion": "estados-unidos",
+    "anio": 1945,
+    "texto": "End of the Second World War: hegemony."
+  },
+  {
+    "id": "estados-unidos-6",
+    "civilizacion": "estados-unidos",
+    "anio": 1989,
+    "texto": "Fall of the Berlin Wall: end of the Cold War."
+  },
+  {
+    "id": "estados-unidos-7",
+    "civilizacion": "estados-unidos",
+    "anio": 2008,
+    "texto": "The global financial crisis."
+  },
+  {
+    "id": "imperio-brasileno-1",
+    "civilizacion": "imperio-brasileno",
+    "anio": 1822,
+    "texto": "Independence of Brazil."
+  },
+  {
+    "id": "imperio-brasileno-2",
+    "civilizacion": "imperio-brasileno",
+    "anio": 1826,
+    "texto": "Coronation of Pedro I."
+  },
+  {
+    "id": "imperio-brasileno-3",
+    "civilizacion": "imperio-brasileno",
+    "anio": 1870,
+    "texto": "End of the Paraguayan War."
+  },
+  {
+    "id": "imperio-brasileno-4",
+    "civilizacion": "imperio-brasileno",
+    "anio": 1888,
+    "texto": "Abolition of slavery; a year later the monarchy falls."
+  },
+  {
+    "id": "segundo-imperio-mexicano-1",
+    "civilizacion": "segundo-imperio-mexicano",
+    "anio": 1864,
+    "texto": "Maximilian is proclaimed emperor."
+  },
+  {
+    "id": "segundo-imperio-mexicano-2",
+    "civilizacion": "segundo-imperio-mexicano",
+    "anio": 1866,
+    "texto": "The French Intervention begins."
+  },
+  {
+    "id": "segundo-imperio-mexicano-3",
+    "civilizacion": "segundo-imperio-mexicano",
+    "anio": 1867,
+    "texto": "Juárez takes Puebla; Maximilian is executed."
+  },
+  {
+    "id": "mali-moderno-1",
+    "civilizacion": "mali-moderno",
+    "anio": 1960,
+    "texto": "Independence of Mali and Mauritania."
+  },
+  {
+    "id": "mali-moderno-2",
+    "civilizacion": "mali-moderno",
+    "anio": 2020,
+    "texto": "Coup d’état and suspension of the ECOWAS."
+  },
+  {
+    "id": "navajo-1",
+    "civilizacion": "navajo",
+    "anio": 1650,
+    "texto": "The Navajo enter the Colorado Plateau."
+  },
+  {
+    "id": "navajo-2",
+    "civilizacion": "navajo",
+    "anio": 1864,
+    "texto": "The Ten Tribes’ force against New Mexico."
+  },
+  {
+    "id": "navajo-3",
+    "civilizacion": "navajo",
+    "anio": 1868,
+    "texto": "The Bosque Redondo treaty: internment and dispersal."
+  },
+  {
+    "id": "navajo-4",
+    "civilizacion": "navajo",
+    "anio": 1974,
+    "texto": "Foundation of the Navajo Nation."
+  },
+  {
+    "id": "tarahumara-1",
+    "civilizacion": "tarahumara",
+    "anio": 1500,
+    "texto": "Formation of the Rarámuri villages."
+  },
+  {
+    "id": "tarahumara-2",
+    "civilizacion": "tarahumara",
+    "anio": 1750,
+    "texto": "The height of Rarámuri culture."
+  },
+  {
+    "id": "tarahumara-3",
+    "civilizacion": "tarahumara",
+    "anio": 1900,
+    "texto": "The mines break the isolation of the sierra."
+  },
+  {
+    "id": "aborigenes-1",
+    "civilizacion": "aborigenes",
+    "anio": -45000,
+    "texto": "Arrival on the continent of Sahul."
+  },
+  {
+    "id": "aborigenes-2",
+    "civilizacion": "aborigenes",
+    "anio": -22000,
+    "texto": "Painting in the caves of Tjandrawidya."
+  },
+  {
+    "id": "aborigenes-3",
+    "civilizacion": "aborigenes",
+    "anio": 1788,
+    "texto": "The colonization of Port Jackson."
+  },
+  {
+    "id": "aborigenes-4",
+    "civilizacion": "aborigenes",
+    "anio": 1967,
+    "texto": "Referendum: the Aboriginal people are citizens."
+  },
+  {
+    "id": "kamilaroi-1",
+    "civilizacion": "kamilaroi",
+    "anio": 1500,
+    "texto": "The expansion of the Kamilaroi across the interior."
+  },
+  {
+    "id": "kamilaroi-2",
+    "civilizacion": "kamilaroi",
+    "anio": 1750,
+    "texto": "The height of the road networks."
+  },
+  {
+    "id": "kamilaroi-3",
+    "civilizacion": "kamilaroi",
+    "anio": 1885,
+    "texto": "Settlement of the western zone."
+  },
+  {
+    "id": "tiwi-1",
+    "civilizacion": "tiwi",
+    "anio": 1500,
+    "texto": "Settlement of the Tiwi Islands."
+  },
+  {
+    "id": "tiwi-2",
+    "civilizacion": "tiwi",
+    "anio": 1700,
+    "texto": "The ceremonial height."
+  },
+  {
+    "id": "tiwi-3",
+    "civilizacion": "tiwi",
+    "anio": 1911,
+    "texto": "Transfer of the islands to Australia."
+  },
+  {
+    "id": "san-1",
+    "civilizacion": "san",
+    "anio": -20000,
+    "texto": "The spread of hunter-gatherer culture."
+  },
+  {
+    "id": "san-2",
+    "civilizacion": "san",
+    "anio": -8000,
+    "texto": "The rock paintings of Tsodilo."
+  },
+  {
+    "id": "san-3",
+    "civilizacion": "san",
+    "anio": 1880,
+    "texto": "The conquest of the Cape Colony."
+  },
+  {
+    "id": "khoi-1",
+    "civilizacion": "khoi",
+    "anio": -2000,
+    "texto": "The herding of livestock in southern Africa."
+  },
+  {
+    "id": "khoi-2",
+    "civilizacion": "khoi",
+    "anio": 1500,
+    "texto": "The expansion of the Khoikhoi."
+  },
+  {
+    "id": "khoi-3",
+    "civilizacion": "khoi",
+    "anio": 1652,
+    "texto": "The Dutch colonists arrive."
+  },
+  {
+    "id": "khoi-4",
+    "civilizacion": "khoi",
+    "anio": 1795,
+    "texto": "The roads of the Cape frontier."
+  },
+  {
+    "id": "berberes-1",
+    "civilizacion": "berberes",
+    "anio": -10000,
+    "texto": "Settlement of the Atlas."
+  },
+  {
+    "id": "berberes-2",
+    "civilizacion": "berberes",
+    "anio": -400,
+    "texto": "The kingdom of Numidia."
+  },
+  {
+    "id": "berberes-3",
+    "civilizacion": "berberes",
+    "anio": 1050,
+    "texto": "Foundation of the Zenata kingdom of Kairouan."
+  },
+  {
+    "id": "berberes-4",
+    "civilizacion": "berberes",
+    "anio": 1500,
+    "texto": "Fall of the kingdom of Tlemcen."
+  },
+  {
+    "id": "tuareg-1",
+    "civilizacion": "tuareg",
+    "anio": 500,
+    "texto": "Formation of the Tuareg confederations."
+  },
+  {
+    "id": "tuareg-2",
+    "civilizacion": "tuareg",
+    "anio": 1200,
+    "texto": "The height of trans-Saharan trade."
+  },
+  {
+    "id": "tuareg-3",
+    "civilizacion": "tuareg",
+    "anio": 1900,
+    "texto": "Resistance in the Ar."
+  },
+  {
+    "id": "tuareg-4",
+    "civilizacion": "tuareg",
+    "anio": 1940,
+    "texto": "End of the Fezzan rebellion."
+  },
+  {
+    "id": "fulani-1",
+    "civilizacion": "fulani",
+    "anio": 1000,
+    "texto": "Fulani expansion across the western Sahel."
+  },
+  {
+    "id": "fulani-2",
+    "civilizacion": "fulani",
+    "anio": 1600,
+    "texto": "Foundation of the Sokoto empire."
+  },
+  {
+    "id": "fulani-3",
+    "civilizacion": "fulani",
+    "anio": 1900,
+    "texto": "The French conquest."
+  },
+  {
+    "id": "hausa-1",
+    "civilizacion": "hausa",
+    "anio": 1000,
+    "texto": "Formation of the first Hausa principalities."
+  },
+  {
+    "id": "hausa-2",
+    "civilizacion": "hausa",
+    "anio": 1400,
+    "texto": "The greatness of Kano."
+  },
+  {
+    "id": "hausa-3",
+    "civilizacion": "hausa",
+    "anio": 1804,
+    "texto": "The beginning of the conquest of Sokoto."
+  },
+  {
+    "id": "hausa-4",
+    "civilizacion": "hausa",
+    "anio": 1914,
+    "texto": "The Anglo-French colonial partition."
+  },
+  {
+    "id": "yoruba-1",
+    "civilizacion": "yoruba",
+    "anio": 1200,
+    "texto": "Formation of the Yoruba kingdoms."
+  },
+  {
+    "id": "yoruba-2",
+    "civilizacion": "yoruba",
+    "anio": 1600,
+    "texto": "The height of Oyo."
+  },
+  {
+    "id": "yoruba-3",
+    "civilizacion": "yoruba",
+    "anio": 1820,
+    "texto": "Civil war in Oyo."
+  },
+  {
+    "id": "yoruba-4",
+    "civilizacion": "yoruba",
+    "anio": 1896,
+    "texto": "The British conquest."
+  },
+  {
+    "id": "igbo-1",
+    "civilizacion": "igbo",
+    "anio": 1000,
+    "texto": "Formation of the Igbo villages."
+  },
+  {
+    "id": "igbo-2",
+    "civilizacion": "igbo",
+    "anio": 1400,
+    "texto": "Nri and the art of Ikenga."
+  },
+  {
+    "id": "igbo-3",
+    "civilizacion": "igbo",
+    "anio": 1967,
+    "texto": "The Biafran War."
+  },
+  {
+    "id": "fon-1",
+    "civilizacion": "fon",
+    "anio": 1600,
+    "texto": "Foundation of the kingdom of Abomey."
+  },
+  {
+    "id": "fon-2",
+    "civilizacion": "fon",
+    "anio": 1720,
+    "texto": "The kingdom of Danxome reaches its zenith."
+  },
+  {
+    "id": "fon-3",
+    "civilizacion": "fon",
+    "anio": 1890,
+    "texto": "The resistance of Behanzin."
+  },
+  {
+    "id": "swahili-1",
+    "civilizacion": "swahili",
+    "anio": 1000,
+    "texto": "Foundation of the Swahili cities."
+  },
+  {
+    "id": "swahili-2",
+    "civilizacion": "swahili",
+    "anio": 1500,
+    "texto": "The height of Kilwa and Mombasa."
+  },
+  {
+    "id": "swahili-3",
+    "civilizacion": "swahili",
+    "anio": 1698,
+    "texto": "The occupation of Mombasa by Oman."
+  },
+  {
+    "id": "swahili-4",
+    "civilizacion": "swahili",
+    "anio": 1895,
+    "texto": "The resistance of the Swahili."
+  },
+  {
+    "id": "shona-1",
+    "civilizacion": "shona",
+    "anio": 1000,
+    "texto": "Formation of the first Shona states."
+  },
+  {
+    "id": "shona-2",
+    "civilizacion": "shona",
+    "anio": 1400,
+    "texto": "The height of Mapungubwe."
+  },
+  {
+    "id": "shona-3",
+    "civilizacion": "shona",
+    "anio": 1450,
+    "texto": "Great Zimbabwe reaches its maximum."
+  },
+  {
+    "id": "shona-4",
+    "civilizacion": "shona",
+    "anio": 1896,
+    "texto": "The Ndebele rebellion."
+  },
+  {
+    "id": "luba-1",
+    "civilizacion": "luba",
+    "anio": 1500,
+    "texto": "Foundation of the Luba kingdom."
+  },
+  {
+    "id": "luba-2",
+    "civilizacion": "luba",
+    "anio": 1650,
+    "texto": "The height under Mwila."
+  },
+  {
+    "id": "luba-3",
+    "civilizacion": "luba",
+    "anio": 1889,
+    "texto": "The conquest of Katanga."
+  },
+  {
+    "id": "maasai-1",
+    "civilizacion": "maasai",
+    "anio": 1500,
+    "texto": "The rise of the Maasai."
+  },
+  {
+    "id": "maasai-2",
+    "civilizacion": "maasai",
+    "anio": 1750,
+    "texto": "The height of pastoralism."
+  },
+  {
+    "id": "maasai-3",
+    "civilizacion": "maasai",
+    "anio": 1890,
+    "texto": "Colonial reserves."
+  },
+  {
+    "id": "vikingos-1",
+    "civilizacion": "vikingos",
+    "anio": 793,
+    "texto": "Sack of the monastery of Lindisfarne."
+  },
+  {
+    "id": "vikingos-2",
+    "civilizacion": "vikingos",
+    "anio": 874,
+    "texto": "The colonization of Iceland."
+  },
+  {
+    "id": "vikingos-3",
+    "civilizacion": "vikingos",
+    "anio": 985,
+    "texto": "Erik the Red founds Greenland."
+  },
+  {
+    "id": "vikingos-4",
+    "civilizacion": "vikingos",
+    "anio": 1000,
+    "texto": "Leif Erikson reaches Vinland."
+  },
+  {
+    "id": "vikingos-5",
+    "civilizacion": "vikingos",
+    "anio": 1066,
+    "texto": "The Battle of Stamford Bridge."
+  },
+  {
+    "id": "celtas-1",
+    "civilizacion": "celtas",
+    "anio": -800,
+    "texto": "Celtic expansion across western Europe."
+  },
+  {
+    "id": "celtas-2",
+    "civilizacion": "celtas",
+    "anio": -500,
+    "texto": "The building of Stonehenge."
+  },
+  {
+    "id": "celtas-3",
+    "civilizacion": "celtas",
+    "anio": -100,
+    "texto": "The Gauls attack Rome."
+  },
+  {
+    "id": "celtas-4",
+    "civilizacion": "celtas",
+    "anio": 400,
+    "texto": "The last Celtic resistance in Gaul."
+  },
+  {
+    "id": "bulgaros-1",
+    "civilizacion": "bulgaros",
+    "anio": 681,
+    "texto": "Asparuh founds the Bulgarian empire."
+  },
+  {
+    "id": "bulgaros-2",
+    "civilizacion": "bulgaros",
+    "anio": 864,
+    "texto": "Conversion to Christianity."
+  },
+  {
+    "id": "bulgaros-3",
+    "civilizacion": "bulgaros",
+    "anio": 893,
+    "texto": "The glorious height of Simeon."
+  },
+  {
+    "id": "bulgaros-4",
+    "civilizacion": "bulgaros",
+    "anio": 1018,
+    "texto": "Basil II destroys the empire."
+  },
+  {
+    "id": "hungaros-1",
+    "civilizacion": "hungaros",
+    "anio": 895,
+    "texto": "Magyar settlement in the Hungarian plain."
+  },
+  {
+    "id": "hungaros-2",
+    "civilizacion": "hungaros",
+    "anio": 1000,
+    "texto": "The coronation of Saint Stephen."
+  },
+  {
+    "id": "hungaros-3",
+    "civilizacion": "hungaros",
+    "anio": 1241,
+    "texto": "The Mongol invasion."
+  },
+  {
+    "id": "hungaros-4",
+    "civilizacion": "hungaros",
+    "anio": 1526,
+    "texto": "The defeat at Mohács."
+  },
+  {
+    "id": "hungaros-5",
+    "civilizacion": "hungaros",
+    "anio": 1867,
+    "texto": "The Austro-Hungarian compromise."
+  },
+  {
+    "id": "lituanos-1",
+    "civilizacion": "lituanos",
+    "anio": 1253,
+    "texto": "Mindaugas is crowned."
+  },
+  {
+    "id": "lituanos-2",
+    "civilizacion": "lituanos",
+    "anio": 1382,
+    "texto": "Union with Poland."
+  },
+  {
+    "id": "lituanos-3",
+    "civilizacion": "lituanos",
+    "anio": 1410,
+    "texto": "Defeat at the Battle of Grunwald."
+  },
+  {
+    "id": "lituanos-4",
+    "civilizacion": "lituanos",
+    "anio": 1569,
+    "texto": "The Union of Lublin."
+  },
+  {
+    "id": "lituanos-5",
+    "civilizacion": "lituanos",
+    "anio": 1795,
+    "texto": "The partitions."
+  },
+  {
+    "id": "polacos-1",
+    "civilizacion": "polacos",
+    "anio": 960,
+    "texto": "Foundation of the Piast dynasty."
+  },
+  {
+    "id": "polacos-2",
+    "civilizacion": "polacos",
+    "anio": 1380,
+    "texto": "Union with Lithuania."
+  },
+  {
+    "id": "polacos-3",
+    "civilizacion": "polacos",
+    "anio": 1410,
+    "texto": "Grunwald."
+  },
+  {
+    "id": "polacos-4",
+    "civilizacion": "polacos",
+    "anio": 1569,
+    "texto": "The Union of Lublin."
+  },
+  {
+    "id": "polacos-5",
+    "civilizacion": "polacos",
+    "anio": 1795,
+    "texto": "The third partition."
+  },
+  {
+    "id": "tibet-1",
+    "civilizacion": "tibet",
+    "anio": 618,
+    "texto": "Songtsen Gampo unifies Tibet."
+  },
+  {
+    "id": "tibet-2",
+    "civilizacion": "tibet",
+    "anio": 635,
+    "texto": "Marriage with China."
+  },
+  {
+    "id": "tibet-3",
+    "civilizacion": "tibet",
+    "anio": 792,
+    "texto": "Foundation of Vajrayana Buddhism."
+  },
+  {
+    "id": "tibet-4",
+    "civilizacion": "tibet",
+    "anio": 842,
+    "texto": "End of the empire."
+  },
+  {
+    "id": "majapahit-1",
+    "civilizacion": "majapahit",
+    "anio": 1293,
+    "texto": "Raden Wijaya founds the kingdom."
+  },
+  {
+    "id": "majapahit-2",
+    "civilizacion": "majapahit",
+    "anio": 1350,
+    "texto": "The height of the naval expansion."
+  },
+  {
+    "id": "majapahit-3",
+    "civilizacion": "majapahit",
+    "anio": 1513,
+    "texto": "Afonso de Albuquerque takes Malacca."
+  },
+  {
+    "id": "majapahit-4",
+    "civilizacion": "majapahit",
+    "anio": 1527,
+    "texto": "Fall of Trowulan."
+  },
+  {
+    "id": "maratha-1",
+    "civilizacion": "maratha",
+    "anio": 1674,
+    "texto": "Shivaji is crowned."
+  },
+  {
+    "id": "maratha-2",
+    "civilizacion": "maratha",
+    "anio": 1737,
+    "texto": "The entry into Delhi."
+  },
+  {
+    "id": "maratha-3",
+    "civilizacion": "maratha",
+    "anio": 1761,
+    "texto": "The third Battle of Panipat."
+  },
+  {
+    "id": "maratha-4",
+    "civilizacion": "maratha",
+    "anio": 1818,
+    "texto": "The defeat of Baji Rao II."
+  },
+  {
+    "id": "sikh-1",
+    "civilizacion": "sikh",
+    "anio": 1799,
+    "texto": "Maharaja Ranjit Singh unifies the Punjab."
+  },
+  {
+    "id": "sikh-2",
+    "civilizacion": "sikh",
+    "anio": 1821,
+    "texto": "Foundation of Amritsar."
+  },
+  {
+    "id": "sikh-3",
+    "civilizacion": "sikh",
+    "anio": 1839,
+    "texto": "The taking of Multan and Kashmir."
+  },
+  {
+    "id": "sikh-4",
+    "civilizacion": "sikh",
+    "anio": 1849,
+    "texto": "The British annexation of the Punjab."
+  },
+  {
+    "id": "himyaritas-1",
+    "civilizacion": "himyaritas",
+    "anio": -300,
+    "texto": "Foundation of the Himyarite kingdom."
+  },
+  {
+    "id": "himyaritas-2",
+    "civilizacion": "himyaritas",
+    "anio": 100,
+    "texto": "Coinage and trade with Rome."
+  },
+  {
+    "id": "himyaritas-3",
+    "civilizacion": "himyaritas",
+    "anio": 275,
+    "texto": "Conversion to Judaism."
+  },
+  {
+    "id": "himyaritas-4",
+    "civilizacion": "himyaritas",
+    "anio": 525,
+    "texto": "The Aksumite invasion."
+  },
+  {
+    "id": "coreas-1",
+    "civilizacion": "coreas",
+    "anio": -37,
+    "texto": "Foundation of Goguryeo."
+  },
+  {
+    "id": "coreas-2",
+    "civilizacion": "coreas",
+    "anio": 372,
+    "texto": "Unification of the peninsula by Goguryeo."
+  },
+  {
+    "id": "coreas-3",
+    "civilizacion": "coreas",
+    "anio": 668,
+    "texto": "Silla unifies the peninsula."
+  },
+  {
+    "id": "benin-1",
+    "civilizacion": "benin",
+    "anio": 1180,
+    "texto": "Foundation of the kingdom."
+  },
+  {
+    "id": "benin-2",
+    "civilizacion": "benin",
+    "anio": 1480,
+    "texto": "The Portuguese arrive in Benin."
+  },
+  {
+    "id": "benin-3",
+    "civilizacion": "benin",
+    "anio": 1550,
+    "texto": "The casting of the Benin bronzes."
+  },
+  {
+    "id": "benin-4",
+    "civilizacion": "benin",
+    "anio": 1897,
+    "texto": "The British expedition and the sack."
+  },
+  {
+    "id": "chimu-1",
+    "civilizacion": "chimu",
+    "anio": 900,
+    "texto": "Foundation of Chan Chan."
+  },
+  {
+    "id": "chimu-2",
+    "civilizacion": "chimu",
+    "anio": 1200,
+    "texto": "The height of the kingdom."
+  },
+  {
+    "id": "chimu-3",
+    "civilizacion": "chimu",
+    "anio": 1470,
+    "texto": "The Inca conquest."
+  },
+  {
+    "id": "wari-1",
+    "civilizacion": "wari",
+    "anio": 600,
+    "texto": "Huari is founded."
+  },
+  {
+    "id": "wari-2",
+    "civilizacion": "wari",
+    "anio": 750,
+    "texto": "The height of the empire."
+  },
+  {
+    "id": "wari-3",
+    "civilizacion": "wari",
+    "anio": 900,
+    "texto": "Crisis and decline."
+  },
+  {
+    "id": "wari-4",
+    "civilizacion": "wari",
+    "anio": 1000,
+    "texto": "End of the Wari state."
+  },
+  {
+    "id": "xiongnu-1",
+    "civilizacion": "xiongnu",
+    "anio": -209,
+    "texto": "Modu Chanyu unifies the confederation."
+  },
+  {
+    "id": "xiongnu-2",
+    "civilizacion": "xiongnu",
+    "anio": -200,
+    "texto": "War against China."
+  },
+  {
+    "id": "xiongnu-3",
+    "civilizacion": "xiongnu",
+    "anio": -100,
+    "texto": "The mission of Zhang Qian."
+  },
+  {
+    "id": "xiongnu-4",
+    "civilizacion": "xiongnu",
+    "anio": 155,
+    "texto": "The dispersal of the Xiongnu groups."
+  },
+  {
+    "id": "liao-1",
+    "civilizacion": "liao",
+    "anio": 916,
+    "texto": "Abas, the founder of the Khitans."
+  },
+  {
+    "id": "liao-2",
+    "civilizacion": "liao",
+    "anio": 1004,
+    "texto": "The Chinese are unsettled: the Song declares war."
+  },
+  {
+    "id": "liao-3",
+    "civilizacion": "liao",
+    "anio": 1125,
+    "texto": "It falls to the Jurchens."
+  },
+  {
+    "id": "jurchen-1",
+    "civilizacion": "jurchen",
+    "anio": 1115,
+    "texto": "Wanyan Aguda founds the dynasty."
+  },
+  {
+    "id": "jurchen-2",
+    "civilizacion": "jurchen",
+    "anio": 1127,
+    "texto": "Fall of Kaifeng and of northern Song."
+  },
+  {
+    "id": "jurchen-3",
+    "civilizacion": "jurchen",
+    "anio": 1211,
+    "texto": "The Mongol invasion."
+  },
+  {
+    "id": "jurchen-4",
+    "civilizacion": "jurchen",
+    "anio": 1234,
+    "texto": "End of the empire."
+  },
+  {
+    "id": "germanos-1",
+    "civilizacion": "germanos",
+    "anio": -113,
+    "texto": "Cimbri and Teutones cross the Alps and threaten Rome."
+  },
+  {
+    "id": "germanos-2",
+    "civilizacion": "germanos",
+    "anio": 9,
+    "texto": "Arminius annihilates three Roman legions at Teutoburg."
+  },
+  {
+    "id": "germanos-3",
+    "civilizacion": "germanos",
+    "anio": 376,
+    "texto": "The Goths cross the Danube and enter the empire."
+  },
+  {
+    "id": "germanos-4",
+    "civilizacion": "germanos",
+    "anio": 476,
+    "texto": "Odoacer deposes Romulus Augustulus."
+  },
+  {
+    "id": "visigodos-1",
+    "civilizacion": "visigodos",
+    "anio": 418,
+    "texto": "Foedus with Rome: the kingdom of Toulouse is born."
+  },
+  {
+    "id": "visigodos-2",
+    "civilizacion": "visigodos",
+    "anio": 507,
+    "texto": "Vouillé: they lose Gaul to the Franks."
+  },
+  {
+    "id": "visigodos-3",
+    "civilizacion": "visigodos",
+    "anio": 589,
+    "texto": "Reccared embraces Catholicism at the Third Council of Toledo."
+  },
+  {
+    "id": "visigodos-4",
+    "civilizacion": "visigodos",
+    "anio": 711,
+    "texto": "The Muslim invasion and the end of the kingdom."
+  },
+  {
+    "id": "ostrogodos-1",
+    "civilizacion": "ostrogodos",
+    "anio": 493,
+    "texto": "Theodoric enters Ravenna and founds the kingdom."
+  },
+  {
+    "id": "ostrogodos-2",
+    "civilizacion": "ostrogodos",
+    "anio": 526,
+    "texto": "Theodoric dies; the succession crisis begins."
+  },
+  {
+    "id": "ostrogodos-3",
+    "civilizacion": "ostrogodos",
+    "anio": 535,
+    "texto": "Justinian invades Italy."
+  },
+  {
+    "id": "ostrogodos-4",
+    "civilizacion": "ostrogodos",
+    "anio": 553,
+    "texto": "End of the Ostrogothic kingdom."
+  },
+  {
+    "id": "vandalos-1",
+    "civilizacion": "vandalos",
+    "anio": 429,
+    "texto": "Genseric crosses to Africa with his people."
+  },
+  {
+    "id": "vandalos-2",
+    "civilizacion": "vandalos",
+    "anio": 439,
+    "texto": "The taking of Carthage."
+  },
+  {
+    "id": "vandalos-3",
+    "civilizacion": "vandalos",
+    "anio": 455,
+    "texto": "The sack of Rome."
+  },
+  {
+    "id": "vandalos-4",
+    "civilizacion": "vandalos",
+    "anio": 534,
+    "texto": "Belisarius destroys the kingdom."
+  },
+  {
+    "id": "lombardos-1",
+    "civilizacion": "lombardos",
+    "anio": 568,
+    "texto": "Alboin enters Italy."
+  },
+  {
+    "id": "lombardos-2",
+    "civilizacion": "lombardos",
+    "anio": 643,
+    "texto": "The Edict of Rothari, the first Lombard code."
+  },
+  {
+    "id": "lombardos-3",
+    "civilizacion": "lombardos",
+    "anio": 774,
+    "texto": "Charlemagne takes Pavia."
+  },
+  {
+    "id": "anglosajones-1",
+    "civilizacion": "anglosajones",
+    "anio": 410,
+    "texto": "The Roman withdrawal from Britain."
+  },
+  {
+    "id": "anglosajones-2",
+    "civilizacion": "anglosajones",
+    "anio": 597,
+    "texto": "Augustine of Canterbury converts the Anglo-Saxons."
+  },
+  {
+    "id": "anglosajones-3",
+    "civilizacion": "anglosajones",
+    "anio": 878,
+    "texto": "Alfred the Great halts the Danes."
+  },
+  {
+    "id": "anglosajones-4",
+    "civilizacion": "anglosajones",
+    "anio": 1066,
+    "texto": "The Battle of Hastings."
+  },
+  {
+    "id": "moche-1",
+    "civilizacion": "moche",
+    "anio": 100,
+    "texto": "Foundation of the first Moche centres."
+  },
+  {
+    "id": "moche-2",
+    "civilizacion": "moche",
+    "anio": 300,
+    "texto": "The building of the Huaca del Sol."
+  },
+  {
+    "id": "moche-3",
+    "civilizacion": "moche",
+    "anio": 700,
+    "texto": "Collapse of the Moche centres."
+  },
+  {
+    "id": "nazca-1",
+    "civilizacion": "nazca",
+    "anio": -100,
+    "texto": "The first Nazca settlements."
+  },
+  {
+    "id": "nazca-2",
+    "civilizacion": "nazca",
+    "anio": 200,
+    "texto": "The tracing of the great geoglyphs."
+  },
+  {
+    "id": "nazca-3",
+    "civilizacion": "nazca",
+    "anio": 500,
+    "texto": "The height of Cahuachi."
+  },
+  {
+    "id": "nazca-4",
+    "civilizacion": "nazca",
+    "anio": 800,
+    "texto": "Abandonment of the ceremonial centres."
+  },
+  {
+    "id": "mapuche-1",
+    "civilizacion": "mapuche",
+    "anio": 500,
+    "texto": "Mapuche settlement south of the Biobío."
+  },
+  {
+    "id": "mapuche-2",
+    "civilizacion": "mapuche",
+    "anio": 1550,
+    "texto": "Resistance to the Spanish conquest."
+  },
+  {
+    "id": "mapuche-3",
+    "civilizacion": "mapuche",
+    "anio": 1641,
+    "texto": "The Parliament of Quillín with the Crown."
+  },
+  {
+    "id": "mapuche-4",
+    "civilizacion": "mapuche",
+    "anio": 1883,
+    "texto": "The occupation of Araucanía."
+  },
+  {
+    "id": "guaranies-1",
+    "civilizacion": "guaranies",
+    "anio": -500,
+    "texto": "Guaraní expansion across the Paraná basin."
+  },
+  {
+    "id": "guaranies-2",
+    "civilizacion": "guaranies",
+    "anio": 1400,
+    "texto": "The height of the Guaraní villages."
+  },
+  {
+    "id": "guaranies-3",
+    "civilizacion": "guaranies",
+    "anio": 1609,
+    "texto": "The first Jesuit reductions are founded."
+  },
+  {
+    "id": "guaranies-4",
+    "civilizacion": "guaranies",
+    "anio": 1750,
+    "texto": "The Guaraní War."
+  },
+  {
+    "id": "tupinamba-1",
+    "civilizacion": "tupinamba",
+    "anio": 1000,
+    "texto": "Tupinambá occupation of the Brazilian coast."
+  },
+  {
+    "id": "tupinamba-2",
+    "civilizacion": "tupinamba",
+    "anio": 1500,
+    "texto": "The arrival of the Portuguese at Bahia."
+  },
+  {
+    "id": "tupinamba-3",
+    "civilizacion": "tupinamba",
+    "anio": 1555,
+    "texto": "France Antarctique at Guanabara."
+  },
+  {
+    "id": "tupinamba-4",
+    "civilizacion": "tupinamba",
+    "anio": 1600,
+    "texto": "The dispersal of the coastal villages."
+  },
+  {
+    "id": "chachapoyas-1",
+    "civilizacion": "chachapoyas",
+    "anio": 800,
+    "texto": "Formation of the Chachapoya lordships."
+  },
+  {
+    "id": "chachapoyas-2",
+    "civilizacion": "chachapoyas",
+    "anio": 1200,
+    "texto": "The height of Kuélap."
+  },
+  {
+    "id": "chachapoyas-3",
+    "civilizacion": "chachapoyas",
+    "anio": 1470,
+    "texto": "The Inca conquest."
+  },
+  {
+    "id": "diaguitas-1",
+    "civilizacion": "diaguitas",
+    "anio": 500,
+    "texto": "Formation of the Diaguita lordships."
+  },
+  {
+    "id": "diaguitas-2",
+    "civilizacion": "diaguitas",
+    "anio": 1000,
+    "texto": "The height of Diaguita culture."
+  },
+  {
+    "id": "diaguitas-3",
+    "civilizacion": "diaguitas",
+    "anio": 1480,
+    "texto": "The Inca conquest."
+  },
+  {
+    "id": "diaguitas-4",
+    "civilizacion": "diaguitas",
+    "anio": 1600,
+    "texto": "End of the Calchaquí resistance."
+  },
+  {
+    "id": "umeyas-1",
+    "civilizacion": "umeyas",
+    "anio": 661,
+    "texto": "Muawiya founds the caliphate at Damascus."
+  },
+  {
+    "id": "umeyas-2",
+    "civilizacion": "umeyas",
+    "anio": 711,
+    "texto": "The Crusaders cross into Hispania."
+  },
+  {
+    "id": "umeyas-3",
+    "civilizacion": "umeyas",
+    "anio": 732,
+    "texto": "The Battle of Tours."
+  },
+  {
+    "id": "umeyas-4",
+    "civilizacion": "umeyas",
+    "anio": 750,
+    "texto": "End of the Umayyad caliphate."
+  },
+  {
+    "id": "abasies-1",
+    "civilizacion": "abasies",
+    "anio": 750,
+    "texto": "The Abbasids take Damascus."
+  },
+  {
+    "id": "abasies-2",
+    "civilizacion": "abasies",
+    "anio": 762,
+    "texto": "Foundation of Baghdad."
+  },
+  {
+    "id": "abasies-3",
+    "civilizacion": "abasies",
+    "anio": 830,
+    "texto": "The House of Wisdom."
+  },
+  {
+    "id": "abasies-4",
+    "civilizacion": "abasies",
+    "anio": 1058,
+    "texto": "The Seljuks take Baghdad."
+  },
+  {
+    "id": "abasies-5",
+    "civilizacion": "abasies",
+    "anio": 1258,
+    "texto": "The sack of Baghdad by the Mongols."
+  },
+  {
+    "id": "fatimies-1",
+    "civilizacion": "fatimies",
+    "anio": 909,
+    "texto": "Foundation in Ifriqiya."
+  },
+  {
+    "id": "fatimies-2",
+    "civilizacion": "fatimies",
+    "anio": 969,
+    "texto": "Foundation of Cairo."
+  },
+  {
+    "id": "fatimies-3",
+    "civilizacion": "fatimies",
+    "anio": 970,
+    "texto": "Al-Azhar as a university."
+  },
+  {
+    "id": "fatimies-4",
+    "civilizacion": "fatimies",
+    "anio": 1171,
+    "texto": "End of the caliphate."
+  },
+  {
+    "id": "mamelucos-1",
+    "civilizacion": "mamelucos",
+    "anio": 1250,
+    "texto": "Baybars founds the sultanate."
+  },
+  {
+    "id": "mamelucos-2",
+    "civilizacion": "mamelucos",
+    "anio": 1260,
+    "texto": "Defeat of the Mongols at Ain Jalut."
+  },
+  {
+    "id": "mamelucos-3",
+    "civilizacion": "mamelucos",
+    "anio": 1290,
+    "texto": "Cairo at its height."
+  },
+  {
+    "id": "mamelucos-4",
+    "civilizacion": "mamelucos",
+    "anio": 1517,
+    "texto": "Expulsion by the Ottomans."
+  }
+]

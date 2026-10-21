@@ -1,0 +1,242 @@
+[
+  {
+    "id": "roma-a1",
+    "civilizacion": "roma",
+    "nombre": "L a bronze Legionary helmet",
+    "tipo": "Militar",
+    "icono": "yelmo",
+    "descripcion": "Casco de bronce de la legión: cuello abierto, protectores de las sienes y un penacho de plumas que identificaba a la centuria."
+  },
+  {
+    "id": "roma-a2",
+    "civilizacion": "roma",
+    "nombre": "Gladius",
+    "tipo": "Militar",
+    "icono": "espada",
+    "descripcion": "Espada recta de 60 cm con hoja plana y punta para estocadas: la espada del legionario, no la gladius larga de las movies."
+  },
+  {
+    "id": "roma-a3",
+    "civilizacion": "roma",
+    "nombre": "Ánfora Dressel 20",
+    "tipo": "Comercio",
+    "icono": "jarra",
+    "descripcion": "Anfora de dos asas para el aceite y el vino, con el sello del estado en el cuello: el Packard de la Roma imperial."
+  },
+  {
+    "id": "roma-a4",
+    "civilizacion": "roma",
+    "nombre": "Moneda denario",
+    "tipo": "Economia",
+    "icono": "moneda",
+    "descripcion": "Plata con la efigie del emperador y un Finish que convertia al Estado en el banco del Mediterraneo."
+  },
+  {
+    "id": "roma-a5",
+    "civilizacion": "roma",
+    "nombre": "Lápida funeraria",
+    "tipo": "Arte",
+    "icono": "estela",
+    "descripcion": "Placa de mármol con la biografía del difunto: cursus honorum, cargos y epitafio. El mas leido del mundo romano."
+  },
+  {
+    "id": "egipto-a6",
+    "civilizacion": "egipto",
+    "nombre": "Mascarón de Tutankhamón",
+    "tipo": "Arte",
+    "icono": "mascara",
+    "descripcion": "Máscara funeraria de oro macizo con lapis y vidrio: la imagen del faraón como dios, no como retrato."
+  },
+  {
+    "id": "egipto-a7",
+    "civilizacion": "egipto",
+    "nombre": "Vidriado de Esna",
+    "tipo": "Artesanía",
+    "icono": "jarra",
+    "descripcion": "Vasijas de barro con esmalte vítreo y brid paintings: la precision del Nilometro en cada color."
+  },
+  {
+    "id": "egipto-a8",
+    "civilizacion": "egipto",
+    "nombre": "Papiro de Ebers",
+    "tipo": "Escritura",
+    "icono": "pergamino",
+    "descripcion": "Papiro medico de 1556 a.C. con 700 recetas: el gmdoctora-farmacia mas antigua conservada."
+  },
+  {
+    "id": "sumer-a9",
+    "civilizacion": "sumer",
+    "nombre": "Cuna de Ur",
+    "tipo": "Artesanía",
+    "icono": "jarra",
+    "descripcion": "Cuna de madera con figures de Goldsmith,&Ojos de shell y lapis: el instrument más caro del Bronce."
+  },
+  {
+    "id": "sumer-a10",
+    "civilizacion": "sumer",
+    "nombre": "Cabeza de Warka",
+    "tipo": "Arte",
+    "icono": "mascara",
+    "descripcion": "Cabeza de alabastro de Uruk, una de las primeras representaciones del rostro humano en la historia."
+  },
+  {
+    "id": "sumer-a11",
+    "civilizacion": "sumer",
+    "nombre": "Cuneiforme en arcilla",
+    "tipo": "Escritura",
+    "icono": "pergamino",
+    "descripcion": "Tablillas de arcilla con escritura cuneiforme: un administración completa grabada con un punzon."
+  },
+  {
+    "id": "griegos-a12",
+    "civilizacion": "griegos",
+    "nombre": "Ánfora ática",
+    "tipo": "Comercio",
+    "icono": "jarra",
+    "descripcion": "Vasija de figures negras sobre fondo rojo, laau a atenas: una industria entera al servicio del comercio mediterraneo."
+  },
+  {
+    "id": "griegos-a13",
+    "civilizacion": "griegos",
+    "nombre": "Estatua de Kritios",
+    "tipo": "Arte",
+    "icono": "idol",
+    "descripcion": "Hermes de Kritios, la primera figura que se separa del rigid block y descubre el contrapposto."
+  },
+  {
+    "id": "griegos-a14",
+    "civilizacion": "griegos",
+    "nombre": "Helmio de Corinto",
+    "tipo": "Militar",
+    "icono": "yelmo",
+    "descripcion": "Casco de bronce con cresta de cabellos y protectores de mejillas: el icono de los hoplitas."
+  },
+  {
+    "id": "babilonia-a15",
+    "civilizacion": "babilonia",
+    "nombre": "Codo de Hammurabi",
+    "tipo": "Escritura",
+    "icono": "estela",
+    "descripcion": "Estela de basalto con el codigo de Hammurabi: 282 articulos grabados en acanac."
+  },
+  {
+    "id": "china-antigua-a16",
+    "civilizacion": "china-antigua",
+    "nombre": "Bronce ritual de Simuwu",
+    "tipo": "Artesanía",
+    "icono": "templo",
+    "descripcion": "Bronce fundido con la figura de un sacerdote y la inscribed de una recipe de fundicion de 1000 años."
+  },
+  {
+    "id": "han-a17",
+    "civilizacion": "han",
+    "nombre": "Espada de jade de Goujian",
+    "tipo": "Militar",
+    "icono": "espada",
+    "descripcion": "Espada de jade con la inscription de los birds que identifies al rey: los objetos de la corte Han."
+  },
+  {
+    "id": "japon-a18",
+    "civilizacion": "japon",
+    "nombre": "Espada katana",
+    "tipo": "Militar",
+    "icono": "espada",
+    "descripcion": "Acero plegado en 15 capas, con la guarda y el tsuka forrados de."
+  },
+  {
+    "id": "japon-a19",
+    "civilizacion": "japon",
+    "nombre": "Cerámica de Haniwa",
+    "tipo": "Artesanía",
+    "icono": "idol",
+    "descripcion": "Figuras de barro de warriors y animales que guardaban los pnastics: la estetica de Kofun."
+  },
+  {
+    "id": "egipto-a20",
+    "civilizacion": "egipto",
+    "nombre": "Maza de Narmer",
+    "tipo": "Militar",
+    "icono": "lanza",
+    "descripcion": "Cabeza de mazo de cobre con la escena de la unificacion: el rey Narmer golpea a sus enemigos."
+  },
+  {
+    "id": "inca-a21",
+    "civilizacion": "inca",
+    "nombre": "Quipu",
+    "tipo": "Escritura",
+    "icono": "pergamino",
+    "descripcion": "Cordones de colores con nudos que registranasz-thin (contabilidad), y el censo del imperio."
+  },
+  {
+    "id": "mexica-a22",
+    "civilizacion": "mexica",
+    "nombre": "Mascara de Tlaloc",
+    "tipo": "Arte",
+    "icono": "mascara",
+    "descripcion": "Mascara de jade de Tlaloc, dios de la lluvia, con los anillos de ojos y la lengua de flint."
+  },
+  {
+    "id": "bizantino-a23",
+    "civilizacion": "bizantino",
+    "nombre": "Cáliz de plata de Justiniano",
+    "tipo": "Artesanía",
+    "icono": "copa",
+    "descripcion": "Cáliz de plata con escenas de la vida de Cristo y de la corte imperial: el esplendor del mundo bizantino."
+  },
+  {
+    "id": "babilonia-a24",
+    "civilizacion": "babilonia",
+    "nombre": "Tablilla de Mapas",
+    "tipo": "Escritura",
+    "icono": "pergamino",
+    "descripcion": "Tablilla con un mapa del mundo babilonio y sus asfalt roads, de 600 a.C."
+  },
+  {
+    "id": "vikingos-a25",
+    "civilizacion": "vikingos",
+    "nombre": "Hacha de Loki",
+    "tipo": "Militar",
+    "icono": "lanza",
+    "descripcion": "Hacha de acero de Vikingo con la firma de Loki, una de las pocas armas con nombre propio conservadas."
+  },
+  {
+    "id": "vikingos-a26",
+    "civilizacion": "vikingos",
+    "nombre": "Broca de",
+    "tipo": "Artesanía",
+    "icono": "joya",
+    "descripcion": "Broca de plata con cabeza de animal y nidos trenzados: la joyería vikinga del siglo IX."
+  },
+  {
+    "id": "achaemenidas-a27",
+    "civilizacion": "achaemenidas",
+    "nombre": "Caza de oro de Persépolis",
+    "tipo": "Arte",
+    "icono": "joya",
+    "descripcion": "Caza de oro con losapidonia bestias del JAVA: la arte oficial del imperio Aquemenide."
+  },
+  {
+    "id": "achaemenidas-a28",
+    "civilizacion": "achaemenidas",
+    "nombre": "Darro de OXO",
+    "tipo": "Escritura",
+    "icono": "estela",
+    "descripcion": "Darro de OXO con las tres lenguas del imperio: la política deSAT universal de Jerjes I."
+  },
+  {
+    "id": "mexica-a29",
+    "civilizacion": "mexica",
+    "nombre": "Espada de Tizoc",
+    "tipo": "Militar",
+    "icono": "espada",
+    "descripcion": "Espada de obsidiana de Tizoc, en la que se grabo el nombre del emperador mexica."
+  },
+  {
+    "id": "britania-a30",
+    "civilizacion": "britania",
+    "nombre": "Denario de Britannia",
+    "tipo": "Economia",
+    "icono": "moneda",
+    "descripcion": "Moneda de plata acuñada en Londinium con la imagen de Britannia: la marca del Imperio Romano."
+  }
+]

@@ -1,0 +1,578 @@
+[
+  {
+    "id": "sumer-r1",
+    "civilizacion": "sumer",
+    "nombre": "Sumerian Polytheism",
+    "descripcion": "Anu, Enlil and the pantheon of Uruk. The temple was at once a religious, economic and administrative centre.",
+    "desde": -4500,
+    "hasta": -1900
+  },
+  {
+    "id": "babilonia-r2",
+    "civilizacion": "babilonia",
+    "nombre": "Babylonian Religion",
+    "descripcion": "Marduk and his triad, and the seven-tiered Etemenanki, the largest sacred precinct of Babylon.",
+    "desde": -1894,
+    "hasta": -539
+  },
+  {
+    "id": "asiria-r3",
+    "civilizacion": "asiria",
+    "nombre": "Assyrian Religion",
+    "descripcion": "Assur, national god and patron of the crown, and a highly organized clergy in the king’s service.",
+    "desde": -2025,
+    "hasta": -609
+  },
+  {
+    "id": "hititas-r4",
+    "civilizacion": "hititas",
+    "nombre": "Hittite Religion",
+    "descripcion": "The pantheon of Hattusa with the storm god Tarhunza, and the sanctuaries of the city.",
+    "desde": -1650,
+    "hasta": -1180
+  },
+  {
+    "id": "egipto-r5",
+    "civilizacion": "egipto",
+    "nombre": "Egyptian Religion",
+    "descripcion": "Hierarchical temples with Ra, Osiris, Isis and Horus. The cult, the amulets and mummification marked daily life.",
+    "desde": -3100,
+    "hasta": -30
+  },
+  {
+    "id": "nubia-r6",
+    "civilizacion": "nubia",
+    "nombre": "Religion of Kush",
+    "descripcion": "The Egyptian cult adapted to the Sun and to Amun, with the king divinized in the sanctuaries of Napata and Meroe.",
+    "desde": -1070,
+    "hasta": -350
+  },
+  {
+    "id": "aksum-r7",
+    "civilizacion": "aksum",
+    "nombre": "Christianity and Polytheism",
+    "descripcion": "The Christianity of Ezana coexists with the local cults until it is officially established in the fourth century.",
+    "desde": 100,
+    "hasta": 940
+  },
+  {
+    "id": "etiopia-r8",
+    "civilizacion": "etiopia",
+    "nombre": "Coptic Christianity",
+    "descripcion": "The Ethiopian Orthodox Church, the oldest in African Christianity, with the monasteries of Lalibela.",
+    "desde": 1270,
+    "hasta": 1974
+  },
+  {
+    "id": "achaemenidas-r9",
+    "civilizacion": "achaemenidas",
+    "nombre": "Zoroastrianism",
+    "descripcion": "The religion of Persia: Ahura Mazda, the duality of good and evil, the sacred fire and the magi.",
+    "desde": -550,
+    "hasta": -330
+  },
+  {
+    "id": "seleucidas-r10",
+    "civilizacion": "seleucidas",
+    "nombre": "Hellenistic Syncretism",
+    "descripcion": "The Greek gods with the Iranian tradition: Zeus-Ahuramazda, Artemis and a solar cult of great fragrance.",
+    "desde": -312,
+    "hasta": -63
+  },
+  {
+    "id": "partos-r11",
+    "civilizacion": "partos",
+    "nombre": "Zoroastrianism and Local Cults",
+    "descripcion": "Zoroastrianism with strong syncretism: the Iranian fire and the cult of Mithra coexisted with the Mesopotamian deities.",
+    "desde": -247,
+    "hasta": 224
+  },
+  {
+    "id": "sasanidas-r12",
+    "civilizacion": "sasanidas",
+    "nombre": "Zoroastrianism",
+    "descripcion": "Zoroastrianism turned into the state religion: Ahura Mazda as the single god and an organized clergy of mobeds.",
+    "desde": 224,
+    "hasta": 651
+  },
+  {
+    "id": "safavidas-r13",
+    "civilizacion": "safavidas",
+    "nombre": "Shi’a Islam",
+    "descripcion": "Twelver Shi’ism with the imam Ali and his descendants as guarantors of religious authority.",
+    "desde": 1501,
+    "hasta": 1736
+  },
+  {
+    "id": "qajar-r14",
+    "civilizacion": "qajar",
+    "nombre": "Shi’a Islam",
+    "descripcion": "Shi’a Islam with the shah as protector of the religion and the Shi’a clergy with a political role.",
+    "desde": 1789,
+    "hasta": 1925
+  },
+  {
+    "id": "iran-pahlavi-r15",
+    "civilizacion": "iran-pahlavi",
+    "nombre": "Islam and Reformist Monotheism",
+    "descripcion": "The modernist shah reduces the role of the clergy, while the religious minorities remain present.",
+    "desde": 1925,
+    "hasta": 1979
+  },
+  {
+    "id": "iran-islamico-r16",
+    "civilizacion": "iran-islamico",
+    "nombre": "Shi’a Islam",
+    "descripcion": "A theocratic republic with the Supreme Leader as the highest religious and constitutional authority.",
+    "desde": 1979,
+    "hasta": 2026
+  },
+  {
+    "id": "israel-r17",
+    "civilizacion": "israel",
+    "nombre": "Judaism",
+    "descripcion": "Covenant monotheism: a single God, the Torah and a pact with the chosen people.",
+    "desde": -1026,
+    "hasta": -539
+  },
+  {
+    "id": "aramas-r18",
+    "civilizacion": "aramas",
+    "nombre": "Aramaean Cults",
+    "descripcion": "Polytheistic cults of the north with Atargatis and Bel, and a strong Jewish and Nestorian presence.",
+    "desde": -1000,
+    "hasta": -539
+  },
+  {
+    "id": "filisteos-r19",
+    "civilizacion": "filisteos",
+    "nombre": "Cults of the Levant",
+    "descripcion": "Local Semitic cults of the Levant, with deities such as Dagon, Baal and the goddess of the sea.",
+    "desde": -1200,
+    "hasta": -604
+  },
+  {
+    "id": "fenicios-r20",
+    "civilizacion": "fenicios",
+    "nombre": "Phoenician Cults",
+    "descripcion": "Melqart, Astarte and the coastal sanctuaries, and a commercial role with the overseas colonies.",
+    "desde": -3000,
+    "hasta": -539
+  },
+  {
+    "id": "nabateos-r21",
+    "civilizacion": "nabateos",
+    "nombre": "Nabataean Cults",
+    "descripcion": "Dushara at Petra and the devotion to the water springs, with an Arab-type priesthood.",
+    "desde": -312,
+    "hasta": 106
+  },
+  {
+    "id": "griegos-r22",
+    "civilizacion": "griegos",
+    "nombre": "Greek Polytheism",
+    "descripcion": "The pantheon of Olympus, with Zeus, Athena, Apollo and Dionysus; each city had its own tutelary deity.",
+    "desde": -800,
+    "hasta": -146
+  },
+  {
+    "id": "macedonia-r23",
+    "civilizacion": "macedonia",
+    "nombre": "Greek and Egyptian Cults",
+    "descripcion": "Syncretism between Greek polytheism and the solar cult and the mysteries of Egypt.",
+    "desde": -800,
+    "hasta": -323
+  },
+  {
+    "id": "roma-r24",
+    "civilizacion": "roma",
+    "nombre": "Roman Polytheism",
+    "descripcion": "The gods of the Roman Olympus, with Jupiter as Zeus and Saturn as Cronus, and a highly organized imperial cult.",
+    "desde": -753,
+    "hasta": 380
+  },
+  {
+    "id": "roma-r25",
+    "civilizacion": "roma",
+    "nombre": "Christianity",
+    "descripcion": "The state converts to Christianity from Constantine, and Theodosius declares it the only religion in 380.",
+    "desde": 380,
+    "hasta": 476
+  },
+  {
+    "id": "bizantino-r26",
+    "civilizacion": "bizantino",
+    "nombre": "Eastern Christianity",
+    "descripcion": "Byzantine Christianity with a strong influence from the Cappadocian Fathers and the controversy over images.",
+    "desde": 330,
+    "hasta": 1453
+  },
+  {
+    "id": "francos-r27",
+    "civilizacion": "francos",
+    "nombre": "Christianity",
+    "descripcion": "Latin Christianity, with the Church as the only institution holding power after the fall of the Empire.",
+    "desde": 768,
+    "hasta": 888
+  },
+  {
+    "id": "vikingos-r28",
+    "civilizacion": "vikingos",
+    "nombre": "Norse Religion",
+    "descripcion": "Odin, Thor, Freyr and Loki, with their runes, their sacrifices and their poetry.",
+    "desde": 750,
+    "hasta": 1066
+  },
+  {
+    "id": "celtas-r29",
+    "civilizacion": "celtas",
+    "nombre": "Druidism",
+    "descripcion": "The druids as religious authority, with the cycles of the year and the sanctuaries of Stonehenge.",
+    "desde": -800,
+    "hasta": 400
+  },
+  {
+    "id": "indus-r30",
+    "civilizacion": "indus",
+    "nombre": "Indus Religion",
+    "descripcion": "A religion still undeciphered, with the Master of Animals and the mother figure of Mohenjo-daro.",
+    "desde": -3300,
+    "hasta": -1300
+  },
+  {
+    "id": "veda-r31",
+    "civilizacion": "veda",
+    "nombre": "Vedic Religion",
+    "descripcion": "The Vedic sacrifices before the fire and the deities of the Rigveda, with the hotris as ritual specialists.",
+    "desde": -1500,
+    "hasta": -500
+  },
+  {
+    "id": "mauryas-r32",
+    "civilizacion": "mauryas",
+    "nombre": "Buddhism and Brahmanism",
+    "descripcion": "Ashoka embraces Buddhism after the Kalinga war; Brahmanism remains the religion of the upper castes.",
+    "desde": -543,
+    "hasta": -185
+  },
+  {
+    "id": "guptas-r33",
+    "civilizacion": "guptas",
+    "nombre": "Hinduism",
+    "descripcion": "Hinduism consolidates with the cult of Vishnu and Shiva, and with the classical Sanskrit literature.",
+    "desde": 320,
+    "hasta": 550
+  },
+  {
+    "id": "chola-r34",
+    "civilizacion": "chola",
+    "nombre": "Hinduism and Buddhism",
+    "descripcion": "Temples of Vishnu and Shiva with an intense devotional fervour, and a tantric Buddhism in the meantime.",
+    "desde": 848,
+    "hasta": 1279
+  },
+  {
+    "id": "mogol-r35",
+    "civilizacion": "mogol",
+    "nombre": "Islam and Hinduism",
+    "descripcion": "A Muslim empire that respects Hinduism: Akbar’s union with the gurus and the abolition of the jizya.",
+    "desde": 1526,
+    "hasta": 1857
+  },
+  {
+    "id": "maratha-r36",
+    "civilizacion": "maratha",
+    "nombre": "Hinduism and Islam",
+    "descripcion": "Hindu rule of the Marathas with a strong Muslim presence at court and in the army.",
+    "desde": 1674,
+    "hasta": 1818
+  },
+  {
+    "id": "sikh-r37",
+    "civilizacion": "sikh",
+    "nombre": "Sikhism",
+    "descripcion": "The Sikhism of the ten gurus, with the Temple of Amritsar and the emblem of the Khanda.",
+    "desde": 1799,
+    "hasta": 1849
+  },
+  {
+    "id": "japon-r38",
+    "civilizacion": "japon",
+    "nombre": "Shinto and Buddhism",
+    "descripcion": "Indigenous Shinto with its shrines, and from the sixth century Buddhism, which ends up dominating the court.",
+    "desde": 1868,
+    "hasta": 1946
+  },
+  {
+    "id": "corea-r39",
+    "civilizacion": "corea",
+    "nombre": "Confucianism, Buddhism and Shamanism",
+    "descripcion": "The official Confucianism of Joseon, monastic Buddhism and popular shamanism.",
+    "desde": 918,
+    "hasta": 1897
+  },
+  {
+    "id": "coreas-r40",
+    "civilizacion": "coreas",
+    "nombre": "Buddhism and Shamanism",
+    "descripcion": "The Buddhism of the Three Kingdoms with the syncretism of the sects, on a shamanistic background.",
+    "desde": -37,
+    "hasta": 668
+  },
+  {
+    "id": "china-antigua-r41",
+    "civilizacion": "china-antigua",
+    "nombre": "Ancestor Cults and Confucianism",
+    "descripcion": "The cult of the ancestors and of heaven, with Confucius turning the cult into an ethical system.",
+    "desde": -2070,
+    "hasta": -256
+  },
+  {
+    "id": "qin-r42",
+    "civilizacion": "qin",
+    "nombre": "Legalism and Confucianism",
+    "descripcion": "The unified state imposes the Legalism of Shang Yang and then relies on Confucianism.",
+    "desde": -221,
+    "hasta": -206
+  },
+  {
+    "id": "han-r43",
+    "civilizacion": "han",
+    "nombre": "Confucianism",
+    "descripcion": "Confucianism becomes the ideology of the state and of the bureaucracy; Buddhism arrives from the west.",
+    "desde": -206,
+    "hasta": 220
+  },
+  {
+    "id": "tang-r44",
+    "civilizacion": "tang",
+    "nombre": "Confucianism and Buddhism",
+    "descripcion": "Buddhism at its moment of greatest splendour with Xuanzang and the sutras; Confucianism remains the backbone of administration.",
+    "desde": 618,
+    "hasta": 907
+  },
+  {
+    "id": "song-r45",
+    "civilizacion": "song",
+    "nombre": "Confucianism, Buddhism and Daoism",
+    "descripcion": "The printing press of Bi Sheng, Daoism and a rare Neo-Confucian revival in a Buddhist key.",
+    "desde": 960,
+    "hasta": 1279
+  },
+  {
+    "id": "yuan-r46",
+    "civilizacion": "yuan",
+    "nombre": "Tibetan Buddhism and Confucianism",
+    "descripcion": "Mongol Buddhism and the rise of the lamas, with a rereading of Confucianism.",
+    "desde": 1271,
+    "hasta": 1368
+  },
+  {
+    "id": "ming-r47",
+    "civilizacion": "ming",
+    "nombre": "Confucianism and Buddhism",
+    "descripcion": "State Confucianism and the long endurance of the Buddhist monks.",
+    "desde": 1368,
+    "hasta": 1644
+  },
+  {
+    "id": "qing-r48",
+    "civilizacion": "qing",
+    "nombre": "Confucianism, Buddhism and Daoism",
+    "descripcion": "The Confucian state, lama Buddhism and the Daoist sects, with the salons of the literati.",
+    "desde": 1644,
+    "hasta": 1912
+  },
+  {
+    "id": "tibet-r49",
+    "civilizacion": "tibet",
+    "nombre": "Vajrayana Buddhism",
+    "descripcion": "The Buddhism of the tormas, the monasteries and the Dalai Lama.",
+    "desde": 618,
+    "hasta": 842
+  },
+  {
+    "id": "umeyas-r50",
+    "civilizacion": "umeyas",
+    "nombre": "Sunni Islam",
+    "descripcion": "The caliphate of Damascus and the building of the Umayyad mosque.",
+    "desde": 661,
+    "hasta": 750
+  },
+  {
+    "id": "abasies-r51",
+    "civilizacion": "abasies",
+    "nombre": "Sunni Islam",
+    "descripcion": "The golden age of Baghdad and the House of Wisdom, with a Sunni caliphate in crisis.",
+    "desde": 750,
+    "hasta": 1258
+  },
+  {
+    "id": "fatimies-r52",
+    "civilizacion": "fatimies",
+    "nombre": "Shi’a Islam",
+    "descripcion": "The Shi’a caliphate of Cairo, with the building of Al-Azhar.",
+    "desde": 909,
+    "hasta": 1171
+  },
+  {
+    "id": "mamelucos-r53",
+    "civilizacion": "mamelucos",
+    "nombre": "Sunni Islam",
+    "descripcion": "The Mamluks, originally slaves, with an architecture of unequalled luxury.",
+    "desde": 1250,
+    "hasta": 1517
+  },
+  {
+    "id": "ottomanos-r54",
+    "civilizacion": "ottomanos",
+    "nombre": "Sunni Islam",
+    "descripcion": "Sunni Islam with the Ottoman caliphate from 1517, the ulemas and the bureaucratic synthesis of the Kanun.",
+    "desde": 1299,
+    "hasta": 1922
+  },
+  {
+    "id": "mongoles-r55",
+    "civilizacion": "mongoles",
+    "nombre": "Mongol Religion",
+    "descripcion": "Mongol shamanism and the deities of the steppe, with the religious tolerance of the khan.",
+    "desde": 1206,
+    "hasta": 1368
+  },
+  {
+    "id": "inca-r56",
+    "civilizacion": "inca",
+    "nombre": "Andean Religion",
+    "descripcion": "The cult of the Sun and of Pachamama, with the condor and the mountain as divinities, and the capacocha rite.",
+    "desde": 1438,
+    "hasta": 1533
+  },
+  {
+    "id": "mexica-r57",
+    "civilizacion": "mexica",
+    "nombre": "Mexica Religion",
+    "descripcion": "A pantheon of a hundred gods, with Huitzilopochtli, Tlaloc and Quetzalcóatl, and a liturgy of sacrifices.",
+    "desde": 1428,
+    "hasta": 1521
+  },
+  {
+    "id": "mayas-r58",
+    "civilizacion": "mayas",
+    "nombre": "Maya Religion",
+    "descripcion": "Itzamná, Chaac and K’awiil, the blood ceremonies and the texts of the stelae.",
+    "desde": 200,
+    "hasta": 900
+  },
+  {
+    "id": "olmecas-r59",
+    "civilizacion": "olmecas",
+    "nombre": "Olmec Cult",
+    "descripcion": "The sanctuaries of San Lorenzo and La Venta, with the figure of the jaguar and the were-jaguar.",
+    "desde": -1500,
+    "hasta": 400
+  },
+  {
+    "id": "tairona-r60",
+    "civilizacion": "tairona",
+    "nombre": "Tairona Shamanism",
+    "descripcion": "Shamans, diviners and the rainbow as a manifestation; the pu-ku of the Sierra.",
+    "desde": 800,
+    "hasta": 1600
+  },
+  {
+    "id": "san-r61",
+    "civilizacion": "san",
+    "nombre": "San Religion",
+    "descripcion": "The //Xam of the kōe!kōe! dance, the practice of trance and the mythology of the ñu.",
+    "desde": -20000,
+    "hasta": 2026
+  },
+  {
+    "id": "khoi-r62",
+    "civilizacion": "khoi",
+    "nombre": "Khoisan Religion",
+    "descripcion": "The //Xam of the mantis and the trance, with a strong tradition of healing and the mythology of the rainbow.",
+    "desde": -2000,
+    "hasta": 1930
+  },
+  {
+    "id": "berberes-r63",
+    "civilizacion": "berberes",
+    "nombre": "Berber Cults",
+    "descripcion": "Rock sanctuaries of the Atlas, healers and the devotion to the water springs.",
+    "desde": -10000,
+    "hasta": 2026
+  },
+  {
+    "id": "tuareg-r64",
+    "civilizacion": "tuareg",
+    "nombre": "Islam and Berber Cults",
+    "descripcion": "Islam coexisting with the cults of the desert and the authority of the wise.",
+    "desde": 500,
+    "hasta": 2026
+  },
+  {
+    "id": "fulani-r65",
+    "civilizacion": "fulani",
+    "nombre": "Islam and Local Cults",
+    "descripcion": "The Islam of the sovereigns, with the madina of Sokoto at the head.",
+    "desde": 1000,
+    "hasta": 2026
+  },
+  {
+    "id": "igbo-r66",
+    "civilizacion": "igbo",
+    "nombre": "Igbo Religion",
+    "descripcion": "The oracle system of Nri, the power of the ancestors and the force of the mami water.",
+    "desde": 1000,
+    "hasta": 2026
+  },
+  {
+    "id": "yoruba-r67",
+    "civilizacion": "yoruba",
+    "nombre": "Yoruba Religion",
+    "descripcion": "The oracles of Ifá, the voduns and the connections that link them to the rest of the Yoruba world.",
+    "desde": 1200,
+    "hasta": 1900
+  },
+  {
+    "id": "hausa-r68",
+    "civilizacion": "hausa",
+    "nombre": "Islam and Pre-Islamic Cults",
+    "descripcion": "Islam with the caste of the sanjus, and the structure of the brotherhoods.",
+    "desde": 1000,
+    "hasta": 2026
+  },
+  {
+    "id": "mali-r69",
+    "civilizacion": "mali",
+    "nombre": "Islam and Local Cults",
+    "descripcion": "The Islam of the Mandé sovereigns alongside the older faith in the land.",
+    "desde": 1235,
+    "hasta": 1670
+  },
+  {
+    "id": "songhai-r70",
+    "civilizacion": "songhai",
+    "nombre": "Islam",
+    "descripcion": "A Sunni Islam with the mosques of Gao, Timbuktu and the new imperial capital.",
+    "desde": 1464,
+    "hasta": 1591
+  },
+  {
+    "id": "himyaritas-r71",
+    "civilizacion": "himyaritas",
+    "nombre": "Judaism and Polytheism",
+    "descripcion": "Himyarite polytheism with the transition to Judaism in the fourth century.",
+    "desde": -300,
+    "hasta": 525
+  },
+  {
+    "id": "majapahit-r72",
+    "civilizacion": "majapahit",
+    "nombre": "Pre-Christian Religion",
+    "descripcion": "Before the baptism, the cult of the sun and of the ancestors, with the Brahmins of the court.",
+    "desde": 895,
+    "hasta": 2026
+  }
+]

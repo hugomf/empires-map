@@ -1,0 +1,242 @@
+[
+  {
+    "id": "roma-a1",
+    "civilizacion": "roma",
+    "nombre": "Bronze Legionary helmet",
+    "tipo": "Military",
+    "icono": "yelmo",
+    "descripcion": "Bronze helmet of the legion: open neck, cheek guards and a feather crest that identified the century."
+  },
+  {
+    "id": "roma-a2",
+    "civilizacion": "roma",
+    "nombre": "Gladius",
+    "tipo": "Military",
+    "icono": "espada",
+    "descripcion": "Straight 60 cm sword with a flat blade and a point for stabbing: the legionary’s sword, not the long gladius of the movies."
+  },
+  {
+    "id": "roma-a3",
+    "civilizacion": "roma",
+    "nombre": "Dressel 20 amphora",
+    "tipo": "Trade",
+    "icono": "jarra",
+    "descripcion": "Two-handled amphora for oil and wine, with the state’s seal on the neck: the packaging of imperial Rome."
+  },
+  {
+    "id": "roma-a4",
+    "civilizacion": "roma",
+    "nombre": "Denarius coin",
+    "tipo": "Economy",
+    "icono": "moneda",
+    "descripcion": "Silver with the emperor’s effigy and a fineness that turned the state into the bank of the Mediterranean."
+  },
+  {
+    "id": "roma-a5",
+    "civilizacion": "roma",
+    "nombre": "Funerary stele",
+    "tipo": "Art",
+    "icono": "estela",
+    "descripcion": "Marble slab with the biography of the deceased: cursus honorum, offices and epitaph. The most read text in the Roman world."
+  },
+  {
+    "id": "egipto-a6",
+    "civilizacion": "egipto",
+    "nombre": "Funerary mask of Tutankhamun",
+    "tipo": "Art",
+    "icono": "mascara",
+    "descripcion": "Funerary mask of solid gold with lapis and glass: the image of the pharaoh as a god, not as a portrait."
+  },
+  {
+    "id": "egipto-a7",
+    "civilizacion": "egipto",
+    "nombre": "Esna faience",
+    "tipo": "Craftsmanship",
+    "icono": "jarra",
+    "descripcion": "Clay vessels with vitreous glaze and painted decoration: the precision of the nilometer in every colour."
+  },
+  {
+    "id": "egipto-a8",
+    "civilizacion": "egipto",
+    "nombre": "Ebers Papyrus",
+    "tipo": "Writing",
+    "icono": "pergamino",
+    "descripcion": "Medical papyrus of 1556 BC with 700 remedies: the oldest surviving physician’s handbook."
+  },
+  {
+    "id": "sumer-a9",
+    "civilizacion": "sumer",
+    "nombre": "Cradle of Ur",
+    "tipo": "Craftsmanship",
+    "icono": "jarra",
+    "descripcion": "Wooden cradle with figures of goldsmiths, shell eyes and lapis: the most precious object of the Bronze Age."
+  },
+  {
+    "id": "sumer-a10",
+    "civilizacion": "sumer",
+    "nombre": "Head of Warka",
+    "tipo": "Art",
+    "icono": "mascara",
+    "descripcion": "Alabaster head from Uruk, one of the first representations of the human face in history."
+  },
+  {
+    "id": "sumer-a11",
+    "civilizacion": "sumer",
+    "nombre": "Cuneiform on clay",
+    "tipo": "Writing",
+    "icono": "pergamino",
+    "descripcion": "Clay tablets with cuneiform writing: a complete administration recorded with a stylus."
+  },
+  {
+    "id": "griegos-a12",
+    "civilizacion": "griegos",
+    "nombre": "Attic amphora",
+    "tipo": "Trade",
+    "icono": "jarra",
+    "descripcion": "Vase with black figures on a red ground, the glory of Athens: an entire industry in the service of Mediterranean trade."
+  },
+  {
+    "id": "griegos-a13",
+    "civilizacion": "griegos",
+    "nombre": "Kritios Boy",
+    "tipo": "Art",
+    "icono": "idol",
+    "descripcion": "Hermes of Kritios, the first figure to break free from the rigid block and discover contrapposto."
+  },
+  {
+    "id": "griegos-a14",
+    "civilizacion": "griegos",
+    "nombre": "Corinthian helmet",
+    "tipo": "Military",
+    "icono": "yelmo",
+    "descripcion": "Bronze helmet with a crest of hair and cheek guards: the icon of the hoplites."
+  },
+  {
+    "id": "babilonia-a15",
+    "civilizacion": "babilonia",
+    "nombre": "Code of Hammurabi",
+    "tipo": "Writing",
+    "icono": "estela",
+    "descripcion": "Basalt stele with the code of Hammurabi: 282 articles carved in Akkadian."
+  },
+  {
+    "id": "china-antigua-a16",
+    "civilizacion": "china-antigua",
+    "nombre": "Ritual bronze of Simuwu",
+    "tipo": "Craftsmanship",
+    "icono": "templo",
+    "descripcion": "Cast bronze with the figure of a priest and the inscription of a casting recipe a thousand years old."
+  },
+  {
+    "id": "han-a17",
+    "civilizacion": "han",
+    "nombre": "Jade sword of Goujian",
+    "tipo": "Military",
+    "icono": "espada",
+    "descripcion": "Jade sword with the inscription of the birds that identify the king: the objects of the Han court."
+  },
+  {
+    "id": "japon-a18",
+    "civilizacion": "japon",
+    "nombre": "Katana",
+    "tipo": "Military",
+    "icono": "espada",
+    "descripcion": "Steel folded in 15 layers, with the guard and the tsuka wrapped in silk."
+  },
+  {
+    "id": "japon-a19",
+    "civilizacion": "japon",
+    "nombre": "Haniwa pottery",
+    "tipo": "Craftsmanship",
+    "icono": "idol",
+    "descripcion": "Clay figures of warriors and animals that guarded the funerary gardens: the aesthetic of the Kofun."
+  },
+  {
+    "id": "egipto-a20",
+    "civilizacion": "egipto",
+    "nombre": "Narmer macehead",
+    "tipo": "Military",
+    "icono": "lanza",
+    "descripcion": "Copper macehead with the unification scene: King Narmer strikes his enemies."
+  },
+  {
+    "id": "inca-a21",
+    "civilizacion": "inca",
+    "nombre": "Quipu",
+    "tipo": "Writing",
+    "icono": "pergamino",
+    "descripcion": "Coloured cords with knots that record accounting, and the census of the empire."
+  },
+  {
+    "id": "mexica-a22",
+    "civilizacion": "mexica",
+    "nombre": "Mask of Tlaloc",
+    "tipo": "Art",
+    "icono": "mascara",
+    "descripcion": "Jade mask of Tlaloc, god of rain, with the eye rings and the flint tongue."
+  },
+  {
+    "id": "bizantino-a23",
+    "civilizacion": "bizantino",
+    "nombre": "Silver chalice of Justinian",
+    "tipo": "Craftsmanship",
+    "icono": "copa",
+    "descripcion": "Silver chalice with scenes of the life of Christ and of the imperial court: the splendour of the Byzantine world."
+  },
+  {
+    "id": "babilonia-a24",
+    "civilizacion": "babilonia",
+    "nombre": "Map tablet",
+    "tipo": "Writing",
+    "icono": "pergamino",
+    "descripcion": "Tablet with a map of the Babylonian world and its asphalt roads, from 600 BC."
+  },
+  {
+    "id": "vikingos-a25",
+    "civilizacion": "vikingos",
+    "nombre": "Loki’s axe",
+    "tipo": "Military",
+    "icono": "lanza",
+    "descripcion": "Viking steel axe with the mark of Loki, one of the few named weapons preserved."
+  },
+  {
+    "id": "vikingos-a26",
+    "civilizacion": "vikingos",
+    "nombre": "Silver brooch",
+    "tipo": "Craftsmanship",
+    "icono": "joya",
+    "descripcion": "Silver brooch with an animal head and interlaced nest motifs: the jewellery of ninth-century Vikings."
+  },
+  {
+    "id": "achaemenidas-a27",
+    "civilizacion": "achaemenidas",
+    "nombre": "Golden hunting bowl of Persepolis",
+    "tipo": "Art",
+    "icono": "joya",
+    "descripcion": "Golden bowl with the fabulous beasts of the imperial bestiary: the official art of the Achaemenid Empire."
+  },
+  {
+    "id": "achaemenidas-a28",
+    "civilizacion": "achaemenidas",
+    "nombre": "Trilingual inscription",
+    "tipo": "Writing",
+    "icono": "estela",
+    "descripcion": "Inscription in the three languages of the empire: the universal policy of Xerxes I."
+  },
+  {
+    "id": "mexica-a29",
+    "civilizacion": "mexica",
+    "nombre": "Sword of Tizoc",
+    "tipo": "Military",
+    "icono": "espada",
+    "descripcion": "Obsidian sword of Tizoc, on which the name of the Mexica emperor was carved."
+  },
+  {
+    "id": "britania-a30",
+    "civilizacion": "britania",
+    "nombre": "Britannia denarius",
+    "tipo": "Economy",
+    "icono": "moneda",
+    "descripcion": "Silver coin struck at Londinium with the image of Britannia: the mark of the Roman Empire."
+  }
+]

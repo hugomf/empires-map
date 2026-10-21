@@ -1,0 +1,35 @@
+schema: spec-driven
+
+# Contexto que el agente no puede deducir solo leyendo el código.
+context: |
+  Proyecto: «Crónica de Imperios», atlas histórico interactivo (React 19 + Vite + TypeScript).
+  El mapa pinta polígonos históricos desde 5000 a.C. hasta hoy. Los datos viven en datos/*.json
+  y se validan antes del build con `npm run validate`.
+  Escribir todos los artefactos de OpenSpec en español.
+  Los requisitos deben ser verificables y distinguir con claridad lo histórico (imperios, reinos,
+  califatos, virreinatos, ciudades-estado) de lo moderno (estados actuales).
+  No inventar fechas, nombres ni polígonos: si un dato es aproximado, indicarlo; si se desconoce, preguntar.
+  La interfaz será bilingüe (ES/EN) con inglés por defecto; el contenido histórico se redacta primero en español.
+
+rules:
+  proposal:
+    - Explicar el problema de usuario y qué queda fuera de alcance.
+    - Indicar qué datos, capas o vistas del mapa se ven afectados.
+  specs:
+    - Cada requisito debe incluir al menos un escenario WHEN/THEN verificable.
+    - Separar requisitos de datos, de interfaz y de renderizado del mapa.
+  design:
+    - Respetar el stack existente (React + Vite + d3-geo); justificar cualquier dependencia nueva.
+    - Describir el impacto en datos/*.json y en scripts/validar-datos.mjs.
+  tasks:
+    - Tareas pequeñas, con rutas de archivo concretas.
+    - Incluir una verificación final con `npm run validate` y `npm run build`.
+
+operations:
+  apply:
+    guidance:
+      - Antes de tocar código, releer proposal.md y specs/ del cambio activo.
+      - Ejecutar `npm run validate` tras modificar datos y `npm run build` al terminar.
+  archive:
+    guidance:
+      - Resumir qué requisitos se añadieron o modificaron antes de archivar.

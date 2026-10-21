@@ -1,0 +1,597 @@
+[
+  {
+    "id": "egipto",
+    "nombre": "Egypt",
+    "grupo": "África",
+    "paises": [
+      "Egypt"
+    ],
+    "ancla": [
+      31,
+      26
+    ]
+  },
+  {
+    "id": "nubia",
+    "nombre": "Nubia / Kush",
+    "grupo": "África",
+    "paises": [
+      "Sudan",
+      "S. Sudan"
+    ],
+    "ancla": [
+      31,
+      13
+    ]
+  },
+  {
+    "id": "magreb",
+    "nombre": "Maghreb",
+    "grupo": "África",
+    "paises": [
+      "Morocco",
+      "W. Sahara",
+      "Algeria",
+      "Tunisia",
+      "Libya"
+    ],
+    "ancla": [
+      4,
+      27
+    ]
+  },
+  {
+    "id": "africa-occidental",
+    "nombre": "West Africa",
+    "grupo": "África",
+    "paises": [
+      "Senegal",
+      "Gambia",
+      "Guinea-Bissau",
+      "Guinea",
+      "Sierra Leone",
+      "Liberia",
+      "Côte d'Ivoire",
+      "Ghana",
+      "Togo",
+      "Benin",
+      "Nigeria",
+      "Burkina Faso",
+      "Mali",
+      "Niger",
+      "Chad",
+      "Mauritania"
+    ],
+    "ancla": [
+      -4,
+      11
+    ]
+  },
+  {
+    "id": "africa-central",
+    "nombre": "Central Africa",
+    "grupo": "África",
+    "paises": [
+      "Cameroon",
+      "Gabon",
+      "Congo",
+      "Dem. Rep. Congo",
+      "Eq. Guinea"
+    ],
+    "ancla": [
+      21,
+      2
+    ]
+  },
+  {
+    "id": "africa-oriental",
+    "nombre": "East Africa",
+    "grupo": "África",
+    "paises": [
+      "Ethiopia",
+      "Eritrea",
+      "Somalia",
+      "Somaliland",
+      "Djibouti",
+      "Kenya",
+      "Uganda",
+      "Tanzania"
+    ],
+    "ancla": [
+      39,
+      5
+    ]
+  },
+  {
+    "id": "africa-austral",
+    "nombre": "Southern Africa",
+    "grupo": "África",
+    "paises": [
+      "South Africa",
+      "Namibia",
+      "Botswana",
+      "Zimbabwe",
+      "Zambia",
+      "Mozambique",
+      "Angola",
+      "Malawi",
+      "Madagascar",
+      "Lesotho",
+      "eSwatini"
+    ],
+    "ancla": [
+      23,
+      -25
+    ]
+  },
+  {
+    "id": "mesopotamia",
+    "nombre": "Mesopotamia",
+    "grupo": "Asia",
+    "paises": [
+      "Iraq"
+    ],
+    "ancla": [
+      45,
+      32
+    ]
+  },
+  {
+    "id": "levant",
+    "nombre": "Levant / Canaan",
+    "grupo": "Asia",
+    "paises": [
+      "Lebanon",
+      "Israel",
+      "Palestine",
+      "Jordan",
+      "Syria"
+    ],
+    "ancla": [
+      38,
+      31
+    ]
+  },
+  {
+    "id": "anatolia",
+    "nombre": "Anatolia",
+    "grupo": "Asia",
+    "paises": [
+      "Turkey"
+    ],
+    "ancla": [
+      33,
+      39
+    ]
+  },
+  {
+    "id": "arabi",
+    "nombre": "Arabia",
+    "grupo": "Asia",
+    "paises": [
+      "Saudi Arabia",
+      "Yemen",
+      "Oman",
+      "United Arab Emirates",
+      "Qatar",
+      "Kuwait",
+      "Bahrain"
+    ],
+    "ancla": [
+      46,
+      23
+    ]
+  },
+  {
+    "id": "persia",
+    "nombre": "Persia / Iran",
+    "grupo": "Asia",
+    "paises": [
+      "Iran"
+    ],
+    "ancla": [
+      55,
+      31
+    ]
+  },
+  {
+    "id": "afganistan",
+    "nombre": "Bactria / Sogdiana",
+    "grupo": "Asia",
+    "paises": [
+      "Afghanistan",
+      "Tajikistan"
+    ],
+    "ancla": [
+      67,
+      34
+    ]
+  },
+  {
+    "id": "asia-central",
+    "nombre": "Central Asia",
+    "grupo": "Asia",
+    "paises": [
+      "Uzbekistan",
+      "Turkmenistan",
+      "Kyrgyzstan",
+      "Kazakhstan"
+    ],
+    "ancla": [
+      64,
+      45
+    ]
+  },
+  {
+    "id": "mongolia",
+    "nombre": "Mongolian Steppe",
+    "grupo": "Asia",
+    "paises": [
+      "Mongolia"
+    ],
+    "ancla": [
+      104,
+      46
+    ]
+  },
+  {
+    "id": "china",
+    "nombre": "China",
+    "grupo": "Asia",
+    "paises": [
+      "China",
+      "Taiwan"
+    ],
+    "ancla": [
+      108,
+      33
+    ]
+  },
+  {
+    "id": "corea",
+    "nombre": "Korea",
+    "grupo": "Asia",
+    "paises": [
+      "South Korea",
+      "North Korea"
+    ],
+    "ancla": [
+      127,
+      38
+    ]
+  },
+  {
+    "id": "japon",
+    "nombre": "Japan",
+    "grupo": "Asia",
+    "paises": [
+      "Japan"
+    ],
+    "ancla": [
+      139,
+      36
+    ]
+  },
+  {
+    "id": "india",
+    "nombre": "India",
+    "grupo": "Asia",
+    "paises": [
+      "India",
+      "Pakistan",
+      "Bangladesh",
+      "Nepal",
+      "Bhutan",
+      "Sri Lanka"
+    ],
+    "ancla": [
+      79,
+      24
+    ]
+  },
+  {
+    "id": "indochina",
+    "nombre": "Indochina",
+    "grupo": "Asia",
+    "paises": [
+      "Myanmar",
+      "Thailand",
+      "Laos",
+      "Cambodia",
+      "Vietnam",
+      "Malaysia",
+      "Indonesia",
+      "Philippines",
+      "Singapore"
+    ],
+    "ancla": [
+      104,
+      11
+    ]
+  },
+  {
+    "id": "greece",
+    "nombre": "Aegean / Greece",
+    "grupo": "Europa",
+    "paises": [
+      "Greece",
+      "Albania",
+      "Macedonia",
+      "Bulgaria"
+    ],
+    "ancla": [
+      23,
+      38
+    ]
+  },
+  {
+    "id": "italia",
+    "nombre": "Italy",
+    "grupo": "Europa",
+    "paises": [
+      "Italy",
+      "Vatican",
+      "San Marino",
+      "Malta",
+      "Slovenia",
+      "Croatia"
+    ],
+    "ancla": [
+      13,
+      43
+    ]
+  },
+  {
+    "id": "espana",
+    "nombre": "Spain",
+    "grupo": "Europa",
+    "paises": [
+      "Spain"
+    ],
+    "ancla": [
+      -4,
+      40
+    ]
+  },
+  {
+    "id": "portugal",
+    "nombre": "Portugal",
+    "grupo": "Europa",
+    "paises": [
+      "Portugal"
+    ],
+    "ancla": [
+      -8,
+      39.6
+    ]
+  },
+  {
+    "id": "europa-occidental",
+    "nombre": "Western Europe",
+    "grupo": "Europa",
+    "paises": [
+      "France",
+      "Belgium",
+      "Netherlands",
+      "Luxembourg",
+      "Monaco",
+      "Germany",
+      "Switzerland",
+      "Liechtenstein",
+      "Austria"
+    ],
+    "ancla": [
+      4,
+      49
+    ]
+  },
+  {
+    "id": "europa-central",
+    "nombre": "Central Europe",
+    "grupo": "Europa",
+    "paises": [
+      "Czechia",
+      "Slovakia",
+      "Hungary",
+      "Poland",
+      "Belarus"
+    ],
+    "ancla": [
+      21,
+      50
+    ]
+  },
+  {
+    "id": "balcanes",
+    "nombre": "Balkans",
+    "grupo": "Europa",
+    "paises": [
+      "Serbia",
+      "Montenegro",
+      "Kosovo",
+      "Bosnia and Herz."
+    ],
+    "ancla": [
+      19,
+      44
+    ]
+  },
+  {
+    "id": "britania",
+    "nombre": "Britain",
+    "grupo": "Europa",
+    "paises": [
+      "United Kingdom",
+      "Ireland",
+      "Iceland"
+    ],
+    "ancla": [
+      -3,
+      54
+    ]
+  },
+  {
+    "id": "escandinavia",
+    "nombre": "Scandinavia",
+    "grupo": "Europa",
+    "paises": [
+      "Sweden",
+      "Norway",
+      "Denmark",
+      "Finland",
+      "Åland",
+      "Faeroe Is."
+    ],
+    "ancla": [
+      16,
+      63
+    ]
+  },
+  {
+    "id": "rusia",
+    "nombre": "Russia",
+    "grupo": "Europa",
+    "paises": [
+      "Russia",
+      "Ukraine",
+      "Moldova"
+    ],
+    "ancla": [
+      40,
+      58
+    ]
+  },
+  {
+    "id": "america-del-norte",
+    "nombre": "North America",
+    "grupo": "América",
+    "paises": [
+      "United States of America",
+      "Canada"
+    ],
+    "ancla": [
+      -106,
+      44
+    ]
+  },
+  {
+    "id": "estados-unidos",
+    "nombre": "United States",
+    "grupo": "América",
+    "paises": [
+      "United States of America"
+    ],
+    "ancla": [
+      -100,
+      44
+    ]
+  },
+  {
+    "id": "canada",
+    "nombre": "Canada",
+    "grupo": "América",
+    "paises": [
+      "Canada"
+    ],
+    "ancla": [
+      -104,
+      56
+    ]
+  },
+  {
+    "id": "mexico",
+    "nombre": "Mesoamerica",
+    "grupo": "América",
+    "paises": [
+      "Mexico",
+      "Guatemala",
+      "Belize",
+      "Honduras",
+      "El Salvador",
+      "Nicaragua",
+      "Costa Rica",
+      "Panama"
+    ],
+    "ancla": [
+      -99,
+      19
+    ]
+  },
+  {
+    "id": "caribe",
+    "nombre": "Caribbean",
+    "grupo": "América",
+    "paises": [
+      "Cuba",
+      "Haiti",
+      "Dominican Rep.",
+      "Jamaica",
+      "Puerto Rico",
+      "Bahamas",
+      "Trinidad and Tobago"
+    ],
+    "ancla": [
+      -73,
+      18
+    ]
+  },
+  {
+    "id": "andes",
+    "nombre": "Andes",
+    "grupo": "América",
+    "paises": [
+      "Colombia",
+      "Ecuador",
+      "Peru",
+      "Bolivia",
+      "Chile"
+    ],
+    "ancla": [
+      -71,
+      -13
+    ]
+  },
+  {
+    "id": "amazonia",
+    "nombre": "Amazonia",
+    "grupo": "América",
+    "paises": [
+      "Brazil",
+      "Venezuela",
+      "Guyana",
+      "Suriname"
+    ],
+    "ancla": [
+      -53,
+      -8
+    ]
+  },
+  {
+    "id": "pampas",
+    "nombre": "Southern Cone",
+    "grupo": "América",
+    "paises": [
+      "Argentina",
+      "Uruguay",
+      "Paraguay"
+    ],
+    "ancla": [
+      -61,
+      -33
+    ]
+  },
+  {
+    "id": "oceania",
+    "nombre": "Oceania",
+    "grupo": "Oceanía",
+    "paises": [
+      "Australia",
+      "New Zealand",
+      "Papua New Guinea"
+    ],
+    "ancla": [
+      140,
+      -25
+    ]
+  }
+]

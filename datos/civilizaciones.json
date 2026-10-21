@@ -1,0 +1,3622 @@
+[
+  {
+    "id": "sumer",
+    "nombre": "Sumer",
+    "abrev": "SUM",
+    "tipo": "cultura",
+    "region": "mesopotamia",
+    "inicio": -4500,
+    "fin": -1900,
+    "apogeo": [
+      -3200,
+      -2200
+    ],
+    "declive": [
+      -2400,
+      -1900
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#c9a227",
+    "sintesis": "La primera civilización urbana de la historia. Doce ciudades sobre el Tigris y el Éufrates, con tablillas de arcilla, un sistema de pesos y medidas y los primeros templos escalonados del mundo.",
+    "caida": "Invasiones de Acad, las guerras de Lagash y Ur y la presión de Elam y Asiria erosionaron el poder sumerio hasta que la III dinastía de Ur caía ante Hammurabi.",
+    "legado": "La escritura cuneiforme, el derecho codificado, el abecedario y el mito de Gilgamesh viajan con los mercaderes sumerios a todo el Próximo Oriente.",
+    "alias": [
+      "Sumeria",
+      "Mesopotamia",
+      "Sumerios"
+    ]
+  },
+  {
+    "id": "ebla",
+    "nombre": "Ebla",
+    "abrev": "EBL",
+    "tipo": "reino",
+    "region": "levant",
+    "inicio": -2350,
+    "fin": -2250,
+    "apogeo": [
+      -2350,
+      -2300
+    ],
+    "declive": [
+      -2290,
+      -2250
+    ],
+    "peso": 3,
+    "territorio": true,
+    "color": "#bb7458",
+    "sintesis": "Reino de la Siria septentrional cuyo archivo de 17.000 tablillas de arcilla sigue siendo la mejor ventana a la vida urbana de principios del III milenio a.C.",
+    "caida": "Fue arrasada por el rey acadio Naram-Sin; una segunda capital, Shalakh, fue saqueada por los gutios.",
+    "legado": "Su archivo revela los primeros contactos comerciales entre Egipto, Mesopotamia y el Levante."
+  },
+  {
+    "id": "akkad",
+    "nombre": "Akkad",
+    "abrev": "AKK",
+    "tipo": "imperio",
+    "region": "mesopotamia",
+    "inicio": -2334,
+    "fin": -2154,
+    "apogeo": [
+      -2300,
+      -2200
+    ],
+    "declive": [
+      -2200,
+      -2154
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#c06a3a",
+    "sintesis": "El primer gran imperio de la historia, fundido por Sargon de Acad. Unificó Mesopotamia con un ejército profesional, dio el nombre a su idioma y sentó el precedente de la administración imperial.",
+    "caida": "Invasiones gutias desde la montaña, hambrunas y la rebelión del rey Rignyash contra Lugal-zage-si.",
+    "legado": "El acadianense se convirtió en la lengua franca de la diplomacia y la administración durante casi mil años."
+  },
+  {
+    "id": "mari",
+    "nombre": "Mari",
+    "abrev": "MRI",
+    "tipo": "reino",
+    "region": "levant",
+    "inicio": -2900,
+    "fin": -1760,
+    "apogeo": [
+      -2400,
+      -2300
+    ],
+    "declive": [
+      -2000,
+      -1760
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#3f9390",
+    "sintesis": "Ciudad-estado comercial del Éufrates medio, gran centro de la ruta de la Armenia. Sus archivos conservan 25.000 tablillas y sus murallas se levantan con fosos a escala de ciudad.",
+    "caida": "Hammurabi de Babilonia la destruyó en 1761 a.C. para borrar a su rival, y antes había caído dos veces ante los hurritas.",
+    "legado": "El urbanismo de intramuros, la contabilidad y el primer plan urban regular del Próximo Oriente."
+  },
+  {
+    "id": "babilonia",
+    "nombre": "Babilonia",
+    "abrev": "BAB",
+    "tipo": "imperio",
+    "region": "mesopotamia",
+    "inicio": -1894,
+    "fin": -539,
+    "apogeo": [
+      -1792,
+      -1600
+    ],
+    "declive": [
+      -600,
+      -539
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#a08bdc",
+    "sintesis": "Ciudad-reino que se convirtió en potencia dominante del Próximo Oriente. Su rey Hammurabi promulgó el primer código legal escrito de la historia, y su versión neobabilónica se prolongó sobre el Tigris hasta el siglo VI a.C.",
+    "caida": "Cayeron ante los persas en 539 a.C., el día en que Ciro entró en Babilonia; desde entonces su declive no hizo más que agravarse.",
+    "legado": "El código de Hammurabi, la matemática babilónica, el observatorio y la biblioteca de Nineveh son su herencia."
+  },
+  {
+    "id": "asiria",
+    "nombre": "Asiria",
+    "abrev": "ASY",
+    "tipo": "imperio",
+    "region": "mesopotamia",
+    "inicio": -2025,
+    "fin": -609,
+    "apogeo": [
+      -911,
+      -609
+    ],
+    "declive": [
+      -700,
+      -609
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#8f3a34",
+    "sintesis": "La más potente máquina militar del mundo antiguo: el Estado asirio fue el primero en usar un ejército permanente de carros, caballería, corazas de hierro y una burocracia real que cobraba impuestos y aprovisionaba al ejército.",
+    "caida": "La caída de Nínive en 612 a.C. ante los medos y babilonios puso fin al primer «superpoder» de la historia.",
+    "legado": "El modelo de imperialismo administrativo, la red de caminos reales y la enorme nómina de archivos escritos."
+  },
+  {
+    "id": "hititas",
+    "nombre": "Hititas",
+    "abrev": "HIT",
+    "tipo": "imperio",
+    "region": "anatolia",
+    "inicio": -1650,
+    "fin": -1180,
+    "apogeo": [
+      -1400,
+      -1200
+    ],
+    "declive": [
+      -1250,
+      -1180
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#d07a3c",
+    "sintesis": "Pueblo de la Anatolia central que dominó la ruta del Bronce medio. Combinaron una metalurgia avanzada del hierro, una política de matrimonios diplomáticos y un ejército de carros que cruzó el Éufrates para destruir Babilonia.",
+    "caida": "La «crisis del siglo XII a.C.» los golpeó en una cadena de migraciones y guerras que dejó sus ciudades quemadas.",
+    "legado": "El primer registro hitita sobre el hierro, la diplomacia internacional y el tratado más antiguo conservado.",
+    "alias": [
+      "Imperio hitita",
+      "Anatolia hitita"
+    ]
+  },
+  {
+    "id": "minoicos",
+    "nombre": "Minoicos",
+    "abrev": "MIN",
+    "tipo": "cultura",
+    "region": "greece",
+    "inicio": -3000,
+    "fin": -1450,
+    "apogeo": [
+      -1700,
+      -1450
+    ],
+    "declive": [
+      -1500,
+      -1450
+    ],
+    "peso": 5,
+    "territorio": false,
+    "color": "#2f9e8f",
+    "sintesis": "La civilización marinera de Creta: palacios-laberintos de Cnoso, marfil minoico, navegación y los frescos de Akrotiri, la Pompeya de la Prehistoria.",
+    "caida": "La erupción del Santorini (c. 1620 a.C.) y la crisis del 1450 a.C., que abrieron la puerta a los invasores micénicos.",
+    "legado": "El primer Estado palatino, la escritura cretense, la moneda y los primeros grandes contactos marítimos del Egeo."
+  },
+  {
+    "id": "micenicos",
+    "nombre": "Micénicos",
+    "abrev": "MIC",
+    "tipo": "cultura",
+    "region": "greece",
+    "inicio": -1600,
+    "fin": -1100,
+    "apogeo": [
+      -1450,
+      -1300
+    ],
+    "declive": [
+      -1200,
+      -1100
+    ],
+    "peso": 5,
+    "territorio": false,
+    "color": "#c98a4b",
+    "sintesis": "La Grecia de los mitos: Micenas, Tirinto y Pilos, con palacios fortificados, sepulcros de oro y un ejército de carros que recordaba a Homero.",
+    "caida": "La crisis del 1200 a.C. —oleadas de invasores, migraciones y colapso comercial— borró sus reinos de la memoria.",
+    "legado": "El origen probable de la épica homérica, los linajes memorizados en las tablillas de Pilos y el patrón aristocrático de la Grecia clásica."
+  },
+  {
+    "id": "egipto",
+    "nombre": "Egipto Antiguo",
+    "abrev": "EGI",
+    "tipo": "imperio",
+    "region": "egipto",
+    "inicio": -3100,
+    "fin": -30,
+    "apogeo": [
+      -1550,
+      -1069
+    ],
+    "declive": [
+      -1070,
+      -332
+    ],
+    "peso": 10,
+    "territorio": true,
+    "color": "#d9a441",
+    "sintesis": "Tres milenios de continuidad a lo largo del Nilo: el Reino Antiguo construyó las pirámides, el Reino Medio dio estabilidad, y el Nuevo Reino convirtió a Egipto en un imperio con los ejércitos más temibles del mundo antiguo.",
+    "caida": "Invasiones de los hicsos, luego asirios y persas; al final, César, Antonio y Cleopatra sellaron su destino en 30 a.C.",
+    "legado": "La jerarquía, la escritura jeroglífica, la medicina, la arquitectura monumental y el concepto mismo de monarquía divina.",
+    "alias": [
+      "Faraones",
+      "Egipcios",
+      "Antiguo Egipto"
+    ]
+  },
+  {
+    "id": "ptolomeos",
+    "nombre": "Ptolemaicos",
+    "abrev": "PTO",
+    "tipo": "reino",
+    "region": "egipto",
+    "inicio": -305,
+    "fin": -30,
+    "apogeo": [
+      -250,
+      -180
+    ],
+    "declive": [
+      -100,
+      -30
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#b08fd0",
+    "sintesis": "Dinastía macedónica que gobernó Egipto y buena parte del Levante y Persia, heredera del impulso de Alejandro. Su residuo más famoso, la Biblioteca de Alejandría, fue el mayor centro de saber del mundo antiguo.",
+    "caida": "Conflictos dinásticos, crisis del erario por las guerras sirio-egipcias y, finalmente, Cleopatra y César, que acabaron con un reino de tres siglos.",
+    "legado": "La Biblioteca de Alejandría, la astronomía ptolemaica, la técnica del papiro y la figura del faraón reinventada en el mundo helenístico."
+  },
+  {
+    "id": "fenicios",
+    "nombre": "Fenicios",
+    "abrev": "FEN",
+    "tipo": "pueblo",
+    "region": "levant",
+    "inicio": -3000,
+    "fin": -539,
+    "apogeo": [
+      -1000,
+      -600
+    ],
+    "declive": [
+      -650,
+      -539
+    ],
+    "peso": 3,
+    "territorio": false,
+    "color": "#4f7fc4",
+    "sintesis": "Pueblo de puertos de la costa fenicia: Tiro, Sidón y Biblos. Marineros, mercaderes y diplomáticos; los tirios fundaron Cartago, y su alfabeto de 22 signos pasó a los griegos.",
+    "caida": "Asirios, neobabilonios y persas los sometieron uno a uno; su cultura se diluyó en el helenismo y el comercio romano.",
+    "legado": "El alfabeto fenicio alfabeto griego latín nuestras letras. También el vidrio, la construcción naval y el comercio de larga distancia."
+  },
+  {
+    "id": "filisteos",
+    "nombre": "Filisteos",
+    "abrev": "FIL",
+    "tipo": "pueblo",
+    "region": "levant",
+    "inicio": -1200,
+    "fin": -604,
+    "apogeo": [
+      -1150,
+      -1000
+    ],
+    "declive": [
+      -700,
+      -604
+    ],
+    "peso": 2,
+    "territorio": false,
+    "color": "#5f9e8c",
+    "sintesis": "«Pueblos del Mar» que irrumpieron en el Levante durante la crisis del 1200 a.C. Ocuparon cinco ciudades pentapolítas —Gaza, Ascalón, Yavné, Gath y Ecrón— y dominaron la ruta de Filistea.",
+    "caida": "Los asirios conquistaron el territorio en el siglo VII a.C. y destruyeron Gath y Ecrón; Ascalón resistió hasta 604 a.C.",
+    "legado": "Su cerámica a rueda en Gaza, el patrón de las cinco ciudades y las referencias bíblicas que los convirtió en símbolo del «enemigo del pueblo elegido»."
+  },
+  {
+    "id": "israel",
+    "nombre": "Israel y Judá",
+    "abrev": "ISR",
+    "tipo": "reino",
+    "region": "levant",
+    "inicio": -1026,
+    "fin": -539,
+    "apogeo": [
+      -970,
+      -930
+    ],
+    "declive": [
+      -600,
+      -539
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#6f8fd0",
+    "sintesis": "Las doce tribus de Israel se consolidan bajo Saúl, David y Salomón: un reino con capital en Jerusalén, contratos de compraventa, salmos y la Torá codificada por primera vez.",
+    "caida": "La separación del reino tras Salomón (930 a.C.), la invasión asiria que arrasó Samaria (722 a.C.) y la destrucción de Jerusalén por los babilonios (586 a.C.).",
+    "legado": "El monoteísmo, la Biblia hebrea, la ética de la alianza y una idea de justicia que alimentó el judaísmo, el cristianismo y el islam."
+  },
+  {
+    "id": "aramas",
+    "nombre": "Arameos",
+    "abrev": "ARA",
+    "tipo": "pueblo",
+    "region": "levant",
+    "inicio": -1000,
+    "fin": -539,
+    "apogeo": [
+      -800,
+      -600
+    ],
+    "declive": [
+      -600,
+      -539
+    ],
+    "peso": 3,
+    "territorio": false,
+    "color": "#b0905a",
+    "sintesis": "Pueblo tribal de Aram que bajó del norte y se asentó en Damasco. El arameo fue la lengua franca del Próximo Oriente: en ella están escritos los evangelios y el Targum.",
+    "caida": "Asirios y babilonios disolvieron el Estado arameo; solo quedó su lengua, que sobrevivió siglos como idioma comercial y religioso.",
+    "legado": "El arameo —lengua de Cristo y del Talmud— y los estados arameos de Damasco, Samal y Harrán."
+  },
+  {
+    "id": "seleucidas",
+    "nombre": "Seléucidas",
+    "abrev": "SEL",
+    "tipo": "imperio",
+    "region": "levant",
+    "inicio": -312,
+    "fin": -63,
+    "apogeo": [
+      -280,
+      -220
+    ],
+    "declive": [
+      -200,
+      -63
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#8b7fd4",
+    "sintesis": "El imperio que dividió el mundo de Alejandro. Sus reyes seléucidas extendieron el helenismo hasta el Indo, imponiendo la helenización de los pueblos de Asia occidental.",
+    "caida": "Guerras entre los sucesores, pérdidas ante Partos y Roma, hasta que Pompeyo puso fin a su poder seléucida en 63 a.C.",
+    "legado": "La lengua griega del Mediterráneo oriental, la acuñación de moneda en su modelo monetario y la infraestructura urbana de las ciudades helenísticas."
+  },
+  {
+    "id": "nabateos",
+    "nombre": "Nabateos",
+    "abrev": "NAB",
+    "tipo": "reino",
+    "region": "arabi",
+    "inicio": -312,
+    "fin": 106,
+    "apogeo": [
+      -30,
+      50
+    ],
+    "declive": [
+      95,
+      106
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#c98f4b",
+    "sintesis": "Reino comercial del desierto arabio que controlaba las rutas del incienso y las caravanas hacia Damasco y Gaza. Petra, construida en roca, fue su capital monumental.",
+    "caida": "Su comercio decayó cuando Roma abrió la ruta marítima del mar Rojo, y Trajano anexionó Petra en 106 d.C.",
+    "legado": "El comercio caravanero, la arquitectura nabatea tallada en roca y el monoteísmo pre-islámico."
+  },
+  {
+    "id": "achaemenidas",
+    "nombre": "Persa Achaemenida",
+    "abrev": "ACHA",
+    "tipo": "imperio",
+    "region": "persia",
+    "inicio": -550,
+    "fin": -330,
+    "apogeo": [
+      -500,
+      -400
+    ],
+    "declive": [
+      -360,
+      -330
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#c25b8a",
+    "sintesis": "El primer imperio global de la historia. Desde Persépolis, Ciro, Cambises, Darío y Jerjes gobernaron desde el Nilo hasta el Indo con una red de caminos reales, satrapías y una tolerancia religiosa sin parangón.",
+    "caida": "La invasión de Alejandro Magno (334-330 a.C.) la hizo arder en diez años, aunque su administración sobrevivió en los imperios sucesores.",
+    "legado": "El modelo imperial que copiaron Roma y los otomanos, el calendario lunar, la acuñación de moneda y el propio término «Asia» como categoría de la geografía política.",
+    "alias": [
+      "Persia",
+      "Persas",
+      "Imperio persa"
+    ]
+  },
+  {
+    "id": "partos",
+    "nombre": "Partos",
+    "abrev": "PRT",
+    "tipo": "reino",
+    "region": "persia",
+    "inicio": -247,
+    "fin": 224,
+    "apogeo": [
+      -100,
+      50
+    ],
+    "declive": [
+      140,
+      224
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#9a6fc0",
+    "sintesis": "Cavaleros persas del noreste que superaron a los seléucidas y vapulearon a Roma en Carrhae (53 a.C.). Su imperio controlaba las caravanas de Persia a Mesopotamia con una caballería de una eficacia letal.",
+    "caida": "La crisis del tercer siglo, la revuelta interna y el avance sasánida bajo Artaces II acabaron con la dinastía arsácida en 224.",
+    "legado": "La guerra de caballería contra Roma, el catolicismo nestoriano del este y la resistencia que aún se recuerda en la Persia sasánida.",
+    "alias": [
+      "Partia",
+      "Imperio parto",
+      "Arsácidas"
+    ]
+  },
+  {
+    "id": "sasanidas",
+    "nombre": "Sassánidas",
+    "abrev": "SAS",
+    "tipo": "imperio",
+    "region": "persia",
+    "inicio": 224,
+    "fin": 651,
+    "apogeo": [
+      420,
+      620
+    ],
+    "declive": [
+      602,
+      651
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#7f4fb0",
+    "sintesis": "Renovación imperial de Persia con un poder militar formidable: la caballería pesada, el «diente de garra» de sus lanceros, una red de caminos reales con postas, y la doctrina zoroastriana del Estado.",
+    "caida": "La guerra de Bizanzio (602-628) agotó al imperio, y los árabes-musulmanes redujeron Ctesifón y Persia en apenas dos décadas.",
+    "legado": "El nestorianismo, el código de leyes de los sabios persas, el caravanero de la seda y los mosaicos de Bishapur.",
+    "alias": [
+      "Imperio sasánida",
+      "Persas sasánidas"
+    ]
+  },
+  {
+    "id": "cartago",
+    "nombre": "Cartago",
+    "abrev": "CAR",
+    "tipo": "reino",
+    "region": "magreb",
+    "inicio": -814,
+    "fin": -146,
+    "apogeo": [
+      -300,
+      -200
+    ],
+    "declive": [
+      -200,
+      -146
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#c24b5f",
+    "sintesis": "La gran potencia naval del Mediterráneo occidental. De Tife y las rutas del oro sahariano construyó un imperio comercial con un ejército propio que contrataba a los mejores mercenarios del Mediterráneo.",
+    "caida": "Tres Guerras Púnicas: contra Sicilia, contra Siracusa y contra Roma. Los Escipiones le arrancaron Hispania, Cartago se vio obligada a quemar su propia flota, y en 146 a.C. fue arrasada.",
+    "legado": "El derecho romano se nutriría de su vida jurídica, de su agricultura de olivar y viñedo, y su caída marca el comienzo de la hegemonía romana en el Mediterráneo.",
+    "alias": [
+      "Aníbal",
+      "Aníbal Barca",
+      "Púnicos",
+      "Cartaginenses"
+    ]
+  },
+  {
+    "id": "nubia",
+    "nombre": "Nubia / Kush",
+    "abrev": "KSH",
+    "tipo": "reino",
+    "region": "nubia",
+    "inicio": -1070,
+    "fin": 350,
+    "apogeo": [
+      -750,
+      -650
+    ],
+    "declive": [
+      -400,
+      -350
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#d08a4e",
+    "sintesis": "Los reinos de Kush y Meroe, herederos de la cultura egipcia, conquistaron el Nilo hasta la segunda catarata y llegaron a ser la potencia dominante de África oriental.",
+    "caida": "Aksum invadió y ocupó Meroe en 350 d.C. y el reino desapareció, aunque sus sepulcros monumentales sobreviven en sus pirámides.",
+    "legado": "La tradición real de Kush, la cultura de Meroe, sus cementerios monumentales del norte y el oro de Nubia mencionado en la Biblia."
+  },
+  {
+    "id": "aksum",
+    "nombre": "Aksum",
+    "abrev": "AKS",
+    "tipo": "imperio",
+    "region": "africa-oriental",
+    "inicio": 100,
+    "fin": 940,
+    "apogeo": [
+      300,
+      500
+    ],
+    "declive": [
+      600,
+      940
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#4fb0a0",
+    "sintesis": "Reino del cuerno de África que controlaba el comercio del mar Rojo entre Egipto y la India. Su moneda de oro —la más antigua del mundo— y sus estelas de gigante testifican su poder.",
+    "caida": "La expansión del Islam y el desvío comercial hacia el norte desinfló la economía y le arrebató el control de la costa.",
+    "legado": "La Iglesia Ortodoxa Etíope Tewahedo, el monaquismo de los monasterios de Lalibela y las cruzadas de la Edad Media con la Etiopía cristiana."
+  },
+  {
+    "id": "etruscos",
+    "nombre": "Etruscos",
+    "abrev": "ETR",
+    "tipo": "pueblo",
+    "region": "italia",
+    "inicio": -800,
+    "fin": -400,
+    "apogeo": [
+      -600,
+      -500
+    ],
+    "declive": [
+      -500,
+      -400
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#d0774e",
+    "sintesis": "La más misteriosa civilización de Italia. Maestros del metal, navegantes, mercaderes de la vía de la sal y artistas que pintaron los sarcófagos con un realismo decidido.",
+    "caida": "La expansión romana y la Liga etrusca, más la presión romana sobre las ciudades etruscas, acabaron con su independencia política.",
+    "legado": "El trabajo metálico de la orfebrería, la toscanía de las villas y la enorme influencia cultural sobre la Roma primitiva."
+  },
+  {
+    "id": "griegos",
+    "nombre": "Grecia Antigua",
+    "abrev": "GRE",
+    "tipo": "cultura",
+    "region": "greece",
+    "inicio": -800,
+    "fin": -146,
+    "apogeo": [
+      -500,
+      -400
+    ],
+    "declive": [
+      -338,
+      -146
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#4f8fd0",
+    "sintesis": "La civilización que inventó la polis, la democracia, el teatro, la filosofía y la lógica. cientos de ciudades-Estados compitieron entre sí con una avalancha de colonias en todo el Mediterráneo.",
+    "caida": "Las guerras peloponnesas dividieron el mundo griego; Macedonia, y luego Roma, lo conquistaron. El fin de la independencia griega precede al final del helenismo.",
+    "legado": "Todo el pensamiento occidental, la democracia, el derecho natural, las raíces de las artes y la etimología de casi todas las ciencias.",
+    "alias": [
+      "Griegos",
+      "Grecia",
+      "Helénicos"
+    ]
+  },
+  {
+    "id": "macedonia",
+    "nombre": "Macedonia",
+    "abrev": "MAC",
+    "tipo": "reino",
+    "region": "greece",
+    "inicio": -800,
+    "fin": -323,
+    "apogeo": [
+      -336,
+      -323
+    ],
+    "declive": [
+      -324,
+      -323
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#7fb04f",
+    "sintesis": "Monarquía del norte de Grecia que, con Filipo II y su hijo Alejandro, unificó el país y llevó la guerra helénica hasta el Indo.",
+    "caida": "A la muerte de Alejandro (323 a.C.) el imperio se fragmentó en las diadosias —Ptolomeos, Seléucidas y Antígonos— y Macedonia perdió su papel.",
+    "legado": "El ejército de falange, el modelo helenístico de corte y la conquista que unificó el mundo antiguo.",
+    "alias": [
+      "Alejandro",
+      "Alejandro Magno",
+      "Macedonia antigua"
+    ]
+  },
+  {
+    "id": "roma",
+    "nombre": "Imperio Romano",
+    "abrev": "ROM",
+    "tipo": "imperio",
+    "region": "italia",
+    "inicio": -753,
+    "fin": 476,
+    "apogeo": [
+      27,
+      180
+    ],
+    "declive": [
+      235,
+      476
+    ],
+    "peso": 10,
+    "territorio": true,
+    "color": "#d4462f",
+    "sintesis": "De una ciudad-estado itálica al dominio del Mediterráneo entero. Legiones, derecho, caminos de piedra y una administración que unificó tres continentes bajo una misma moneda y una misma ley.",
+    "caida": "Crisis del siglo III, invasión de los pueblos germánicos, el cambio religioso y la división del Imperio debilitaron el centro.",
+    "legado": "El derecho romano, la Iglesia latina, el calendario juliano, la ingeniería de acueductos y calzadas, y la literatura que todo Occidente heredó.",
+    "alias": [
+      "Roma Antigua",
+      "República Romana",
+      "Romanos"
+    ]
+  },
+  {
+    "id": "bizantino",
+    "nombre": "Bizancio / Imperio de Oriente",
+    "abrev": "BIZ",
+    "tipo": "imperio",
+    "region": "anatolia",
+    "inicio": 330,
+    "fin": 1453,
+    "apogeo": [
+      527,
+      1025
+    ],
+    "declive": [
+      1204,
+      1453
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#b23a5e",
+    "sintesis": "Roma bautizada que sobrevivió mil años en Constantinopla. Custodia de los textos clásicos, la ley justinianiana, el iconoclasmo y un Estado fiscal y militar notable.",
+    "caida": "El saqueo de 1204 por los cruzados fue el golpe de gracia interior; Mehmed II tomó la ciudad en 1453 y el último cuerpo resistió hasta las murallas.",
+    "legado": "El Corpus iuris civilis, la iconografía cristiana, los mosaicos, el Griego medieval y la caída de Constantinopla como el final de la Edad Media.",
+    "alias": [
+      "Bizancio",
+      "Imperio bizantino",
+      "Constantinopla"
+    ]
+  },
+  {
+    "id": "francos",
+    "nombre": "Francia / Carlingio",
+    "abrev": "FRC",
+    "tipo": "imperio",
+    "region": "europa-occidental",
+    "inicio": 768,
+    "fin": 888,
+    "apogeo": [
+      800,
+      843
+    ],
+    "declive": [
+      843,
+      888
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#5a7fd4",
+    "sintesis": "Unión de pueblos germánicos bajo Carlomagno, que coronó emperador en Roma (800) y unificó desde el Ebro hasta el Danubio uniendo Carolingios y Sajones.",
+    "caida": "El Tratado de Verdún (843) partió el imperio entre los hijos de Luis el Pío y lo enfrentó con los vikingos y los magrebíes.",
+    "legado": "El Sacro Imperio Romano como idea, el renacimiento carolingio con la letra carolina, y el feudalismo europeo."
+  },
+  {
+    "id": "iberia-cristiana",
+    "nombre": "Reinos de Iberia",
+    "abrev": "IBE",
+    "tipo": "reino",
+    "region": "espana",
+    "inicio": 718,
+    "fin": 1479,
+    "apogeo": [
+      1212,
+      1250
+    ],
+    "declive": [
+      1400,
+      1479
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#c9a83f",
+    "sintesis": "Los reinos cristianos de la Península —Asturias, León, Castilla, Aragón, Navarra y Portugal— que reconquistaron el territorio tras la conquista musulmana y forjaron la España y Portugal modernos.",
+    "caida": "Las crisis del siglo XIV, las guerras civiles y la unión dinástica con Castilla; Portugal se separó en 1143 y Aragón coronó a Isabel y Fernando en 1479.",
+    "legado": "La España católica, la Reconquista, el descubrimiento de América, el romance ibérico y las colonias del Imperio Español."
+  },
+  {
+    "id": "ottomanos",
+    "nombre": "Imperio Otomano",
+    "abrev": "OTO",
+    "tipo": "imperio",
+    "region": "anatolia",
+    "inicio": 1299,
+    "fin": 1922,
+    "apogeo": [
+      1520,
+      1570
+    ],
+    "declive": [
+      1683,
+      1922
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#2f8f6f",
+    "sintesis": "El Estado que sustituyó al Califato y al Imperio Seléucida, uniendo Anatolia, el Levante, Arabia y el norte de África. Su imperio se administraba con el sistema del millet y la owlad, y alcanzaba hasta Europa.",
+    "caida": "Derrotas navales en Lepanto (1571), la Gran Liga (1684) y Morea, el nacionalismo de las revoluciones y la Primera Guerra Mundial.",
+    "legado": "El sistema de millet, la arquitectura otomana, el derecho islámico codificado y la fractura del Oriente Próximo moderno."
+  },
+  {
+    "id": "seljukas",
+    "abrev": "SLK",
+    "tipo": "imperio",
+    "region": "asia-central",
+    "inicio": 1037,
+    "fin": 1194,
+    "apogeo": [
+      1070,
+      1140
+    ],
+    "declive": [
+      1150,
+      1194
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#4f9fb5",
+    "sintesis": "Dinastía túrquica de Asia Central que dominó Persia, Corasán y, con su rama de Rum, Anatolia. Financiaron la arquitectura de Isfahan y la biblioteca y el hospital de Sultan Qanun.",
+    "caida": "El avance mongol en el siglo XII destrozó el Iran selchukita y la rama de Anatolia, que se rindió a los otomanos en 1308.",
+    "legado": "La mezquita y el madrasa seljukita, el arte del mosaico y la dinastía Tughlaq de India como herederos.",
+    "alias": [
+      "Sultanato de Rum",
+      "Grandes Seldjuques"
+    ],
+    "nombre": "Seldjuques"
+  },
+  {
+    "id": "mongoles",
+    "nombre": "Imperio Mongol",
+    "abrev": "MGL",
+    "tipo": "imperio",
+    "region": "mongolia",
+    "inicio": 1206,
+    "fin": 1368,
+    "apogeo": [
+      1250,
+      1290
+    ],
+    "declive": [
+      1340,
+      1368
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#c2c8d0",
+    "sintesis": "El mayor Estado terrestre de la historia, con unos 16 millones de súbditos. Su máquina combinaba jinetes de estepa, el asedio con mangonelos y la reapertura de las rutas de la seda.",
+    "caida": "La peste negra (1347), la guerra de Sucesión, la rebelión de los pueblos sogdianos y el despertar de las potencias nativas los desgastaron hasta 1368.",
+    "legado": "La unificación de Eurasia, la Pax Mongolica que aseguró el comercio y los pueblos mongoles de India, Persia y China.",
+    "alias": [
+      "Gengis Kan",
+      "Mongoles",
+      "Tartaria"
+    ]
+  },
+  {
+    "id": "timuridos",
+    "nombre": "Timúridas",
+    "abrev": "TIM",
+    "tipo": "imperio",
+    "region": "asia-central",
+    "inicio": 1370,
+    "fin": 1507,
+    "apogeo": [
+      1400,
+      1450
+    ],
+    "declive": [
+      1450,
+      1507
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#8fd0a8",
+    "sintesis": "La dinastía de Tamerlán que unificó Persia y Asia Central, con Samarcanda convertida en la capital más espléndida del mundo islámico.",
+    "caida": "La fragmentación entre herederos, las lenguas persas de Uzbek y Herat, y la llegada de los kanes uzbecos de Shaybaní (1500) acabaron con ella.",
+    "legado": "La arquitectura de Samarcanda, la miniatura persa, la medicina de Avicena y la «Puerta de la ciencia»."
+  },
+  {
+    "id": "safavidas",
+    "nombre": "Safávidas",
+    "abrev": "SAF",
+    "tipo": "imperio",
+    "region": "persia",
+    "inicio": 1501,
+    "fin": 1736,
+    "apogeo": [
+      1580,
+      1650
+    ],
+    "declive": [
+      1722,
+      1736
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#d08a3a",
+    "sintesis": "La dinastía chiita que unificó Persia, catapultó a Isfahan a ser «la mitad del mundo» y restauró la identidad del chiismo duodecimano.",
+    "caida": "La invasión afgana de 1722, que tomó Isfahan, y el ascenso de los qajares remataron la dinastía.",
+    "legado": "Isfahan —la «Meta de las metas»—, la alfombras persas, la laca policromada de Qazvin y el té turbado.",
+    "alias": [
+      "Imperio safávida",
+      "Persia safávida"
+    ]
+  },
+  {
+    "id": "qajar",
+    "nombre": "Qajares",
+    "abrev": "QAJ",
+    "tipo": "reino",
+    "region": "persia",
+    "inicio": 1789,
+    "fin": 1925,
+    "apogeo": [
+      1850,
+      1870
+    ],
+    "declive": [
+      1906,
+      1925
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#c9b06a",
+    "sintesis": "Dinastía qajar que unificó Persia de nuevo tras los procesos de Nadir Shah, con un ejército qizilbash tribales y una política de apertura a Europa.",
+    "caida": "La influencia británica y rusa, la revolución constitucional de 1905-1911 y la ocupación británica de Persia del Norte acabaron con su poder.",
+    "legado": "La ley qajar, el primer ferrocarril de Persia, las mezquillas del mustafá y el nacionalismo moderno iraní.",
+    "alias": [
+      "Imperio qajar",
+      "Persia qajar"
+    ]
+  },
+  {
+    "id": "iran-pahlavi",
+    "nombre": "Irán Pahlaví",
+    "abrev": "PAH",
+    "tipo": "estado",
+    "region": "persia",
+    "inicio": 1925,
+    "fin": 1979,
+    "apogeo": [
+      1945,
+      1960
+    ],
+    "declive": [
+      1963,
+      1979
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#7fbfa0",
+    "sintesis": "Irán monárquico y modernizado: el programa de industrialización del petróleo, la reforma agraria de 1963 y un autoritarismo modernizador.",
+    "caida": "La omnipotencia del sha, la oposición reprimida y la revolución de 1979 redujeron al Estado a un régimen de partido único.",
+    "legado": "La nacionalización del petróleo (1951), la reforma agraria y las bases del Estado moderno.",
+    "alias": [
+      "Persia pahlaví",
+      "Imperio pahlaví"
+    ]
+  },
+  {
+    "id": "iran-islamico",
+    "nombre": "República Islámica de Irán",
+    "abrev": "IRA",
+    "tipo": "estado",
+    "region": "persia",
+    "inicio": 1979,
+    "fin": 2026,
+    "apogeo": [
+      1990,
+      2010
+    ],
+    "declive": [
+      2018,
+      2026
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#3f9f7f",
+    "sintesis": "La República teocrática surgida de la revolución de 1979, con el Guide Supremo como autoridad religiosa y constitucional al mismo tiempo.",
+    "caida": "El movimiento verde de 2009, las sanciones, la crisis económica de 2018-2020 y las protestas de 2022 marcan su declive relativo.",
+    "legado": "El Hezbola libanés, la red de aliados regionales (hutíes, sirios, iraníes) y su papel en la geoestrategia del Golfo.",
+    "alias": [
+      "Persia contemporánea",
+      "Irán actual"
+    ]
+  },
+  {
+    "id": "indus",
+    "nombre": "Civilización del Indo",
+    "abrev": "IND",
+    "tipo": "cultura",
+    "region": "india",
+    "inicio": -3300,
+    "fin": -1300,
+    "apogeo": [
+      -2600,
+      -1900
+    ],
+    "declive": [
+      -2000,
+      -1300
+    ],
+    "peso": 6,
+    "territorio": false,
+    "color": "#d9854b",
+    "sintesis": "Mohenjo-Daro, Harappa, Dholavira: la primera civilización urbana del subcontinente con planificación urbana, saneamiento, pesos estandarizados y una escritura aún sin descifrar.",
+    "caida": "El cambio climático post-2600 a.C., las crecidas del Indo y el colapso del comercio con Mesopotamia disolvieron la cultura. La «cuna» de los arios la recoge la tradición.",
+    "legado": "La planificación urbana, la red de comercio con Mesopotamia (los «sellos mesopotamios») y la tradición védica que la heredó."
+  },
+  {
+    "id": "veda",
+    "nombre": "Cultura védica",
+    "abrev": "VED",
+    "tipo": "cultura",
+    "region": "india",
+    "inicio": -1500,
+    "fin": -500,
+    "apogeo": [
+      -1000,
+      -600
+    ],
+    "declive": [
+      -700,
+      -500
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#e0a44f",
+    "sintesis": "La sociedad aria de la India que compuso los Vedas, erigió altares sacrificiales y construyó los primeros templos de piedra del subcontinente.",
+    "caida": "La afirmación de las monarquías y la transición a la urbanización de las ciudades-Estados del siglo VI a.C. desplazaron el centro de gravedad.",
+    "legado": "Los Vedas y el sánscrito, la acción ritual, el brahmanismo, el fuego sacrificial y el eje del pensamiento hindú."
+  },
+  {
+    "id": "mauryas",
+    "nombre": "Imperio Mauryan",
+    "abrev": "MAU",
+    "tipo": "imperio",
+    "region": "india",
+    "inicio": -543,
+    "fin": -185,
+    "apogeo": [
+      -300,
+      -232
+    ],
+    "declive": [
+      -232,
+      -185
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#7f9fd4",
+    "sintesis": "El primer imperio unificado del subcontinente, con Chandragupta, Bindusara y Ashoka. Abarcó desde el Indo hasta Bengala y fue el mayor Estado de la India antigua.",
+    "caida": "La crisis de sucesión tras la muerte de Ashoka, el reposo brahmánico y las invasiones Indo-Grecas del Noroeste.",
+    "legado": "Los edictos de Ashoka en los pilares, la administración arancelaria y el budismo como religión de Estado; también el modelo maurya de administración.",
+    "alias": [
+      "Chandragupta",
+      "Asoka"
+    ]
+  },
+  {
+    "id": "guptas",
+    "nombre": "Imperio Gupta",
+    "abrev": "GUP",
+    "tipo": "imperio",
+    "region": "india",
+    "inicio": 320,
+    "fin": 550,
+    "apogeo": [
+      380,
+      450
+    ],
+    "declive": [
+      500,
+      550
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#d47f4f",
+    "sintesis": "La edad clásica de la India: con Chandragupta II y Skandagupta, la India recuperó el control del Indo y exportó budismo, literatura y ciencia a Asia.",
+    "caida": "Las invasiones húnas (Huns) y la fragmentación del Ganges; después, los reinos del norte quedaron en manos de los feudales.",
+    "legado": "El sistema decimal, los tratados de Aryabhata (cifras y cero), la «edad de oro» sánscrita y las artes de la India clásica."
+  },
+  {
+    "id": "chola",
+    "nombre": "Imperio Chola",
+    "abrev": "CHO",
+    "tipo": "imperio",
+    "region": "india",
+    "inicio": 848,
+    "fin": 1279,
+    "apogeo": [
+      1000,
+      1150
+    ],
+    "declive": [
+      1200,
+      1279
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#4fb0b5",
+    "sintesis": "La potencia naval y terrestre del sur de la India: con Rajaraja I y Rajendra I dominó el paisaje de Bengala, conquistó Sri Lanka y llevó sus expediciones al sudeste de Asia.",
+    "caida": "El dominio mongol-la presión de Delhi, las pandemias de peste y la fragmentación en los Pandya y Hoysala.",
+    "legado": "Los templos de Brihadisvara y Shore, la caballería que cantaba antes de cargar y la épica del Chola Ramayana."
+  },
+  {
+    "id": "mogol",
+    "nombre": "Imperio Mogol",
+    "abrev": "MOG",
+    "tipo": "imperio",
+    "region": "india",
+    "inicio": 1526,
+    "fin": 1857,
+    "apogeo": [
+      1580,
+      1650
+    ],
+    "declive": [
+      1757,
+      1857
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#d45f8f",
+    "sintesis": "Dinastía de origen turcosan mongol que unificó la India desde Kabul a Oceanía, con Akbar, Shah Jahan y Taj Mahal.",
+    "caida": "La declinación demográfica del siglo XVIII, la crisis de Successión tras Aurangzeb y la rebelión de 1857 con el dominio británico.",
+    "legado": "El Taj Mahal, la mezquita de Jama, la cocina Mughai y la literatura urdu; también la fusión indo-islámica que sigue viva en el subcontinente.",
+    "alias": [
+      "Babur",
+      "Akbar",
+      "Shah Jahan"
+    ]
+  },
+  {
+    "id": "hola",
+    "nombre": "Reinos de la India",
+    "abrev": "HIN",
+    "tipo": "estado",
+    "region": "india",
+    "inicio": 1858,
+    "fin": 2026,
+    "apogeo": [
+      1950,
+      1990
+    ],
+    "declive": [
+      2020,
+      2026
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#e0a06a",
+    "sintesis": "La India bajo dominio británico y luego independiente: de la experimentación con la independencia (1947) al ascenso como potencia nuclear y económica global.",
+    "caida": "La partición de 1947, el crecimiento demográfico y un debate sobre el desarrollo que sigue abierto.",
+    "legado": "La democracia más grande del mundo, el IT, la película de Bollywood y el diáspora indio por todo el planeta.",
+    "alias": [
+      "Indostán",
+      "Indios",
+      "Raj británico"
+    ]
+  },
+  {
+    "id": "china-antigua",
+    "nombre": "China Xia–Shang–Zhou",
+    "abrev": "XIA",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": -2070,
+    "fin": -256,
+    "apogeo": [
+      -1046,
+      -771
+    ],
+    "declive": [
+      -771,
+      -256
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#d4b04f",
+    "sintesis": "Las primeras dinastías documentadas por los Registros de los Grandes Historiadores: Xia, Shang y Zhou. Los Zhou inventaron el mandato celestial que legitimó las dinastías.",
+    "caida": "La época de los reinos en pugna y la larga fragmentación de la Edad del Bronce final; el Estado de Qin unificó China en 221 a.C.",
+    "legado": "El mandato del cielo, la primacía del confucianismo, la escritura ósea, la metalurgia del bronce y la idea de las dinastías como ciclo."
+  },
+  {
+    "id": "qin",
+    "nombre": "Dinastía Qin",
+    "abrev": "QIN",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": -221,
+    "fin": -206,
+    "apogeo": [
+      -221,
+      -207
+    ],
+    "declive": [
+      -210,
+      -206
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#8f8f9f",
+    "sintesis": "Quince años de unificación que inventaron el Estado chino: escritura estándar, pesos y medidas, el Gran Muro unificado y un ejército de cientos de miles de hombres.",
+    "caida": "La tiranía de su primer emperador, las rebeliones de 209 a.C. y la dinastía de Chu-Han que la siguió.",
+    "legado": "El concepto moderno de China, la administración centralizada, la ley positiva y la Gran Muralla como símbolo nacional."
+  },
+  {
+    "id": "han",
+    "nombre": "Dinastía Han",
+    "abrev": "HAN",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": -206,
+    "fin": 220,
+    "apogeo": [
+      100,
+      150
+    ],
+    "declive": [
+      180,
+      220
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#c94f3f",
+    "sintesis": "La dinastía que dio su nombre al pueblo Han. Bajo Wu y Han Wudi los confucianos se convirtieron en la burocracia oficial y China exportó seda, papel y cerámica a Occidente.",
+    "caida": "El poder creciente de los eunucos, las rebeliones de los confines, el predominio de los generales de viejo estilo y la desmembración de los Tres Reinos (220).",
+    "legado": "El término «China» para el país central, el conducto de la Ruta de la Seda, la invención del papel y el confucianismo como Estado.",
+    "alias": [
+      "Wu",
+      "China Han"
+    ]
+  },
+  {
+    "id": "tang",
+    "nombre": "Dinastía Tang",
+    "abrev": "TAN",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": 618,
+    "fin": 907,
+    "apogeo": [
+      700,
+      755
+    ],
+    "declive": [
+      755,
+      907
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#d4a03f",
+    "sintesis": "La edad de oro de China: Chang’an fue la ciudad más grande del mundo, con dos millones de habitantes, y los enviados de Persia, India y Japón llegaron a su corte.",
+    "caida": "La rebelión de An Lushan (755) destrozó al imperio; le siguieron la rebelión de Huang Chao y la fragmentación de las Cinco Dinastías.",
+    "legado": "La poesía Tang, la cerámica, la imprenta de bloques con madera, el sistema de exámenes de la burocracia y la apertura hacia Asia central."
+  },
+  {
+    "id": "song",
+    "nombre": "Dinastía Song",
+    "abrev": "SON",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": 960,
+    "fin": 1279,
+    "apogeo": [
+      1050,
+      1120
+    ],
+    "declive": [
+      1200,
+      1279
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#7fb0d4",
+    "sintesis": "China del norte con capital en Kaifeng y luego Hangzhou: la dinastía del comercio de las rutas marítimas, del papel-moneda, la pólvora y la imprenta de tipos móviles.",
+    "caida": "El Jin del norte le quitó las tierras del norte, y en 1279 los mongoles de Kublai destruyeron la última resistencia Song.",
+    "legado": "La imprenta de Bi Sheng, la brújula, la moneda de papel, el té en rama y la ciudad de Hangzhou, la más bonita del Asia medieval."
+  },
+  {
+    "id": "yuan",
+    "nombre": "Dinastía Yuan",
+    "abrev": "YUA",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": 1271,
+    "fin": 1368,
+    "apogeo": [
+      1280,
+      1340
+    ],
+    "declive": [
+      1340,
+      1368
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#b0b8c8",
+    "sintesis": "China bajo el mando mongol de Kublai Kan: la capital en Dadu (Pekín), el Gran Canal reabierto y una red de relevo de correo con 2.000 puestos.",
+    "caida": "La peste negra, las rebeliones de los turpan y la revuelta de los Turbanes Rojos que sitiaron Dadu.",
+    "legado": "La unificación de China bajo los mongoles, el Camino de seda terrestre reanimado y el inicio de la cultura confuciana de Yuan."
+  },
+  {
+    "id": "ming",
+    "nombre": "Dinastía Ming",
+    "abrev": "MNG",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": 1368,
+    "fin": 1644,
+    "apogeo": [
+      1400,
+      1570
+    ],
+    "declive": [
+      1600,
+      1644
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#c93f4f",
+    "sintesis": "Los Hongwu y los Yongle dirigieron China durante casi tres siglos. Zheng He llevó la flota hasta el África oriental, y la Gran Muralla fue restaurada y ampliada.",
+    "caida": "El cambio del comercio del oro americano por la plata, la corrupción, las rebeliones de Li Zicheng y la invasión de los manchúes.",
+    "legado": "La porcelana Ming, Pekín y su Ciudad Prohibida, los mapas de cartógrafos como Matteo Ricci y la marina de guerra como precedente de la expansión.",
+    "alias": [
+      "Ming China",
+      "Porcelana Ming"
+    ]
+  },
+  {
+    "id": "qing",
+    "nombre": "Dinastía Qing",
+    "abrev": "QNG",
+    "tipo": "dinastia",
+    "region": "china",
+    "inicio": 1644,
+    "fin": 1912,
+    "apogeo": [
+      1730,
+      1790
+    ],
+    "declive": [
+      1850,
+      1912
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#9fb8c9",
+    "sintesis": "Los últimos imperios de China: la dinastía manchú multiplicó la población de 150 a 400 millones y todo el país quedó bajo un sistema administrativo indirecto.",
+    "caida": "La guerra del Opio, las potencias exteriores y las revoluciones: Sun Yat-sen abole la dinastía en 1911-12.",
+    "legado": "Los tratados desiguales que la humillaron, el fraccionamiento de China moderna y el Estado-nación chino tal como existe hoy.",
+    "alias": [
+      "Qing China",
+      "Manchúes"
+    ]
+  },
+  {
+    "id": "china-republicana",
+    "nombre": "China Republicana",
+    "abrev": "ROC",
+    "tipo": "estado",
+    "region": "china",
+    "inicio": 1912,
+    "fin": 1949,
+    "apogeo": [
+      1928,
+      1937
+    ],
+    "declive": [
+      1937,
+      1949
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#c98f8f",
+    "sintesis": "La República tras la caída de los Qing: el Kuomintang de Chiang Kai-shek unificó el país en 1928, mientras el Partido Comunista surgía en las provincias rurales.",
+    "caida": "La invasión japonesa (1937), la guerra civil, la hiperinflación y el avance comunista en 1949.",
+    "legado": "La guerra civil china, la industrialización del Noreste y el génesis del PC, que ha marcado medio siglo."
+  },
+  {
+    "id": "china-popular",
+    "nombre": "República Popular China",
+    "abrev": "RPC",
+    "tipo": "estado",
+    "region": "china",
+    "inicio": 1949,
+    "fin": 2026,
+    "apogeo": [
+      2010,
+      2026
+    ],
+    "declive": null,
+    "peso": 8,
+    "territorio": true,
+    "color": "#e04f3f",
+    "sintesis": "El Estado más populoso del mundo, fundado por Mao en 1949: de la colectivización a las reformas de Deng Xiaoping y hoy la segunda economía mundial.",
+    "caida": "La Gran Hambre (1959-61) y la Revolución Cultural (1966-76) fueron sus crisis internas; hoy enfrenta el envejecimiento de la población y la desaceleración del crecimiento.",
+    "legado": "La transformación de más de mil millones de personas, la cadena de producción global y la nueva ruta de la Iniciativa de la Franja y el Cinturón."
+  },
+  {
+    "id": "corea",
+    "nombre": "Corea (Goryeo–Joseon)",
+    "abrev": "COR",
+    "tipo": "dinastia",
+    "region": "corea",
+    "inicio": 918,
+    "fin": 1897,
+    "apogeo": [
+      1392,
+      1600
+    ],
+    "declive": [
+      1850,
+      1897
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#5fa8d4",
+    "sintesis": "Corea unificada bajo los Goryeo y luego la dinastía Joseon, que durante casi cinco siglos fue uno de los Estados más prósperos de Asia Oriental.",
+    "caida": "La apertura a Japón (1876) rompió el aislamiento y el vasallaje de facto a Japón terminó con la reforma de 1894.",
+    "legado": "El confucianismo oficial, la imprenta de tipos metálicos de 1234 y la cocina coreana, que hoy es patrimonio de la humanidad."
+  },
+  {
+    "id": "japon",
+    "nombre": "Japón imperial",
+    "abrev": "JAP",
+    "tipo": "estado",
+    "region": "japon",
+    "inicio": 1868,
+    "fin": 1946,
+    "apogeo": [
+      1937,
+      1941
+    ],
+    "declive": [
+      1941,
+      1945
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#e0899f",
+    "sintesis": "La Restauración Meiji transformó Japón en un Estado industrial en una generación: dictó la primera constitución de Asia y un imperio que llegó hasta Java.",
+    "caida": "La derrota de los aliados en el Pacífico (1941-45) y las bombas atómicas de Hiroshima y Nagasaki abrieron su rendición.",
+    "legado": "La industrialización asiática, el toyotismo, la occidentalización del Estado y la constitución de 1947.",
+    "alias": [
+      "Nippon",
+      "Samuráis",
+      "Japón"
+    ]
+  },
+  {
+    "id": "vietnam",
+    "nombre": "Đại Việt",
+    "abrev": "VIE",
+    "tipo": "reino",
+    "region": "indochina",
+    "inicio": 939,
+    "fin": 1945,
+    "apogeo": [
+      1428,
+      1470
+    ],
+    "declive": [
+      1780,
+      1945
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#5fc9a8",
+    "sintesis": "El Estado vietnamita independentizado de China por Ngô Quyền, que resistió a los mongoles y luego se gobernó a través de las dinastías L, Trần, Lê y Nguyễn.",
+    "caida": "El dominio francés (1887-1954) y luego la guerra de Indochina remataron su fragmentación.",
+    "legado": "La estructura administrativa del Estado y la dinastía Nguyễn, el budismo vietnamita y la cocina de fideos de arroz."
+  },
+  {
+    "id": "angkor",
+    "nombre": "Imperio Javanés (Angkor)",
+    "abrev": "ANG",
+    "tipo": "imperio",
+    "region": "indochina",
+    "inicio": 802,
+    "fin": 1431,
+    "apogeo": [
+      1050,
+      1250
+    ],
+    "declive": [
+      1300,
+      1431
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#d4a87f",
+    "sintesis": "El imperio agrario de los janes de Angkor, que controló el delta del Mekong con una red de templos, embalses y caminos de tierra de cientos de kilómetros.",
+    "caida": "La guerra con Ayutthaya (1431) y las sequías provocadas por la deforestación y las desviaciones del Mekong destruyeron su centro.",
+    "legado": "Angkor Wat, el mayor complejo religioso del mundo, y el sistema de embalses que aún sostiene la agricultura camboyana."
+  },
+  {
+    "id": "kushanos",
+    "nombre": "Kushanos",
+    "abrev": "KUS",
+    "tipo": "imperio",
+    "region": "afganistan",
+    "inicio": 30,
+    "fin": 375,
+    "apogeo": [
+      100,
+      250
+    ],
+    "declive": [
+      300,
+      375
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#b8a05f",
+    "sintesis": "Imperio de los yuezhi que conectó India, Persia y China. Difundieron el budismo por toda Asia y acuñaron la primera moneda de oro del mundo con el emperador Kanishka.",
+    "caida": "El avance de los persas sasánidas de Khosro I y la fragmentación del norte de la India (los Kushano-Sassanidas y el Gupta).",
+    "legado": "El budismo transmitido a China y Asia Central, la acuñación de oro (Vima Kadphises) y el estilo de Gandhara, madre de la escultura greco-budista."
+  },
+  {
+    "id": "mali",
+    "nombre": "Imperio de Mali",
+    "abrev": "MAL",
+    "tipo": "imperio",
+    "region": "africa-occidental",
+    "inicio": 1235,
+    "fin": 1670,
+    "apogeo": [
+      1312,
+      1350
+    ],
+    "declive": [
+      1500,
+      1670
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#d9a441",
+    "sintesis": "El imperio del Níger que dominó el oro de Saharanía. Mansa Musa hizo construir la mezquita de Djenné y su peregrinación a La Meca en 1324 mostró el oro de África ante el mundo islámico.",
+    "caida": "El poder declinó tras la muerte de Mansa Musa, la competencia de Songhai, las invasiones tuareg y la crisis del comercio del oro.",
+    "legado": "Timbuktu, centro de manuscritos y de universidad; el estilo djenne y la difusión del oro y del cacao de Mali."
+  },
+  {
+    "id": "songhai",
+    "nombre": "Imperio Songhai",
+    "abrev": "SGH",
+    "tipo": "imperio",
+    "region": "africa-occidental",
+    "inicio": 1464,
+    "fin": 1591,
+    "apogeo": [
+      1500,
+      1550
+    ],
+    "declive": [
+      1590,
+      1591
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#c9853c",
+    "sintesis": "El sucesor de Mali que controló el curso del Níger y todo el comercio transsahariano del oro y la sal. Askia Mohamed hizo de Gao la capital más rica de África.",
+    "caida": "La expedición de Marruecos (1591) —con sus armas de fuego— derrotó a Askia y destruyó su modelo.",
+    "legado": "El Askia de Gao, el monopolio del oro con el norte, y los manuscritos de Timbuktu que conservaron la ciencia Árabe."
+  },
+  {
+    "id": "kanem",
+    "nombre": "Kanem–Bornu",
+    "abrev": "KBM",
+    "tipo": "confederacion",
+    "region": "africa-occidental",
+    "inicio": 700,
+    "fin": 1600,
+    "apogeo": [
+      1200,
+      1350
+    ],
+    "declive": [
+      1450,
+      1600
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#cfa0c0",
+    "sintesis": "La civilización del lago Chad, la más duradera de África occidental: un sistema de sultanatos que controló el comercio entre el Níger y la costa mediterránea.",
+    "caida": "La expansión de los estados vecinos, la presión del Magreb y la dispersión de sus pueblos hacia el oeste.",
+    "legado": "El modelo del sultanato saheliano, la cultura kanuri y los cementerios monumentales del lago Chad."
+  },
+  {
+    "id": "ashanti",
+    "nombre": "Ashanti",
+    "abrev": "ASH",
+    "tipo": "reino",
+    "region": "africa-occidental",
+    "inicio": 1701,
+    "fin": 1902,
+    "apogeo": [
+      1750,
+      1800
+    ],
+    "declive": [
+      1874,
+      1902
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#d4b44f",
+    "sintesis": "La confederación de los asantes en la franja del oro, con capital en Kumasi. Construyeron un ejército de largo alcance y un Estado burocrático que competía con los europeos.",
+    "caida": "Cuatro guerras con el Imperio británico (1824-1900) y el saqueo de Kumasi en 1874 disolvieron la confederación.",
+    "legado": "El kente, el oro ashanti (reproducido por los joyeros europeos) y la estructura fiscal del Estado."
+  },
+  {
+    "id": "buganda",
+    "nombre": "Buganda",
+    "abrev": "BUG",
+    "tipo": "reino",
+    "region": "africa-oriental",
+    "inicio": 1300,
+    "fin": 1896,
+    "apogeo": [
+      1700,
+      1800
+    ],
+    "declive": [
+      1890,
+      1896
+    ],
+    "peso": 3,
+    "territorio": true,
+    "color": "#c9a06a",
+    "sintesis": "El realeza del lago Victoria que construyó un Estado centralizado con un ejército de lanceros y una rápida navegación en botes de dugout.",
+    "caida": "La colonización británica, la guerra mahdist en el noreste y la abolición del reino en 1896.",
+    "legado": "La cultura luganda y el trono del rey, la navegación del lago Victoria y la historia oral de Bunyoro-Kitara."
+  },
+  {
+    "id": "zulu",
+    "nombre": "Zulú",
+    "abrev": "ZUL",
+    "tipo": "reino",
+    "region": "africa-austral",
+    "inicio": 1816,
+    "fin": 1897,
+    "apogeo": [
+      1820,
+      1870
+    ],
+    "declive": [
+      1879,
+      1897
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#b85c4f",
+    "sintesis": "La nación que se formó bajo Shaka Zulu con sus famosos impis, el ejército de lanceros y la rápida migración hacia el norte que vació el sur de África.",
+    "caida": "La guerra anglo-zulú de 1879 en Isandlwana y Ulundi, la partición de Zululand por Gran Bretaña y el ascenso de los nuevos reinos zulúes.",
+    "legado": "La política de Shaka y la guerra de expansión, los tambores del zulu y la influencia del modelo zulú en los regímenes bantúes."
+  },
+  {
+    "id": "merina",
+    "nombre": "Reino de Merina",
+    "abrev": "MER",
+    "tipo": "reino",
+    "region": "africa-austral",
+    "inicio": 1794,
+    "fin": 1897,
+    "apogeo": [
+      1850,
+      1880
+    ],
+    "declive": [
+      1885,
+      1897
+    ],
+    "peso": 3,
+    "territorio": true,
+    "color": "#b08f7f",
+    "sintesis": "El Estado unificador de Madagascar, con la capital Antananarivo construida en lo alto de las montañas y un ejército que unificó la isla.",
+    "caida": "La intervención francesa de 1895 y la abdicación de la reina Ranavalona III.",
+    "legado": "La unificación de Madagascar, la cultura malgache de las altas tierras y la tradición de los Merina."
+  },
+  {
+    "id": "etiopia",
+    "nombre": "Etiopía (Abisinia)",
+    "abrev": "ABY",
+    "tipo": "reino",
+    "region": "africa-oriental",
+    "inicio": 1270,
+    "fin": 1974,
+    "apogeo": [
+      1850,
+      1868
+    ],
+    "declive": [
+      1896,
+      1974
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#5fc9b8",
+    "sintesis": "El único Estado cristiano de África que sobrevivió a las invasiones islámicas, con los emperadores solomónicos y su ejército de un millón contra los italianos en 1896.",
+    "caida": "La ocupación italiana de 1936-41 y la revolución de 1974 que abolió la monarquía.",
+    "legado": "El Aksum y su ligazón con la Iglesia copta, la tradición del café de Etiopía y su «tufi» ceremonial."
+  },
+  {
+    "id": "olmecas",
+    "nombre": "Olmecas",
+    "abrev": "OLM",
+    "tipo": "cultura",
+    "region": "mexico",
+    "inicio": -1500,
+    "fin": 400,
+    "apogeo": [
+      -800,
+      -400
+    ],
+    "declive": [
+      -400,
+      100
+    ],
+    "peso": 5,
+    "territorio": false,
+    "color": "#a8d45f",
+    "sintesis": "La cultura madre de Mesoamérica: los constructores de San Lorenzo, La Venta y Monte Albán. Monedas de jade, sacrificios de sangre y una escritura que aún no se descifra por completo.",
+    "caida": "La crisis del 400 a.C. y el auge de Teotihuacán y los zapotecos borró a los olmecas de la escena, aunque su estilo de la cabeza-columna sobrevivió.",
+    "legado": "Los colosos (cabezas gigantes), el patrón del motmot, la escritura de la que sólo se ha descifrado una parte y el chocolate que bebían en sus ceremonias."
+  },
+  {
+    "id": "zapotecos",
+    "nombre": "Zapotecos",
+    "abrev": "ZAP",
+    "tipo": "cultura",
+    "region": "mexico",
+    "inicio": -700,
+    "fin": 900,
+    "apogeo": [
+      200,
+      600
+    ],
+    "declive": [
+      700,
+      900
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#c9a85f",
+    "sintesis": "Uno de los pueblos más antiguos de América, con capital en Monte Albán —construida en el lomo de una montaña— y una de las primeras grafías del continente.",
+    "caida": "El dominio zapotec-mixteca y luego la presión mexica los anexó en el siglo XV.",
+    "legado": "Monte Albán (Patrimonio Mundial), la escritura calendárica y la figura del grabador de oro del Danzante."
+  },
+  {
+    "id": "teotihuacan",
+    "nombre": "Teotihuacán",
+    "abrev": "TEO",
+    "tipo": "imperio",
+    "region": "mexico",
+    "inicio": 100,
+    "fin": 550,
+    "apogeo": [
+      200,
+      450
+    ],
+    "declive": [
+      450,
+      550
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#d4794f",
+    "sintesis": "La ciudad más poblada del mundo entre 200 y 500 d.C., con las pirámides del Sol y de la Luna y una población multiétnica de tlaxcaltecas, tepanecas y mayas.",
+    "caida": "El incendio y el saqueo de 535 d.C., posiblemente ligado a las erupciones volcánicas, destruyeron la ciudad.",
+    "legado": "La pirámide del Sol, el santuario de Quetzalcóatl, el origen teotihuacana de la ciudad maya y la economía de la obsidiana."
+  },
+  {
+    "id": "mayas",
+    "nombre": "Maya",
+    "abrev": "MYA",
+    "tipo": "cultura",
+    "region": "mexico",
+    "inicio": 200,
+    "fin": 900,
+    "apogeo": [
+      600,
+      750
+    ],
+    "declive": [
+      800,
+      900
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#4fbf9f",
+    "sintesis": "La cultura más compleja de América precolombina: Tikal, Calakmul, Palenque y Copán. Escribieron la única escritura mesoamericana con decodificación parcial y domesticaron la fauna como ninguna otra.",
+    "caida": "La declinación agrícola del sur y la guerra entre Tikal y Calakmul acabaron con el período clásico; el período postclásico (900-1697) fue una supervivencia rural.",
+    "legado": "El calendario Maya, los números y el cero, la astronomía, los acueductos de Palenque y los textos de Dresde."
+  },
+  {
+    "id": "toltecas",
+    "nombre": "Toltecas",
+    "abrev": "TOL",
+    "tipo": "cultura",
+    "region": "mexico",
+    "inicio": 900,
+    "fin": 1150,
+    "apogeo": [
+      1000,
+      1100
+    ],
+    "declive": [
+      1100,
+      1150
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#b0c46a",
+    "sintesis": "Cultura de Tula, en el altiplano central, que emigró hacia las islas del Caribe y las llanuras del norte. Su capital Tula, con sus atlantes de basalto, es el arquetipo de la metrópoli americana.",
+    "caida": "La invasión de los chichimecas y la migración de los toltecas que se adaptaron a Mesoamérica.",
+    "legado": "La iconografía de Quetzalcóatl y la leyenda tolteca de Tollan, el juego de pelota de Chichén Itzá y la música de flauta.",
+    "alias": [
+      "Toltec",
+      "Tula"
+    ]
+  },
+  {
+    "id": "mexica",
+    "nombre": "Mexica / Aztecas",
+    "abrev": "MEX",
+    "tipo": "imperio",
+    "region": "mexico",
+    "inicio": 1428,
+    "fin": 1521,
+    "apogeo": [
+      1502,
+      1519
+    ],
+    "declive": [
+      1519,
+      1521
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#d9544f",
+    "sintesis": "La Triple Alianza de Tenochtitlan, Texcoco y Tlacopan dominó Mesoamérica. La ciudad más grande del mundo precolombino con 200.000 habitantes, una hidráulica de origen y un calendario ritual.",
+    "caida": "La viruela y la conquista de Cortés, con la batalla de Otumba (1520) y la caída de Tenochtitlan (1521).",
+    "legado": "El chocolate, el maíz domesticado, la medicina herbolaria y el calendario mexica que sigue vigente en el Día de Muertos.",
+    "alias": [
+      "Tenochtitlan",
+      "Aztecas"
+    ]
+  },
+  {
+    "id": "taino",
+    "nombre": "Taíno",
+    "abrev": "TNO",
+    "tipo": "pueblo",
+    "region": "caribe",
+    "inicio": 1200,
+    "fin": 1502,
+    "apogeo": [
+      1300,
+      1450
+    ],
+    "declive": [
+      1492,
+      1502
+    ],
+    "peso": 3,
+    "territorio": false,
+    "color": "#5fb0c9",
+    "sintesis": "Los pueblos de las Antillas mayores que organizaron la isla de Hispaniola en una confederación de cacicazgos, con bohíos de miles de personas, caciques y jefes que cultivaban la tierra.",
+    "caida": "La llegada de los españoles, el esclavizado y el trabajo forzado: en cinco décadas la población taíno pasó de millones a decenas de miles.",
+    "legado": "La canoa monoxila, el taíno como lengua franca del Caribe y la cultura de los primeros contactos."
+  },
+  {
+    "id": "muisca",
+    "nombre": "Muisca / Chibchas",
+    "abrev": "MUS",
+    "tipo": "cultura",
+    "region": "andes",
+    "inicio": 800,
+    "fin": 1600,
+    "apogeo": [
+      1450,
+      1550
+    ],
+    "declive": [
+      1560,
+      1600
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#c98a5f",
+    "sintesis": "Los muiscas del altiplano cundinamarqués, con la ciudad de Tundunavá y un sistema de «caminos reales» de 4.000 km y 20 puentes sobre el Bogotá.",
+    "caida": "La conquista española de 1537, la búsqueda febril de la leyenda de El Dorado y las epidemias importadas.",
+    "legado": "La leyenda de El Dorado, los túneles de Tundunavá y la moneda de la Muisca que da origen al peso colombiano."
+  },
+  {
+    "id": "chavin",
+    "nombre": "Chavín",
+    "abrev": "CHV",
+    "tipo": "cultura",
+    "region": "andes",
+    "inicio": -900,
+    "fin": -200,
+    "apogeo": [
+      -600,
+      -400
+    ],
+    "declive": [
+      -400,
+      -200
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#c9906a",
+    "sintesis": "La primera civilización panandina: el Templo de Chavín de Huántar, con sus galerías internas, sus columnas de cobre y su iconografía de felinos y aves.",
+    "caida": "La fragmentación regional tras 400 a.C. y el auge de las culturas costeñas del Norte Chico.",
+    "legado": "El Templo de Chavín de Huántar (Patrimonio Mundial), la metalurgia del cobre y el dios del Lanzón."
+  },
+  {
+    "id": "tiwanaku",
+    "nombre": "Tiwanaku",
+    "abrev": "TWK",
+    "tipo": "cultura",
+    "region": "andes",
+    "inicio": -550,
+    "fin": 1000,
+    "apogeo": [
+      550,
+      700
+    ],
+    "declive": [
+      900,
+      1000
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#8f9fd4",
+    "sintesis": "La civilización del altiplano que domesticó la llama alpina y el mundo preinca de los Andes, con las puertas del Sol y los bloques rectangulares de Huanaca Pampa.",
+    "caida": "Una sequía de varios siglos (900-1100 d.C.) y la crisis demográfica devoraron el Altiplano; la capa de colapso lo marca el registro arqueológico.",
+    "legado": "El dios de la Puerta del Sol, el puma de las punas, y las pruebas del uso del cacao y del ají en el norte de Chile."
+  },
+  {
+    "id": "inca",
+    "nombre": "Incas",
+    "abrev": "INC",
+    "tipo": "imperio",
+    "region": "andes",
+    "inicio": 1438,
+    "fin": 1533,
+    "apogeo": [
+      1450,
+      1527
+    ],
+    "declive": [
+      1527,
+      1533
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#d4a63f",
+    "sintesis": "El mayor imperio de América: 4.000 km de cordillera unidos por el Qhapaq Ñan, con caminos reales, una contabilidad de nudos (khipu) y Machu Picchu como fortaleza real.",
+    "caida": "La guerra civil entre Atahualpa y Huáscar y la invasión de Pizarro (1532) cortaron el estado andino en tres años.",
+    "legado": "La red vial andina, el khipu como sistema contable, la ingeniería de terrazas y el estudio de las lenguas quechua y aimara.",
+    "alias": [
+      "Inca",
+      "Tahuantinsuyo",
+      "Tawantinsuyu"
+    ]
+  },
+  {
+    "id": "tairona",
+    "nombre": "Tairona",
+    "abrev": "TAI",
+    "tipo": "cultura",
+    "region": "andes",
+    "inicio": 800,
+    "fin": 1600,
+    "apogeo": [
+      1400,
+      1550
+    ],
+    "declive": [
+      1550,
+      1600
+    ],
+    "peso": 3,
+    "territorio": false,
+    "color": "#a87f5f",
+    "sintesis": "Pueblos de las Serranías de Santa Marta que levantaron aldeas circulares en las cumbres y dominaron el oro, la concha y el comercio con las Antillas.",
+    "caida": "La llegada de los españoles y las epidemias de viruela en 1524-1530 destruyeron la red de aldeas.",
+    "legado": "Eliki: los pueblos de la Sierra Nevada, la iconografía del oro tairona y los sitios arqueológicos de Ciudad Perdida."
+  },
+  {
+    "id": "mississipi",
+    "nombre": "Cultura Mississipi",
+    "abrev": "MSP",
+    "tipo": "cultura",
+    "region": "estados-unidos",
+    "inicio": 800,
+    "fin": 1600,
+    "apogeo": [
+      1200,
+      1400
+    ],
+    "declive": [
+      1500,
+      1600
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#9fbf7f",
+    "sintesis": "La sociedad de los constructores de montículos del valle del Misisipi: Cahokia fue la ciudad más grande al norte de México en el siglo XIV, con unos 20.000 habitantes.",
+    "caida": "La crisis del siglo XIII, la guerra con los Illinois y la llegada de los europeos con sus enfermedades.",
+    "legado": "Los montículos de Cahokia (Patrimonio Mundial), las aldeas de Cahokia, con Crazy Horse, y el hacha de piedra del Misisipi."
+  },
+  {
+    "id": "comanche",
+    "nombre": "Comanche",
+    "abrev": "CMN",
+    "tipo": "pueblo",
+    "region": "estados-unidos",
+    "inicio": 1500,
+    "fin": 1875,
+    "apogeo": [
+      1700,
+      1800
+    ],
+    "declive": [
+      1864,
+      1875
+    ],
+    "peso": 3,
+    "territorio": false,
+    "color": "#c98f5f",
+    "sintesis": "Nación de las grandes llanuras que monopolizó el comercio de caballos entre México y el norte, y construyó una enorme estrategia de movilidad con más de 400.000 personas.",
+    "caida": "La expansión del ganado, el Smallpox, el ferrocarril y la reserva de 1875.",
+    "legado": "El caballo como motor de las llanuras, la cuenta de las bestias y la resistencia comanche que llegó hasta 1875."
+  },
+  {
+    "id": "anasazi",
+    "nombre": "Anasazi",
+    "abrev": "ANA",
+    "tipo": "cultura",
+    "region": "estados-unidos",
+    "inicio": 100,
+    "fin": 1300,
+    "apogeo": [
+      500,
+      900
+    ],
+    "declive": [
+      1100,
+      1300
+    ],
+    "peso": 3,
+    "territorio": false,
+    "color": "#d4a87f",
+    "sintesis": "La cultura de las viviendas excavadas en roca del Suroeste: Cliff Palace en Mesa Verde, con sus 200 habitaciones y los canales de irrigación de la cienega.",
+    "caida": "La sequía y el cambio del clima en el siglo XIII los llevó a abandonar las aldeas entre 1200 y 1300.",
+    "legado": "La cultura del sudoeste y las Chimney Rock, los pueblos ancestrales de hoy y el debate sobre por qué desaparecieron."
+  },
+  {
+    "id": "holanda",
+    "nombre": "Imperio Holandés",
+    "abrev": "HOL",
+    "tipo": "imperio",
+    "region": "europa-occidental",
+    "inicio": 1581,
+    "fin": 1815,
+    "apogeo": [
+      1650,
+      1700
+    ],
+    "declive": [
+      1780,
+      1815
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#e08a4f",
+    "sintesis": "La pequeña República que llegó a ser la potencia comercial del mundo: la Compañía de las Indias Orientales tuvo más barcos que cualquier ejército y su bolsa de Amsterdam inventó el mercado moderno.",
+    "caida": "Las Guerras de la Devolución y la dependencia de Francia e Inglaterra, el motín de Java (1774-79) y la ocupación napoleónica de 1795.",
+    "legado": "La bolsa de valores, el banco central, la compañía por acción, los canales y las casas de canal de Ámsterdam y el derecho internacional."
+  },
+  {
+    "id": "espana",
+    "nombre": "Imperio Español",
+    "abrev": "ESP",
+    "tipo": "imperio",
+    "region": "espana",
+    "inicio": 1492,
+    "fin": 1898,
+    "apogeo": [
+      1580,
+      1650
+    ],
+    "declive": [
+      1750,
+      1898
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#d4a03f",
+    "sintesis": "La Monarquía Católica se convirtió en el primer imperio global: la Conquista, las flotas de la plata de Potosí y el Galeón de Manila que unía Acapulco con Manila.",
+    "caida": "La bancarrota de los años 1550-1600, las rebeliones de las colonias —que comenzaron con trece— y el desastre de 1898 en Cuba y Filipinas.",
+    "legado": "El castellano como idioma global, la dignidad de los indios y las Leyes de Indias, y el trazado de las ciudades americanas.",
+    "alias": [
+      "Hispanos",
+      "Corona de Castilla",
+      "Corona de Aragón"
+    ]
+  },
+  {
+    "id": "portugal",
+    "nombre": "Imperio Portugués",
+    "abrev": "POR",
+    "tipo": "imperio",
+    "region": "portugal",
+    "inicio": 1415,
+    "fin": 1999,
+    "apogeo": [
+      1510,
+      1560
+    ],
+    "declive": [
+      1580,
+      1999
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#5fb06a",
+    "sintesis": "La primera potencia colonial de la Edad Moderna: con las rutas marítimas de Vasco da Gama, Afonso de Albuquerque y los fortines de Ceilán, Goa y Malaca construyó una cadena de miles de puertos.",
+    "caida": "1580 (Unión dinástica con España), 1640 (Restauración), 1755 (terremoto de Lisboa), la independencia de Brasil y las guerras de África.",
+    "legado": "La más antigua alianza de Europa, la estrategia de las rutas marítimas, la lengua portuguesa en Brasil y África y la tradición exploradora."
+  },
+  {
+    "id": "britania",
+    "nombre": "Imperio Británico",
+    "abrev": "BRT",
+    "tipo": "imperio",
+    "region": "britania",
+    "inicio": 1583,
+    "fin": 1997,
+    "apogeo": [
+      1815,
+      1914
+    ],
+    "declive": [
+      1919,
+      1997
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#c44f6a",
+    "sintesis": "El imperio sobre el que nunca se ponía el sol: la Royal Navy, la East India Company, el libre comercio y la máquina industrial hicieron de Gran Bretaña la primera potencia mundial del siglo XIX.",
+    "caida": "Las dos guerras mundiales la quebraron financieramente; la independencia de India (1947), el Suez de Suez (1956) y la descolonización africana completaron el proceso.",
+    "legado": "El Commonwealth, el inglés global, la red de ferrocarriles, el modelo parliamentary y los años del pop psicodélico.",
+    "alias": [
+      "Gran Bretaña",
+      "Inglaterra",
+      "Britania"
+    ]
+  },
+  {
+    "id": "reino-unido",
+    "nombre": "Reino Unido",
+    "abrev": "GBR",
+    "tipo": "estado",
+    "region": "britania",
+    "inicio": 1707,
+    "fin": 2026,
+    "apogeo": [
+      1815,
+      1914
+    ],
+    "declive": [
+      1945,
+      2026
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#a84f7f",
+    "sintesis": "El Estado que salió del Imperio: una monarquía constitucional, un parlamento reformado y el choque entre un imperio en retirada y el americanismo naciente.",
+    "caida": "La declinación económica posterior a 1945, la pérdida del poder de compra y la crisis del pound (1967 y 1976).",
+    "legado": "El Estado de bienestar, la NHS, la BBC, el rock y el derecho consuetudinario."
+  },
+  {
+    "id": "rusia",
+    "nombre": "Imperio Ruso",
+    "abrev": "RUS",
+    "tipo": "imperio",
+    "region": "rusia",
+    "inicio": 1721,
+    "fin": 1917,
+    "apogeo": [
+      1850,
+      1880
+    ],
+    "declive": [
+      1905,
+      1917
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#a89fd4",
+    "sintesis": "El «Tercer Roma» de los zares: de los zares de Petrine a un imperio euroasiático con más de doscientos pueblos, la expansión a Siberia y la de 1914.",
+    "caida": "La guerra de Crimea, el desastre de 1905 y la Revolución de 1917, que acabaron con la dinastía Romanov.",
+    "legado": "La literatura rusa (Dostoievski, Tolstói), la ciencia (Mendeleiev, Lema), el ballet y la abstracción del Bolchoi.",
+    "alias": [
+      "Zares",
+      "Rusos",
+      "Imperio moscovita"
+    ]
+  },
+  {
+    "id": "rus-kiev",
+    "nombre": "Rus de Kiev",
+    "abrev": "RUK",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 860,
+    "fin": 1240,
+    "apogeo": [
+      1050,
+      1150
+    ],
+    "declive": [
+      1150,
+      1240
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#b0a08f",
+    "sintesis": "La edad de los príncipes de Kiev: unificación de las eslavas orientales bajo el cristianismo orthodoxo, con el código de la Rus de Yaroslav el Sabio.",
+    "caida": "La fragmentación en pequeños principados, las invasiones mongolas de 1237-40 y la expansión del Imperio bizantino por los tártaros.",
+    "legado": "La Santa Sofía de Kyiv, la Ortodoxia eslava, el código de leyes de la Rus y la literatura de la Rus primitiva."
+  },
+  {
+    "id": "napoleon",
+    "nombre": "Imperio Napoleónico",
+    "abrev": "NAP",
+    "tipo": "imperio",
+    "region": "europa-occidental",
+    "inicio": 1799,
+    "fin": 1815,
+    "apogeo": [
+      1804,
+      1812
+    ],
+    "declive": [
+      1812,
+      1815
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#4f7fd4",
+    "sintesis": "Quince años que redibujaron Europa: el Código Napoleónico, la abolición de la feudalidad, el mérito por encima del linaje y la creación de la Confederación del Rin.",
+    "caida": "La campaña de Rusia de 1812 —la «Gran Armada»— y la derrota de Leipzig (1813) y Waterloo (1815).",
+    "legado": "El Código civil (elaborado por juristas, no por él), el nacionalismo europeo, la administración napoleónica y la figura del «cónsul».",
+    "alias": [
+      "Napoleón",
+      "Bonaparte",
+      "Primer Imperio"
+    ]
+  },
+  {
+    "id": "austria",
+    "nombre": "Imperio Austriaco",
+    "abrev": "AUT",
+    "tipo": "imperio",
+    "region": "europa-central",
+    "inicio": 1804,
+    "fin": 1867,
+    "apogeo": [
+      1815,
+      1848
+    ],
+    "declive": [
+      1848,
+      1867
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#d4b04f",
+    "sintesis": "El heredero del Sacro Imperio, que arrebató el Danubio y construyó un Estado plurinacional, con Viena como capital de la música y el Congreso de Viena de 1815.",
+    "caida": "La revolución de 1848 y el compromiso austro-húngaro de 1867, que lo redujo a una monarquía dual.",
+    "legado": "El Wiener Kongress y el equilibrio europeo, la música vienesa y la ruta del Danubio hacia el Bósforo."
+  },
+  {
+    "id": "austrohungria",
+    "nombre": "Imperio Austro-Húngaro",
+    "abrev": "AHU",
+    "tipo": "imperio",
+    "region": "europa-central",
+    "inicio": 1867,
+    "fin": 1918,
+    "apogeo": [
+      1880,
+      1914
+    ],
+    "declive": [
+      1914,
+      1918
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#d4a86a",
+    "sintesis": "La «Doble Monarquía» de los HABSBURGO: 52 millones de personas de diez idiomas, capital en Viena y un ejército que aún no había perdido hasta 1914.",
+    "caida": "La Primera Guerra Mundial y la desintegración en Austria, Hungría, Checoslovaquia, Yugoslavia y Transilvania.",
+    "legado": "La convivencia multiétnica, Mozart, Freud, Klimt y el mapa de la «monarquía de los pueblos»."
+  },
+  {
+    "id": "alemania",
+    "nombre": "Imperio Alemán",
+    "abrev": "ALM",
+    "tipo": "imperio",
+    "region": "europa-occidental",
+    "inicio": 1871,
+    "fin": 1918,
+    "apogeo": [
+      1890,
+      1914
+    ],
+    "declive": [
+      1914,
+      1918
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#8f8f8f",
+    "sintesis": "El segundo Estado alemán, nacido en la sala de espejos de Versalles. Con la unificación, el ferrocarril, la química y la reforma social, se convirtió en la potencia industrial de Europa.",
+    "caida": "La guerra de las trincheras y la crisis de 1917-18 que provocó la abdicación del Kaiser y la República de Weimar.",
+    "legado": "El Estado del bienestar (Bismarck inventó las pensiones), la industria pesada y las sendas desastrosas de 1933."
+  },
+  {
+    "id": "tercerreich",
+    "nombre": "Tercer Reich",
+    "abrev": "TRI",
+    "tipo": "estado",
+    "region": "europa-occidental",
+    "inicio": 1933,
+    "fin": 1945,
+    "apogeo": [
+      1939,
+      1942
+    ],
+    "declive": [
+      1942,
+      1945
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#6b6b6b",
+    "sintesis": "El régimen nazi, que en doce años rearmó Alemania, anexó el continente y provocó millones de muertos. Su economía de guerra y su industria pesada fueron inmensas.",
+    "caida": "Stalingrado y El Alamein (1942-43), la invasión de Normandía (1944) y la rendición de Berlín (8 de mayo de 1945).",
+    "legado": "La categoría de «crímenes contra la humanidad», el Tribunal de Núremberg y la arquitectura jurídica del Estado de derecho posterior a 1945."
+  },
+  {
+    "id": "sovietica",
+    "nombre": "Unión Soviética",
+    "abrev": "URS",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 1922,
+    "fin": 1991,
+    "apogeo": [
+      1960,
+      1975
+    ],
+    "declive": [
+      1985,
+      1991
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#c94f4f",
+    "sintesis": "El Estado de los soviets: la industrialización forzosa de Stalin, la victoria en 1945 sobre el Tercer Reich, la carrera espacial y el inicio de la carrera de armamentos.",
+    "caida": "El estancamiento económico (Krushchev y Brézhnev), la guerra de Afganistán, la caída del Muro de Berlín (1989) y la disolución en 1991.",
+    "legado": "El Estado planificador, la primera gran potencia en el espacio, la economía del Gulag y la O.N.U. como foro de la Guerra Fría."
+  },
+  {
+    "id": "estados-unidos",
+    "nombre": "Estados Unidos",
+    "abrev": "EUA",
+    "tipo": "estado",
+    "region": "estados-unidos",
+    "inicio": 1776,
+    "fin": 2026,
+    "apogeo": [
+      1945,
+      1970
+    ],
+    "declive": [
+      2008,
+      2026
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#4f8fd4",
+    "sintesis": "La república federal del Nuevo Mundo que, desde 1945, es la potencia hegemónica del planeta: la economía, la cultura de consumo, la tecnología y su propia moneda de reserva.",
+    "caida": "Su declive es relativo y reciente: la crisis de 2008, la polarización, la deuda pública y el multipolarismo de India, China y el BRICS.",
+    "legado": "La Doctrina Monroe, el New Deal, el programa espacial, el negocio cultural de Hollywood y la fuerza del dólar."
+  },
+  {
+    "id": "imperio-brasileno",
+    "nombre": "Imperio del Brasil",
+    "abrev": "BRZ",
+    "tipo": "imperio",
+    "region": "pampas",
+    "inicio": 1822,
+    "fin": 1889,
+    "apogeo": [
+      1840,
+      1870
+    ],
+    "declive": [
+      1870,
+      1889
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#5fbf9f",
+    "sintesis": "El único imperio de América: Pedro I coronado en 1826, con la capital transferida de Salvador a Río y la aparición de la cafeticultura que lo hizo rico.",
+    "caida": "La guerra de Paraguay (1864-70) y su deuda, el giro abolicionista (1888) y la proclamación de la República.",
+    "legado": "La mayor población de habla portuguesa, la tradición monárquica y el saqueo del tesoro imperial en 1889."
+  },
+  {
+    "id": "segundo-imperio-mexicano",
+    "nombre": "Segundo Imperio Mexicano",
+    "abrev": "MIM",
+    "tipo": "imperio",
+    "region": "mexico",
+    "inicio": 1864,
+    "fin": 1867,
+    "apogeo": [
+      1864,
+      1867
+    ],
+    "declive": [
+      1866,
+      1867
+    ],
+    "peso": 3,
+    "territorio": true,
+    "color": "#a87fc9",
+    "sintesis": "La única monarquía en América: Maximiliano de Habsburgo y Carlota, con la corte en el Castillo de Chapultepec y las fuerzas liberales de Juárez y el Ejército Republicano.",
+    "caida": "La intervención francesa (1866) y la ejecución de Maximiliano en Querétaro en 1867.",
+    "legado": "Los Caminos de Hierro y las Leyes de Reforma, la República mexicana como único Estado de la región y la Reforma de Juárez."
+  },
+  {
+    "id": "mali-moderno",
+    "nombre": "Mali",
+    "abrev": "MLI",
+    "tipo": "estado",
+    "region": "africa-occidental",
+    "inicio": 1960,
+    "fin": 2026,
+    "apogeo": [
+      1975,
+      1980
+    ],
+    "declive": [
+      2020,
+      2026
+    ],
+    "peso": 2,
+    "territorio": true,
+    "color": "#d4c46a",
+    "sintesis": "El Estado que heredó el nombre del imperio medieval: en 1960 se separó de Francia junto con Mauritania, y hoy es uno de los países más pobres del mundo.",
+    "caida": "La rebelión tuareg de 2012, el golpe de 2020 y las crisis de seguridad del Sahel.",
+    "legado": "El nombre del imperio medieval en el mapa moderno, el Timbuktu como Patrimonio Mundial y las antiguas rutas transaharianas."
+  },
+  {
+    "id": "navajo",
+    "nombre": "Navajo (Diné)",
+    "abrev": "NAV",
+    "tipo": "pueblo",
+    "region": "america-del-norte",
+    "inicio": 1650,
+    "fin": 2026,
+    "apogeo": [
+      1750,
+      1860
+    ],
+    "declive": null,
+    "peso": 4,
+    "territorio": false,
+    "color": "#d08a5f",
+    "sintesis": "Pueblo de la Meseta del Colorado que migró hacia el sur arrastrando sus ovejas y su mitología del altiplano, y que organizó una sociedad de clanes sobre la tierra y la familia.",
+    "caida": "La guerra de las Diez Tribus en 1864, el internamiento en Bosque Redondo y la disolución de sus términos en 1868 recortaron su territorio; hoy la nación sigue existiendo, aunque sin autogobierno.",
+    "legado": "La platería navajo, la medicina de las plantas del desierto, el Navajo rug y el principio de que la tierra no se posee: se pertenece al pueblo."
+  },
+  {
+    "id": "tarahumara",
+    "nombre": "Tarahumaras (Rarámuri)",
+    "abrev": "TAR",
+    "tipo": "pueblo",
+    "region": "mexico",
+    "inicio": 1500,
+    "fin": 2026,
+    "apogeo": [
+      1700,
+      1850
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#c9a05f",
+    "sintesis": "Pueblo de la Sierra Tarahumara, en la frontera entre Chihuahua, Sonora y Durango, famoso por sus carreras de resistencia y por su danza del Volador, en la que el danzín cuelga de una peña con un cactus.",
+    "caida": "Las minas, el comercio y la presión administrativa que detuvieron su aislamiento acabaron con su sociedad trash tradicional; hoy la carrera de Chimalhuacán es referencia mundial.",
+    "legado": "El Correo de los Tarahumaras, la danza del Volador, los arcos de madera más grandes del mundo y su medicina de hierbas."
+  },
+  {
+    "id": "aborigenes",
+    "nombre": "Australianos aborígenes",
+    "abrev": "ABO",
+    "tipo": "cultura",
+    "region": "oceania",
+    "inicio": -45000,
+    "fin": 2026,
+    "apogeo": [
+      -20000,
+      -5000
+    ],
+    "declive": null,
+    "peso": 5,
+    "territorio": false,
+    "color": "#b5724f",
+    "sintesis": "Más de cincuenta mil años de poblamiento continuo: la civilización viva más antigua del mundo. Cuatrocientas lenguas, prácticas de quema ritual y un arte rupestre que recorre el continente entero.",
+    "caida": "La colonización europea de 1788 y las políticas de reserva del siglo XIX saquearon la tierra, dispersaron a las comunidades y acabaron con la transmisión de sus saberes.",
+    "legado": "El arte rupestre de Kakadu y de la Tierra de Arnhem, el fuego como medicina y la Reconciliation nacional iniciada en 1967."
+  },
+  {
+    "id": "kamilaroi",
+    "nombre": "Kamilaroi",
+    "abrev": "KAM",
+    "tipo": "pueblo",
+    "region": "oceania",
+    "inicio": 1500,
+    "fin": 1930,
+    "apogeo": [
+      1700,
+      1850
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#c98a6a",
+    "sintesis": "Una de las mayores naciones aborígenes del interiorAustralian, con redes de caminos de miles de kilómetros que unían campamentos y un arte de esterillas y bolsas distinguidas.",
+    "caida": "La ocupación blanca del interior, las epidemias y la disolución de los campamentos destruyeron su estructura política.",
+    "legado": "La red de caminos de los Kamilaroi, la más antigua y larga del hemisferio sur, y su sistema de sueños (Dreaming)."
+  },
+  {
+    "id": "tiwi",
+    "nombre": "Tiwi (islas Tiwi)",
+    "abrev": "TIW",
+    "tipo": "pueblo",
+    "region": "oceania",
+    "inicio": 1500,
+    "fin": 2026,
+    "apogeo": [
+      1700,
+      1900
+    ],
+    "declive": null,
+    "peso": 2,
+    "territorio": false,
+    "color": "#d4a05f",
+    "sintesis": "Habitantes de las islas Tiwi, al norte de Darwin: isleños navegantes, cazadores de tortugas y custodios de una de las ceremonias de iniciación más antiguas del mundo.",
+    "caida": "La ocupación de las islas, el declive demográfico por enfermedades y la erosión de sus rituales bajo la presión administrativa.",
+    "legado": "La escultura en concha de Tiwi, la cacería de tortugas de Milingimbi y el reconocimiento legal de la propiedad consuetudinaria de las islas."
+  },
+  {
+    "id": "san",
+    "nombre": "San (ǁXam)",
+    "abrev": "SAN",
+    "tipo": "pueblo",
+    "region": "africa-austral",
+    "inicio": -20000,
+    "fin": 2026,
+    "apogeo": [
+      -15000,
+      -2000
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#c98a72",
+    "sintesis": "Los últimos cazadores-recolectores de África Austral, con una de las tradiciones orales más antiguas del planeta: el canto de las personas durante la persecución de la caza.",
+    "caida": "La expansión de los pueblos de habla bantú, el saqueo colonial y la pérdida de la tierra detuvieron el avance de su territorio en el siglo XIX.",
+    "legado": "El canto del ¡ke!ke!, el arte rupestre de Tsodilo y su conocimiento del fuego y de las plantas medicinales del Kalahari."
+  },
+  {
+    "id": "khoi",
+    "nombre": "Khoikhoi",
+    "abrev": "KHO",
+    "tipo": "pueblo",
+    "region": "africa-austral",
+    "inicio": -2000,
+    "fin": 1930,
+    "apogeo": [
+      -500,
+      1500
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#b98a6a",
+    "sintesis": "Pueblos de labradores y pastores de Khoisan en el sur de África, con una cultura pastoril trash y un rico repertorio de arte rupestre.",
+    "caida": "La llegada de los holandeses en 1652 y la política de la tierra acabaron con su mundo ganadero; hoy quedan su lengua y su saber de los chasquidos.",
+    "legado": "El arte rupestre del sur de África, las lenguas de clic del Kalahari y la cultura pastoril de Namibia."
+  },
+  {
+    "id": "berberes",
+    "nombre": "Bereberes (amazigh)",
+    "abrev": "AMZ",
+    "tipo": "pueblo",
+    "region": "magreb",
+    "inicio": -10000,
+    "fin": 2026,
+    "apogeo": [
+      -500,
+      1200
+    ],
+    "declive": null,
+    "peso": 4,
+    "territorio": false,
+    "color": "#b5744f",
+    "sintesis": "Pueblos que hablan el amazigh en el norte de África y las montañas del Atlas, con una tradición oral de riqueza excepcional y una historia de reinos bereberes como Numidia o Mauritania.",
+    "caida": "Las invasiones romanas, vándalas e islámicas los fueron desplazando, y los reinos bereberes del Magreb cayeron ante los nuevos poderes.",
+    "legado": "El tamazight, los pueblos de casas de tierra de At Hadiddou y la cuestión bereber en la identidad del Norte de África."
+  },
+  {
+    "id": "tuareg",
+    "nombre": "Tuareg",
+    "abrev": "TUO",
+    "tipo": "pueblo",
+    "region": "magreb",
+    "inicio": 500,
+    "fin": 2026,
+    "apogeo": [
+      1200,
+      1600
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#8f9fbf",
+    "sintesis": "Nómadas del Sáhara organizado en confederaciones de clanes, que controlaron el comercio transsahariano y las rutas del oro.",
+    "caida": "La colonización francesa y la apertura del comercio marítimo les arrebataron el control del desierto y los sedentarizaron.",
+    "legado": "El tamazight, los velos de los hombres, las placas de bronce de las mujeres y la poesía de los haous de Timiaouine."
+  },
+  {
+    "id": "fulani",
+    "nombre": "Fulani (fulbe)",
+    "abrev": "FUL",
+    "tipo": "pueblo",
+    "region": "africa-occidental",
+    "inicio": 1000,
+    "fin": 2026,
+    "apogeo": [
+      1500,
+      1800
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#d4a87f",
+    "sintesis": "Pueblo pastoril del Sahel, trash trash trash trash trash y trash de trash trash trash trash trash trash, trash trash trash trash trash trash trash trash trash trash trash trash trash trash",
+    "caida": "La expansión del islam y de los estados centralizadores del Sudán, y luego la colonización francesa e inglesa, integraron a los fulani en los nuevos estados.",
+    "legado": "El fulfulde, la trash trash trash trash trash trash trash, trash trash trash trash trash trash trash trash trash trash trash trash trash trash"
+  },
+  {
+    "id": "hausa",
+    "nombre": "Hausa",
+    "abrev": "HAU",
+    "tipo": "pueblo",
+    "region": "africa-occidental",
+    "inicio": 1000,
+    "fin": 2026,
+    "apogeo": [
+      1400,
+      1750
+    ],
+    "declive": null,
+    "peso": 4,
+    "territorio": false,
+    "color": "#8fbf9f",
+    "sintesis": "La mayor nación étnica de África occidental: un mosaico de principados y ciudades (Kano, Katsina, Zaria) unidos por el comercio caravanero y por el islam sunita.",
+    "caida": "El avance de los fulani y luego la partición colonial del norte de Nigeria desarticuló los estados hausa; hoy viven a ambos lados de la frontera.",
+    "legado": "El hausa como lingua franca del Sahel, la alfarería de Kano, los adornos de kebe y el comercio de larga distancia."
+  },
+  {
+    "id": "yoruba",
+    "nombre": "Yoruba (Oyo)",
+    "abrev": "YOR",
+    "tipo": "reino",
+    "region": "africa-occidental",
+    "inicio": 1200,
+    "fin": 1900,
+    "apogeo": [
+      1600,
+      1800
+    ],
+    "declive": null,
+    "peso": 4,
+    "territorio": false,
+    "color": "#c94f6a",
+    "sintesis": "El pueblo de los reinos yoruba del suroeste de Nigeria: Oyo, Ife, Benin y Owo, con una cultura de máscaras, una tradición de oradores y un arte de metal y madera.",
+    "caida": "El avance fulani de Sokoto en el siglo XIX desmembró Oyo y la invasión británica terminó con los reinos menores.",
+    "legado": "El arte yoruba de las cabezas de Ife, los Egungun de Lagos, la música de percusión y una diáspora en las Américas."
+  },
+  {
+    "id": "igbo",
+    "nombre": "Igbo",
+    "abrev": "IGB",
+    "tipo": "pueblo",
+    "region": "africa-occidental",
+    "inicio": 1000,
+    "fin": 2026,
+    "apogeo": [
+      1400,
+      1700
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#7fa8c9",
+    "sintesis": "Pueblo del delta del Níger y del este de Nigeria, con aldeas fortificadas con murallas, un sistema oracular y una de las ciudades más antiguas del África subsahariana.",
+    "caida": "La línea colonial que partió su territorio y la guerra de la Biafra (1967-70) y el crecimiento de Lagos desplazaron su mundo rural.",
+    "legado": "El bronce de Igbo-Ukwu, los mercados de Nri y el sistema de títulos y oráculos de los igbo."
+  },
+  {
+    "id": "fon",
+    "nombre": "Fon (Dahomey)",
+    "abrev": "FON",
+    "tipo": "reino",
+    "region": "africa-occidental",
+    "inicio": 1600,
+    "fin": 1894,
+    "apogeo": [
+      1700,
+      1800
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#d47f5f",
+    "sintesis": "El pueblo de los reinos del golfo de Guinea (Abomey, Porto-Novo, Ouidah), con un ejército de amazonas, un comercio de cautivos y un panteón de vodún muy rico.",
+    "caida": "La invasión francesa de 1890 y la resistencia de Behanzin acabaron con el reino y lo convirtieron en colonia.",
+    "legado": "El vodún y su trasfondo, las puertas de las mujeres y la música de los tambores de Abomey."
+  },
+  {
+    "id": "swahili",
+    "nombre": "Cultura suajili",
+    "abrev": "SWA",
+    "tipo": "cultura",
+    "region": "africa-oriental",
+    "inicio": 1000,
+    "fin": 1900,
+    "apogeo": [
+      1500,
+      1750
+    ],
+    "declive": null,
+    "peso": 4,
+    "territorio": false,
+    "color": "#4fb0a8",
+    "sintesis": "La civilización de la costa de África oriental: ciudades-Estado de Mombasa, Zanzíbar, Mogadiscio y Kilwa, con un intrincado comercio con la India, Arabia y China y un islam meridional.",
+    "caida": "La presión de Omán y luego de Gran Bretaña y el desvío del comercio hacia el interior acabaron con el poder de las ciudades suajilíes.",
+    "legado": "La arquitectura swahili en piedra coral, losBuildings de Mombasa, las monedas de oro y la mezcla con el comercio indio."
+  },
+  {
+    "id": "shona",
+    "nombre": "Shona (Zimbabwe)",
+    "abrev": "SHO",
+    "tipo": "reino",
+    "region": "africa-austral",
+    "inicio": 1000,
+    "fin": 2026,
+    "apogeo": [
+      1400,
+      1700
+    ],
+    "declive": null,
+    "peso": 4,
+    "territorio": false,
+    "color": "#c4a86a",
+    "sintesis": "Pueblo de los grandes estados de arcilla del sur de África: Zimbabwe, Mapungubwe y Khami, con un comercio con la India por la costa de Sofala.",
+    "caida": "Los ataques de los ndebele y luego la ocupación británica de 1890 y la guerra de 1896-97 acabaron con los reinos.",
+    "legado": "Las ruinas de Gran Zimbabwe, la escultura de soapstone de Zimbabwe y la cultura shona de hoy."
+  },
+  {
+    "id": "luba",
+    "nombre": "Luba",
+    "abrev": "LUB",
+    "tipo": "reino",
+    "region": "africa-central",
+    "inicio": 1500,
+    "fin": 1900,
+    "apogeo": [
+      1650,
+      1800
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#b58fa8",
+    "sintesis": "Reino del Alto Katanga cuyo soberano era el verdadero poder detrás del título de «rey» del Congo: una monarquía ritual con caballería propia y un arte de madera y cobre.",
+    "caida": "La expansión del Estado del Congo de Leopoldo II y la violencia colonial Belgian de 1889-1914 arrasaron el reino y su aristocracia.",
+    "legado": "El arte luba de las figuras de madera y cobre, la emigración de sus Hachas y el saber de la corte sobre el poder."
+  },
+  {
+    "id": "maasai",
+    "nombre": "Maasai",
+    "abrev": "MAA",
+    "tipo": "pueblo",
+    "region": "africa-oriental",
+    "inicio": 1500,
+    "fin": 2026,
+    "apogeo": [
+      1750,
+      1850
+    ],
+    "declive": null,
+    "peso": 3,
+    "territorio": false,
+    "color": "#d4a86a",
+    "sintesis": "Pueblo pastoril de la sabana del sur de Kenia y del norte de Tanzania, con una organización por grupos de edad, el escudo y la lanza, y un sistema trash trash trash trash de trash trash.",
+    "caida": "Las de los colonos y las reservas de 1890 y 1938 redujeron su territorio y su trash trash, aunque hoy siguen siendo el pueblo más numeroso de África oriental.",
+    "legado": "El escudo ovalado, la medicina de la leche y el fuego, y el canto de los guerreros al atardecer."
+  },
+  {
+    "id": "vikingos",
+    "nombre": "Vikingos (Norse)",
+    "abrev": "VIK",
+    "tipo": "pueblo",
+    "region": "escandinavia",
+    "inicio": 750,
+    "fin": 1066,
+    "apogeo": [
+      850,
+      1010
+    ],
+    "declive": [
+      1040,
+      1066
+    ],
+    "peso": 6,
+    "territorio": false,
+    "color": "#7f93a8",
+    "sintesis": "Navegantes de Escandinavia que bajaron al mar con drakkars, saquearon desde Lisboa hasta Constantinopla y fundaron colonias en Islandia, Groenlandia y las Islandas Feroe.",
+    "caida": "LasImprovisas cruzadas del norte, la adopción del cristianismo y la batalla de Stamford Bridge en 1066 acabaron con su expansión, aunque su lengua y su cultura de navegación sobrevivieron.",
+    "legado": "El runes, los tesoros de oro de Sutton Hoo, los viajes de Leif Erikson a Vinland y las ciudades andas en Normandía e Irlanda.",
+    "alias": [
+      "Normandos",
+      "Escandinavos",
+      "Vikingos"
+    ]
+  },
+  {
+    "id": "celtas",
+    "nombre": "Celtas",
+    "abrev": "CEL",
+    "tipo": "pueblo",
+    "region": "europa-occidental",
+    "inicio": -800,
+    "fin": 400,
+    "apogeo": [
+      -300,
+      50
+    ],
+    "declive": [
+      100,
+      400
+    ],
+    "peso": 4,
+    "territorio": false,
+    "color": "#7f9f7f",
+    "sintesis": "Dese del celta: pueblos de habla celta que ocuparon desde Irlanda hasta los Balcanes, con una cultura de oppida,rewriting de hierro y una religión druídica de los ciclos.",
+    "caida": "La expansión de Roma, la romanización de las Galias y la officiallyBorder del Danubio acabaron con su mundo; sólo en Irlanda y Gales sobrevivieron algo de su lengua.",
+    "legado": "La literatura celta, las cruces de piedra de Stonehenge y la Eisteddfod, las monedas de oro y el canto de los bardos."
+  },
+  {
+    "id": "bulgaros",
+    "nombre": "Primer Imperio Búlgaro",
+    "abrev": "BUL",
+    "tipo": "imperio",
+    "region": "balcanes",
+    "inicio": 681,
+    "fin": 1018,
+    "apogeo": [
+      800,
+      900
+    ],
+    "declive": [
+      970,
+      1018
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#b06a9f",
+    "sintesis": "El primer Estado búlgaro, formado por los Eslavos y los Protobúlgaros en el Danubio: un-multiétnico imperio con una Iglesia eslava propia y una cultura de oro de Preslav.",
+    "caida": "Las incursiones húngaras, la caída delbizantino y el auge de Kiev y los magiares fueron minando su territorio hasta la invasión de Basilio II en 1018.",
+    "legado": "El alfabeto cirílico, la arquitectura de Preslav y Pliska y la primera prosa eslava."
+  },
+  {
+    "id": "hungaros",
+    "nombre": "Húngaros (Magiares)",
+    "abrev": "MAG",
+    "tipo": "pueblo",
+    "region": "europa-central",
+    "inicio": 895,
+    "fin": 2026,
+    "apogeo": [
+      1000,
+      1100
+    ],
+    "declive": [
+      1300,
+      1526
+    ],
+    "peso": 5,
+    "territorio": false,
+    "color": "#c96a5f",
+    "sintesis": "Nómadas de origen ugro que se asentaron en la llanura húngara en 895 y fundaron un reino con una élite militarclient de la nobleza, la corona de San Esteban y una cultura de caballería.",
+    "caida": "La tormenta mongola de 1241, las guerras internas y el ascenso de los Habsburgo redujeron su independencia en 1526, hasta la unificación austro-húngara de 1867.",
+    "legado": "El húngaro, la cocina de paprika y goulash, la música de Zoltán Kodály y los colores rojo, blanco y verde."
+  },
+  {
+    "id": "lituanos",
+    "nombre": "Gran Ducado de Lituania",
+    "abrev": "LIT",
+    "tipo": "estado",
+    "region": "europa-central",
+    "inicio": 1253,
+    "fin": 1795,
+    "apogeo": [
+      1400,
+      1550
+    ],
+    "declive": [
+      1600,
+      1795
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#a85f4f",
+    "sintesis": "El último Estado pagano de Europa: una grandeza ducal báltica que se expandió desde Lithuania hasta las puertas de Moscú, con una nobleza de carácter militar y el Estatuto de Lituania de 1529.",
+    "caida": "La Unión de Lublin de 1569 refundió Lituania con Polonia y la perdió, y las particiones de Rusia y Prusia a finales del siglo XVIII acabaron con el Estado.",
+    "legado": "La encyclopédie del Wisa, la statua de la libertad de Vilnius y la tradición del Lietuva."
+  },
+  {
+    "id": "polacos",
+    "nombre": "Polonia (Piast–Jagiełło)",
+    "abrev": "POL",
+    "tipo": "reino",
+    "region": "europa-central",
+    "inicio": 960,
+    "fin": 1795,
+    "apogeo": [
+      1380,
+      1570
+    ],
+    "declive": [
+      1650,
+      1795
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#d4a05f",
+    "sintesis": "El reino de los Piast y los Jagieo, que se extendió del Oder al Dnéper y al Báltico: un país de la Commonwealth de dos naciones con una nobleza de gran escala y una cultura del Saraceno.",
+    "caida": "Las particiones de 1772, 1793 y 1795 —Prusia, Rusia y Austria— borraron el reino del mapa; sólo sobrevivió un Estado fantasma.",
+    "legado": "La arquitectura renacentista de Cracovia, la crisis de las Outcome, la cocina polaca y las costumbres de la szlachta."
+  },
+  {
+    "id": "tibet",
+    "nombre": "Imperio Tibetano",
+    "abrev": "TIB",
+    "tipo": "imperio",
+    "region": "mongolia",
+    "inicio": 618,
+    "fin": 842,
+    "apogeo": [
+      750,
+      800
+    ],
+    "declive": [
+      820,
+      842
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#d4b07f",
+    "sintesis": "El imperio de Songtsen Gampo, que unificó el Tíbet y se extendió desde el Tibet hasta el Tarim: un país del budismo vajrayana, con los monasterios de Samburu y una escritura propia.",
+    "caida": "La guerra civil de 842 y el asesinato de Langdarma marking el final del imperio; el Tíbet quedó dividido entre reinos menores.",
+    "legado": "El budismo vajrayana y sus tormas, los manuscritos de Dunhuang y la pintura tibetana."
+  },
+  {
+    "id": "majapahit",
+    "nombre": "Majapahit",
+    "abrev": "MJP",
+    "tipo": "imperio",
+    "region": "indochina",
+    "inicio": 1293,
+    "fin": 1527,
+    "apogeo": [
+      1350,
+      1450
+    ],
+    "declive": [
+      1470,
+      1527
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#5fc9a8",
+    "sintesis": "El imperio sundanés que unificó Java y dominó el archipiélago malayo: un poder marítimo con el código hindú y el Ramayana representado en Bali.",
+    "caida": "La expansión de Aceh, el ducado de Demak y luego la presencia portuguesa acabaron con su centro, aunque su cultura se extendió por todo el archipiélago.",
+    "legado": "Los templos de azúcar de Java, la trama de batik, el wayang y la purificación del agua de las piscinas."
+  },
+  {
+    "id": "maratha",
+    "nombre": "Imperio Maratha",
+    "abrev": "MAR",
+    "tipo": "imperio",
+    "region": "india",
+    "inicio": 1674,
+    "fin": 1818,
+    "apogeo": [
+      1740,
+      1760
+    ],
+    "declive": [
+      1780,
+      1818
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#d46a4f",
+    "sintesis": "La confederación maratha que salió de la India occidental y llegó a Delhi: Shivaji y sus sucesores combinaron la caballería ligera, el fuego greco y la administración de un ejército de miles de hombres.",
+    "caida": "Las tres guerras contra Gran Bretaña, la muerte del peshwa Baji Rao II y la ocupación británica de Bombay acabaron con su poder.",
+    "legado": "La administración de Shivaji, la nueva capital de Pune y los ghats de Maharashtra."
+  },
+  {
+    "id": "sikh",
+    "nombre": "Imperio Sij",
+    "abrev": "SIJ",
+    "tipo": "estado",
+    "region": "india",
+    "inicio": 1799,
+    "fin": 1849,
+    "apogeo": [
+      1820,
+      1839
+    ],
+    "declive": [
+      1846,
+      1849
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#d4b34f",
+    "sintesis": "El Estado sij del Punjeb, formado por las trinidades de la misticidad y la espada: un ejército de la guarnición de la Mando de Guru Nanak que llegó a conquistar el Noroeste indio.",
+    "caida": "Las dos guerras anglosijhes, la anexión del Punjab en 1849 y el relevo del mando militar por la Companyía anorexia consumaron su caída.",
+    "legado": "El Templo de Harmandir Sahib de Amritsar, el Khanda, la replete cocina punjabi y los S."
+  },
+  {
+    "id": "himyaritas",
+    "nombre": "Himyaritas (Saba)",
+    "abrev": "HIM",
+    "tipo": "reino",
+    "region": "arabi",
+    "inicio": -300,
+    "fin": 525,
+    "apogeo": [
+      -100,
+      300
+    ],
+    "declive": [
+      400,
+      525
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#c9a05f",
+    "sintesis": "El reino del sur de Arabia, con capital en Zafar y luego Marib: un gran eje comercial del incienso y la mirra entre la India, Roma y África.",
+    "caida": "La incursión aksumita del siglo VI y el posterior relajamiento de los vínculos de Yemen con Aksum rompieron su mundo.",
+    "legado": "Los canales de riego de Marib, la escritura sabáica y los monopolios de Yemen."
+  },
+  {
+    "id": "coreas",
+    "nombre": "Tres Reinos de Corea",
+    "abrev": "TRC",
+    "tipo": "confederacion",
+    "region": "corea",
+    "inicio": -37,
+    "fin": 668,
+    "apogeo": [
+      400,
+      550
+    ],
+    "declive": [
+      600,
+      668
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#7fb8d4",
+    "sintesis": "Goguryeo, Baekje y Silla, que disputaron la península coreana durante siete siglos y la unificaron finalmente en 668 con la ayuda de Tang.",
+    "caida": "La unificación forzada de Silla y la presión posterior ejercida sobre todo el reino.",
+    "legado": "El budismo de los Tres Reinos, las influencias del período unificado, los prefijos funerarios y los guardianes de los sellos reales de Silla."
+  },
+  {
+    "id": "benin",
+    "nombre": "Reino de Benín",
+    "abrev": "BEN",
+    "tipo": "reino",
+    "region": "africa-occidental",
+    "inicio": 1180,
+    "fin": 1897,
+    "apogeo": [
+      1500,
+      1700
+    ],
+    "declive": [
+      1896,
+      1897
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#c98a4f",
+    "sintesis": "El reino de la ciudad de Benín, en la costa de Nigeria: un Estado centralizado con un ejército de miles, los bronces de Benín y un sistema de comercio con Portugal.",
+    "caida": "La expedición de 1897, que saqueó la ciudad y se llevó sus tesoros, destruyó el reino y convirtió su territorio en la Colonia de Nigeria.",
+    "legado": "Los bronces de Benín, la cultura de Ife y la memoria de la corona oba."
+  },
+  {
+    "id": "chimu",
+    "nombre": "Reino Chimú",
+    "abrev": "CHM",
+    "tipo": "reino",
+    "region": "andes",
+    "inicio": 900,
+    "fin": 1470,
+    "apogeo": [
+      1200,
+      1400
+    ],
+    "declive": [
+      1450,
+      1470
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#d4a05f",
+    "sintesis": "El reino de la costa norte del Perú, con capital en Chan Chan, la mayor ciudad de adobe del mundo: una artesanía famosa de la cerámica y los textiles.",
+    "caida": "La expansión del Chimú dirigida por Túpac Yupanqui y luego la conquista inca de 1470 acabaron con el reino y con su capital.",
+    "legado": "Las murallas de adobe de Chan Chan, los ponchos y la cerámica chimú con sus motivos de aves y peces."
+  },
+  {
+    "id": "wari",
+    "nombre": "Estado Wari (Huari)",
+    "abrev": "WAR",
+    "tipo": "imperio",
+    "region": "andes",
+    "inicio": 600,
+    "fin": 1000,
+    "apogeo": [
+      700,
+      900
+    ],
+    "declive": [
+      900,
+      1000
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#c96a4f",
+    "sintesis": "El primer Estado panandino de los Andes centrales, con capital en Huari y una red de caminos que unía el altiplano con la costa: un imperio temprano abierto a la influencia de la costa.",
+    "caida": "La crisis del siglo X, la disolución de Wari y el auge de los reinos aimaras y luego de los incas acabaron con su federación.",
+    "legado": "Los tapices de Huari, la influencia de Tikal y el estilo provincial de la cerámica."
+  },
+  {
+    "id": "xiongnu",
+    "nombre": "Xiongnu",
+    "abrev": "XIO",
+    "tipo": "confederacion",
+    "region": "mongolia",
+    "inicio": -209,
+    "fin": 155,
+    "apogeo": [
+      -200,
+      100
+    ],
+    "declive": [
+      100,
+      155
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#b0a08f",
+    "sintesis": "La primera confederación de las estepas eurasiáticas: jinetes de la estepa que dominaron la stepa desde Mongolia hasta el Danubio y enfrentaron a China y Roma.",
+    "caida": "La disolución de los Xiongnu Meras, la expansión de los Han y la migración de sus grupos hacia el oeste sembraron los pueblos que luego seriam hunos y turcos.",
+    "legado": "El arco compuesto, la guerra de la estepa, la primera globalización de las rutas de la seda y el misterio de los Tumba de Noin."
+  },
+  {
+    "id": "liao",
+    "nombre": "Dinastía Liao (Khitan)",
+    "abrev": "LIA",
+    "tipo": "dinastia",
+    "region": "mongolia",
+    "inicio": 916,
+    "fin": 1125,
+    "apogeo": [
+      1000,
+      1050
+    ],
+    "declive": [
+      1115,
+      1125
+    ],
+    "peso": 4,
+    "territorio": true,
+    "color": "#a08fb0",
+    "sintesis": "El imperio dual de los khitan: un Estado tribal en la estepa y una administración china en el norte de Liao, con un sistema de ciudadanía de dos niveles que lo hacía único.",
+    "caida": "La dinastía de los jin de los jurchenes lo destruyó en 1125, pero su cultura y su lengua se fundieron con los mongoles posteriores.",
+    "legado": "La escritura khitan, los túmulos de los príncipes, el violín de dos cuerdas y la cerámica de la dinastía Liao."
+  },
+  {
+    "id": "jurchen",
+    "nombre": "Dinastía Jin (Jurchenes)",
+    "abrev": "JIN",
+    "tipo": "dinastia",
+    "region": "mongolia",
+    "inicio": 1115,
+    "fin": 1234,
+    "apogeo": [
+      1150,
+      1200
+    ],
+    "declive": [
+      1211,
+      1234
+    ],
+    "peso": 5,
+    "territorio": true,
+    "color": "#c9b07f",
+    "sintesis": "El imperio de los jurchenes, pueblo cazador de Manchuria que conquistó el norte de China y derrubó a la dinastía Song, y que fue a su vez barrido por los mongoles.",
+    "caida": "La invasión mongola de 1211-1234, la caída de Kaifeng y la traición de su propio general acabaron con el imperio y con la dinastía Song.",
+    "legado": "El violín de dos cuerdas y el arte jurchen, las leyes de Hangzhou y la cultura que convivió con los Song."
+  },
+  {
+    "id": "germanos",
+    "nombre": "Pueblos germánicos",
+    "abrev": "GER",
+    "tipo": "pueblo",
+    "region": "europa-central",
+    "inicio": -1200,
+    "fin": 800,
+    "apogeo": [
+      -200,
+      400
+    ],
+    "declive": [
+      400,
+      800
+    ],
+    "peso": 5,
+    "escala": "menor",
+    "territorio": false,
+    "color": "#8a9a6a",
+    "sintesis": "Conjunto de pueblos de lengua germánica —suevos, godos, sajones, francos, lombardos— que ocuparon la Europa central y septentrional y acabaron transformando el mundo romano desde dentro.",
+    "caida": "Las migraciones del siglo IV, la presión de los hunos y la formación de reinos sucesores dispersaron su unidad; sus élites se fusionaron con las poblaciones romanas y eslavas.",
+    "legado": "Las epopeyas de Beowulf y los Nibelungos, el derecho germánico, el alfabeto rúnico y los reinos que sustituyeron al Imperio Romano de Occidente."
+  },
+  {
+    "id": "visigodos",
+    "nombre": "Reino visigodo",
+    "abrev": "VIS",
+    "tipo": "reino",
+    "region": "espana",
+    "inicio": 418,
+    "fin": 711,
+    "apogeo": [
+      500,
+      600
+    ],
+    "declive": [
+      650,
+      711
+    ],
+    "peso": 6,
+    "escala": "mayor",
+    "territorio": true,
+    "color": "#7d8f52",
+    "sintesis": "El primer reino germánico estable de Occidente: los visigodos pasaron de federados de Roma a soberanos de Hispania y la Galia, con capital en Toledo y una iglesia propia.",
+    "caida": "La guerra civil entre Rodrigo y Agila facilitó la invasión musulmana de 711, que desmanteló el reino en pocos años.",
+    "legado": "El Fuero Juzgo, la unificación religiosa del concilio de Toledo y la fusión de la aristocracia goda con la hispanorromana."
+  },
+  {
+    "id": "ostrogodos",
+    "nombre": "Reino ostrogodo",
+    "abrev": "OST",
+    "tipo": "reino",
+    "region": "italia",
+    "inicio": 493,
+    "fin": 553,
+    "apogeo": [
+      500,
+      535
+    ],
+    "declive": [
+      535,
+      553
+    ],
+    "peso": 5,
+    "escala": "mayor",
+    "territorio": true,
+    "color": "#6f8f7a",
+    "sintesis": "Teodorico gobernó Italia con administración romana y élites godas, un experimento de convivencia que mantuvo vivo el legado de Roma durante medio siglo.",
+    "caida": "La guerra gótica de Justiniano (535-553) devastó Italia y terminó con el reino en la batalla de Mons Lactarius.",
+    "legado": "El palacio de Rávena, el Código de Teodorico y la idea de un reino germánico heredero de la administración imperial."
+  },
+  {
+    "id": "vandalos",
+    "nombre": "Reino vándalo",
+    "abrev": "VAN",
+    "tipo": "reino",
+    "region": "magreb",
+    "inicio": 429,
+    "fin": 534,
+    "apogeo": [
+      450,
+      500
+    ],
+    "declive": [
+      500,
+      534
+    ],
+    "peso": 4,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#8a7a9a",
+    "sintesis": "Pueblo germánico que cruzó el Estrecho, conquistó el norte de África y convirtió Cartago en la capital de un reino pirata que llegó a saquear Roma.",
+    "caida": "La campaña de Belisario en 533-534 deshizo el reino y reintegró África al Imperio bizantino.",
+    "legado": "El saqueo de Roma de 455, la flota cartaginesa y la memoria del «vandalismo» como destrucción."
+  },
+  {
+    "id": "lombardos",
+    "nombre": "Reino lombardo",
+    "abrev": "LOM",
+    "tipo": "reino",
+    "region": "italia",
+    "inicio": 568,
+    "fin": 774,
+    "apogeo": [
+      600,
+      700
+    ],
+    "declive": [
+      700,
+      774
+    ],
+    "peso": 4,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#a08a5a",
+    "sintesis": "Los lombardos ocuparon el valle del Po y fundaron un reino fragmentado en ducados, con Pavía como capital y una profunda huella en la Italia medieval.",
+    "caida": "Carlomagno conquistó Pavía en 774 y depuso a Desiderio, incorporando el reino al imperio carolingio.",
+    "legado": "El Edicto de Rotario, los ducados de Spoleto y Benevento y la toponimia lombarda del norte de Italia."
+  },
+  {
+    "id": "anglosajones",
+    "nombre": "Anglosajones",
+    "abrev": "ASX",
+    "tipo": "confederacion",
+    "region": "britania",
+    "inicio": 410,
+    "fin": 1066,
+    "apogeo": [
+      600,
+      800
+    ],
+    "declive": [
+      800,
+      1066
+    ],
+    "peso": 5,
+    "escala": "mayor",
+    "territorio": true,
+    "color": "#6a8f8a",
+    "sintesis": "Anglos, sajones y jutos construyeron varios reinos en Britania tras la retirada romana; la hegemonía de Wessex acabó creando el reino de Inglaterra.",
+    "caida": "La conquista normanda de 1066 sustituyó a la dinastía anglosajona y reorganizó el país bajo una aristocracia franco-normanda.",
+    "legado": "El inglés antiguo, el sistema de condados, la crónica anglosajona y el derecho consuetudinario."
+  },
+  {
+    "id": "moche",
+    "nombre": "Moche",
+    "abrev": "MOC",
+    "tipo": "cultura",
+    "region": "andes",
+    "inicio": 100,
+    "fin": 700,
+    "apogeo": [
+      200,
+      500
+    ],
+    "declive": [
+      500,
+      700
+    ],
+    "peso": 5,
+    "escala": "mayor",
+    "territorio": true,
+    "color": "#c47a4a",
+    "sintesis": "Cultura de la costa norte del Perú, famosa por sus huacas de adobe, su cerámica retrato y un sistema de irrigación que sostenía ciudades y talleres especializados.",
+    "caida": "Sequías, inundaciones y conflictos internos debilitaron los valles; hacia el 700 el centro de poder se desplazó a Wari y Chimú.",
+    "legado": "La Huaca del Sol y de la Luna, la cerámica retrato y la metalurgia del cobre y el oro."
+  },
+  {
+    "id": "nazca",
+    "nombre": "Nazca",
+    "abrev": "NAZ",
+    "tipo": "cultura",
+    "region": "andes",
+    "inicio": -100,
+    "fin": 800,
+    "apogeo": [
+      100,
+      500
+    ],
+    "declive": [
+      500,
+      800
+    ],
+    "peso": 4,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#b06a6a",
+    "sintesis": "Cultura de la costa sur del Perú, conocida por las líneas y geoglifos de la pampa, sus acueductos subterráneos y una cerámica policromada de enorme expresividad.",
+    "caida": "La desertificación, la pérdida de los acuíferos y la presión de Wari desarticularon sus asentamientos.",
+    "legado": "Las líneas de Nazca, los puquios y la iconografía de sus vasos ceremoniales."
+  },
+  {
+    "id": "mapuche",
+    "nombre": "Mapuche",
+    "abrev": "MAP",
+    "tipo": "pueblo",
+    "region": "andes",
+    "inicio": 500,
+    "fin": 2026,
+    "apogeo": [
+      1500,
+      1650
+    ],
+    "declive": null,
+    "peso": 5,
+    "escala": "mayor",
+    "territorio": true,
+    "color": "#5f9a7a",
+    "sintesis": "Pueblo de la Araucanía que resistió durante siglos la expansión inca y luego la española, organizado en linajes y parlamentos que coordinaban la defensa común.",
+    "caida": "La ocupación chilena de la Araucanía entre 1861 y 1883 despojó al pueblo de la mayor parte de su territorio; la resistencia cultural continúa hoy.",
+    "legado": "La lengua mapudungun, el guillatún, la platería y una tradición militar y diplomática que frenó dos imperios."
+  },
+  {
+    "id": "guaranies",
+    "nombre": "Guaraníes",
+    "abrev": "GUA",
+    "tipo": "pueblo",
+    "region": "pampas",
+    "inicio": -500,
+    "fin": 2026,
+    "apogeo": [
+      1400,
+      1600
+    ],
+    "declive": [
+      1600,
+      1750
+    ],
+    "peso": 4,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#7a9a5a",
+    "sintesis": "Pueblos de lengua guaraní de la cuenca del Paraná y Paraguay, con una agricultura de mandioca y maíz, una densa red de caminos y una cosmología basada en la palabra.",
+    "caida": "Las reducciones jesuitas, las guerras coloniales y la expansión de las fronteras agrícolas desarticularon sus formas de vida, aunque la lengua y la cultura persisten.",
+    "legado": "El guaraní como lengua oficial de Paraguay, la yerba mate, el tejido y la literatura oral."
+  },
+  {
+    "id": "tupinamba",
+    "nombre": "Tupinambá",
+    "abrev": "TUP",
+    "tipo": "pueblo",
+    "region": "amazonia",
+    "inicio": 1000,
+    "fin": 1600,
+    "apogeo": [
+      1400,
+      1550
+    ],
+    "declive": [
+      1550,
+      1600
+    ],
+    "peso": 4,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#9a7a4a",
+    "sintesis": "Pueblo tupí de la costa brasileña, organizado en aldeas y redes de parentesco, con una agricultura itinerante y una tradición ritual y guerrera que impresionó a los primeros europeos.",
+    "caida": "La colonización portuguesa, las enfermedades, la esclavitud y las guerras de exterminio redujeron drásticamente su población en el siglo XVI.",
+    "legado": "La lengua tupí, la mandioca, las crónicas de los primeros viajeros y la influencia tupí en la identidad brasileña."
+  },
+  {
+    "id": "chachapoyas",
+    "nombre": "Chachapoyas",
+    "abrev": "CHA",
+    "tipo": "pueblo",
+    "region": "andes",
+    "inicio": 800,
+    "fin": 1470,
+    "apogeo": [
+      1000,
+      1400
+    ],
+    "declive": [
+      1400,
+      1470
+    ],
+    "peso": 4,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#8a7a6a",
+    "sintesis": "Pueblo de la selva alta del norte del Perú, constructor de ciudades de piedra y sarcófagos monumentales, que resistió largo tiempo a los incas.",
+    "caida": "La conquista inca de Túpac Yupanqui y luego la colonización española acabaron con su autonomía.",
+    "legado": "Kuélap, los sarcófagos de Karajía y la arquitectura circular de sus asentamientos."
+  },
+  {
+    "id": "diaguitas",
+    "nombre": "Diaguitas",
+    "abrev": "DIA",
+    "tipo": "pueblo",
+    "region": "andes",
+    "inicio": 500,
+    "fin": 1600,
+    "apogeo": [
+      1000,
+      1500
+    ],
+    "declive": [
+      1500,
+      1600
+    ],
+    "peso": 3,
+    "escala": "menor",
+    "territorio": true,
+    "color": "#7a8a9a",
+    "sintesis": "Pueblos del noroeste argentino y Chile central, agricultores y pastores de altura, con una alfarería y una metalurgia de gran calidad.",
+    "caida": "La conquista inca primero y la española después desarticularon sus señoríos; la resistencia calchaquí duró hasta el siglo XVII.",
+    "legado": "La cerámica diaguita, los cultivos de altura y la resistencia calchaquí."
+  },
+  {
+    "id": "umeyas",
+    "nombre": "Califato Omeya",
+    "abrev": "OMY",
+    "tipo": "imperio",
+    "region": "arabi",
+    "inicio": 661,
+    "fin": 750,
+    "apogeo": [
+      690,
+      750
+    ],
+    "declive": [
+      749,
+      750
+    ],
+    "peso": 8,
+    "territorio": true,
+    "color": "#3f8f6f",
+    "sintesis": "El primer califato suní, con capital en Damasco y un imperio que llegó de la península ibérica al Sind.",
+    "caida": "La división de la dinastía, la rebelión de las tribus fronterizas y el ascenso de los abasíes lo destruyeron en 750.",
+    "legado": "La mezquita de Omeya, la aplicación de la ley islámica a los pueblos conquistados y la expansión del islam en el Mediterráneo occidental."
+  },
+  {
+    "id": "abasies",
+    "nombre": "Califato Abasí",
+    "abrev": "ABA",
+    "tipo": "imperio",
+    "region": "arabi",
+    "inicio": 750,
+    "fin": 1258,
+    "apogeo": [
+      800,
+      850
+    ],
+    "declive": [
+      1050,
+      1258
+    ],
+    "peso": 9,
+    "territorio": true,
+    "color": "#2f7d5f",
+    "sintesis": "El califato de Bagdad, la edad de oro del islam: la Casa de la Sabiduría, la de los y un imperio que iba del Magreb al Indus.",
+    "caida": "El{split de la familia entre junds, la presión mongola y el avance de los cruzados y los turcos selchukies acabaron con laril con la ciudad de Bagdad en 1258.",
+    "legado": "Los libros de la Casa de la Sabiduría, la construcción del sufismo y la arábigo como lengua científica, la medicina de Avicena y la álgebra."
+  },
+  {
+    "id": "fatimies",
+    "nombre": "Califato Fatimí",
+    "abrev": "FAT",
+    "tipo": "imperio",
+    "region": "magreb",
+    "inicio": 909,
+    "fin": 1171,
+    "apogeo": [
+      960,
+      1050
+    ],
+    "declive": [
+      1100,
+      1171
+    ],
+    "peso": 7,
+    "territorio": true,
+    "color": "#4fb0a8",
+    "sintesis": "El califato chií ismailí que gobernó Ifriqiya y después el Cairo: la construcción de Al-Azhar, un poder comercial con los venezianos y los genoveses.",
+    "caida": "La caída de la ciudad de Mahdia y el avance de los seljukies y los ayyubíes acabaron con el califato.",
+    "legado": "La mezquita y la universidad de Al-Azhar, la doctrina ismailí y el El Cairo medieval de los visires."
+  },
+  {
+    "id": "mamelucos",
+    "nombre": "Mamelucos",
+    "abrev": "MAM",
+    "tipo": "dinastia",
+    "region": "egipto",
+    "inicio": 1250,
+    "fin": 1517,
+    "apogeo": [
+      1290,
+      1340
+    ],
+    "declive": [
+      1500,
+      1517
+    ],
+    "peso": 6,
+    "territorio": true,
+    "color": "#c9a05f",
+    "sintesis": "La dinastía de los mamelucos, origine de esclavos y jinetes, que gobernó Egipto y Siria: un poder militar con un lujo constructivo sin parangón.",
+    "caida": "La Expulsión de los mamelucos por_SELIM I en 1517 y el colapso del poder sirio en la de Lepanto acabaron con ellos.",
+    "legado": "La ciudadela del Cairo, la mezquita de al-Azhar de lasDish y la del}Cairo, las delTapicería y el of los mamelucos en el arte."
+  }
+]

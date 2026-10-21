@@ -1,0 +1,268 @@
+[
+  {
+    "id": "achaemenidas-d1",
+    "civilizacion": "achaemenidas",
+    "nombre": "Ahura Mazda",
+    "dominio": "Supreme creator god; his symbol is the solar disc",
+    "icono": "disco"
+  },
+  {
+    "id": "sasanidas-d2",
+    "civilizacion": "sasanidas",
+    "nombre": "Ahura Mazda",
+    "dominio": "Single god of state Zoroastrianism, honoured in the fires of the temples",
+    "icono": "disco"
+  },
+  {
+    "id": "partos-d3",
+    "civilizacion": "partos",
+    "nombre": "Mithra",
+    "dominio": "Solar god of Parthian Persia, at the origin of its funerary culture",
+    "icono": "disco"
+  },
+  {
+    "id": "safavidas-d4",
+    "civilizacion": "safavidas",
+    "nombre": "Ali",
+    "dominio": "First imam, venerated by the Shi’ites; the shah as his guardian in Persia",
+    "icono": "templo"
+  },
+  {
+    "id": "roma-d5",
+    "civilizacion": "roma",
+    "nombre": "Jupiter",
+    "dominio": "Lord of the sky and chief of the pantheon, with the eagle and the thunderbolt",
+    "icono": "eagle"
+  },
+  {
+    "id": "roma-d6",
+    "civilizacion": "roma",
+    "nombre": "Saturn",
+    "dominio": "Time and the harvests, with the sickle and the palace of the Saturnalia",
+    "icono": "cetro"
+  },
+  {
+    "id": "griegos-d7",
+    "civilizacion": "griegos",
+    "nombre": "Athena",
+    "dominio": "Wisdom and just war; Minerva for the Romans",
+    "icono": "yelmo"
+  },
+  {
+    "id": "griegos-d8",
+    "civilizacion": "griegos",
+    "nombre": "Dionysus",
+    "dominio": "Wine, ecstasy and theatre, with the thyrsus and the dithyramb",
+    "icono": "copa"
+  },
+  {
+    "id": "egipto-d9",
+    "civilizacion": "egipto",
+    "nombre": "Ra",
+    "dominio": "The sun god, the most important of the pantheon",
+    "icono": "disco"
+  },
+  {
+    "id": "egipto-d10",
+    "civilizacion": "egipto",
+    "nombre": "Osiris",
+    "dominio": "Lord of the underworld and of resurrection",
+    "icono": "mascara"
+  },
+  {
+    "id": "egipto-d11",
+    "civilizacion": "egipto",
+    "nombre": "Anubis",
+    "dominio": "Guardian of the necropolises and guide of the souls",
+    "icono": "mascara"
+  },
+  {
+    "id": "sumer-d12",
+    "civilizacion": "sumer",
+    "nombre": "Inanna",
+    "dominio": "Goddess of love, war and fertility, of Uruk",
+    "icono": "mascara"
+  },
+  {
+    "id": "babilonia-d13",
+    "civilizacion": "babilonia",
+    "nombre": "Marduk",
+    "dominio": "Supreme god of Babylon, with the sword of justice",
+    "icono": "cetro"
+  },
+  {
+    "id": "asiria-d14",
+    "civilizacion": "asiria",
+    "nombre": "Assur",
+    "dominio": "The national god of Assyria, from whom the kings came",
+    "icono": "templo"
+  },
+  {
+    "id": "hititas-d15",
+    "civilizacion": "hititas",
+    "nombre": "Tarhunza",
+    "dominio": "The storm of Hatti, who signs the treaties",
+    "icono": "rayo"
+  },
+  {
+    "id": "macedonia-d16",
+    "civilizacion": "macedonia",
+    "nombre": "Zeus-Ammon",
+    "dominio": "The god Amun, worshipped by Alexander, with the horns",
+    "icono": "rayo"
+  },
+  {
+    "id": "vikingos-d17",
+    "civilizacion": "vikingos",
+    "nombre": "Thor",
+    "dominio": "The thunder, with his hammer Mjölnir",
+    "icono": "rayo"
+  },
+  {
+    "id": "vikingos-d18",
+    "civilizacion": "vikingos",
+    "nombre": "Odin",
+    "dominio": "Lord of war, of wisdom and of the dead, with his spear Gungnir",
+    "icono": "lanza"
+  },
+  {
+    "id": "indus-d19",
+    "civilizacion": "indus",
+    "nombre": "Master of Animals",
+    "dominio": "The deity of the great seal of Mohenjo-daro, still unidentified",
+    "icono": "idol"
+  },
+  {
+    "id": "veda-d20",
+    "civilizacion": "veda",
+    "nombre": "Indra",
+    "dominio": "The god of war and of the storm in the Rigveda",
+    "icono": "rayo"
+  },
+  {
+    "id": "veda-d21",
+    "civilizacion": "veda",
+    "nombre": "Agni",
+    "dominio": "The sacrificial fire, the centre of the whole Vedic rite",
+    "icono": "fuego"
+  },
+  {
+    "id": "mauryas-d22",
+    "civilizacion": "mauryas",
+    "nombre": "Buddha",
+    "dominio": "The Enlightened One, with the lotus and the wheel of the law",
+    "icono": "loto"
+  },
+  {
+    "id": "guptas-d23",
+    "civilizacion": "guptas",
+    "nombre": "Vishnu",
+    "dominio": "The preserver, with the conch, the discus and the anchor among his attributes",
+    "icono": "rueda"
+  },
+  {
+    "id": "guptas-d24",
+    "civilizacion": "guptas",
+    "nombre": "Shiva",
+    "dominio": "The destroyer and the ascetic, with the trident and the third eye",
+    "icono": "tridente"
+  },
+  {
+    "id": "tang-d25",
+    "civilizacion": "tang",
+    "nombre": "Buddha",
+    "dominio": "The enlightenment preached along the Silk Road",
+    "icono": "loto"
+  },
+  {
+    "id": "mongoles-d26",
+    "civilizacion": "mongoles",
+    "nombre": "Qormusta",
+    "dominio": "The eternal mother of the Mongol deities, venerated in the steppe",
+    "icono": "templo"
+  },
+  {
+    "id": "inca-d27",
+    "civilizacion": "inca",
+    "nombre": "Inti",
+    "dominio": "The sun god, the centre of Inca religion and of the Inti Raymi",
+    "icono": "disco"
+  },
+  {
+    "id": "mexica-d28",
+    "civilizacion": "mexica",
+    "nombre": "Huitzilopochtli",
+    "dominio": "The god of war and of the sun, with his great temple at Tenochtitlan",
+    "icono": "mascara"
+  },
+  {
+    "id": "mexica-d29",
+    "civilizacion": "mexica",
+    "nombre": "Quetzalcóatl",
+    "dominio": "The god of the wind and of knowledge, with his feathers",
+    "icono": "pluma"
+  },
+  {
+    "id": "mayas-d30",
+    "civilizacion": "mayas",
+    "nombre": "Itzamná",
+    "dominio": "The creator god of the sky, whose face appears on the stelae",
+    "icono": "mascara"
+  },
+  {
+    "id": "nabateos-d31",
+    "civilizacion": "nabateos",
+    "nombre": "Dushara",
+    "dominio": "The chief divinity of Petra, in its high sanctuary",
+    "icono": "templo"
+  },
+  {
+    "id": "fenicios-d32",
+    "civilizacion": "fenicios",
+    "nombre": "Melqart",
+    "dominio": "The god of Tyre and patron of sailors and colonists",
+    "icono": "templo"
+  },
+  {
+    "id": "israel-d33",
+    "civilizacion": "israel",
+    "nombre": "Yahweh",
+    "dominio": "The one God of the Covenant, invoked in the Temple of Jerusalem",
+    "icono": "fuego"
+  },
+  {
+    "id": "celtas-d34",
+    "civilizacion": "celtas",
+    "nombre": "Danu",
+    "dominio": "The mother of the gods in the Celtic pantheon",
+    "icono": "mascara"
+  },
+  {
+    "id": "bulgaros-d35",
+    "civilizacion": "bulgaros",
+    "nombre": "Perun",
+    "dominio": "The thunder god of the Slavic pantheon, with his lightning and his vital force",
+    "icono": "rayo"
+  },
+  {
+    "id": "hungaros-d36",
+    "civilizacion": "hungaros",
+    "nombre": "Tengri",
+    "dominio": "The sky god of the Hungarian steppes, with his faithful horse",
+    "icono": "fuego"
+  },
+  {
+    "id": "corea-d37",
+    "civilizacion": "corea",
+    "nombre": "Haneul",
+    "dominio": "The sky and the numinous in the Korean pantheon",
+    "icono": "fuego"
+  },
+  {
+    "id": "tibet-d38",
+    "civilizacion": "tibet",
+    "nombre": "Vajrapani",
+    "dominio": "The protector of Vajrayana, with the vajra in his hand",
+    "icono": "tridente"
+  }
+]

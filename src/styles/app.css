@@ -1,0 +1,2255 @@
+/* ============================================================
+   CRÓNICA — Atlas temporal de Imperios
+   Lenguaje visual: atlas ilustrado nocturno. Tinta profunda,
+   pergamino, bronce y latón. Grano de papel sobre todo.
+   ============================================================ */
+
+:root {
+  --tinta-900: #07090d;
+  --tinta-850: #0b0e14;
+  --tinta-800: #10141c;
+  --tinta-750: #141924;
+  --tinta-700: #1a202b;
+  --tinta-600: #232b38;
+  --tinta-500: #2f3949;
+
+  --pergamino: #ece2ca;
+  --pergamino-2: rgba(236, 226, 202, 0.66);
+  --pergamino-3: rgba(236, 226, 202, 0.42);
+  --pergamino-4: rgba(236, 226, 202, 0.2);
+
+  --bronce: #c9a04c;
+  --bronce-claro: #eccb7d;
+  --bronce-tenue: rgba(201, 160, 76, 0.16);
+  --laton: #7fae9a;
+  --sangre: #d2553d;
+
+  --display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --texto: 'Spectral', Georgia, serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --r-s: 2px;
+  --r-m: 3px;
+  --r-l: 5px;
+
+  --borde: rgba(201, 160, 76, 0.16);
+  --borde-fuerte: rgba(201, 160, 76, 0.34);
+  --panel: linear-gradient(180deg, rgba(20, 25, 36, 0.92), rgba(11, 14, 20, 0.94));
+  --sombra: 0 18px 44px -22px rgba(0, 0, 0, 0.95);
+
+  --alto-cabecera: 72px;
+  --alto-cronologia: 264px;
+  --ancho-riel: 286px;
+  --ancho-ficha: 348px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--tinta-900);
+  color: var(--pergamino);
+  font-family: var(--texto);
+  font-size: 14px;
+  line-height: 1.55;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Grano de papel sobre toda la escena */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  pointer-events: none;
+  opacity: 0.038;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: rgba(201, 160, 76, 0.3);
+}
+
+/* ---------- Tipografía auxiliar ---------- */
+.ojo {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+}
+
+.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================
+   Estructura
+   ============================================================ */
+
+.app {
+  display: grid;
+  grid-template-rows: var(--alto-cabecera) minmax(0, 1fr) var(--alto-cronologia);
+  height: 100%;
+  background:
+    radial-gradient(1200px 620px at 50% -8%, rgba(201, 160, 76, 0.07), transparent 68%),
+    radial-gradient(900px 700px at 88% 108%, rgba(63, 143, 144, 0.06), transparent 70%),
+    var(--tinta-900);
+}
+
+/* ============================================================
+   Cabecera
+   ============================================================ */
+
+.cabecera {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--borde);
+  background: linear-gradient(180deg, rgba(16, 20, 28, 0.95), rgba(7, 9, 13, 0.7));
+  position: relative;
+  z-index: 40;
+}
+
+.cabecera::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201, 160, 76, 0.5),
+    rgba(201, 160, 76, 0.5),
+    transparent
+  );
+}
+
+.marca {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  min-width: 0;
+}
+
+.marca h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  font-variation-settings: 'SOFT' 20, 'WONK' 1;
+  color: var(--pergamino);
+  white-space: nowrap;
+}
+
+.marca .ojo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Lectura del año */
+.reloj {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 18px 5px;
+  border: 1px solid var(--borde);
+  border-radius: var(--r-m);
+  background:
+    linear-gradient(180deg, rgba(201, 160, 76, 0.07), rgba(0, 0, 0, 0.2));
+  box-shadow: inset 0 1px 0 rgba(236, 203, 125, 0.12);
+}
+
+.reloj .anio {
+  font-family: var(--mono);
+  font-size: 27px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: var(--bronce-claro);
+  line-height: 1;
+  text-shadow: 0 0 22px rgba(201, 160, 76, 0.4);
+}
+
+.reloj .era {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+}
+
+/* Controles de la derecha */
+.controles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.boton {
+  appearance: none;
+  border: 1px solid var(--borde);
+  background: rgba(236, 226, 202, 0.035);
+  color: var(--pergamino-2);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  padding: 7px 11px;
+  border-radius: var(--r-s);
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s, border-color 0.16s, transform 0.1s;
+}
+
+.boton:hover {
+  background: rgba(201, 160, 76, 0.12);
+  border-color: var(--borde-fuerte);
+  color: var(--bronce-claro);
+}
+
+.boton:active {
+  transform: translateY(1px);
+}
+
+.boton.activo {
+  background: rgba(201, 160, 76, 0.2);
+  border-color: rgba(201, 160, 76, 0.55);
+  color: var(--bronce-claro);
+}
+
+/* Buscador del catálogo */
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--borde);
+  background: rgba(236, 226, 202, 0.035);
+  border-radius: var(--r-s);
+  padding: 5px 8px;
+  min-width: 170px;
+}
+
+.buscador:focus-within {
+  border-color: rgba(201, 160, 76, 0.55);
+  background: rgba(201, 160, 76, 0.07);
+}
+
+.buscador .ojo {
+  font-size: 8px;
+  flex: 0 0 auto;
+}
+
+.buscador input {
+  appearance: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--pergamino);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.03em;
+  width: 130px;
+  min-width: 0;
+}
+
+.buscador input::placeholder {
+  color: var(--pergamino-3);
+}
+
+.buscador input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.buscador-limpiar {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--pergamino-3);
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.buscador-limpiar:hover {
+  color: var(--bronce-claro);
+}
+
+.boton.icono {
+  width: 34px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-size: 12px;
+}
+
+/* ============================================================
+   Tablero
+   ============================================================ */
+
+.tablero {
+  display: grid;
+  grid-template-columns: var(--ancho-riel) minmax(0, 1fr) var(--ancho-ficha);
+  min-height: 0;
+  position: relative;
+}
+
+/* ---------- Riel de civilizaciones vivas ---------- */
+.riel {
+  border-right: 1px solid var(--borde);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: linear-gradient(180deg, rgba(11, 14, 20, 0.7), rgba(7, 9, 13, 0.4));
+}
+
+.riel-cabecera {
+  padding: 12px 14px 9px;
+  border-bottom: 1px solid rgba(201, 160, 76, 0.1);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.riel-cabecera .contador {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--bronce);
+  font-variant-numeric: tabular-nums;
+}
+
+.riel-lista {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  padding: 6px 0 24px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 160, 76, 0.28) transparent;
+}
+
+.riel-lista::-webkit-scrollbar {
+  width: 8px;
+}
+.riel-lista::-webkit-scrollbar-thumb {
+  background: rgba(201, 160, 76, 0.24);
+  border-radius: 8px;
+}
+
+.riel-grupo {
+  padding: 12px 14px 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.riel-grupo::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(201, 160, 76, 0.2), transparent);
+}
+
+.riel-item {
+  display: grid;
+  grid-template-columns: 8px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 14px;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: background 0.14s, border-color 0.14s;
+}
+
+.riel-item:hover {
+  background: rgba(236, 226, 202, 0.04);
+}
+
+.riel-item.sel {
+  background: rgba(201, 160, 76, 0.09);
+  border-left-color: var(--bronce);
+}
+
+.riel-punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.riel-nombre {
+  font-family: var(--display);
+  font-size: 13.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--pergamino);
+}
+
+.riel-meta {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--pergamino-3);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.riel-item.sel .riel-nombre {
+  color: var(--bronce-claro);
+}
+
+/* ---------- Mapa ---------- */
+.mapa {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: radial-gradient(80% 70% at 50% 42%, #10161f 0%, #070a0e 100%);
+}
+
+.mapa svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.mapa svg:active {
+  cursor: grabbing;
+}
+
+.geo-tierra {
+  fill: #26384c;
+  stroke: #6884a2;
+  stroke-width: 0.65;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-halo {
+  fill: none;
+  stroke: rgba(201, 160, 76, 0.22);
+  stroke-width: 2.6;
+  filter: url(#costa);
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-fronteras path {
+  fill: none;
+  stroke: rgba(236, 226, 202, 0.12);
+  stroke-width: 0.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-graticula {
+  fill: none;
+  stroke: rgba(201, 160, 76, 0.1);
+  stroke-width: 0.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-region {
+  stroke-width: 0.9;
+  vector-effect: non-scaling-stroke;
+  transition: fill-opacity 0.4s, stroke-opacity 0.4s;
+  cursor: pointer;
+}
+
+.geo-region-fantasma {
+  fill: none;
+  stroke: rgba(236, 226, 202, 0.1);
+  stroke-width: 0.35;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.geo-region-fantasma.reclamada {
+  opacity: 0.25;
+}
+
+/* Ciudades históricas: puntos discretos y etiquetas sólo al seleccionar. */
+.geo-ciudades .ciudad-punto {
+  fill: currentColor;
+  stroke: rgba(7, 9, 13, 0.85);
+  stroke-width: 0.7;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-ciudades .ciudad-aura {
+  fill: currentColor;
+  opacity: 0.16;
+}
+
+.geo-ciudades .ciudad-texto {
+  font-size: 7.6px;
+  opacity: 0.9;
+}
+
+/* Los polígonos históricos heredan el color de su civilización. Sin esta
+   regla SVG los rellena de negro y tapa el mapamundi. */
+.geo-territorio .terr-halo {
+  fill: none;
+  stroke: currentColor;
+}
+
+.geo-territorio .terr-cuerpo {
+  fill: currentColor;
+  stroke: currentColor;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-marca {
+  cursor: pointer;
+}
+
+.marca-halo {
+  fill: currentColor;
+  opacity: 0.16;
+}
+
+.marca-nucleo {
+  fill: currentColor;
+}
+
+.marca-aura {
+  opacity: 0.3;
+}
+
+.marca-texto {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  fill: var(--pergamino-2);
+  paint-order: stroke;
+  stroke: rgba(7, 9, 13, 0.85);
+  stroke-width: 2.4px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.marca-texto.mayor {
+  font-family: var(--display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  fill: var(--pergamino);
+}
+
+/* --- Rosa de los vientos --- */
+.rosa-arco {
+  fill: none;
+  stroke: rgba(201, 160, 76, 0.34);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.rosa-punta {
+  fill: rgba(201, 160, 76, 0.42);
+  stroke: rgba(201, 160, 76, 0.6);
+  stroke-width: 0.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.rosa-punta.tenue {
+  fill: rgba(201, 160, 76, 0.16);
+}
+
+.rosa-letra {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  fill: rgba(201, 160, 76, 0.6);
+}
+
+/* --- Cartela --- */
+.cartela-marco {
+  fill: rgba(7, 9, 13, 0.62);
+  stroke: rgba(201, 160, 76, 0.42);
+  stroke-width: 0.7;
+  vector-effect: non-scaling-stroke;
+}
+
+.cartela-marco.interior {
+  fill: none;
+  stroke: rgba(201, 160, 76, 0.2);
+  stroke-width: 0.4;
+}
+
+.cartela-titulo {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.26em;
+  fill: rgba(201, 160, 76, 0.9);
+}
+
+.cartela-texto {
+  font-family: var(--mono);
+  font-size: 8.4px;
+  letter-spacing: 0.04em;
+  fill: rgba(236, 226, 202, 0.68);
+}
+
+.cartela-muestra {
+  fill: rgba(201, 160, 76, 0.3);
+  stroke: rgba(201, 160, 76, 0.7);
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.cartela-muestra.discontinuo {
+  stroke-dasharray: 2 1.5;
+  fill: rgba(210, 85, 61, 0.28);
+  stroke: rgba(210, 85, 61, 0.7);
+}
+
+.cartela-aura {
+  fill: rgba(201, 160, 76, 0.16);
+  stroke: rgba(201, 160, 76, 0.4);
+  stroke-width: 0.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.mapa-zoom {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mapa-zoom .boton {
+  width: 30px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  background: rgba(7, 9, 13, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+/* ---------- Ficha de detalle ---------- */
+.ficha {
+  border-left: 1px solid var(--borde);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+  background: linear-gradient(180deg, rgba(11, 14, 20, 0.78), rgba(7, 9, 13, 0.5));
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 160, 76, 0.28) transparent;
+}
+
+.ficha::-webkit-scrollbar {
+  width: 8px;
+}
+.ficha::-webkit-scrollbar-thumb {
+  background: rgba(201, 160, 76, 0.24);
+  border-radius: 8px;
+}
+
+.ficha-vacia {
+  padding: 40px 26px;
+  text-align: center;
+  color: var(--pergamino-3);
+}
+
+.ficha-vacia .glifo {
+  font-family: var(--display);
+  font-size: 44px;
+  color: rgba(201, 160, 76, 0.28);
+  margin-bottom: 14px;
+}
+
+.ficha-banda {
+  height: 3px;
+  width: 100%;
+}
+
+.ficha-cuerpo {
+  padding: 20px 22px 30px;
+}
+
+.ficha-tipo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+.ficha h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 1.08;
+  margin: 12px 0 6px;
+  letter-spacing: -0.01em;
+  font-variation-settings: 'SOFT' 25, 'WONK' 1;
+}
+
+.ficha-sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--pergamino-3);
+  letter-spacing: 0.06em;
+}
+
+.ficha-datos {
+  margin: 18px 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 7px 14px;
+  border-top: 1px solid rgba(201, 160, 76, 0.13);
+  border-bottom: 1px solid rgba(201, 160, 76, 0.13);
+  padding: 14px 0;
+}
+
+.ficha-datos dt {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+  padding-top: 3px;
+}
+
+.ficha-datos dd {
+  font-size: 13px;
+  color: var(--pergamino);
+}
+
+.ficha-bloque {
+  margin-top: 18px;
+}
+
+.ficha-bloque h3 {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bronce);
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.ficha-bloque h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(201, 160, 76, 0.26), transparent);
+}
+
+.ficha-bloque p {
+  font-size: 13.5px;
+  line-height: 1.66;
+  color: var(--pergamino-2);
+}
+
+.ficha-bloque p + p {
+  margin-top: 9px;
+}
+
+/* Ciudades principales de la ficha */
+.ficha-ciudades {
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+
+.ficha-ciudades li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px dotted rgba(201, 160, 76, 0.16);
+}
+
+.ficha-ciudades li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ficha-ciudades .ciudad-nombre {
+  font-size: 13px;
+  color: var(--pergamino);
+}
+
+.ficha-ciudades .ciudad-actual {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--pergamino-3);
+  text-align: right;
+}
+
+.ficha-nota {
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 1.5;
+  color: var(--pergamino-3);
+  opacity: 0.8;
+}
+
+/* Barra de vida dentro de la ficha */
+.barra-vida {
+  position: relative;
+  height: 26px;
+  margin-top: 4px;
+  border: 1px solid rgba(201, 160, 76, 0.16);
+  border-radius: var(--r-s);
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.barra-vida .span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.barra-vida .span.vida {
+  opacity: 0.3;
+}
+
+.barra-vida .span.apogeo {
+  opacity: 0.95;
+}
+
+.barra-vida .span.declive,
+.barra-vida .span.decline {
+  opacity: 0.75;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.34) 0 3px,
+    transparent 3px 6px
+  );
+}
+
+.barra-vida .aguja {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+  background: var(--pergamino);
+  box-shadow: 0 0 8px rgba(236, 226, 202, 0.8);
+}
+
+/* Hitos */
+.hitos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hito {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 10px;
+  padding: 8px 0 8px 12px;
+  position: relative;
+  border-left: 1px solid rgba(201, 160, 76, 0.2);
+  cursor: pointer;
+}
+
+.hito::before {
+  content: '';
+  position: absolute;
+  left: -3.5px;
+  top: 13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tinta-850);
+  border: 1px solid rgba(201, 160, 76, 0.5);
+}
+
+.hito:hover::before {
+  background: var(--bronce-claro);
+}
+
+.hito .h-anio {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--bronce);
+  font-variant-numeric: tabular-nums;
+  padding-top: 1px;
+}
+
+.hito .h-txt {
+  font-size: 12.5px;
+  color: var(--pergamino-2);
+  line-height: 1.5;
+}
+
+.hito.activo::before {
+  background: var(--bronce-claro);
+  box-shadow: 0 0 10px var(--bronce);
+}
+
+.hito.activo .h-txt {
+  color: var(--pergamino);
+}
+
+/* ============================================================
+   Cronología (parte inferior)
+   ============================================================ */
+
+.cronologia {
+  border-top: 1px solid var(--borde);
+  display: grid;
+  grid-template-rows: 176px minmax(0, 1fr);
+  min-height: 0;
+  background: linear-gradient(180deg, rgba(11, 14, 20, 0.5), rgba(7, 9, 13, 0.92));
+  position: relative;
+  z-index: 30;
+}
+
+/* --- Riel del tiempo --- */
+.cronologia-cuerpo {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
+}
+
+.riel-tiempo {
+  position: relative;
+  border-bottom: 1px solid rgba(201, 160, 76, 0.11);
+  padding: 8px 20px 0;
+  user-select: none;
+}
+
+.riel-tiempo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: ew-resize;
+  touch-action: none;
+}
+
+.t-track {
+  fill: rgba(236, 226, 202, 0.07);
+  stroke: rgba(201, 160, 76, 0.22);
+  stroke-width: 1;
+}
+
+.t-era {
+  opacity: 0.5;
+}
+
+.t-tick {
+  stroke: rgba(201, 160, 76, 0.26);
+  stroke-width: 1;
+}
+
+.t-tick-label {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  fill: var(--pergamino-3);
+  text-anchor: middle;
+}
+
+.t-era-label {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  fill: var(--pergamino-3);
+}
+
+.t-marea {
+  fill: rgba(63, 143, 144, 0.16);
+  stroke: rgba(127, 174, 154, 0.5);
+  stroke-width: 1;
+}
+
+.t-playhead {
+  stroke: var(--bronce-claro);
+  stroke-width: 1.4;
+}
+
+.t-playhead-cabeza {
+  fill: var(--bronce-claro);
+}
+
+.t-hito {
+  fill: rgba(201, 160, 76, 0.55);
+}
+
+.t-hito.activo {
+  fill: var(--bronce-claro);
+}
+
+.t-vida {
+  opacity: 0.32;
+}
+
+.t-apogeo {
+  opacity: 0.95;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+
+.t-decline {
+  opacity: 0.8;
+}
+
+/* --- Gantt --- */
+.gantt-marco {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.gantt {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 160, 76, 0.28) transparent;
+}
+
+.gantt::-webkit-scrollbar {
+  width: 9px;
+}
+.gantt::-webkit-scrollbar-thumb {
+  background: rgba(201, 160, 76, 0.24);
+  border-radius: 8px;
+}
+
+/* Cabecera de región dentro del Gantt agrupado */
+.g-region {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 21px;
+  padding: 0 12px;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bronce);
+  background: #0a0d13;
+  border-top: 1px solid rgba(201, 160, 76, 0.14);
+  border-bottom: 1px solid rgba(201, 160, 76, 0.08);
+}
+
+.gantt-resultados {
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  z-index: 5;
+  padding: 2px 7px;
+  border: 1px solid rgba(201, 160, 76, 0.22);
+  border-radius: 2px;
+  background: rgba(7, 9, 13, 0.92);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  color: var(--pergamino-3);
+  pointer-events: none;
+}
+
+.gantt-vacio {
+  margin: 0;
+  padding: 18px 14px;
+  font-size: 12px;
+  color: var(--pergamino-3);
+}
+
+.g-fila {
+  display: grid;
+  grid-template-columns: 196px minmax(0, 1fr);
+  align-items: center;
+  height: 19px;
+  cursor: pointer;
+}
+
+.g-etiq {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 100%;
+  padding: 0 10px 0 12px;
+  font-size: 11.5px;
+  color: var(--pergamino-2);
+  background: linear-gradient(90deg, #0a0d13 78%, rgba(10, 13, 19, 0.94));
+  border-right: 1px solid rgba(201, 160, 76, 0.13);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.g-fila:hover .g-etiq {
+  color: var(--pergamino);
+}
+
+.g-fila.sel .g-etiq {
+  color: var(--bronce-claro);
+  background: linear-gradient(90deg, #161208 78%, rgba(22, 18, 8, 0.94));
+}
+
+.g-fila .punto {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.g-fila .nombre {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--display);
+  font-weight: 500;
+}
+
+.g-fila .siglo {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--pergamino-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.g-pista {
+  position: relative;
+  height: 100%;
+}
+
+.g-pista::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    90deg,
+    rgba(201, 160, 76, 0.05) 0 1px,
+    transparent 1px
+  );
+  background-size: var(--paso, 40px) 100%;
+}
+
+.g-barra {
+  position: absolute;
+  top: 6px;
+  height: 7px;
+  border-radius: 1px;
+  transition: filter 0.15s, box-shadow 0.15s;
+  opacity: 0.45;
+}
+
+.g-fila.viva .g-barra {
+  opacity: 0.8;
+}
+
+.g-fila:hover .g-barra,
+.g-fila.sel .g-barra {
+  opacity: 1;
+  filter: brightness(1.4);
+}
+
+.g-apogeo {
+  position: absolute;
+  top: 5px;
+  height: 9px;
+  border-radius: 1px;
+  box-shadow: 0 0 9px currentColor;
+}
+
+.g-decline {
+  position: absolute;
+  top: 7px;
+  height: 5px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.55) 0 2px,
+    transparent 2px 4px
+  );
+}
+
+.g-aguja {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(236, 203, 125, 0.6);
+  pointer-events: none;
+  z-index: 4;
+  box-shadow: 0 0 10px rgba(236, 203, 125, 0.5);
+}
+
+/* ============================================================
+   Superposiciones
+   ============================================================ */
+
+.globo {
+  position: fixed;
+  z-index: 500;
+  pointer-events: none;
+  padding: 7px 11px;
+  border: 1px solid var(--borde-fuerte);
+  border-radius: var(--r-s);
+  background: rgba(7, 9, 13, 0.94);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--sombra);
+  max-width: 250px;
+}
+
+.globo .g-nombre {
+  font-family: var(--display);
+  font-size: 13px;
+  color: var(--bronce-claro);
+  margin-bottom: 2px;
+}
+
+.globo .g-meta {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--pergamino-3);
+}
+
+.cinta-hitos {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.cinta-hito {
+  border-left: 2px solid var(--bronce);
+  padding: 5px 10px;
+  background: rgba(7, 9, 13, 0.72);
+  backdrop-filter: blur(5px);
+  border-radius: 0 var(--r-s) var(--r-s) 0;
+  animation: entra 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.cinta-hito .ch-anio {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--bronce);
+}
+
+.cinta-hito .ch-txt {
+  font-size: 12px;
+  color: var(--pergamino-2);
+}
+
+@keyframes entra {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  appearance: none;
+  border: 1px solid rgba(236, 226, 202, 0.14);
+  background: transparent;
+  color: var(--pergamino-3);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+}
+
+.chip .pip {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+.chip:hover {
+  color: var(--pergamino);
+  border-color: var(--borde-fuerte);
+}
+
+.chip.activo {
+  color: var(--tinta-900);
+  background: var(--bronce);
+  border-color: var(--bronce);
+  font-weight: 600;
+}
+
+.chip.activo .pip {
+  background: var(--tinta-900);
+  opacity: 1;
+}
+
+/* Panel de filtros desplegable */
+.menu-filtros {
+  position: absolute;
+  top: calc(var(--alto-cabecera) - 6px);
+  right: 18px;
+  z-index: 60;
+  padding: 14px 16px;
+  border: 1px solid var(--borde-fuerte);
+  border-radius: var(--r-m);
+  background: rgba(11, 14, 20, 0.97);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 232px;
+}
+
+.menu-filtros .grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.menu-filtros .titulo {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+}
+
+.solo-movil {
+  display: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1240px) {
+  :root {
+    --ancho-ficha: 310px;
+    --ancho-riel: 250px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .tablero {
+    grid-template-columns: var(--ancho-riel) minmax(0, 1fr);
+  }
+  .ficha {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 330px;
+    z-index: 35;
+    box-shadow: -24px 0 60px -30px rgba(0, 0, 0, 1);
+    transform: translateX(100%);
+    transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .ficha.abierta {
+    transform: none;
+  }
+}
+
+@media (max-width: 780px) {
+  :root {
+    --alto-cronologia: 188px;
+  }
+  .app {
+    grid-template-rows: auto minmax(0, 1fr) var(--alto-cronologia);
+  }
+
+  .cabecera {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: 'marca reloj' 'controles controles';
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .marca {
+    grid-area: marca;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .marca h1 {
+    font-size: 16px;
+    white-space: normal;
+    line-height: 1.15;
+  }
+  .marca .ojo {
+    display: none;
+  }
+  .reloj {
+    grid-area: reloj;
+    padding: 5px 12px 4px;
+    gap: 7px;
+    min-width: 0;
+  }
+  .reloj .anio {
+    font-size: 21px;
+  }
+  .reloj .era:last-child {
+    display: none;
+  }
+  .controles {
+    grid-area: controles;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    min-width: 0;
+  }
+  .controles::-webkit-scrollbar {
+    display: none;
+  }
+  .boton {
+    flex: 0 0 auto;
+    padding: 6px 9px;
+    font-size: 9.5px;
+  }
+  .buscador {
+    flex: 0 0 auto;
+    min-width: 150px;
+    padding: 4px 7px;
+  }
+  .buscador .ojo {
+    display: none;
+  }
+  .buscador input {
+    width: 118px;
+    font-size: 10px;
+  }
+  .solo-movil {
+    display: none !important;
+  }
+
+  /* El tablero se convierte en una columna con desplazamiento */
+  .tablero {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mapa {
+    order: 1;
+    flex: 0 0 auto;
+    height: 36vh;
+    min-height: 230px;
+  }
+  .riel {
+    order: 2;
+    position: static;
+    width: auto;
+    transform: none;
+    box-shadow: none;
+    border-right: none;
+    border-top: 1px solid var(--borde);
+    background: none;
+    flex: 0 0 auto;
+  }
+  .ficha {
+    order: 3;
+  }
+  .riel.abierto {
+    transform: none;
+  }
+  .riel-lista {
+    max-height: none;
+  }
+  .cronologia {
+    grid-template-rows: 100px minmax(0, 1fr);
+  }
+
+  /* La ficha se abre como una hoja desde abajo */
+  .ficha {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: 76%;
+    border-left: none;
+    border-top: 1px solid var(--borde-fuerte);
+    border-radius: 8px 8px 0 0;
+    transform: translateY(101%);
+    z-index: 60;
+    box-shadow: 0 -24px 60px -30px rgba(0, 0, 0, 1);
+  }
+  .ficha.abierta {
+    transform: none;
+  }
+  .menu-filtros {
+    top: auto;
+    bottom: 12px;
+    right: 10px;
+    left: 10px;
+    min-width: 0;
+  }
+
+  .g-fila {
+    grid-template-columns: 132px minmax(0, 1fr);
+  }
+  .g-etiq {
+    padding: 0 8px 0 10px;
+    font-size: 11px;
+  }
+  .cinta-hitos {
+    max-width: 62vw;
+  }
+  .mapa-zoom {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* ============================================================
+   Capas nuevas: regiones fantasma, territorios, ciudades, cultura
+   ============================================================ */
+
+/* Las fronteras modernas sólo como contexto, nunca como color */
+.geo-region-fantasma {
+  fill: none;
+  stroke: rgba(236, 226, 202, 0.09);
+  stroke-width: 0.4;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+/* Territorios históricos */
+.terr-halo {
+  fill: none;
+  stroke: currentColor;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.terr-cuerpo {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0.9;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill-opacity 0.35s, stroke-opacity 0.35s;
+}
+
+/* Ciudades */
+.geo-ciudades {
+  pointer-events: none;
+}
+
+.ciudad-punto {
+  fill: currentColor;
+}
+
+.ciudad-aura {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.5;
+  opacity: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Pestañas de la ficha */
+.ficha-pestanas {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(201, 160, 76, 0.16);
+}
+
+.ficha-tab {
+  appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--pergamino-3);
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 6px 10px 7px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ficha-tab:hover {
+  color: var(--pergamino);
+}
+
+.ficha-tab.activa {
+  color: var(--bronce-claro);
+  border-bottom-color: var(--bronce);
+}
+
+/* Religión */
+.religion {
+  border-left: 2px solid rgba(201, 160, 76, 0.25);
+  padding: 2px 0 2px 11px;
+  margin-bottom: 12px;
+  opacity: 0.55;
+}
+
+.religion.activa {
+  opacity: 1;
+  border-left-color: var(--bronce);
+}
+
+.religion-cab {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.religion-nombre {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pergamino);
+}
+
+.religion-fechas {
+  font-size: 9.5px;
+  color: var(--bronce);
+  white-space: nowrap;
+}
+
+.religion p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--pergamino-2);
+}
+
+/* Listas de cultura */
+.deidades,
+.ciudades,
+.divisiones {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.deidades li,
+.ciudades li,
+.divisiones li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(236, 226, 202, 0.07);
+  font-size: 12.5px;
+}
+
+.deidad-nombre,
+.ciudad-nombre,
+.div-nombre {
+  color: var(--pergamino);
+}
+
+.deidad-dominio,
+.ciudad-actual,
+.div-fechas {
+  font-size: 10.5px;
+  color: var(--pergamino-3);
+  text-align: right;
+}
+
+.div-fechas {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.es-subdivision {
+  padding-left: 14px;
+  border-left: 1px solid rgba(201, 160, 76, 0.22);
+  margin-left: 2px;
+}
+
+.es-subdivision .div-nombre {
+  color: var(--pergamino-2);
+  font-size: 12px;
+}
+
+/* Artefactos */
+.artefactos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artefactos li {
+  border-left: 2px solid rgba(201, 160, 76, 0.28);
+  padding-left: 11px;
+}
+
+.artefacto-nombre {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pergamino);
+}
+
+.artefacto-tipo {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bronce);
+  margin: 2px 0 4px;
+}
+
+.artefactos p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--pergamino-2);
+}
+
+/* ============================================================
+   Ventana temporal ampliable
+   ============================================================ */
+.t-mini {
+  cursor: ew-resize;
+}
+
+.t-marea.mini {
+  fill: rgba(63, 143, 144, 0.16);
+  stroke: rgba(127, 174, 154, 0.5);
+  stroke-width: 0.7;
+}
+
+.t-mini-fuera {
+  fill: rgba(4, 6, 9, 0.62);
+  pointer-events: none;
+}
+
+.t-mini-ventana {
+  fill: rgba(201, 160, 76, 0.03);
+  stroke: rgba(236, 203, 125, 0.8);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.riel-cab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 22px;
+}
+
+.ventana-controles {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 5;
+}
+
+.ventana-controles .boton.icono {
+  width: 24px;
+  height: 22px;
+  font-size: 11px;
+  background: rgba(7, 9, 13, 0.8);
+}
+
+.ventana-rango {
+  font-size: 9.5px;
+  color: var(--pergamino-3);
+  letter-spacing: 0.05em;
+  padding-left: 4px;
+  white-space: nowrap;
+}
+
+.zona-mapa {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+}
+
+/* ============================================================
+   «Ahora»: los hechos del año visible
+   ============================================================ */
+.ahora {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 290px;
+  max-width: calc(100% - 28px);
+  border: 1px solid var(--borde);
+  border-radius: var(--r-m);
+  background: rgba(7, 9, 13, 0.82);
+  backdrop-filter: blur(7px);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  z-index: 12;
+}
+
+.ahora-cab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  appearance: none;
+  border: none;
+  background: rgba(201, 160, 76, 0.07);
+  border-bottom: 1px solid var(--borde);
+  padding: 7px 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ahora-cuenta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--bronce);
+  margin-left: auto;
+}
+
+.ahora-chevron {
+  color: var(--pergamino-3);
+  font-size: 10px;
+}
+
+.ahora-lista {
+  list-style: none;
+  max-height: 190px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.ahora-lista li {
+  display: grid;
+  grid-template-columns: 7px auto 1fr auto;
+  align-items: baseline;
+  gap: 7px;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(236, 226, 202, 0.06);
+  font-size: 12px;
+}
+
+.ahora-punto {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  align-self: center;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.ahora-civ {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: var(--display);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--pergamino);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ahora-civ:hover {
+  color: var(--bronce-claro);
+}
+
+.ahora-texto {
+  color: var(--pergamino-2);
+  line-height: 1.4;
+}
+
+.ahora-anio {
+  appearance: none;
+  border: none;
+  background: none;
+  color: var(--bronce);
+  font-size: 9.5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ahora-vacio {
+  display: block !important;
+  color: var(--pergamino-3);
+  font-size: 12px;
+}
+
+/* Fronteras modernas superpuestas */
+.geo-region-fantasma.modernas {
+  fill: rgba(236, 226, 202, 0.05);
+  stroke: rgba(236, 226, 202, 0.3);
+  stroke-width: 0.6;
+}
+
+/* Enlace a Wikipedia en la ficha */
+.ficha-wiki {
+  display: inline-block;
+  margin-top: 7px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 160, 76, 0.25);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ficha-wiki:hover {
+  color: var(--bronce-claro);
+  border-color: var(--bronce);
+}
+
+/* ============================================================
+   Comparación de dos civilizaciones
+   ============================================================ */
+.comparacion {
+  border-bottom: 1px solid rgba(201, 160, 76, 0.18);
+  background: rgba(201, 160, 76, 0.04);
+  padding: 8px 20px 10px;
+  position: relative;
+}
+
+.comparacion-cab {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.comparacion-veredicto {
+  font-size: 11.5px;
+  color: var(--pergamino-2);
+}
+
+.comparacion-veredicto strong {
+  color: var(--bronce-claro);
+  font-family: var(--mono);
+}
+
+.comparacion-cerrar {
+  appearance: none;
+  border: none;
+  background: none;
+  color: var(--pergamino-3);
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+.comparacion-cerrar:hover {
+  color: var(--pergamino);
+}
+
+.comparacion-cuerpo {
+  position: relative;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.comparacion-fila {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) 132px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.comparacion-nombre {
+  font-family: var(--display);
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comparacion-datos {
+  font-size: 9.5px;
+  color: var(--pergamino-3);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.comparacion-pista {
+  position: relative;
+  height: 13px;
+}
+
+.comparacion-barra {
+  position: absolute;
+  top: 3px;
+  height: 7px;
+  border-radius: 1px;
+  opacity: 0.45;
+}
+
+.comparacion-apogeo {
+  position: absolute;
+  top: 1px;
+  height: 11px;
+  border-radius: 1px;
+  opacity: 0.95;
+}
+
+.comparacion-solape {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  background: rgba(236, 203, 125, 0.1);
+  border-left: 1px solid rgba(236, 203, 125, 0.45);
+  border-right: 1px solid rgba(236, 203, 125, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.comparacion-nota {
+  margin-top: 7px;
+  font-size: 11px;
+  color: var(--pergamino-3);
+}
+
+.comparacion-nota strong {
+  color: var(--pergamino-2);
+  font-weight: 600;
+}
+
+/* Pantalla de carga del catálogo inglés */
+.cargando {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 18px;
+  background: var(--tinta-900);
+}
+
+.cargando-marca {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--pergamino-3);
+  text-align: center;
+}
+
+.cargando-linea {
+  display: block;
+  width: 220px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--bronce), transparent);
+  animation: carga 1.4s ease-in-out infinite;
+}
+
+@keyframes carga {
+  0%, 100% { opacity: 0.2; transform: scaleX(0.6); }
+  50% { opacity: 1; transform: scaleX(1); }
+}
+
+/* ============================================================
+   Panel de estados actuales
+   ============================================================ */
+.estados {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 340px;
+  max-width: calc(100% - 28px);
+  max-height: calc(100% - 28px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--borde);
+  border-radius: var(--r-m);
+  background: rgba(7, 9, 13, 0.9);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--sombra);
+  z-index: 14;
+  animation: entra 0.22s ease-out both;
+}
+
+.estados-cab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--borde);
+  background: rgba(201, 160, 76, 0.06);
+}
+
+.estados-buscar {
+  flex: 1;
+  min-width: 0;
+  appearance: none;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(201, 160, 76, 0.2);
+  border-radius: var(--r-s);
+  color: var(--pergamino);
+  font-family: var(--texto);
+  font-size: 12px;
+  padding: 4px 7px;
+}
+
+.estados-buscar:focus {
+  outline: none;
+  border-color: var(--bronce);
+}
+
+.estados-cerrar {
+  appearance: none;
+  border: none;
+  background: none;
+  color: var(--pergamino-3);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.estados-cerrar:hover {
+  color: var(--pergamino);
+}
+
+.estados-sub {
+  padding: 6px 11px;
+  font-size: 11px;
+  color: var(--pergamino-3);
+  border-bottom: 1px solid rgba(236, 226, 202, 0.07);
+}
+
+.estados-lista {
+  list-style: none;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  scrollbar-width: thin;
+}
+
+.estados-lista li {
+  border-bottom: 1px solid rgba(236, 226, 202, 0.05);
+}
+
+.estados-lista li.cerca {
+  background: rgba(201, 160, 76, 0.08);
+  box-shadow: inset 2px 0 0 var(--bronce);
+}
+
+.estados-fila {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  appearance: none;
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 6px 11px;
+  cursor: pointer;
+  font-family: var(--texto);
+  font-size: 12.5px;
+  color: var(--pergamino-2);
+}
+
+.estados-fila:hover {
+  background: rgba(236, 226, 202, 0.05);
+  color: var(--pergamino);
+}
+
+.estados-pais {
+  font-family: var(--display);
+  font-weight: 600;
+  color: var(--pergamino);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.estados-anio {
+  font-size: 10.5px;
+  color: var(--bronce);
+  white-space: nowrap;
+}
+
+.estados-forma {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+  white-space: nowrap;
+}
+
+.estados-anterior {
+  grid-column: 1 / -1;
+  font-size: 10.5px;
+  color: var(--pergamino-3);
+}
+
+.estados-nota {
+  padding: 0 11px 8px 14px;
+  font-size: 11px;
+  color: var(--pergamino-2);
+  line-height: 1.45;
+}
+
+.estados-vacio {
+  padding: 14px 11px;
+  color: var(--pergamino-3);
+  font-size: 12px;
+}
