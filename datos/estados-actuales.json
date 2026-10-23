@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "portugal",
+    "pais": "Portugal",
+    "anio": 1143,
+    "anterior": "Condado de Portugal",
+    "forma": "Reindependización",
+    "nota": "Nace del cero: Afonso Henriques vence en Ourique."
+  },
+  {
+    "id": "espana",
+    "pais": "España",
+    "anio": 1479,
+    "anterior": "Coronas de Castilla y Aragón",
+    "forma": "Unión dinástica",
+    "nota": "Nace de la unión de Isabel y Fernando; el nombre «España» se generaliza en el XVI."
+  },
+  {
+    "id": "francia",
+    "pais": "Francia",
+    "anio": 987,
+    "anterior": "Reino de los francos",
+    "forma": "Monarquía capetingia"
+  },
+  {
+    "id": "inglaterra",
+    "pais": "Inglaterra",
+    "anio": 927,
+    "anterior": "Heptarquía anglosajona",
+    "forma": "Monarquía unificada",
+    "nota": "Cnut de Dinamarca unifica Wessex, Mercia y Northumbria."
+  },
+  {
+    "id": "irlanda",
+    "pais": "Irlanda",
+    "anio": 1922,
+    "anterior": "Estado Libre de Irlanda",
+    "forma": "Separación",
+    "nota": "Se independiza del Reino Unido tras la guerra civil."
+  },
+  {
+    "id": "islandia",
+    "pais": "Islandia",
+    "anio": 930,
+    "anterior": "República de Islandia",
+    "forma": "Asentamiento",
+    "nota": "Los primeros colonos noruegos fundan la Alþingi."
+  },
+  {
+    "id": "noruega",
+    "pais": "Noruega",
+    "anio": 872,
+    "anterior": "Condados de Harald Fairhair",
+    "forma": "Unificación",
+    "nota": "Harald I reúne los pequeños reinos."
+  },
+  {
+    "id": "suecia",
+    "pais": "Suecia",
+    "anio": 1523,
+    "anterior": "Unión de la casa de Vasa",
+    "forma": "Monarquía moderna"
+  },
+  {
+    "id": "dinamarca",
+    "pais": "Dinamarca",
+    "anio": 965,
+    "anterior": "Reino de Harald Bluetooth",
+    "forma": "Monarquía unificada"
+  },
+  {
+    "id": "finlandia",
+    "pais": "Finlandia",
+    "anio": 1809,
+    "anterior": "Imperio ruso",
+    "forma": "Autonomía",
+    "nota": "Rusia la ocupa tras la Guerra Finlandesa."
+  },
+  {
+    "id": "paises-bajos",
+    "pais": "Países Bajos",
+    "anio": 1579,
+    "anterior": "Ducado de Borgoña",
+    "forma": "República",
+    "nota": "Acta de Abjuración: nace la República de las Provincias Unidas."
+  },
+  {
+    "id": "belgica",
+    "pais": "Bélgica",
+    "anio": 1830,
+    "anterior": "Unión de Loena",
+    "forma": "Monarquía",
+    "nota": "Revolución belga: separación de los Países Bajos."
+  },
+  {
+    "id": "luxemburgo",
+    "pais": "Luxemburgo",
+    "anio": 1839,
+    "anterior": "Condado de Laxembourg",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "alemania",
+    "pais": "Alemania",
+    "anio": 1871,
+    "anterior": "Estados alemanes y Prusia",
+    "forma": "Unificación",
+    "nota": "Proclamación del Imperio en la sala de espejos de Versalles."
+  },
+  {
+    "id": "austria",
+    "pais": "Austria",
+    "anio": 1955,
+    "anterior": "Alta Austria",
+    "forma": "República",
+    "nota": "Tras 1945 Austria sigue siendo una potencia.autoconfigure en la ocupación."
+  },
+  {
+    "id": "suiza",
+    "pais": "Suiza",
+    "anio": 1291,
+    "anterior": "Cantones de la Selva",
+    "forma": "Confederación"
+  },
+  {
+    "id": "italia",
+    "pais": "Italia",
+    "anio": 1861,
+    "anterior": "Reinos de la península",
+    "forma": "Unificación",
+    "nota": "Proclamación del Reino de Italia con capital en Turín."
+  },
+  {
+    "id": "san-marino",
+    "pais": "San Marino",
+    "anio": 301,
+    "anterior": "Romanos",
+    "forma": "República",
+    "nota": "La más antigua república del mundo, aún independiente."
+  },
+  {
+    "id": "malta",
+    "pais": "Malta",
+    "anio": 1964,
+    "anterior": "Colonia británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "espana-2",
+    "pais": "España (hoy",
+    "anio": 0,
+    "anterior": "",
+    "forma": ""
+  },
+  {
+    "id": "macedonia",
+    "pais": "Macedonia del Norte",
+    "anio": 1991,
+    "anterior": "República Socialist de Macedonia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "bosnia",
+    "pais": "Bosnia y Herzegovina",
+    "anio": 1992,
+    "anterior": "Yugoslavia",
+    "forma": "Independencia",
+    "nota": "Guerra de Bosnia:Bosnia se declara en Bosnia y Herzegovina."
+  },
+  {
+    "id": "croacia",
+    "pais": "Croacia",
+    "anio": 1991,
+    "anterior": "Yugoslavia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "eslovenia",
+    "pais": "Eslovenia",
+    "anio": 1991,
+    "anterior": "Yugoslavia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "serbia",
+    "pais": "Serbia",
+    "anio": 2006,
+    "anterior": "Serbia y Montenegro",
+    "forma": "Estado",
+    "nota": "Nace de la unión de Serbia y Montenegro tras la secesión de Montenegro."
+  },
+  {
+    "id": "montenegro",
+    "pais": "Montenegro",
+    "anio": 2006,
+    "anterior": "Serbia y Montenegro",
+    "forma": "Independencia"
+  },
+  {
+    "id": "albania",
+    "pais": "Albania",
+    "anio": 1912,
+    "anterior": "Imperio otomano",
+    "forma": "Principado"
+  },
+  {
+    "id": "grecia",
+    "pais": "Grecia",
+    "anio": 1830,
+    "anterior": "Imperio otomano",
+    "forma": "Monarquía",
+    "nota": "Primer Estado elleniko independiente tras la guerra de independencia."
+  },
+  {
+    "id": "bulgaria",
+    "pais": "Bulgaria",
+    "anio": 1908,
+    "anterior": "Principado de Bulgaria",
+    "forma": "Independencia"
+  },
+  {
+    "id": "polonia",
+    "pais": "Polonia",
+    "anio": 1918,
+    "anterior": "Reinos partitioning por poderes partitioning",
+    "forma": "República",
+    "nota": "Nace tras 123 años de particiones."
+  },
+  {
+    "id": "ucrania",
+    "pais": "Ucrania",
+    "anio": 1991,
+    "anterior": "República Socialista Soviética de Ucrania",
+    "forma": "Independencia"
+  },
+  {
+    "id": "bielorrusia",
+    "pais": "Bielorrusia",
+    "anio": 1991,
+    "anterior": "República Socialista Soviets de Bielorrusia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "lituania",
+    "pais": "Lituania",
+    "anio": 1990,
+    "anterior": "República Socialista Soviética de Lituania",
+    "forma": "Independencia"
+  },
+  {
+    "id": "letonia",
+    "pais": "Letonia",
+    "anio": 1991,
+    "anterior": "República Socialista Soviética de Letonia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "estonia",
+    "pais": "Estonia",
+    "anio": 1991,
+    "anterior": "República Socialista Soviética de Estonia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "hungria",
+    "pais": "Hungría",
+    "anio": 1000,
+    "anterior": "Principados magiares",
+    "forma": "Reino",
+    "nota": "Seas de la unificación de los magiares con Géza."
+  },
+  {
+    "id": "romania",
+    "pais": "Rumanía",
+    "anio": 1877,
+    "anterior": "Principados-Uniados Moldavia y Valaquia",
+    "forma": "Reino",
+    "nota": "Tratado de Berlín: nace un principado unies."
+  },
+  {
+    "id": "moldova",
+    "pais": "Moldavia",
+    "anio": 1991,
+    "anterior": "RSS de Moldavia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "eslovaquia",
+    "pais": "Eslovaquia",
+    "anio": 1993,
+    "anterior": "Checoslovaquia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "checoslovaquia",
+    "pais": "Checoslovaquia",
+    "anio": 1918,
+    "anterior": "Imperio austro-húngaro",
+    "forma": "República",
+    "nota": "Nace con Tomáš Masaryk como presidente."
+  },
+  {
+    "id": "republica-checa",
+    "pais": "República Checa",
+    "anio": 1993,
+    "anterior": "Checoslovaquia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "austria-hungria",
+    "pais": "Austria-Hungría",
+    "anio": 1867,
+    "anterior": "Imperio austriaco",
+    "forma": "Monarquía dual",
+    "nota": "Compromise de 1867: dos coronas, una ejército."
+  },
+  {
+    "id": "imperio-austriaco",
+    "pais": "Imperio austriaco",
+    "anio": 1804,
+    "anterior": "Sacro Imperio Romano",
+    "forma": "Monarquía",
+    "nota": "Francisco II se corona emperador en thrives."
+  },
+  {
+    "id": "imperio-napoleonico",
+    "pais": "Imperio napoleónico",
+    "anio": 1804,
+    "anterior": "República francesa",
+    "forma": "Monarquía imperial",
+    "nota": "Coronación de Napoleón en Notre-Dame."
+  },
+  {
+    "id": "francia-republicana",
+    "pais": "República francesa",
+    "anio": 1792,
+    "anterior": "Monarquía absoluta",
+    "forma": "República",
+    "nota": "Ejecución de Luis XVI y instauración republicana."
+  },
+  {
+    "id": "rusia",
+    "pais": "Rusia",
+    "anio": 1721,
+    "anterior": "Tsarato de Rusia",
+    "forma": "Imperio",
+    "nota": "Pedro el Grande se proclama emperador."
+  },
+  {
+    "id": "rusia-kiev",
+    "pais": "Rus de Kiev",
+    "anio": 862,
+    "anterior": "Tribus eslavas orientales",
+    "forma": "Principado",
+    "nota": "Rúrik y sus successors unen a las tribus eslavas."
+  },
+  {
+    "id": "union-sovietica",
+    "pais": "Unión Soviética",
+    "anio": 1922,
+    "anterior": "Repúblicas soviéticas",
+    "forma": "Estado federal",
+    "nota": "Nace de la_chip de la Guerra Civil."
+  },
+  {
+    "id": "georgia",
+    "pais": "Georgia",
+    "anio": 1991,
+    "anterior": "RSS de Georgia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "armenia",
+    "pais": "Armenia",
+    "anio": 1991,
+    "anterior": "RSS de Armenia",
+    "forma": "Independencia"
+  },
+  {
+    "id": "azerbaiyan",
+    "pais": "Azerbaiyán",
+    "anio": 1991,
+    "anterior": "RSS de Azerbaiyán",
+    "forma": "Independencia"
+  },
+  {
+    "id": "chipre",
+    "pais": "Chipre",
+    "anio": 1960,
+    "anterior": "Colonia británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "malta-2",
+    "pais": "Malta (hoy",
+    "anio": 0,
+    "anterior": "",
+    "forma": ""
+  },
+  {
+    "id": "estados-unidos",
+    "pais": "Estados Unidos",
+    "anio": 1776,
+    "anterior": "Trece Colonias",
+    "forma": "República",
+    "nota": "Declaración de Independencia; la primera nación moderna."
+  },
+  {
+    "id": "canada",
+    "pais": "Canadá",
+    "anio": 1867,
+    "anterior": "Provincias británicas",
+    "forma": "Confederación",
+    "nota": "British North America Act: cuatro provincias unidas."
+  },
+  {
+    "id": "mexico",
+    "pais": "México",
+    "anio": 1821,
+    "anterior": "Virreinato de Nueva España",
+    "forma": "Estado soberano",
+    "nota": "Independencia consumada tras la guerra de Independencia."
+  },
+  {
+    "id": "guatemala",
+    "pais": "Guatemala",
+    "anio": 1821,
+    "anterior": "Capitanía General de Guatemala",
+    "forma": "República"
+  },
+  {
+    "id": "honduras",
+    "pais": "Honduras",
+    "anio": 1821,
+    "anterior": "Capitanía General de Guatemala",
+    "forma": "República"
+  },
+  {
+    "id": "el-salvador",
+    "pais": "El Salvador",
+    "anio": 1841,
+    "anterior": "Capitanía General de Guatemala",
+    "forma": "República"
+  },
+  {
+    "id": "nicaragua",
+    "pais": "Nicaragua",
+    "anio": 1838,
+    "anterior": "Capitanía General de Guatemala",
+    "forma": "República"
+  },
+  {
+    "id": "costa-rica",
+    "pais": "Costa Rica",
+    "anio": 1821,
+    "anterior": "Capitanía General de Guatemala",
+    "forma": "República"
+  },
+  {
+    "id": "panama",
+    "pais": "Panamá",
+    "anio": 1903,
+    "anterior": "Colombia",
+    "forma": "Separación",
+    "nota": "Nace tras separarse de Colombia."
+  },
+  {
+    "id": "belice",
+    "pais": "Belice",
+    "anio": 1981,
+    "anterior": "Colonia británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "cuba",
+    "pais": "Cuba",
+    "anio": 1902,
+    "anterior": "Protectorado estadounidense",
+    "forma": "República"
+  },
+  {
+    "id": "haiti",
+    "pais": "Haití",
+    "anio": 1804,
+    "anterior": "Saint-Domingue francés",
+    "forma": "República",
+    "nota": "La única revolución negra victoriosa de la historia."
+  },
+  {
+    "id": "rep-dom",
+    "pais": "República Dominicana",
+    "anio": 1844,
+    "anterior": "Estado libre de Santo Domingo",
+    "forma": "República"
+  },
+  {
+    "id": "jamaica",
+    "pais": "Jamaica",
+    "anio": 1962,
+    "anterior": "Colonia británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "trinidad",
+    "pais": "Trinidad y Tobago",
+    "anio": 1962,
+    "anterior": "Colonia británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "bahamas",
+    "pais": "Bahamas",
+    "anio": 1973,
+    "anterior": "Colonia británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "puerto-rico",
+    "pais": "Puerto Rico",
+    "anio": 1898,
+    "anterior": "España",
+    "forma": "Territorio"
+  },
+  {
+    "id": "guayana",
+    "pais": "Guyana",
+    "anio": 1966,
+    "anterior": "Reino Unido",
+    "forma": "República"
+  },
+  {
+    "id": "surinam",
+    "pais": "Surinam",
+    "anio": 1975,
+    "anterior": "Reino de los Países Bajos",
+    "forma": "República"
+  },
+  {
+    "id": "colombia",
+    "pais": "Colombia",
+    "anio": 1819,
+    "anterior": "Virreinato de Nueva Granada",
+    "forma": "República"
+  },
+  {
+    "id": "venezuela",
+    "pais": "Venezuela",
+    "anio": 1811,
+    "anterior": "Capitanía General de Venezuela",
+    "forma": "República"
+  },
+  {
+    "id": "ecuador",
+    "pais": "Ecuador",
+    "anio": 1822,
+    "anterior": "Virreinato de Nueva Granada",
+    "forma": "República"
+  },
+  {
+    "id": "peru",
+    "pais": "Perú",
+    "anio": 1821,
+    "anterior": "Virreinato del Perú",
+    "forma": "República"
+  },
+  {
+    "id": "bolivia",
+    "pais": "Bolivia",
+    "anio": 1825,
+    "anterior": "Virreinato del Perú",
+    "forma": "República",
+    "nota": "Sucre es la primera capital de la República en América."
+  },
+  {
+    "id": "brasil",
+    "pais": "Brasil",
+    "anio": 1822,
+    "anterior": "Portugal",
+    "forma": "Imperio",
+    "nota": "Único imperio de América, hasta la República en 1889."
+  },
+  {
+    "id": "paraguay",
+    "pais": "Paraguay",
+    "anio": 1811,
+    "anterior": "Virreinato del Río de la Plata",
+    "forma": "República"
+  },
+  {
+    "id": "uruguay",
+    "pais": "Uruguay",
+    "anio": 1828,
+    "anterior": "Brasil",
+    "forma": "República"
+  },
+  {
+    "id": "argentina",
+    "pais": "Argentina",
+    "anio": 1816,
+    "anterior": "Virreinato del Río de la Plata",
+    "forma": "República",
+    "nota": "Nace en el Congreso de Tucumán."
+  },
+  {
+    "id": "chile",
+    "pais": "Chile",
+    "anio": 1818,
+    "anterior": "Virreinato del Perú",
+    "forma": "República"
+  },
+  {
+    "id": "china",
+    "pais": "China",
+    "anio": -221,
+    "anterior": "Reinos en guerra",
+    "forma": "Imperio unificado",
+    "nota": "Qin Shi Huang unifica China y estandariza la escritura."
+  },
+  {
+    "id": "japon",
+    "pais": "Japón",
+    "anio": 660,
+    "anterior": "Reinos de Yamato",
+    "forma": "Reforma imperial",
+    "nota": "Reforma de Taika: el emperador deviene el centro del poder."
+  },
+  {
+    "id": "corea",
+    "pais": "Corea del Sur",
+    "anio": 1948,
+    "anterior": "Corea unificada por Japón",
+    "forma": "República"
+  },
+  {
+    "id": "corea-norte",
+    "pais": "Corea del Norte",
+    "anio": 1948,
+    "anterior": "Corea unificada por Japón",
+    "forma": "República"
+  },
+  {
+    "id": "corea-unificada",
+    "pais": "Corea unificada",
+    "anio": 668,
+    "anterior": "Tres Reinos",
+    "forma": "Unificación",
+    "nota": "Silla unifica la península con ayuda Tang."
+  },
+  {
+    "id": "india",
+    "pais": "India",
+    "anio": 1947,
+    "anterior": "Imperio británico",
+    "forma": "República",
+    "nota": "Independencia y partición: nacen India y Pakistán."
+  },
+  {
+    "id": "pakistan",
+    "pais": "Pakistán",
+    "anio": 1947,
+    "anterior": "Imperio británico",
+    "forma": "República",
+    "nota": "Nace con la partición de la India."
+  },
+  {
+    "id": "bangladesh",
+    "pais": "Bangladés",
+    "anio": 1971,
+    "anterior": "Pakistán",
+    "forma": "Independencia"
+  },
+  {
+    "id": "nepal",
+    "pais": "Nepal",
+    "anio": 1768,
+    "anterior": "Principados unificados de la India",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "sri-lanka",
+    "pais": "Sri Lanka",
+    "anio": 1948,
+    "anterior": "Ceylán británico",
+    "forma": "República"
+  },
+  {
+    "id": "birmania",
+    "pais": "Myanmar",
+    "anio": 1948,
+    "anterior": "Birmania británica",
+    "forma": "República"
+  },
+  {
+    "id": "tailandia",
+    "pais": "Tailandia",
+    "anio": 1238,
+    "anterior": "Reinos de Sukhothai y Ayutthaya",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "vietnam",
+    "pais": "Vietnam",
+    "anio": 1945,
+    "anterior": "Francia",
+    "forma": "República",
+    "nota": "Independencia en dos fases, contra Francia y luego EE.UU."
+  },
+  {
+    "id": "camboya",
+    "pais": "Camboya",
+    "anio": 1953,
+    "anterior": "Francia",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "laos",
+    "pais": "Laos",
+    "anio": 1953,
+    "anterior": "Francia",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "indonesia",
+    "pais": "Indonesia",
+    "anio": 1949,
+    "anterior": "Indias Orientales holandesas",
+    "forma": "República",
+    "nota": "Declaración de la independencia en 1945, reconocida en 1949."
+  },
+  {
+    "id": "malasia",
+    "pais": "Malasia",
+    "anio": 1957,
+    "anterior": "Colonia británica",
+    "forma": "Monarquíafederal"
+  },
+  {
+    "id": "filipinas",
+    "pais": "Filipinas",
+    "anio": 1898,
+    "anterior": "España",
+    "forma": "República",
+    "nota": "Primera revolución asiática: contra España, luego EE.UU."
+  },
+  {
+    "id": "mongolia",
+    "pais": "Mongolia",
+    "anio": 1911,
+    "anterior": "Imperio chino",
+    "forma": "República"
+  },
+  {
+    "id": "afganistan",
+    "pais": "Afganistán",
+    "anio": 1919,
+    "anterior": "Emiratofinis afgano",
+    "forma": "Estado"
+  },
+  {
+    "id": "irak",
+    "pais": "Irak",
+    "anio": 1932,
+    "anterior": "Mandato británico",
+    "forma": "Monarquía",
+    "nota": "Nace tras 14 años de mandato."
+  },
+  {
+    "id": "iran",
+    "pais": "Irán",
+    "anio": 1907,
+    "anterior": "Qajares",
+    "forma": "Monarquía",
+    "nota": "La constitution de 1906 abre la]《-modernización Persia."
+  },
+  {
+    "id": "siria",
+    "pais": "Siria",
+    "anio": 1946,
+    "anterior": "Mandato francés",
+    "forma": "República"
+  },
+  {
+    "id": "libano",
+    "pais": "Líbano",
+    "anio": 1943,
+    "anterior": "Mandato francés",
+    "forma": "República"
+  },
+  {
+    "id": "jordania",
+    "pais": "Jordania",
+    "anio": 1946,
+    "anterior": "Mandato británico",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "israel",
+    "pais": "Israel",
+    "anio": 1948,
+    "anterior": "Mandato británico",
+    "forma": "Estado",
+    "nota": "Nace el día de la Independencia; la guerra de 1948 marca su contorno."
+  },
+  {
+    "id": "palestina",
+    "pais": "Palestina",
+    "anio": 1948,
+    "anterior": "Mandato británico",
+    "forma": "Estado"
+  },
+  {
+    "id": "arabia-saudita",
+    "pais": "Arabia Saudí",
+    "anio": 1932,
+    "anterior": "Emiratos del Nejd",
+    "forma": "Monarquía",
+    "nota": "Ibn Saud unifica la península en una sola corona."
+  },
+  {
+    "id": "yemen",
+    "pais": "Yemen",
+    "anio": 1990,
+    "anterior": "Yemen del Norte y del Sur",
+    "forma": "República",
+    "nota": "La unificación de los dos yemenes."
+  },
+  {
+    "id": "oman",
+    "pais": "Omán",
+    "anio": 1650,
+    "anterior": "Imperio de Omán",
+    "forma": "Sultanato",
+    "nota": "Imperio con Zanzíbar hasta 1964."
+  },
+  {
+    "id": "emiratos",
+    "pais": "Emiratos Árabes Unidos",
+    "anio": 1971,
+    "anterior": "Trucos del Protectorado britannique",
+    "forma": "Federación"
+  },
+  {
+    "id": "qatar",
+    "pais": "Catar",
+    "anio": 1971,
+    "anterior": "Protectorado británico",
+    "forma": "Emirato"
+  },
+  {
+    "id": "kuwait",
+    "pais": "Kuwait",
+    "anio": 1961,
+    "anterior": "Protectorado británico",
+    "forma": "Emirato"
+  },
+  {
+    "id": "corea-mongolia",
+    "pais": "Mongolia exterior",
+    "anio": 1636,
+    "anterior": "Dinastía Qing",
+    "forma": "Satrapía"
+  },
+  {
+    "id": "taiwan",
+    "pais": "Taiwán",
+    "anio": 1949,
+    "anterior": "Japón colonial",
+    "forma": "República"
+  },
+  {
+    "id": "egipto",
+    "pais": "Egipto",
+    "anio": 1922,
+    "anterior": "Protectorado británico",
+    "forma": "Monarquía",
+    "nota": "La revolución de 1952 acaba con la monarquía."
+  },
+  {
+    "id": "egipto-antiguo",
+    "pais": "Egipto unificado",
+    "anio": -3100,
+    "anterior": "Alto y Bajo Egipto",
+    "forma": "Reino unificado",
+    "nota": "Narmer une las Dos Tierras: nace el Estado."
+  },
+  {
+    "id": "libia",
+    "pais": "Libia",
+    "anio": 1951,
+    "anterior": "Italia colonial",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "tunez",
+    "pais": "Túnez",
+    "anio": 1956,
+    "anterior": "Protectorado francés",
+    "forma": "República",
+    "nota": "Nace con el golpe de Ben Bella y el destino de Bourguiba."
+  },
+  {
+    "id": "argelia",
+    "pais": "Argelia",
+    "anio": 1962,
+    "anterior": "Francia colonial",
+    "forma": "República",
+    "nota": "Nace tras la guerra de independencia de 1954-62."
+  },
+  {
+    "id": "marruecos",
+    "pais": "Marruecos",
+    "anio": 1956,
+    "anterior": "Protectorado francés y español",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "sudafrica",
+    "pais": "Sudáfrica",
+    "anio": 1961,
+    "anterior": "Unión Sudafricana",
+    "forma": "República",
+    "nota": "Nace tras el referendum sobre la apartheid."
+  },
+  {
+    "id": "namibia",
+    "pais": "Namibia",
+    "anio": 1990,
+    "anterior": "Administración apartheid",
+    "forma": "Independencia"
+  },
+  {
+    "id": "botsuana",
+    "pais": "Botsuana",
+    "anio": 1966,
+    "anterior": "Protectorado británico",
+    "forma": "República"
+  },
+  {
+    "id": "zimbabue",
+    "pais": "Zimbabue",
+    "anio": 1980,
+    "anterior": "Rhodesia",
+    "forma": "Independencia",
+    "nota": "La guerra de la «liberación» acaba con el gobierno del apartheid."
+  },
+  {
+    "id": "zambia",
+    "pais": "Zambia",
+    "anio": 1964,
+    "anterior": "Protectorado británico",
+    "forma": "República"
+  },
+  {
+    "id": "malawi",
+    "pais": "Malaui",
+    "anio": 1964,
+    "anterior": "Protectorado británico",
+    "forma": "República"
+  },
+  {
+    "id": "mozambique",
+    "pais": "Mozambique",
+    "anio": 1975,
+    "anterior": "Portugal",
+    "forma": "República"
+  },
+  {
+    "id": "angola",
+    "pais": "Angola",
+    "anio": 1975,
+    "anterior": "Portugal",
+    "forma": "República"
+  },
+  {
+    "id": "nigeria",
+    "pais": "Nigeria",
+    "anio": 1960,
+    "anterior": "Nigeria Britain",
+    "forma": "Repúblicafederal",
+    "nota": "Unión de tres provincias más el norte."
+  },
+  {
+    "id": "ghana",
+    "pais": "Ghana",
+    "anio": 1957,
+    "anterior": "Costa de Oro británica",
+    "forma": "República",
+    "nota": "Primer Estado independiente de África negra."
+  },
+  {
+    "id": "costa-de-oro",
+    "pais": "Costa de Oro",
+    "anio": 1957,
+    "anterior": "Costa de Oro británica",
+    "forma": "Independencia"
+  },
+  {
+    "id": "senegal",
+    "pais": "Senegal",
+    "anio": 1960,
+    "anterior": "África Occidental Francesa",
+    "forma": "República"
+  },
+  {
+    "id": "mali",
+    "pais": "Mali",
+    "anio": 1960,
+    "anterior": "África Occidental Francesa",
+    "forma": "República",
+    "nota": "Heredando el nombre del imperio medieval."
+  },
+  {
+    "id": "niger",
+    "pais": "Níger",
+    "anio": 1960,
+    "anterior": "África Occidental Francesa",
+    "forma": "República"
+  },
+  {
+    "id": "chad",
+    "pais": "Chad",
+    "anio": 1960,
+    "anterior": "África Occidental Francesa",
+    "forma": "República"
+  },
+  {
+    "id": "costa-de-marfil",
+    "pais": "Costa de Marfil",
+    "anio": 1960,
+    "anterior": "África Occidental Francesa",
+    "forma": "República"
+  },
+  {
+    "id": "cameroon",
+    "pais": "Camerún",
+    "anio": 1960,
+    "anterior": "Camerún Pidgin británico-francés",
+    "forma": "República"
+  },
+  {
+    "id": "gabon",
+    "pais": "Gabón",
+    "anio": 1960,
+    "anterior": "África ecuatorial francesa",
+    "forma": "República"
+  },
+  {
+    "id": "republica-democratica-del-congo",
+    "pais": "RD del Congo",
+    "anio": 1960,
+    "anterior": "Congo-belga",
+    "forma": "República"
+  },
+  {
+    "id": "ruanda",
+    "pais": "Ruanda",
+    "anio": 1962,
+    "anterior": "Ruanda-Urundi",
+    "forma": "República"
+  },
+  {
+    "id": "burundi",
+    "pais": "Burundi",
+    "anio": 1962,
+    "anterior": "Ruanda-Urundi",
+    "forma": "República"
+  },
+  {
+    "id": "tanzania",
+    "pais": "Tanzania",
+    "anio": 1961,
+    "anterior": "Tanganyika y Zanzíbar",
+    "forma": "República federal",
+    "nota": "Unión de dos antiguos estados coloniales."
+  },
+  {
+    "id": "kenia",
+    "pais": "Kenia",
+    "anio": 1963,
+    "anterior": "Colonia británica",
+    "forma": "República"
+  },
+  {
+    "id": "uganda",
+    "pais": "Uganda",
+    "anio": 1962,
+    "anterior": "Protectorado británico",
+    "forma": "República"
+  },
+  {
+    "id": "etiopia",
+    "pais": "Etiopía",
+    "anio": 1974,
+    "anterior": "Monarquía etíope",
+    "forma": "República",
+    "nota": "El Derg abole la monarquía de los solomónicos."
+  },
+  {
+    "id": "somalilandia",
+    "pais": "Somalia",
+    "anio": 1960,
+    "anterior": "Somalia italiana y británica",
+    "forma": "República"
+  },
+  {
+    "id": "madagascar",
+    "pais": "Madagascar",
+    "anio": 1960,
+    "anterior": "Francia colonial",
+    "forma": "República"
+  },
+  {
+    "id": "mauricio",
+    "pais": "Mauricio",
+    "anio": 1968,
+    "anterior": "Colonia británica",
+    "forma": "República"
+  },
+  {
+    "id": "suazilandia",
+    "pais": "Esuatini",
+    "anio": 1968,
+    "anterior": "Protectorado británico",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "australia",
+    "pais": "Australia",
+    "anio": 1901,
+    "anterior": "Colonias británicas",
+    "forma": "Federación",
+    "nota": "Nace con la Constitución y el primer Estado federal."
+  },
+  {
+    "id": "nueva-zelanda",
+    "pais": "Nueva Zelanda",
+    "anio": 1907,
+    "anterior": "Colonia británica",
+    "forma": "Dominio"
+  },
+  {
+    "id": "papua-nueva-guinea",
+    "pais": "Papúa Nueva Guinea",
+    "anio": 1975,
+    "anterior": "Australia y Territory",
+    "forma": "Independencia"
+  },
+  {
+    "id": "fiji",
+    "pais": "Fiyi",
+    "anio": 1970,
+    "anterior": "Colonia británica",
+    "forma": "República"
+  },
+  {
+    "id": "nauru",
+    "pais": "Nauru",
+    "anio": 1968,
+    "anterior": "Administración/album de Australia",
+    "forma": "República"
+  },
+  {
+    "id": "vanuatu",
+    "pais": "Vanuatu",
+    "anio": 1980,
+    "anterior": "Condominio francés-británico",
+    "forma": "República"
+  },
+  {
+    "id": "salomon",
+    "pais": "Islas Salomón",
+    "anio": 1978,
+    "anterior": "Protectorado británico",
+    "forma": "Monarquía"
+  },
+  {
+    "id": "tuvalu",
+    "pais": "Tuvalu",
+    "anio": 1978,
+    "anterior": "Colonia británica",
+    "forma": "República"
+  }
+]

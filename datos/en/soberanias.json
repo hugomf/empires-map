@@ -1,0 +1,9 @@
+[
+  { "id": "independiente", "nombre": "Independent" },
+  { "id": "vasallo", "nombre": "Vassal" },
+  { "id": "tributario", "nombre": "Tributary" },
+  { "id": "protectorado", "nombre": "Protectorate" },
+  { "id": "union-personal", "nombre": "Personal union" },
+  { "id": "provincia", "nombre": "Province" },
+  { "id": "dependiente", "nombre": "Dependent" }
+]

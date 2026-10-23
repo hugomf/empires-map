@@ -21,6 +21,7 @@
     "sintesis": "The first urban civilization in history. Twelve cities on the Tigris and the Euphrates, with clay tablets, a system of weights and measures, and the first stepped temples in the world.",
     "caida": "Invasions by Akkad, the wars of Lagash and Ur, and pressure from Elam and Assyria eroded Sumerian power until the Third Dynasty of Ur fell to Hammurabi.",
     "legado": "Cuneiform writing, codified law, the alphabet and the myth of Gilgamesh travelled with Sumerian merchants across the whole Near East.",
+    "escritura": "Cuneiform",
     "alias": [
       "Sumeria",
       "Mesopotamia",
@@ -48,7 +49,8 @@
     "color": "#bb7458",
     "sintesis": "A kingdom of northern Syria whose archive of 17,000 clay tablets remains the best window onto urban life in the early third millennium BC.",
     "caida": "It was razed by the Akkadian king Naram-Sin; a second capital, Shalakh, was sacked by the Gutians.",
-    "legado": "Its archive reveals the earliest commercial contacts between Egypt, Mesopotamia and the Levant."
+    "legado": "Its archive reveals the earliest commercial contacts between Egypt, Mesopotamia and the Levant.",
+    "escritura": "Cuneiform"
   },
   {
     "id": "akkad",
@@ -71,7 +73,8 @@
     "color": "#c06a3a",
     "sintesis": "The first great empire in history, founded by Sargon of Akkad. It unified Mesopotamia with a professional army, gave its name to its language and set the precedent for imperial administration.",
     "caida": "Gutian invasions from the mountains, famines and the rebellion of King Rignyash against Lugal-zage-si.",
-    "legado": "Akkadian became the lingua franca of diplomacy and administration for almost a thousand years."
+    "legado": "Akkadian became the lingua franca of diplomacy and administration for almost a thousand years.",
+    "escritura": "Cuneiform"
   },
   {
     "id": "mari",
@@ -94,7 +97,8 @@
     "color": "#3f9390",
     "sintesis": "A trading city-state on the middle Euphrates and a great hub on the route from Armenia. Its archives preserve 25,000 tablets, and its walls rise with moats on a city scale.",
     "caida": "Hammurabi of Babylon destroyed it in 1761 BC to erase his rival, and before that it had already fallen twice to the Hurrians.",
-    "legado": "Walled urbanism, accounting and the first regular town plan in the Near East."
+    "legado": "Walled urbanism, accounting and the first regular town plan in the Near East.",
+    "escritura": "Cuneiform"
   },
   {
     "id": "babilonia",
@@ -117,7 +121,8 @@
     "color": "#a08bdc",
     "sintesis": "A city-kingdom that became the dominant power of the Near East. Its king Hammurabi promulgated the first written legal code in history, and its Neo-Babylonian version endured on the Tigris until the sixth century BC.",
     "caida": "They fell to the Persians in 539 BC, the day Cyrus entered Babylon; from then on its decline only grew worse.",
-    "legado": "The Code of Hammurabi, Babylonian mathematics, the observatory and the library of Nineveh are its inheritance."
+    "legado": "The Code of Hammurabi, Babylonian mathematics, the observatory and the library of Nineveh are its inheritance.",
+    "escritura": "Cuneiform"
   },
   {
     "id": "asiria",
@@ -140,7 +145,8 @@
     "color": "#8f3a34",
     "sintesis": "The most powerful military machine in the ancient world: the Assyrian state was the first to use a standing army of chariots, cavalry, iron armour and a royal bureaucracy that levied taxes and supplied the army.",
     "caida": "The fall of Nineveh in 612 BC to the Medes and Babylonians ended the first “superpower” in history.",
-    "legado": "The model of administrative imperialism, the network of royal roads and the enormous payroll of written archives."
+    "legado": "The model of administrative imperialism, the network of royal roads and the enormous payroll of written archives.",
+    "escritura": "Cuneiform"
   },
   {
     "id": "hititas",
@@ -164,6 +170,7 @@
     "sintesis": "A people of central Anatolia who dominated the Middle Bronze Age road. They combined advanced iron metallurgy, a policy of dynastic marriages and a chariot army that crossed the Euphrates to destroy Babylon.",
     "caida": "The “twelfth century BC crisis” struck them in a chain of migrations and wars that left their cities burnt.",
     "legado": "The first Hittite record of iron, international diplomacy and the oldest surviving treaty.",
+    "escritura": "Cuneiform and hieroglyphs",
     "alias": [
       "Hittite Empire",
       "Hittite Anatolia"
@@ -190,7 +197,8 @@
     "color": "#2f9e8f",
     "sintesis": "The maritime civilization of Crete: the labyrinthine palaces of Knossos, Minoan ivory, seamanship and the frescoes of Akrotiri, the Pompeii of prehistory.",
     "caida": "The eruption of Santorini (c. 1620 BC) and the crisis of 1450 BC opened the door to Mycenaean invaders.",
-    "legado": "The first palatial state, Cretan writing, coinage and the first great maritime contacts in the Aegean."
+    "legado": "The first palatial state, Cretan writing, coinage and the first great maritime contacts in the Aegean.",
+    "escritura": "Linear A"
   },
   {
     "id": "micenicos",
@@ -213,7 +221,8 @@
     "color": "#c98a4b",
     "sintesis": "The Greece of myth: Mycenae, Tiryns and Pylos, with fortified palaces, golden tombs and a chariot army that Homer remembered.",
     "caida": "The crisis of 1200 BC —waves of invaders, migrations and commercial collapse— erased their kingdoms from memory.",
-    "legado": "The likely origin of Homeric epic, the lineages recorded in the Pylos tablets and the aristocratic pattern of classical Greece."
+    "legado": "The likely origin of Homeric epic, the lineages recorded in the Pylos tablets and the aristocratic pattern of classical Greece.",
+    "escritura": "Linear B"
   },
   {
     "id": "egipto",
@@ -237,6 +246,7 @@
     "sintesis": "Three millennia of continuity along the Nile: the Old Kingdom built the pyramids, the Middle Kingdom brought stability, and the New Kingdom turned Egypt into an empire with the most feared armies of the ancient world.",
     "caida": "Hyksos invasions, then Assyrians and Persians; in the end Caesar, Antony and Cleopatra sealed its fate in 30 BC.",
     "legado": "The hierarchy, hieroglyphic writing, medicine, monumental architecture and the very concept of divine monarchy.",
+    "escritura": "Hieroglyphic, hieratic and Demotic scripts",
     "alias": [
       "Pharaohs",
       "Egyptians",
@@ -264,7 +274,8 @@
     "color": "#b08fd0",
     "sintesis": "A Macedonian dynasty that ruled Egypt and much of the Levant and Persia, heir to Alexander’s momentum. Its most famous relic, the Library of Alexandria, was the greatest centre of learning in the ancient world.",
     "caida": "Dynastic conflicts, treasury crises caused by the Syrian-Egyptian wars and finally Cleopatra and Caesar, who ended a three-century kingdom.",
-    "legado": "The Library of Alexandria, Ptolemaic astronomy, the technique of papyrus and the figure of the pharaoh reinvented in the Hellenistic world."
+    "legado": "The Library of Alexandria, Ptolemaic astronomy, the technique of papyrus and the figure of the pharaoh reinvented in the Hellenistic world.",
+    "escritura": "Hieroglyphs and Demotic script"
   },
   {
     "id": "fenicios",
@@ -287,7 +298,8 @@
     "color": "#4f7fc4",
     "sintesis": "A people of ports on the Phoenician coast: Tyre, Sidon and Byblos. Sailors, merchants and diplomats; the Tyrians founded Carthage, and their 22-letter alphabet passed to the Greeks.",
     "caida": "Assyrians, Neo-Babylonians and Persians subdued them one after another; their culture dissolved into Hellenism and Roman trade.",
-    "legado": "The Phoenician alphabet the Greek alphabet Latin our letters. Also glassmaking, shipbuilding and long-distance trade."
+    "legado": "The Phoenician alphabet the Greek alphabet Latin our letters. Also glassmaking, shipbuilding and long-distance trade.",
+    "escritura": "Phoenician alphabet"
   },
   {
     "id": "filisteos",
@@ -333,7 +345,8 @@
     "color": "#6f8fd0",
     "sintesis": "The twelve tribes of Israel consolidate under Saul, David and Solomon: a kingdom with its capital at Jerusalem, sales contracts, psalms and the Torah written down for the first time.",
     "caida": "The division of the kingdom after Solomon (930 BC), the Assyrian invasion that razed Samaria (722 BC) and the destruction of Jerusalem by the Babylonians (586 BC).",
-    "legado": "Monotheism, the Hebrew Bible, the ethics of the covenant and an idea of justice that fed Judaism, Christianity and Islam."
+    "legado": "Monotheism, the Hebrew Bible, the ethics of the covenant and an idea of justice that fed Judaism, Christianity and Islam.",
+    "escritura": "Hebrew alphabet"
   },
   {
     "id": "aramas",
@@ -356,7 +369,8 @@
     "color": "#b0905a",
     "sintesis": "A tribal people of Aram who came down from the north and settled in Damascus. Aramaic was the lingua franca of the Near East: the gospels and the Targum are written in it.",
     "caida": "Assyrians and Babylonians dissolved the Aramaean state; only its language survived, for centuries as a commercial and religious tongue.",
-    "legado": "Aramaic —the language of Christ and the Talmud— and the Aramaean states of Damascus, Samal and Harran."
+    "legado": "Aramaic —the language of Christ and the Talmud— and the Aramaean states of Damascus, Samal and Harran.",
+    "escritura": "Aramaic alphabet"
   },
   {
     "id": "seleucidas",
@@ -379,7 +393,8 @@
     "color": "#8b7fd4",
     "sintesis": "The empire that divided Alexander’s world. Its Seleucid kings spread Hellenism as far as the Indus, imposing Hellenization on the peoples of western Asia.",
     "caida": "Wars among the successors, losses to the Parthians and Rome, until Pompey ended Seleucid power in 63 BC.",
-    "legado": "The Greek language of the eastern Mediterranean, coinage on its monetary model and the urban infrastructure of the Hellenistic cities."
+    "legado": "The Greek language of the eastern Mediterranean, coinage on its monetary model and the urban infrastructure of the Hellenistic cities.",
+    "escritura": "Greek alphabet"
   },
   {
     "id": "nabateos",
@@ -402,7 +417,8 @@
     "color": "#c98f4b",
     "sintesis": "A trading kingdom of the Arabian desert that controlled the incense routes and the caravans towards Damascus and Gaza. Petra, carved out of rock, was its monumental capital.",
     "caida": "Its trade declined when Rome opened the maritime route through the Red Sea, and Trajan annexed Petra in 106 AD.",
-    "legado": "Caravan trade, rock-cut Nabataean architecture and pre-Islamic monotheism."
+    "legado": "Caravan trade, rock-cut Nabataean architecture and pre-Islamic monotheism.",
+    "escritura": "Nabataean alphabet"
   },
   {
     "id": "achaemenidas",
@@ -426,6 +442,7 @@
     "sintesis": "The first global empire in history. From Persepolis, Cyrus, Cambyses, Darius and Xerxes ruled from the Nile to the Indus with a network of royal roads, satrapies and religious tolerance without equal.",
     "caida": "Alexander the Great’s invasion (334-330 BC) set it burning within ten years, though its administration survived in the successor empires.",
     "legado": "The imperial model copied by Rome and the Ottomans, the lunar calendar, coinage and the very term “Asia” as a category of political geography.",
+    "escritura": "Cuneiform and Aramaic",
     "alias": [
       "Persia",
       "Persians",
@@ -454,6 +471,7 @@
     "sintesis": "Persian horsemen from the northeast who overtook the Seleucids and routed Rome at Carrhae (53 BC). Their empire controlled the caravans from Persia to Mesopotamia with a cavalry of lethal efficiency.",
     "caida": "The third-century crisis, internal revolt and the Sasanian advance under Artaces II ended the Arsacid dynasty in 224.",
     "legado": "Cavalry warfare against Rome, Nestorian Christianity in the east and a resistance still remembered in Sasanian Persia.",
+    "escritura": "Pahlavi script",
     "alias": [
       "Parthia",
       "Parthian Empire",
@@ -482,6 +500,7 @@
     "sintesis": "An imperial renewal of Persia with formidable military power: heavy cavalry, the “claw of the talon” of their lancers, a network of royal roads with relay stations, and the Zoroastrian doctrine of the state.",
     "caida": "The Byzantine war (602-628) exhausted the empire, and the Muslim Arabs reduced Ctesiphon and Persia in barely two decades.",
     "legado": "Nestorianism, the law code of the Persian sages, the silk caravans and the mosaics of Bishapur.",
+    "escritura": "Pahlavi script",
     "alias": [
       "Sasanian Empire",
       "Sasanian Persia"
@@ -509,6 +528,7 @@
     "sintesis": "The great naval power of the western Mediterranean. From Tiphis and the Saharan gold routes it built a trading empire with an army of its own that hired the best mercenaries in the Mediterranean.",
     "caida": "Three Punic Wars: against Sicily, against Syracuse and against Rome. The Scipios wrested Hispania from them, Carthage was forced to burn its own fleet, and in 146 BC it was razed.",
     "legado": "Roman law drew on its legal life, on its olive and vineyard agriculture, and its fall marks the beginning of Roman hegemony in the Mediterranean.",
+    "escritura": "Phoenician alphabet",
     "alias": [
       "Hannibal",
       "Hannibal Barca",
@@ -537,7 +557,8 @@
     "color": "#d08a4e",
     "sintesis": "The kingdoms of Kush and Meroe, heirs to Egyptian culture, conquered the Nile up to the second cataract and became the dominant power of East Africa.",
     "caida": "Aksum invaded and occupied Meroe in 350 AD and the kingdom disappeared, though its monumental tombs survive in its pyramids.",
-    "legado": "The royal tradition of Kush, the culture of Meroe, its monumental northern cemeteries and the gold of Nubia mentioned in the Bible."
+    "legado": "The royal tradition of Kush, the culture of Meroe, its monumental northern cemeteries and the gold of Nubia mentioned in the Bible.",
+    "escritura": "Meroitic hieroglyphs and Coptic script"
   },
   {
     "id": "aksum",
@@ -560,7 +581,8 @@
     "color": "#4fb0a0",
     "sintesis": "A kingdom of the Horn of Africa that controlled Red Sea trade between Egypt and India. Its gold coin —the oldest in the world— and its giant stelae testify to its power.",
     "caida": "The spread of Islam and the rerouting of trade towards the north deflated the economy and stripped it of the coast.",
-    "legado": "The Ethiopian Orthodox Tewahedo Church, the monasticism of Lalibela’s monasteries and the medieval crusades of Christian Ethiopia."
+    "legado": "The Ethiopian Orthodox Tewahedo Church, the monasticism of Lalibela’s monasteries and the medieval crusades of Christian Ethiopia.",
+    "escritura": "Ge'ez script"
   },
   {
     "id": "etruscos",
@@ -583,7 +605,8 @@
     "color": "#d0774e",
     "sintesis": "The most mysterious civilization in Italy. Masters of metal, navigators, merchants of the salt road and artists who painted their sarcophagi with decided realism.",
     "caida": "Roman expansion and the Etruscan League, plus Roman pressure on the Etruscan cities, ended their political independence.",
-    "legado": "The metalwork of the goldsmiths’ art, the Tuscan villas and the enormous cultural influence on primitive Rome."
+    "legado": "The metalwork of the goldsmiths’ art, the Tuscan villas and the enormous cultural influence on primitive Rome.",
+    "escritura": "Etruscan alphabet"
   },
   {
     "id": "griegos",
@@ -607,6 +630,7 @@
     "sintesis": "The civilization that invented the polis, democracy, theatre, philosophy and logic. Hundreds of city-states competed with one another in an avalanche of colonies across the whole Mediterranean.",
     "caida": "The Peloponnesian Wars divided the Greek world; Macedonia, and then Rome, conquered it. The end of Greek independence precedes the end of Hellenism.",
     "legado": "All of Western thought, democracy, natural law, the roots of the arts and the etymology of almost every science.",
+    "escritura": "Greek alphabet",
     "alias": [
       "Greeks",
       "Greece",
@@ -635,6 +659,7 @@
     "sintesis": "A monarchy in the north of Greece that, with Philip II and his son Alexander, unified the country and carried the Hellenic war as far as the Indus.",
     "caida": "On Alexander’s death (323 BC) the empire fragmented into the Diadochi —Ptolemies, Seleucids and Antigonids— and Macedonia lost its role.",
     "legado": "The phalanx army, the Hellenistic model of the court and the conquest that unified the ancient world.",
+    "escritura": "Greek alphabet",
     "alias": [
       "Alexander",
       "Alexander the Great",
@@ -663,6 +688,7 @@
     "sintesis": "From an Italic city-state to mastery of the whole Mediterranean. Legions, law, paved roads and an administration that unified three continents under a single currency and a single law.",
     "caida": "The third-century crisis, the invasion of the Germanic peoples, the religious change and the division of the empire weakened the centre.",
     "legado": "Roman law, the Latin Church, the Julian calendar, the engineering of aqueducts and paved roads, and the literature that all of the West inherited.",
+    "escritura": "Latin alphabet",
     "alias": [
       "Ancient Rome",
       "Roman Republic",
@@ -691,6 +717,7 @@
     "sintesis": "Baptized Rome that survived a thousand years in Constantinople. Custodian of the classical texts, Justinian’s law, iconoclasm and a remarkable fiscal and military state.",
     "caida": "The sack of 1204 by the Crusaders was the internal coup de grâce; Mehmed II took the city in 1453 and the last resistance held out until the walls.",
     "legado": "The Corpus iuris civilis, Christian iconography, the mosaics, Medieval Greek and the fall of Constantinople as the end of the Middle Ages.",
+    "escritura": "Greek alphabet",
     "alias": [
       "Byzantium",
       "Byzantine Empire",
@@ -718,7 +745,8 @@
     "color": "#5a7fd4",
     "sintesis": "A union of Germanic peoples under Charlemagne, who was crowned emperor in Rome (800) and unified everything from the Ebro to the Danube, joining Carolingians and Saxons.",
     "caida": "The Treaty of Verdun (843) split the empire among the sons of Louis the Pious and set it against the Vikings and the Magrebi.",
-    "legado": "The Holy Roman Empire as an idea, the Carolingian Renaissance with the Carolingian minuscule, and European feudalism."
+    "legado": "The Holy Roman Empire as an idea, the Carolingian Renaissance with the Carolingian minuscule, and European feudalism.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "iberia-cristiana",
@@ -741,7 +769,8 @@
     "color": "#c9a83f",
     "sintesis": "The Christian kingdoms of the peninsula —Asturias, León, Castile, Aragon, Navarre and Portugal— that reconquered the territory after the Muslim conquest and forged modern Spain and Portugal.",
     "caida": "The fourteenth-century crises, the civil wars and the dynastic union with Castile; Portugal broke away in 1143 and Aragon crowned Isabella and Ferdinand in 1479.",
-    "legado": "Catholic Spain, the Reconquista, the discovery of America, the Iberian Romance and the colonies of the Spanish Empire."
+    "legado": "Catholic Spain, the Reconquista, the discovery of America, the Iberian Romance and the colonies of the Spanish Empire.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "ottomanos",
@@ -762,9 +791,58 @@
     "peso": 9,
     "territorio": true,
     "color": "#2f8f6f",
-    "sintesis": "The state that replaced the Caliphate and the Seleucid Empire, uniting Anatolia, the Levant, Arabia and North Africa. Its empire was administered through the millet and the owlad system, and it reached into Europe.",
-    "caida": "Naval defeats at Lepanto (1571), the Holy League (1684) and Morea, the nationalism of the revolutions and the First World War.",
-    "legado": "The millet system, Ottoman architecture, codified Islamic law and the fracture of the modern Middle East."
+    "sintesis": "The empire of the Ottoman dynasty, born from a Turkoman beylik in western Anatolia. It united Anatolia, the Balkans, the Levant, Egypt, the Hejaz and North Africa; it ruled through the millet system and the janissary levy, and reached the gates of Vienna.",
+    "caida": "The failure of the siege of Vienna (1683), the loss of Hungary and the Morea, the rise of Balkan nationalisms, the First World War and the abolition of the sultanate in 1922.",
+    "legado": "The millet system, the architecture of Mimar Sinan, codified Islamic law and the shaping of the modern Middle East.",
+    "escritura": "Arabic alphabet",
+    "entidad": "organizacion",
+    "escalaPolitica": "imperio",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "sultan",
+    "dinastiaPrincipal": "osmanli",
+    "periodos": [
+      {
+        "id": "ottomanos-beylicato",
+        "nombre": "Beylik",
+        "desde": 1299,
+        "hasta": 1362,
+        "forma": "monarquia",
+        "cargo": "bey",
+        "dinastia": "osmanli",
+        "nota": "Formation of the beylik in western Anatolia; the first two rulers used the title of bey."
+      },
+      {
+        "id": "ottomanos-sultanato",
+        "nombre": "Classical sultanate",
+        "desde": 1362,
+        "hasta": 1566,
+        "forma": "monarquia",
+        "cargo": "sultan",
+        "dinastia": "osmanli",
+        "nota": "Expansion through the Balkans, Anatolia and the Near East."
+      },
+      {
+        "id": "ottomanos-imperio",
+        "nombre": "Empire",
+        "desde": 1566,
+        "hasta": 1876,
+        "forma": "monarquia",
+        "cargo": "sultan",
+        "dinastia": "osmanli",
+        "nota": "Imperial government and the crises of the seventeenth and eighteenth centuries."
+      },
+      {
+        "id": "ottomanos-constitucional",
+        "nombre": "Constitutional monarchy",
+        "desde": 1876,
+        "hasta": 1922,
+        "forma": "monarquia-constitucional",
+        "cargo": "sultan",
+        "dinastia": "osmanli",
+        "nota": "The 1876 constitution and the 1908 revolution; the sultanate was abolished in 1922."
+      }
+    ]
   },
   {
     "id": "seljukas",
@@ -784,14 +862,44 @@
     "peso": 6,
     "territorio": true,
     "color": "#4f9fb5",
-    "sintesis": "A Turkic dynasty of Central Asia that ruled Persia, Khorasan and, with its Rum branch, Anatolia. They funded the architecture of Isfahan and the library and hospital of Sultan Qanun.",
-    "caida": "The Mongol advance in the twelfth century destroyed Seljuk Iran and the Anatolian branch, which surrendered to the Ottomans in 1308.",
-    "legado": "The Seljuk mosque and madrasa, the art of the mosaic and India’s Tughlaq dynasty as heirs.",
+    "sintesis": "A Turkic dynasty of Central Asia that ruled Persia, Khorasan and, with its Rum branch, Anatolia. They promoted the architecture of Isfahan, the madrasas of Nizam al-Mulk and the art of the mosaic.",
+    "caida": "The Mongol advance of the thirteenth century destroyed the Great Seljuk and reduced the Rum branch to a vassal; the Sultanate of Rum disappeared in 1308.",
+    "legado": "The architecture of caravanserais and madrasas, the art of the mosaic and the spread of the Seljuk administrative model in Anatolia.",
+    "escritura": "Arabic alphabet",
     "alias": [
       "Sultanate of Rum",
       "Great Seljuks"
     ],
-    "nombre": "Seljuks"
+    "nombre": "Seljuks",
+    "entidad": "organizacion",
+    "escalaPolitica": "imperio",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "sultan",
+    "dinastiaPrincipal": "seljuk",
+    "periodos": [
+      {
+        "id": "seljukas-gran-seljuk",
+        "nombre": "Great Seljuk",
+        "desde": 1037,
+        "hasta": 1194,
+        "forma": "monarquia",
+        "cargo": "sultan",
+        "dinastia": "seljuk",
+        "nota": "Persia, Khorasan and the core of Seljuk power."
+      },
+      {
+        "id": "seljukas-rum",
+        "nombre": "Sultanate of Rum",
+        "desde": 1077,
+        "hasta": 1194,
+        "forma": "monarquia",
+        "cargo": "sultan",
+        "dinastia": "seljuk-rum",
+        "paralelo": true,
+        "nota": "Anatolian branch; the sultanate survived until 1308, outside the range of this entry."
+      }
+    ]
   },
   {
     "id": "mongoles",
@@ -815,6 +923,7 @@
     "sintesis": "The largest land state in history, with some sixteen million subjects. Its machine combined steppe horsemen, siege warfare with mangonels and the reopening of the silk routes.",
     "caida": "The Black Death (1347), the war of succession, the revolt of the Sogdian peoples and the awakening of native powers wore them down until 1368.",
     "legado": "The unification of Eurasia, the Pax Mongolica that secured trade and the Mongol peoples of India, Persia and China.",
+    "escritura": "Mongol script",
     "alias": [
       "Genghis Khan",
       "Mongols",
@@ -842,7 +951,8 @@
     "color": "#8fd0a8",
     "sintesis": "The dynasty of Tamerlane that unified Persia and Central Asia, with Samarkand turned into the most splendid capital of the Islamic world.",
     "caida": "Fragmentation among the heirs, the Persian languages of Uzbek and Herat, and the arrival of the Uzbek khans of Shaybani (1500) ended it.",
-    "legado": "The architecture of Samarkand, Persian miniature painting, the medicine of Avicenna and the “Gateway to Science”."
+    "legado": "The architecture of Samarkand, Persian miniature painting, the medicine of Avicenna and the “Gateway to Science”.",
+    "escritura": "Arabic alphabet"
   },
   {
     "id": "safavidas",
@@ -866,6 +976,7 @@
     "sintesis": "The Shi’a dynasty that unified Persia, catapulted Isfahan to be “half the world” and restored the identity of Twelver Shi’ism.",
     "caida": "The Afghan invasion of 1722, which took Isfahan, and the rise of the Qajars finished off the dynasty.",
     "legado": "Isfahan —“the goal of all goals”—, Persian carpets, the polychrome lacquerware of Qazvin and the strained tea of the bazaars.",
+    "escritura": "Arabic alphabet",
     "alias": [
       "Safavid Empire",
       "Safavid Persia"
@@ -893,6 +1004,7 @@
     "sintesis": "The Qajar dynasty that unified Persia once more after the reforms of Nader Shah, with a tribal Qizilbash army and a policy of openness towards Europe.",
     "caida": "British and Russian influence, the constitutional revolution of 1905-1911 and the British occupation of northern Persia ended their power.",
     "legado": "Qajar law, Persia’s first railway, the Mustafa mosques and modern Iranian nationalism.",
+    "escritura": "Arabic alphabet",
     "alias": [
       "Qajar Empire",
       "Qajar Persia"
@@ -920,6 +1032,7 @@
     "sintesis": "A monarchic and modernized Iran: the oil industrialization programme, the land reform of 1963 and a modernizing authoritarianism.",
     "caida": "The all-powerful shah, the repressed opposition and the revolution of 1979 reduced the state to a one-party regime.",
     "legado": "The nationalization of oil (1951), the land reform and the foundations of the modern state.",
+    "escritura": "Arabic and Pahlavi alphabets",
     "alias": [
       "Pahlavi Persia",
       "Pahlavi Empire"
@@ -947,6 +1060,7 @@
     "sintesis": "The theocratic republic that emerged from the 1979 revolution, with the Supreme Leader as both religious and constitutional authority.",
     "caida": "The Green Movement of 2009, sanctions, the 2018-2020 economic crisis and the protests of 2022 mark its relative decline.",
     "legado": "The Lebanese Hezbollah, the network of regional allies (Houthis, Syrians, Iranians) and its role in Gulf geopolitics.",
+    "escritura": "Arabic alphabet",
     "alias": [
       "Contemporary Persia",
       "Iran Today"
@@ -973,7 +1087,8 @@
     "color": "#d9854b",
     "sintesis": "Mohenjo-daro, Harappa, Dholavira: the first urban civilization of the subcontinent, with town planning, sanitation, standardized weights and a script still undeciphered.",
     "caida": "The climatic change after 2600 BC, the flooding of the Indus and the collapse of trade with Mesopotamia dissolved the culture. Tradition gathers it into the “cradle” of the Aryans.",
-    "legado": "Urban planning, the trade network with Mesopotamia (the “Mesopotamian seals”) and the Vedic tradition that inherited it."
+    "legado": "Urban planning, the trade network with Mesopotamia (the “Mesopotamian seals”) and the Vedic tradition that inherited it.",
+    "escritura": "Indus script"
   },
   {
     "id": "veda",
@@ -996,7 +1111,8 @@
     "color": "#e0a44f",
     "sintesis": "The Aryan society of India that composed the Vedas, raised sacrificial altars and built the first stone temples of the subcontinent.",
     "caida": "The assertion of the monarchies and the transition to the urbanization of the city-states in the sixth century BC shifted the centre of gravity.",
-    "legado": "The Vedas and Sanskrit, ritual action, Brahmanism, the sacrificial fire and the axis of Hindu thought."
+    "legado": "The Vedas and Sanskrit, ritual action, Brahmanism, the sacrificial fire and the axis of Hindu thought.",
+    "escritura": "Brahmic script"
   },
   {
     "id": "mauryas",
@@ -1020,6 +1136,7 @@
     "sintesis": "The first unified empire of the subcontinent, with Chandragupta, Bindusara and Ashoka. It stretched from the Indus to Bengal and was the largest state of ancient India.",
     "caida": "The succession crisis after Ashoka’s death, the Brahminical reaction and the Indo-Greek invasions from the northwest.",
     "legado": "Ashoka’s rock edicts, the customs administration and Buddhism as a state religion; also the Mauryan model of administration.",
+    "escritura": "Brahmi script",
     "alias": [
       "Chandragupta",
       "Ashoka"
@@ -1046,7 +1163,8 @@
     "color": "#d47f4f",
     "sintesis": "The classical age of India: with Chandragupta II and Skandagupta, India recovered control of the Indus and exported Buddhism, literature and science to Asia.",
     "caida": "The Hunnic invasions and the fragmentation of the Ganges; afterwards the northern kingdoms fell into the hands of the feudatories.",
-    "legado": "The decimal system, Aryabhata’s treatises (digits and zero), the Sanskrit “golden age” and the arts of classical India."
+    "legado": "The decimal system, Aryabhata’s treatises (digits and zero), the Sanskrit “golden age” and the arts of classical India.",
+    "escritura": "Brahmi script"
   },
   {
     "id": "chola",
@@ -1069,7 +1187,8 @@
     "color": "#4fb0b5",
     "sintesis": "The naval and land power of southern India: with Rajaraja I and Rajendra I it dominated the landscape of Bengal, conquered Sri Lanka and carried its expeditions into Southeast Asia.",
     "caida": "Mongol domination and the pressure from Delhi, the plague pandemics and the fragmentation into the Pandyas and Hoysalas.",
-    "legado": "The Brihadisvara and Shore temples, the cavalry that sang before charging and the Chola Ramayana epic."
+    "legado": "The Brihadisvara and Shore temples, the cavalry that sang before charging and the Chola Ramayana epic.",
+    "escritura": "Brahmic and Grantha scripts"
   },
   {
     "id": "mogol",
@@ -1093,6 +1212,7 @@
     "sintesis": "A dynasty of Turco-Mongol origin that unified India from Kabul to the ocean, with Akbar, Shah Jahan and the Taj Mahal.",
     "caida": "The demographic decline of the eighteenth century, the succession crisis after Aurangzeb and the rebellion of 1857 under British rule.",
     "legado": "The Taj Mahal, the Jama mosque, Mughlai cuisine and Urdu literature; also the Indo-Islamic fusion still alive in the subcontinent.",
+    "escritura": "Perso-Arabic alphabet",
     "alias": [
       "Babur",
       "Akbar",
@@ -1121,6 +1241,7 @@
     "sintesis": "India under British rule and then independent: from the experiment with independence (1947) to its rise as a global nuclear and economic power.",
     "caida": "The 1947 partition, population growth and an unresolved debate over development.",
     "legado": "The world’s largest democracy, the IT industry, Bollywood film and the Indian diaspora across the globe.",
+    "escritura": "Latin alphabet",
     "alias": [
       "Hindustan",
       "Indians",
@@ -1148,7 +1269,8 @@
     "color": "#d4b04f",
     "sintesis": "The first dynasties documented in the Records of the Grand Historian: Xia, Shang and Zhou. The Zhou invented the Mandate of Heaven that legitimized the dynasties.",
     "caida": "The era of the warring states and the long fragmentation of the Late Bronze Age; the Qin state unified China in 221 BC.",
-    "legado": "The Mandate of Heaven, the primacy of Confucianism, bone script, bronze metallurgy and the idea of dynasties as a cycle."
+    "legado": "The Mandate of Heaven, the primacy of Confucianism, bone script, bronze metallurgy and the idea of dynasties as a cycle.",
+    "escritura": "Chinese writing (oracle bones and bronzes)"
   },
   {
     "id": "qin",
@@ -1171,7 +1293,8 @@
     "color": "#8f8f9f",
     "sintesis": "Fifteen years of unification that invented the Chinese state: standard script, weights and measures, the unified Great Wall and an army of hundreds of thousands of men.",
     "caida": "The tyranny of its first emperor, the rebellions of 209 BC and the Chu-Han dynasty that followed.",
-    "legado": "The modern concept of China, centralized administration, positive law and the Great Wall as a national symbol."
+    "legado": "The modern concept of China, centralized administration, positive law and the Great Wall as a national symbol.",
+    "escritura": "Chinese writing (seal script)"
   },
   {
     "id": "han",
@@ -1195,6 +1318,7 @@
     "sintesis": "The dynasty that gave its name to the Han people. Under the Wu and Emperor Han Wudi the Confucians became the official bureaucracy and China exported silk, paper and ceramics to the West.",
     "caida": "The growing power of the eunuchs, the rebellions on the frontiers, the predominance of the old-style generals and the dismemberment into the Three Kingdoms (220).",
     "legado": "The term “China” for the Central Kingdom, the conduit for the Silk Road, the invention of paper and Confucianism as a state ideology.",
+    "escritura": "Chinese writing (clerical and regular scripts)",
     "alias": [
       "Han China",
       "China Han"
@@ -1221,7 +1345,8 @@
     "color": "#d4a03f",
     "sintesis": "China’s golden age: Chang’an was the largest city in the world, with two million inhabitants, and envoys from Persia, India and Japan reached its court.",
     "caida": "The An Lushan rebellion (755) wrecked the empire; it was followed by the Huang Chao rebellion and the fragmentation of the Five Dynasties.",
-    "legado": "Tang poetry, ceramics, woodblock printing, the examination system of the bureaucracy and the opening towards Central Asia."
+    "legado": "Tang poetry, ceramics, woodblock printing, the examination system of the bureaucracy and the opening towards Central Asia.",
+    "escritura": "Chinese writing (regular and cursive scripts)"
   },
   {
     "id": "song",
@@ -1244,7 +1369,8 @@
     "color": "#7fb0d4",
     "sintesis": "Northern China with its capital at Kaifeng and later Hangzhou: the dynasty of maritime trade, paper money, gunpowder and movable-type printing.",
     "caida": "The northern Jin took away its northern lands, and in 1279 Kublai’s Mongols destroyed the last Song resistance.",
-    "legado": "Bi Sheng’s printing, the compass, paper money, loose-leaf tea and the city of Hangzhou, the most beautiful in medieval Asia."
+    "legado": "Bi Sheng’s printing, the compass, paper money, loose-leaf tea and the city of Hangzhou, the most beautiful in medieval Asia.",
+    "escritura": "Chinese writing (regular and cursive scripts)"
   },
   {
     "id": "yuan",
@@ -1267,7 +1393,8 @@
     "color": "#b0b8c8",
     "sintesis": "China under the Mongol command of Kublai Khan: the capital at Dadu (Beijing), the Grand Canal reopened and a courier relay network with 2,000 stations.",
     "caida": "The Black Death, the Turpan rebellions and the Red Turban revolt that besieged Dadu.",
-    "legado": "The unification of China under the Mongols, the revival of the overland Silk Road and the beginning of Yuan Confucian culture."
+    "legado": "The unification of China under the Mongols, the revival of the overland Silk Road and the beginning of Yuan Confucian culture.",
+    "escritura": "Mongol and Chinese scripts"
   },
   {
     "id": "ming",
@@ -1291,6 +1418,7 @@
     "sintesis": "The Hongwu and Yongle emperors ruled China for almost three centuries. Zheng He took his fleet as far as East Africa, and the Great Wall was restored and enlarged.",
     "caida": "The shift from American gold to silver, corruption, Li Zicheng’s rebellions and the Manchu invasion.",
     "legado": "Ming porcelain, Beijing and its Forbidden City, the maps of cartographers like Matteo Ricci and the navy as a precedent for expansion.",
+    "escritura": "Chinese writing (regular and cursive scripts)",
     "alias": [
       "Ming China",
       "Ming Porcelain"
@@ -1318,6 +1446,7 @@
     "sintesis": "The last empires of China: the Manchu dynasty multiplied the population from 150 to 400 million and the whole country came under a system of indirect administration.",
     "caida": "The Opium War, the foreign powers and the revolutions: Sun Yat-sen abolished the dynasty in 1911-12.",
     "legado": "The unequal treaties that humiliated it, the fragmentation of modern China and the Chinese nation-state as it exists today.",
+    "escritura": "Chinese writing (regular and cursive scripts)",
     "alias": [
       "Qing China",
       "Manchus"
@@ -1344,7 +1473,8 @@
     "color": "#c98f8f",
     "sintesis": "The Republic after the fall of the Qing: Chiang Kai-shek’s Kuomintang unified the country in 1928, while the Communist Party was emerging in the rural provinces.",
     "caida": "The Japanese invasion (1937), the civil war, hyperinflation and the communist advance in 1949.",
-    "legado": "The Chinese civil war, the industrialization of the Northeast and the genesis of the Communist Party, which marked half a century."
+    "legado": "The Chinese civil war, the industrialization of the Northeast and the genesis of the Communist Party, which marked half a century.",
+    "escritura": "Chinese writing"
   },
   {
     "id": "china-popular",
@@ -1364,7 +1494,8 @@
     "color": "#e04f3f",
     "sintesis": "The most populous state in the world, founded by Mao in 1949: from collectivization to Deng Xiaoping’s reforms and today the second world economy.",
     "caida": "The Great Famine (1959-61) and the Cultural Revolution (1966-76) were its internal crises; today it faces an ageing population and slowing growth.",
-    "legado": "The transformation of more than a billion people, the global production chain and the new route of the Belt and Road Initiative."
+    "legado": "The transformation of more than a billion people, the global production chain and the new route of the Belt and Road Initiative.",
+    "escritura": "Simplified Chinese writing"
   },
   {
     "id": "corea",
@@ -1387,7 +1518,8 @@
     "color": "#5fa8d4",
     "sintesis": "Korea unified under the Goryeo and then the Joseon dynasty, which for almost five centuries was one of the most prosperous states in East Asia.",
     "caida": "The opening to Japan (1876) broke the isolation, and de facto Japanese suzerainty ended with the reform of 1894.",
-    "legado": "Official Confucianism, the metal movable-type printing of 1234 and Korean cuisine, now a World Heritage."
+    "legado": "Official Confucianism, the metal movable-type printing of 1234 and Korean cuisine, now a World Heritage.",
+    "escritura": "Hangul and Chinese characters"
   },
   {
     "id": "japon",
@@ -1411,6 +1543,7 @@
     "sintesis": "The Meiji Restoration turned Japan into an industrial state in a single generation: it dictated Asia’s first constitution and an empire that reached Java.",
     "caida": "The defeat in the Pacific (1941-45) and the atomic bombs on Hiroshima and Nagasaki opened the way to its surrender.",
     "legado": "Asian industrialization, toyotism, the westernization of the state and the 1947 constitution.",
+    "escritura": "Kanji, kana and syllabaries",
     "alias": [
       "Nippon",
       "Samurai",
@@ -1438,7 +1571,8 @@
     "color": "#5fc9a8",
     "sintesis": "The Vietnamese state, independent from China under Ngô Quyền, which resisted the Mongols and was later ruled through the L, Trần, Lê and Nguyễn dynasties.",
     "caida": "French rule (1887-1954) and then the Indochina War finished off its fragmentation.",
-    "legado": "The administrative structure of the state and the Nguyễn dynasty, Vietnamese Buddhism and rice-noodle cuisine."
+    "legado": "The administrative structure of the state and the Nguyễn dynasty, Vietnamese Buddhism and rice-noodle cuisine.",
+    "escritura": "Chữ Nôm"
   },
   {
     "id": "angkor",
@@ -1461,7 +1595,8 @@
     "color": "#d4a87f",
     "sintesis": "The agrarian empire of the Angkor kings, which controlled the Mekong delta with a network of temples, reservoirs and earth roads hundreds of kilometres long.",
     "caida": "The war with Ayutthaya (1431) and the droughts caused by deforestation and the diversion of the Mekong destroyed its centre.",
-    "legado": "Angkor Wat, the largest religious complex in the world, and the reservoir system that still supports Cambodian agriculture."
+    "legado": "Angkor Wat, the largest religious complex in the world, and the reservoir system that still supports Cambodian agriculture.",
+    "escritura": "Khmer script"
   },
   {
     "id": "kushanos",
@@ -1484,7 +1619,8 @@
     "color": "#b8a05f",
     "sintesis": "An empire of the Yuezhi that connected India, Persia and China. They spread Buddhism across Asia and minted the world’s first gold coin under the emperor Kanishka.",
     "caida": "The advance of the Sasanian Persians under Khosrow I and the fragmentation of northern India (the Kushano-Sasanians and the Guptas).",
-    "legado": "The transmission of Buddhism to China and Central Asia, gold coinage (Vima Kadphises) and the Gandharan style, mother of Greco-Buddhist sculpture."
+    "legado": "The transmission of Buddhism to China and Central Asia, gold coinage (Vima Kadphises) and the Gandharan style, mother of Greco-Buddhist sculpture.",
+    "escritura": "Kharoshthi script"
   },
   {
     "id": "mali",
@@ -1507,7 +1643,8 @@
     "color": "#d9a441",
     "sintesis": "The empire of the Niger that dominated the gold of the Sahara. Mansa Musa had the Djenné mosque built, and his pilgrimage to Mecca in 1324 showed Africa’s gold to the Islamic world.",
     "caida": "Power declined after the death of Mansa Musa, with competition from Songhai, Tuareg invasions and the crisis of the gold trade.",
-    "legado": "Timbuktu, a centre of manuscripts and of the university; the Djenné style and the spread of Mali’s gold and cacao."
+    "legado": "Timbuktu, a centre of manuscripts and of the university; the Djenné style and the spread of Mali’s gold and cacao.",
+    "escritura": "Arabic script (Ajami)"
   },
   {
     "id": "songhai",
@@ -1530,7 +1667,8 @@
     "color": "#c9853c",
     "sintesis": "Mali’s successor, which controlled the course of the Niger and all the trans-Saharan gold and salt trade. Askia Mohamed made Gao the richest capital in Africa.",
     "caida": "The Moroccan expedition (1591) —with its firearms— defeated Askia and destroyed his model.",
-    "legado": "The Askia tombs at Gao, the gold monopoly with the north, and the Timbuktu manuscripts that preserved Arab science."
+    "legado": "The Askia tombs at Gao, the gold monopoly with the north, and the Timbuktu manuscripts that preserved Arab science.",
+    "escritura": "Arabic script (Ajami)"
   },
   {
     "id": "kanem",
@@ -1553,7 +1691,8 @@
     "color": "#cfa0c0",
     "sintesis": "The civilization of Lake Chad, the most enduring in West Africa: a system of sultanates that controlled the trade between the Niger and the Mediterranean coast.",
     "caida": "The expansion of the neighbouring states, the pressure of the Maghreb and the dispersal of its peoples towards the west.",
-    "legado": "The Sahelian sultanate model, Kanuri culture and the monumental cemeteries of Lake Chad."
+    "legado": "The Sahelian sultanate model, Kanuri culture and the monumental cemeteries of Lake Chad.",
+    "escritura": "Arabic script (Ajami)"
   },
   {
     "id": "ashanti",
@@ -1668,7 +1807,8 @@
     "color": "#5fc9b8",
     "sintesis": "Africa’s only Christian state to survive the Islamic invasions, with the Solomonic emperors and their million-strong army against the Italians in 1896.",
     "caida": "The Italian occupation of 1936-41 and the revolution of 1974 that abolished the monarchy.",
-    "legado": "Aksum and its ties to the Coptic Church, the Ethiopian coffee tradition and its ceremonial “tufi”."
+    "legado": "Aksum and its ties to the Coptic Church, the Ethiopian coffee tradition and its ceremonial “tufi”.",
+    "escritura": "Ge'ez script"
   },
   {
     "id": "olmecas",
@@ -1714,7 +1854,8 @@
     "color": "#c9a85f",
     "sintesis": "One of the oldest peoples of the Americas, with its capital at Monte Albán —built on the spine of a mountain— and one of the continent’s first writing systems.",
     "caida": "Zapotec-Mixtec dominance and later Mexican pressure annexed them in the fifteenth century.",
-    "legado": "Monte Albán (World Heritage), calendrical writing and the figure of the goldsmith of the Dancer."
+    "legado": "Monte Albán (World Heritage), calendrical writing and the figure of the goldsmith of the Dancer.",
+    "escritura": "Zapotec script"
   },
   {
     "id": "teotihuacan",
@@ -1760,7 +1901,8 @@
     "color": "#4fbf9f",
     "sintesis": "The most complex culture of pre-Columbian America: Tikal, Calakmul, Palenque and Copán. They wrote the only Mesoamerican script to have been partially decoded, and they tamed the fauna better than anyone else.",
     "caida": "The agricultural decline of the south and the war between Tikal and Calakmul ended the Classic period; the Postclassic period (900-1697) was a rural survival.",
-    "legado": "The Maya calendar, the numbers and the zero, astronomy, the aqueducts of Palenque and the Dresden Codex."
+    "legado": "The Maya calendar, the numbers and the zero, astronomy, the aqueducts of Palenque and the Dresden Codex.",
+    "escritura": "Maya script"
   },
   {
     "id": "toltecas",
@@ -1811,6 +1953,7 @@
     "sintesis": "The Triple Alliance of Tenochtitlan, Texcoco and Tlacopan dominated Mesoamerica. The largest city in the pre-Columbian world with 200,000 inhabitants, an engineered hydraulic system and a ritual calendar.",
     "caida": "Smallpox and Cortés’s conquest, with the battle of Otumba (1520) and the fall of Tenochtitlan (1521).",
     "legado": "Chocolate, domesticated maize, herbal medicine and the Mexica calendar still in force on Day of the Dead.",
+    "escritura": "Nahuatl pictographic writing",
     "alias": [
       "Tenochtitlan",
       "Aztecs",
@@ -1861,7 +2004,8 @@
     "color": "#c98a5f",
     "sintesis": "The Muisca of the Cundinamarca plateau, with the city of Tundunavá and a system of “royal roads” of 4,000 km and 20 bridges over the Bogotá.",
     "caida": "The Spanish conquest of 1537, the feverish search for the legend of El Dorado and the imported epidemics.",
-    "legado": "The legend of El Dorado, the tunnels of Tundunavá and the Muisca weight that gave rise to the Colombian peso."
+    "legado": "The legend of El Dorado, the tunnels of Tundunavá and the Muisca weight that gave rise to the Colombian peso.",
+    "escritura": "Muisca script"
   },
   {
     "id": "chavin",
@@ -2050,7 +2194,8 @@
     "color": "#e08a4f",
     "sintesis": "The small republic that became the commercial power of the world: the Dutch East India Company had more ships than any army, and the Amsterdam stock exchange invented the modern market.",
     "caida": "The War of Devolution and the dependence on France and England, the Java mutiny (1774-79) and the Napoleonic occupation of 1795.",
-    "legado": "The stock exchange, the central bank, the joint-stock company, the canals and canal houses of Amsterdam, and international law."
+    "legado": "The stock exchange, the central bank, the joint-stock company, the canals and canal houses of Amsterdam, and international law.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "espana",
@@ -2074,6 +2219,7 @@
     "sintesis": "The Catholic Monarchy became the first global empire: the Conquest, the silver fleets of Potosí and the Manila Galleon that linked Acapulco with Manila.",
     "caida": "The bankruptcy of the 1550s-1600s, the colonial rebellions —which began with thirteen— and the disaster of 1898 in Cuba and the Philippines.",
     "legado": "Castilian as a global language, the dignity of the Indians and the Laws of the Indies, and the layout of the American cities.",
+    "escritura": "Latin alphabet",
     "alias": [
       "Spaniards",
       "Crown of Castile",
@@ -2101,7 +2247,8 @@
     "color": "#5fb06a",
     "sintesis": "The first colonial power of the modern age: with the sea routes of Vasco da Gama, Afonso de Albuquerque and the forts of Ceylon, Goa and Malacca it built a chain of thousands of ports.",
     "caida": "1580 (dynastic union with Spain), 1640 (Restoration), 1755 (Lisbon earthquake), the independence of Brazil and the wars in Africa.",
-    "legado": "Europe’s oldest alliance, the strategy of the sea routes, the Portuguese language in Brazil and Africa and the tradition of exploration."
+    "legado": "Europe’s oldest alliance, the strategy of the sea routes, the Portuguese language in Brazil and Africa and the tradition of exploration.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "britania",
@@ -2125,6 +2272,7 @@
     "sintesis": "The empire on which the sun never set: the Royal Navy, the East India Company, free trade and the industrial machine made Great Britain the first world power of the nineteenth century.",
     "caida": "The two world wars broke it financially; Indian independence (1947), the Suez crisis (1956) and African decolonization completed the process.",
     "legado": "The Commonwealth, global English, the railway network, the parliamentary model and the years of psychedelic pop.",
+    "escritura": "Latin alphabet",
     "alias": [
       "Great Britain",
       "England",
@@ -2152,7 +2300,8 @@
     "color": "#a84f7f",
     "sintesis": "The state that came out of the Empire: a constitutional monarchy, a reformed parliament and the clash between a retreating empire and a rising Americanism.",
     "caida": "The economic decline after 1945, the loss of purchasing power and the pound crises (1967 and 1976).",
-    "legado": "The welfare state, the NHS, the BBC, rock music and common law."
+    "legado": "The welfare state, the NHS, the BBC, rock music and common law.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "rusia",
@@ -2173,14 +2322,21 @@
     "peso": 8,
     "territorio": true,
     "color": "#a89fd4",
-    "sintesis": "The tsars’ “Third Rome”: from the Petrine tsars to a Eurasian empire of more than two hundred peoples, the expansion into Siberia and that of 1914.",
-    "caida": "The Crimean War, the disaster of 1905 and the Revolution of 1917, which ended the Romanov dynasty.",
-    "legado": "Russian literature (Dostoevsky, Tolstoy), science (Mendeleev, Lomonosov), the ballet and the abstraction of the Bolshoy.",
+    "sintesis": "The tsars' “Third Rome”: from Peter the Great to a Eurasian empire of more than two hundred peoples, the expansion into Siberia and the war of 1914.",
+    "caida": "The Crimean War, the disaster of 1905, the First World War and the Revolution of 1917, which ended the Romanov dynasty.",
+    "legado": "Russian literature (Dostoevsky, Tolstoy), science (Mendeleev, Lomonosov), the Bolshoi ballet and the avant-garde of Kandinsky and Malevich.",
+    "escritura": "Cyrillic alphabet",
     "alias": [
       "Tsars",
       "Russians",
       "Muscovite Empire"
-    ]
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "imperio",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "emperador",
+    "dinastiaPrincipal": "romanov"
   },
   {
     "id": "rus-kiev",
@@ -2202,8 +2358,15 @@
     "territorio": true,
     "color": "#b0a08f",
     "sintesis": "The age of the princes of Kiev: the unification of the East Slavs under Eastern Orthodoxy, with the code of Yaroslav the Wise.",
-    "caida": "Fragmentation into small principalities, the Mongol invasions of 1237-40 and the expansion of the Byzantine Empire by the Tartars.",
-    "legado": "Saint Sophia of Kyiv, Slavic Orthodoxy, the law code of Rus and the literature of early Rus."
+    "caida": "Fragmentation into small principalities and the Mongol invasions of 1237-40, which destroyed Kiev's political centre.",
+    "legado": "Saint Sophia of Kyiv, Slavic Orthodoxy, the law code of Rus and the literature of early Rus.",
+    "escritura": "Cyrillic alphabet",
+    "entidad": "organizacion",
+    "escalaPolitica": "reino",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "gran-principe",
+    "dinastiaPrincipal": "rurikida"
   },
   {
     "id": "napoleon",
@@ -2227,6 +2390,7 @@
     "sintesis": "Fifteen years that redrew Europe: the Napoleonic Code, the abolition of feudalism, merit above lineage and the creation of the Confederation of the Rhine.",
     "caida": "The Russian campaign of 1812 —the “Grand Army”— and the defeats at Leipzig (1813) and Waterloo (1815).",
     "legado": "The Civil Code (drafted by jurists, not by him), European nationalism, Napoleonic administration and the figure of the “consul”.",
+    "escritura": "Latin alphabet",
     "alias": [
       "Napoleon",
       "Bonaparte",
@@ -2254,7 +2418,8 @@
     "color": "#d4b04f",
     "sintesis": "The heir of the Holy Roman Empire, which snagged the Danube and built a multi-national state, with Vienna as the capital of music and the Vienna Congress of 1815.",
     "caida": "The revolution of 1848 and the Austro-Hungarian compromise of 1867, which reduced it to a dual monarchy.",
-    "legado": "The Vienna Congress and the European balance of power, Viennese music and the Danube route to the Bosphorus."
+    "legado": "The Vienna Congress and the European balance of power, Viennese music and the Danube route to the Bosphorus.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "austrohungria",
@@ -2277,7 +2442,8 @@
     "color": "#d4a86a",
     "sintesis": "The “Dual Monarchy” of the Habsburgs: 52 million people of ten languages, a capital in Vienna and an army that had not yet lost a battle until 1914.",
     "caida": "The First World War and the disintegration into Austria, Hungary, Czechoslovakia, Yugoslavia and Transylvania.",
-    "legado": "Multi-ethnic coexistence, Mozart, Freud, Klimt and the map of the “monarchy of the peoples”."
+    "legado": "Multi-ethnic coexistence, Mozart, Freud, Klimt and the map of the “monarchy of the peoples”.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "alemania",
@@ -2300,7 +2466,8 @@
     "color": "#8f8f8f",
     "sintesis": "The second German state, born in the Hall of Mirrors at Versailles. With unification, the railway, chemistry and social reform it became the industrial power of Europe.",
     "caida": "The trench war and the crisis of 1917-18 that brought the Kaiser’s abdication and the Weimar Republic.",
-    "legado": "The welfare state (Bismarck invented the pensions), heavy industry and the disastrous paths of 1933."
+    "legado": "The welfare state (Bismarck invented the pensions), heavy industry and the disastrous paths of 1933.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "tercerreich",
@@ -2323,7 +2490,8 @@
     "color": "#6b6b6b",
     "sintesis": "The Nazi regime, which in twelve years rearmed Germany, annexed the continent and caused millions of deaths. Its war economy and heavy industry were immense.",
     "caida": "Stalingrad and El Alamein (1942-43), the Normandy invasion (1944) and the surrender of Berlin (8 May 1945).",
-    "legado": "The category of “crimes against humanity”, the Nuremberg Tribunal and the legal architecture of the rule-of-law state after 1945."
+    "legado": "The category of “crimes against humanity”, the Nuremberg Tribunal and the legal architecture of the rule-of-law state after 1945.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "sovietica",
@@ -2344,9 +2512,15 @@
     "peso": 8,
     "territorio": true,
     "color": "#c94f4f",
-    "sintesis": "The state of the soviets: Stalin’s forced industrialization, the victory over the Third Reich in 1945, the space race and the start of the arms race.",
-    "caida": "Economic stagnation (Khrushchev and Brezhnev), the war in Afghanistan, the fall of the Berlin Wall (1989) and the dissolution in 1991.",
-    "legado": "The planning state, the first great space power, the Gulag economy and the United Nations as a forum of the Cold War."
+    "sintesis": "The state of the soviets: Stalin's forced industrialization, the victory over the Third Reich in 1945, the space race and the start of the Cold War.",
+    "caida": "The stagnation of the Brezhnev era, the war in Afghanistan, the fall of the Berlin Wall (1989) and the dissolution in 1991.",
+    "legado": "The planning state, the first great space power, the Gulag system and the United Nations as a forum of the Cold War.",
+    "escritura": "Cyrillic alphabet",
+    "entidad": "organizacion",
+    "escalaPolitica": "estado",
+    "forma": "republica",
+    "soberania": "independiente",
+    "cargoPrincipal": "secretario-general"
   },
   {
     "id": "estados-unidos",
@@ -2369,7 +2543,8 @@
     "color": "#4f8fd4",
     "sintesis": "The federal republic of the New World that has been the hegemonic power of the planet since 1945: the economy, consumer culture, technology and its own reserve currency.",
     "caida": "Its decline is relative and recent: the 2008 crisis, polarization, public debt and the multipolarity of India, China and the BRICS.",
-    "legado": "The Monroe Doctrine, the New Deal, the space programme, the cultural business of Hollywood and the strength of the dollar."
+    "legado": "The Monroe Doctrine, the New Deal, the space programme, the cultural business of Hollywood and the strength of the dollar.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "imperio-brasileno",
@@ -2392,7 +2567,8 @@
     "color": "#5fbf9f",
     "sintesis": "The only empire in the Americas: Pedro I crowned in 1826, with the capital transferred from Salvador to Rio and the rise of coffee cultivation that made it rich.",
     "caida": "The Paraguayan War (1864-70) and its debt, the abolitionist turn (1888) and the proclamation of the Republic.",
-    "legado": "The largest Portuguese-speaking population, the monarchical tradition and the plunder of the imperial treasure in 1889."
+    "legado": "The largest Portuguese-speaking population, the monarchical tradition and the plunder of the imperial treasure in 1889.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "segundo-imperio-mexicano",
@@ -2415,7 +2591,8 @@
     "color": "#a87fc9",
     "sintesis": "The only monarchy in the Americas: Maximilian of Habsburg and Carlota, with the court at Chapultepec Castle and the liberal forces of Juárez and the Republican Army.",
     "caida": "The French intervention (1866) and the execution of Maximilian in Querétaro in 1867.",
-    "legado": "The Iron Roads and the Reform Laws, the Mexican Republic as the only state of the region and Juárez’s Reform."
+    "legado": "The Iron Roads and the Reform Laws, the Mexican Republic as the only state of the region and Juárez’s Reform.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "mali-moderno",
@@ -2438,7 +2615,8 @@
     "color": "#d4c46a",
     "sintesis": "The state that inherited the name of the medieval empire: it separated from France in 1960 together with Mauritania, and today it is one of the poorest countries in the world.",
     "caida": "The Tuareg rebellion of 2012, the coup of 2020 and the security crises of the Sahel.",
-    "legado": "The name of the medieval empire on the modern map, Timbuktu as World Heritage and the old trans-Saharan routes."
+    "legado": "The name of the medieval empire on the modern map, Timbuktu as World Heritage and the old trans-Saharan routes.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "navajo",
@@ -2618,7 +2796,8 @@
     "color": "#8f9fbf",
     "sintesis": "Nomads of the Sahara organized into clan confederations, who controlled trans-Saharan trade and the gold routes.",
     "caida": "French colonization and the opening of maritime trade took the desert out of their hands and settled them.",
-    "legado": "Tamazight, the men’s veils, the women’s bronze plaques and the poetry of the haous of Timiaouine."
+    "legado": "Tamazight, the men’s veils, the women’s bronze plaques and the poetry of the haous of Timiaouine.",
+    "escritura": "Tifinagh alphabet"
   },
   {
     "id": "fulani",
@@ -2638,7 +2817,8 @@
     "color": "#d4a87f",
     "sintesis": "A pastoral people of the Sahel, organized in loose confederations and bound together by cattle, kinship and the Islamic faith.",
     "caida": "The expansion of Islam and of the centralizing states of the Sudan, and later French and British colonization, integrated the Fulani into the new states.",
-    "legado": "Fulfulde, the pastoral culture of the Sahel, and the empires the Fulani built across the western Sahel."
+    "legado": "Fulfulde, the pastoral culture of the Sahel, and the empires the Fulani built across the western Sahel.",
+    "escritura": "Arabic script (Ajami)"
   },
   {
     "id": "hausa",
@@ -2658,7 +2838,8 @@
     "color": "#8fbf9f",
     "sintesis": "The largest ethnic nation in West Africa: a mosaic of principalities and cities (Kano, Katsina, Zaria) linked by caravan trade and by Sunni Islam.",
     "caida": "The Fulani advance and then the colonial partition of northern Nigeria dismantled the Hausa states; today they live on both sides of the border.",
-    "legado": "Hausa as the lingua franca of the Sahel, the pottery of Kano, the kebe ornaments and long-distance trade."
+    "legado": "Hausa as the lingua franca of the Sahel, the pottery of Kano, the kebe ornaments and long-distance trade.",
+    "escritura": "Arabic script (Ajami)"
   },
   {
     "id": "yoruba",
@@ -2678,7 +2859,8 @@
     "color": "#c94f6a",
     "sintesis": "The people of the Yoruba kingdoms of southwestern Nigeria: Oyo, Ife, Benin and Owo, with a culture of masks, a tradition of orators and an art of metal and wood.",
     "caida": "The Fulani advance from Sokoto in the nineteenth century dismembered Oyo and the British invasion ended the smaller kingdoms.",
-    "legado": "Yoruba art of the Ife heads, the Egungun of Lagos, percussion music and a diaspora in the Americas."
+    "legado": "Yoruba art of the Ife heads, the Egungun of Lagos, percussion music and a diaspora in the Americas.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "igbo",
@@ -2698,7 +2880,8 @@
     "color": "#7fa8c9",
     "sintesis": "A people of the Niger delta and eastern Nigeria, with walled and fortified villages, an oracle system and one of the oldest cities in sub-Saharan Africa.",
     "caida": "The colonial line that split their territory, the Biafran War (1967-70) and the growth of Lagos displaced their rural world.",
-    "legado": "The Igbo-Ukwu bronzes, the markets of Nri and the Igbo system of titles and oracles."
+    "legado": "The Igbo-Ukwu bronzes, the markets of Nri and the Igbo system of titles and oracles.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "fon",
@@ -2718,7 +2901,8 @@
     "color": "#d47f5f",
     "sintesis": "The people of the kingdoms of the Gulf of Guinea (Abomey, Porto-Novo, Ouidah), with an army of amazons, a trade in captives and a very rich voodoo pantheon.",
     "caida": "The French invasion of 1890 and the resistance of Behanzin ended the kingdom and turned it into a colony.",
-    "legado": "Voodoo and its background, the doors of the women and the drum music of Abomey."
+    "legado": "Voodoo and its background, the doors of the women and the drum music of Abomey.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "swahili",
@@ -2738,7 +2922,8 @@
     "color": "#4fb0a8",
     "sintesis": "The civilization of the East African coast: the city-states of Mombasa, Zanzibar, Mogadishu and Kilwa, with intricate trade with India, Arabia and China and a southern Islam.",
     "caida": "Omani and then British pressure and the diversion of trade towards the interior ended the power of the Swahili cities.",
-    "legado": "Swahili coral-stone architecture, the buildings of Mombasa, the gold coins and the mixing with Indian trade."
+    "legado": "Swahili coral-stone architecture, the buildings of Mombasa, the gold coins and the mixing with Indian trade.",
+    "escritura": "Arabic and Latin alphabets"
   },
   {
     "id": "shona",
@@ -2758,7 +2943,8 @@
     "color": "#c4a86a",
     "sintesis": "The people of the great clay states of southern Africa: Zimbabwe, Mapungubwe and Khami, with trade with India along the Sofala coast.",
     "caida": "Ndebele attacks and then the British occupation of 1890 and the war of 1896-97 ended the kingdoms.",
-    "legado": "The ruins of Great Zimbabwe, the soapstone sculpture of Zimbabwe and today’s Shona culture."
+    "legado": "The ruins of Great Zimbabwe, the soapstone sculpture of Zimbabwe and today’s Shona culture.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "luba",
@@ -2778,7 +2964,8 @@
     "color": "#b58fa8",
     "sintesis": "A kingdom of the Upper Katanga whose sovereign was the real power behind the Congo’s title of “king”: a ritual monarchy with its own cavalry and an art of wood and copper.",
     "caida": "The expansion of Leopold II’s Congo State and Belgian colonial violence in 1889-1914 ravaged the kingdom and its aristocracy.",
-    "legado": "The Luba art of wood and copper figures, the emigration of its axes and the court’s knowledge of power."
+    "legado": "The Luba art of wood and copper figures, the emigration of its axes and the court’s knowledge of power.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "maasai",
@@ -2822,6 +3009,7 @@
     "sintesis": "Navigators from Scandinavia who took to the sea in drakkars, raided from Lisbon to Constantinople and founded colonies in Iceland, Greenland and the Faroes.",
     "caida": "The sudden crusades from the north, the adoption of Christianity and the battle of Stamford Bridge in 1066 ended their expansion, though their language and navigational culture survived.",
     "legado": "Runes, the golden treasures of Sutton Hoo, Leif Erikson’s voyages to Vinland and the Norse settlements in Normandy and Ireland.",
+    "escritura": "Runic alphabet",
     "alias": [
       "Norsemen",
       "Normans",
@@ -2872,7 +3060,8 @@
     "color": "#b06a9f",
     "sintesis": "The first Bulgarian state, formed by the Slavs and the Proto-Bulgars on the Danube: a multi-ethnic empire with its own Slavic Church and a golden culture at Preslav.",
     "caida": "Hungarian raids, the fall of Byzantium and the rise of Kiev and the Magyars eroded its territory until Basil II’s invasion in 1018.",
-    "legado": "The Cyrillic alphabet, the architecture of Preslav and Pliska and the first Slavic prose."
+    "legado": "The Cyrillic alphabet, the architecture of Preslav and Pliska and the first Slavic prose.",
+    "escritura": "Cyrillic and Glagolitic alphabets"
   },
   {
     "id": "hungaros",
@@ -2895,7 +3084,8 @@
     "color": "#c96a5f",
     "sintesis": "Ugric nomads who settled in the Hungarian plain in 895 and founded a kingdom with a military elite drawn from the nobility, the crown of Saint Stephen and a culture of chivalry.",
     "caida": "The Mongol storm of 1241, the internal wars and the rise of the Habsburgs reduced their independence in 1526, down to the Austro-Hungarian union of 1867.",
-    "legado": "The Hungarian language, paprika and goulash, the music of Zoltán Kodály and the red, white and green."
+    "legado": "The Hungarian language, paprika and goulash, the music of Zoltán Kodály and the red, white and green.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "lituanos",
@@ -2918,7 +3108,8 @@
     "color": "#a85f4f",
     "sintesis": "Europe’s last pagan state: a Baltic grand duchy that expanded from Lithuania to the gates of Moscow, with a military nobility and the Statute of Lithuania of 1529.",
     "caida": "The Union of Lublin of 1569 merged Lithuania with Poland and cost it the kingdom, and the partitions by Russia and Prussia in the late eighteenth century ended the state.",
-    "legado": "The encyclopedia of Vilnius, the statue of liberty in Vilnius and the Lietuva tradition."
+    "legado": "The encyclopedia of Vilnius, the statue of liberty in Vilnius and the Lietuva tradition.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "polacos",
@@ -2941,7 +3132,8 @@
     "color": "#d4a05f",
     "sintesis": "The kingdom of the Piasts and the Jagiellons, which stretched from the Oder to the Dnieper and the Baltic: a country of the Commonwealth of two nations with a great nobility and a culture of the szlachta.",
     "caida": "The partitions of 1772, 1793 and 1795 —Prussia, Russia and Austria— erased the kingdom from the map; only a phantom state survived.",
-    "legado": "The Renaissance architecture of Kraków, the crisis of the Commonwealth, Polish cuisine and the customs of the szlachta."
+    "legado": "The Renaissance architecture of Kraków, the crisis of the Commonwealth, Polish cuisine and the customs of the szlachta.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "tibet",
@@ -2964,7 +3156,8 @@
     "color": "#d4b07f",
     "sintesis": "The empire of Songtsen Gampo, who unified Tibet and extended it from Tibet to the Tarim: a land of Vajrayana Buddhism, with the monasteries of Samburu and a script of its own.",
     "caida": "The civil war of 842 and the assassination of Langdarma marked the end of the empire; Tibet was left divided among smaller kingdoms.",
-    "legado": "Vajrayana Buddhism and its tormas, the Dunhuang manuscripts and Tibetan painting."
+    "legado": "Vajrayana Buddhism and its tormas, the Dunhuang manuscripts and Tibetan painting.",
+    "escritura": "Tibetan script"
   },
   {
     "id": "majapahit",
@@ -2987,7 +3180,8 @@
     "color": "#5fc9a8",
     "sintesis": "The Sundanese empire that unified Java and dominated the Malay archipelago: a maritime power with the Hindu law code and the Ramayana performed in Bali.",
     "caida": "The expansion of Aceh, the Demak sultanate and then the Portuguese presence ended its centre, though its culture spread across the whole archipelago.",
-    "legado": "The sugar temples of Java, the batik pattern, the wayang and the purification of the pool water."
+    "legado": "The sugar temples of Java, the batik pattern, the wayang and the purification of the pool water.",
+    "escritura": "Old Javanese script"
   },
   {
     "id": "maratha",
@@ -3010,7 +3204,8 @@
     "color": "#d46a4f",
     "sintesis": "The Maratha confederation that emerged from western India and reached Delhi: Shivaji and his successors combined light cavalry, Greek fire and the administration of an army of thousands of men.",
     "caida": "The three wars against Britain, the death of Peshwa Baji Rao II and the British occupation of Bombay ended their power.",
-    "legado": "Shivaji’s administration, the new capital of Pune and the ghats of Maharashtra."
+    "legado": "Shivaji’s administration, the new capital of Pune and the ghats of Maharashtra.",
+    "escritura": "Devanagari script"
   },
   {
     "id": "sikh",
@@ -3033,7 +3228,8 @@
     "color": "#d4b34f",
     "sintesis": "The Sikh state of the Punjab, formed by the union of mysticism and the sword: an army from Guru Nanak’s garrison that went on to conquer northwestern India.",
     "caida": "The two Anglo-Sikh wars, the annexation of the Punjab in 1849 and the replacement of the military command by the Company sealed its fall.",
-    "legado": "The Harmandir Sahib temple at Amritsar, the Khanda, the replete Punjabi cuisine and the Sikh."
+    "legado": "The Harmandir Sahib temple at Amritsar, the Khanda, the replete Punjabi cuisine and the Sikh.",
+    "escritura": "Gurmukhi script"
   },
   {
     "id": "himyaritas",
@@ -3056,7 +3252,8 @@
     "color": "#c9a05f",
     "sintesis": "The kingdom of southern Arabia, with its capital at Zafar and later Marib: a great commercial trunk for incense and myrrh between India, Rome and Africa.",
     "caida": "The sixth-century Aksumite incursion and the subsequent loosening of Yemen’s ties to Aksum broke their world.",
-    "legado": "The irrigation channels of Marib, the Sabaean script and Yemen’s monopolies."
+    "legado": "The irrigation channels of Marib, the Sabaean script and Yemen’s monopolies.",
+    "escritura": "Sabaean script"
   },
   {
     "id": "coreas",
@@ -3079,7 +3276,8 @@
     "color": "#7fb8d4",
     "sintesis": "Goguryeo, Baekje and Silla, which disputed the Korean peninsula for seven centuries and finally unified it in 668 with Tang’s help.",
     "caida": "Silla’s forced unification and the later pressure exerted over the whole kingdom.",
-    "legado": "The Buddhism of the Three Kingdoms, the influences of the unified period, the funerary prefixes and the guardians of Silla’s royal seals."
+    "legado": "The Buddhism of the Three Kingdoms, the influences of the unified period, the funerary prefixes and the guardians of Silla’s royal seals.",
+    "escritura": "Hangul and Chinese characters"
   },
   {
     "id": "benin",
@@ -3194,7 +3392,8 @@
     "color": "#a08fb0",
     "sintesis": "The dual empire of the Khitans: a tribal state in the steppe and a Chinese administration in the northern Liao, with a two-tier system of citizenship that made it unique.",
     "caida": "The Jin dynasty of the Jurchens destroyed it in 1125, but its culture and language later merged with the Mongols.",
-    "legado": "The Khitan script, the princes’ tumuli, the two-stringed fiddle and Liao dynasty ceramics."
+    "legado": "The Khitan script, the princes’ tumuli, the two-stringed fiddle and Liao dynasty ceramics.",
+    "escritura": "Khitan script"
   },
   {
     "id": "jurchen",
@@ -3217,7 +3416,8 @@
     "color": "#c9b07f",
     "sintesis": "The empire of the Jurchens, a hunting people of Manchuria who conquered northern China and overthrew the Song, and who were in turn swept away by the Mongols.",
     "caida": "The Mongol invasion of 1211-1234, the fall of Kaifeng and the betrayal of their own general, ended the empire and the Song dynasty.",
-    "legado": "The two-stringed fiddle and Jurchen art, the laws of Hangzhou and the culture that coexisted with the Song."
+    "legado": "The two-stringed fiddle and Jurchen art, the laws of Hangzhou and the culture that coexisted with the Song.",
+    "escritura": "Jurchen script"
   },
   {
     "id": "germanos",
@@ -3241,7 +3441,8 @@
     "color": "#8a9a6a",
     "sintesis": "A group of Germanic-speaking peoples —Suebi, Goths, Saxons, Franks, Lombards— that occupied central and northern Europe and ended up transforming the Roman world from within.",
     "caida": "The migrations of the fourth century, the pressure of the Huns and the formation of successor kingdoms dispersed their unity; their elites merged with the Roman and Slavic populations.",
-    "legado": "The epics of Beowulf and the Nibelungs, Germanic law, the runic alphabet and the kingdoms that replaced the Western Roman Empire."
+    "legado": "The epics of Beowulf and the Nibelungs, Germanic law, the runic alphabet and the kingdoms that replaced the Western Roman Empire.",
+    "escritura": "Runic and Latin alphabets"
   },
   {
     "id": "visigodos",
@@ -3265,7 +3466,8 @@
     "color": "#7d8f52",
     "sintesis": "The first stable Germanic kingdom in the West: the Visigoths went from Roman federates to rulers of Hispania and Gaul, with a capital at Toledo and a church of their own.",
     "caida": "The civil war between Roderic and Agila made the Muslim invasion of 711 easier, which dismantled the kingdom in a few years.",
-    "legado": "The Fuero Juzgo, the religious unification of the Council of Toledo and the fusion of the Gothic aristocracy with the Hispano-Roman one."
+    "legado": "The Fuero Juzgo, the religious unification of the Council of Toledo and the fusion of the Gothic aristocracy with the Hispano-Roman one.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "ostrogodos",
@@ -3289,7 +3491,8 @@
     "color": "#6f8f7a",
     "sintesis": "Theodoric ruled Italy with a Roman administration and Gothic elites, an experiment in coexistence that kept Rome’s legacy alive for half a century.",
     "caida": "Justinian’s Gothic War (535-553) devastated Italy and ended with the kingdom at the battle of Mons Lactarius.",
-    "legado": "The palace of Ravenna, the Theodosian Code and the idea of a Germanic kingdom heir to imperial administration."
+    "legado": "The palace of Ravenna, the Theodosian Code and the idea of a Germanic kingdom heir to imperial administration.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "vandalos",
@@ -3313,7 +3516,8 @@
     "color": "#8a7a9a",
     "sintesis": "A Germanic people who crossed the strait, conquered North Africa and turned Carthage into the capital of a pirate kingdom that came to sack Rome.",
     "caida": "Belisarius’s campaign of 533-534 destroyed the kingdom and returned Africa to the Byzantine Empire.",
-    "legado": "The sack of Rome in 455, the Carthaginian fleet and the memory of “vandalism” as destruction."
+    "legado": "The sack of Rome in 455, the Carthaginian fleet and the memory of “vandalism” as destruction.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "lombardos",
@@ -3337,7 +3541,8 @@
     "color": "#a08a5a",
     "sintesis": "The Lombards occupied the Po valley and founded a fragmented kingdom of duchies, with Pavia as its capital and a deep imprint on medieval Italy.",
     "caida": "Charlemagne took Pavia in 774 and deposed Desiderius, incorporating the kingdom into the Carolingian empire.",
-    "legado": "The Edict of Rothari, the duchies of Spoleto and Benevento and the Lombard toponymy of northern Italy."
+    "legado": "The Edict of Rothari, the duchies of Spoleto and Benevento and the Lombard toponymy of northern Italy.",
+    "escritura": "Latin alphabet"
   },
   {
     "id": "anglosajones",
@@ -3361,7 +3566,8 @@
     "color": "#6a8f8a",
     "sintesis": "Angles, Saxons and Jutes built several kingdoms in Britain after the Roman withdrawal; the hegemony of Wessex ended up creating the kingdom of England.",
     "caida": "The Norman conquest of 1066 replaced the Anglo-Saxon dynasty and reorganized the country under a Franco-Norman aristocracy.",
-    "legado": "Old English, the shire system, the Anglo-Saxon Chronicle and common law."
+    "legado": "Old English, the shire system, the Anglo-Saxon Chronicle and common law.",
+    "escritura": "Runic and Latin alphabets"
   },
   {
     "id": "moche",
@@ -3454,7 +3660,8 @@
     "color": "#7a9a5a",
     "sintesis": "Guaraní-speaking peoples of the Paraná and Paraguay basins, with manioc and maize agriculture, a dense road network and a cosmology based on the word.",
     "caida": "The Jesuit reductions, the colonial wars and the spread of the agricultural frontiers dismantled their ways of life, though the language and culture persist.",
-    "legado": "Guaraní as the official language of Paraguay, yerba mate, weaving and oral literature."
+    "legado": "Guaraní as the official language of Paraguay, yerba mate, weaving and oral literature.",
+    "escritura": "Guaraní alphabet"
   },
   {
     "id": "tupinamba",
@@ -3549,7 +3756,8 @@
     "color": "#3f8f6f",
     "sintesis": "The first Sunni caliphate, with its capital at Damascus and an empire that reached from the Iberian Peninsula to the Indus.",
     "caida": "The division of the dynasty, the rebellion of the frontier tribes and the Abbasids destroyed it in 750.",
-    "legado": "The Umayyad Mosque, the application of Islamic law to the conquered peoples and the expansion of Islam in the western Mediterranean."
+    "legado": "The Umayyad Mosque, the application of Islamic law to the conquered peoples and the expansion of Islam in the western Mediterranean.",
+    "escritura": "Arabic alphabet"
   },
   {
     "id": "abasies",
@@ -3572,7 +3780,8 @@
     "color": "#2f7d5f",
     "sintesis": "The caliphate of Baghdad, the golden age of Islam: the House of Wisdom, the translation movement and an empire that stretched from the Maghreb to the Indus.",
     "caida": "The dynastic split among the junds, the Mongol pressure and the advance of the Crusaders and the Seljuk Turks ended it with the fall of Baghdad in 1258.",
-    "legado": "The books of the House of Wisdom, the rise of Sufism, Arabic as a scientific language, the medicine of Avicenna and algebra."
+    "legado": "The books of the House of Wisdom, the rise of Sufism, Arabic as a scientific language, the medicine of Avicenna and algebra.",
+    "escritura": "Arabic alphabet"
   },
   {
     "id": "fatimies",
@@ -3595,7 +3804,8 @@
     "color": "#4fb0a8",
     "sintesis": "The Ismaili Shi'a caliphate that ruled Ifriqiya and later Cairo: the building of Al-Azhar and a commercial power with the Venetians and the Genoese.",
     "caida": "The fall of the city of Mahdia and the advance of the Seljuks and the Ayyubids finished off the caliphate.",
-    "legado": "The mosque and university of Al-Azhar, the Isma'ili doctrine and the medieval Cairo of the viziers."
+    "legado": "The mosque and university of Al-Azhar, the Isma'ili doctrine and the medieval Cairo of the viziers.",
+    "escritura": "Arabic alphabet"
   },
   {
     "id": "mamelucos",
@@ -3616,8 +3826,232 @@
     "peso": 6,
     "territorio": true,
     "color": "#c9a05f",
-    "sintesis": "The Mamluk dynasty, of slave and cavalry origin, that ruled Egypt and Syria: a military power with a construction luxury without equal.",
-    "caida": "The expulsion of the Mamluks by Selim I in 1517 and the collapse of the Syrian power after Lepanto ended them.",
-    "legado": "The Citadel of Cairo, the mosque of al-Azhar, the Mamluk court and the Mamluk style in art."
+    "sintesis": "The Mamluk dynasty, slave-soldiers and cavalrymen who ruled Egypt and Syria: a military power with unmatched architectural luxury.",
+    "caida": "The Ottoman conquest of Egypt and Syria by Selim I in 1517 ended the Mamluk sultanate.",
+    "legado": "The Citadel of Cairo, the al-Azhar mosque, Mamluk funerary architecture and the art of metalwork and tapestry.",
+    "escritura": "Arabic alphabet",
+    "entidad": "organizacion",
+    "escalaPolitica": "reino",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "sultan",
+    "periodos": [
+      {
+        "id": "mamelucos-bahri",
+        "nombre": "Bahri sultanate",
+        "desde": 1250,
+        "hasta": 1382,
+        "forma": "monarquia",
+        "cargo": "sultan",
+        "dinastia": "mamelucos-bahri",
+        "nota": "Bahri dynasty, of Turkic origin."
+      },
+      {
+        "id": "mamelucos-burji",
+        "nombre": "Burji sultanate",
+        "desde": 1382,
+        "hasta": 1517,
+        "forma": "monarquia",
+        "cargo": "sultan",
+        "dinastia": "mamelucos-burji",
+        "nota": "Burji dynasty, of Circassian origin."
+      }
+    ]
+  },
+  {
+    "id": "moscovia",
+    "nombre": "Grand Duchy of Moscow",
+    "abrev": "MOS",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 1263,
+    "fin": 1547,
+    "apogeo": [
+      1462,
+      1533
+    ],
+    "declive": [
+      1533,
+      1547
+    ],
+    "peso": 6,
+    "territorio": false,
+    "color": "#b9a38b",
+    "sintesis": "The principality that grew in the shadow of the Golden Horde: Moscow gathered the Russian lands, won at Kulikovo and became the political centre of Orthodoxy after the fall of Constantinople.",
+    "caida": "The minority of Ivan IV and the struggles between boyars weakened the principality, but its transformation into a tsardom in 1547 marked the end of medieval Muscovy.",
+    "legado": "Muscovite autocracy, the title of grand prince of all Rus, the Kremlin and the doctrine of the Third Rome.",
+    "escritura": "Cyrillic alphabet",
+    "alias": [
+      "Muscovy",
+      "Principality of Moscow",
+      "Moscovia"
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "principado",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "gran-principe",
+    "dinastiaPrincipal": "rurikida"
+  },
+  {
+    "id": "zarato-ruso",
+    "nombre": "Tsardom of Russia",
+    "abrev": "ZAR",
+    "tipo": "reino",
+    "region": "rusia",
+    "inicio": 1547,
+    "fin": 1721,
+    "apogeo": [
+      1613,
+      1682
+    ],
+    "declive": null,
+    "peso": 7,
+    "territorio": false,
+    "color": "#d4a373",
+    "sintesis": "The realm of the first tsars: Ivan the Terrible conquered Kazan and Astrakhan, opened Siberia and created the oprichnina; after the Time of Troubles, the Romanovs rebuilt the state until Peter the Great.",
+    "caida": "It did not fall: Peter I transformed the tsardom into the Russian Empire in 1721, after the Great Northern War and the founding of Saint Petersburg.",
+    "legado": "The title of tsar, the conquest of Siberia, legalized serfdom and the schism of the Old Believers.",
+    "escritura": "Cyrillic alphabet",
+    "alias": [
+      "Kingdom of Russia",
+      "Muscovite Russia"
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "reino",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "zar"
+  },
+  {
+    "id": "revolucion-rusa",
+    "nombre": "Revolutionary Russia",
+    "abrev": "REV",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 1917,
+    "fin": 1922,
+    "apogeo": [
+      1917,
+      1918
+    ],
+    "declive": [
+      1918,
+      1922
+    ],
+    "peso": 6,
+    "territorio": false,
+    "color": "#e07a5f",
+    "sintesis": "The political laboratory of 1917: the abdication of Nicholas II, the Provisional Government, the October Revolution and the civil war between Bolsheviks, Whites and nationalists.",
+    "caida": "The Bolshevik victory in the civil war and the creation of the USSR in 1922 integrated Russia into a new federal state.",
+    "legado": "The first socialist state, the soviet as a form of power, the Cheka and war communism.",
+    "escritura": "Cyrillic alphabet",
+    "alias": [
+      "Russian Republic",
+      "RSFSR",
+      "Russian Revolution"
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "estado",
+    "forma": "republica",
+    "soberania": "independiente",
+    "cargoPrincipal": "presidente-gobierno-provisional"
+  },
+  {
+    "id": "federacion-rusa",
+    "nombre": "Russian Federation",
+    "abrev": "RUS",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 1991,
+    "fin": 2026,
+    "apogeo": [
+      2000,
+      2013
+    ],
+    "declive": null,
+    "peso": 7,
+    "territorio": false,
+    "color": "#7a9cc6",
+    "sintesis": "The successor state of the USSR: the crisis of the 1990s, the transition to a market economy, the Chechen wars and the economic recovery under Vladimir Putin.",
+    "caida": "It has not fallen: the Russian Federation continues in 2026, marked by the war in Ukraine and international isolation.",
+    "legado": "The 1993 Constitution, the market economy, the G8 and the nuclear and territorial legacy of the USSR.",
+    "escritura": "Cyrillic alphabet",
+    "alias": [
+      "Russia",
+      "RF"
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "estado",
+    "forma": "republica",
+    "soberania": "independiente",
+    "cargoPrincipal": "presidente"
+  },
+  {
+    "id": "horda-de-oro",
+    "nombre": "Golden Horde",
+    "abrev": "HDO",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 1240,
+    "fin": 1502,
+    "apogeo": [
+      1313,
+      1359
+    ],
+    "declive": [
+      1359,
+      1502
+    ],
+    "peso": 6,
+    "territorio": false,
+    "color": "#c2a35a",
+    "sintesis": "The Mongol khanate of the Pontic-Caspian steppe: Sarai, Islam and the yoke over the Russian principalities, which paid tribute to the Horde.",
+    "caida": "The defeats by Dmitry Donskoy (1380) and Timur (1395), fragmentation into khanates and the expansion of Moscow ended the Horde in 1502.",
+    "legado": "The destruction of Kiev, the tribute system, the Volga trade route and the Turco-Mongol legacy in Russia.",
+    "escritura": "Cyrillic alphabet",
+    "alias": [
+      "Kipchak Khanate",
+      "Golden Horde Empire"
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "reino",
+    "forma": "monarquia",
+    "soberania": "independiente",
+    "cargoPrincipal": "kan",
+    "dinastiaPrincipal": "borjigin"
+  },
+  {
+    "id": "novgorod",
+    "nombre": "Novgorod Republic",
+    "abrev": "NOV",
+    "tipo": "estado",
+    "region": "rusia",
+    "inicio": 1136,
+    "fin": 1478,
+    "apogeo": [
+      1200,
+      1400
+    ],
+    "declive": [
+      1400,
+      1478
+    ],
+    "peso": 5,
+    "territorio": false,
+    "color": "#8fa3b0",
+    "sintesis": "The city-state of the north: the veche, the fur and wax trade with the Hanseatic League and a vast hinterland stretching to the Baltic and the Urals.",
+    "caida": "Pressure from Moscow and the defeat of 1471 ended its independence; Ivan III annexed Novgorod in 1478.",
+    "legado": "The veche, the Novgorod chronicles, wooden architecture and Hanseatic trade.",
+    "escritura": "Cyrillic alphabet",
+    "alias": [
+      "Lord Novgorod the Great",
+      "Novgorod"
+    ],
+    "entidad": "organizacion",
+    "escalaPolitica": "ciudad-estado",
+    "forma": "republica-oligarquica",
+    "soberania": "independiente",
+    "cargoPrincipal": "posadnik"
   }
 ]

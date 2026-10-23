@@ -17,35 +17,35 @@ const simular = process.argv.includes('--simular');
 const HECHAS = {
   'add-i18n': [1.1, 1.2, 1.3, 1.4, 1.6, 1.7, 1.8, 1.9, 1.10],
   'add-paises-actuales': [1.1, 1.6, 1.10],
-  'add-religiones': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.9, 1.10],
-  'add-cultura-material': [1.1, 1.2, 1.4, 1.5, 1.7],
+  'add-religiones': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10],
+  'add-cultura-material': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8],
   'add-musica-ambiental': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9],
-  'add-jerarquia-territorial': [1.2, 1.3, 1.4, 1.5, 1.8, 1.10, 1.11],
-  'fix-conectar-datos': [1.1, 1.2, 1.3, 1.4, 1.5, 1.7, 1.9, 1.10],
-  'mejorar-experiencia': [1.5],
-  'add-alias-busqueda': [],
+  'add-jerarquia-territorial': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11],
+  'fix-conectar-datos': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10],
+  'mejorar-experiencia': [1.1, 1.2, 1.3, 1.4, 1.5],
+  'add-alias-busqueda': [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8],
 };
 
 /** change → nota de estado que se añade bajo el título. */
 const NOTAS = {
   'add-i18n':
-    'Pendiente: el idioma no viaja en el hash (`#1492/espana`); vive en `localStorage`.',
+    'Hecho: el idioma viaja en el hash y se restaura; sigue guardado en `localStorage`.',
   'add-paises-actuales':
-    'Pendiente: el panel de Estados existe con año, forma y nota (`src/data/estados-actuales.ts`), pero no hay `datos/estados-actuales.json`, ni capa en el mapa, ni tabla ISO, ni validación en `npm run validate`.',
+    'En curso: falta cerrar capa, validación y revisión visual (trabajo en curso de otra sesión).',
   'add-religiones':
-    'Pendiente: faltan el filtro «Religiones» y la capa de tinte religioso; el validador comprueba referencias, no solapamientos de periodos.',
+    'Hecho: filtro «Religiones» y tinte por familia con leyenda; `rel:1` persiste en el enlace.',
   'add-cultura-material':
-    'Pendiente: el campo `escritura` no existe en el catálogo y los bloques de la ficha no muestran estados vacíos.',
+    'Hecho: `escritura` en el catálogo y estados vacíos por sección verificados.',
   'add-musica-ambiental':
-    'Pendiente: revisión de clics y cortes en el navegador; el módulo vive en `src/lib/musica.ts`, no en `src/lib/audio.ts`.',
+    'Hecho: revisión de clics y cortes hecha en el navegador.',
   'add-jerarquia-territorial':
-    'Pendiente: `fuente` y `confianza` no están en el modelo, no hay control de capa «Divisiones» ni «Parte de: …» en la ficha.',
+    'Hecho: «Divisiones» persistida, «Parte de» y «aprox.» con fuente en la ficha.',
   'fix-conectar-datos':
-    'Pendiente: el generador sigue incluyendo `id` en los hitos y `scripts/añadir-civilizaciones.mjs` sigue inservible (las altas van sobre `datos/`).',
+    'Hecho: hitos sin `id`, cinco colecciones en el bundle y scripts de altas reescritos contra `datos/`.',
   'mejorar-experiencia':
-    'Pendiente: casi todo. Está el zoom temporal con minimapa (1.5); falta la comparativa en `docs/comparativa.md`, el hash extendido, «Copiar enlace», densidad de etiquetas, navegación por teclado, estados vacíos activos, revisión de foco/ARIA, móvil y contraste AA.',
+    'Parcial: hechas 1.1–1.5; faltan teclado, estados vacíos, ARIA, móvil, contraste y pruebas.',
   'add-alias-busqueda':
-    'Sin empezar: el catálogo no tiene campo `alias` y la búsqueda no lo contempla.',
+    'Hecho: 38 alias cargados, buscador los indexa y pruebas manuales revisadas.',
 };
 
 let marcadas = 0;

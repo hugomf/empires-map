@@ -574,5 +574,85 @@
     "descripcion": "Antes del bautismo, el culto al sol y a los antepasados, con los Brahmins de la corte.",
     "desde": 895,
     "hasta": 2026
+  },
+  {
+    "id": "rus-kiev-rel-paganismo",
+    "civilizacion": "rus-kiev",
+    "nombre": "Paganismo eslavo",
+    "descripcion": "El panteón de Perun, Veles y Svarog convivía con cultos locales hasta el bautismo de Vladímir I.",
+    "desde": 860,
+    "hasta": 988
+  },
+  {
+    "id": "rus-kiev-rel-ortodoxia",
+    "civilizacion": "rus-kiev",
+    "nombre": "Cristianismo ortodoxo",
+    "descripcion": "El bautismo de 988 vinculó la Rus a Bizancio; la Iglesia ortodoxa se convirtió en la institución cultural central.",
+    "desde": 988,
+    "hasta": 1240
+  },
+  {
+    "id": "moscovia-rel-ortodoxia",
+    "civilizacion": "moscovia",
+    "nombre": "Cristianismo ortodoxo",
+    "descripcion": "Moscú se presentó como la Tercera Roma tras la caída de Constantinopla y el metropolita se trasladó a la ciudad.",
+    "desde": 1263,
+    "hasta": 1547
+  },
+  {
+    "id": "zarato-ruso-rel-ortodoxia",
+    "civilizacion": "zarato-ruso",
+    "nombre": "Cristianismo ortodoxo",
+    "descripcion": "La Iglesia ortodoxa rusa se consolidó como iglesia nacional; el Patriarcado se restableció en 1589.",
+    "desde": 1547,
+    "hasta": 1721
+  },
+  {
+    "id": "rusia-rel-ortodoxia",
+    "civilizacion": "rusia",
+    "nombre": "Cristianismo ortodoxo, islam y judaísmo",
+    "descripcion": "El imperio protegía la ortodoxia, pero incluía musulmanes, judíos, luteranos y católicos en sus fronteras.",
+    "desde": 1721,
+    "hasta": 1917
+  },
+  {
+    "id": "revolucion-rusa-rel-ateismo",
+    "civilizacion": "revolucion-rusa",
+    "nombre": "Ateísmo de Estado y cristianismo",
+    "descripcion": "El Gobierno Provisional mantuvo la libertad religiosa; los bolcheviques separaron la Iglesia del Estado y persiguieron a la jerarquía.",
+    "desde": 1917,
+    "hasta": 1922
+  },
+  {
+    "id": "sovietica-rel-ateismo",
+    "civilizacion": "sovietica",
+    "nombre": "Ateísmo de Estado",
+    "descripcion": "La Constitución soviética garantizaba la libertad de culto, pero la propaganda y la represión convirtieron el ateísmo en política de Estado.",
+    "desde": 1922,
+    "hasta": 1991
+  },
+  {
+    "id": "federacion-rusa-rel-pluralismo",
+    "civilizacion": "federacion-rusa",
+    "nombre": "Cristianismo ortodoxo, islam y budismo",
+    "descripcion": "La Constitución de 1993 reconoce la libertad de conciencia; la ortodoxia sigue siendo la confesión mayoritaria.",
+    "desde": 1991,
+    "hasta": 2026
+  },
+  {
+    "id": "horda-de-oro-rel-islam",
+    "civilizacion": "horda-de-oro",
+    "nombre": "Tengrismo e islam",
+    "descripcion": "La Horda empezó como confederación tengrista y se islamizó con Berke y Uzbek; Sarai fue un centro musulmán.",
+    "desde": 1240,
+    "hasta": 1502
+  },
+  {
+    "id": "novgorod-rel-ortodoxia",
+    "civilizacion": "novgorod",
+    "nombre": "Cristianismo ortodoxo y paganismo",
+    "descripcion": "Nóvgorod se cristianizó en el siglo X, pero conservó cultos y festividades precristianas durante siglos.",
+    "desde": 1136,
+    "hasta": 1478
   }
 ]

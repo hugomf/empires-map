@@ -11,7 +11,12 @@ import {
   pasaFiltros,
   vivasEn,
 } from './lib/dominio';
-import { ERAS } from './lib/tiempo';
+import { ERAS, anioCorto } from './lib/tiempo';
+import {
+  escribirEnlace,
+  leerEnlace,
+  type Densidad,
+} from './lib/enlace';
 import { idiomaGuardado, traducir, type Idioma } from './lib/i18n';
 import { musica } from './lib/musica';
 import { MapaAtlas } from './components/MapaAtlas';
@@ -20,6 +25,7 @@ import { Ficha } from './components/Ficha';
 import { Cronologia } from './components/Cronologia';
 import { Ahora } from './components/Ahora';
 import { Estados } from './components/Estados';
+import { PanelCapas } from './components/PanelCapas';
 
 const TIPOS: Tipo[] = [
   'imperio',
@@ -42,8 +48,13 @@ const normalizar = (s: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
 
+/* --- El enlace: `#<idioma>/<anio>/<civ>` + segmentos opcionales --- */
+/* El idioma es opcional: los enlaces antiguos `#<anio>/<civ>` siguen
+ * funcionando (gana `localStorage`). El resto del estado (filtros, capas,
+ * densidad) viaja en segmentos; los desconocidos se ignoran. */
 export default function App() {
-  const [idioma, setIdioma] = useState<Idioma>(() => idiomaGuardado());
+  const en = useMemo(() => leerEnlace(window.location.hash), []);
+  const [idioma, setIdioma] = useState<Idioma>(() => en.idioma ?? idiomaGuardado());
   fijarIdioma(idioma);
 
   const [, forzar] = useState(0);
@@ -70,31 +81,41 @@ export default function App() {
   );
 
   const [anio, setAnio] = useState(() => {
-    const h = window.location.hash.replace(/^#\/?/, '');
-    const a = parseInt(h.split('/')[0], 10);
-    return Number.isFinite(a) ? Math.max(datos.anioMin, Math.min(datos.anioMax, a)) : 100;
+    const a = en.anio;
+    return a === null ? 100 : Math.max(datos.anioMin, Math.min(datos.anioMax, a));
   });
   const [reproduciendo, setReproduciendo] = useState(false);
   const [velocidad, setVelocidad] = useState(120);
-  const [seleccion, setSeleccion] = useState<string | null>(() => {
-    const h = window.location.hash.replace(/^#\/?/, '');
-    const c = h.split('/')[1];
-    return c || 'roma';
-  });
+  const [seleccion, setSeleccion] = useState<string | null>(() => en.civ || 'roma');
   const [hover, setHover] = useState<string | null>(null);
-  const [tipos, setTipos] = useState<Set<Tipo>>(new Set());
-  const [grupos, setGrupos] = useState<Set<Grupo>>(new Set());
-  const [mostrarMenores, setMostrarMenores] = useState(true);
+  const [tipos, setTipos] = useState<Set<Tipo>>(() => new Set(en.tipos as Tipo[]));
+  const [grupos, setGrupos] = useState<Set<Grupo>>(() => new Set(en.grupos as Grupo[]));
+  const [mostrarMenores, setMostrarMenores] = useState(en.menores);
   const [sonandoMusica, setSonandoMusica] = useState(false);
   const [fronterasModernas, setFronterasModernas] = useState(false);
   const [comparacion, setComparacion] = useState<string[]>([]);
   const [modoColor, setModoColor] = useState<'identidad' | 'fase'>('identidad');
   const [estadosAbiertos, setEstadosAbiertos] = useState(false);
-  const [busqueda, setBusqueda] = useState('');
+  const [busqueda, setBusqueda] = useState(en.busqueda);
   const [agrupar] = useState(true);
   const [menu, setMenu] = useState(false);
   const [rielAbierto, setRielAbierto] = useState(false);
   const [fichaAbierta, setFichaAbierta] = useState(false);
+  const [capaSolo, setCapaSolo] = useState<string | null>(en.solo);
+  const [capasOcultas, setCapasOcultas] = useState<Set<string>>(() => new Set(en.ocultas));
+  const [panelCapas, setPanelCapas] = useState(false);
+  /* Capas independientes de las civilizaciones. */
+  const [capaDivisiones, setCapaDivisiones] = useState(en.divisiones);
+  const [capaReligiones, setCapaReligiones] = useState(en.religiones);
+  const [capaPaises, setCapaPaises] = useState(en.paises);
+  /* Densidad de etiquetas del mapa. */
+  const [densidad, setDensidad] = useState<Densidad>(en.densidad);
+  /* Religión elegida: filtra la lista de religiones y sus civilizaciones. */
+  const [religionFiltro, setReligionFiltro] = useState<string | null>(null);
+  /* Aviso tras copiar el enlace. */
+  const [enlaceCopiado, setEnlaceCopiado] = useState(false);
+  /* Anuncio para lectores de pantalla (año, confirmaciones). */
+  const [mensajeVivo, setMensajeVivo] = useState('');
 
   const filtros = useMemo(
     () => ({ tipos, grupos, mostrarMenores }),
@@ -125,6 +146,33 @@ export default function App() {
     [datos],
   );
 
+  /** Civilizaciones asociadas a la religión filtrada, si la hay. */
+  const civsDeReligion = useMemo(() => {
+    if (!religionFiltro) return null;
+    const r = datos.religiones.find((x) => x.id === religionFiltro);
+    return new Set(r ? [r.civilizacion] : []);
+  }, [religionFiltro, datos.religiones]);
+
+  /* Con filtro de religión, el riel también se acota: la spec pide «la lista
+   * y la ficha muestran solo las civilizaciones asociadas» (el mapa no). */
+  const vivasRiel = useMemo(
+    () => (civsDeReligion ? vivas.filter((c) => civsDeReligion.has(c.id)) : vivas),
+    [vivas, civsDeReligion],
+  );
+
+  const elegirReligion = useCallback(
+    (id: string | null) => {
+      setReligionFiltro(id);
+      if (id) {
+        const r = datos.religiones.find((x) => x.id === id);
+        /* La ficha ya no puede quedarse en una civilización ajena a la
+         * religión recién elegida: se suelta la selección. */
+        if (r && seleccion && r.civilizacion !== seleccion) setSeleccion(null);
+      }
+    },
+    [datos.religiones, seleccion],
+  );
+
   const filas = useMemo(() => {
     const q = normalizar(busqueda.trim());
     /* Con búsqueda activa se buscan también las menores: el usuario las ha
@@ -132,6 +180,7 @@ export default function App() {
     const f = q ? { ...filtros, mostrarMenores: true } : filtros;
     return datos.civilizaciones
       .filter((c) => pasaFiltros(c, f, datos.regiones))
+      .filter((c) => (civsDeReligion ? civsDeReligion.has(c.id) : true))
       .filter((c) => {
         if (!q) return true;
         const region = datos.regiones.find((r) => r.id === c.region)?.nombre ?? '';
@@ -151,7 +200,7 @@ export default function App() {
         return normalizar(texto).includes(q);
       })
       .sort((a, b) => a.inicio - b.inicio);
-  }, [datos, filtros, busqueda, t]);
+  }, [datos, filtros, busqueda, t, civsDeReligion]);
 
   /* Menores que la búsqueda ha traído y el filtro de escala esconde. */
   const menoresEnBusqueda = useMemo(
@@ -201,20 +250,105 @@ export default function App() {
       } else if (e.code === 'ArrowLeft') {
         e.preventDefault();
         setAnio((a) => Math.max(datos.anioMin, Math.round(a - (e.shiftKey ? 50 : 5))));
+        setMensajeVivo(
+          t('anuncio.anio', {
+            n: Math.max(datos.anioMin, Math.round(anio - (e.shiftKey ? 50 : 5))),
+          }),
+        );
       } else if (e.code === 'ArrowRight') {
         e.preventDefault();
         setAnio((a) => Math.min(datos.anioMax, Math.round(a + (e.shiftKey ? 50 : 5))));
+        setMensajeVivo(
+          t('anuncio.anio', {
+            n: Math.min(datos.anioMax, Math.round(anio + (e.shiftKey ? 50 : 5))),
+          }),
+        );
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [datos.anioMin, datos.anioMax]);
+  }, [datos.anioMin, datos.anioMax, anio, t]);
 
-  /* --- El enlace refleja el momento --- */
+  /* --- La preferencia de idioma se recuerda en el navegador --- */
   useEffect(() => {
-    const h = `#${Math.round(anio)}/${seleccion ?? ''}`;
+    try {
+      localStorage.setItem('cronica-idioma', idioma);
+    } catch {
+      /* modo privado: sin persistencia, sin error */
+    }
+  }, [idioma]);
+
+  /* --- El enlace refleja el estado completo de la vista --- */
+  useEffect(() => {
+    const h = escribirEnlace({
+      idioma,
+      anio,
+      civ: seleccion,
+      solo: capaSolo,
+      ocultas: [...capasOcultas],
+      divisiones: capaDivisiones,
+      religiones: capaReligiones,
+      paises: capaPaises,
+      densidad,
+      busqueda,
+      tipos: [...tipos],
+      grupos: [...grupos],
+      menores: mostrarMenores,
+    });
     if (window.location.hash !== h) window.history.replaceState(null, '', h);
-  }, [anio, seleccion]);
+  }, [
+    idioma,
+    anio,
+    seleccion,
+    capaSolo,
+    capasOcultas,
+    capaDivisiones,
+    capaReligiones,
+    capaPaises,
+    densidad,
+    busqueda,
+    tipos,
+    grupos,
+    mostrarMenores,
+  ]);
+
+  /** Restaura los filtros por defecto y limpia la búsqueda (acción de los estados vacíos). */
+  const quitarFiltros = useCallback(() => {
+    setBusqueda('');
+    setTipos(new Set(en.tipos as Tipo[]));
+    setGrupos(new Set(en.grupos as Grupo[]));
+    setMostrarMenores(en.menores);
+    setReligionFiltro(null);
+  }, [en]);
+
+  /** Anuncia el año en la región viva, con antirrebote para no saturarla al deslizar. */
+  useEffect(() => {
+    const id = window.setTimeout(
+      () => setMensajeVivo(t('vivo.anio', { a: anioCorto(anio, idioma) })),
+      700,
+    );
+    return () => window.clearTimeout(id);
+  }, [anio, t, idioma]);
+
+  /** Copia el enlace de la vista actual y lo anuncia. */
+  const copiarEnlace = useCallback(async () => {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      /* Sin permiso de portapapeles: al menos se deja el enlace a la vista. */
+      window.prompt(t('ctl.enlace'), url);
+    }
+    setEnlaceCopiado(true);
+    setMensajeVivo(t('ctl.copiado'));
+    window.setTimeout(() => setEnlaceCopiado(false), 2600);
+  }, [t]);
+
+  /** ¿Debe dibujarse la capa de esta civilización? */
+  const capaVisible = useCallback(
+    (id: string) => (capaSolo ? capaSolo === id : !capasOcultas.has(id)),
+    [capaSolo, capasOcultas],
+  );
 
   const comparar = comparacion.length > 0;
   const seleccionar = useCallback(
@@ -269,6 +403,10 @@ export default function App() {
 
   return (
     <div className="app">
+      <p className="sr-only" role="status" aria-live="polite">
+        {mensajeVivo}
+      </p>
+      {enlaceCopiado && <div className="aviso-enlace">{t('ctl.copiado')}</div>}
       <header className="cabecera">
         <div className="marca">
           <h1>{t('marca.titulo')}</h1>
@@ -343,6 +481,18 @@ export default function App() {
             {limpiezas ? ` · ${limpiezas}` : ''}
           </button>
           <button
+            className={`boton${panelCapas ? ' activo' : ''}`}
+            onClick={() => setPanelCapas((v) => !v)}
+            title={t('ctl.capas')}
+          >
+            {t('ctl.capas')}
+            {capaSolo
+              ? ' · ' + (datos.civilizaciones.find((c) => c.id === capaSolo)?.nombre ?? capaSolo)
+              : capasOcultas.size
+                ? ` · ${capasOcultas.size}`
+                : ''}
+          </button>
+          <button
             className={`boton${modoColor === 'fase' ? ' activo' : ''}`}
             onClick={() => setModoColor((m) => (m === 'fase' ? 'identidad' : 'fase'))}
             title={t('ctl.colorFase')}
@@ -364,6 +514,20 @@ export default function App() {
             title={t('ctl.comparar')}
           >
             {t('ctl.comparar')}
+          </button>
+          <button
+            className="boton"
+            onClick={() =>
+              setDensidad((d) =>
+                d === 'auto' ? 'todas' : d === 'todas' ? 'ninguna' : 'auto',
+              )
+            }
+            title={t('ctl.densidad')}
+          >
+            {t(`densidad.${densidad}`)}
+          </button>
+          <button className="boton" onClick={() => void copiarEnlace()} title={t('ctl.copiarEnlace')}>
+            {t('ctl.copiarEnlace')}
           </button>
           <button
             className={`boton${fronterasModernas ? ' activo' : ''}`}
@@ -470,11 +634,45 @@ export default function App() {
             )}
           </div>
         )}
+        {panelCapas && (
+          <PanelCapas
+            datos={datos}
+            t={t}
+            ocultas={capasOcultas}
+            solo={capaSolo}
+            alPulsarOjo={(id) =>
+              setCapasOcultas((s) => {
+                const n = new Set(s);
+                if (n.has(id)) n.delete(id);
+                else n.add(id);
+                return n;
+              })
+            }
+            alPulsarSolo={(id) => setCapaSolo((s) => (s === id ? null : id))}
+            alMostrarTodas={() => {
+              setCapaSolo(null);
+              setCapasOcultas(new Set());
+            }}
+            alSeleccionar={(id) => {
+              seleccionar(id);
+              setPanelCapas(false);
+            }}
+            divisiones={capaDivisiones}
+            religiones={capaReligiones}
+            paises={capaPaises}
+            alCambiarDivisiones={setCapaDivisiones}
+            alCambiarReligiones={setCapaReligiones}
+            alCambiarPaises={setCapaPaises}
+            religionFiltro={religionFiltro}
+            alElegirReligion={elegirReligion}
+            cerrar={() => setPanelCapas(false)}
+          />
+        )}
       </header>
 
       <main className="tablero">
         <Riel
-          vivas={vivas}
+          vivas={vivasRiel}
           seleccion={seleccion}
           onSeleccionar={(id) => {
             seleccionar(id);
@@ -485,6 +683,7 @@ export default function App() {
           t={t}
           regiones={datos.regiones}
           idioma={idioma}
+          onQuitarFiltros={quitarFiltros}
         />
 
         <div className="zona-mapa">
@@ -502,6 +701,8 @@ export default function App() {
           colores={colores}
           modoColor={modoColor}
           fronterasModernas={fronterasModernas}
+          capaVisible={capaVisible}
+          capaReligiones={capaReligiones}
         />
 
           <Estados
@@ -551,6 +752,8 @@ export default function App() {
         regiones={datos.regiones}
         comparacion={datos.civilizaciones.filter((c) => comparacion.includes(c.id))}
         onCerrarComparacion={() => setComparacion([])}
+        onLimpiarBusqueda={() => setBusqueda('')}
+        onQuitarFiltros={quitarFiltros}
       />
     </div>
   );

@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import type { Civilizacion, Region } from '../data/tipos-cultura';
 import type { Idioma } from '../lib/i18n';
 import { anioCorto } from '../lib/tiempo';
+import { esActivacion, teclasLista } from '../lib/teclado';
 
 type T = (clave: string, vars?: Record<string, string | number>) => string;
 
@@ -14,6 +15,8 @@ interface Props {
   t: T;
   regiones: Region[];
   idioma: Idioma;
+  /** Acción del estado vacío: quitar los filtros activos. */
+  onQuitarFiltros: () => void;
 }
 
 export function Riel({
@@ -25,6 +28,7 @@ export function Riel({
   t,
   regiones,
   idioma,
+  onQuitarFiltros,
 }: Props) {
   const grupos = useMemo(() => {
     const m = new Map<string, Civilizacion[]>();
@@ -58,7 +62,18 @@ export function Riel({
               <div
                 key={c.id}
                 className={`riel-item${c.id === seleccion ? ' sel' : ''}`}
+                role="button"
+                tabIndex={0}
+                aria-current={c.id === seleccion || undefined}
                 onClick={() => onSeleccionar(c.id)}
+                onKeyDown={(e) => {
+                  if (esActivacion(e)) {
+                    e.preventDefault();
+                    onSeleccionar(c.id);
+                  } else {
+                    teclasLista(e, '.riel-item');
+                  }
+                }}
                 onMouseEnter={() => onHover(c.id)}
                 onMouseLeave={() => onHover(null)}
               >
@@ -72,9 +87,14 @@ export function Riel({
           </div>
         ))}
         {!vivas.length && (
-          <p style={{ padding: '18px 14px', color: 'var(--pergamino-3)', fontSize: 12.5 }}>
-            {t('riel.vacio')}
-          </p>
+          <div className="vacio">
+            <p style={{ color: 'var(--pergamino-3)', fontSize: 12.5 }}>
+              {t('riel.vacio')}
+            </p>
+            <button className="enlace-accion" onClick={onQuitarFiltros}>
+              {t('crono.quitarFiltros')}
+            </button>
+          </div>
         )}
       </div>
     </aside>

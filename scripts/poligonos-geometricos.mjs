@@ -393,9 +393,11 @@ function trazarLimpio(mascara, nx, ny, caja) {
     .map((a) => [...a, a[0]])
     /* Redondear a milésimas: la precisión de 100 m sobra para un atlas y
      * el fichero se reduce a la mitad. Si el redondeo cruzara el contorno,
-     * se conserva la versión sin redondear. */
+     * se conserva la versión sin redondear. Las celdas de la rejilla pueden
+     * rozar el ±180 en diagonal (180.02): se acota al meridiano. */
     .map((a) => {
-      const r = a.map(([x, y]) => [Math.round(x * 1000) / 1000, Math.round(y * 1000) / 1000]);
+      const acota = (x) => Math.max(-180, Math.min(180, x));
+      const r = a.map(([x, y]) => [acota(Math.round(x * 1000) / 1000), Math.round(y * 1000) / 1000]);
       return esSimple(r) ? r : a;
     });
 }
@@ -1004,6 +1006,208 @@ const FIGURAS3 = {
 
 Object.assign(FIGURAS, FIGURAS3);
 
+/* ─────────────── Reparación de territorios costeros/marítimos ──────────────
+ * Segunda pasada (auditoría: scripts/auditar-poligonos.mjs): los territorios
+ * de esta lista tenían gran parte de su relleno sobre el mar o estaban
+ * desplazados de las zonas históricas. Se reconstruyen heredando costas
+ * reales del atlas, igual que el resto de FIGURAS. */
+const FIGURAS4 = {
+  /* El polígono a mano cubría lat 18.2–19.4 (costa norte de Veracruz):
+   * el corazón olmeca real es la llanura de Veracruz–Tabasco, entre el río
+   * Papaloapan y el Grijalva: San Lorenzo, Tres Zapotes, Los Tuxtlas y
+   * La Venta. Todos los vértices del recorte son puntos interiores (la
+   * versión anterior tenía el borde norte mar adentro y la intersección
+   * reducía el núcleo a una pestaña costera); el contorno del país ya
+   * recorta el mar por sí solo. */
+  'olmecas-t1': [
+    P(['484'], {
+      ventana: [-96.8, 16.9, -91.4, 19.2],
+      recorte: [
+        [-96.6, 18.55], [-96.2, 19.0], [-95.5, 19.0], [-94.9, 18.6],
+        [-94.2, 18.5], [-93.6, 18.55], [-93.1, 18.6], [-92.5, 18.5],
+        [-91.9, 18.2], [-91.7, 17.9], [-92.3, 17.6], [-93.1, 17.7],
+        [-94.0, 17.9], [-94.8, 17.8], [-95.5, 17.9], [-96.1, 18.1],
+        [-96.5, 18.3], [-96.6, 18.55],
+      ],
+    }),
+  ],
+  /* Reino ostrogodo de Italia: el cuadrado a mano bajaba hasta lat 38
+   * (Túnez) y flotaba en el Mediterráneo. La península completa + Sicilia,
+   * más la Dalmacia ostrogoda junto al Adriático. */
+  'ostrogodos-x1': [
+    P(['380'], { ventana: [6.6, 36.6, 19, 47.1] }),
+    P(['191', '705'], { ventana: [13.5, 42.6, 19.7, 46.8] }),
+  ],
+  /* «Atlántico celta»: el rectángulo a mano cubría Irlanda y el Atlántico
+   * abierto. Se traza la franja atlántica: Irlanda, Cornualles, Gales y la
+   * Escocia occidental. */
+  'celtas-t1': [
+    P(['372']),
+    P(['826'], {
+      ventana: [-6.5, 49.5, 0.2, 59],
+      recorte: [
+        [-6.5, 49.5], [-4, 49.5], [-4, 53.5], [-3.2, 53.5],
+        [-3.2, 57], [-6.5, 58.6], [-6.5, 49.5],
+      ],
+    }),
+  ],
+  /* «Galicia y Britania»: un solo hexágono englobaba el mar Cantábrico y el
+   * canal de la Mancha. Se parte en dos huellas: la Gallaecia galaica y la
+   * Armórica bretona. */
+  'celtas-t2': [
+    P(['724'], { ventana: [-9.9, 41.3, -6.2, 43.9] }),
+    P(['250'], { ventana: [-5.2, 47.1, -0.5, 50.1] }),
+  ],
+  /* Costas sureñas que metían medio Pacífico. Ventanas que abrazan el
+   * litoral peruano y quedan recortadas por el contorno real. */
+  'nazca-x1': [P(['604'], { ventana: [-76.4, -16.4, -74.9, -13.6] })],
+  'chimu-x1': [P(['604'], { ventana: [-81, -9.4, -77, -3.8] })],
+  'moche-x1': [P(['604'], { ventana: [-80.2, -9.6, -77.6, -6.6] })],
+  /* «Levante y Egipto» otomano: el polígono a mano unía El Cairo con Alepo
+   * a través del mar. Se parte en Egipto (con Sinaí) y la franja levantina. */
+  'ottomanos-t3': [
+    P(['818'], { ventana: [24, 21.7, 37.5, 31.9] }),
+    P(['760', '422', '376', '275'], { ventana: [33, 29.5, 36.8, 36.9] }),
+  ],
+  /* Jund de Siria abasí: cubría el rincón nordeste del Mediterráneo. */
+  'abasies-cprovinciajunddesiria': [
+    P(['760', '376', '275', '400', '422'], { ventana: [34.4, 29.2, 39.5, 35.9] }),
+  ],
+  /* Las Antillas taínas: el polígono a mano tendía un telón sobre el mar
+   * Caribe; se traza isla por isla (Cuba, Española, Jamaica, Puerto Rico,
+   * Bahamas). */
+  'taino-t1': [P(['192', '332', '214', '388', '630', '044'])],
+  /* Creta minoica: el contorno a mano empujaba la isla al Egeo. */
+  'minoicos-t1': [P(['300'], { ventana: [23.4, 34.8, 26.6, 35.8] })],
+  /* Costa fenicia: la franja a mano flotaba fuera del litoral. */
+  'fenicios-t1': [P(['422', '760'], { ventana: [34.9, 32.6, 36.3, 34.4] })],
+  /* Mapuche: el borde oeste llegaba al Pacífico abierto. */
+  'mapuche-x1': [P(['152'], { ventana: [-73.9, -42.5, -70.6, -33.8] })],
+  /* Tairona: un cuadrado de 0,9° sobre la Sierra Nevada de Santa Marta,
+   * con su esquina en el mar. */
+  'tairona-t1': [P(['170'], { ventana: [-74.8, 10.3, -73, 12] })],
+  /* Etruria: la mitad occidental de la caja era mar Tirreno. */
+  'etruscos-t1': [P(['380'], { ventana: [9.6, 42, 12.9, 44.3] })],
+  /* Aksum: la caja cruzaba el mar Rojo; se queda en Etiopía + Eritrea. */
+  'aksum-t1': [P(['231', '232'], { ventana: [36.6, 12.4, 41, 17.8] })],
+  /* Khoikhoi y san: la columna a mano rozaba el cabo y el mar del Oeste. */
+  'khoi-t1': [P(['710', '528'], { ventana: [14, -35.2, 21.5, -22.5] })],
+  'san-t1': [P(['710', '072', '516', '528'], { ventana: [17.5, -29.5, 27, -18.5] })],
+};
+
+Object.assign(FIGURAS, FIGURAS4);
+
+/* ────────────────────── Tanda 5: auditoría desfasada del 15 % ──────────────
+ * La máscara del auditor se pintaba país por país (las fronteras compartidas
+ * de topojson duplicaban los cruces); con el medidor fiable, estos son los
+ * rellenos que de verdad flotaban en el mar. */
+const FIGURAS5 = {
+  /* Lacio abasí... romano: el hexágono a mano quedó hundido en el Tirreno
+   * (su franja sur, lat 41.0–41.5, era mar). La ventana abraza el Lacio
+   * histórico: Roma, el Vaticano, el Albanum, Sabina y el sisto de Frosinone. */
+  'roma-lacio': [P(['380'], { ventana: [11.95, 41.3, 13.35, 42.35] })],
+  /* Tiro: el blob de la ciudad costera flotaba a medio lado del litoral. */
+  'fenicios-t2': [P(['422'], { ventana: [34.9, 33.0, 35.6, 33.7] })],
+  /* Biblos (Jbeil): idem, franja litoral sur. */
+  'fenicios-t4': [P(['422'], { ventana: [35.3, 33.95, 36.05, 34.5] })],
+  /* Arwad: isla frente a Tarto; ventana apretada sobre el estrecho. */
+  'fenicios-t5': [P(['760'], { ventana: [35.45, 34.55, 36.25, 35.3] })],
+  /* Pilos: ciudad micénica del suroeste del Peloponeso, en la costa. */
+  'micenicos-t3': [P(['300'], { ventana: [21.2, 36.65, 22.15, 37.35] })],
+  /* Peloponeso micénico: el anillo engullía el golfo de Corinto. */
+  'micenicos-t1': [P(['300'], { ventana: [20.6, 36.35, 23.65, 38.25] })],
+  /* Yavné filisteo: blob en la costa sur de Canaán. */
+  'filisteos-t4': [P(['376'], { ventana: [34.45, 31.55, 35.15, 32.15] })],
+  /* Cnoso: segundas islas de la Creta minoica (la t1 ya estaba recortada). */
+  'minoicos-t2': [P(['300'], { ventana: [24.6, 35.05, 26.35, 35.45] })],
+  /* Dahomey fon: la caja se derramaba sobre el golfo de Benín. */
+  'fon-t1': [P(['204'], { ventana: [1.6, 6.1, 3.75, 10.8] })],
+  /* Yorubalandia: rectángulo a mano (lat 4..10) con media franja litoral en el
+   * golfo. Ventana al sur de Benin y suroeste de Nigeria (Oyo al norte). */
+  'yoruba-t1': [
+    P(['566', '204'], { ventana: [2.3, 6.2, 6.7, 10.6] }),
+  ],
+};
+
+Object.assign(FIGURAS, FIGURAS5);
+
+/* ───────────────────── Núcleos polidades que faltaban ─────────────────────
+ * roma, achaemenidas, umeyas y abasies sólo tenían divisiones (provincias y
+ * satrapías): en su mapa inicial se veía el imperio entero ya repartido.
+ * Se añade un núcleo polidad pequeño en su origen; las divisiones siguen
+ * apareciendo con su propia fecha `desde`, así el crecimiento se ve a lo
+ * largo del tiempo. */
+const NUCLEOS = [
+  [
+    { id: 'roma-lacio', civilizacion: 'roma', tipo: 'tierra', nombre: 'Lacio',
+      ancla: [12.4, 41.7], desde: -753, hasta: null, nivel: 'polidad',
+      anillos: [
+        [
+          [11.9, 41.95], [12.3, 41.98], [12.55, 41.55], [12.5, 41.15],
+          [12.15, 41], [11.85, 41.2], [11.7, 41.6], [11.9, 41.95],
+        ],
+      ] },
+    { id: 'roma-lacio', civilizacion: 'roma', tipo: 'tierra', nombre: 'Latium',
+      ancla: [12.4, 41.7], desde: -753, hasta: null, nivel: 'polidad',
+      anillos: [
+        [
+          [11.9, 41.95], [12.3, 41.98], [12.55, 41.55], [12.5, 41.15],
+          [12.15, 41], [11.85, 41.2], [11.7, 41.6], [11.9, 41.95],
+        ],
+      ] },
+  ],
+  [
+    { id: 'achaemenidas-fars', civilizacion: 'achaemenidas', tipo: 'tierra', nombre: 'Fars',
+      ancla: [54.3, 28.9], desde: -550, hasta: null, nivel: 'polidad',
+      anillos: [
+        [
+          [52.3, 30.9], [53.6, 30.6], [54.9, 29.6], [56.1, 28.6],
+          [56.4, 27.6], [55.2, 27.2], [54.1, 27.6], [53, 28.4], [52.3, 29.4],
+          [52.3, 30.9],
+        ],
+      ] },
+    { id: 'achaemenidas-fars', civilizacion: 'achaemenidas', tipo: 'tierra', nombre: 'Fars',
+      ancla: [54.3, 28.9], desde: -550, hasta: null, nivel: 'polidad',
+      anillos: [
+        [
+          [52.3, 30.9], [53.6, 30.6], [54.9, 29.6], [56.1, 28.6],
+          [56.4, 27.6], [55.2, 27.2], [54.1, 27.6], [53, 28.4], [52.3, 29.4],
+          [52.3, 30.9],
+        ],
+      ] },
+  ],
+  [
+    { id: 'umeyas-damasco', civilizacion: 'umeyas', tipo: 'tierra', nombre: 'Damasco',
+      ancla: [36.6, 33.4], desde: 661, hasta: null, nivel: 'polidad',
+      anillos: [
+        [[36.3, 34], [37.1, 34.2], [37.7, 33.5], [37.2, 33], [36.5, 32.5], [35.8, 32.7], [36.3, 34]],
+      ] },
+    { id: 'umeyas-damasco', civilizacion: 'umeyas', tipo: 'tierra', nombre: 'Damascus',
+      ancla: [36.6, 33.4], desde: 661, hasta: null, nivel: 'polidad',
+      anillos: [
+        [[36.3, 34], [37.1, 34.2], [37.7, 33.5], [37.2, 33], [36.5, 32.5], [35.8, 32.7], [36.3, 34]],
+      ] },
+  ],
+  [
+    { id: 'abasies-irak', civilizacion: 'abasies', tipo: 'tierra', nombre: 'Irak',
+      ancla: [44.4, 33.9], desde: 750, hasta: null, nivel: 'polidad',
+      anillos: [
+        [
+          [42.6, 33.3], [43.7, 33], [45.4, 32.9], [46.3, 33.6],
+          [46.1, 34.7], [45, 34.9], [43.4, 34.4], [42.7, 34], [42.6, 33.3],
+        ],
+      ] },
+    { id: 'abasies-irak', civilizacion: 'abasies', tipo: 'tierra', nombre: 'Iraq',
+      ancla: [44.4, 33.9], desde: 750, hasta: null, nivel: 'polidad',
+      anillos: [
+        [
+          [42.6, 33.3], [43.7, 33], [45.4, 32.9], [46.3, 33.6],
+          [46.1, 34.7], [45, 34.9], [43.4, 34.4], [42.7, 34], [42.6, 33.3],
+        ],
+      ] },
+  ],
+];
+
 /* ─────────────────── Aplicación ─────────────────── */
 
 const leer = (n) => JSON.parse(fs.readFileSync(path.join(dirDatos, n), 'utf8'));
@@ -1012,6 +1216,24 @@ const escribir = (n, v) =>
 
 const es = leer('territorios.json');
 const en = leer(path.join('en', 'territorios.json'));
+
+/* Núcleos polidades: se insertan si aún no existen (es y en a la vez). */
+for (const [nuevoEs, nuevoEn] of NUCLEOS) {
+  if (!es.some((t) => t.id === nuevoEs.id)) {
+    es.push(nuevoEs);
+    console.log(`+ núcleo polidad ${nuevoEs.id} (es)`);
+  }
+  if (!en.some((t) => t.id === nuevoEn.id)) {
+    en.push(nuevoEn);
+    console.log(`+ núcleo polidad ${nuevoEn.id} (en)`);
+  }
+}
+
+/* La «Provincia: Italia» romana no existía como provincia el año de la
+ * fundación: la península quedó sometida al fin de las guerras samnitas
+ * (−271); antes de eso sólo se ve el núcleo del Lacio. */
+for (const t of es) if (t.id === 'roma-pitalia' && t.desde === -753) t.desde = -271;
+for (const t of en) if (t.id === 'roma-pitalia' && t.desde === -753) t.desde = -271;
 
 for (const [id, partes] of Object.entries(FIGURAS)) {
   let anillos = partes.flatMap((parte) => construir(parte));

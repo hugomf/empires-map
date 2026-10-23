@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Catalogo } from '../data/catalogo';
 import type { Civilizacion } from '../data/tipos-cultura';
 import type { Idioma } from '../lib/i18n';
@@ -23,6 +24,15 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
   /** Porcentaje acotado: las chrono más antiguas que el eje salen por la izquierda. */
   const pct0 = (a: number) => Math.max(0, Math.min(100, pct(a)));
 
+  /**
+   * El periodo elegido se guarda junto al id de la civilización: al cambiar de
+   * ficha la selección anterior deja de aplicar y se vuelve al primer periodo,
+   * sin necesidad de un efecto que reinicie el estado.
+   */
+  const [periodoElegido, setPeriodoElegido] = useState<{ civ: string; id: string } | null>(
+    null,
+  );
+
   if (!civ) {
     return (
       <aside className={`ficha${abierta ? ' abierta' : ''}`}>
@@ -37,10 +47,54 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
   const region = datos.regiones.find((r) => r.id === civ.region);
   const f = fase(civ, actual);
   const viva = actual >= civ.inicio && actual <= civ.fin;
-  const ciudades = datos.ciudades.filter((c) => c.civilizacion === civ.id);
+  const ciudades = datos.ciudades.filter(
+    (c) => c.civilizacion === civ.id && c.principal !== false,
+  );
   const religiones = datos.religiones.filter((r) => r.civilizacion === civ.id);
   const deidades = datos.deidades.filter((d) => d.civilizacion === civ.id);
   const artefactos = datos.artefactos.filter((a) => a.civilizacion === civ.id);
+
+  const periodos = civ.periodos ?? [];
+  const periodoId = periodoElegido?.civ === civ.id ? periodoElegido.id : null;
+  const setPeriodoId = (id: string) => setPeriodoElegido({ civ: civ.id, id });
+  const periodoActivo = periodos.find((p) => p.id === periodoId) ?? periodos[0] ?? null;
+  const gobernantesCiv = datos.gobernantes.filter((g) => g.civilizacion === civ.id);
+  const gobernantes = periodoActivo
+    ? gobernantesCiv.filter((g) => !g.periodo || g.periodo === periodoActivo.id)
+    : gobernantesCiv;
+
+  const cargo = datos.cargos.find(
+    (c) => c.id === (periodoActivo?.cargo ?? civ.cargoPrincipal),
+  );
+  const forma = datos.formas.find((x) => x.id === (periodoActivo?.forma ?? civ.forma));
+  const escala = datos.escalasPoliticas.find((x) => x.id === civ.escalaPolitica);
+  const dinastia = datos.dinastias.find(
+    (d) => d.id === (periodoActivo?.dinastia ?? civ.dinastiaPrincipal),
+  );
+  const facetas = [escala?.nombre, forma?.nombre, cargo?.nombre, dinastia?.nombre].filter(
+    (x): x is string => Boolean(x),
+  );
+
+  const capitales = datos.capitales.filter((cap) => {
+    if (cap.organizacion !== civ.id) return false;
+    if (!periodoActivo) return true;
+    /* Si la capital declara periodo, manda esa asignación: evita mezclar,
+       por ejemplo, las capitales de Rum con las del Gran Seljuk. */
+    if (cap.periodo) return cap.periodo === periodoActivo.id;
+    const hasta = cap.hasta ?? civ.fin;
+    return cap.desde <= periodoActivo.hasta && hasta >= periodoActivo.desde;
+  });
+
+  const ciudadesDe = (gobernanteId: string) =>
+    datos.ciudadesGobernante
+      .filter((cg) => cg.gobernante === gobernanteId)
+      .flatMap((cg) => {
+        const ciudad = datos.ciudades.find((c) => c.id === cg.ciudad);
+        return ciudad ? [{ ...cg, ciudad }] : [];
+      });
+
+  const tituloGobierno = cargo?.plural ?? t('ficha.gobernantes');
+
   const polidades = datos.territorios.filter(
     (tt) => tt.civilizacion === civ.id && tt.nivel === 'polidad',
   );
@@ -72,6 +126,15 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         <div className="ficha-sub">
           {region?.nombre ?? civ.region} · {duracion(civ.inicio, civ.fin, idioma)}
         </div>
+        {facetas.length > 0 && (
+          <div className="ficha-facetas">
+            {facetas.map((faceta) => (
+              <span key={faceta} className="ficha-faceta">
+                {faceta}
+              </span>
+            ))}
+          </div>
+        )}
         <a
           className="ficha-wiki"
           href={`https://${idioma === 'en' ? 'en' : 'es'}.wikipedia.org/wiki/${encodeURIComponent(civ.nombre.replace(/ /g, '_'))}`}
@@ -168,6 +231,97 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
           <p>{civ.legado}</p>
         </div>
 
+        {gobernantes.length > 0 && (
+          <div className="ficha-bloque ficha-gobierno">
+            <h3>{tituloGobierno}</h3>
+
+            {periodos.length > 1 && (
+              <div className="periodos" role="tablist" aria-label={t('ficha.periodos')}>
+                {periodos.map((p) => (
+                  <button
+                    key={p.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={periodoActivo?.id === p.id}
+                    className={`periodo${periodoActivo?.id === p.id ? ' activo' : ''}`}
+                    onClick={() => setPeriodoId(p.id)}
+                    title={p.nota}
+                  >
+                    <span className="periodo-nombre">{p.nombre}</span>
+                    <span className="periodo-fechas num">
+                      {anioCorto(p.desde, idioma)}–{anioCorto(p.hasta, idioma)}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {periodoActivo?.nota && <p className="ficha-periodo-nota">{periodoActivo.nota}</p>}
+
+            {capitales.length > 0 && (
+              <div className="ficha-capitales">
+                <div className="ficha-capitales-titulo">{t('ficha.capitales')}</div>
+                <ul>
+                  {capitales.map((cap) => {
+                    const ciudad = datos.ciudades.find((c) => c.id === cap.ciudad);
+                    return (
+                      <li key={cap.id}>
+                        <span className="capital-nombre">{ciudad?.nombre ?? cap.ciudad}</span>
+                        <span className="capital-fechas num">
+                          {anioCorto(cap.desde, idioma)}
+                          {cap.hasta !== undefined ? `–${anioCorto(cap.hasta, idioma)}` : ''}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+
+            <ul className="gobernantes">
+              {gobernantes.map((g) => {
+                const cargoG = datos.cargos.find((c) => c.id === g.cargo);
+                const dinastiaG = datos.dinastias.find((d) => d.id === g.dinastiaId);
+                const ciudadesG = ciudadesDe(g.id);
+                return (
+                  <li
+                    key={g.id}
+                    className={g.rol && g.rol !== 'titular' ? 'no-titular' : undefined}
+                  >
+                    <div className="gobernante-cab">
+                      <span className="gobernante-nombre">{g.nombre}</span>
+                      <span className="gobernante-fechas num">
+                        {anioCorto(g.desde, idioma)}
+                        {g.hasta !== g.desde ? `–${anioCorto(g.hasta, idioma)}` : ''}
+                      </span>
+                    </div>
+                    <div className="gobernante-cargo">
+                      {cargoG?.nombre ?? g.titulo}
+                      {(dinastiaG?.nombre ?? g.dinastia)
+                        ? ` · ${dinastiaG?.nombre ?? g.dinastia}`
+                        : ''}
+                      {g.rol && g.rol !== 'titular'
+                        ? ` · ${t(`rolGobernante.${g.rol}`)}`
+                        : ''}
+                    </div>
+                    {g.nota && <p>{g.nota}</p>}
+                    {ciudadesG.length > 0 && (
+                      <div className="gobernante-ciudades">
+                        {ciudadesG.map((cg) => (
+                          <span key={cg.id} className="ciudad-rol" title={cg.nota}>
+                            <span className="ciudad-rol-nombre">{cg.ciudad.nombre}</span>
+                            <span className="ciudad-rol-tipo">{t(`rolCiudad.${cg.rol}`)}</span>
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+
         <div className="ficha-bloque">
           <h3>{t('ficha.ciudades')}</h3>
           {ciudades.length ? (
@@ -222,9 +376,21 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
           </div>
         )}
 
-        {artefactos.length > 0 && (
-          <div className="ficha-bloque">
-            <h3>{t('ficha.artefactos')}</h3>
+        <div className="ficha-bloque">
+          <h3>{t('ficha.cultura')}</h3>
+          <div className="ficha-escritura">
+            <span className="ficha-escritura-titulo">{t('ficha.escritura')}</span>
+            {civ.escritura ? (
+              <span className="ficha-escritura-valor">{civ.escritura}</span>
+            ) : (
+              <span className="ficha-vacio-valor">{t('ficha.sinRegistro')}</span>
+            )}
+          </div>
+        </div>
+
+        <div className="ficha-bloque">
+          <h3>{t('ficha.artefactos')}</h3>
+          {artefactos.length ? (
             <ul className="artefactos">
               {artefactos.map((a) => (
                 <li key={a.id}>
@@ -234,8 +400,10 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
                 </li>
               ))}
             </ul>
-          </div>
-        )}
+          ) : (
+            <p style={{ color: 'var(--pergamino-3)' }}>{t('ficha.sinRegistro')}</p>
+          )}
+        </div>
 
         {(polidades.length > 0 || divisiones.length > 0) && (
           <div className="ficha-bloque">
@@ -250,17 +418,34 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
                   </span>
                 </li>
               ))}
-              {divisiones.map((tt) => (
-                <li key={tt.id} className="es-subdivision">
-                  <span className="div-nombre">
-                    {tt.nombre?.replace(/^(Provincia|Province): /, '').replace(/^(Satrapía|Satrapy): /, '')}
-                  </span>
-                  <span className="div-fechas num">
-                    {tt.desde !== null ? anioCorto(tt.desde, idioma) : ''}
-                    {tt.hasta !== null ? `–${anioCorto(tt.hasta, idioma)}` : '–'}
-                  </span>
-                </li>
-              ))}
+              {divisiones.map((tt) => {
+                const superior = tt.superior
+                  ? datos.civilizaciones.find((c) => c.id === tt.superior)?.nombre ??
+                    tt.superior
+                  : null;
+                const aproximada = tt.confianza && tt.confianza !== 'alta';
+                return (
+                  <li key={tt.id} className="es-subdivision">
+                    <span className="div-nombre">
+                      {tt.nombre?.replace(/^(Provincia|Province): /, '').replace(/^(Satrapía|Satrapy): /, '')}
+                    </span>
+                    <span className="div-fechas num">
+                      {tt.desde !== null ? anioCorto(tt.desde, idioma) : ''}
+                      {tt.hasta !== null ? `–${anioCorto(tt.hasta, idioma)}` : '–'}
+                    </span>
+                    {aproximada && (
+                      <span className="div-aprox" title={tt.fuente ?? t('ficha.aprox')}>
+                        {t('ficha.aprox')}
+                      </span>
+                    )}
+                    {superior && (
+                      <span className="div-superior">
+                        {t('ficha.superior')}: {superior}
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
@@ -268,9 +453,9 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         <div className="ficha-bloque">
           <h3>{t('ficha.hitos')}</h3>
           <ul className="hitos">
-            {civ.hitos.map((h) => (
+            {civ.hitos.map((h, i) => (
               <li
-                key={h.id}
+                key={`${civ.id}-${i}`}
                 className={`hito${h.anio === actual ? ' activo' : ''}`}
                 onClick={() => onIrA(h.anio)}
                 title={t('ficha.irAnio')}

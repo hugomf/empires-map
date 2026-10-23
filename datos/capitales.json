@@ -1,0 +1,119 @@
+[
+  {
+    "id": "ottomanos-capital-sogut",
+    "organizacion": "ottomanos",
+    "periodo": "ottomanos-beylicato",
+    "ciudad": "ottomanos-sogut",
+    "rol": "capital",
+    "desde": 1299,
+    "hasta": 1326,
+    "nota": "Primera capital del beylicato."
+  },
+  {
+    "id": "ottomanos-capital-bursa",
+    "organizacion": "ottomanos",
+    "ciudad": "ottomanos-bursa",
+    "rol": "capital",
+    "desde": 1326,
+    "hasta": 1365,
+    "nota": "Capital hasta la conquista de Edirne."
+  },
+  {
+    "id": "ottomanos-capital-edirne",
+    "organizacion": "ottomanos",
+    "periodo": "ottomanos-sultanato",
+    "ciudad": "ottomanos-edirne",
+    "rol": "capital",
+    "desde": 1365,
+    "hasta": 1453,
+    "nota": "Capital europea del sultanato."
+  },
+  {
+    "id": "ottomanos-capital-constantinopla",
+    "organizacion": "ottomanos",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "capital",
+    "desde": 1453,
+    "hasta": 1922,
+    "nota": "Capital imperial; Kostantiniyye."
+  },
+  {
+    "id": "seljukas-capital-nishapur",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-gran-seljuk",
+    "ciudad": "seljukas-nishapur",
+    "rol": "capital",
+    "desde": 1037,
+    "hasta": 1043,
+    "nota": "Primera capital de Tughril Beg."
+  },
+  {
+    "id": "seljukas-capital-rayy",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-gran-seljuk",
+    "ciudad": "seljukas-rayy",
+    "rol": "capital",
+    "desde": 1043,
+    "hasta": 1072,
+    "nota": "Capital de Tughril Beg y Alp Arslan."
+  },
+  {
+    "id": "seljukas-capital-isfahan",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-gran-seljuk",
+    "ciudad": "seljukas-isfahan",
+    "rol": "capital",
+    "desde": 1072,
+    "hasta": 1118,
+    "nota": "Capital de Malik Shah."
+  },
+  {
+    "id": "seljukas-capital-hamadan",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-gran-seljuk",
+    "ciudad": "seljukas-hamadan",
+    "rol": "capital",
+    "desde": 1118,
+    "hasta": 1194,
+    "nota": "Sede de los últimos sultanes."
+  },
+  {
+    "id": "seljukas-capital-merv",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-gran-seljuk",
+    "ciudad": "seljukas-merv",
+    "rol": "co-capital",
+    "desde": 1118,
+    "hasta": 1157,
+    "nota": "Corte de Sanjar en Corasán."
+  },
+  {
+    "id": "seljukas-capital-iznik",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-rum",
+    "ciudad": "seljukas-iznik",
+    "rol": "capital",
+    "desde": 1077,
+    "hasta": 1097,
+    "nota": "Capital de Rum hasta la Primera Cruzada."
+  },
+  {
+    "id": "seljukas-capital-konya",
+    "organizacion": "seljukas",
+    "periodo": "seljukas-rum",
+    "ciudad": "seljukas-konya",
+    "rol": "capital",
+    "desde": 1097,
+    "hasta": 1194,
+    "nota": "Capital de Rum; el sultanato sobrevivió hasta 1308."
+  },
+  {
+    "id": "mamelucos-capital-cairo",
+    "organizacion": "mamelucos",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "capital",
+    "desde": 1250,
+    "hasta": 1517,
+    "nota": "Capital del sultanato mameluco."
+  }
+]

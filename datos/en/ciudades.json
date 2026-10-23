@@ -2763,7 +2763,7 @@
     "id": "rusia-nizhni-novgorod",
     "civilizacion": "rusia",
     "nombre": "Nizhni Novgorod",
-    "actual": "Russia",
+    "actual": "Nizhny Novgorod, Russia",
     "lat": 56.33,
     "lon": 44
   },
@@ -2982,5 +2982,440 @@
     "actual": "Timbuktu, Mali",
     "lat": 16.77,
     "lon": -3.01
+  },
+  {
+    "id": "moscovia-moscu",
+    "civilizacion": "moscovia",
+    "nombre": "Moscow",
+    "actual": "Moscow, Russia",
+    "lat": 55.76,
+    "lon": 37.62
+  },
+  {
+    "id": "moscovia-vladimir",
+    "civilizacion": "moscovia",
+    "nombre": "Vladimir",
+    "actual": "Vladimir, Russia",
+    "lat": 56.13,
+    "lon": 40.41
+  },
+  {
+    "id": "zarato-ruso-moscu",
+    "civilizacion": "zarato-ruso",
+    "nombre": "Moscow",
+    "actual": "Moscow, Russia",
+    "lat": 55.76,
+    "lon": 37.62
+  },
+  {
+    "id": "zarato-ruso-kazan",
+    "civilizacion": "zarato-ruso",
+    "nombre": "Kazan",
+    "actual": "Kazan, Russia",
+    "lat": 55.79,
+    "lon": 49.12
+  },
+  {
+    "id": "zarato-ruso-astracan",
+    "civilizacion": "zarato-ruso",
+    "nombre": "Astrakhan",
+    "actual": "Astrakhan, Russia",
+    "lat": 46.35,
+    "lon": 48.04
+  },
+  {
+    "id": "revolucion-rusa-petrogrado",
+    "civilizacion": "revolucion-rusa",
+    "nombre": "Petrograd",
+    "actual": "Saint Petersburg, Russia",
+    "lat": 59.93,
+    "lon": 30.34
+  },
+  {
+    "id": "revolucion-rusa-moscu",
+    "civilizacion": "revolucion-rusa",
+    "nombre": "Moscow",
+    "actual": "Moscow, Russia",
+    "lat": 55.76,
+    "lon": 37.62
+  },
+  {
+    "id": "federacion-rusa-moscu",
+    "civilizacion": "federacion-rusa",
+    "nombre": "Moscow",
+    "actual": "Moscow, Russia",
+    "lat": 55.76,
+    "lon": 37.62
+  },
+  {
+    "id": "federacion-rusa-san-petersburgo",
+    "civilizacion": "federacion-rusa",
+    "nombre": "Saint Petersburg",
+    "actual": "Saint Petersburg, Russia",
+    "lat": 59.93,
+    "lon": 30.34
+  },
+  {
+    "id": "federacion-rusa-novosibirsk",
+    "civilizacion": "federacion-rusa",
+    "nombre": "Novosibirsk",
+    "actual": "Novosibirsk, Russia",
+    "lat": 55.03,
+    "lon": 82.92
+  },
+  {
+    "id": "horda-de-oro-sarai",
+    "civilizacion": "horda-de-oro",
+    "nombre": "Sarai",
+    "actual": "Sarai-Batu, Russia",
+    "lat": 46.75,
+    "lon": 47.17
+  },
+  {
+    "id": "horda-de-oro-kazan",
+    "civilizacion": "horda-de-oro",
+    "nombre": "Kazan",
+    "actual": "Kazan, Russia",
+    "lat": 55.79,
+    "lon": 49.12
+  },
+  {
+    "id": "novgorod-novgorod",
+    "civilizacion": "novgorod",
+    "nombre": "Novgorod",
+    "actual": "Veliky Novgorod, Russia",
+    "lat": 58.52,
+    "lon": 31.27
+  },
+  {
+    "id": "novgorod-pskov",
+    "civilizacion": "novgorod",
+    "nombre": "Pskov",
+    "actual": "Pskov, Russia",
+    "lat": 57.82,
+    "lon": 28.33
+  },
+  {
+    "id": "ottomanos-sogut",
+    "civilizacion": "ottomanos",
+    "nombre": "Sogut",
+    "actual": "Sogut, Turkey",
+    "lat": 40.02,
+    "lon": 30.18
+  },
+  {
+    "id": "ottomanos-iznik",
+    "civilizacion": "ottomanos",
+    "nombre": "Iznik",
+    "actual": "Iznik, Turkey",
+    "lat": 40.43,
+    "lon": 29.72
+  },
+  {
+    "id": "ottomanos-izmit",
+    "civilizacion": "ottomanos",
+    "nombre": "Izmit",
+    "actual": "Izmit, Turkey",
+    "lat": 40.77,
+    "lon": 29.94
+  },
+  {
+    "id": "ottomanos-ankara",
+    "civilizacion": "ottomanos",
+    "nombre": "Ankara",
+    "actual": "Ankara, Turkey",
+    "lat": 39.93,
+    "lon": 32.86,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-pristina",
+    "civilizacion": "ottomanos",
+    "nombre": "Pristina",
+    "actual": "Pristina, Kosovo",
+    "lat": 42.66,
+    "lon": 21.17,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-varna",
+    "civilizacion": "ottomanos",
+    "nombre": "Varna",
+    "actual": "Varna, Bulgaria",
+    "lat": 43.21,
+    "lon": 27.91,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-trebisonda",
+    "civilizacion": "ottomanos",
+    "nombre": "Trebizond",
+    "actual": "Trabzon, Turkey",
+    "lat": 41.0,
+    "lon": 39.72
+  },
+  {
+    "id": "ottomanos-rodas",
+    "civilizacion": "ottomanos",
+    "nombre": "Rhodes",
+    "actual": "Rhodes, Greece",
+    "lat": 36.43,
+    "lon": 28.22
+  },
+  {
+    "id": "ottomanos-buda",
+    "civilizacion": "ottomanos",
+    "nombre": "Buda",
+    "actual": "Budapest, Hungary",
+    "lat": 47.5,
+    "lon": 19.04
+  },
+  {
+    "id": "ottomanos-la-meca",
+    "civilizacion": "ottomanos",
+    "nombre": "Mecca",
+    "actual": "Mecca, Saudi Arabia",
+    "lat": 21.42,
+    "lon": 39.83
+  },
+  {
+    "id": "ottomanos-medina",
+    "civilizacion": "ottomanos",
+    "nombre": "Medina",
+    "actual": "Medina, Saudi Arabia",
+    "lat": 24.47,
+    "lon": 39.61
+  },
+  {
+    "id": "ottomanos-argel",
+    "civilizacion": "ottomanos",
+    "nombre": "Algiers",
+    "actual": "Algiers, Algeria",
+    "lat": 36.75,
+    "lon": 3.06
+  },
+  {
+    "id": "ottomanos-lepanto",
+    "civilizacion": "ottomanos",
+    "nombre": "Lepanto",
+    "actual": "Nafpaktos, Greece",
+    "lat": 38.39,
+    "lon": 21.83,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-tunez",
+    "civilizacion": "ottomanos",
+    "nombre": "Tunis",
+    "actual": "Tunis, Tunisia",
+    "lat": 36.8,
+    "lon": 10.18
+  },
+  {
+    "id": "ottomanos-eger",
+    "civilizacion": "ottomanos",
+    "nombre": "Eger",
+    "actual": "Eger, Hungary",
+    "lat": 47.9,
+    "lon": 20.37,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-khotyn",
+    "civilizacion": "ottomanos",
+    "nombre": "Khotyn",
+    "actual": "Khotyn, Ukraine",
+    "lat": 48.51,
+    "lon": 26.49,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-revan",
+    "civilizacion": "ottomanos",
+    "nombre": "Yerevan",
+    "actual": "Yerevan, Armenia",
+    "lat": 40.18,
+    "lon": 44.51,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-candia",
+    "civilizacion": "ottomanos",
+    "nombre": "Candia",
+    "actual": "Heraklion, Greece",
+    "lat": 35.34,
+    "lon": 25.13
+  },
+  {
+    "id": "ottomanos-kamieniec",
+    "civilizacion": "ottomanos",
+    "nombre": "Kamianets",
+    "actual": "Kamianets-Podilskyi, Ukraine",
+    "lat": 48.68,
+    "lon": 26.59,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-karlowitz",
+    "civilizacion": "ottomanos",
+    "nombre": "Karlowitz",
+    "actual": "Sremski Karlovci, Serbia",
+    "lat": 45.2,
+    "lon": 19.93,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-kucuk-kaynarca",
+    "civilizacion": "ottomanos",
+    "nombre": "Kucuk Kaynarca",
+    "actual": "Bulgaria",
+    "lat": 43.85,
+    "lon": 27.3,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-ochakov",
+    "civilizacion": "ottomanos",
+    "nombre": "Ochakiv",
+    "actual": "Ochakiv, Ukraine",
+    "lat": 46.61,
+    "lon": 31.54,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-acre",
+    "civilizacion": "ottomanos",
+    "nombre": "Acre",
+    "actual": "Acre, Israel",
+    "lat": 32.92,
+    "lon": 35.07,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-atenas",
+    "civilizacion": "ottomanos",
+    "nombre": "Athens",
+    "actual": "Athens, Greece",
+    "lat": 37.98,
+    "lon": 23.73,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-navarino",
+    "civilizacion": "ottomanos",
+    "nombre": "Navarino",
+    "actual": "Pylos, Greece",
+    "lat": 36.91,
+    "lon": 21.7,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-sevastopol",
+    "civilizacion": "ottomanos",
+    "nombre": "Sevastopol",
+    "actual": "Sevastopol, Crimea",
+    "lat": 44.62,
+    "lon": 33.52,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-salonica",
+    "civilizacion": "ottomanos",
+    "nombre": "Salonica",
+    "actual": "Thessaloniki, Greece",
+    "lat": 40.64,
+    "lon": 22.94
+  },
+  {
+    "id": "ottomanos-galipoli",
+    "civilizacion": "ottomanos",
+    "nombre": "Gallipoli",
+    "actual": "Gelibolu, Turkey",
+    "lat": 40.41,
+    "lon": 26.67,
+    "principal": false
+  },
+  {
+    "id": "ottomanos-izmir",
+    "civilizacion": "ottomanos",
+    "nombre": "Izmir",
+    "actual": "Izmir, Turkey",
+    "lat": 38.42,
+    "lon": 27.14
+  },
+  {
+    "id": "seljukas-merv",
+    "civilizacion": "seljukas",
+    "nombre": "Merv",
+    "actual": "Mary, Turkmenistan",
+    "lat": 37.66,
+    "lon": 62.19
+  },
+  {
+    "id": "seljukas-rayy",
+    "civilizacion": "seljukas",
+    "nombre": "Rayy",
+    "actual": "Ray, Iran",
+    "lat": 35.59,
+    "lon": 51.43
+  },
+  {
+    "id": "seljukas-hamadan",
+    "civilizacion": "seljukas",
+    "nombre": "Hamadan",
+    "actual": "Hamadan, Iran",
+    "lat": 34.8,
+    "lon": 48.51
+  },
+  {
+    "id": "seljukas-malazgirt",
+    "civilizacion": "seljukas",
+    "nombre": "Malazgirt",
+    "actual": "Malazgirt, Turkey",
+    "lat": 39.15,
+    "lon": 42.54,
+    "principal": false
+  },
+  {
+    "id": "seljukas-iznik",
+    "civilizacion": "seljukas",
+    "nombre": "Iznik",
+    "actual": "Iznik, Turkey",
+    "lat": 40.43,
+    "lon": 29.72
+  },
+  {
+    "id": "mamelucos-alejandria",
+    "civilizacion": "mamelucos",
+    "nombre": "Alexandria",
+    "actual": "Alexandria, Egypt",
+    "lat": 31.2,
+    "lon": 29.92
+  },
+  {
+    "id": "mamelucos-acre",
+    "civilizacion": "mamelucos",
+    "nombre": "Acre",
+    "actual": "Acre, Israel",
+    "lat": 32.92,
+    "lon": 35.07,
+    "principal": false
+  },
+  {
+    "id": "mamelucos-homs",
+    "civilizacion": "mamelucos",
+    "nombre": "Homs",
+    "actual": "Homs, Syria",
+    "lat": 34.73,
+    "lon": 36.72,
+    "principal": false
+  },
+  {
+    "id": "mamelucos-damasco",
+    "civilizacion": "mamelucos",
+    "nombre": "Damascus",
+    "actual": "Damascus, Syria",
+    "lat": 33.51,
+    "lon": 36.29
   }
 ]

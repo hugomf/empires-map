@@ -101,6 +101,19 @@ body::after {
    Estructura
    ============================================================ */
 
+/* Texto sólo para lectores de pantalla: fuera del flujo de la cuadrícula. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .app {
   display: grid;
   grid-template-rows: var(--alto-cabecera) minmax(0, 1fr) var(--alto-cronologia);
@@ -385,6 +398,41 @@ body::after {
   transition: background 0.14s, border-color 0.14s;
 }
 
+.riel-item:focus-visible,
+.g-fila:focus-visible,
+.enlace-accion:focus-visible {
+  outline: 2px solid var(--bronce);
+  outline-offset: -2px;
+}
+
+/* Bloque de estado vacío con acciones (tarea 1.7 de mejorar-experiencia) */
+.vacio {
+  padding: 6px 0;
+}
+
+.vacio-acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.enlace-accion {
+  appearance: none;
+  border: 1px solid var(--bronce);
+  background: transparent;
+  color: var(--bronce);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font: inherit;
+  font-size: 11.5px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.enlace-accion:hover {
+  background: rgba(201, 160, 76, 0.12);
+}
+
 .riel-item:hover {
   background: rgba(236, 226, 202, 0.04);
 }
@@ -480,14 +528,14 @@ body::after {
 
 .geo-region-fantasma {
   fill: none;
-  stroke: rgba(236, 226, 202, 0.1);
+  stroke: none;
   stroke-width: 0.35;
   vector-effect: non-scaling-stroke;
   pointer-events: none;
 }
 
 .geo-region-fantasma.reclamada {
-  opacity: 0.25;
+  /* En desuso: el contorno de región moderna sólo se dibuja con BORDERS. */
 }
 
 /* Ciudades históricas: puntos discretos y etiquetas sólo al seleccionar. */
@@ -723,6 +771,24 @@ body::after {
   letter-spacing: 0.06em;
 }
 
+.ficha-facetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.ficha-faceta {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pergamino-2);
+  border: 1px solid rgba(201, 160, 76, 0.22);
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
 .ficha-datos {
   margin: 18px 0 0;
   display: grid;
@@ -780,6 +846,102 @@ body::after {
   margin-top: 9px;
 }
 
+/* Selector de periodos de una organización */
+.periodos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 9px;
+}
+
+.periodo {
+  appearance: none;
+  border: 1px solid rgba(201, 160, 76, 0.2);
+  background: rgba(201, 160, 76, 0.04);
+  color: var(--pergamino-2);
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.periodo:hover {
+  border-color: rgba(201, 160, 76, 0.45);
+}
+
+.periodo.activo {
+  border-color: var(--bronce);
+  background: rgba(201, 160, 76, 0.12);
+}
+
+.periodo-nombre {
+  display: block;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pergamino);
+}
+
+.periodo-fechas {
+  display: block;
+  margin-top: 2px;
+  font-size: 8.5px;
+  color: var(--pergamino-3);
+}
+
+.ficha-periodo-nota {
+  margin: 0 0 10px;
+  font-size: 12px !important;
+  line-height: 1.5;
+  color: var(--pergamino-3) !important;
+  font-style: italic;
+}
+
+/* Capitales del periodo */
+.ficha-capitales {
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border: 1px solid rgba(201, 160, 76, 0.14);
+  border-radius: 3px;
+  background: rgba(201, 160, 76, 0.03);
+}
+
+.ficha-capitales-titulo {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bronce);
+  margin-bottom: 5px;
+}
+
+.ficha-capitales ul {
+  list-style: none;
+  display: grid;
+  gap: 3px;
+}
+
+.ficha-capitales li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.capital-nombre {
+  font-size: 12.5px;
+  color: var(--pergamino);
+}
+
+.capital-fechas {
+  font-size: 9px;
+  color: var(--pergamino-3);
+  white-space: nowrap;
+}
+
 /* Ciudades principales de la ficha */
 .ficha-ciudades {
   list-style: none;
@@ -812,6 +974,89 @@ body::after {
   letter-spacing: 0.04em;
   color: var(--pergamino-3);
   text-align: right;
+}
+
+/* Gobernantes de la ficha */
+.gobernantes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gobernantes li {
+  border-left: 2px solid rgba(201, 160, 76, 0.25);
+  padding: 1px 0 1px 11px;
+}
+
+.gobernante-cab {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gobernante-nombre {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pergamino);
+}
+
+.gobernante-fechas {
+  font-size: 9.5px;
+  color: var(--bronce);
+  white-space: nowrap;
+}
+
+.gobernante-cargo {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+  margin: 2px 0 3px;
+}
+
+.gobernante-ciudades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.ciudad-rol {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  border: 1px solid rgba(201, 160, 76, 0.16);
+  border-radius: 999px;
+  padding: 2px 7px;
+  background: rgba(201, 160, 76, 0.04);
+}
+
+.ciudad-rol-nombre {
+  font-size: 11px;
+  color: var(--pergamino);
+}
+
+.ciudad-rol-tipo {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+}
+
+.gobernantes li.no-titular {
+  border-left-style: dashed;
+  opacity: 0.85;
+}
+
+.gobernantes p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--pergamino-2);
 }
 
 .ficha-nota {
@@ -1370,6 +1615,145 @@ body::after {
   color: var(--pergamino-3);
 }
 
+/* ---------- Panel de capas ---------- */
+.panel-capas {
+  position: absolute;
+  top: calc(var(--alto-cabecera) - 6px);
+  right: 18px;
+  z-index: 70;
+  padding: 12px 12px 8px;
+  border: 1px solid var(--borde-fuerte);
+  border-radius: var(--r-m);
+  background: rgba(11, 14, 20, 0.97);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(330px, calc(100vw - 36px));
+}
+
+.capas-cabecera {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.capas-buscar {
+  flex: 1;
+  border: 1px solid var(--borde);
+  border-radius: var(--r-m);
+  background: rgba(38, 56, 76, 0.35);
+  color: var(--pergamino-1);
+  font-family: var(--cuerpo);
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.capas-buscar::placeholder {
+  color: var(--pergamino-3);
+}
+
+.capas-acciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.capas-recuento {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+}
+
+.capas-lista {
+  max-height: min(46vh, 380px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 2px;
+}
+
+.capas-region {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pergamino-3);
+  position: sticky;
+  top: 0;
+  background: rgba(11, 14, 20, 0.97);
+  padding: 4px 0;
+}
+
+.capa {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) 26px 26px;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.capa:hover {
+  background: rgba(201, 160, 76, 0.12);
+}
+
+.capa .punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.capa .nombre {
+  font-family: var(--cuerpo);
+  font-size: 12.5px;
+  color: var(--pergamino-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.capa.oculta .nombre {
+  color: var(--pergamino-3);
+  text-decoration: line-through;
+}
+
+.capa button {
+  border: none;
+  background: none;
+  color: var(--pergamino-2);
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.capa button:hover {
+  background: rgba(201, 160, 76, 0.22);
+  color: var(--pergamino-1);
+}
+
+.capa.oculta .ojito {
+  color: var(--pergamino-3);
+}
+
+.capa.solo .nombre {
+  color: var(--dorado, #c9a04c);
+}
+
+.capa .solo.activo {
+  background: rgba(201, 160, 76, 0.3);
+  color: var(--pergamino-1);
+}
+
 .solo-movil {
   display: none;
 }
@@ -1538,6 +1922,19 @@ body::after {
     min-width: 0;
   }
 
+  .panel-capas {
+    /* Anclada a la cabecera absolutamente, una lista larga se sale por
+     * arriba de la pantalla: en móvil se fija como hoja inferior. */
+    position: fixed;
+    inset: auto 0 0 0;
+    width: auto;
+    max-height: 62vh;
+    overflow-y: auto;
+    border-radius: 12px 12px 0 0;
+    z-index: 90;
+    padding-bottom: 16px;
+  }
+
   .g-fila {
     grid-template-columns: 132px minmax(0, 1fr);
   }
@@ -1558,10 +1955,12 @@ body::after {
    Capas nuevas: regiones fantasma, territorios, ciudades, cultura
    ============================================================ */
 
-/* Las fronteras modernas sólo como contexto, nunca como color */
+/* Fronteras de región: contexto optativo (botón BORDERS). Sin el botón
+   activo la silueta geo-tierra ya dibuja la costa; aquí el contorno
+   permanece apagado para no pintar fronteras modernas en eras antiguas. */
 .geo-region-fantasma {
   fill: none;
-  stroke: rgba(236, 226, 202, 0.09);
+  stroke: none;
   stroke-width: 0.4;
   vector-effect: non-scaling-stroke;
   pointer-events: none;
@@ -2252,4 +2651,17 @@ body::after {
   padding: 14px 11px;
   color: var(--pergamino-3);
   font-size: 12px;
+}
+
+/* Objetivos táctiles ≥ 44 px en pantallas táctiles (tarea 1.9 de mejorar-experiencia) */
+@media (pointer: coarse) {
+  .chip,
+  .boton,
+  .riel-item {
+    min-height: 44px;
+  }
+
+  .g-fila {
+    min-height: 44px;
+  }
 }

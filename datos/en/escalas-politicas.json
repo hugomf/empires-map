@@ -1,0 +1,10 @@
+[
+  { "id": "ciudad-estado", "nombre": "City-state", "orden": 10 },
+  { "id": "principado", "nombre": "Principality", "orden": 20 },
+  { "id": "ducado", "nombre": "Duchy", "orden": 30 },
+  { "id": "reino", "nombre": "Kingdom", "orden": 40 },
+  { "id": "imperio", "nombre": "Empire", "orden": 50 },
+  { "id": "estado", "nombre": "State", "orden": 60 },
+  { "id": "confederacion", "nombre": "Confederation", "orden": 70 },
+  { "id": "organizacion-supranacional", "nombre": "Supranational organization", "orden": 80 }
+]

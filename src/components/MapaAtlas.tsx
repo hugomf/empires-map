@@ -6,6 +6,7 @@ import type { Civilizacion } from '../data/tipos-cultura';
 import type { Catalogo } from '../data/catalogo';
 import { construirMapa } from '../lib/geo';
 import { COLOR_FASE, fase, pasaFiltros, type Filtros } from '../lib/dominio';
+import { coloresReligiosos, colorFamilia, ORDEN_FAMILIAS, vigenteEn } from '../lib/religion';
 
 type T = (clave: string, vars?: Record<string, string | number>) => string;
 
@@ -21,9 +22,13 @@ interface Props {
   onHover: (id: string | null) => void;
   t: T;
   fronterasModernas: boolean;
+  /** ¿Debe dibujarse la capa de esta civilización? (panel de capas) */
+  capaVisible: (id: string) => boolean;
   /** Color efectivo por civilización (identidad o fase). */
   modoColor: 'identidad' | 'fase';
   colores: Map<string, string>;
+  /** Capa de tinte religioso. */
+  capaReligiones: boolean;
 }
 
 interface Rotulo {
@@ -120,8 +125,11 @@ export function MapaAtlas({
   onHover,
   t,
   fronterasModernas,
-  colores,
+  capaVisible,
   modoColor,
+  colores,
+  /** Capa de tinte religioso. */
+  capaReligiones,
 }: Props) {
   const contRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -190,6 +198,7 @@ export function MapaAtlas({
     for (const r of geo.regiones) {
       const dom = dominante.get(r.id);
       if (!dom) continue;
+      if (!capaVisible(dom.id)) continue;
       const mayor = dom.peso >= 8;
       items.push({
         id: r.id,
@@ -202,7 +211,7 @@ export function MapaAtlas({
     const colocado = colocarRotulos(items);
     cajasRotulos.current = colocado.cajas;
     return colocado.rotulos;
-  }, [geo, dominante]);
+  }, [geo, dominante, capaVisible]);
 
   /**
    * Territorios precisos: polígonos fechados que sustituyen al relleno del
@@ -215,17 +224,11 @@ export function MapaAtlas({
         if (tt.hasta !== null && anio > tt.hasta) return false;
         const civ = civVivas.get(tt.civ);
         if (!civ) return false;
+        if (!capaVisible(tt.civ)) return false;
         return pasaFiltros(civ, filtros, datos.regiones);
       })
       .sort((a, b) => (civVivas.get(a.civ)?.peso ?? 0) - (civVivas.get(b.civ)?.peso ?? 0));
-  }, [geo, anio, civVivas, filtros, datos.regiones]);
-
-  /** Regiones que un territorio ocupa: su relleno moderno se apaga. */
-  const regionesReclamadas = useMemo(() => {
-    const s = new Set<string>();
-    for (const tt of territorios) for (const r of tt.reclama) s.add(r);
-    return s;
-  }, [territorios]);
+  }, [geo, anio, civVivas, filtros, datos.regiones, capaVisible]);
 
   /** Ciudades de las civilizaciones vivas, agrupadas por Dueño. */
   const ciudades = useMemo(() => {
@@ -233,13 +236,14 @@ export function MapaAtlas({
     for (const c of geo.ciudades) {
       const civ = civVivas.get(c.civ);
       if (!civ) continue;
+      if (!capaVisible(c.civ)) continue;
       if (!pasaFiltros(civ, filtros, datos.regiones)) continue;
       const arr = m.get(c.civ);
       if (arr) arr.push({ id: c.id, nombre: c.nombre, x: c.x, y: c.y });
       else m.set(c.civ, [{ id: c.id, nombre: c.nombre, x: c.x, y: c.y }]);
     }
     return m;
-  }, [geo, civVivas, filtros, datos.regiones]);
+  }, [geo, civVivas, filtros, datos.regiones, capaVisible]);
 
   /**
    * Rótulos de los territorios visibles. Al elegir una civilización con muchas
@@ -311,22 +315,27 @@ export function MapaAtlas({
           <path className="geo-graticula" d={geo.graticula} />
           <path className="geo-halo" d={geo.tierra} />
           <path className="geo-tierra" d={geo.tierra} fill="url(#pergamino-tierra)" />
-          <g className="geo-fronteras">
-            {geo.fronteras.map((d, i) => (
-              <path key={i} d={d} />
-            ))}
-          </g>
+          {/* Las fronteras de los países modernos son contexto optativo: un
+           * atlas del año −50000 no puede llevarlas de fábrica. */}
+          {fronterasModernas && (
+            <g className="geo-fronteras">
+              {geo.fronteras.map((d, i) => (
+                <path key={i} d={d} />
+              ))}
+            </g>
+          )}
 
-          {/* Contorno de las regiones modernas: sólo contexto */}
-          {geo.regiones.map((r) => (
-            <path
-              key={r.id}
-              className={`geo-region-fantasma${regionesReclamadas.has(r.id) ? ' reclamada' : ''}${
-                fronterasModernas ? ' modernas' : ''
-              }`}
-              d={r.d}
-            />
-          ))}
+          {/* Contorno de las regiones modernas: sólo con el botón BORDERS.
+           * «Reclamada» resaltaba regiones en todas las eras y eso pintaba
+           * fronteras de países actuales hasta en el año −50000. */}
+          {fronterasModernas &&
+            geo.regiones.map((r) => (
+              <path
+                key={r.id}
+                className="geo-region-fantasma modernas"
+                d={r.d}
+              />
+            ))}
 
           {/* Rótulos de la potencia dominante de cada región */}
           {rotulos.map((r) => {
@@ -347,7 +356,7 @@ export function MapaAtlas({
             );
           })}
 
-          {/* Territorios históricos */}
+{/* Territorios históricos */}
           {territorios.map((tt) => {
             const civ = civVivas.get(tt.civ)!;
             const sel = civ.id === seleccion;
@@ -356,11 +365,18 @@ export function MapaAtlas({
             const decaido = f === 'decadencia' || f === 'muerte';
             const division = tt.nivel === 'division';
             const rotTerr = rotulosTerr.find((x) => x.id === tt.id);
+            const religionesVivas = datos.religiones.filter((r) =>
+              r.civilizacion === civ.id && vigenteEn(r, anio),
+            );
+            const colorTerritorio =
+              capaReligiones && religionesVivas.length > 0
+                ? coloresReligiosos([civ], religionesVivas, anio).get(civ.id) ?? civ.color
+                : colores.get(civ.id) ?? civ.color;
             return (
               <g
                 key={tt.id}
                 className={`geo-territorio${division ? ' division' : ''}`}
-                style={{ color: colores.get(civ.id) ?? civ.color }}
+                style={{ color: colorTerritorio }}
               >
                 <path
                   className="terr-halo"
@@ -381,7 +397,7 @@ export function MapaAtlas({
                         : enc
                           ? 0.3
                           : 0.2
-                  }
+                }
                   strokeOpacity={sel || enc ? 1 : division ? 0.5 : 0.78}
                   strokeDasharray={decaido ? '5 3' : division ? '3 2' : undefined}
                   filter={sel ? 'url(#brillo)' : undefined}
@@ -468,7 +484,40 @@ export function MapaAtlas({
               transform={`translate(${geo.cartela[0]}, ${geo.cartela[1]})`}
               aria-hidden
             >
-              {modoColor === 'fase' ? (
+              {capaReligiones ? (
+                /* Tinte religioso: la cartela explica las familias del tinte,
+                 * no los colores de identidad ni de fase, porque el relleno del
+                 * mapa ya no es el de la civilización. */
+                <>
+                  <rect className="cartela-marco" x={-96} y={-52} width={192} height={158} rx={2} />
+                  <rect
+                    className="cartela-marco interior"
+                    x={-92}
+                    y={-48}
+                    width={184}
+                    height={150}
+                    rx={1}
+                  />
+                  <text className="cartela-titulo" x={-84} y={-33}>
+                    {t('mapa.religiones').toUpperCase()}
+                  </text>
+                  {ORDEN_FAMILIAS.map((familia, i) => (
+                    <g key={familia}>
+                      <rect
+                        className="cartela-muestra"
+                        x={-84}
+                        y={-24 + i * 14}
+                        width={16}
+                        height={7}
+                        fill={colorFamilia(familia)}
+                      />
+                      <text className="cartela-texto" x={-61} y={-18 + i * 14}>
+                        {t(`religion.familia.${familia}`)}
+                      </text>
+                    </g>
+                  ))}
+                </>
+              ) : modoColor === 'fase' ? (
                 <>
                   <rect className="cartela-marco" x={-96} y={-52} width={192} height={104} rx={2} />
                   <rect

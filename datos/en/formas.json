@@ -1,0 +1,11 @@
+[
+  { "id": "monarquia", "nombre": "Monarchy", "grupo": "monarchy" },
+  { "id": "monarquia-constitucional", "nombre": "Constitutional monarchy", "grupo": "monarchy" },
+  { "id": "monarquia-electiva", "nombre": "Elective monarchy", "grupo": "monarchy" },
+  { "id": "republica", "nombre": "Republic", "grupo": "republic" },
+  { "id": "republica-oligarquica", "nombre": "Oligarchic republic", "grupo": "republic" },
+  { "id": "teocracia", "nombre": "Theocracy", "grupo": "theocracy" },
+  { "id": "diarquia", "nombre": "Diarchy", "grupo": "monarchy" },
+  { "id": "confederacion", "nombre": "Confederation", "grupo": "other" },
+  { "id": "jefatura-tribal", "nombre": "Tribal chiefdom", "grupo": "other" }
+]

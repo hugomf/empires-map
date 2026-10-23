@@ -2,11 +2,19 @@ import * as ES from './datos.generados';
 import type { Idioma } from '../lib/i18n';
 import type {
   Artefacto,
+  Capital,
+  Cargo,
   Ciudad,
+  CiudadGobernante,
   Civilizacion,
   Deidad,
+  Dinastia,
+  EscalaPoliticaDef,
+  FormaGobierno,
+  Gobernante,
   Region,
   Religion,
+  Soberania,
   Territorio,
 } from './tipos-cultura';
 
@@ -18,6 +26,14 @@ export interface Catalogo {
   deidades: Deidad[];
   ciudades: Ciudad[];
   artefactos: Artefacto[];
+  gobernantes: Gobernante[];
+  formas: FormaGobierno[];
+  escalasPoliticas: EscalaPoliticaDef[];
+  soberanias: Soberania[];
+  cargos: Cargo[];
+  dinastias: Dinastia[];
+  capitales: Capital[];
+  ciudadesGobernante: CiudadGobernante[];
   anioMin: number;
   anioMax: number;
 }
@@ -30,6 +46,14 @@ const de = (m: typeof ES): Catalogo => ({
   deidades: m.DEIDADES,
   ciudades: m.CIUDADES,
   artefactos: m.ARTEFACTOS,
+  gobernantes: m.GOBERNANTES,
+  formas: m.FORMAS,
+  escalasPoliticas: m.ESCALAS_POLITICAS,
+  soberanias: m.SOBERANIAS,
+  cargos: m.CARGOS,
+  dinastias: m.DINASTIAS,
+  capitales: m.CAPITALES,
+  ciudadesGobernante: m.CIUDADES_GOBERNANTE,
   anioMin: m.ANIO_MIN,
   anioMax: m.ANIO_MAX,
 });

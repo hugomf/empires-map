@@ -3,6 +3,7 @@ import type { Civilizacion, Region } from '../data/tipos-cultura';
 import { ANIO_MAX, ANIO_MIN } from '../data/datos.generados';
 import { ERAS, anioCorto } from '../lib/tiempo';
 import type { Idioma } from '../lib/i18n';
+import { esActivacion, teclasLista } from '../lib/teclado';
 import { Comparacion } from './Comparacion';
 
 type T = (clave: string, vars?: Record<string, string | number>) => string;
@@ -404,6 +405,9 @@ interface GanttProps {
   idioma: Idioma;
   regiones: Region[];
   ventana: Ventana;
+  /** Acciones del estado vacío (tarea 1.7 de mejorar-experiencia). */
+  onLimpiarBusqueda: () => void;
+  onQuitarFiltros: () => void;
 }
 
 function Gantt({
@@ -419,6 +423,8 @@ function Gantt({
   idioma,
   regiones,
   ventana,
+  onLimpiarBusqueda,
+  onQuitarFiltros,
 }: GanttProps) {
   const marcoRef = useRef<HTMLDivElement>(null);
   const [ancho, setAncho] = useState(800);
@@ -493,9 +499,21 @@ function Gantt({
                   key={c.id}
                   data-id={c.id}
                   className={`g-fila${c.id === seleccion ? ' sel' : ''}${viva ? ' viva' : ''}`}
+                  role="button"
+                  tabIndex={0}
+                  aria-current={c.id === seleccion || undefined}
                   onClick={() => {
                     onSeleccionar(c.id);
                     setAnio(Math.round((c.apogeo[0] + c.apogeo[1]) / 2));
+                  }}
+                  onKeyDown={(e) => {
+                    if (esActivacion(e)) {
+                      e.preventDefault();
+                      onSeleccionar(c.id);
+                      setAnio(Math.round((c.apogeo[0] + c.apogeo[1]) / 2));
+                    } else {
+                      teclasLista(e, '.g-fila');
+                    }
                   }}
                 >
                   <div className="g-etiq">
@@ -539,9 +557,19 @@ function Gantt({
           </Fragment>
         ))}
         {!filas.length && (
-          <p className="gantt-vacio">
-            {busqueda ? t('crono.sinResultados') : t('crono.sinFiltros')}
-          </p>
+          <div className="gantt-vacio vacio">
+            <p>{busqueda ? t('crono.sinResultados') : t('crono.sinFiltros')}</p>
+            <div className="vacio-acciones">
+              {busqueda ? (
+                <button className="enlace-accion" onClick={onLimpiarBusqueda}>
+                  {t('ctl.limpiar')}
+                </button>
+              ) : null}
+              <button className="enlace-accion" onClick={onQuitarFiltros}>
+                {t('crono.quitarFiltros')}
+              </button>
+            </div>
+          </div>
         )}
       </div>
       <div className="g-aguja" style={{ left: xAguja }} />
@@ -567,6 +595,9 @@ interface CronologiaProps {
   regiones: Region[];
   comparacion: Civilizacion[];
   onCerrarComparacion: () => void;
+  /** Acciones del estado vacío (tarea 1.7 de mejorar-experiencia). */
+  onLimpiarBusqueda: () => void;
+  onQuitarFiltros: () => void;
 }
 
 export function Cronologia({
@@ -586,6 +617,8 @@ export function Cronologia({
   regiones,
   comparacion,
   onCerrarComparacion,
+  onLimpiarBusqueda,
+  onQuitarFiltros,
 }: CronologiaProps) {
   const [ventanaBruta, setVentana] = useState<Ventana>({ desde: ANIO_MIN, hasta: ANIO_MAX });
 
@@ -638,6 +671,8 @@ export function Cronologia({
         idioma={idioma}
         regiones={regiones}
         ventana={ventana}
+        onLimpiarBusqueda={onLimpiarBusqueda}
+        onQuitarFiltros={onQuitarFiltros}
       />
       </div>
     </section>

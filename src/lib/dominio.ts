@@ -27,15 +27,17 @@ export function estaViva(c: Civilizacion, a: number): boolean {
 }
 
 export function fase(c: Civilizacion, a: number): Fase {
-  if (a < c.inicio) return 'nacimiento';
-  if (a > c.fin) return 'muerte';
   if (a >= c.apogeo[0] && a <= c.apogeo[1]) return 'auge';
   if (c.declive && a >= c.declive[0] && a <= c.declive[1]) return 'decadencia';
-  if (a - c.inicio <= 120) return 'nacimiento';
-  /* En sus últimos 120 años ya no está en su apogeo: se lee como decadencia,
-     no como extinción (sólo lo está si ya desapareció del calendario). */
-  if (c.fin - a <= 120) return 'decadencia';
-  return 'dominio';
+  if (a < c.inicio) return 'nacimiento';
+  if (a > c.fin) return 'muerte';
+  /* De la fundación a la cúspide del dato: crecimiento. Roma en −500 ya no
+     era «Prime»: era una república en ascenso aún lejos de su apogeo. */
+  if (a < c.apogeo[0]) return 'nacimiento';
+  /* Tras la cúspide: dominio hasta el declive documentado; si no hay
+     ventanas de declive, la regla heurística anterior (últimos 120 años). */
+  if (c.declive) return a >= c.declive[1] ? 'decadencia' : 'dominio';
+  return c.fin - a <= 120 ? 'decadencia' : 'dominio';
 }
 
 export interface Filtros {

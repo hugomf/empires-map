@@ -213,10 +213,12 @@ export function construirMapa(ancho: number, alto: number, datos: Catalogo): Map
     regiones,
     territorios,
     cajas,
-    ciudades: datos.ciudades.map((c) => {
-      const [x, y] = proyeccion([c.lon, c.lat]) ?? [0, 0];
-      return { id: c.id, civ: c.civilizacion, nombre: c.nombre, x, y };
-    }),
+    ciudades: datos.ciudades
+      .filter((c) => c.principal !== false)
+      .map((c) => {
+        const [x, y] = proyeccion([c.lon, c.lat]) ?? [0, 0];
+        return { id: c.id, civ: c.civilizacion, nombre: c.nombre, x, y };
+      }),
     rosa: proyeccion([-26, -26]) as [number, number],
     cartela: proyeccion([-146, -44]) as [number, number],
   };

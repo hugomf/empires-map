@@ -574,5 +574,85 @@
     "descripcion": "Before the baptism, the cult of the sun and of the ancestors, with the Brahmins of the court.",
     "desde": 895,
     "hasta": 2026
+  },
+  {
+    "id": "rus-kiev-rel-paganismo",
+    "civilizacion": "rus-kiev",
+    "nombre": "Slavic paganism",
+    "descripcion": "The pantheon of Perun, Veles and Svarog coexisted with local cults until the baptism of Vladimir I.",
+    "desde": 860,
+    "hasta": 988
+  },
+  {
+    "id": "rus-kiev-rel-ortodoxia",
+    "civilizacion": "rus-kiev",
+    "nombre": "Eastern Orthodoxy",
+    "descripcion": "The baptism of 988 linked Rus to Byzantium; the Orthodox Church became the central cultural institution.",
+    "desde": 988,
+    "hasta": 1240
+  },
+  {
+    "id": "moscovia-rel-ortodoxia",
+    "civilizacion": "moscovia",
+    "nombre": "Eastern Orthodoxy",
+    "descripcion": "Moscow presented itself as the Third Rome after the fall of Constantinople and the metropolitan moved to the city.",
+    "desde": 1263,
+    "hasta": 1547
+  },
+  {
+    "id": "zarato-ruso-rel-ortodoxia",
+    "civilizacion": "zarato-ruso",
+    "nombre": "Eastern Orthodoxy",
+    "descripcion": "The Russian Orthodox Church consolidated as a national church; the Patriarchate was restored in 1589.",
+    "desde": 1547,
+    "hasta": 1721
+  },
+  {
+    "id": "rusia-rel-ortodoxia",
+    "civilizacion": "rusia",
+    "nombre": "Eastern Orthodoxy, Islam and Judaism",
+    "descripcion": "The empire protected Orthodoxy but included Muslims, Jews, Lutherans and Catholics within its borders.",
+    "desde": 1721,
+    "hasta": 1917
+  },
+  {
+    "id": "revolucion-rusa-rel-ateismo",
+    "civilizacion": "revolucion-rusa",
+    "nombre": "State atheism and Christianity",
+    "descripcion": "The Provisional Government maintained religious freedom; the Bolsheviks separated church and state and persecuted the hierarchy.",
+    "desde": 1917,
+    "hasta": 1922
+  },
+  {
+    "id": "sovietica-rel-ateismo",
+    "civilizacion": "sovietica",
+    "nombre": "State atheism",
+    "descripcion": "The Soviet Constitution guaranteed freedom of worship, but propaganda and repression made atheism state policy.",
+    "desde": 1922,
+    "hasta": 1991
+  },
+  {
+    "id": "federacion-rusa-rel-pluralismo",
+    "civilizacion": "federacion-rusa",
+    "nombre": "Eastern Orthodoxy, Islam and Buddhism",
+    "descripcion": "The 1993 Constitution recognizes freedom of conscience; Orthodoxy remains the largest confession.",
+    "desde": 1991,
+    "hasta": 2026
+  },
+  {
+    "id": "horda-de-oro-rel-islam",
+    "civilizacion": "horda-de-oro",
+    "nombre": "Tengrism and Islam",
+    "descripcion": "The Horde began as a Tengrist confederation and became Islamic under Berke and Uzbek; Sarai was a Muslim centre.",
+    "desde": 1240,
+    "hasta": 1502
+  },
+  {
+    "id": "novgorod-rel-ortodoxia",
+    "civilizacion": "novgorod",
+    "nombre": "Eastern Orthodoxy and paganism",
+    "descripcion": "Novgorod was Christianized in the 10th century but preserved pre-Christian cults and festivals for centuries.",
+    "desde": 1136,
+    "hasta": 1478
   }
 ]

@@ -264,5 +264,47 @@
     "nombre": "Vajrapani",
     "dominio": "The protector of Vajrayana, with the vajra in his hand",
     "icono": "tridente"
+  },
+  {
+    "id": "rus-kiev-perun",
+    "civilizacion": "rus-kiev",
+    "nombre": "Perun",
+    "dominio": "God of thunder, war and the oak",
+    "icono": "rayo"
+  },
+  {
+    "id": "rus-kiev-veles",
+    "civilizacion": "rus-kiev",
+    "nombre": "Veles",
+    "dominio": "God of cattle, magic and the underworld",
+    "icono": "serpiente"
+  },
+  {
+    "id": "rus-kiev-svarog",
+    "civilizacion": "rus-kiev",
+    "nombre": "Svarog",
+    "dominio": "God of the sky and celestial fire",
+    "icono": "fuego"
+  },
+  {
+    "id": "rus-kiev-mokosh",
+    "civilizacion": "rus-kiev",
+    "nombre": "Mokosh",
+    "dominio": "Goddess of the earth, water and women's fate",
+    "icono": "agua"
+  },
+  {
+    "id": "rus-kiev-dazhbog",
+    "civilizacion": "rus-kiev",
+    "nombre": "Dazhbog",
+    "dominio": "God of the sun and prosperity",
+    "icono": "sol"
+  },
+  {
+    "id": "rus-kiev-rod",
+    "civilizacion": "rus-kiev",
+    "nombre": "Rod",
+    "dominio": "Ancestral god of creation and the family",
+    "icono": "arbol"
   }
 ]

@@ -26,6 +26,19 @@ const religiones = fs.existsSync(path.join(dirDatos, 'religiones.json'))
   ? leer('religiones.json')
   : [];
 const ciudades = fs.existsSync(path.join(dirDatos, 'ciudades.json')) ? leer('ciudades.json') : [];
+const gobernantes = fs.existsSync(path.join(dirDatos, 'gobernantes.json'))
+  ? leer('gobernantes.json')
+  : [];
+
+/* Vocabularios y relaciones del modelo de organizaciones políticas. */
+const leerSi = (n) => (fs.existsSync(path.join(dirDatos, n)) ? leer(n) : []);
+const formas = leerSi('formas.json');
+const escalasPoliticas = leerSi('escalas-politicas.json');
+const soberanias = leerSi('soberanias.json');
+const cargos = leerSi('cargos.json');
+const dinastias = leerSi('dinastias.json');
+const capitales = leerSi('capitales.json');
+const ciudadesGobernante = leerSi('ciudades-gobernante.json');
 
 /* Inglés: si existe datos/en/ se usa; si no, se replica el español */
 const enDir = path.join(dirDatos, 'en');
@@ -40,6 +53,12 @@ const enRel = leerEn('religiones.json');
 const enDei = leerEn('deidades.json');
 const enCie = leerEn('ciudades.json');
 const enArt = leerEn('artefactos.json');
+const enGob = leerEn('gobernantes.json');
+const enFormas = leerEn('formas.json');
+const enEscalas = leerEn('escalas-politicas.json');
+const enSoberanias = leerEn('soberanias.json');
+const enCargos = leerEn('cargos.json');
+const enDinastias = leerEn('dinastias.json');
 
 
 const errores = [];
@@ -51,6 +70,37 @@ const av = (tabla, id, msg) => avisos.push({ tabla, id, msg });
 
 const TIPOS = ['imperio', 'reino', 'estado', 'dinastia', 'cultura', 'pueblo', 'confederacion'];
 const GRUPOS = ['Europa', 'Asia', 'África', 'América', 'Oceanía'];
+
+/* Modelo de organizaciones políticas. */
+const ENTIDADES = ['organizacion', 'cultura', 'pueblo', 'dinastia'];
+const ESCALAS_POLITICAS = [
+  'ciudad-estado',
+  'principado',
+  'ducado',
+  'reino',
+  'imperio',
+  'estado',
+  'confederacion',
+  'organizacion-supranacional',
+];
+const ROLES_CAPITAL = ['capital', 'co-capital', 'residencia-real', 'sede-gobierno'];
+const ROLES_CIUDAD_GOBERNANTE = [
+  'residencia',
+  'nacimiento',
+  'muerte',
+  'entierro',
+  'fundacion',
+  'conquista',
+  'asedio',
+  'batalla',
+  'tratado',
+  'patronazgo',
+  'peregrinacion',
+  'centro-administrativo',
+  'puerto',
+  'revuelta',
+];
+const ROLES_GOBERNANTE = ['titular', 'regente', 'co-regente', 'pretendiente'];
 
 /** Caracteres legítimos fuera del español básico (vietnamita, dos ideogramas) */
 const EXTRAS_PERMITIDOS = new Set([
@@ -127,14 +177,70 @@ const dup = (lista, campo = 'id') => {
     else vistos.set(v, true);
   }
 };
+
+const dupTabla = (lista, tabla) => {
+  const vistos = new Set();
+  for (const f of lista) {
+    if (!f.id) err(tabla, '(sin id)', 'falta id');
+    else if (vistos.has(f.id)) err(tabla, f.id, 'id duplicado');
+    else vistos.add(f.id);
+  }
+};
+
 dup(civilizaciones);
 dup(regiones);
 dup(hitos);
 dup(territorios);
+dupTabla(formas, 'formas');
+dupTabla(escalasPoliticas, 'escalas-politicas');
+dupTabla(soberanias, 'soberanias');
+dupTabla(cargos, 'cargos');
+dupTabla(dinastias, 'dinastias');
+dupTabla(capitales, 'capitales');
+dupTabla(ciudadesGobernante, 'ciudades-gobernante');
+
+/* ─────────────────── 1b. Vocabularios de organización ─────────────────── */
+for (const f of formas) {
+  if (!f.nombre) err('formas', f.id, 'falta nombre');
+  if (!['monarquia', 'republica', 'teocracia', 'otro'].includes(f.grupo))
+    err('formas', f.id, `grupo inválido: ${f.grupo}`);
+}
+for (const e of escalasPoliticas) {
+  if (!ESCALAS_POLITICAS.includes(e.id)) err('escalas-politicas', e.id, `escala inválida: ${e.id}`);
+  if (!e.nombre) err('escalas-politicas', e.id, 'falta nombre');
+  if (typeof e.orden !== 'number') err('escalas-politicas', e.id, 'orden no numérico');
+}
+for (const s of soberanias) {
+  if (!s.nombre) err('soberanias', s.id, 'falta nombre');
+}
+const idsForma = new Set(formas.map((f) => f.id));
+for (const c of cargos) {
+  if (!c.nombre) err('cargos', c.id, 'falta nombre');
+  if (!c.plural) err('cargos', c.id, 'falta plural');
+  if (!c.categoria) err('cargos', c.id, 'falta categoría');
+  if (c.forma !== undefined && !idsForma.has(c.forma))
+    err('cargos', c.id, `forma inexistente: ${c.forma}`);
+  if (typeof c.orden !== 'number') err('cargos', c.id, 'orden no numérico');
+}
+for (const d of dinastias) {
+  if (!d.nombre) err('dinastias', d.id, 'falta nombre');
+  if (d.desde !== undefined && typeof d.desde !== 'number')
+    err('dinastias', d.id, 'desde no numérico');
+  if (d.hasta !== undefined && typeof d.hasta !== 'number')
+    err('dinastias', d.id, 'hasta no numérico');
+  if (d.desde !== undefined && d.hasta !== undefined && d.desde > d.hasta)
+    err('dinastias', d.id, `fechas invertidas: ${d.desde} > ${d.hasta}`);
+}
+
+const idsEscala = new Set(escalasPoliticas.map((e) => e.id));
+const idsSoberania = new Set(soberanias.map((s) => s.id));
+const idsCargo = new Set(cargos.map((c) => c.id));
+const idsDinastia = new Set(dinastias.map((d) => d.id));
 
 /* ─────────────────── 2. Civilizaciones ─────────────────── */
 const idsCiv = new Set(civilizaciones.map((c) => c.id));
 const idsRegion = new Set(regiones.map((r) => r.id));
+const idsTerr = new Set(territorios.map((t) => t.id));
 
 for (const c of civilizaciones) {
   const id = c.id;
@@ -167,7 +273,90 @@ for (const c of civilizaciones) {
     if (tieneBasura(c[campo])) err('civilizaciones', id, `${campo} contiene caracteres no permitidos`);
     comprobarIdioma('civilizaciones', id, campo, c[campo]);
   }
+  if (c.escritura !== undefined) {
+    if (typeof c.escritura !== 'string' || !c.escritura.trim())
+      err('civilizaciones', id, 'escritura vacía o no textual');
+    else {
+      if (tieneBasura(c.escritura))
+        err('civilizaciones', id, 'escritura con caracteres no permitidos');
+      comprobarIdioma('civilizaciones', id, 'escritura', c.escritura);
+    }
+  }
   if (c.abrev && c.abrev.length > 6) av('civilizaciones', id, `abrev demasiado larga: ${c.abrev}`);
+}
+
+/* ─────────────────── 2a. Facetas y periodos ─────────────────── */
+const periodosPorCiv = new Map();
+const idsPeriodo = new Set();
+
+for (const c of civilizaciones) {
+  const id = c.id;
+  if (c.entidad !== undefined && !ENTIDADES.includes(c.entidad))
+    err('civilizaciones', id, `entidad inválida: ${c.entidad}`);
+  if (c.escalaPolitica !== undefined && !idsEscala.has(c.escalaPolitica))
+    err('civilizaciones', id, `escala política inexistente: ${c.escalaPolitica}`);
+  if (c.forma !== undefined && !idsForma.has(c.forma))
+    err('civilizaciones', id, `forma inexistente: ${c.forma}`);
+  if (c.soberania !== undefined && !idsSoberania.has(c.soberania))
+    err('civilizaciones', id, `soberanía inexistente: ${c.soberania}`);
+  if (c.cargoPrincipal !== undefined && !idsCargo.has(c.cargoPrincipal))
+    err('civilizaciones', id, `cargo principal inexistente: ${c.cargoPrincipal}`);
+  if (c.dinastiaPrincipal !== undefined && !idsDinastia.has(c.dinastiaPrincipal))
+    err('civilizaciones', id, `dinastía principal inexistente: ${c.dinastiaPrincipal}`);
+
+  if (c.periodos === undefined) continue;
+  if (!Array.isArray(c.periodos)) {
+    err('civilizaciones', id, 'periodos no es una lista');
+    continue;
+  }
+  const locales = new Map();
+  for (const p of c.periodos) {
+    if (!p.id) {
+      err('civilizaciones', id, 'periodo sin id');
+      continue;
+    }
+    if (locales.has(p.id)) err('civilizaciones', p.id, 'periodo duplicado en la organización');
+    if (idsPeriodo.has(p.id)) err('civilizaciones', p.id, 'id de periodo duplicado en el catálogo');
+    idsPeriodo.add(p.id);
+    locales.set(p.id, p);
+    if (!p.nombre) err('civilizaciones', p.id, 'periodo sin nombre');
+    else {
+      if (tieneBasura(p.nombre)) err('civilizaciones', p.id, 'periodo con caracteres no permitidos');
+      comprobarIdioma('civilizaciones', p.id, 'periodo.nombre', p.nombre);
+    }
+    if (p.nota !== undefined) {
+      if (tieneBasura(p.nota)) err('civilizaciones', p.id, 'nota de periodo con caracteres no permitidos');
+      comprobarIdioma('civilizaciones', p.id, 'periodo.nota', p.nota);
+    }
+    if (typeof p.desde !== 'number' || typeof p.hasta !== 'number') {
+      err('civilizaciones', p.id, 'periodo con fechas no numéricas');
+    } else {
+      if (p.desde > p.hasta) err('civilizaciones', p.id, `periodo invertido: ${p.desde} > ${p.hasta}`);
+      if (p.desde < c.inicio || p.hasta > c.fin)
+        err('civilizaciones', p.id, `periodo [${p.desde}, ${p.hasta}] fuera de la organización [${c.inicio}, ${c.fin}]`);
+    }
+    if (p.forma !== undefined && !idsForma.has(p.forma))
+      err('civilizaciones', p.id, `forma de periodo inexistente: ${p.forma}`);
+    if (p.cargo !== undefined && !idsCargo.has(p.cargo))
+      err('civilizaciones', p.id, `cargo de periodo inexistente: ${p.cargo}`);
+    if (p.dinastia !== undefined && !idsDinastia.has(p.dinastia))
+      err('civilizaciones', p.id, `dinastía de periodo inexistente: ${p.dinastia}`);
+    if (p.paralelo !== undefined && typeof p.paralelo !== 'boolean')
+      err('civilizaciones', p.id, 'paralelo no booleano');
+  }
+
+  /* Los periodos pueden compartir un año limítrofe, pero no solaparse salvo
+     que representen ramas paralelas declaradas. */
+  const orden = [...c.periodos].sort((a, b) => a.desde - b.desde);
+  for (let i = 0; i < orden.length; i++) {
+    for (let j = i + 1; j < orden.length; j++) {
+      const a = orden[i];
+      const b = orden[j];
+      if (a.desde < b.hasta && b.desde < a.hasta && !a.paralelo && !b.paralelo)
+        err('civilizaciones', id, `periodos solapados sin «paralelo»: ${a.id} y ${b.id}`);
+    }
+  }
+  periodosPorCiv.set(id, locales);
 }
 
 /* ─────────────────── 2b. Alias del buscador ─────────────────── */
@@ -292,8 +481,27 @@ for (const t of territorios) {
           err('territorios', pre, `anillo auto-intersectado en los puntos ${i} y ${j}`);
       }
   }
-  if (t.nivel === 'division' && !idsCiv.has(t.civilizacion))
-    err('territorios', t.id, `división sin polidad existente: ${t.civilizacion}`);
+  if (!['polidad', 'division', 'sobrano', 'dependiente', 'disperso'].includes(t.nivel))
+    err('territorios', t.id, `nivel inválido: ${t.nivel}`);
+  if (t.nivel === 'division') {
+    /* Toda división depende de una polidad: sin «superior» el dato está roto. */
+    if (!t.superior) err('territorios', t.id, 'división sin «superior»');
+    else if (!idsCiv.has(t.superior) && !idsTerr.has(t.superior))
+      err('territorios', t.id, `superior inexistente: ${t.superior}`);
+    else {
+      const sup = civilizaciones.find((x) => x.id === t.superior);
+      if (sup) {
+        if (t.desde !== null && t.desde < sup.inicio)
+          av('territorios', t.id, `desde ${t.desde} anterior al inicio de ${t.superior}`);
+        if (t.hasta !== null && t.hasta > sup.fin)
+          av('territorios', t.id, `hasta ${t.hasta} posterior al fin de ${t.superior}`);
+      }
+    }
+  }
+  if (t.confianza !== undefined && !['alta', 'media', 'baja'].includes(t.confianza))
+    err('territorios', t.id, `confianza inválida: ${t.confianza}`);
+  if (t.fuente !== undefined && typeof t.fuente !== 'string')
+    err('territorios', t.id, 'fuente no textual');
   if (t.desde !== null && t.hasta !== null && t.desde >= t.hasta)
     err('territorios', t.id, `intervalo imposible: desde ${t.desde} ≥ hasta ${t.hasta}`);
   const c = civilizaciones.find((x) => x.id === t.civilizacion);
@@ -343,12 +551,169 @@ for (const c of ciudades) {
     err('ciudades', c.id, `longitud inválida: ${c.lon}`);
   if (c.actual && tieneBasura(c.actual)) err('ciudades', c.id, 'nombre actual inválido');
   if (c.actual) comprobarIdioma('ciudades', c.id, 'actual', c.actual);
+  if (c.principal !== undefined && typeof c.principal !== 'boolean')
+    err('ciudades', c.id, 'principal no booleano');
 }
 
 /* Todas las civilizaciones deben tener al menos una ciudad principal. */
 for (const c of civilizaciones) {
-  if (!ciudades.some((x) => x.civilizacion === c.id))
+  if (!ciudades.some((x) => x.civilizacion === c.id && x.principal !== false))
     av('ciudades', c.id, 'sin ciudades principales');
+}
+
+/* ─────────────────── 7. Gobernantes ─────────────────── */
+const idsGobernante = new Set();
+for (const g of gobernantes) {
+  if (!g.id) {
+    err('gobernantes', '(sin id)', 'falta id');
+    continue;
+  }
+  if (idsGobernante.has(g.id)) err('gobernantes', g.id, 'id duplicado');
+  else idsGobernante.add(g.id);
+  if (!idsCiv.has(g.civilizacion))
+    err('gobernantes', g.id, `civilización inexistente: ${g.civilizacion}`);
+  if (!g.nombre || tieneBasura(g.nombre))
+    err('gobernantes', g.id, 'nombre vacío o inválido');
+  if (!g.titulo || tieneBasura(g.titulo))
+    err('gobernantes', g.id, 'título vacío o inválido');
+  if (typeof g.desde !== 'number' || typeof g.hasta !== 'number') {
+    err('gobernantes', g.id, 'desde/hasta no numéricos');
+  } else if (g.desde > g.hasta) {
+    err('gobernantes', g.id, `fechas invertidas: ${g.desde} > ${g.hasta}`);
+  }
+  comprobarIdioma('gobernantes', g.id, 'nombre', g.nombre);
+  comprobarIdioma('gobernantes', g.id, 'titulo', g.titulo);
+  if (g.dinastia) comprobarIdioma('gobernantes', g.id, 'dinastia', g.dinastia);
+  if (g.nota) comprobarIdioma('gobernantes', g.id, 'nota', g.nota);
+  const c = civilizaciones.find((x) => x.id === g.civilizacion);
+  if (c && typeof g.desde === 'number' && g.desde < c.inicio)
+    av('gobernantes', g.id, `desde ${g.desde} anterior al inicio de ${c.id}`);
+  if (c && typeof g.hasta === 'number' && g.hasta > c.fin)
+    av('gobernantes', g.id, `hasta ${g.hasta} posterior al fin de ${c.id}`);
+  if (g.cargo !== undefined && !idsCargo.has(g.cargo))
+    err('gobernantes', g.id, `cargo inexistente: ${g.cargo}`);
+  if (g.dinastiaId !== undefined && !idsDinastia.has(g.dinastiaId))
+    err('gobernantes', g.id, `dinastía inexistente: ${g.dinastiaId}`);
+  if (g.rol !== undefined && !ROLES_GOBERNANTE.includes(g.rol))
+    err('gobernantes', g.id, `rol inválido: ${g.rol}`);
+  if (g.periodo !== undefined) {
+    const periodos = periodosPorCiv.get(g.civilizacion);
+    const p = periodos?.get(g.periodo);
+    if (!p) err('gobernantes', g.id, `periodo inexistente en ${g.civilizacion}: ${g.periodo}`);
+    else if (
+      typeof g.desde === 'number' &&
+      typeof g.hasta === 'number' &&
+      (g.desde < p.desde || g.hasta > p.hasta)
+    )
+      av('gobernantes', g.id, `fechas [${g.desde}, ${g.hasta}] fuera del periodo ${g.periodo} [${p.desde}, ${p.hasta}]`);
+  }
+}
+
+/* ─────────────────── 7b. Capitales y ciudades de gobernantes ─────────────────── */
+const civPorId = new Map(civilizaciones.map((c) => [c.id, c]));
+const gobPorId = new Map(gobernantes.map((g) => [g.id, g]));
+const ciudadPorId = new Map(ciudades.map((c) => [c.id, c]));
+
+for (const cap of capitales) {
+  const org = civPorId.get(cap.organizacion);
+  if (!org) err('capitales', cap.id, `organización inexistente: ${cap.organizacion}`);
+  if (!idsCiudad.has(cap.ciudad)) err('capitales', cap.id, `ciudad inexistente: ${cap.ciudad}`);
+  if (!ROLES_CAPITAL.includes(cap.rol)) err('capitales', cap.id, `rol inválido: ${cap.rol}`);
+  if (typeof cap.desde !== 'number') err('capitales', cap.id, 'desde no numérico');
+  if (cap.hasta !== undefined && typeof cap.hasta !== 'number')
+    err('capitales', cap.id, 'hasta no numérico');
+  if (typeof cap.desde === 'number' && typeof cap.hasta === 'number' && cap.desde > cap.hasta)
+    err('capitales', cap.id, `fechas invertidas: ${cap.desde} > ${cap.hasta}`);
+  if (org && typeof cap.desde === 'number' && cap.desde < org.inicio)
+    av('capitales', cap.id, `desde ${cap.desde} anterior al inicio de ${org.id}`);
+  if (org && typeof cap.hasta === 'number' && cap.hasta > org.fin)
+    av('capitales', cap.id, `hasta ${cap.hasta} posterior al fin de ${org.id}`);
+  if (cap.periodo !== undefined) {
+    const p = periodosPorCiv.get(cap.organizacion)?.get(cap.periodo);
+    if (!p) err('capitales', cap.id, `periodo inexistente en ${cap.organizacion}: ${cap.periodo}`);
+    else {
+      if (typeof cap.desde === 'number' && cap.desde < p.desde)
+        av('capitales', cap.id, `desde ${cap.desde} anterior al periodo ${p.id}`);
+      if (typeof cap.hasta === 'number' && cap.hasta > p.hasta)
+        av('capitales', cap.id, `hasta ${cap.hasta} posterior al periodo ${p.id}`);
+    }
+  }
+  const city = ciudadPorId.get(cap.ciudad);
+  if (city && city.civilizacion !== cap.organizacion)
+    av('capitales', cap.id, `la ciudad ${cap.ciudad} pertenece a ${city.civilizacion}`);
+  if (cap.nota !== undefined) {
+    if (tieneBasura(cap.nota)) err('capitales', cap.id, 'nota con caracteres no permitidos');
+    comprobarIdioma('capitales', cap.id, 'nota', cap.nota);
+  }
+}
+
+for (const cg of ciudadesGobernante) {
+  const g = gobPorId.get(cg.gobernante);
+  if (!g) err('ciudades-gobernante', cg.id, `gobernante inexistente: ${cg.gobernante}`);
+  if (!idsCiudad.has(cg.ciudad)) err('ciudades-gobernante', cg.id, `ciudad inexistente: ${cg.ciudad}`);
+  if (!ROLES_CIUDAD_GOBERNANTE.includes(cg.rol))
+    err('ciudades-gobernante', cg.id, `rol inválido: ${cg.rol}`);
+  if (cg.desde !== undefined && typeof cg.desde !== 'number')
+    err('ciudades-gobernante', cg.id, 'desde no numérico');
+  if (cg.hasta !== undefined && typeof cg.hasta !== 'number')
+    err('ciudades-gobernante', cg.id, 'hasta no numérico');
+  if (typeof cg.desde === 'number' && typeof cg.hasta === 'number' && cg.desde > cg.hasta)
+    err('ciudades-gobernante', cg.id, `fechas invertidas: ${cg.desde} > ${cg.hasta}`);
+  if (g && typeof cg.desde === 'number' && cg.desde < g.desde)
+    av('ciudades-gobernante', cg.id, `desde ${cg.desde} anterior al reinado de ${g.id}`);
+  if (g && typeof cg.hasta === 'number' && cg.hasta > g.hasta)
+    av('ciudades-gobernante', cg.id, `hasta ${cg.hasta} posterior al reinado de ${g.id}`);
+  if (cg.nota !== undefined) {
+    if (tieneBasura(cg.nota)) err('ciudades-gobernante', cg.id, 'nota con caracteres no permitidos');
+    comprobarIdioma('ciudades-gobernante', cg.id, 'nota', cg.nota);
+  }
+}
+
+/* ─────────────────── 8. Países actuales ─────────────────── */
+/**
+ * Cada Estado contemporáneo tiene un código ISO 3166-1 alpha-2 válido y único,
+ * un año de formación coherente, un tipo de formación del conjunto permitido y
+ * una nota que explique el caso.
+ */
+const TIPOS_FORMACION = [
+  'independencia',
+  'unificacion',
+  'constitucion',
+  'reconocimiento',
+  'sucesion',
+];
+
+const paisesFile = path.join(dirDatos, 'estados-actuales.json');
+if (fs.existsSync(paisesFile)) {
+  const paises = JSON.parse(fs.readFileSync(paisesFile, 'utf8'));
+  const esNuevo = paises.some((p) => p.formacion !== undefined);
+  if (!esNuevo) {
+    av(
+      'paises-actuales',
+      '(conjunto)',
+      'el dataset sigue en el modelo antiguo: falta «formacion» y «tipoFormacion»',
+    );
+  } else {
+    const idsPais = new Set();
+    for (const p of paises) {
+      if (typeof p.id !== 'string' || !/^[A-Z]{2}$/.test(p.id))
+        err('paises-actuales', p.id ?? '(sin id)', `código ISO inválido: ${p.id}`);
+      else if (idsPais.has(p.id))
+        err('paises-actuales', p.id, 'código ISO duplicado');
+      else idsPais.add(p.id);
+      if (!p.nombre) err('paises-actuales', p.id, 'falta nombre');
+      if (typeof p.formacion !== 'number')
+        err('paises-actuales', p.id, 'formación no numérica');
+      else if (p.formacion < 800 || p.formacion > 2026)
+        err('paises-actuales', p.id, `formación fuera de rango: ${p.formacion}`);
+      if (!TIPOS_FORMACION.includes(p.tipoFormacion))
+        err('paises-actuales', p.id, `tipo de formación inválido: ${p.tipoFormacion}`);
+      if (!p.nota || p.nota.trim().length < 10)
+        err('paises-actuales', p.id, 'nota vacía o demasiado corta');
+      if (p.fuente !== undefined && typeof p.fuente !== 'string')
+        err('paises-actuales', p.id, 'fuente no textual');
+    }
+  }
 }
 
 /* ─────────────────── Informe ─────────────────── */
@@ -380,15 +745,34 @@ if (errores.length) {
 }
 
 /* ─────────────────── Generación del bundle ─────────────────── */
+/* Los hitos no llevan `id`: se identifican por su posición dentro de la
+ * civilización. El `id` del JSON sirve para editar y rastrear el dato, pero no
+ * viaja al bundle. */
 const civilizacionesFull = civilizaciones.map((c) => ({
   ...c,
   escala: c.escala ?? (c.peso >= 5 ? 'mayor' : 'menor'),
   hitos: hitos
     .filter((h) => h.civilizacion === c.id)
-    .map((h) => ({ id: h.id, anio: h.anio, texto: h.texto })),
+    .map((h) => ({ anio: h.anio, texto: h.texto })),
 }));
 
-const hacerBundle = (civs, regs, terrs, rel, dei, cie, arte) => `/* GENERADO AUTOMÁTICAMENTE por scripts/validar.mjs — no editar a mano.
+const hacerBundle = ({
+  civs,
+  regs,
+  terrs,
+  rel,
+  dei,
+  cie,
+  arte,
+  gob,
+  formas: frm,
+  escalas,
+  soberanias: sob,
+  cargos: car,
+  dinastias: din,
+  capitales: cap,
+  ciudadesGobernante: cgob,
+}) => `/* GENERADO AUTOMÁTICAMENTE por scripts/validar.mjs — no editar a mano.
    Fuente de verdad: datos/*.json
 */
 import type {
@@ -399,6 +783,14 @@ import type {
   Deidad,
   Religion,
   Ciudad,
+  Gobernante,
+  FormaGobierno,
+  EscalaPoliticaDef,
+  Soberania,
+  Cargo,
+  Dinastia,
+  Capital,
+  CiudadGobernante,
 } from './tipos-cultura';
 
 export const ANIO_MIN = ${Math.max(-5000, Math.min(...civs.map((c) => c.inicio)))};
@@ -411,16 +803,43 @@ export const RELIGIONES: Religion[] = ${JSON.stringify(rel)};
 export const DEIDADES: Deidad[] = ${JSON.stringify(dei)};
 export const CIUDADES: Ciudad[] = ${JSON.stringify(cie)};
 export const ARTEFACTOS: Artefacto[] = ${JSON.stringify(arte)};
+export const GOBERNANTES: Gobernante[] = ${JSON.stringify(gob)};
+export const FORMAS: FormaGobierno[] = ${JSON.stringify(frm)};
+export const ESCALAS_POLITICAS: EscalaPoliticaDef[] = ${JSON.stringify(escalas)};
+export const SOBERANIAS: Soberania[] = ${JSON.stringify(sob)};
+export const CARGOS: Cargo[] = ${JSON.stringify(car)};
+export const DINASTIAS: Dinastia[] = ${JSON.stringify(din)};
+export const CAPITALES: Capital[] = ${JSON.stringify(cap)};
+export const CIUDADES_GOBERNANTE: CiudadGobernante[] = ${JSON.stringify(cgob)};
 `;
 
-fs.writeFileSync(path.join(raiz, 'src/data/datos.generados.ts'), hacerBundle(civilizacionesFull, regiones, territorios, religiones, deidades, ciudades, artefactos));
+fs.writeFileSync(
+  path.join(raiz, 'src/data/datos.generados.ts'),
+  hacerBundle({
+    civs: civilizacionesFull,
+    regs: regiones,
+    terrs: territorios,
+    rel: religiones,
+    dei: deidades,
+    cie: ciudades,
+    arte: artefactos,
+    gob: gobernantes,
+    formas,
+    escalas: escalasPoliticas,
+    soberanias,
+    cargos,
+    dinastias,
+    capitales,
+    ciudadesGobernante,
+  }),
+);
 
 const enCivFull = (enCiv ?? civilizaciones).map((c) => ({
   ...c,
   escala: c.escala ?? (c.peso >= 5 ? 'mayor' : 'menor'),
   hitos: hitos
     .filter((h) => h.civilizacion === c.id)
-    .map((h) => ({ id: h.id, anio: h.anio, texto: h.texto })),
+    .map((h) => ({ anio: h.anio, texto: h.texto })),
 }));
 if (enCiv) {
   const enHitos = leerEn('hitos.json');
@@ -428,22 +847,30 @@ if (enCiv) {
     enCivFull.forEach((c) => {
       c.hitos = enHitos
         .filter((h) => h.civilizacion === c.id)
-        .map((h) => ({ id: h.id, anio: h.anio, texto: h.texto }));
+        .map((h) => ({ anio: h.anio, texto: h.texto }));
     });
   }
 }
 
 fs.writeFileSync(
   path.join(raiz, 'src/data/datos.en.generados.ts'),
-  hacerBundle(
-    enCivFull,
-    enReg ?? regiones,
-    enTerr ?? territorios,
-    enRel ?? religiones,
-    enDei ?? deidades,
-    enCie ?? ciudades,
-    enArt ?? artefactos,
-  ),
+  hacerBundle({
+    civs: enCivFull,
+    regs: enReg ?? regiones,
+    terrs: enTerr ?? territorios,
+    rel: enRel ?? religiones,
+    dei: enDei ?? deidades,
+    cie: enCie ?? ciudades,
+    arte: enArt ?? artefactos,
+    gob: enGob ?? gobernantes,
+    formas: enFormas ?? formas,
+    escalas: enEscalas ?? escalasPoliticas,
+    soberanias: enSoberanias ?? soberanias,
+    cargos: enCargos ?? cargos,
+    dinastias: enDinastias ?? dinastias,
+    capitales,
+    ciudadesGobernante,
+  }),
 );
 
 console.log(
@@ -451,6 +878,9 @@ console.log(
     `${hitos.length} hitos, ${territorios.length} territorios, ${ciudades.length} ciudades` +
     (artefactos.length ? `, ${artefactos.length} artefactos` : '') +
     (deidades.length ? `, ${deidades.length} deidades` : '') +
+    (gobernantes.length ? `, ${gobernantes.length} gobernantes` : '') +
+    (capitales.length ? `, ${capitales.length} capitales` : '') +
+    (ciudadesGobernante.length ? `, ${ciudadesGobernante.length} ciudades de gobernantes` : '') +
     (enCiv ? ' · inglés disponible' : ' · inglés pendiente de traducir') +
     '\n  ✓ src/data/datos.generados.ts + datos.en.generados.ts generados\n',
 );

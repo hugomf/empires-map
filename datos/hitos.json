@@ -2133,49 +2133,169 @@
     "id": "rusia-1",
     "civilizacion": "rusia",
     "anio": 1721,
-    "texto": "Pedro el Grande se proclama emperador."
+    "texto": "Pedro el Grande se proclama emperador tras la paz de Nystad."
+  },
+  {
+    "id": "rusia-6",
+    "civilizacion": "rusia",
+    "anio": 1762,
+    "texto": "Catalina II la Grande sube al trono tras el golpe contra Pedro III."
+  },
+  {
+    "id": "rusia-7",
+    "civilizacion": "rusia",
+    "anio": 1772,
+    "texto": "La primera partición de Polonia incorpora territorios al imperio."
+  },
+  {
+    "id": "rusia-8",
+    "civilizacion": "rusia",
+    "anio": 1783,
+    "texto": "Rusia anexiona Crimea y funda Sebastopol."
+  },
+  {
+    "id": "rusia-9",
+    "civilizacion": "rusia",
+    "anio": 1793,
+    "texto": "La segunda partición de Polonia amplía el imperio hacia el oeste."
+  },
+  {
+    "id": "rusia-10",
+    "civilizacion": "rusia",
+    "anio": 1795,
+    "texto": "La tercera partición de Polonia borra el Estado polaco del mapa."
+  },
+  {
+    "id": "rusia-11",
+    "civilizacion": "rusia",
+    "anio": 1801,
+    "texto": "Alejandro I sube al trono tras el asesinato de Pablo I."
   },
   {
     "id": "rusia-2",
     "civilizacion": "rusia",
     "anio": 1812,
-    "texto": "Invasión de Napoleón: incendio de Moscú."
+    "texto": "Invasión de Napoleón: Borodino, incendio de Moscú y retirada francesa."
+  },
+  {
+    "id": "rusia-12",
+    "civilizacion": "rusia",
+    "anio": 1825,
+    "texto": "La revuelta decembrista sacude San Petersburgo."
+  },
+  {
+    "id": "rusia-13",
+    "civilizacion": "rusia",
+    "anio": 1853,
+    "texto": "Comienza la guerra de Crimea contra el Imperio otomano, Francia y Reino Unido."
   },
   {
     "id": "rusia-3",
     "civilizacion": "rusia",
     "anio": 1861,
-    "texto": "Liberación de los siervos."
+    "texto": "Alejandro II emancipa a los siervos."
+  },
+  {
+    "id": "rusia-14",
+    "civilizacion": "rusia",
+    "anio": 1867,
+    "texto": "Rusia vende Alaska a Estados Unidos."
+  },
+  {
+    "id": "rusia-15",
+    "civilizacion": "rusia",
+    "anio": 1881,
+    "texto": "Alejandro II es asesinado por terroristas; Alejandro III reprime."
+  },
+  {
+    "id": "rusia-16",
+    "civilizacion": "rusia",
+    "anio": 1894,
+    "texto": "Nicolás II sube al trono."
+  },
+  {
+    "id": "rusia-17",
+    "civilizacion": "rusia",
+    "anio": 1905,
+    "texto": "La derrota de Tsushima cierra la guerra ruso-japonesa."
   },
   {
     "id": "rusia-4",
     "civilizacion": "rusia",
     "anio": 1905,
-    "texto": "Revolución de 1905."
+    "texto": "El Domingo Sangriento y la revolución de 1905 fuerzan la Duma."
+  },
+  {
+    "id": "rusia-18",
+    "civilizacion": "rusia",
+    "anio": 1914,
+    "texto": "Rusia entra en la Primera Guerra Mundial."
   },
   {
     "id": "rusia-5",
     "civilizacion": "rusia",
     "anio": 1917,
-    "texto": "Revolución de Octubre: abdica Nicolás II."
+    "texto": "La Revolución de Febrero derroca a Nicolás II; en octubre los bolcheviques toman el poder."
   },
   {
     "id": "rus-kiev-1",
     "civilizacion": "rus-kiev",
     "anio": 862,
-    "texto": "Los vikingos Askold y Dir fundan Novgorod."
+    "texto": "Rúrik se establece en Nóvgorod y funda la dinastía Ruríkida."
+  },
+  {
+    "id": "rus-kiev-4",
+    "civilizacion": "rus-kiev",
+    "anio": 882,
+    "texto": "Oleg traslada la capital a Kiev y unifica el sur y el norte de la Rus."
   },
   {
     "id": "rus-kiev-2",
     "civilizacion": "rus-kiev",
     "anio": 988,
-    "texto": "Baptismo de Rus por Vladimiro el Grande."
+    "texto": "Vladímir I se bautiza en Chersoneso e impone el cristianismo ortodoxo."
+  },
+  {
+    "id": "rus-kiev-5",
+    "civilizacion": "rus-kiev",
+    "anio": 1019,
+    "texto": "Yaroslav el Sabio inicia su reinado y codifica la Rúskaya Pravda."
+  },
+  {
+    "id": "rus-kiev-6",
+    "civilizacion": "rus-kiev",
+    "anio": 1054,
+    "texto": "Muere Yaroslav el Sabio; la Rus se reparte entre sus hijos."
+  },
+  {
+    "id": "rus-kiev-7",
+    "civilizacion": "rus-kiev",
+    "anio": 1136,
+    "texto": "Nóvgorod expulsa a su príncipe y establece una república oligárquica."
+  },
+  {
+    "id": "rus-kiev-8",
+    "civilizacion": "rus-kiev",
+    "anio": 1185,
+    "texto": "La campaña del príncipe Ígor contra los cumanos inspira el Cantar de las huestes de Ígor."
+  },
+  {
+    "id": "rus-kiev-9",
+    "civilizacion": "rus-kiev",
+    "anio": 1223,
+    "texto": "Los mongoles derrotan a los príncipes rusos en el río Kalka."
+  },
+  {
+    "id": "rus-kiev-10",
+    "civilizacion": "rus-kiev",
+    "anio": 1237,
+    "texto": "Batu Kan invade la Rus; cae Riazán."
   },
   {
     "id": "rus-kiev-3",
     "civilizacion": "rus-kiev",
     "anio": 1240,
-    "texto": "Caída de Kiev ante los tártaros."
+    "texto": "Batu Kan saquea Kiev y acaba con la Rus de Kiev."
   },
   {
     "id": "napoleon-1",
@@ -2313,13 +2433,37 @@
     "id": "sovietica-1",
     "civilizacion": "sovietica",
     "anio": 1922,
-    "texto": "Se forma la URSS."
+    "texto": "Se forma la URSS con Rusia, Ucrania, Bielorrusia y Transcaucasia."
+  },
+  {
+    "id": "sovietica-8",
+    "civilizacion": "sovietica",
+    "anio": 1924,
+    "texto": "Muere Lenin; Stalin consolida su poder."
   },
   {
     "id": "sovietica-2",
     "civilizacion": "sovietica",
-    "anio": 1929,
-    "texto": "Primer plan quinquenal: colectivización."
+    "anio": 1928,
+    "texto": "Primer plan quinquenal: colectivización forzosa e industrialización."
+  },
+  {
+    "id": "sovietica-9",
+    "civilizacion": "sovietica",
+    "anio": 1932,
+    "texto": "La hambruna del Holodomor asola Ucrania y el Cáucaso."
+  },
+  {
+    "id": "sovietica-10",
+    "civilizacion": "sovietica",
+    "anio": 1936,
+    "texto": "La Constitución de Stalin y los grandes procesos de Moscú."
+  },
+  {
+    "id": "sovietica-11",
+    "civilizacion": "sovietica",
+    "anio": 1939,
+    "texto": "El pacto Molotov-Ribbentrop reparte Polonia y el Báltico."
   },
   {
     "id": "sovietica-3",
@@ -2331,13 +2475,67 @@
     "id": "sovietica-4",
     "civilizacion": "sovietica",
     "anio": 1945,
-    "texto": "Victoria en Berlín."
+    "texto": "Victoria en Berlín y fin de la guerra en Europa."
+  },
+  {
+    "id": "sovietica-12",
+    "civilizacion": "sovietica",
+    "anio": 1949,
+    "texto": "La URSS prueba su primera bomba atómica."
+  },
+  {
+    "id": "sovietica-13",
+    "civilizacion": "sovietica",
+    "anio": 1953,
+    "texto": "Muere Stalin; comienza la desestalinización."
+  },
+  {
+    "id": "sovietica-14",
+    "civilizacion": "sovietica",
+    "anio": 1956,
+    "texto": "El XX Congreso del PCUS denuncia los crímenes de Stalin."
   },
   {
     "id": "sovietica-5",
     "civilizacion": "sovietica",
     "anio": 1957,
-    "texto": "Sputnik: el primer satélite."
+    "texto": "Sputnik: el primer satélite artificial."
+  },
+  {
+    "id": "sovietica-15",
+    "civilizacion": "sovietica",
+    "anio": 1961,
+    "texto": "Gagarin se convierte en el primer humano en orbitar la Tierra."
+  },
+  {
+    "id": "sovietica-16",
+    "civilizacion": "sovietica",
+    "anio": 1962,
+    "texto": "La crisis de los misiles de Cuba lleva al mundo al borde de la guerra nuclear."
+  },
+  {
+    "id": "sovietica-17",
+    "civilizacion": "sovietica",
+    "anio": 1968,
+    "texto": "La URSS invade Checoslovaquia y acaba con la Primavera de Praga."
+  },
+  {
+    "id": "sovietica-18",
+    "civilizacion": "sovietica",
+    "anio": 1979,
+    "texto": "La invasión de Afganistán prolonga la guerra hasta 1989."
+  },
+  {
+    "id": "sovietica-19",
+    "civilizacion": "sovietica",
+    "anio": 1985,
+    "texto": "Gorbachov lanza la perestroika y el glásnost."
+  },
+  {
+    "id": "sovietica-20",
+    "civilizacion": "sovietica",
+    "anio": 1986,
+    "texto": "El accidente de Chernóbil expone la crisis del sistema."
   },
   {
     "id": "sovietica-6",
@@ -2349,7 +2547,7 @@
     "id": "sovietica-7",
     "civilizacion": "sovietica",
     "anio": 1991,
-    "texto": "Disolución de la Unión."
+    "texto": "Disolución de la Unión Soviética."
   },
   {
     "id": "estados-unidos-1",
@@ -3658,5 +3856,269 @@
     "civilizacion": "mamelucos",
     "anio": 1517,
     "texto": "Expulsión por los otomanos."
+  },
+  {
+    "id": "moscovia-1",
+    "civilizacion": "moscovia",
+    "anio": 1263,
+    "texto": "Daniel Aleksándrovich recibe Moscú como principado hereditario."
+  },
+  {
+    "id": "moscovia-2",
+    "civilizacion": "moscovia",
+    "anio": 1325,
+    "texto": "Iván I Kalita traslada la sede del metropolita a Moscú y centraliza el tributo."
+  },
+  {
+    "id": "moscovia-3",
+    "civilizacion": "moscovia",
+    "anio": 1380,
+    "texto": "Dmitri Donskói vence a la Horda de Oro en Kulikovo."
+  },
+  {
+    "id": "moscovia-4",
+    "civilizacion": "moscovia",
+    "anio": 1389,
+    "texto": "Vasili I hereda un principado reforzado y continúa la expansión."
+  },
+  {
+    "id": "moscovia-5",
+    "civilizacion": "moscovia",
+    "anio": 1462,
+    "texto": "Iván III el Grande inicia un reinado de unificación."
+  },
+  {
+    "id": "moscovia-6",
+    "civilizacion": "moscovia",
+    "anio": 1478,
+    "texto": "Iván III anexiona Nóvgorod y acaba con su república."
+  },
+  {
+    "id": "moscovia-7",
+    "civilizacion": "moscovia",
+    "anio": 1480,
+    "texto": "El Gran Duque de Moscú deja de pagar tributo tras el enfrentamiento del río Ugra."
+  },
+  {
+    "id": "moscovia-8",
+    "civilizacion": "moscovia",
+    "anio": 1505,
+    "texto": "Vasili III inicia su reinado y continúa la centralización del Estado."
+  },
+  {
+    "id": "moscovia-9",
+    "civilizacion": "moscovia",
+    "anio": 1533,
+    "texto": "Muere Vasili III; la minoría de Iván IV abre la crisis de los boyardos."
+  },
+  {
+    "id": "zarato-ruso-1",
+    "civilizacion": "zarato-ruso",
+    "anio": 1547,
+    "texto": "Iván IV es coronado zar de toda la Rus en la catedral de la Asunción."
+  },
+  {
+    "id": "zarato-ruso-2",
+    "civilizacion": "zarato-ruso",
+    "anio": 1552,
+    "texto": "La conquista de Kazán abre el Volga y la ruta a Siberia."
+  },
+  {
+    "id": "zarato-ruso-3",
+    "civilizacion": "zarato-ruso",
+    "anio": 1556,
+    "texto": "Astrakán cae ante Moscú; el Volga queda bajo control ruso."
+  },
+  {
+    "id": "zarato-ruso-4",
+    "civilizacion": "zarato-ruso",
+    "anio": 1565,
+    "texto": "Iván IV instituye la oprichnina y desata el terror contra la nobleza."
+  },
+  {
+    "id": "zarato-ruso-5",
+    "civilizacion": "zarato-ruso",
+    "anio": 1584,
+    "texto": "Muere Iván el Terrible; le sucede Fiódor I, incapaz de gobernar."
+  },
+  {
+    "id": "zarato-ruso-6",
+    "civilizacion": "zarato-ruso",
+    "anio": 1598,
+    "texto": "Extinción de la dinastía Ruríkida y comienzo del Tiempo de Problemas."
+  },
+  {
+    "id": "zarato-ruso-7",
+    "civilizacion": "zarato-ruso",
+    "anio": 1613,
+    "texto": "Miguel Románov es elegido zar por la Asamblea de la Tierra."
+  },
+  {
+    "id": "zarato-ruso-8",
+    "civilizacion": "zarato-ruso",
+    "anio": 1645,
+    "texto": "Alejo I sube al trono y consolida la dinastía Románov."
+  },
+  {
+    "id": "zarato-ruso-11",
+    "civilizacion": "zarato-ruso",
+    "anio": 1649,
+    "texto": "El Código de la Asamblea de la Tierra consolida la servidumbre."
+  },
+  {
+    "id": "zarato-ruso-9",
+    "civilizacion": "zarato-ruso",
+    "anio": 1682,
+    "texto": "Pedro I es proclamado zar junto a su hermano Iván V."
+  },
+  {
+    "id": "zarato-ruso-10",
+    "civilizacion": "zarato-ruso",
+    "anio": 1721,
+    "texto": "Pedro I proclama el Imperio Ruso tras la paz de Nystad."
+  },
+  {
+    "id": "revolucion-rusa-1",
+    "civilizacion": "revolucion-rusa",
+    "anio": 1917,
+    "texto": "La Revolución de Febrero derroca a Nicolás II y establece un Gobierno Provisional."
+  },
+  {
+    "id": "revolucion-rusa-2",
+    "civilizacion": "revolucion-rusa",
+    "anio": 1917,
+    "texto": "Los bolcheviques toman el poder en Petrogrado y proclaman el Soviet de Comisarios del Pueblo."
+  },
+  {
+    "id": "revolucion-rusa-3",
+    "civilizacion": "revolucion-rusa",
+    "anio": 1918,
+    "texto": "La paz de Brest-Litovsk saca a Rusia de la Primera Guerra Mundial."
+  },
+  {
+    "id": "revolucion-rusa-4",
+    "civilizacion": "revolucion-rusa",
+    "anio": 1918,
+    "texto": "Comienza la guerra civil entre bolcheviques, blancos y nacionalistas."
+  },
+  {
+    "id": "revolucion-rusa-5",
+    "civilizacion": "revolucion-rusa",
+    "anio": 1921,
+    "texto": "La rebelión de Kronstadt y la hambruna obligan a Lenin a la Nueva Política Económica."
+  },
+  {
+    "id": "revolucion-rusa-6",
+    "civilizacion": "revolucion-rusa",
+    "anio": 1922,
+    "texto": "La victoria bolchevique culmina con la creación de la URSS."
+  },
+  {
+    "id": "federacion-rusa-1",
+    "civilizacion": "federacion-rusa",
+    "anio": 1991,
+    "texto": "La disolución de la URSS deja a la Federación Rusa como Estado sucesor."
+  },
+  {
+    "id": "federacion-rusa-2",
+    "civilizacion": "federacion-rusa",
+    "anio": 1993,
+    "texto": "La crisis constitucional termina con el bombardeo del Parlamento y una Constitución presidencialista."
+  },
+  {
+    "id": "federacion-rusa-3",
+    "civilizacion": "federacion-rusa",
+    "anio": 1994,
+    "texto": "Comienza la primera guerra de Chechenia."
+  },
+  {
+    "id": "federacion-rusa-4",
+    "civilizacion": "federacion-rusa",
+    "anio": 1999,
+    "texto": "Vladímir Putin es nombrado primer ministro y luego presidente interino."
+  },
+  {
+    "id": "federacion-rusa-5",
+    "civilizacion": "federacion-rusa",
+    "anio": 2000,
+    "texto": "La segunda guerra de Chechenia consolida el poder central."
+  },
+  {
+    "id": "federacion-rusa-6",
+    "civilizacion": "federacion-rusa",
+    "anio": 2014,
+    "texto": "Rusia anexiona Crimea tras la crisis ucraniana."
+  },
+  {
+    "id": "federacion-rusa-7",
+    "civilizacion": "federacion-rusa",
+    "anio": 2022,
+    "texto": "La invasión de Ucrania desata una guerra a gran escala y sanciones internacionales."
+  },
+  {
+    "id": "horda-de-oro-1",
+    "civilizacion": "horda-de-oro",
+    "anio": 1240,
+    "texto": "Batu Kan saquea Kiev y somete los principados rusos."
+  },
+  {
+    "id": "horda-de-oro-2",
+    "civilizacion": "horda-de-oro",
+    "anio": 1256,
+    "texto": "Berke Kan se convierte al islam y acerca la Horda al mundo islámico."
+  },
+  {
+    "id": "horda-de-oro-3",
+    "civilizacion": "horda-de-oro",
+    "anio": 1313,
+    "texto": "Uzbek Kan impulsa el islam y la edad de oro de Sarai."
+  },
+  {
+    "id": "horda-de-oro-4",
+    "civilizacion": "horda-de-oro",
+    "anio": 1380,
+    "texto": "Dmitri Donskói vence a Mamái en Kulikovo."
+  },
+  {
+    "id": "horda-de-oro-5",
+    "civilizacion": "horda-de-oro",
+    "anio": 1395,
+    "texto": "Timur destruye Sarai y debilita la Horda."
+  },
+  {
+    "id": "horda-de-oro-6",
+    "civilizacion": "horda-de-oro",
+    "anio": 1438,
+    "texto": "El kanato de Kazán se separa de la Horda."
+  },
+  {
+    "id": "horda-de-oro-7",
+    "civilizacion": "horda-de-oro",
+    "anio": 1502,
+    "texto": "La Horda de Oro se disuelve; Moscú deja de pagar tributo."
+  },
+  {
+    "id": "novgorod-1",
+    "civilizacion": "novgorod",
+    "anio": 1136,
+    "texto": "El veche expulsa al príncipe Vsévolod y proclama la república."
+  },
+  {
+    "id": "novgorod-2",
+    "civilizacion": "novgorod",
+    "anio": 1240,
+    "texto": "Alejandro Nevski vence a los suecos en el Neva."
+  },
+  {
+    "id": "novgorod-3",
+    "civilizacion": "novgorod",
+    "anio": 1242,
+    "texto": "Alejandro Nevski derrota a los caballeros teutónicos en el lago Peipus."
+  },
+  {
+    "id": "novgorod-4",
+    "civilizacion": "novgorod",
+    "anio": 1478,
+    "texto": "Iván III anexiona Nóvgorod y su veche deja de reunirse."
   }
 ]

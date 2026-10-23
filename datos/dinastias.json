@@ -1,0 +1,11 @@
+[
+  { "id": "osmanli", "nombre": "Casa de Osmán", "origen": "Anatolia", "desde": 1299, "hasta": 1922 },
+  { "id": "seljuk", "nombre": "Seljuk", "origen": "Asia Central", "desde": 1037, "hasta": 1194 },
+  { "id": "seljuk-rum", "nombre": "Seljuk de Rum", "origen": "Anatolia", "desde": 1077, "hasta": 1308 },
+  { "id": "mamelucos-bahri", "nombre": "Mamelucos bahri", "origen": "Egipto", "desde": 1250, "hasta": 1382 },
+  { "id": "mamelucos-burji", "nombre": "Mamelucos burji", "origen": "Egipto", "desde": 1382, "hasta": 1517 },
+  { "id": "rurikida", "nombre": "Ruríkida", "origen": "Nóvgorod", "desde": 862, "hasta": 1598 },
+  { "id": "godunov", "nombre": "Godunov", "origen": "Rusia", "desde": 1598, "hasta": 1605 },
+  { "id": "romanov", "nombre": "Románov", "origen": "Rusia", "desde": 1613, "hasta": 1917 },
+  { "id": "borjigin", "nombre": "Borjigin", "origen": "Mongolia", "desde": 1206, "hasta": 1502 }
+]

@@ -1,0 +1,1021 @@
+[
+  {
+    "id": "ottomanos-osman-i-ottomanos-sogut-fundacion",
+    "gobernante": "ottomanos-osman-i",
+    "ciudad": "ottomanos-sogut",
+    "rol": "fundacion",
+    "desde": 1299,
+    "hasta": 1299,
+    "nota": "Núcleo del beylicato."
+  },
+  {
+    "id": "ottomanos-osman-i-ottomanos-bursa-asedio",
+    "gobernante": "ottomanos-osman-i",
+    "ciudad": "ottomanos-bursa",
+    "rol": "asedio",
+    "desde": 1300,
+    "hasta": 1324,
+    "nota": "Sitio iniciado por Osman; cayó en 1326."
+  },
+  {
+    "id": "ottomanos-orhan-ottomanos-bursa-conquista",
+    "gobernante": "ottomanos-orhan",
+    "ciudad": "ottomanos-bursa",
+    "rol": "conquista",
+    "desde": 1326,
+    "hasta": 1326,
+    "nota": "Toma de Bursa."
+  },
+  {
+    "id": "ottomanos-orhan-ottomanos-iznik-conquista",
+    "gobernante": "ottomanos-orhan",
+    "ciudad": "ottomanos-iznik",
+    "rol": "conquista",
+    "desde": 1331,
+    "hasta": 1331
+  },
+  {
+    "id": "ottomanos-orhan-ottomanos-izmit-conquista",
+    "gobernante": "ottomanos-orhan",
+    "ciudad": "ottomanos-izmit",
+    "rol": "conquista",
+    "desde": 1337,
+    "hasta": 1337
+  },
+  {
+    "id": "ottomanos-murad-i-ottomanos-edirne-conquista",
+    "gobernante": "ottomanos-murad-i",
+    "ciudad": "ottomanos-edirne",
+    "rol": "conquista",
+    "desde": 1365,
+    "hasta": 1365,
+    "nota": "Traslado de la capital a Edirne."
+  },
+  {
+    "id": "ottomanos-murad-i-ottomanos-pristina-batalla",
+    "gobernante": "ottomanos-murad-i",
+    "ciudad": "ottomanos-pristina",
+    "rol": "batalla",
+    "desde": 1389,
+    "hasta": 1389,
+    "nota": "Batalla de Kosovo."
+  },
+  {
+    "id": "ottomanos-bayezid-i-ottomanos-ankara-batalla",
+    "gobernante": "ottomanos-bayezid-i",
+    "ciudad": "ottomanos-ankara",
+    "rol": "batalla",
+    "desde": 1402,
+    "hasta": 1402,
+    "nota": "Derrota ante Timur."
+  },
+  {
+    "id": "ottomanos-bayezid-i-ottomanos-constantinopla-asedio",
+    "gobernante": "ottomanos-bayezid-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "asedio",
+    "desde": 1394,
+    "hasta": 1402,
+    "nota": "Asedio otomano."
+  },
+  {
+    "id": "ottomanos-bayezid-i-ottomanos-edirne-residencia",
+    "gobernante": "ottomanos-bayezid-i",
+    "ciudad": "ottomanos-edirne",
+    "rol": "residencia",
+    "desde": 1389,
+    "hasta": 1402
+  },
+  {
+    "id": "ottomanos-mehmed-i-ottomanos-edirne-centro-administrativo",
+    "gobernante": "ottomanos-mehmed-i",
+    "ciudad": "ottomanos-edirne",
+    "rol": "centro-administrativo",
+    "desde": 1413,
+    "hasta": 1421,
+    "nota": "Reunificación del Estado."
+  },
+  {
+    "id": "ottomanos-mehmed-i-ottomanos-bursa-patronazgo",
+    "gobernante": "ottomanos-mehmed-i",
+    "ciudad": "ottomanos-bursa",
+    "rol": "patronazgo",
+    "desde": 1419,
+    "hasta": 1419,
+    "nota": "Mezquita Verde."
+  },
+  {
+    "id": "ottomanos-murad-ii-ottomanos-edirne-centro-administrativo",
+    "gobernante": "ottomanos-murad-ii",
+    "ciudad": "ottomanos-edirne",
+    "rol": "centro-administrativo",
+    "desde": 1421,
+    "hasta": 1451
+  },
+  {
+    "id": "ottomanos-murad-ii-ottomanos-constantinopla-asedio",
+    "gobernante": "ottomanos-murad-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "asedio",
+    "desde": 1422,
+    "hasta": 1422
+  },
+  {
+    "id": "ottomanos-murad-ii-ottomanos-varna-batalla",
+    "gobernante": "ottomanos-murad-ii",
+    "ciudad": "ottomanos-varna",
+    "rol": "batalla",
+    "desde": 1444,
+    "hasta": 1444
+  },
+  {
+    "id": "ottomanos-murad-ii-ottomanos-pristina-batalla",
+    "gobernante": "ottomanos-murad-ii",
+    "ciudad": "ottomanos-pristina",
+    "rol": "batalla",
+    "desde": 1448,
+    "hasta": 1448,
+    "nota": "Segunda batalla de Kosovo."
+  },
+  {
+    "id": "ottomanos-mehmed-ii-ottomanos-constantinopla-conquista",
+    "gobernante": "ottomanos-mehmed-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "conquista",
+    "desde": 1453,
+    "hasta": 1453,
+    "nota": "Conquista de Constantinopla."
+  },
+  {
+    "id": "ottomanos-mehmed-ii-ottomanos-edirne-residencia",
+    "gobernante": "ottomanos-mehmed-ii",
+    "ciudad": "ottomanos-edirne",
+    "rol": "residencia",
+    "desde": 1451,
+    "hasta": 1453,
+    "nota": "Corte antes de la conquista."
+  },
+  {
+    "id": "ottomanos-mehmed-ii-ottomanos-trebisonda-conquista",
+    "gobernante": "ottomanos-mehmed-ii",
+    "ciudad": "ottomanos-trebisonda",
+    "rol": "conquista",
+    "desde": 1461,
+    "hasta": 1461
+  },
+  {
+    "id": "ottomanos-mehmed-ii-ottomanos-belgrado-asedio",
+    "gobernante": "ottomanos-mehmed-ii",
+    "ciudad": "ottomanos-belgrado",
+    "rol": "asedio",
+    "desde": 1456,
+    "hasta": 1456,
+    "nota": "Sitio fallido."
+  },
+  {
+    "id": "ottomanos-bayezid-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-bayezid-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1481,
+    "hasta": 1512
+  },
+  {
+    "id": "ottomanos-bayezid-ii-ottomanos-edirne-residencia",
+    "gobernante": "ottomanos-bayezid-ii",
+    "ciudad": "ottomanos-edirne",
+    "rol": "residencia",
+    "desde": 1481,
+    "hasta": 1512
+  },
+  {
+    "id": "ottomanos-selim-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-selim-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1512,
+    "hasta": 1520
+  },
+  {
+    "id": "ottomanos-selim-i-safavidas-tabriz-batalla",
+    "gobernante": "ottomanos-selim-i",
+    "ciudad": "safavidas-tabriz",
+    "rol": "batalla",
+    "desde": 1514,
+    "hasta": 1514,
+    "nota": "Batalla de Chaldiran; ocupación de Tabriz."
+  },
+  {
+    "id": "ottomanos-selim-i-ottomanos-el-cairo-conquista",
+    "gobernante": "ottomanos-selim-i",
+    "ciudad": "ottomanos-el-cairo",
+    "rol": "conquista",
+    "desde": 1517,
+    "hasta": 1517,
+    "nota": "Conquista del sultanato mameluco."
+  },
+  {
+    "id": "ottomanos-selim-i-mamelucos-alepo-conquista",
+    "gobernante": "ottomanos-selim-i",
+    "ciudad": "mamelucos-alepo",
+    "rol": "conquista",
+    "desde": 1516,
+    "hasta": 1516
+  },
+  {
+    "id": "ottomanos-selim-i-umeyas-damasco-conquista",
+    "gobernante": "ottomanos-selim-i",
+    "ciudad": "umeyas-damasco",
+    "rol": "conquista",
+    "desde": 1516,
+    "hasta": 1516
+  },
+  {
+    "id": "ottomanos-suleiman-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-suleiman-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1520,
+    "hasta": 1566
+  },
+  {
+    "id": "ottomanos-suleiman-i-ottomanos-belgrado-conquista",
+    "gobernante": "ottomanos-suleiman-i",
+    "ciudad": "ottomanos-belgrado",
+    "rol": "conquista",
+    "desde": 1521,
+    "hasta": 1521
+  },
+  {
+    "id": "ottomanos-suleiman-i-ottomanos-rodas-conquista",
+    "gobernante": "ottomanos-suleiman-i",
+    "ciudad": "ottomanos-rodas",
+    "rol": "conquista",
+    "desde": 1522,
+    "hasta": 1522
+  },
+  {
+    "id": "ottomanos-suleiman-i-ottomanos-buda-conquista",
+    "gobernante": "ottomanos-suleiman-i",
+    "ciudad": "ottomanos-buda",
+    "rol": "conquista",
+    "desde": 1541,
+    "hasta": 1541
+  },
+  {
+    "id": "ottomanos-suleiman-i-austria-viena-asedio",
+    "gobernante": "ottomanos-suleiman-i",
+    "ciudad": "austria-viena",
+    "rol": "asedio",
+    "desde": 1529,
+    "hasta": 1529
+  },
+  {
+    "id": "ottomanos-suleiman-i-abasies-bagdad-conquista",
+    "gobernante": "ottomanos-suleiman-i",
+    "ciudad": "abasies-bagdad",
+    "rol": "conquista",
+    "desde": 1534,
+    "hasta": 1534
+  },
+  {
+    "id": "ottomanos-selim-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-selim-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1566,
+    "hasta": 1574
+  },
+  {
+    "id": "ottomanos-selim-ii-ottomanos-lepanto-batalla",
+    "gobernante": "ottomanos-selim-ii",
+    "ciudad": "ottomanos-lepanto",
+    "rol": "batalla",
+    "desde": 1571,
+    "hasta": 1571,
+    "nota": "Derrota naval de Lepanto."
+  },
+  {
+    "id": "ottomanos-selim-ii-ottomanos-tunez-conquista",
+    "gobernante": "ottomanos-selim-ii",
+    "ciudad": "ottomanos-tunez",
+    "rol": "conquista",
+    "desde": 1574,
+    "hasta": 1574
+  },
+  {
+    "id": "ottomanos-murad-iii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-murad-iii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1574,
+    "hasta": 1595
+  },
+  {
+    "id": "ottomanos-murad-iii-safavidas-tabriz-conquista",
+    "gobernante": "ottomanos-murad-iii",
+    "ciudad": "safavidas-tabriz",
+    "rol": "conquista",
+    "desde": 1585,
+    "hasta": 1585
+  },
+  {
+    "id": "ottomanos-mehmed-iii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mehmed-iii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1595,
+    "hasta": 1603
+  },
+  {
+    "id": "ottomanos-mehmed-iii-ottomanos-eger-conquista",
+    "gobernante": "ottomanos-mehmed-iii",
+    "ciudad": "ottomanos-eger",
+    "rol": "conquista",
+    "desde": 1596,
+    "hasta": 1596
+  },
+  {
+    "id": "ottomanos-ahmed-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-ahmed-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1603,
+    "hasta": 1617
+  },
+  {
+    "id": "ottomanos-ahmed-i-ottomanos-constantinopla-patronazgo",
+    "gobernante": "ottomanos-ahmed-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "patronazgo",
+    "desde": 1609,
+    "hasta": 1617,
+    "nota": "Mezquita Azul."
+  },
+  {
+    "id": "ottomanos-mustafa-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mustafa-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1617,
+    "hasta": 1623,
+    "nota": "Reinados interrumpidos."
+  },
+  {
+    "id": "ottomanos-osman-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-osman-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1618,
+    "hasta": 1622
+  },
+  {
+    "id": "ottomanos-osman-ii-ottomanos-khotyn-batalla",
+    "gobernante": "ottomanos-osman-ii",
+    "ciudad": "ottomanos-khotyn",
+    "rol": "batalla",
+    "desde": 1621,
+    "hasta": 1621
+  },
+  {
+    "id": "ottomanos-murad-iv-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-murad-iv",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1623,
+    "hasta": 1640
+  },
+  {
+    "id": "ottomanos-murad-iv-ottomanos-revan-conquista",
+    "gobernante": "ottomanos-murad-iv",
+    "ciudad": "ottomanos-revan",
+    "rol": "conquista",
+    "desde": 1635,
+    "hasta": 1635
+  },
+  {
+    "id": "ottomanos-murad-iv-abasies-bagdad-conquista",
+    "gobernante": "ottomanos-murad-iv",
+    "ciudad": "abasies-bagdad",
+    "rol": "conquista",
+    "desde": 1638,
+    "hasta": 1638
+  },
+  {
+    "id": "ottomanos-ibrahim-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-ibrahim",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1640,
+    "hasta": 1648
+  },
+  {
+    "id": "ottomanos-ibrahim-ottomanos-candia-asedio",
+    "gobernante": "ottomanos-ibrahim",
+    "ciudad": "ottomanos-candia",
+    "rol": "asedio",
+    "desde": 1648,
+    "hasta": 1648,
+    "nota": "Inicio del sitio de Candía."
+  },
+  {
+    "id": "ottomanos-mehmed-iv-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mehmed-iv",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1648,
+    "hasta": 1687
+  },
+  {
+    "id": "ottomanos-mehmed-iv-ottomanos-candia-conquista",
+    "gobernante": "ottomanos-mehmed-iv",
+    "ciudad": "ottomanos-candia",
+    "rol": "conquista",
+    "desde": 1669,
+    "hasta": 1669
+  },
+  {
+    "id": "ottomanos-mehmed-iv-ottomanos-kamieniec-conquista",
+    "gobernante": "ottomanos-mehmed-iv",
+    "ciudad": "ottomanos-kamieniec",
+    "rol": "conquista",
+    "desde": 1672,
+    "hasta": 1672
+  },
+  {
+    "id": "ottomanos-mehmed-iv-austria-viena-asedio",
+    "gobernante": "ottomanos-mehmed-iv",
+    "ciudad": "austria-viena",
+    "rol": "asedio",
+    "desde": 1683,
+    "hasta": 1683
+  },
+  {
+    "id": "ottomanos-suleiman-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-suleiman-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1687,
+    "hasta": 1691
+  },
+  {
+    "id": "ottomanos-suleiman-ii-ottomanos-belgrado-conquista",
+    "gobernante": "ottomanos-suleiman-ii",
+    "ciudad": "ottomanos-belgrado",
+    "rol": "conquista",
+    "desde": 1690,
+    "hasta": 1690
+  },
+  {
+    "id": "ottomanos-ahmed-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-ahmed-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1691,
+    "hasta": 1695
+  },
+  {
+    "id": "ottomanos-mustafa-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mustafa-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1695,
+    "hasta": 1703
+  },
+  {
+    "id": "ottomanos-mustafa-ii-ottomanos-karlowitz-tratado",
+    "gobernante": "ottomanos-mustafa-ii",
+    "ciudad": "ottomanos-karlowitz",
+    "rol": "tratado",
+    "desde": 1699,
+    "hasta": 1699,
+    "nota": "Paz de Karlowitz."
+  },
+  {
+    "id": "ottomanos-ahmed-iii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-ahmed-iii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1703,
+    "hasta": 1730
+  },
+  {
+    "id": "ottomanos-ahmed-iii-safavidas-tabriz-conquista",
+    "gobernante": "ottomanos-ahmed-iii",
+    "ciudad": "safavidas-tabriz",
+    "rol": "conquista",
+    "desde": 1725,
+    "hasta": 1725
+  },
+  {
+    "id": "ottomanos-mahmud-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mahmud-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1730,
+    "hasta": 1754
+  },
+  {
+    "id": "ottomanos-mahmud-i-ottomanos-belgrado-tratado",
+    "gobernante": "ottomanos-mahmud-i",
+    "ciudad": "ottomanos-belgrado",
+    "rol": "tratado",
+    "desde": 1739,
+    "hasta": 1739,
+    "nota": "Paz de Belgrado."
+  },
+  {
+    "id": "ottomanos-osman-iii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-osman-iii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1754,
+    "hasta": 1757
+  },
+  {
+    "id": "ottomanos-mustafa-iii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mustafa-iii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1757,
+    "hasta": 1774
+  },
+  {
+    "id": "ottomanos-mustafa-iii-ottomanos-khotyn-batalla",
+    "gobernante": "ottomanos-mustafa-iii",
+    "ciudad": "ottomanos-khotyn",
+    "rol": "batalla",
+    "desde": 1769,
+    "hasta": 1769
+  },
+  {
+    "id": "ottomanos-mustafa-iii-ottomanos-kucuk-kaynarca-tratado",
+    "gobernante": "ottomanos-mustafa-iii",
+    "ciudad": "ottomanos-kucuk-kaynarca",
+    "rol": "tratado",
+    "desde": 1774,
+    "hasta": 1774,
+    "nota": "Tratado de Küçük Kaynarca."
+  },
+  {
+    "id": "ottomanos-abdulhamid-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-abdulhamid-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1774,
+    "hasta": 1789
+  },
+  {
+    "id": "ottomanos-abdulhamid-i-ottomanos-ochakov-asedio",
+    "gobernante": "ottomanos-abdulhamid-i",
+    "ciudad": "ottomanos-ochakov",
+    "rol": "asedio",
+    "desde": 1788,
+    "hasta": 1788
+  },
+  {
+    "id": "ottomanos-selim-iii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-selim-iii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1789,
+    "hasta": 1807
+  },
+  {
+    "id": "ottomanos-selim-iii-ottomanos-acre-asedio",
+    "gobernante": "ottomanos-selim-iii",
+    "ciudad": "ottomanos-acre",
+    "rol": "asedio",
+    "desde": 1799,
+    "hasta": 1799,
+    "nota": "Resistencia a Napoleón."
+  },
+  {
+    "id": "ottomanos-mustafa-iv-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mustafa-iv",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1807,
+    "hasta": 1808
+  },
+  {
+    "id": "ottomanos-mahmud-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mahmud-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1808,
+    "hasta": 1839
+  },
+  {
+    "id": "ottomanos-mahmud-ii-ottomanos-atenas-asedio",
+    "gobernante": "ottomanos-mahmud-ii",
+    "ciudad": "ottomanos-atenas",
+    "rol": "asedio",
+    "desde": 1826,
+    "hasta": 1827,
+    "nota": "Guerra de independencia griega."
+  },
+  {
+    "id": "ottomanos-mahmud-ii-ottomanos-navarino-batalla",
+    "gobernante": "ottomanos-mahmud-ii",
+    "ciudad": "ottomanos-navarino",
+    "rol": "batalla",
+    "desde": 1827,
+    "hasta": 1827
+  },
+  {
+    "id": "ottomanos-mahmud-ii-seljukas-konya-batalla",
+    "gobernante": "ottomanos-mahmud-ii",
+    "ciudad": "seljukas-konya",
+    "rol": "batalla",
+    "desde": 1832,
+    "hasta": 1832,
+    "nota": "Guerra contra Mehmet Alí."
+  },
+  {
+    "id": "ottomanos-abdulmecid-i-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-abdulmecid-i",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1839,
+    "hasta": 1861
+  },
+  {
+    "id": "ottomanos-abdulmecid-i-ottomanos-sevastopol-asedio",
+    "gobernante": "ottomanos-abdulmecid-i",
+    "ciudad": "ottomanos-sevastopol",
+    "rol": "asedio",
+    "desde": 1854,
+    "hasta": 1855,
+    "nota": "Guerra de Crimea."
+  },
+  {
+    "id": "ottomanos-abdulaziz-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-abdulaziz",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1861,
+    "hasta": 1876
+  },
+  {
+    "id": "ottomanos-abdulaziz-ottomanos-candia-asedio",
+    "gobernante": "ottomanos-abdulaziz",
+    "ciudad": "ottomanos-candia",
+    "rol": "asedio",
+    "desde": 1866,
+    "hasta": 1869,
+    "nota": "Revuelta de Creta."
+  },
+  {
+    "id": "ottomanos-murad-v-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-murad-v",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1876,
+    "hasta": 1876
+  },
+  {
+    "id": "ottomanos-abdulhamid-ii-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-abdulhamid-ii",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1876,
+    "hasta": 1909
+  },
+  {
+    "id": "ottomanos-abdulhamid-ii-ottomanos-salonica-revuelta",
+    "gobernante": "ottomanos-abdulhamid-ii",
+    "ciudad": "ottomanos-salonica",
+    "rol": "revuelta",
+    "desde": 1908,
+    "hasta": 1908,
+    "nota": "Revolución de los Jóvenes Turcos."
+  },
+  {
+    "id": "ottomanos-mehmed-v-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mehmed-v",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1909,
+    "hasta": 1918
+  },
+  {
+    "id": "ottomanos-mehmed-v-ottomanos-galipoli-batalla",
+    "gobernante": "ottomanos-mehmed-v",
+    "ciudad": "ottomanos-galipoli",
+    "rol": "batalla",
+    "desde": 1915,
+    "hasta": 1915,
+    "nota": "Campaña de Galípoli."
+  },
+  {
+    "id": "ottomanos-mehmed-v-ottomanos-la-meca-revuelta",
+    "gobernante": "ottomanos-mehmed-v",
+    "ciudad": "ottomanos-la-meca",
+    "rol": "revuelta",
+    "desde": 1916,
+    "hasta": 1916,
+    "nota": "Revuelta árabe."
+  },
+  {
+    "id": "ottomanos-mehmed-v-ottomanos-medina-asedio",
+    "gobernante": "ottomanos-mehmed-v",
+    "ciudad": "ottomanos-medina",
+    "rol": "asedio",
+    "desde": 1916,
+    "hasta": 1918,
+    "nota": "Sitio de Medina."
+  },
+  {
+    "id": "ottomanos-mehmed-vi-ottomanos-constantinopla-centro-administrativo",
+    "gobernante": "ottomanos-mehmed-vi",
+    "ciudad": "ottomanos-constantinopla",
+    "rol": "centro-administrativo",
+    "desde": 1918,
+    "hasta": 1922
+  },
+  {
+    "id": "ottomanos-mehmed-vi-ottomanos-izmir-batalla",
+    "gobernante": "ottomanos-mehmed-vi",
+    "ciudad": "ottomanos-izmir",
+    "rol": "batalla",
+    "desde": 1919,
+    "hasta": 1922,
+    "nota": "Ocupación griega y guerra de independencia."
+  },
+  {
+    "id": "ottomanos-mehmed-vi-ottomanos-ankara-revuelta",
+    "gobernante": "ottomanos-mehmed-vi",
+    "ciudad": "ottomanos-ankara",
+    "rol": "revuelta",
+    "desde": 1920,
+    "hasta": 1922,
+    "nota": "Gobierno nacionalista de Ankara."
+  },
+  {
+    "id": "seljukas-tughril-beg-seljukas-nishapur-centro-administrativo",
+    "gobernante": "seljukas-tughril-beg",
+    "ciudad": "seljukas-nishapur",
+    "rol": "centro-administrativo",
+    "desde": 1037,
+    "hasta": 1043
+  },
+  {
+    "id": "seljukas-tughril-beg-seljukas-rayy-centro-administrativo",
+    "gobernante": "seljukas-tughril-beg",
+    "ciudad": "seljukas-rayy",
+    "rol": "centro-administrativo",
+    "desde": 1043,
+    "hasta": 1063
+  },
+  {
+    "id": "seljukas-tughril-beg-abasies-bagdad-conquista",
+    "gobernante": "seljukas-tughril-beg",
+    "ciudad": "abasies-bagdad",
+    "rol": "conquista",
+    "desde": 1055,
+    "hasta": 1055,
+    "nota": "Entrada en Bagdad; protectorado abasí."
+  },
+  {
+    "id": "seljukas-alp-arslan-seljukas-rayy-centro-administrativo",
+    "gobernante": "seljukas-alp-arslan",
+    "ciudad": "seljukas-rayy",
+    "rol": "centro-administrativo",
+    "desde": 1063,
+    "hasta": 1072
+  },
+  {
+    "id": "seljukas-alp-arslan-seljukas-malazgirt-batalla",
+    "gobernante": "seljukas-alp-arslan",
+    "ciudad": "seljukas-malazgirt",
+    "rol": "batalla",
+    "desde": 1071,
+    "hasta": 1071,
+    "nota": "Batalla de Manzikert."
+  },
+  {
+    "id": "seljukas-malik-shah-seljukas-isfahan-centro-administrativo",
+    "gobernante": "seljukas-malik-shah",
+    "ciudad": "seljukas-isfahan",
+    "rol": "centro-administrativo",
+    "desde": 1072,
+    "hasta": 1092
+  },
+  {
+    "id": "seljukas-malik-shah-seljukas-merv-centro-administrativo",
+    "gobernante": "seljukas-malik-shah",
+    "ciudad": "seljukas-merv",
+    "rol": "centro-administrativo",
+    "desde": 1072,
+    "hasta": 1092,
+    "nota": "Corte oriental."
+  },
+  {
+    "id": "seljukas-sanjar-seljukas-merv-centro-administrativo",
+    "gobernante": "seljukas-sanjar",
+    "ciudad": "seljukas-merv",
+    "rol": "centro-administrativo",
+    "desde": 1118,
+    "hasta": 1157
+  },
+  {
+    "id": "seljukas-suleiman-rum-seljukas-iznik-centro-administrativo",
+    "gobernante": "seljukas-suleiman-rum",
+    "ciudad": "seljukas-iznik",
+    "rol": "centro-administrativo",
+    "desde": 1077,
+    "hasta": 1086
+  },
+  {
+    "id": "seljukas-kilij-arslan-seljukas-iznik-centro-administrativo",
+    "gobernante": "seljukas-kilij-arslan",
+    "ciudad": "seljukas-iznik",
+    "rol": "centro-administrativo",
+    "desde": 1092,
+    "hasta": 1097
+  },
+  {
+    "id": "seljukas-kilij-arslan-seljukas-konya-centro-administrativo",
+    "gobernante": "seljukas-kilij-arslan",
+    "ciudad": "seljukas-konya",
+    "rol": "centro-administrativo",
+    "desde": 1097,
+    "hasta": 1107
+  },
+  {
+    "id": "seljukas-toghrul-iii-seljukas-hamadan-centro-administrativo",
+    "gobernante": "seljukas-toghrul-iii",
+    "ciudad": "seljukas-hamadan",
+    "rol": "centro-administrativo",
+    "desde": 1176,
+    "hasta": 1194
+  },
+  {
+    "id": "seljukas-toghrul-iii-seljukas-rayy-batalla",
+    "gobernante": "seljukas-toghrul-iii",
+    "ciudad": "seljukas-rayy",
+    "rol": "batalla",
+    "desde": 1194,
+    "hasta": 1194,
+    "nota": "Derrota ante los jorezmitas."
+  },
+  {
+    "id": "mamelucos-shajar-al-durr-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-shajar-al-durr",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1250,
+    "hasta": 1250
+  },
+  {
+    "id": "mamelucos-aybak-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-aybak",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1250,
+    "hasta": 1257
+  },
+  {
+    "id": "mamelucos-qutuz-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-qutuz",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1259,
+    "hasta": 1260
+  },
+  {
+    "id": "mamelucos-baybars-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-baybars",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1260,
+    "hasta": 1277
+  },
+  {
+    "id": "mamelucos-baybars-mamelucos-alepo-centro-administrativo",
+    "gobernante": "mamelucos-baybars",
+    "ciudad": "mamelucos-alepo",
+    "rol": "centro-administrativo",
+    "desde": 1260,
+    "hasta": 1277,
+    "nota": "Dominio de Siria."
+  },
+  {
+    "id": "mamelucos-baybars-umeyas-damasco-centro-administrativo",
+    "gobernante": "mamelucos-baybars",
+    "ciudad": "umeyas-damasco",
+    "rol": "centro-administrativo",
+    "desde": 1260,
+    "hasta": 1277,
+    "nota": "Capital siria."
+  },
+  {
+    "id": "mamelucos-qalawun-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-qalawun",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1279,
+    "hasta": 1290
+  },
+  {
+    "id": "mamelucos-qalawun-mamelucos-homs-batalla",
+    "gobernante": "mamelucos-qalawun",
+    "ciudad": "mamelucos-homs",
+    "rol": "batalla",
+    "desde": 1281,
+    "hasta": 1281
+  },
+  {
+    "id": "mamelucos-qalawun-umeyas-damasco-centro-administrativo",
+    "gobernante": "mamelucos-qalawun",
+    "ciudad": "umeyas-damasco",
+    "rol": "centro-administrativo",
+    "desde": 1279,
+    "hasta": 1290
+  },
+  {
+    "id": "mamelucos-khalil-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-khalil",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1290,
+    "hasta": 1293
+  },
+  {
+    "id": "mamelucos-khalil-mamelucos-acre-conquista",
+    "gobernante": "mamelucos-khalil",
+    "ciudad": "mamelucos-acre",
+    "rol": "conquista",
+    "desde": 1291,
+    "hasta": 1291,
+    "nota": "Fin de los estados cruzados."
+  },
+  {
+    "id": "mamelucos-nasir-muhammad-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-nasir-muhammad",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1293,
+    "hasta": 1341
+  },
+  {
+    "id": "mamelucos-nasir-muhammad-umeyas-damasco-centro-administrativo",
+    "gobernante": "mamelucos-nasir-muhammad",
+    "ciudad": "umeyas-damasco",
+    "rol": "centro-administrativo",
+    "desde": 1293,
+    "hasta": 1341
+  },
+  {
+    "id": "mamelucos-barsbay-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-barsbay",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1422,
+    "hasta": 1438
+  },
+  {
+    "id": "mamelucos-barsbay-mamelucos-alejandria-puerto",
+    "gobernante": "mamelucos-barsbay",
+    "ciudad": "mamelucos-alejandria",
+    "rol": "puerto",
+    "desde": 1422,
+    "hasta": 1438,
+    "nota": "Comercio y defensa del puerto."
+  },
+  {
+    "id": "mamelucos-qaitbay-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-qaitbay",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1468,
+    "hasta": 1496
+  },
+  {
+    "id": "mamelucos-qaitbay-mamelucos-alejandria-patronazgo",
+    "gobernante": "mamelucos-qaitbay",
+    "ciudad": "mamelucos-alejandria",
+    "rol": "patronazgo",
+    "desde": 1477,
+    "hasta": 1477,
+    "nota": "Ciudadela de Qaitbay."
+  },
+  {
+    "id": "mamelucos-tuman-bay-mamelucos-el-cairo-centro-administrativo",
+    "gobernante": "mamelucos-tuman-bay",
+    "ciudad": "mamelucos-el-cairo",
+    "rol": "centro-administrativo",
+    "desde": 1516,
+    "hasta": 1517
+  },
+  {
+    "id": "mamelucos-tuman-bay-mamelucos-alepo-batalla",
+    "gobernante": "mamelucos-tuman-bay",
+    "ciudad": "mamelucos-alepo",
+    "rol": "batalla",
+    "desde": 1516,
+    "hasta": 1516,
+    "nota": "Derrota ante Selim I."
+  }
+]
