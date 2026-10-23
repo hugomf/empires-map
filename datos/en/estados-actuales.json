@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "PT",
+    "nombre": "Portugal",
+    "formacion": 1143,
+    "tipoFormacion": "independencia",
+    "nota": "Afonso Henriques was proclaimed king after the Battle of Ourique; the kingdom broke away from León and Castile."
+  },
+  {
+    "id": "ES",
+    "nombre": "Spain",
+    "formacion": 1479,
+    "tipoFormacion": "unificacion",
+    "nota": "The dynastic union of Isabella and Ferdinand shaped the Spanish state; the 1978 Constitution defines the current regime."
+  },
+  {
+    "id": "FR",
+    "nombre": "France",
+    "formacion": 987,
+    "tipoFormacion": "sucesion",
+    "nota": "Hugh Capet founded the Capetian dynasty; the Fifth Republic was established in 1958.",
+    "aproximada": true
+  },
+  {
+    "id": "GB",
+    "nombre": "United Kingdom",
+    "formacion": 1707,
+    "tipoFormacion": "unificacion",
+    "nota": "The Acts of Union created the Kingdom of Great Britain; Northern Ireland has remained in the United Kingdom since 1922."
+  },
+  {
+    "id": "IE",
+    "nombre": "Ireland",
+    "formacion": 1922,
+    "tipoFormacion": "independencia",
+    "nota": "The Irish Free State emerged from the Anglo-Irish Treaty; the Republic was proclaimed in 1949."
+  },
+  {
+    "id": "IS",
+    "nombre": "Iceland",
+    "formacion": 930,
+    "tipoFormacion": "constitucion",
+    "nota": "The founding of the Alþingi marks the Icelandic free state; the Republic was proclaimed in 1944.",
+    "aproximada": true
+  },
+  {
+    "id": "NO",
+    "nombre": "Norway",
+    "formacion": 872,
+    "tipoFormacion": "unificacion",
+    "nota": "Harald I unified the Norwegian kingdoms; the 1814 Constitution defines the modern state.",
+    "aproximada": true
+  },
+  {
+    "id": "SE",
+    "nombre": "Sweden",
+    "formacion": 1523,
+    "tipoFormacion": "independencia",
+    "nota": "Gustav Vasa broke with the Kalmar Union and founded modern Sweden."
+  },
+  {
+    "id": "DK",
+    "nombre": "Denmark",
+    "formacion": 965,
+    "tipoFormacion": "unificacion",
+    "nota": "Harald Bluetooth unified Denmark; the constitutional monarchy dates from 1849.",
+    "aproximada": true
+  },
+  {
+    "id": "FI",
+    "nombre": "Finland",
+    "formacion": 1917,
+    "tipoFormacion": "independencia",
+    "nota": "The parliament declared independence after the Russian Revolution."
+  },
+  {
+    "id": "NL",
+    "nombre": "Netherlands",
+    "formacion": 1581,
+    "tipoFormacion": "independencia",
+    "nota": "The United Provinces abjured Philip II; independence was recognized at Westphalia in 1648."
+  },
+  {
+    "id": "BE",
+    "nombre": "Belgium",
+    "formacion": 1830,
+    "tipoFormacion": "independencia",
+    "nota": "The 1830 revolution separated Belgium from the Netherlands."
+  },
+  {
+    "id": "LU",
+    "nombre": "Luxembourg",
+    "formacion": 1839,
+    "tipoFormacion": "independencia",
+    "nota": "The Treaty of London recognized Luxembourg’s independence."
+  },
+  {
+    "id": "DE",
+    "nombre": "Germany",
+    "formacion": 1871,
+    "tipoFormacion": "unificacion",
+    "nota": "The proclamation of the Empire at Versailles completed the unification led by Prussia."
+  },
+  {
+    "id": "AT",
+    "nombre": "Austria",
+    "formacion": 1955,
+    "tipoFormacion": "constitucion",
+    "nota": "The State Treaty restored Austrian sovereignty; the Second Republic had been proclaimed in 1945."
+  },
+  {
+    "id": "CH",
+    "nombre": "Switzerland",
+    "formacion": 1291,
+    "tipoFormacion": "unificacion",
+    "nota": "The Federal Charter of Uri, Schwyz and Unterwalden began the Confederation.",
+    "aproximada": true
+  },
+  {
+    "id": "IT",
+    "nombre": "Italy",
+    "formacion": 1861,
+    "tipoFormacion": "unificacion",
+    "nota": "The Kingdom of Italy was proclaimed under Victor Emmanuel II; Rome joined in 1870."
+  },
+  {
+    "id": "SM",
+    "nombre": "San Marino",
+    "formacion": 1600,
+    "tipoFormacion": "constitucion",
+    "nota": "The 1600 Constitution fixed the republican regime; tradition traces its foundation to 301.",
+    "aproximada": true
+  },
+  {
+    "id": "MT",
+    "nombre": "Malta",
+    "formacion": 1964,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1964 (United Kingdom)."
+  },
+  {
+    "id": "MK",
+    "nombre": "North Macedonia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Macedonia became independent from Yugoslavia; the current name was adopted in 2019."
+  },
+  {
+    "id": "BA",
+    "nombre": "Bosnia and Herzegovina",
+    "formacion": 1992,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was approved in a referendum and triggered the Bosnian War."
+  },
+  {
+    "id": "HR",
+    "nombre": "Croatia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Croatia declared independence; the war ended with its territorial integrity in 1995."
+  },
+  {
+    "id": "SI",
+    "nombre": "Slovenia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Yugoslavia)."
+  },
+  {
+    "id": "RS",
+    "nombre": "Serbia",
+    "formacion": 2006,
+    "tipoFormacion": "sucesion",
+    "nota": "Serbia inherited the legal personality of Serbia and Montenegro after Montenegro’s secession."
+  },
+  {
+    "id": "ME",
+    "nombre": "Montenegro",
+    "formacion": 2006,
+    "tipoFormacion": "independencia",
+    "nota": "The 2006 referendum restored Montenegro’s independence."
+  },
+  {
+    "id": "AL",
+    "nombre": "Albania",
+    "formacion": 1912,
+    "tipoFormacion": "independencia",
+    "nota": "The Assembly of Vlorë proclaimed Albanian independence."
+  },
+  {
+    "id": "GR",
+    "nombre": "Greece",
+    "formacion": 1830,
+    "tipoFormacion": "independencia",
+    "nota": "The London Protocol recognized the Kingdom of Greece after the War of Independence."
+  },
+  {
+    "id": "BG",
+    "nombre": "Bulgaria",
+    "formacion": 1908,
+    "tipoFormacion": "independencia",
+    "nota": "Bulgaria declared independence and ended its Ottoman vassalage."
+  },
+  {
+    "id": "PL",
+    "nombre": "Poland",
+    "formacion": 1918,
+    "tipoFormacion": "independencia",
+    "nota": "Poland regained independence after the First World War and 123 years of partition."
+  },
+  {
+    "id": "UA",
+    "nombre": "Ukraine",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "BY",
+    "nombre": "Belarus",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "LT",
+    "nombre": "Lithuania",
+    "formacion": 1990,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1990 (Soviet Union)."
+  },
+  {
+    "id": "LV",
+    "nombre": "Latvia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "EE",
+    "nombre": "Estonia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "HU",
+    "nombre": "Hungary",
+    "formacion": 1000,
+    "tipoFormacion": "constitucion",
+    "nota": "Stephen I founded the Kingdom of Hungary; the 2011 Constitution defines the current state.",
+    "aproximada": true
+  },
+  {
+    "id": "RO",
+    "nombre": "Romania",
+    "formacion": 1877,
+    "tipoFormacion": "independencia",
+    "nota": "Romania proclaimed independence during the Russo-Turkish War."
+  },
+  {
+    "id": "MD",
+    "nombre": "Moldova",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "SK",
+    "nombre": "Slovakia",
+    "formacion": 1993,
+    "tipoFormacion": "independencia",
+    "nota": "The split of Czechoslovakia created Slovakia on 1 January 1993."
+  },
+  {
+    "id": "CZ",
+    "nombre": "Czechia",
+    "formacion": 1993,
+    "tipoFormacion": "independencia",
+    "nota": "Czechia emerged from the peaceful split of Czechoslovakia."
+  },
+  {
+    "id": "GE",
+    "nombre": "Georgia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "AM",
+    "nombre": "Armenia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "AZ",
+    "nombre": "Azerbaijan",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "CY",
+    "nombre": "Cyprus",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (United Kingdom)."
+  },
+  {
+    "id": "TR",
+    "nombre": "Turkey",
+    "formacion": 1923,
+    "tipoFormacion": "sucesion",
+    "nota": "The Republic of Turkey was proclaimed after the War of Independence; it replaced the Ottoman Empire."
+  },
+  {
+    "id": "RU",
+    "nombre": "Russia",
+    "formacion": 1721,
+    "tipoFormacion": "sucesion",
+    "nota": "Peter I proclaimed the Russian Empire; the Russian Federation has been its successor since 1991."
+  },
+  {
+    "id": "AD",
+    "nombre": "Andorra",
+    "formacion": 1993,
+    "tipoFormacion": "constitucion",
+    "nota": "The 1993 Constitution turned the co-principality into a parliamentary state."
+  },
+  {
+    "id": "MC",
+    "nombre": "Monaco",
+    "formacion": 1911,
+    "tipoFormacion": "constitucion",
+    "nota": "The 1911 Constitution limited the prince’s power; the principality retained its sovereignty."
+  },
+  {
+    "id": "LI",
+    "nombre": "Liechtenstein",
+    "formacion": 1806,
+    "tipoFormacion": "reconocimiento",
+    "nota": "Liechtenstein gained sovereignty when the Holy Roman Empire dissolved; the 1921 Constitution created the parliamentary monarchy."
+  },
+  {
+    "id": "VA",
+    "nombre": "Vatican",
+    "formacion": 1929,
+    "tipoFormacion": "reconocimiento",
+    "nota": "The Lateran Treaty created Vatican City as a sovereign state."
+  },
+  {
+    "id": "US",
+    "nombre": "United States",
+    "formacion": 1776,
+    "tipoFormacion": "independencia",
+    "nota": "The Declaration of Independence separated the Thirteen Colonies from Great Britain."
+  },
+  {
+    "id": "CA",
+    "nombre": "Canada",
+    "formacion": 1867,
+    "tipoFormacion": "unificacion",
+    "nota": "The British North America Act united Ontario, Quebec, Nova Scotia and New Brunswick."
+  },
+  {
+    "id": "MX",
+    "nombre": "Mexico",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "The Plan of Iguala and the Treaty of Córdoba completed independence."
+  },
+  {
+    "id": "GT",
+    "nombre": "Guatemala",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1821 (Spain)."
+  },
+  {
+    "id": "HN",
+    "nombre": "Honduras",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1821 (Spain)."
+  },
+  {
+    "id": "SV",
+    "nombre": "El Salvador",
+    "formacion": 1841,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1841 (Federal Republic of Central America)."
+  },
+  {
+    "id": "NI",
+    "nombre": "Nicaragua",
+    "formacion": 1838,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1838 (Federal Republic of Central America)."
+  },
+  {
+    "id": "CR",
+    "nombre": "Costa Rica",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1821 (Spain)."
+  },
+  {
+    "id": "PA",
+    "nombre": "Panama",
+    "formacion": 1903,
+    "tipoFormacion": "independencia",
+    "nota": "Panama separated from Colombia with US support."
+  },
+  {
+    "id": "BZ",
+    "nombre": "Belize",
+    "formacion": 1981,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1981 (United Kingdom)."
+  },
+  {
+    "id": "CU",
+    "nombre": "Cuba",
+    "formacion": 1902,
+    "tipoFormacion": "independencia",
+    "nota": "Cuba became independent after the Spanish–American War and US military occupation."
+  },
+  {
+    "id": "HT",
+    "nombre": "Haiti",
+    "formacion": 1804,
+    "tipoFormacion": "independencia",
+    "nota": "The Haitian Revolution created the first independent Black state."
+  },
+  {
+    "id": "DO",
+    "nombre": "Dominican Republic",
+    "formacion": 1844,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1844 (Haiti)."
+  },
+  {
+    "id": "JM",
+    "nombre": "Jamaica",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1962 (United Kingdom)."
+  },
+  {
+    "id": "TT",
+    "nombre": "Trinidad and Tobago",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1962 (United Kingdom)."
+  },
+  {
+    "id": "BS",
+    "nombre": "Bahamas",
+    "formacion": 1973,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1973 (United Kingdom)."
+  },
+  {
+    "id": "BB",
+    "nombre": "Barbados",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1966 (United Kingdom)."
+  },
+  {
+    "id": "AG",
+    "nombre": "Antigua and Barbuda",
+    "formacion": 1981,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1981 (United Kingdom)."
+  },
+  {
+    "id": "DM",
+    "nombre": "Dominica",
+    "formacion": 1978,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1978 (United Kingdom)."
+  },
+  {
+    "id": "GD",
+    "nombre": "Grenada",
+    "formacion": 1974,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1974 (United Kingdom)."
+  },
+  {
+    "id": "KN",
+    "nombre": "Saint Kitts and Nevis",
+    "formacion": 1983,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1983 (United Kingdom)."
+  },
+  {
+    "id": "LC",
+    "nombre": "Saint Lucia",
+    "formacion": 1979,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1979 (United Kingdom)."
+  },
+  {
+    "id": "VC",
+    "nombre": "Saint Vincent and the Grenadines",
+    "formacion": 1979,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1979 (United Kingdom)."
+  },
+  {
+    "id": "GY",
+    "nombre": "Guyana",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1966 (United Kingdom)."
+  },
+  {
+    "id": "SR",
+    "nombre": "Suriname",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (Netherlands)."
+  },
+  {
+    "id": "CO",
+    "nombre": "Colombia",
+    "formacion": 1819,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1819 (Spain)."
+  },
+  {
+    "id": "VE",
+    "nombre": "Venezuela",
+    "formacion": 1811,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1811 (Spain)."
+  },
+  {
+    "id": "EC",
+    "nombre": "Ecuador",
+    "formacion": 1822,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1822 (Spain)."
+  },
+  {
+    "id": "PE",
+    "nombre": "Peru",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1821 (Spain)."
+  },
+  {
+    "id": "BO",
+    "nombre": "Bolivia",
+    "formacion": 1825,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1825 (Spain)."
+  },
+  {
+    "id": "BR",
+    "nombre": "Brazil",
+    "formacion": 1822,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1822 (Portugal)."
+  },
+  {
+    "id": "PY",
+    "nombre": "Paraguay",
+    "formacion": 1811,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1811 (Spain)."
+  },
+  {
+    "id": "UY",
+    "nombre": "Uruguay",
+    "formacion": 1828,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1828 (Brazil and Argentina)."
+  },
+  {
+    "id": "AR",
+    "nombre": "Argentina",
+    "formacion": 1816,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1816 (Spain)."
+  },
+  {
+    "id": "CL",
+    "nombre": "Chile",
+    "formacion": 1818,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1818 (Spain)."
+  },
+  {
+    "id": "CN",
+    "nombre": "China",
+    "formacion": 1912,
+    "tipoFormacion": "sucesion",
+    "nota": "The Republic replaced the Qing Empire; the People’s Republic was proclaimed in 1949."
+  },
+  {
+    "id": "JP",
+    "nombre": "Japan",
+    "formacion": 1868,
+    "tipoFormacion": "constitucion",
+    "nota": "The Meiji Restoration began the modern state; the 1947 Constitution defines the current regime."
+  },
+  {
+    "id": "KR",
+    "nombre": "South Korea",
+    "formacion": 1948,
+    "tipoFormacion": "constitucion",
+    "nota": "The Republic of Korea was proclaimed in 1948; the division of the peninsula hardened after the war."
+  },
+  {
+    "id": "KP",
+    "nombre": "North Korea",
+    "formacion": 1948,
+    "tipoFormacion": "constitucion",
+    "nota": "The Democratic People’s Republic was proclaimed in 1948 in the northern half of the peninsula."
+  },
+  {
+    "id": "IN",
+    "nombre": "India",
+    "formacion": 1947,
+    "tipoFormacion": "independencia",
+    "nota": "Independence and the partition of British India created India and Pakistan."
+  },
+  {
+    "id": "PK",
+    "nombre": "Pakistan",
+    "formacion": 1947,
+    "tipoFormacion": "independencia",
+    "nota": "The partition of British India created Pakistan; Bangladesh separated in 1971."
+  },
+  {
+    "id": "BD",
+    "nombre": "Bangladesh",
+    "formacion": 1971,
+    "tipoFormacion": "independencia",
+    "nota": "The 1971 Liberation War separated Bangladesh from Pakistan."
+  },
+  {
+    "id": "NP",
+    "nombre": "Nepal",
+    "formacion": 1768,
+    "tipoFormacion": "unificacion",
+    "nota": "Prithvi Narayan Shah unified the kingdoms of the Kathmandu Valley."
+  },
+  {
+    "id": "LK",
+    "nombre": "Sri Lanka",
+    "formacion": 1948,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1948 (United Kingdom)."
+  },
+  {
+    "id": "MM",
+    "nombre": "Myanmar",
+    "formacion": 1948,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1948 (United Kingdom)."
+  },
+  {
+    "id": "TH",
+    "nombre": "Thailand",
+    "formacion": 1932,
+    "tipoFormacion": "constitucion",
+    "nota": "The 1932 revolution established a constitutional monarchy; the country was never colonized."
+  },
+  {
+    "id": "VN",
+    "nombre": "Vietnam",
+    "formacion": 1945,
+    "tipoFormacion": "independencia",
+    "nota": "The proclamation in Hanoi began the war of independence against France."
+  },
+  {
+    "id": "KH",
+    "nombre": "Cambodia",
+    "formacion": 1953,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1953 (France)."
+  },
+  {
+    "id": "LA",
+    "nombre": "Laos",
+    "formacion": 1953,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1953 (France)."
+  },
+  {
+    "id": "ID",
+    "nombre": "Indonesia",
+    "formacion": 1945,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1945 and recognized in 1949."
+  },
+  {
+    "id": "MY",
+    "nombre": "Malaysia",
+    "formacion": 1957,
+    "tipoFormacion": "independencia",
+    "nota": "The Federation of Malaya became independent; Malaysia was formed in 1963."
+  },
+  {
+    "id": "PH",
+    "nombre": "Philippines",
+    "formacion": 1946,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1946 (United States)."
+  },
+  {
+    "id": "MN",
+    "nombre": "Mongolia",
+    "formacion": 1921,
+    "tipoFormacion": "independencia",
+    "nota": "Independence from China was proclaimed in 1911 and consolidated in 1921; the People’s Republic followed in 1924."
+  },
+  {
+    "id": "AF",
+    "nombre": "Afghanistan",
+    "formacion": 1919,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1919 (United Kingdom)."
+  },
+  {
+    "id": "IQ",
+    "nombre": "Iraq",
+    "formacion": 1932,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1932 (United Kingdom)."
+  },
+  {
+    "id": "IR",
+    "nombre": "Iran",
+    "formacion": 1979,
+    "tipoFormacion": "constitucion",
+    "nota": "The Islamic Revolution replaced the Pahlavi monarchy; the Persian state has earlier continuity."
+  },
+  {
+    "id": "SY",
+    "nombre": "Syria",
+    "formacion": 1946,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1946 (France)."
+  },
+  {
+    "id": "LB",
+    "nombre": "Lebanon",
+    "formacion": 1943,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1943 (France)."
+  },
+  {
+    "id": "JO",
+    "nombre": "Jordan",
+    "formacion": 1946,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1946 (United Kingdom)."
+  },
+  {
+    "id": "IL",
+    "nombre": "Israel",
+    "formacion": 1948,
+    "tipoFormacion": "reconocimiento",
+    "nota": "The 1948 declaration of independence created the state; international recognition remains uneven."
+  },
+  {
+    "id": "PS",
+    "nombre": "Palestine",
+    "formacion": 1988,
+    "tipoFormacion": "reconocimiento",
+    "nota": "The 1988 declaration of independence claimed a state; its status and borders remain disputed."
+  },
+  {
+    "id": "SA",
+    "nombre": "Saudi Arabia",
+    "formacion": 1932,
+    "tipoFormacion": "unificacion",
+    "nota": "Abdulaziz ibn Saud unified Nejd and Hejaz and proclaimed the kingdom."
+  },
+  {
+    "id": "YE",
+    "nombre": "Yemen",
+    "formacion": 1990,
+    "tipoFormacion": "unificacion",
+    "nota": "Formed in 1990 through the unification of North and South Yemen."
+  },
+  {
+    "id": "OM",
+    "nombre": "Oman",
+    "formacion": 1650,
+    "tipoFormacion": "independencia",
+    "nota": "The expulsion of the Portuguese in 1650 preceded the consolidation of the Al Said sultanate in 1749.",
+    "aproximada": true
+  },
+  {
+    "id": "AE",
+    "nombre": "United Arab Emirates",
+    "formacion": 1971,
+    "tipoFormacion": "unificacion",
+    "nota": "Formed in 1971 through the unification of Trucial States."
+  },
+  {
+    "id": "QA",
+    "nombre": "Qatar",
+    "formacion": 1971,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1971 (United Kingdom)."
+  },
+  {
+    "id": "KW",
+    "nombre": "Kuwait",
+    "formacion": 1961,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1961 (United Kingdom)."
+  },
+  {
+    "id": "BH",
+    "nombre": "Bahrain",
+    "formacion": 1971,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1971 (United Kingdom)."
+  },
+  {
+    "id": "TW",
+    "nombre": "Taiwan",
+    "formacion": 1949,
+    "tipoFormacion": "sucesion",
+    "nota": "The Republic of China government moved to Taiwan in 1949; its international status is disputed."
+  },
+  {
+    "id": "BT",
+    "nombre": "Bhutan",
+    "formacion": 2008,
+    "tipoFormacion": "constitucion",
+    "nota": "The 2008 Constitution established a constitutional monarchy."
+  },
+  {
+    "id": "MV",
+    "nombre": "Maldives",
+    "formacion": 1965,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1965 (United Kingdom)."
+  },
+  {
+    "id": "BN",
+    "nombre": "Brunei",
+    "formacion": 1984,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1984 (United Kingdom)."
+  },
+  {
+    "id": "SG",
+    "nombre": "Singapore",
+    "formacion": 1965,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1965 (Malaysia)."
+  },
+  {
+    "id": "TL",
+    "nombre": "Timor-Leste",
+    "formacion": 2002,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 2002 (Indonesia)."
+  },
+  {
+    "id": "KZ",
+    "nombre": "Kazakhstan",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "UZ",
+    "nombre": "Uzbekistan",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "TM",
+    "nombre": "Turkmenistan",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "KG",
+    "nombre": "Kyrgyzstan",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "TJ",
+    "nombre": "Tajikistan",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1991 (Soviet Union)."
+  },
+  {
+    "id": "EG",
+    "nombre": "Egypt",
+    "formacion": 1922,
+    "tipoFormacion": "independencia",
+    "nota": "The Kingdom of Egypt gained formal independence; the Republic was proclaimed in 1953."
+  },
+  {
+    "id": "LY",
+    "nombre": "Libya",
+    "formacion": 1951,
+    "tipoFormacion": "independencia",
+    "nota": "The UN promoted Libyan independence after Italian colonial rule."
+  },
+  {
+    "id": "TN",
+    "nombre": "Tunisia",
+    "formacion": 1956,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1956 (France)."
+  },
+  {
+    "id": "DZ",
+    "nombre": "Algeria",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "The Évian Accords ended the Algerian War of Independence."
+  },
+  {
+    "id": "MA",
+    "nombre": "Morocco",
+    "formacion": 1956,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1956 (France and Spain)."
+  },
+  {
+    "id": "SD",
+    "nombre": "Sudan",
+    "formacion": 1956,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1956 (United Kingdom and Egypt)."
+  },
+  {
+    "id": "SS",
+    "nombre": "South Sudan",
+    "formacion": 2011,
+    "tipoFormacion": "independencia",
+    "nota": "The 2011 referendum led to South Sudan’s independence."
+  },
+  {
+    "id": "ET",
+    "nombre": "Ethiopia",
+    "formacion": 1974,
+    "tipoFormacion": "sucesion",
+    "nota": "The 1974 revolution overthrew the emperor; the Federal Republic was constituted in 1995."
+  },
+  {
+    "id": "ER",
+    "nombre": "Eritrea",
+    "formacion": 1993,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1993 (Ethiopia)."
+  },
+  {
+    "id": "DJ",
+    "nombre": "Djibouti",
+    "formacion": 1977,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1977 (France)."
+  },
+  {
+    "id": "SO",
+    "nombre": "Somalia",
+    "formacion": 1960,
+    "tipoFormacion": "unificacion",
+    "nota": "Formed in 1960 through the unification of British and Italian Somaliland."
+  },
+  {
+    "id": "KE",
+    "nombre": "Kenya",
+    "formacion": 1963,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1963 (United Kingdom)."
+  },
+  {
+    "id": "UG",
+    "nombre": "Uganda",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1962 (United Kingdom)."
+  },
+  {
+    "id": "TZ",
+    "nombre": "Tanzania",
+    "formacion": 1964,
+    "tipoFormacion": "unificacion",
+    "nota": "Formed in 1964 through the unification of Tanganyika and Zanzibar."
+  },
+  {
+    "id": "RW",
+    "nombre": "Rwanda",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1962 (Belgium)."
+  },
+  {
+    "id": "BI",
+    "nombre": "Burundi",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1962 (Belgium)."
+  },
+  {
+    "id": "CD",
+    "nombre": "Democratic Republic of the Congo",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (Belgium)."
+  },
+  {
+    "id": "CG",
+    "nombre": "Republic of the Congo",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "CF",
+    "nombre": "Central African Republic",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "CM",
+    "nombre": "Cameroon",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France and the United Kingdom)."
+  },
+  {
+    "id": "GA",
+    "nombre": "Gabon",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "GQ",
+    "nombre": "Equatorial Guinea",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1968 (Spain)."
+  },
+  {
+    "id": "ST",
+    "nombre": "São Tomé and Príncipe",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (Portugal)."
+  },
+  {
+    "id": "AO",
+    "nombre": "Angola",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (Portugal)."
+  },
+  {
+    "id": "ZM",
+    "nombre": "Zambia",
+    "formacion": 1964,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1964 (United Kingdom)."
+  },
+  {
+    "id": "MW",
+    "nombre": "Malawi",
+    "formacion": 1964,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1964 (United Kingdom)."
+  },
+  {
+    "id": "MZ",
+    "nombre": "Mozambique",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (Portugal)."
+  },
+  {
+    "id": "ZW",
+    "nombre": "Zimbabwe",
+    "formacion": 1980,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1980 (United Kingdom)."
+  },
+  {
+    "id": "BW",
+    "nombre": "Botswana",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1966 (United Kingdom)."
+  },
+  {
+    "id": "NA",
+    "nombre": "Namibia",
+    "formacion": 1990,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1990 (South Africa)."
+  },
+  {
+    "id": "ZA",
+    "nombre": "South Africa",
+    "formacion": 1961,
+    "tipoFormacion": "constitucion",
+    "nota": "The Republic was proclaimed in 1961; the Union of South Africa had been formed in 1910."
+  },
+  {
+    "id": "LS",
+    "nombre": "Lesotho",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1966 (United Kingdom)."
+  },
+  {
+    "id": "SZ",
+    "nombre": "Eswatini",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1968 (United Kingdom)."
+  },
+  {
+    "id": "MG",
+    "nombre": "Madagascar",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "MU",
+    "nombre": "Mauritius",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1968 (United Kingdom)."
+  },
+  {
+    "id": "SC",
+    "nombre": "Seychelles",
+    "formacion": 1976,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1976 (United Kingdom)."
+  },
+  {
+    "id": "KM",
+    "nombre": "Comoros",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (France)."
+  },
+  {
+    "id": "CV",
+    "nombre": "Cabo Verde",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (Portugal)."
+  },
+  {
+    "id": "NG",
+    "nombre": "Nigeria",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (United Kingdom)."
+  },
+  {
+    "id": "GH",
+    "nombre": "Ghana",
+    "formacion": 1957,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1957 (United Kingdom)."
+  },
+  {
+    "id": "CI",
+    "nombre": "Côte d’Ivoire",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "SN",
+    "nombre": "Senegal",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "ML",
+    "nombre": "Mali",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "NE",
+    "nombre": "Niger",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "TD",
+    "nombre": "Chad",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "MR",
+    "nombre": "Mauritania",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "GM",
+    "nombre": "Gambia",
+    "formacion": 1965,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1965 (United Kingdom)."
+  },
+  {
+    "id": "GN",
+    "nombre": "Guinea",
+    "formacion": 1958,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1958 (France)."
+  },
+  {
+    "id": "GW",
+    "nombre": "Guinea-Bissau",
+    "formacion": 1973,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1973 (Portugal)."
+  },
+  {
+    "id": "SL",
+    "nombre": "Sierra Leone",
+    "formacion": 1961,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1961 (United Kingdom)."
+  },
+  {
+    "id": "LR",
+    "nombre": "Liberia",
+    "formacion": 1847,
+    "tipoFormacion": "independencia",
+    "nota": "The colony of Liberia declared independence; it is the oldest state in the region."
+  },
+  {
+    "id": "BF",
+    "nombre": "Burkina Faso",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "BJ",
+    "nombre": "Benin",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "TG",
+    "nombre": "Togo",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1960 (France)."
+  },
+  {
+    "id": "AU",
+    "nombre": "Australia",
+    "formacion": 1901,
+    "tipoFormacion": "unificacion",
+    "nota": "The federation of the British colonies created the Commonwealth of Australia."
+  },
+  {
+    "id": "NZ",
+    "nombre": "New Zealand",
+    "formacion": 1907,
+    "tipoFormacion": "constitucion",
+    "nota": "New Zealand became a dominion in 1907; legislative independence was completed in 1947."
+  },
+  {
+    "id": "PG",
+    "nombre": "Papua New Guinea",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1975 (Australia)."
+  },
+  {
+    "id": "FJ",
+    "nombre": "Fiji",
+    "formacion": 1970,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1970 (United Kingdom)."
+  },
+  {
+    "id": "VU",
+    "nombre": "Vanuatu",
+    "formacion": 1980,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1980 (France and the United Kingdom)."
+  },
+  {
+    "id": "SB",
+    "nombre": "Solomon Islands",
+    "formacion": 1978,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1978 (United Kingdom)."
+  },
+  {
+    "id": "WS",
+    "nombre": "Samoa",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1962 (New Zealand)."
+  },
+  {
+    "id": "TO",
+    "nombre": "Tonga",
+    "formacion": 1970,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1970 (United Kingdom)."
+  },
+  {
+    "id": "KI",
+    "nombre": "Kiribati",
+    "formacion": 1979,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1979 (United Kingdom)."
+  },
+  {
+    "id": "FM",
+    "nombre": "Micronesia",
+    "formacion": 1986,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1986 (United States)."
+  },
+  {
+    "id": "MH",
+    "nombre": "Marshall Islands",
+    "formacion": 1986,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1986 (United States)."
+  },
+  {
+    "id": "PW",
+    "nombre": "Palau",
+    "formacion": 1994,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1994 (United States)."
+  },
+  {
+    "id": "NR",
+    "nombre": "Nauru",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1968 (Australia)."
+  },
+  {
+    "id": "TV",
+    "nombre": "Tuvalu",
+    "formacion": 1978,
+    "tipoFormacion": "independencia",
+    "nota": "Independence was proclaimed in 1978 (United Kingdom)."
+  }
+]

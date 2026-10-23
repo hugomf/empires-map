@@ -1,39 +1,60 @@
 import { useMemo, useState } from 'react';
-import { ESTADOS_ACTUALES, type EstadoActual } from '../data/estados-actuales';
+import type { Catalogo } from '../data/catalogo';
 import type { Idioma } from '../lib/i18n';
 import { anioCorto } from '../lib/tiempo';
 
 type T = (clave: string, vars?: Record<string, string | number>) => string;
 
 interface Props {
+  datos: Catalogo;
   anio: number;
   onIrA: (a: number) => void;
   abierto: boolean;
   onCerrar: () => void;
   t: T;
   idioma: Idioma;
+  /** País actual resaltado en el mapa. */
+  paisSeleccionado: string | null;
+  onSeleccionarPais: (id: string | null) => void;
 }
+
+const normalizar = (s: string) =>
+  s
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
 
 /**
  * Los Estados de hoy y el momento en que tomaron forma: una cronología
  * política del mundo actual, conectada con la línea de tiempo.
  */
-export function Estados({ anio, onIrA, abierto, onCerrar, t, idioma }: Props) {
+export function Estados({
+  datos,
+  anio,
+  onIrA,
+  abierto,
+  onCerrar,
+  t,
+  idioma,
+  paisSeleccionado,
+  onSeleccionarPais,
+}: Props) {
   const [filtro, setFiltro] = useState('');
 
   const lista = useMemo(() => {
-    const q = filtro
-      .trim()
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '');
-    return ESTADOS_ACTUALES.filter(
-      (e) =>
-        !q ||
-        e.pais.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(q) ||
-        e.anterior.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(q),
-    ).sort((a, b) => a.anio - b.anio);
-  }, [filtro]);
+    const q = normalizar(filtro);
+    return datos.paisesActuales
+      .filter((p) => {
+        if (!q) return true;
+        return (
+          normalizar(p.nombre).includes(q) ||
+          normalizar(p.nota).includes(q) ||
+          normalizar(t(`formacion.${p.tipoFormacion}`)).includes(q)
+        );
+      })
+      .sort((a, b) => a.formacion - b.formacion);
+  }, [datos.paisesActuales, filtro, t]);
 
   if (!abierto) return null;
 
@@ -54,23 +75,34 @@ export function Estados({ anio, onIrA, abierto, onCerrar, t, idioma }: Props) {
       </div>
       <p className="estados-sub">{t('estados.sub')}</p>
       <ul className="estados-lista">
-        {lista.map((e: EstadoActual) => {
-          const cerca = Math.abs(e.anio - anio) <= 40;
+        {lista.map((p) => {
+          const cerca = Math.abs(p.formacion - anio) <= 40;
+          const elegido = p.id === paisSeleccionado;
           return (
-            <li key={e.id} className={cerca ? 'cerca' : ''}>
+            <li
+              key={p.id}
+              className={`${cerca ? 'cerca' : ''}${elegido ? ' elegido' : ''}`}
+            >
               <button
                 className="estados-fila"
                 onClick={() => {
-                  onIrA(e.anio);
+                  onSeleccionarPais(p.id);
+                  onIrA(p.formacion);
                 }}
-                title={e.nota}
+                title={p.nota}
               >
-                <span className="estados-pais">{e.pais}</span>
-                <span className="estados-anio num">{anioCorto(e.anio, idioma)}</span>
-                <span className="estados-forma">{e.forma}</span>
-                <span className="estados-anterior">{e.anterior}</span>
+                <span className="estados-pais">{p.nombre}</span>
+                <span className="estados-anio num">
+                  {anioCorto(p.formacion, idioma)}
+                  {p.aproximada && (
+                    <span className="estados-aprox"> {t('estados.aprox')}</span>
+                  )}
+                </span>
+                <span className="estados-forma">
+                  {t(`formacion.${p.tipoFormacion}`)}
+                </span>
               </button>
-              {e.nota && cerca && <p className="estados-nota">{e.nota}</p>}
+              <p className="estados-nota">{p.nota}</p>
             </li>
           );
         })}

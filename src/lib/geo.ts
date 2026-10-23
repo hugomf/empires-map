@@ -2,6 +2,7 @@ import { geoBounds, geoGraticule10, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { feature, merge } from 'topojson-client';
 import rawTopo from 'world-atlas/countries-50m.json?raw';
 import type { Catalogo } from '../data/catalogo';
+import { ISO_NUMERIC } from '../data/iso-numeric';
 
 type Geo = any;
 
@@ -55,12 +56,22 @@ export interface TerritorioGeo {
   area: number;
 }
 
+export interface PaisGeo {
+  id: string;
+  nombre: string;
+  formacion: number;
+  aproximada?: boolean;
+  d: string;
+  ancla: [number, number];
+}
+
 export interface MapaGeo {
   tierra: string;
   graticula: string;
   fronteras: string[];
   regiones: RegionGeo[];
   territorios: TerritorioGeo[];
+  paises: PaisGeo[];
   cajas: Map<string, [number, number, number, number]>;
   rosa: [number, number];
   cartela: [number, number];
@@ -203,6 +214,31 @@ export function construirMapa(ancho: number, alto: number, datos: Catalogo): Map
     });
   }
 
+  /* Países actuales: cada geometría del atlas se cruza con el catálogo por
+   * su código ISO numérico. Sólo se dibujan los que tienen registro. */
+  const paisesPorId = new Map(datos.paisesActuales.map((p) => [p.id, p]));
+  const paises: PaisGeo[] = [];
+  const vistos = new Set<string>();
+  for (const g of HABITADO) {
+    if (!g.id) continue;
+    const alpha2 = ISO_NUMERIC[g.id];
+    if (!alpha2 || vistos.has(alpha2)) continue;
+    const pais = paisesPorId.get(alpha2);
+    if (!pais) continue;
+    vistos.add(alpha2);
+    const f: any = feature(TOPO, g);
+    const d = ruta(f.geometry as never) ?? '';
+    if (!d) continue;
+    paises.push({
+      id: pais.id,
+      nombre: pais.nombre,
+      formacion: pais.formacion,
+      aproximada: pais.aproximada,
+      d,
+      ancla: ruta.centroid(f as never) as [number, number],
+    });
+  }
+
   return {
     tierra: ruta(tierra() as never) ?? '',
     graticula: ruta(geoGraticule10() as never) ?? '',
@@ -212,6 +248,7 @@ export function construirMapa(ancho: number, alto: number, datos: Catalogo): Map
     }).filter(Boolean),
     regiones,
     territorios,
+    paises,
     cajas,
     ciudades: datos.ciudades
       .filter((c) => c.principal !== false)

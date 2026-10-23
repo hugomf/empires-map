@@ -512,6 +512,70 @@ body::after {
   vector-effect: non-scaling-stroke;
 }
 
+/* Países actuales: relleno neutro y contorno fino. Cuando hay territorios
+ * históricos encima, el relleno baja para que no compita con sus colores. */
+.geo-paises-modernos .pais-moderno {
+  fill: rgba(201, 160, 76, 0.08);
+  stroke: rgba(236, 226, 202, 0.42);
+  stroke-width: 0.45;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill 0.18s, stroke 0.18s;
+}
+
+.geo-paises-modernos .pais-moderno.contorno {
+  fill-opacity: 0.16;
+  stroke-opacity: 0.55;
+}
+
+.geo-paises-modernos .pais-moderno.hover,
+.geo-paises-modernos .pais-moderno.sel {
+  fill: rgba(201, 160, 76, 0.24);
+  fill-opacity: 1;
+  stroke: var(--bronce-claro);
+  stroke-opacity: 1;
+  stroke-width: 1.3;
+}
+
+.pais-moderno-sel {
+  fill: none;
+  stroke: var(--bronce-claro);
+  stroke-width: 1.8;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.marca-pais {
+  fill: var(--bronce-claro);
+}
+
+.mapa-leyenda-paises {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 9px;
+  border: 1px solid rgba(201, 160, 76, 0.28);
+  border-radius: var(--r-s);
+  background: rgba(7, 9, 13, 0.78);
+  color: var(--pergamino-2);
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.mapa-leyenda-paises .muestra {
+  width: 14px;
+  height: 8px;
+  border: 1px solid rgba(236, 226, 202, 0.55);
+  background: rgba(201, 160, 76, 0.18);
+}
+
 .geo-graticula {
   fill: none;
   stroke: rgba(201, 160, 76, 0.1);
@@ -2586,6 +2650,10 @@ body::after {
 
 .estados-lista li.cerca {
   background: rgba(201, 160, 76, 0.08);
+}
+
+.estados-lista li.elegido {
+  background: rgba(201, 160, 76, 0.14);
   box-shadow: inset 2px 0 0 var(--bronce);
 }
 
@@ -2626,12 +2694,20 @@ body::after {
   white-space: nowrap;
 }
 
+.estados-aprox {
+  font-size: 8.5px;
+  color: var(--pergamino-3);
+  letter-spacing: 0.04em;
+}
+
 .estados-forma {
-  font-size: 9px;
-  letter-spacing: 0.1em;
+  font-size: 8.5px;
+  line-height: 1.15;
+  letter-spacing: 0.08em;
+  text-align: right;
   text-transform: uppercase;
   color: var(--pergamino-3);
-  white-space: nowrap;
+  max-width: 86px;
 }
 
 .estados-anterior {

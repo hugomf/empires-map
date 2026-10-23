@@ -6,7 +6,7 @@ El atlas histórico no responde a una pregunta básica: ¿cuándo se formó cada
 
 ## What Changes
 
-- Nuevo archivo `datos/estados-actuales.json` con código ISO, nombre, año de formación, tipo de proceso, nota y fuente.
+- Nuevo archivo `datos/estados-actuales.json` con código ISO, nombre, año de formación, tipo de proceso, nota y fuente opcional.
 - Modelo `PaisActual` y validación de fechas y códigos.
 - Capa «Países actuales» independiente de las capas históricas.
 - Regla de no pintar un país antes de su año de formación.
@@ -25,7 +25,9 @@ Ninguna. La nueva capa es independiente de `territorios` y `atlas-mapa`.
 
 ## Impact
 
-- `datos/estados-actuales.json` (nuevo)
-- `src/data/tipos-cultura.ts`, `src/components/MapaAtlas.tsx`, `src/App.tsx`, `src/lib/i18n.ts`
-- `scripts/validar-datos.mjs`
+- `datos/estados-actuales.json` y `datos/en/estados-actuales.json` (nuevos)
+- `src/data/tipos-cultura.ts`, `src/data/catalogo.ts`, `src/data/iso-numeric.ts`
+- `src/lib/geo.ts`, `src/components/MapaAtlas.tsx`, `src/components/Estados.tsx`
+- `src/App.tsx`, `src/lib/i18n.ts`, `src/styles/app.css`
+- `scripts/validar.mjs`, `scripts/generar-tabla-iso.mjs`
 - `openspec/specs/paises-actuales/spec.md`

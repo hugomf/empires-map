@@ -19,7 +19,7 @@ const EN: Diccionario = {
   'ctl.idioma': 'Language',
   'ctl.comparar': 'Compare',
   'ctl.colorFase': 'Phase',
-  'ctl.estados': 'States',
+  'ctl.estados': 'Countries',
   'ctl.fronteras': 'Modern borders',
   'ctl.fronterasCorto': 'Borders',
   'ctl.musica': 'Soundtrack',
@@ -190,6 +190,7 @@ const EN: Diccionario = {
   'mapa.zoomOut': 'Zoom out',
   'mapa.zoomReset': 'Reset view',
   'mapa.oeste': 'W',
+  'mapa.paises': 'Modern countries',
 
   'globo.anos': '{a}–{b}',
 
@@ -201,6 +202,12 @@ const EN: Diccionario = {
   'estados.buscar': 'Filter states…',
   'estados.cerrar': 'Close',
   'estados.vacio': 'No state matches.',
+  'estados.aprox': 'approx.',
+  'formacion.independencia': 'Independence',
+  'formacion.unificacion': 'Unification',
+  'formacion.constitucion': 'Constitutional order',
+  'formacion.reconocimiento': 'Recognition',
+  'formacion.sucesion': 'Succession',
 };
 
 const ES: Diccionario = {
@@ -219,7 +226,7 @@ const ES: Diccionario = {
   'ctl.idioma': 'Idioma',
   'ctl.comparar': 'Comparar',
   'ctl.colorFase': 'Fase',
-  'ctl.estados': 'Estados',
+  'ctl.estados': 'Países',
   'ctl.fronteras': 'Fronteras modernas',
   'ctl.fronterasCorto': 'Fronteras',
   'ctl.musica': 'Banda sonora',
@@ -373,6 +380,7 @@ const ES: Diccionario = {
   'mapa.zoomOut': 'Alejar',
   'mapa.zoomReset': 'Vista global',
   'mapa.oeste': 'O',
+  'mapa.paises': 'Países actuales',
   'globo.anos': '{a}–{b}',
 
   'estados.titulo': 'Cuándo se formaron los países actuales',
@@ -380,9 +388,15 @@ const ES: Diccionario = {
   'estados.formacion': 'Formación',
   'estados.predecesor': 'Viene de',
   'estados.actual': 'Hoy',
-  'estados.buscar': 'Filtrar estados…',
+  'estados.buscar': 'Filtrar países…',
   'estados.cerrar': 'Cerrar',
-  'estados.vacio': 'Ningún estado coincide.',
+  'estados.vacio': 'Ningún país coincide.',
+  'estados.aprox': 'aprox.',
+  'formacion.independencia': 'Independencia',
+  'formacion.unificacion': 'Unificación',
+  'formacion.constitucion': 'Orden constitucional',
+  'formacion.reconocimiento': 'Reconocimiento',
+  'formacion.sucesion': 'Sucesión',
 
   'ahora.titulo': 'Ocurre ahora',
   'ahora.vacio': 'No hay ningún hecho registrado para este año.',

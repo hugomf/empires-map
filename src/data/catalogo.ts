@@ -12,6 +12,7 @@ import type {
   EscalaPoliticaDef,
   FormaGobierno,
   Gobernante,
+  PaisActual,
   Region,
   Religion,
   Soberania,
@@ -34,6 +35,7 @@ export interface Catalogo {
   dinastias: Dinastia[];
   capitales: Capital[];
   ciudadesGobernante: CiudadGobernante[];
+  paisesActuales: PaisActual[];
   anioMin: number;
   anioMax: number;
 }
@@ -54,6 +56,7 @@ const de = (m: typeof ES): Catalogo => ({
   dinastias: m.DINASTIAS,
   capitales: m.CAPITALES,
   ciudadesGobernante: m.CIUDADES_GOBERNANTE,
+  paisesActuales: m.PAISES_ACTUALES,
   anioMin: m.ANIO_MIN,
   anioMax: m.ANIO_MAX,
 });

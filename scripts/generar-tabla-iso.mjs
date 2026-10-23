@@ -31,6 +31,11 @@ function raiz() {
 /** Nombre del atlas → alpha-2, cuando no coincide con el del catálogo. */
 const EXCEPCIONES = {
   'United States of America': 'US',
+  'Marshall Is.': 'MH',
+  'Solomon Is.': 'SB',
+  'St. Kitts and Nevis': 'KN',
+  'St. Vin. and Gren.': 'VC',
+  'Antigua and Barb.': 'AG',
   'Dem. Rep. Congo': 'CD',
   'Dem. Rep. Korea': 'KP',
   Congo: 'CG',

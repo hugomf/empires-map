@@ -108,6 +108,7 @@ export default function App() {
   const [capaDivisiones, setCapaDivisiones] = useState(en.divisiones);
   const [capaReligiones, setCapaReligiones] = useState(en.religiones);
   const [capaPaises, setCapaPaises] = useState(en.paises);
+  const [paisSeleccionado, setPaisSeleccionado] = useState<string | null>(null);
   /* Densidad de etiquetas del mapa. */
   const [densidad, setDensidad] = useState<Densidad>(en.densidad);
   /* Religión elegida: filtra la lista de religiones y sus civilizaciones. */
@@ -354,6 +355,7 @@ export default function App() {
   const seleccionar = useCallback(
     (id: string | null) => {
       setSeleccion(id);
+      setPaisSeleccionado(null);
       if (id) setFichaAbierta(true);
       if (id && comparar) {
         setComparacion((prev) => {
@@ -371,6 +373,12 @@ export default function App() {
     },
     [datos.anioMin, datos.anioMax],
   );
+
+  /** Selecciona un país actual y enciende su capa si estaba apagada. */
+  const seleccionarPais = useCallback((id: string | null) => {
+    setPaisSeleccionado(id);
+    if (id) setCapaPaises(true);
+  }, []);
 
   const era = ERAS.find((e) => anio >= e.desde && anio <= e.hasta);
   const limpiezas = tipos.size + grupos.size;
@@ -703,15 +711,21 @@ export default function App() {
           fronterasModernas={fronterasModernas}
           capaVisible={capaVisible}
           capaReligiones={capaReligiones}
+          capaPaises={capaPaises}
+          paisSeleccionado={paisSeleccionado}
+          onSeleccionarPais={seleccionarPais}
         />
 
           <Estados
+            datos={datos}
             anio={anio}
             onIrA={irA}
             abierto={estadosAbiertos}
             onCerrar={() => setEstadosAbiertos(false)}
             t={t}
             idioma={idioma}
+            paisSeleccionado={paisSeleccionado}
+            onSeleccionarPais={seleccionarPais}
           />
           <Ahora
             anio={anio}

@@ -59,6 +59,12 @@ const enEscalas = leerEn('escalas-politicas.json');
 const enSoberanias = leerEn('soberanias.json');
 const enCargos = leerEn('cargos.json');
 const enDinastias = leerEn('dinastias.json');
+const enPaisesActuales = leerEn('estados-actuales.json');
+
+const paisesFile = path.join(dirDatos, 'estados-actuales.json');
+const paisesActuales = fs.existsSync(paisesFile)
+  ? JSON.parse(fs.readFileSync(paisesFile, 'utf8'))
+  : [];
 
 
 const errores = [];
@@ -673,7 +679,8 @@ for (const cg of ciudadesGobernante) {
 /**
  * Cada Estado contemporáneo tiene un código ISO 3166-1 alpha-2 válido y único,
  * un año de formación coherente, un tipo de formación del conjunto permitido y
- * una nota que explique el caso.
+ * una nota que explique el caso. El catálogo inglés debe cubrir los mismos
+ * códigos y los mismos datos estructurales que el español.
  */
 const TIPOS_FORMACION = [
   'independencia',
@@ -683,10 +690,49 @@ const TIPOS_FORMACION = [
   'sucesion',
 ];
 
-const paisesFile = path.join(dirDatos, 'estados-actuales.json');
-if (fs.existsSync(paisesFile)) {
-  const paises = JSON.parse(fs.readFileSync(paisesFile, 'utf8'));
-  const esNuevo = paises.some((p) => p.formacion !== undefined);
+const validarPaises = (paises, etiqueta, idioma) => {
+  if (!Array.isArray(paises)) {
+    err(etiqueta, '(conjunto)', 'el dataset no es una lista');
+    return new Map();
+  }
+  const porId = new Map();
+  for (const p of paises) {
+    const id = p.id;
+    if (typeof id !== 'string' || !/^[A-Z]{2}$/.test(id))
+      err(etiqueta, id ?? '(sin id)', `código ISO inválido: ${id}`);
+    else if (porId.has(id)) err(etiqueta, id, 'código ISO duplicado');
+    else porId.set(id, p);
+
+    if (typeof p.nombre !== 'string' || p.nombre.trim().length < 2)
+      err(etiqueta, id, 'nombre vacío o demasiado corto');
+    else if (tieneBasura(p.nombre)) err(etiqueta, id, 'nombre con caracteres no permitidos');
+    else if (idioma === 'es') comprobarIdioma(etiqueta, id, 'nombre', p.nombre);
+
+    if (typeof p.formacion !== 'number' || !Number.isInteger(p.formacion))
+      err(etiqueta, id, 'formación no es un año entero');
+    else if (p.formacion < 800 || p.formacion > 2026)
+      err(etiqueta, id, `formación fuera de rango: ${p.formacion}`);
+
+    if (!TIPOS_FORMACION.includes(p.tipoFormacion))
+      err(etiqueta, id, `tipo de formación inválido: ${p.tipoFormacion}`);
+
+    if (typeof p.nota !== 'string' || p.nota.trim().length < 10)
+      err(etiqueta, id, 'nota vacía o demasiado corta');
+    else {
+      if (tieneBasura(p.nota)) err(etiqueta, id, 'nota con caracteres no permitidos');
+      if (idioma === 'es') comprobarIdioma(etiqueta, id, 'nota', p.nota);
+    }
+
+    if (p.aproximada !== undefined && typeof p.aproximada !== 'boolean')
+      err(etiqueta, id, 'aproximada no booleana');
+    if (p.fuente !== undefined && typeof p.fuente !== 'string')
+      err(etiqueta, id, 'fuente no textual');
+  }
+  return porId;
+};
+
+if (paisesActuales.length) {
+  const esNuevo = paisesActuales.some((p) => p.formacion !== undefined);
   if (!esNuevo) {
     av(
       'paises-actuales',
@@ -694,24 +740,26 @@ if (fs.existsSync(paisesFile)) {
       'el dataset sigue en el modelo antiguo: falta «formacion» y «tipoFormacion»',
     );
   } else {
-    const idsPais = new Set();
-    for (const p of paises) {
-      if (typeof p.id !== 'string' || !/^[A-Z]{2}$/.test(p.id))
-        err('paises-actuales', p.id ?? '(sin id)', `código ISO inválido: ${p.id}`);
-      else if (idsPais.has(p.id))
-        err('paises-actuales', p.id, 'código ISO duplicado');
-      else idsPais.add(p.id);
-      if (!p.nombre) err('paises-actuales', p.id, 'falta nombre');
-      if (typeof p.formacion !== 'number')
-        err('paises-actuales', p.id, 'formación no numérica');
-      else if (p.formacion < 800 || p.formacion > 2026)
-        err('paises-actuales', p.id, `formación fuera de rango: ${p.formacion}`);
-      if (!TIPOS_FORMACION.includes(p.tipoFormacion))
-        err('paises-actuales', p.id, `tipo de formación inválido: ${p.tipoFormacion}`);
-      if (!p.nota || p.nota.trim().length < 10)
-        err('paises-actuales', p.id, 'nota vacía o demasiado corta');
-      if (p.fuente !== undefined && typeof p.fuente !== 'string')
-        err('paises-actuales', p.id, 'fuente no textual');
+    const esPorId = validarPaises(paisesActuales, 'paises-actuales', 'es');
+    if (!enPaisesActuales) {
+      av('paises-actuales (en)', '(conjunto)', 'falta datos/en/estados-actuales.json');
+    } else {
+      const enPorId = validarPaises(enPaisesActuales, 'paises-actuales (en)', 'en');
+      for (const [id, es] of esPorId) {
+        const en = enPorId.get(id);
+        if (!en) {
+          err('paises-actuales (en)', id, 'falta la traducción inglesa');
+          continue;
+        }
+        if (en.formacion !== es.formacion)
+          err('paises-actuales (en)', id, `formación distinta: ${en.formacion} ≠ ${es.formacion}`);
+        if (en.tipoFormacion !== es.tipoFormacion)
+          err('paises-actuales (en)', id, `tipo distinto: ${en.tipoFormacion} ≠ ${es.tipoFormacion}`);
+        if (Boolean(en.aproximada) !== Boolean(es.aproximada))
+          err('paises-actuales (en)', id, '«aproximada» no coincide con el español');
+      }
+      for (const id of enPorId.keys())
+        if (!esPorId.has(id)) err('paises-actuales (en)', id, 'código sin versión española');
     }
   }
 }
@@ -772,6 +820,7 @@ const hacerBundle = ({
   dinastias: din,
   capitales: cap,
   ciudadesGobernante: cgob,
+  paises,
 }) => `/* GENERADO AUTOMÁTICAMENTE por scripts/validar.mjs — no editar a mano.
    Fuente de verdad: datos/*.json
 */
@@ -791,6 +840,7 @@ import type {
   Dinastia,
   Capital,
   CiudadGobernante,
+  PaisActual,
 } from './tipos-cultura';
 
 export const ANIO_MIN = ${Math.max(-5000, Math.min(...civs.map((c) => c.inicio)))};
@@ -811,6 +861,7 @@ export const CARGOS: Cargo[] = ${JSON.stringify(car)};
 export const DINASTIAS: Dinastia[] = ${JSON.stringify(din)};
 export const CAPITALES: Capital[] = ${JSON.stringify(cap)};
 export const CIUDADES_GOBERNANTE: CiudadGobernante[] = ${JSON.stringify(cgob)};
+export const PAISES_ACTUALES: PaisActual[] = ${JSON.stringify(paises)};
 `;
 
 fs.writeFileSync(
@@ -831,6 +882,7 @@ fs.writeFileSync(
     dinastias,
     capitales,
     ciudadesGobernante,
+    paises: paisesActuales,
   }),
 );
 
@@ -870,6 +922,7 @@ fs.writeFileSync(
     dinastias: enDinastias ?? dinastias,
     capitales,
     ciudadesGobernante,
+    paises: enPaisesActuales ?? paisesActuales,
   }),
 );
 
@@ -881,6 +934,7 @@ console.log(
     (gobernantes.length ? `, ${gobernantes.length} gobernantes` : '') +
     (capitales.length ? `, ${capitales.length} capitales` : '') +
     (ciudadesGobernante.length ? `, ${ciudadesGobernante.length} ciudades de gobernantes` : '') +
+    (paisesActuales.length ? `, ${paisesActuales.length} países actuales` : '') +
     (enCiv ? ' · inglés disponible' : ' · inglés pendiente de traducir') +
     '\n  ✓ src/data/datos.generados.ts + datos.en.generados.ts generados\n',
 );

@@ -29,6 +29,11 @@ interface Props {
   colores: Map<string, string>;
   /** Capa de tinte religioso. */
   capaReligiones: boolean;
+  /** Capa de países actuales. */
+  capaPaises: boolean;
+  /** País actual resaltado (panel o mapa). */
+  paisSeleccionado: string | null;
+  onSeleccionarPais: (id: string | null) => void;
 }
 
 interface Rotulo {
@@ -130,6 +135,9 @@ export function MapaAtlas({
   colores,
   /** Capa de tinte religioso. */
   capaReligiones,
+  capaPaises,
+  paisSeleccionado,
+  onSeleccionarPais,
 }: Props) {
   const contRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -137,6 +145,7 @@ export function MapaAtlas({
   const zoomRef = useRef<any>(null);
   const [tam, setTam] = useState({ w: 960, h: 560 });
   const [, setTransform] = useState<ZoomTransform>(zoomIdentity);
+  const [paisHover, setPaisHover] = useState<string | null>(null);
 
   useEffect(() => {
     const el = contRef.current;
@@ -230,6 +239,17 @@ export function MapaAtlas({
       .sort((a, b) => (civVivas.get(a.civ)?.peso ?? 0) - (civVivas.get(b.civ)?.peso ?? 0));
   }, [geo, anio, civVivas, filtros, datos.regiones, capaVisible]);
 
+  /** Países actuales ya formados en el año seleccionado. */
+  const paisesVisibles = useMemo(
+    () => geo.paises.filter((p) => p.formacion <= anio),
+    [geo.paises, anio],
+  );
+
+  const paisDestacado = useMemo(() => {
+    const id = paisSeleccionado ?? paisHover;
+    return id ? paisesVisibles.find((p) => p.id === id) ?? null : null;
+  }, [paisSeleccionado, paisHover, paisesVisibles]);
+
   /** Ciudades de las civilizaciones vivas, agrupadas por Dueño. */
   const ciudades = useMemo(() => {
     const m = new Map<string, { id: string; nombre: string; x: number; y: number }[]>();
@@ -281,7 +301,10 @@ export function MapaAtlas({
         viewBox={`0 0 ${tam.w} ${tam.h}`}
         preserveAspectRatio="xMidYMid meet"
         onClick={(e) => {
-          if (e.target === svgRef.current) onSeleccionar(null);
+          if (e.target === svgRef.current) {
+            onSeleccionar(null);
+            onSeleccionarPais(null);
+          }
         }}
       >
         <defs>
@@ -315,6 +338,34 @@ export function MapaAtlas({
           <path className="geo-graticula" d={geo.graticula} />
           <path className="geo-halo" d={geo.tierra} />
           <path className="geo-tierra" d={geo.tierra} fill="url(#pergamino-tierra)" />
+          {/* Países actuales: sólo los formados hasta el año seleccionado.
+           * Van bajo los territorios históricos para no tapar sus rellenos. */}
+          {capaPaises && paisesVisibles.length > 0 && (
+            <g className="geo-paises-modernos">
+              {paisesVisibles.map((p) => {
+                const sel = p.id === paisSeleccionado;
+                const enc = p.id === paisHover;
+                return (
+                  <path
+                    key={p.id}
+                    className={`pais-moderno${territorios.length ? ' contorno' : ''}${sel ? ' sel' : ''}${enc ? ' hover' : ''}`}
+                    d={p.d}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onSeleccionarPais(sel ? null : p.id);
+                    }}
+                    onMouseEnter={() => setPaisHover(p.id)}
+                    onMouseLeave={() => setPaisHover(null)}
+                  >
+                    <title>
+                      {p.nombre} · {p.formacion}
+                      {p.aproximada ? ' aprox.' : ''}
+                    </title>
+                  </path>
+                );
+              })}
+            </g>
+          )}
           {/* Las fronteras de los países modernos son contexto optativo: un
            * atlas del año −50000 no puede llevarlas de fábrica. */}
           {fronterasModernas && (
@@ -446,6 +497,26 @@ export function MapaAtlas({
               </g>
             );
           })}
+
+          {/* El país actual resaltado se repinta por encima de los territorios
+           * históricos para que el contorno no quede oculto bajo su relleno. */}
+          {capaPaises && paisDestacado && (
+            <path className="pais-moderno-sel" d={paisDestacado.d} pointerEvents="none" />
+          )}
+
+          {/* Etiqueta del país actual resaltado, por encima de los territorios. */}
+          {capaPaises && paisDestacado && (
+            <g className="geo-pais-etiqueta" pointerEvents="none">
+              <text
+                className="marca-texto marca-pais"
+                x={paisDestacado.ancla[0] + 6}
+                y={paisDestacado.ancla[1] - 4}
+              >
+                {paisDestacado.nombre}
+                {paisDestacado.aproximada ? ' · aprox.' : ''}
+              </text>
+            </g>
+          )}
 
           {/* Rosa de los vientos */}
           <g
@@ -581,6 +652,13 @@ export function MapaAtlas({
           )}
         </g>
       </svg>
+
+      {capaPaises && (
+        <div className="mapa-leyenda-paises" aria-hidden>
+          <span className="muestra" />
+          {t('mapa.paises')}
+        </div>
+      )}
 
       <div className="mapa-zoom">
         <button className="boton icono" onClick={() => acercar(1.6)} title={t('mapa.zoomIn')}>

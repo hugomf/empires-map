@@ -1,1183 +1,1382 @@
 [
   {
-    "id": "portugal",
-    "pais": "Portugal",
-    "anio": 1143,
-    "anterior": "Condado de Portugal",
-    "forma": "Reindependización",
-    "nota": "Nace del cero: Afonso Henriques vence en Ourique."
-  },
+    "id": "PT",
+    "nombre": "Portugal",
+    "formacion": 1143,
+    "tipoFormacion": "independencia",
+    "nota": "Afonso Henriques se proclama rey tras la batalla de Ourique; el reino se independiza de León y Castilla."
+  },
+  {
+    "id": "ES",
+    "nombre": "España",
+    "formacion": 1479,
+    "tipoFormacion": "unificacion",
+    "nota": "La unión dinástica de Isabel y Fernando da forma al Estado español; la Constitución de 1978 define el régimen actual."
+  },
+  {
+    "id": "FR",
+    "nombre": "Francia",
+    "formacion": 987,
+    "tipoFormacion": "sucesion",
+    "nota": "Hugo Capeto funda la dinastía capetingia; la V República se instaura en 1958.",
+    "aproximada": true
+  },
+  {
+    "id": "GB",
+    "nombre": "Reino Unido",
+    "formacion": 1707,
+    "tipoFormacion": "unificacion",
+    "nota": "El Acta de Unión crea el Reino de Gran Bretaña; Irlanda del Norte permanece en el Reino Unido desde 1922."
+  },
+  {
+    "id": "IE",
+    "nombre": "Irlanda",
+    "formacion": 1922,
+    "tipoFormacion": "independencia",
+    "nota": "El Estado Libre de Irlanda nace del tratado anglo-irlandés; la República se proclama en 1949."
+  },
+  {
+    "id": "IS",
+    "nombre": "Islandia",
+    "formacion": 930,
+    "tipoFormacion": "constitucion",
+    "nota": "La fundación del Alþingi marca el Estado libre islandés; la República se proclama en 1944.",
+    "aproximada": true
+  },
+  {
+    "id": "NO",
+    "nombre": "Noruega",
+    "formacion": 872,
+    "tipoFormacion": "unificacion",
+    "nota": "Harald I unifica los reinos noruegos; la Constitución de 1814 define el Estado moderno.",
+    "aproximada": true
+  },
+  {
+    "id": "SE",
+    "nombre": "Suecia",
+    "formacion": 1523,
+    "tipoFormacion": "independencia",
+    "nota": "Gustavo Vasa rompe la Unión de Kalmar y funda la Suecia moderna."
+  },
+  {
+    "id": "DK",
+    "nombre": "Dinamarca",
+    "formacion": 965,
+    "tipoFormacion": "unificacion",
+    "nota": "Harald Bluetooth unifica Dinamarca; la monarquía constitucional data de 1849.",
+    "aproximada": true
+  },
+  {
+    "id": "FI",
+    "nombre": "Finlandia",
+    "formacion": 1917,
+    "tipoFormacion": "independencia",
+    "nota": "El parlamento proclama la independencia tras la Revolución rusa."
+  },
+  {
+    "id": "NL",
+    "nombre": "Países Bajos",
+    "formacion": 1581,
+    "tipoFormacion": "independencia",
+    "nota": "Las Provincias Unidas abjuran de Felipe II; la independencia se reconoce en Westfalia en 1648."
+  },
+  {
+    "id": "BE",
+    "nombre": "Bélgica",
+    "formacion": 1830,
+    "tipoFormacion": "independencia",
+    "nota": "La revolución de 1830 separa Bélgica de los Países Bajos."
+  },
+  {
+    "id": "LU",
+    "nombre": "Luxemburgo",
+    "formacion": 1839,
+    "tipoFormacion": "independencia",
+    "nota": "El Tratado de Londres reconoce la independencia de Luxemburgo."
+  },
+  {
+    "id": "DE",
+    "nombre": "Alemania",
+    "formacion": 1871,
+    "tipoFormacion": "unificacion",
+    "nota": "La proclamación del Imperio en Versalles culmina la unificación dirigida por Prusia."
+  },
+  {
+    "id": "AT",
+    "nombre": "Austria",
+    "formacion": 1955,
+    "tipoFormacion": "constitucion",
+    "nota": "El Tratado de Estado restaura la soberanía austriaca; la Segunda República se había proclamado en 1945."
+  },
+  {
+    "id": "CH",
+    "nombre": "Suiza",
+    "formacion": 1291,
+    "tipoFormacion": "unificacion",
+    "nota": "El Pacto Federal de Uri, Schwyz y Unterwalden inicia la Confederación.",
+    "aproximada": true
+  },
+  {
+    "id": "IT",
+    "nombre": "Italia",
+    "formacion": 1861,
+    "tipoFormacion": "unificacion",
+    "nota": "El Reino de Italia se proclama con Víctor Manuel II; Roma se incorpora en 1870."
+  },
+  {
+    "id": "SM",
+    "nombre": "San Marino",
+    "formacion": 1600,
+    "tipoFormacion": "constitucion",
+    "nota": "La Constitución de 1600 fija el régimen republicano; la tradición fundacional se remonta al 301.",
+    "aproximada": true
+  },
+  {
+    "id": "MT",
+    "nombre": "Malta",
+    "formacion": 1964,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1964 (Reino Unido)."
+  },
+  {
+    "id": "MK",
+    "nombre": "Macedonia del Norte",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Macedonia se independiza de Yugoslavia; el nombre actual se adopta en 2019."
+  },
+  {
+    "id": "BA",
+    "nombre": "Bosnia y Herzegovina",
+    "formacion": 1992,
+    "tipoFormacion": "independencia",
+    "nota": "La independencia se aprueba en referéndum y desencadena la guerra de Bosnia."
+  },
+  {
+    "id": "HR",
+    "nombre": "Croacia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Croacia declara la independencia; la guerra termina con la integridad territorial en 1995."
+  },
+  {
+    "id": "SI",
+    "nombre": "Eslovenia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Yugoslavia)."
+  },
+  {
+    "id": "RS",
+    "nombre": "Serbia",
+    "formacion": 2006,
+    "tipoFormacion": "sucesion",
+    "nota": "Serbia hereda la personalidad jurídica de Serbia y Montenegro tras la secesión de Montenegro."
+  },
+  {
+    "id": "ME",
+    "nombre": "Montenegro",
+    "formacion": 2006,
+    "tipoFormacion": "independencia",
+    "nota": "El referéndum de 2006 restaura la independencia de Montenegro."
+  },
+  {
+    "id": "AL",
+    "nombre": "Albania",
+    "formacion": 1912,
+    "tipoFormacion": "independencia",
+    "nota": "La Asamblea de Vlorë proclama la independencia albanesa."
+  },
+  {
+    "id": "GR",
+    "nombre": "Grecia",
+    "formacion": 1830,
+    "tipoFormacion": "independencia",
+    "nota": "El Protocolo de Londres reconoce el Reino de Grecia tras la guerra de independencia."
+  },
+  {
+    "id": "BG",
+    "nombre": "Bulgaria",
+    "formacion": 1908,
+    "tipoFormacion": "independencia",
+    "nota": "Bulgaria se declara independiente y rompe el vasallaje otomano."
+  },
+  {
+    "id": "PL",
+    "nombre": "Polonia",
+    "formacion": 1918,
+    "tipoFormacion": "independencia",
+    "nota": "Polonia recupera la independencia tras la Primera Guerra Mundial y 123 años de particiones."
+  },
   {
-    "id": "espana",
-    "pais": "España",
-    "anio": 1479,
-    "anterior": "Coronas de Castilla y Aragón",
-    "forma": "Unión dinástica",
-    "nota": "Nace de la unión de Isabel y Fernando; el nombre «España» se generaliza en el XVI."
-  },
+    "id": "UA",
+    "nombre": "Ucrania",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
+  {
+    "id": "BY",
+    "nombre": "Bielorrusia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
+  {
+    "id": "LT",
+    "nombre": "Lituania",
+    "formacion": 1990,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1990 (Unión Soviética)."
+  },
+  {
+    "id": "LV",
+    "nombre": "Letonia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
+  {
+    "id": "EE",
+    "nombre": "Estonia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
+  {
+    "id": "HU",
+    "nombre": "Hungría",
+    "formacion": 1000,
+    "tipoFormacion": "constitucion",
+    "nota": "Esteban I funda el Reino de Hungría; la Constitución de 2011 define el Estado actual.",
+    "aproximada": true
+  },
+  {
+    "id": "RO",
+    "nombre": "Rumanía",
+    "formacion": 1877,
+    "tipoFormacion": "independencia",
+    "nota": "Rumanía proclama la independencia durante la guerra ruso-turca."
+  },
+  {
+    "id": "MD",
+    "nombre": "Moldavia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
   {
-    "id": "francia",
-    "pais": "Francia",
-    "anio": 987,
-    "anterior": "Reino de los francos",
-    "forma": "Monarquía capetingia"
-  },
+    "id": "SK",
+    "nombre": "Eslovaquia",
+    "formacion": 1993,
+    "tipoFormacion": "independencia",
+    "nota": "La separación de Checoslovaquia crea Eslovaquia el 1 de enero de 1993."
+  },
+  {
+    "id": "CZ",
+    "nombre": "República Checa",
+    "formacion": 1993,
+    "tipoFormacion": "independencia",
+    "nota": "La República Checa nace de la separación pacífica de Checoslovaquia."
+  },
   {
-    "id": "inglaterra",
-    "pais": "Inglaterra",
-    "anio": 927,
-    "anterior": "Heptarquía anglosajona",
-    "forma": "Monarquía unificada",
-    "nota": "Cnut de Dinamarca unifica Wessex, Mercia y Northumbria."
-  },
+    "id": "GE",
+    "nombre": "Georgia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
   {
-    "id": "irlanda",
-    "pais": "Irlanda",
-    "anio": 1922,
-    "anterior": "Estado Libre de Irlanda",
-    "forma": "Separación",
-    "nota": "Se independiza del Reino Unido tras la guerra civil."
-  },
+    "id": "AM",
+    "nombre": "Armenia",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
+  },
   {
-    "id": "islandia",
-    "pais": "Islandia",
-    "anio": 930,
-    "anterior": "República de Islandia",
-    "forma": "Asentamiento",
-    "nota": "Los primeros colonos noruegos fundan la Alþingi."
+    "id": "AZ",
+    "nombre": "Azerbaiyán",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
   },
   {
-    "id": "noruega",
-    "pais": "Noruega",
-    "anio": 872,
-    "anterior": "Condados de Harald Fairhair",
-    "forma": "Unificación",
-    "nota": "Harald I reúne los pequeños reinos."
+    "id": "CY",
+    "nombre": "Chipre",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Reino Unido)."
   },
   {
-    "id": "suecia",
-    "pais": "Suecia",
-    "anio": 1523,
-    "anterior": "Unión de la casa de Vasa",
-    "forma": "Monarquía moderna"
+    "id": "TR",
+    "nombre": "Turquía",
+    "formacion": 1923,
+    "tipoFormacion": "sucesion",
+    "nota": "La República de Turquía se proclama tras la guerra de independencia; sustituye al Imperio otomano."
   },
   {
-    "id": "dinamarca",
-    "pais": "Dinamarca",
-    "anio": 965,
-    "anterior": "Reino de Harald Bluetooth",
-    "forma": "Monarquía unificada"
+    "id": "RU",
+    "nombre": "Rusia",
+    "formacion": 1721,
+    "tipoFormacion": "sucesion",
+    "nota": "Pedro I proclama el Imperio ruso; la Federación Rusa es su sucesora desde 1991."
   },
   {
-    "id": "finlandia",
-    "pais": "Finlandia",
-    "anio": 1809,
-    "anterior": "Imperio ruso",
-    "forma": "Autonomía",
-    "nota": "Rusia la ocupa tras la Guerra Finlandesa."
+    "id": "AD",
+    "nombre": "Andorra",
+    "formacion": 1993,
+    "tipoFormacion": "constitucion",
+    "nota": "La Constitución de 1993 convierte el coprincipado en un Estado parlamentario."
   },
   {
-    "id": "paises-bajos",
-    "pais": "Países Bajos",
-    "anio": 1579,
-    "anterior": "Ducado de Borgoña",
-    "forma": "República",
-    "nota": "Acta de Abjuración: nace la República de las Provincias Unidas."
+    "id": "MC",
+    "nombre": "Mónaco",
+    "formacion": 1911,
+    "tipoFormacion": "constitucion",
+    "nota": "La Constitución de 1911 limita el poder del príncipe; el principado conserva su soberanía."
   },
   {
-    "id": "belgica",
-    "pais": "Bélgica",
-    "anio": 1830,
-    "anterior": "Unión de Loena",
-    "forma": "Monarquía",
-    "nota": "Revolución belga: separación de los Países Bajos."
+    "id": "LI",
+    "nombre": "Liechtenstein",
+    "formacion": 1806,
+    "tipoFormacion": "reconocimiento",
+    "nota": "Liechtenstein obtiene la soberanía al disolverse el Sacro Imperio; la Constitución de 1921 crea la monarquía parlamentaria."
   },
   {
-    "id": "luxemburgo",
-    "pais": "Luxemburgo",
-    "anio": 1839,
-    "anterior": "Condado de Laxembourg",
-    "forma": "Monarquía"
+    "id": "VA",
+    "nombre": "Ciudad del Vaticano",
+    "formacion": 1929,
+    "tipoFormacion": "reconocimiento",
+    "nota": "Los Pactos de Letrán crean la Ciudad del Vaticano como Estado soberano."
   },
   {
-    "id": "alemania",
-    "pais": "Alemania",
-    "anio": 1871,
-    "anterior": "Estados alemanes y Prusia",
-    "forma": "Unificación",
-    "nota": "Proclamación del Imperio en la sala de espejos de Versalles."
+    "id": "US",
+    "nombre": "Estados Unidos",
+    "formacion": 1776,
+    "tipoFormacion": "independencia",
+    "nota": "La Declaración de Independencia separa las Trece Colonias de Gran Bretaña."
   },
   {
-    "id": "austria",
-    "pais": "Austria",
-    "anio": 1955,
-    "anterior": "Alta Austria",
-    "forma": "República",
-    "nota": "Tras 1945 Austria sigue siendo una potencia.autoconfigure en la ocupación."
+    "id": "CA",
+    "nombre": "Canadá",
+    "formacion": 1867,
+    "tipoFormacion": "unificacion",
+    "nota": "El Acta de la Norteamérica Británica une Ontario, Quebec, Nueva Escocia y Nuevo Brunswick."
   },
   {
-    "id": "suiza",
-    "pais": "Suiza",
-    "anio": 1291,
-    "anterior": "Cantones de la Selva",
-    "forma": "Confederación"
+    "id": "MX",
+    "nombre": "México",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "El Plan de Iguala y el Tratado de Córdoba consuman la independencia."
   },
   {
-    "id": "italia",
-    "pais": "Italia",
-    "anio": 1861,
-    "anterior": "Reinos de la península",
-    "forma": "Unificación",
-    "nota": "Proclamación del Reino de Italia con capital en Turín."
+    "id": "GT",
+    "nombre": "Guatemala",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1821 (España)."
   },
   {
-    "id": "san-marino",
-    "pais": "San Marino",
-    "anio": 301,
-    "anterior": "Romanos",
-    "forma": "República",
-    "nota": "La más antigua república del mundo, aún independiente."
+    "id": "HN",
+    "nombre": "Honduras",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1821 (España)."
   },
   {
-    "id": "malta",
-    "pais": "Malta",
-    "anio": 1964,
-    "anterior": "Colonia británica",
-    "forma": "Independencia"
+    "id": "SV",
+    "nombre": "El Salvador",
+    "formacion": 1841,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1841 (República Federal de Centroamérica)."
   },
   {
-    "id": "espana-2",
-    "pais": "España (hoy",
-    "anio": 0,
-    "anterior": "",
-    "forma": ""
+    "id": "NI",
+    "nombre": "Nicaragua",
+    "formacion": 1838,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1838 (República Federal de Centroamérica)."
   },
   {
-    "id": "macedonia",
-    "pais": "Macedonia del Norte",
-    "anio": 1991,
-    "anterior": "República Socialist de Macedonia",
-    "forma": "Independencia"
+    "id": "CR",
+    "nombre": "Costa Rica",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1821 (España)."
   },
   {
-    "id": "bosnia",
-    "pais": "Bosnia y Herzegovina",
-    "anio": 1992,
-    "anterior": "Yugoslavia",
-    "forma": "Independencia",
-    "nota": "Guerra de Bosnia:Bosnia se declara en Bosnia y Herzegovina."
+    "id": "PA",
+    "nombre": "Panamá",
+    "formacion": 1903,
+    "tipoFormacion": "independencia",
+    "nota": "Panamá se separa de Colombia con apoyo estadounidense."
   },
   {
-    "id": "croacia",
-    "pais": "Croacia",
-    "anio": 1991,
-    "anterior": "Yugoslavia",
-    "forma": "Independencia"
+    "id": "BZ",
+    "nombre": "Belice",
+    "formacion": 1981,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1981 (Reino Unido)."
   },
   {
-    "id": "eslovenia",
-    "pais": "Eslovenia",
-    "anio": 1991,
-    "anterior": "Yugoslavia",
-    "forma": "Independencia"
+    "id": "CU",
+    "nombre": "Cuba",
+    "formacion": 1902,
+    "tipoFormacion": "independencia",
+    "nota": "Cuba se independiza tras la guerra hispano-estadounidense y la ocupación militar."
   },
   {
-    "id": "serbia",
-    "pais": "Serbia",
-    "anio": 2006,
-    "anterior": "Serbia y Montenegro",
-    "forma": "Estado",
-    "nota": "Nace de la unión de Serbia y Montenegro tras la secesión de Montenegro."
+    "id": "HT",
+    "nombre": "Haití",
+    "formacion": 1804,
+    "tipoFormacion": "independencia",
+    "nota": "La revolución haitiana crea el primer Estado negro independiente."
   },
   {
-    "id": "montenegro",
-    "pais": "Montenegro",
-    "anio": 2006,
-    "anterior": "Serbia y Montenegro",
-    "forma": "Independencia"
+    "id": "DO",
+    "nombre": "República Dominicana",
+    "formacion": 1844,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1844 (Haití)."
   },
   {
-    "id": "albania",
-    "pais": "Albania",
-    "anio": 1912,
-    "anterior": "Imperio otomano",
-    "forma": "Principado"
+    "id": "JM",
+    "nombre": "Jamaica",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1962 (Reino Unido)."
   },
   {
-    "id": "grecia",
-    "pais": "Grecia",
-    "anio": 1830,
-    "anterior": "Imperio otomano",
-    "forma": "Monarquía",
-    "nota": "Primer Estado elleniko independiente tras la guerra de independencia."
+    "id": "TT",
+    "nombre": "Trinidad y Tobago",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1962 (Reino Unido)."
   },
   {
-    "id": "bulgaria",
-    "pais": "Bulgaria",
-    "anio": 1908,
-    "anterior": "Principado de Bulgaria",
-    "forma": "Independencia"
+    "id": "BS",
+    "nombre": "Bahamas",
+    "formacion": 1973,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1973 (Reino Unido)."
   },
   {
-    "id": "polonia",
-    "pais": "Polonia",
-    "anio": 1918,
-    "anterior": "Reinos partitioning por poderes partitioning",
-    "forma": "República",
-    "nota": "Nace tras 123 años de particiones."
+    "id": "BB",
+    "nombre": "Barbados",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1966 (Reino Unido)."
   },
   {
-    "id": "ucrania",
-    "pais": "Ucrania",
-    "anio": 1991,
-    "anterior": "República Socialista Soviética de Ucrania",
-    "forma": "Independencia"
+    "id": "AG",
+    "nombre": "Antigua y Barbuda",
+    "formacion": 1981,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1981 (Reino Unido)."
   },
   {
-    "id": "bielorrusia",
-    "pais": "Bielorrusia",
-    "anio": 1991,
-    "anterior": "República Socialista Soviets de Bielorrusia",
-    "forma": "Independencia"
+    "id": "DM",
+    "nombre": "Dominica",
+    "formacion": 1978,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1978 (Reino Unido)."
   },
   {
-    "id": "lituania",
-    "pais": "Lituania",
-    "anio": 1990,
-    "anterior": "República Socialista Soviética de Lituania",
-    "forma": "Independencia"
+    "id": "GD",
+    "nombre": "Granada",
+    "formacion": 1974,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1974 (Reino Unido)."
   },
   {
-    "id": "letonia",
-    "pais": "Letonia",
-    "anio": 1991,
-    "anterior": "República Socialista Soviética de Letonia",
-    "forma": "Independencia"
+    "id": "KN",
+    "nombre": "San Cristóbal y Nieves",
+    "formacion": 1983,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1983 (Reino Unido)."
   },
   {
-    "id": "estonia",
-    "pais": "Estonia",
-    "anio": 1991,
-    "anterior": "República Socialista Soviética de Estonia",
-    "forma": "Independencia"
+    "id": "LC",
+    "nombre": "Santa Lucía",
+    "formacion": 1979,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1979 (Reino Unido)."
   },
   {
-    "id": "hungria",
-    "pais": "Hungría",
-    "anio": 1000,
-    "anterior": "Principados magiares",
-    "forma": "Reino",
-    "nota": "Seas de la unificación de los magiares con Géza."
+    "id": "VC",
+    "nombre": "San Vicente y las Granadinas",
+    "formacion": 1979,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1979 (Reino Unido)."
   },
   {
-    "id": "romania",
-    "pais": "Rumanía",
-    "anio": 1877,
-    "anterior": "Principados-Uniados Moldavia y Valaquia",
-    "forma": "Reino",
-    "nota": "Tratado de Berlín: nace un principado unies."
+    "id": "GY",
+    "nombre": "Guyana",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1966 (Reino Unido)."
   },
   {
-    "id": "moldova",
-    "pais": "Moldavia",
-    "anio": 1991,
-    "anterior": "RSS de Moldavia",
-    "forma": "Independencia"
+    "id": "SR",
+    "nombre": "Surinam",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Países Bajos)."
   },
   {
-    "id": "eslovaquia",
-    "pais": "Eslovaquia",
-    "anio": 1993,
-    "anterior": "Checoslovaquia",
-    "forma": "Independencia"
+    "id": "CO",
+    "nombre": "Colombia",
+    "formacion": 1819,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1819 (España)."
   },
   {
-    "id": "checoslovaquia",
-    "pais": "Checoslovaquia",
-    "anio": 1918,
-    "anterior": "Imperio austro-húngaro",
-    "forma": "República",
-    "nota": "Nace con Tomáš Masaryk como presidente."
+    "id": "VE",
+    "nombre": "Venezuela",
+    "formacion": 1811,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1811 (España)."
   },
   {
-    "id": "republica-checa",
-    "pais": "República Checa",
-    "anio": 1993,
-    "anterior": "Checoslovaquia",
-    "forma": "Independencia"
+    "id": "EC",
+    "nombre": "Ecuador",
+    "formacion": 1822,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1822 (España)."
   },
   {
-    "id": "austria-hungria",
-    "pais": "Austria-Hungría",
-    "anio": 1867,
-    "anterior": "Imperio austriaco",
-    "forma": "Monarquía dual",
-    "nota": "Compromise de 1867: dos coronas, una ejército."
+    "id": "PE",
+    "nombre": "Perú",
+    "formacion": 1821,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1821 (España)."
   },
   {
-    "id": "imperio-austriaco",
-    "pais": "Imperio austriaco",
-    "anio": 1804,
-    "anterior": "Sacro Imperio Romano",
-    "forma": "Monarquía",
-    "nota": "Francisco II se corona emperador en thrives."
+    "id": "BO",
+    "nombre": "Bolivia",
+    "formacion": 1825,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1825 (España)."
   },
   {
-    "id": "imperio-napoleonico",
-    "pais": "Imperio napoleónico",
-    "anio": 1804,
-    "anterior": "República francesa",
-    "forma": "Monarquía imperial",
-    "nota": "Coronación de Napoleón en Notre-Dame."
+    "id": "BR",
+    "nombre": "Brasil",
+    "formacion": 1822,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1822 (Portugal)."
   },
   {
-    "id": "francia-republicana",
-    "pais": "República francesa",
-    "anio": 1792,
-    "anterior": "Monarquía absoluta",
-    "forma": "República",
-    "nota": "Ejecución de Luis XVI y instauración republicana."
+    "id": "PY",
+    "nombre": "Paraguay",
+    "formacion": 1811,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1811 (España)."
   },
   {
-    "id": "rusia",
-    "pais": "Rusia",
-    "anio": 1721,
-    "anterior": "Tsarato de Rusia",
-    "forma": "Imperio",
-    "nota": "Pedro el Grande se proclama emperador."
+    "id": "UY",
+    "nombre": "Uruguay",
+    "formacion": 1828,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1828 (Brasil y Argentina)."
   },
   {
-    "id": "rusia-kiev",
-    "pais": "Rus de Kiev",
-    "anio": 862,
-    "anterior": "Tribus eslavas orientales",
-    "forma": "Principado",
-    "nota": "Rúrik y sus successors unen a las tribus eslavas."
+    "id": "AR",
+    "nombre": "Argentina",
+    "formacion": 1816,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1816 (España)."
   },
   {
-    "id": "union-sovietica",
-    "pais": "Unión Soviética",
-    "anio": 1922,
-    "anterior": "Repúblicas soviéticas",
-    "forma": "Estado federal",
-    "nota": "Nace de la_chip de la Guerra Civil."
+    "id": "CL",
+    "nombre": "Chile",
+    "formacion": 1818,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1818 (España)."
   },
   {
-    "id": "georgia",
-    "pais": "Georgia",
-    "anio": 1991,
-    "anterior": "RSS de Georgia",
-    "forma": "Independencia"
+    "id": "CN",
+    "nombre": "China",
+    "formacion": 1912,
+    "tipoFormacion": "sucesion",
+    "nota": "La República sustituye al Imperio Qing; la República Popular se proclama en 1949."
   },
   {
-    "id": "armenia",
-    "pais": "Armenia",
-    "anio": 1991,
-    "anterior": "RSS de Armenia",
-    "forma": "Independencia"
+    "id": "JP",
+    "nombre": "Japón",
+    "formacion": 1868,
+    "tipoFormacion": "constitucion",
+    "nota": "La Restauración Meiji inicia el Estado moderno; la Constitución de 1947 define el régimen actual."
   },
   {
-    "id": "azerbaiyan",
-    "pais": "Azerbaiyán",
-    "anio": 1991,
-    "anterior": "RSS de Azerbaiyán",
-    "forma": "Independencia"
+    "id": "KR",
+    "nombre": "Corea del Sur",
+    "formacion": 1948,
+    "tipoFormacion": "constitucion",
+    "nota": "La República de Corea se proclama en 1948; la división de la península se consolida tras la guerra."
   },
   {
-    "id": "chipre",
-    "pais": "Chipre",
-    "anio": 1960,
-    "anterior": "Colonia británica",
-    "forma": "Independencia"
+    "id": "KP",
+    "nombre": "Corea del Norte",
+    "formacion": 1948,
+    "tipoFormacion": "constitucion",
+    "nota": "La República Popular Democrática se proclama en 1948 en la mitad norte de la península."
   },
   {
-    "id": "malta-2",
-    "pais": "Malta (hoy",
-    "anio": 0,
-    "anterior": "",
-    "forma": ""
+    "id": "IN",
+    "nombre": "India",
+    "formacion": 1947,
+    "tipoFormacion": "independencia",
+    "nota": "La independencia y la partición del Raj británico crean India y Pakistán."
   },
   {
-    "id": "estados-unidos",
-    "pais": "Estados Unidos",
-    "anio": 1776,
-    "anterior": "Trece Colonias",
-    "forma": "República",
-    "nota": "Declaración de Independencia; la primera nación moderna."
+    "id": "PK",
+    "nombre": "Pakistán",
+    "formacion": 1947,
+    "tipoFormacion": "independencia",
+    "nota": "La partición del Raj británico crea Pakistán; Bangladés se separa en 1971."
   },
   {
-    "id": "canada",
-    "pais": "Canadá",
-    "anio": 1867,
-    "anterior": "Provincias británicas",
-    "forma": "Confederación",
-    "nota": "British North America Act: cuatro provincias unidas."
+    "id": "BD",
+    "nombre": "Bangladés",
+    "formacion": 1971,
+    "tipoFormacion": "independencia",
+    "nota": "La guerra de liberación de 1971 separa Bangladés de Pakistán."
   },
   {
-    "id": "mexico",
-    "pais": "México",
-    "anio": 1821,
-    "anterior": "Virreinato de Nueva España",
-    "forma": "Estado soberano",
-    "nota": "Independencia consumada tras la guerra de Independencia."
+    "id": "NP",
+    "nombre": "Nepal",
+    "formacion": 1768,
+    "tipoFormacion": "unificacion",
+    "nota": "Prithvi Narayan Shah unifica los reinos de la cuenca de Katmandú."
   },
   {
-    "id": "guatemala",
-    "pais": "Guatemala",
-    "anio": 1821,
-    "anterior": "Capitanía General de Guatemala",
-    "forma": "República"
+    "id": "LK",
+    "nombre": "Sri Lanka",
+    "formacion": 1948,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1948 (Reino Unido)."
   },
   {
-    "id": "honduras",
-    "pais": "Honduras",
-    "anio": 1821,
-    "anterior": "Capitanía General de Guatemala",
-    "forma": "República"
+    "id": "MM",
+    "nombre": "Myanmar",
+    "formacion": 1948,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1948 (Reino Unido)."
   },
   {
-    "id": "el-salvador",
-    "pais": "El Salvador",
-    "anio": 1841,
-    "anterior": "Capitanía General de Guatemala",
-    "forma": "República"
+    "id": "TH",
+    "nombre": "Tailandia",
+    "formacion": 1932,
+    "tipoFormacion": "constitucion",
+    "nota": "La revolución de 1932 instaura la monarquía constitucional; el país nunca fue colonizado."
   },
   {
-    "id": "nicaragua",
-    "pais": "Nicaragua",
-    "anio": 1838,
-    "anterior": "Capitanía General de Guatemala",
-    "forma": "República"
+    "id": "VN",
+    "nombre": "Vietnam",
+    "formacion": 1945,
+    "tipoFormacion": "independencia",
+    "nota": "La proclamación de Hanói abre la guerra de independencia contra Francia."
   },
   {
-    "id": "costa-rica",
-    "pais": "Costa Rica",
-    "anio": 1821,
-    "anterior": "Capitanía General de Guatemala",
-    "forma": "República"
+    "id": "KH",
+    "nombre": "Camboya",
+    "formacion": 1953,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1953 (Francia)."
   },
   {
-    "id": "panama",
-    "pais": "Panamá",
-    "anio": 1903,
-    "anterior": "Colombia",
-    "forma": "Separación",
-    "nota": "Nace tras separarse de Colombia."
+    "id": "LA",
+    "nombre": "Laos",
+    "formacion": 1953,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1953 (Francia)."
   },
   {
-    "id": "belice",
-    "pais": "Belice",
-    "anio": 1981,
-    "anterior": "Colonia británica",
-    "forma": "Independencia"
+    "id": "ID",
+    "nombre": "Indonesia",
+    "formacion": 1945,
+    "tipoFormacion": "independencia",
+    "nota": "La independencia se proclama en 1945 y se reconoce en 1949."
   },
   {
-    "id": "cuba",
-    "pais": "Cuba",
-    "anio": 1902,
-    "anterior": "Protectorado estadounidense",
-    "forma": "República"
+    "id": "MY",
+    "nombre": "Malasia",
+    "formacion": 1957,
+    "tipoFormacion": "independencia",
+    "nota": "La Federación Malaya alcanza la independencia; Malasia se forma en 1963."
   },
   {
-    "id": "haiti",
-    "pais": "Haití",
-    "anio": 1804,
-    "anterior": "Saint-Domingue francés",
-    "forma": "República",
-    "nota": "La única revolución negra victoriosa de la historia."
+    "id": "PH",
+    "nombre": "Filipinas",
+    "formacion": 1946,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1946 (Estados Unidos)."
   },
   {
-    "id": "rep-dom",
-    "pais": "República Dominicana",
-    "anio": 1844,
-    "anterior": "Estado libre de Santo Domingo",
-    "forma": "República"
+    "id": "MN",
+    "nombre": "Mongolia",
+    "formacion": 1921,
+    "tipoFormacion": "independencia",
+    "nota": "La independencia de China se proclama en 1911 y se consolida en 1921; la República Popular nace en 1924."
   },
   {
-    "id": "jamaica",
-    "pais": "Jamaica",
-    "anio": 1962,
-    "anterior": "Colonia británica",
-    "forma": "Independencia"
+    "id": "AF",
+    "nombre": "Afganistán",
+    "formacion": 1919,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1919 (Reino Unido)."
   },
   {
-    "id": "trinidad",
-    "pais": "Trinidad y Tobago",
-    "anio": 1962,
-    "anterior": "Colonia británica",
-    "forma": "Independencia"
+    "id": "IQ",
+    "nombre": "Irak",
+    "formacion": 1932,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1932 (Reino Unido)."
   },
   {
-    "id": "bahamas",
-    "pais": "Bahamas",
-    "anio": 1973,
-    "anterior": "Colonia británica",
-    "forma": "Independencia"
+    "id": "IR",
+    "nombre": "Irán",
+    "formacion": 1979,
+    "tipoFormacion": "constitucion",
+    "nota": "La Revolución Islámica sustituye a la monarquía Pahlavi; el Estado persa tiene continuidad anterior."
   },
   {
-    "id": "puerto-rico",
-    "pais": "Puerto Rico",
-    "anio": 1898,
-    "anterior": "España",
-    "forma": "Territorio"
+    "id": "SY",
+    "nombre": "Siria",
+    "formacion": 1946,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1946 (Francia)."
   },
   {
-    "id": "guayana",
-    "pais": "Guyana",
-    "anio": 1966,
-    "anterior": "Reino Unido",
-    "forma": "República"
+    "id": "LB",
+    "nombre": "Líbano",
+    "formacion": 1943,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1943 (Francia)."
   },
   {
-    "id": "surinam",
-    "pais": "Surinam",
-    "anio": 1975,
-    "anterior": "Reino de los Países Bajos",
-    "forma": "República"
+    "id": "JO",
+    "nombre": "Jordania",
+    "formacion": 1946,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1946 (Reino Unido)."
   },
   {
-    "id": "colombia",
-    "pais": "Colombia",
-    "anio": 1819,
-    "anterior": "Virreinato de Nueva Granada",
-    "forma": "República"
+    "id": "IL",
+    "nombre": "Israel",
+    "formacion": 1948,
+    "tipoFormacion": "reconocimiento",
+    "nota": "La declaración de independencia de 1948 crea el Estado; su reconocimiento internacional es desigual."
   },
   {
-    "id": "venezuela",
-    "pais": "Venezuela",
-    "anio": 1811,
-    "anterior": "Capitanía General de Venezuela",
-    "forma": "República"
+    "id": "PS",
+    "nombre": "Palestina",
+    "formacion": 1988,
+    "tipoFormacion": "reconocimiento",
+    "nota": "La declaración de independencia de 1988 reclama un Estado; su estatus y fronteras siguen disputados."
   },
   {
-    "id": "ecuador",
-    "pais": "Ecuador",
-    "anio": 1822,
-    "anterior": "Virreinato de Nueva Granada",
-    "forma": "República"
+    "id": "SA",
+    "nombre": "Arabia Saudí",
+    "formacion": 1932,
+    "tipoFormacion": "unificacion",
+    "nota": "Abdulaziz ibn Saud unifica el Nejd y el Hiyaz y proclama el reino."
   },
   {
-    "id": "peru",
-    "pais": "Perú",
-    "anio": 1821,
-    "anterior": "Virreinato del Perú",
-    "forma": "República"
+    "id": "YE",
+    "nombre": "Yemen",
+    "formacion": 1990,
+    "tipoFormacion": "unificacion",
+    "nota": "Se formó en 1990 por la unificación de Yemen del Norte y del Sur."
   },
   {
-    "id": "bolivia",
-    "pais": "Bolivia",
-    "anio": 1825,
-    "anterior": "Virreinato del Perú",
-    "forma": "República",
-    "nota": "Sucre es la primera capital de la República en América."
+    "id": "OM",
+    "nombre": "Omán",
+    "formacion": 1650,
+    "tipoFormacion": "independencia",
+    "nota": "La expulsión portuguesa de 1650 precede a la consolidación del sultanato Al Said en 1749.",
+    "aproximada": true
   },
   {
-    "id": "brasil",
-    "pais": "Brasil",
-    "anio": 1822,
-    "anterior": "Portugal",
-    "forma": "Imperio",
-    "nota": "Único imperio de América, hasta la República en 1889."
+    "id": "AE",
+    "nombre": "Emiratos Árabes Unidos",
+    "formacion": 1971,
+    "tipoFormacion": "unificacion",
+    "nota": "Se formó en 1971 por la unificación de Emiratos de la Tregua."
   },
   {
-    "id": "paraguay",
-    "pais": "Paraguay",
-    "anio": 1811,
-    "anterior": "Virreinato del Río de la Plata",
-    "forma": "República"
+    "id": "QA",
+    "nombre": "Catar",
+    "formacion": 1971,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1971 (Reino Unido)."
   },
   {
-    "id": "uruguay",
-    "pais": "Uruguay",
-    "anio": 1828,
-    "anterior": "Brasil",
-    "forma": "República"
+    "id": "KW",
+    "nombre": "Kuwait",
+    "formacion": 1961,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1961 (Reino Unido)."
   },
   {
-    "id": "argentina",
-    "pais": "Argentina",
-    "anio": 1816,
-    "anterior": "Virreinato del Río de la Plata",
-    "forma": "República",
-    "nota": "Nace en el Congreso de Tucumán."
+    "id": "BH",
+    "nombre": "Baréin",
+    "formacion": 1971,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1971 (Reino Unido)."
   },
   {
-    "id": "chile",
-    "pais": "Chile",
-    "anio": 1818,
-    "anterior": "Virreinato del Perú",
-    "forma": "República"
+    "id": "TW",
+    "nombre": "Taiwán",
+    "formacion": 1949,
+    "tipoFormacion": "sucesion",
+    "nota": "El gobierno de la República de China se traslada a Taiwán en 1949; su estatus internacional es disputado."
   },
   {
-    "id": "china",
-    "pais": "China",
-    "anio": -221,
-    "anterior": "Reinos en guerra",
-    "forma": "Imperio unificado",
-    "nota": "Qin Shi Huang unifica China y estandariza la escritura."
+    "id": "BT",
+    "nombre": "Bután",
+    "formacion": 2008,
+    "tipoFormacion": "constitucion",
+    "nota": "La Constitución de 2008 instaura la monarquía constitucional."
   },
   {
-    "id": "japon",
-    "pais": "Japón",
-    "anio": 660,
-    "anterior": "Reinos de Yamato",
-    "forma": "Reforma imperial",
-    "nota": "Reforma de Taika: el emperador deviene el centro del poder."
+    "id": "MV",
+    "nombre": "Maldivas",
+    "formacion": 1965,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1965 (Reino Unido)."
   },
   {
-    "id": "corea",
-    "pais": "Corea del Sur",
-    "anio": 1948,
-    "anterior": "Corea unificada por Japón",
-    "forma": "República"
+    "id": "BN",
+    "nombre": "Brunéi",
+    "formacion": 1984,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1984 (Reino Unido)."
   },
   {
-    "id": "corea-norte",
-    "pais": "Corea del Norte",
-    "anio": 1948,
-    "anterior": "Corea unificada por Japón",
-    "forma": "República"
+    "id": "SG",
+    "nombre": "Singapur",
+    "formacion": 1965,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1965 (Malasia)."
   },
   {
-    "id": "corea-unificada",
-    "pais": "Corea unificada",
-    "anio": 668,
-    "anterior": "Tres Reinos",
-    "forma": "Unificación",
-    "nota": "Silla unifica la península con ayuda Tang."
+    "id": "TL",
+    "nombre": "Timor-Leste",
+    "formacion": 2002,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 2002 (Indonesia)."
   },
   {
-    "id": "india",
-    "pais": "India",
-    "anio": 1947,
-    "anterior": "Imperio británico",
-    "forma": "República",
-    "nota": "Independencia y partición: nacen India y Pakistán."
+    "id": "KZ",
+    "nombre": "Kazajistán",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
   },
   {
-    "id": "pakistan",
-    "pais": "Pakistán",
-    "anio": 1947,
-    "anterior": "Imperio británico",
-    "forma": "República",
-    "nota": "Nace con la partición de la India."
+    "id": "UZ",
+    "nombre": "Uzbekistán",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
   },
   {
-    "id": "bangladesh",
-    "pais": "Bangladés",
-    "anio": 1971,
-    "anterior": "Pakistán",
-    "forma": "Independencia"
+    "id": "TM",
+    "nombre": "Turkmenistán",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
   },
   {
-    "id": "nepal",
-    "pais": "Nepal",
-    "anio": 1768,
-    "anterior": "Principados unificados de la India",
-    "forma": "Monarquía"
+    "id": "KG",
+    "nombre": "Kirguistán",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
   },
   {
-    "id": "sri-lanka",
-    "pais": "Sri Lanka",
-    "anio": 1948,
-    "anterior": "Ceylán británico",
-    "forma": "República"
+    "id": "TJ",
+    "nombre": "Tayikistán",
+    "formacion": 1991,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1991 (Unión Soviética)."
   },
   {
-    "id": "birmania",
-    "pais": "Myanmar",
-    "anio": 1948,
-    "anterior": "Birmania británica",
-    "forma": "República"
+    "id": "EG",
+    "nombre": "Egipto",
+    "formacion": 1922,
+    "tipoFormacion": "independencia",
+    "nota": "El Reino de Egipto obtiene la independencia formal; la República se proclama en 1953."
   },
   {
-    "id": "tailandia",
-    "pais": "Tailandia",
-    "anio": 1238,
-    "anterior": "Reinos de Sukhothai y Ayutthaya",
-    "forma": "Monarquía"
+    "id": "LY",
+    "nombre": "Libia",
+    "formacion": 1951,
+    "tipoFormacion": "independencia",
+    "nota": "La ONU impulsa la independencia de Libia tras la administración colonial italiana."
   },
   {
-    "id": "vietnam",
-    "pais": "Vietnam",
-    "anio": 1945,
-    "anterior": "Francia",
-    "forma": "República",
-    "nota": "Independencia en dos fases, contra Francia y luego EE.UU."
+    "id": "TN",
+    "nombre": "Túnez",
+    "formacion": 1956,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1956 (Francia)."
   },
   {
-    "id": "camboya",
-    "pais": "Camboya",
-    "anio": 1953,
-    "anterior": "Francia",
-    "forma": "Monarquía"
+    "id": "DZ",
+    "nombre": "Argelia",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Los Acuerdos de Évian ponen fin a la guerra de independencia argelina."
   },
   {
-    "id": "laos",
-    "pais": "Laos",
-    "anio": 1953,
-    "anterior": "Francia",
-    "forma": "Monarquía"
+    "id": "MA",
+    "nombre": "Marruecos",
+    "formacion": 1956,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1956 (Francia y España)."
   },
   {
-    "id": "indonesia",
-    "pais": "Indonesia",
-    "anio": 1949,
-    "anterior": "Indias Orientales holandesas",
-    "forma": "República",
-    "nota": "Declaración de la independencia en 1945, reconocida en 1949."
+    "id": "SD",
+    "nombre": "Sudán",
+    "formacion": 1956,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1956 (Reino Unido y Egipto)."
   },
   {
-    "id": "malasia",
-    "pais": "Malasia",
-    "anio": 1957,
-    "anterior": "Colonia británica",
-    "forma": "Monarquíafederal"
+    "id": "SS",
+    "nombre": "Sudán del Sur",
+    "formacion": 2011,
+    "tipoFormacion": "independencia",
+    "nota": "El referéndum de 2011 conduce a la independencia de Sudán del Sur."
   },
   {
-    "id": "filipinas",
-    "pais": "Filipinas",
-    "anio": 1898,
-    "anterior": "España",
-    "forma": "República",
-    "nota": "Primera revolución asiática: contra España, luego EE.UU."
+    "id": "ET",
+    "nombre": "Etiopía",
+    "formacion": 1974,
+    "tipoFormacion": "sucesion",
+    "nota": "La revolución de 1974 derroca al emperador; la República Federal se constituye en 1995."
   },
   {
-    "id": "mongolia",
-    "pais": "Mongolia",
-    "anio": 1911,
-    "anterior": "Imperio chino",
-    "forma": "República"
+    "id": "ER",
+    "nombre": "Eritrea",
+    "formacion": 1993,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1993 (Etiopía)."
   },
   {
-    "id": "afganistan",
-    "pais": "Afganistán",
-    "anio": 1919,
-    "anterior": "Emiratofinis afgano",
-    "forma": "Estado"
+    "id": "DJ",
+    "nombre": "Yibuti",
+    "formacion": 1977,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1977 (Francia)."
   },
   {
-    "id": "irak",
-    "pais": "Irak",
-    "anio": 1932,
-    "anterior": "Mandato británico",
-    "forma": "Monarquía",
-    "nota": "Nace tras 14 años de mandato."
+    "id": "SO",
+    "nombre": "Somalia",
+    "formacion": 1960,
+    "tipoFormacion": "unificacion",
+    "nota": "Se formó en 1960 por la unificación de Somalia británica e italiana."
   },
   {
-    "id": "iran",
-    "pais": "Irán",
-    "anio": 1907,
-    "anterior": "Qajares",
-    "forma": "Monarquía",
-    "nota": "La constitution de 1906 abre la]《-modernización Persia."
+    "id": "KE",
+    "nombre": "Kenia",
+    "formacion": 1963,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1963 (Reino Unido)."
   },
   {
-    "id": "siria",
-    "pais": "Siria",
-    "anio": 1946,
-    "anterior": "Mandato francés",
-    "forma": "República"
+    "id": "UG",
+    "nombre": "Uganda",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1962 (Reino Unido)."
   },
   {
-    "id": "libano",
-    "pais": "Líbano",
-    "anio": 1943,
-    "anterior": "Mandato francés",
-    "forma": "República"
+    "id": "TZ",
+    "nombre": "Tanzania",
+    "formacion": 1964,
+    "tipoFormacion": "unificacion",
+    "nota": "Se formó en 1964 por la unificación de Tanganica y Zanzíbar."
   },
   {
-    "id": "jordania",
-    "pais": "Jordania",
-    "anio": 1946,
-    "anterior": "Mandato británico",
-    "forma": "Monarquía"
+    "id": "RW",
+    "nombre": "Ruanda",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1962 (Bélgica)."
   },
   {
-    "id": "israel",
-    "pais": "Israel",
-    "anio": 1948,
-    "anterior": "Mandato británico",
-    "forma": "Estado",
-    "nota": "Nace el día de la Independencia; la guerra de 1948 marca su contorno."
+    "id": "BI",
+    "nombre": "Burundi",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1962 (Bélgica)."
   },
   {
-    "id": "palestina",
-    "pais": "Palestina",
-    "anio": 1948,
-    "anterior": "Mandato británico",
-    "forma": "Estado"
+    "id": "CD",
+    "nombre": "República Democrática del Congo",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Bélgica)."
   },
   {
-    "id": "arabia-saudita",
-    "pais": "Arabia Saudí",
-    "anio": 1932,
-    "anterior": "Emiratos del Nejd",
-    "forma": "Monarquía",
-    "nota": "Ibn Saud unifica la península en una sola corona."
+    "id": "CG",
+    "nombre": "República del Congo",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "yemen",
-    "pais": "Yemen",
-    "anio": 1990,
-    "anterior": "Yemen del Norte y del Sur",
-    "forma": "República",
-    "nota": "La unificación de los dos yemenes."
+    "id": "CF",
+    "nombre": "República Centroafricana",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "oman",
-    "pais": "Omán",
-    "anio": 1650,
-    "anterior": "Imperio de Omán",
-    "forma": "Sultanato",
-    "nota": "Imperio con Zanzíbar hasta 1964."
+    "id": "CM",
+    "nombre": "Camerún",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia y Reino Unido)."
   },
   {
-    "id": "emiratos",
-    "pais": "Emiratos Árabes Unidos",
-    "anio": 1971,
-    "anterior": "Trucos del Protectorado britannique",
-    "forma": "Federación"
+    "id": "GA",
+    "nombre": "Gabón",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "qatar",
-    "pais": "Catar",
-    "anio": 1971,
-    "anterior": "Protectorado británico",
-    "forma": "Emirato"
+    "id": "GQ",
+    "nombre": "Guinea Ecuatorial",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1968 (España)."
   },
   {
-    "id": "kuwait",
-    "pais": "Kuwait",
-    "anio": 1961,
-    "anterior": "Protectorado británico",
-    "forma": "Emirato"
+    "id": "ST",
+    "nombre": "Santo Tomé y Príncipe",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Portugal)."
   },
   {
-    "id": "corea-mongolia",
-    "pais": "Mongolia exterior",
-    "anio": 1636,
-    "anterior": "Dinastía Qing",
-    "forma": "Satrapía"
+    "id": "AO",
+    "nombre": "Angola",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Portugal)."
   },
   {
-    "id": "taiwan",
-    "pais": "Taiwán",
-    "anio": 1949,
-    "anterior": "Japón colonial",
-    "forma": "República"
+    "id": "ZM",
+    "nombre": "Zambia",
+    "formacion": 1964,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1964 (Reino Unido)."
   },
   {
-    "id": "egipto",
-    "pais": "Egipto",
-    "anio": 1922,
-    "anterior": "Protectorado británico",
-    "forma": "Monarquía",
-    "nota": "La revolución de 1952 acaba con la monarquía."
+    "id": "MW",
+    "nombre": "Malaui",
+    "formacion": 1964,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1964 (Reino Unido)."
   },
   {
-    "id": "egipto-antiguo",
-    "pais": "Egipto unificado",
-    "anio": -3100,
-    "anterior": "Alto y Bajo Egipto",
-    "forma": "Reino unificado",
-    "nota": "Narmer une las Dos Tierras: nace el Estado."
+    "id": "MZ",
+    "nombre": "Mozambique",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Portugal)."
   },
   {
-    "id": "libia",
-    "pais": "Libia",
-    "anio": 1951,
-    "anterior": "Italia colonial",
-    "forma": "Monarquía"
+    "id": "ZW",
+    "nombre": "Zimbabue",
+    "formacion": 1980,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1980 (Reino Unido)."
   },
   {
-    "id": "tunez",
-    "pais": "Túnez",
-    "anio": 1956,
-    "anterior": "Protectorado francés",
-    "forma": "República",
-    "nota": "Nace con el golpe de Ben Bella y el destino de Bourguiba."
+    "id": "BW",
+    "nombre": "Botsuana",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1966 (Reino Unido)."
   },
   {
-    "id": "argelia",
-    "pais": "Argelia",
-    "anio": 1962,
-    "anterior": "Francia colonial",
-    "forma": "República",
-    "nota": "Nace tras la guerra de independencia de 1954-62."
+    "id": "NA",
+    "nombre": "Namibia",
+    "formacion": 1990,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1990 (Sudáfrica)."
   },
   {
-    "id": "marruecos",
-    "pais": "Marruecos",
-    "anio": 1956,
-    "anterior": "Protectorado francés y español",
-    "forma": "Monarquía"
+    "id": "ZA",
+    "nombre": "Sudáfrica",
+    "formacion": 1961,
+    "tipoFormacion": "constitucion",
+    "nota": "La República se proclama en 1961; la Unión Sudafricana se había formado en 1910."
   },
   {
-    "id": "sudafrica",
-    "pais": "Sudáfrica",
-    "anio": 1961,
-    "anterior": "Unión Sudafricana",
-    "forma": "República",
-    "nota": "Nace tras el referendum sobre la apartheid."
+    "id": "LS",
+    "nombre": "Lesoto",
+    "formacion": 1966,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1966 (Reino Unido)."
   },
   {
-    "id": "namibia",
-    "pais": "Namibia",
-    "anio": 1990,
-    "anterior": "Administración apartheid",
-    "forma": "Independencia"
+    "id": "SZ",
+    "nombre": "Esuatini",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1968 (Reino Unido)."
   },
   {
-    "id": "botsuana",
-    "pais": "Botsuana",
-    "anio": 1966,
-    "anterior": "Protectorado británico",
-    "forma": "República"
+    "id": "MG",
+    "nombre": "Madagascar",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "zimbabue",
-    "pais": "Zimbabue",
-    "anio": 1980,
-    "anterior": "Rhodesia",
-    "forma": "Independencia",
-    "nota": "La guerra de la «liberación» acaba con el gobierno del apartheid."
+    "id": "MU",
+    "nombre": "Mauricio",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1968 (Reino Unido)."
   },
   {
-    "id": "zambia",
-    "pais": "Zambia",
-    "anio": 1964,
-    "anterior": "Protectorado británico",
-    "forma": "República"
+    "id": "SC",
+    "nombre": "Seychelles",
+    "formacion": 1976,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1976 (Reino Unido)."
   },
   {
-    "id": "malawi",
-    "pais": "Malaui",
-    "anio": 1964,
-    "anterior": "Protectorado británico",
-    "forma": "República"
+    "id": "KM",
+    "nombre": "Comoras",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Francia)."
   },
   {
-    "id": "mozambique",
-    "pais": "Mozambique",
-    "anio": 1975,
-    "anterior": "Portugal",
-    "forma": "República"
+    "id": "CV",
+    "nombre": "Cabo Verde",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Portugal)."
   },
   {
-    "id": "angola",
-    "pais": "Angola",
-    "anio": 1975,
-    "anterior": "Portugal",
-    "forma": "República"
+    "id": "NG",
+    "nombre": "Nigeria",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Reino Unido)."
   },
   {
-    "id": "nigeria",
-    "pais": "Nigeria",
-    "anio": 1960,
-    "anterior": "Nigeria Britain",
-    "forma": "Repúblicafederal",
-    "nota": "Unión de tres provincias más el norte."
+    "id": "GH",
+    "nombre": "Ghana",
+    "formacion": 1957,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1957 (Reino Unido)."
   },
   {
-    "id": "ghana",
-    "pais": "Ghana",
-    "anio": 1957,
-    "anterior": "Costa de Oro británica",
-    "forma": "República",
-    "nota": "Primer Estado independiente de África negra."
+    "id": "CI",
+    "nombre": "Costa de Marfil",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "costa-de-oro",
-    "pais": "Costa de Oro",
-    "anio": 1957,
-    "anterior": "Costa de Oro británica",
-    "forma": "Independencia"
+    "id": "SN",
+    "nombre": "Senegal",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "senegal",
-    "pais": "Senegal",
-    "anio": 1960,
-    "anterior": "África Occidental Francesa",
-    "forma": "República"
+    "id": "ML",
+    "nombre": "Malí",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "mali",
-    "pais": "Mali",
-    "anio": 1960,
-    "anterior": "África Occidental Francesa",
-    "forma": "República",
-    "nota": "Heredando el nombre del imperio medieval."
+    "id": "NE",
+    "nombre": "Níger",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "niger",
-    "pais": "Níger",
-    "anio": 1960,
-    "anterior": "África Occidental Francesa",
-    "forma": "República"
+    "id": "TD",
+    "nombre": "Chad",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "chad",
-    "pais": "Chad",
-    "anio": 1960,
-    "anterior": "África Occidental Francesa",
-    "forma": "República"
+    "id": "MR",
+    "nombre": "Mauritania",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "costa-de-marfil",
-    "pais": "Costa de Marfil",
-    "anio": 1960,
-    "anterior": "África Occidental Francesa",
-    "forma": "República"
+    "id": "GM",
+    "nombre": "Gambia",
+    "formacion": 1965,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1965 (Reino Unido)."
   },
   {
-    "id": "cameroon",
-    "pais": "Camerún",
-    "anio": 1960,
-    "anterior": "Camerún Pidgin británico-francés",
-    "forma": "República"
+    "id": "GN",
+    "nombre": "Guinea",
+    "formacion": 1958,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1958 (Francia)."
   },
   {
-    "id": "gabon",
-    "pais": "Gabón",
-    "anio": 1960,
-    "anterior": "África ecuatorial francesa",
-    "forma": "República"
+    "id": "GW",
+    "nombre": "Guinea-Bisáu",
+    "formacion": 1973,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1973 (Portugal)."
   },
   {
-    "id": "republica-democratica-del-congo",
-    "pais": "RD del Congo",
-    "anio": 1960,
-    "anterior": "Congo-belga",
-    "forma": "República"
+    "id": "SL",
+    "nombre": "Sierra Leona",
+    "formacion": 1961,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1961 (Reino Unido)."
   },
   {
-    "id": "ruanda",
-    "pais": "Ruanda",
-    "anio": 1962,
-    "anterior": "Ruanda-Urundi",
-    "forma": "República"
+    "id": "LR",
+    "nombre": "Liberia",
+    "formacion": 1847,
+    "tipoFormacion": "independencia",
+    "nota": "La colonia de Liberia declara la independencia; es el Estado africano más antiguo de la región."
   },
   {
-    "id": "burundi",
-    "pais": "Burundi",
-    "anio": 1962,
-    "anterior": "Ruanda-Urundi",
-    "forma": "República"
+    "id": "BF",
+    "nombre": "Burkina Faso",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "tanzania",
-    "pais": "Tanzania",
-    "anio": 1961,
-    "anterior": "Tanganyika y Zanzíbar",
-    "forma": "República federal",
-    "nota": "Unión de dos antiguos estados coloniales."
+    "id": "BJ",
+    "nombre": "Benín",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "kenia",
-    "pais": "Kenia",
-    "anio": 1963,
-    "anterior": "Colonia británica",
-    "forma": "República"
+    "id": "TG",
+    "nombre": "Togo",
+    "formacion": 1960,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1960 (Francia)."
   },
   {
-    "id": "uganda",
-    "pais": "Uganda",
-    "anio": 1962,
-    "anterior": "Protectorado británico",
-    "forma": "República"
+    "id": "AU",
+    "nombre": "Australia",
+    "formacion": 1901,
+    "tipoFormacion": "unificacion",
+    "nota": "La federación de las colonias británicas crea la Mancomunidad de Australia."
   },
   {
-    "id": "etiopia",
-    "pais": "Etiopía",
-    "anio": 1974,
-    "anterior": "Monarquía etíope",
-    "forma": "República",
-    "nota": "El Derg abole la monarquía de los solomónicos."
+    "id": "NZ",
+    "nombre": "Nueva Zelanda",
+    "formacion": 1907,
+    "tipoFormacion": "constitucion",
+    "nota": "Nueva Zelanda pasa a ser dominio en 1907; la independencia legislativa se completa en 1947."
   },
   {
-    "id": "somalilandia",
-    "pais": "Somalia",
-    "anio": 1960,
-    "anterior": "Somalia italiana y británica",
-    "forma": "República"
+    "id": "PG",
+    "nombre": "Papúa Nueva Guinea",
+    "formacion": 1975,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1975 (Australia)."
   },
   {
-    "id": "madagascar",
-    "pais": "Madagascar",
-    "anio": 1960,
-    "anterior": "Francia colonial",
-    "forma": "República"
+    "id": "FJ",
+    "nombre": "Fiyi",
+    "formacion": 1970,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1970 (Reino Unido)."
   },
   {
-    "id": "mauricio",
-    "pais": "Mauricio",
-    "anio": 1968,
-    "anterior": "Colonia británica",
-    "forma": "República"
+    "id": "VU",
+    "nombre": "Vanuatu",
+    "formacion": 1980,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1980 (Francia y Reino Unido)."
   },
   {
-    "id": "suazilandia",
-    "pais": "Esuatini",
-    "anio": 1968,
-    "anterior": "Protectorado británico",
-    "forma": "Monarquía"
+    "id": "SB",
+    "nombre": "Islas Salomón",
+    "formacion": 1978,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1978 (Reino Unido)."
   },
   {
-    "id": "australia",
-    "pais": "Australia",
-    "anio": 1901,
-    "anterior": "Colonias británicas",
-    "forma": "Federación",
-    "nota": "Nace con la Constitución y el primer Estado federal."
+    "id": "WS",
+    "nombre": "Samoa",
+    "formacion": 1962,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1962 (Nueva Zelanda)."
   },
   {
-    "id": "nueva-zelanda",
-    "pais": "Nueva Zelanda",
-    "anio": 1907,
-    "anterior": "Colonia británica",
-    "forma": "Dominio"
+    "id": "TO",
+    "nombre": "Tonga",
+    "formacion": 1970,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1970 (Reino Unido)."
   },
   {
-    "id": "papua-nueva-guinea",
-    "pais": "Papúa Nueva Guinea",
-    "anio": 1975,
-    "anterior": "Australia y Territory",
-    "forma": "Independencia"
+    "id": "KI",
+    "nombre": "Kiribati",
+    "formacion": 1979,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1979 (Reino Unido)."
   },
   {
-    "id": "fiji",
-    "pais": "Fiyi",
-    "anio": 1970,
-    "anterior": "Colonia británica",
-    "forma": "República"
+    "id": "FM",
+    "nombre": "Micronesia",
+    "formacion": 1986,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1986 (Estados Unidos)."
   },
   {
-    "id": "nauru",
-    "pais": "Nauru",
-    "anio": 1968,
-    "anterior": "Administración/album de Australia",
-    "forma": "República"
+    "id": "MH",
+    "nombre": "Islas Marshall",
+    "formacion": 1986,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1986 (Estados Unidos)."
   },
   {
-    "id": "vanuatu",
-    "pais": "Vanuatu",
-    "anio": 1980,
-    "anterior": "Condominio francés-británico",
-    "forma": "República"
+    "id": "PW",
+    "nombre": "Palaos",
+    "formacion": 1994,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1994 (Estados Unidos)."
   },
   {
-    "id": "salomon",
-    "pais": "Islas Salomón",
-    "anio": 1978,
-    "anterior": "Protectorado británico",
-    "forma": "Monarquía"
+    "id": "NR",
+    "nombre": "Nauru",
+    "formacion": 1968,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1968 (Australia)."
   },
   {
-    "id": "tuvalu",
-    "pais": "Tuvalu",
-    "anio": 1978,
-    "anterior": "Colonia británica",
-    "forma": "República"
+    "id": "TV",
+    "nombre": "Tuvalu",
+    "formacion": 1978,
+    "tipoFormacion": "independencia",
+    "nota": "Independencia proclamada en 1978 (Reino Unido)."
   }
 ]
