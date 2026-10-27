@@ -127,6 +127,9 @@ const LAT_MAX = 89;
 
 const limitar = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
 
+/** Conjunto vacío estable: evita recalcular la proyección al apagar una capa. */
+const VACIO: ReadonlySet<string> = new Set();
+
 export function MapaAtlas({
   anio,
   datos,
@@ -173,9 +176,56 @@ export function MapaAtlas({
     return () => ro.disconnect();
   }, []);
 
+  /* En el globo sólo se proyecta lo que de verdad se dibuja: cada giro
+   * recorre la geometría visible, y los territorios de otras épocas o de
+   * capas apagadas no deben costar nada. En el mapa plano se mantiene el
+   * atlas completo (se calcula una vez y no depende del año). */
+  const idsTerritorios = useMemo(() => {
+    if (!globo) return undefined;
+    const ids = new Set<string>();
+    for (const t of datos.territorios) {
+      if (t.desde !== null && anio < t.desde) continue;
+      if (t.hasta !== null && anio > t.hasta) continue;
+      const civ = civVivas.get(t.civilizacion);
+      if (!civ || !capaVisible(civ.id)) continue;
+      if (!pasaFiltros(civ, filtros, datos.regiones)) continue;
+      ids.add(t.id);
+    }
+    return ids;
+  }, [globo, datos, anio, civVivas, filtros, capaVisible]);
+
+  const idsPaises = useMemo(() => {
+    if (!capaPaises) return VACIO;
+    if (!globo) return undefined;
+    const ids = new Set<string>();
+    for (const p of datos.paisesActuales) if (p.formacion <= anio) ids.add(p.id);
+    return ids;
+  }, [globo, capaPaises, datos, anio]);
+
   const geo = useMemo(
-    () => construirMapa(tam.w, tam.h, datos, { vista, rotacion, zoom: zoomGlobo }),
-    [tam.w, tam.h, datos, vista, rotacion, zoomGlobo],
+    () =>
+      construirMapa(tam.w, tam.h, datos, {
+        vista,
+        rotacion,
+        zoom: zoomGlobo,
+        territorios: idsTerritorios,
+        paises: idsPaises,
+        regiones: fronterasModernas,
+        /* Girar usa la malla gruesa; al soltar se repinta la fina. */
+        detalle: arrastrando ? '110m' : '50m',
+      }),
+    [
+      tam.w,
+      tam.h,
+      datos,
+      vista,
+      rotacion,
+      zoomGlobo,
+      idsTerritorios,
+      idsPaises,
+      fronterasModernas,
+      arrastrando,
+    ],
   );
 
   /* Zoom con d3 sobre el <svg>, aplicado a la capa principal. En el globo el
@@ -508,8 +558,12 @@ export function MapaAtlas({
                       e.stopPropagation();
                       onSeleccionarPais(sel ? null : p.id);
                     }}
-                    onMouseEnter={() => setPaisHover(p.id)}
-                    onMouseLeave={() => setPaisHover(null)}
+                    onMouseEnter={() => {
+                      if (!arrastre.current) setPaisHover(p.id);
+                    }}
+                    onMouseLeave={() => {
+                      if (!arrastre.current) setPaisHover(null);
+                    }}
                   >
                     <title>
                       {p.nombre} · {p.formacion}
@@ -608,10 +662,15 @@ export function MapaAtlas({
                   filter={sel ? 'url(#brillo)' : undefined}
                   onClick={(e) => {
                     e.stopPropagation();
+                    if (movido.current) return;
                     onSeleccionar(civ.id);
                   }}
-                  onMouseEnter={() => onHover(civ.id)}
-                  onMouseLeave={() => onHover(null)}
+                  onMouseEnter={() => {
+                    if (!arrastre.current) onHover(civ.id);
+                  }}
+                  onMouseLeave={() => {
+                    if (!arrastre.current) onHover(null);
+                  }}
                 />
                 {(sel || enc) && tt.nombre && rotTerr && (
                   <text
@@ -816,7 +875,7 @@ export function MapaAtlas({
 
       <div className="mapa-zoom">
         <button
-          className="boton icono"
+          className={`boton icono${globo ? ' activo' : ''}`}
           onClick={() => setVista((v) => (v === 'globo' ? 'plano' : 'globo'))}
           title={globo ? t('mapa.vistaPlano') : t('mapa.vistaGlobo')}
           aria-pressed={globo}

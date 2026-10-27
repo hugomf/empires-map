@@ -8,35 +8,52 @@ import {
   geoPath,
 } from 'd3-geo';
 import { feature, merge } from 'topojson-client';
-import rawTopo from 'world-atlas/countries-50m.json?raw';
+import rawTopo50 from 'world-atlas/countries-50m.json?raw';
+import rawTopo110 from 'world-atlas/countries-110m.json?raw';
 import type { Catalogo } from '../data/catalogo';
 import { ISO_NUMERIC } from '../data/iso-numeric';
 
 type Geo = any;
 
-const TOPO = JSON.parse(rawTopo) as Geo;
-const GEOMETRIAS: Geo[] = TOPO.objects.countries.geometries;
+/**
+ * Dos resoluciones del atlas base:
+ * - `50m` para el mapa plano, donde se mira de cerca y la costa importa.
+ * - `110m` para el globo: la esfera se ve a ~650 px y proyectar la malla
+ *   fina cuesta diez veces más en cada giro.
+ */
+export type Resolucion = '50m' | '110m';
 
-/* La Antártida no aporta a la lectura histórica y comprime el encuadre del
-   hemisferio habitado, así que queda fuera del continente y del ajuste. */
-const HABITADO = GEOMETRIAS.filter((g) => g.properties?.name !== 'Antarctica');
+interface Base {
+  topo: Geo;
+  habitado: Geo[];
+  tierra: Geo;
+  indice: Map<string, Geo>;
+}
 
-let paisPorNombre: Map<string, Geo> | null = null;
+const BASES = new Map<Resolucion, Base>();
 
-function indice(): Map<string, Geo> {
-  if (!paisPorNombre) {
-    paisPorNombre = new Map();
-    for (const g of GEOMETRIAS) {
-      const nombre = g.properties?.name;
-      if (nombre) paisPorNombre.set(nombre, g);
-    }
+function base(res: Resolucion): Base {
+  const cacheada = BASES.get(res);
+  if (cacheada) return cacheada;
+  const topo = JSON.parse(res === '110m' ? rawTopo110 : rawTopo50) as Geo;
+  /* La Antártida no aporta a la lectura histórica y comprime el encuadre del
+     hemisferio habitado, así que queda fuera del continente y del ajuste. */
+  const habitado = (topo.objects.countries.geometries as Geo[]).filter(
+    (g) => g.properties?.name !== 'Antarctica',
+  );
+  const indice = new Map<string, Geo>();
+  for (const g of topo.objects.countries.geometries as Geo[]) {
+    const nombre = g.properties?.name;
+    if (nombre) indice.set(nombre, g);
   }
-  return paisPorNombre;
+  const b: Base = { topo, habitado, tierra: merge(topo, habitado) as Geo, indice };
+  BASES.set(res, b);
+  return b;
 }
 
 /** Continente habitado como una sola geometría (silueta de fondo). */
 export function tierra(): Geo {
-  return merge(TOPO, HABITADO);
+  return base('50m').tierra;
 }
 
 /** Cómo se dibuja el mapa: plano (Natural Earth) o globo (ortográfica). */
@@ -48,6 +65,17 @@ export interface OpcionesMapa {
   rotacion?: [number, number];
   /** Ampliación del globo: 1 encaja el disco en el contenedor. */
   zoom?: number;
+  /** Ids de territorios a proyectar; sin valor, todos. */
+  territorios?: ReadonlySet<string>;
+  /** Ids de países actuales a proyectar; sin valor, todos. */
+  paises?: ReadonlySet<string>;
+  /** Contornos de región (sólo hacen falta con las fronteras modernas). */
+  regiones?: boolean;
+  /**
+   * Resolución del atlas base en el globo. `110m` para girar sin tirones;
+   * `50m` para la imagen quieta, donde la costa se mira de cerca.
+   */
+  detalle?: Resolucion;
 }
 
 export interface RegionGeo {
@@ -195,6 +223,8 @@ const aGeoJson = (anillos: [number, number][][]) => ({
  * Cara visible del globo
  * ------------------------------------------------------------------ */
 
+const RAD = Math.PI / 180;
+
 /** Centro geográfico que queda mirando a cámara para una rotación dada. */
 export function centroDeRotacion(rotacion: [number, number]): [number, number] {
   return [-rotacion[0], -rotacion[1]];
@@ -214,23 +244,50 @@ export function visibleEnGlobo(
 }
 
 /**
- * Envolvente esférica de una geometría: su centro y el radio angular que la
- * contiene. Permite descartar de golpe lo que está en la cara oculta sin
- * recorrer todos sus vértices en cada fotograma.
+ * Envolvente esférica de una geometría: un centro estable y el radio angular
+ * que la contiene. Sirve para descartar de golpe lo que está en la cara
+ * oculta sin recorrer todos sus vértices en cada fotograma.
+ *
+ * El centro se obtiene de la media de los vectores unitarios de los vértices
+ * y no de `geoCentroid`: los multipolígonos con muchas partes sueltas dan
+ * centroides sin sentido (a veces al otro lado del planeta).
  */
 function envolvente(geo: Geo): Envolvente {
-  const centro = geoCentroid(geo) as [number, number];
-  let radio = 0;
+  let x = 0;
+  let y = 0;
+  let z = 0;
+  let n = 0;
   const recorrer = (coords: any) => {
+    if (!coords) return;
+    if (typeof coords[0] === 'number') {
+      const lon = coords[0] * RAD;
+      const lat = coords[1] * RAD;
+      const cl = Math.cos(lat);
+      x += cl * Math.cos(lon);
+      y += Math.sin(lat);
+      z += cl * Math.sin(lon);
+      n++;
+      return;
+    }
+    for (const c of coords) recorrer(c);
+  };
+  recorrer(geo.coordinates);
+  const norma = Math.hypot(x, y, z);
+  const centro: [number, number] =
+    n && norma > 1e-9
+      ? [Math.atan2(z, x) / RAD, Math.asin(y / norma) / RAD]
+      : [0, 0];
+  let radio = 0;
+  const medir = (coords: any) => {
     if (!coords) return;
     if (typeof coords[0] === 'number') {
       const d = geoDistance(coords as [number, number], centro);
       if (d > radio) radio = d;
       return;
     }
-    for (const c of coords) recorrer(c);
+    for (const c of coords) medir(c);
   };
-  recorrer(geo.coordinates);
+  medir(geo.coordinates);
   return { centro, radio: Number.isFinite(radio) ? radio : 0 };
 }
 
@@ -294,24 +351,25 @@ interface Atlas {
 }
 
 /* `merge` y `feature` son lo caro del proceso: se hacen una sola vez por
-   catálogo. La rotación del globo sólo vuelve a proyectar. */
-const ATLAS = new WeakMap<Catalogo, Atlas>();
+   catálogo y resolución. La rotación del globo sólo vuelve a proyectar. */
+const ATLAS = new WeakMap<Catalogo, Partial<Record<Resolucion, Atlas>>>();
 
-function construirAtlas(datos: Catalogo): Atlas {
-  const cacheado = ATLAS.get(datos);
+function construirAtlas(datos: Catalogo, res: Resolucion): Atlas {
+  const porResolucion = ATLAS.get(datos) ?? {};
+  const cacheado = porResolucion[res];
   if (cacheado) return cacheado;
 
-  const idx = indice();
+  const b = base(res);
   const cajas = new Map<string, Caja>();
   const regiones: RegionAtlas[] = [];
   for (const r of datos.regiones) {
     const geoms: Geo[] = [];
     for (const p of r.paises) {
-      const g = idx.get(p);
+      const g = b.indice.get(p);
       if (g) geoms.push(g);
     }
     if (!geoms.length) continue;
-    const united = merge(TOPO, geoms) as Geo;
+    const united = merge(b.topo, geoms) as Geo;
     regiones.push({
       id: r.id,
       geo: united,
@@ -319,8 +377,8 @@ function construirAtlas(datos: Catalogo): Atlas {
       paises: r.paises,
       env: envolvente(united),
     });
-    const b = geoBounds(united as never);
-    cajas.set(r.id, [b[0][0], b[0][1], b[1][0], b[1][1]]);
+    const bb = geoBounds(united as never);
+    cajas.set(r.id, [bb[0][0], bb[0][1], bb[1][0], bb[1][1]]);
   }
 
   /* Territorios precisos: cada parte puede reclamar regiones del mapa. */
@@ -356,14 +414,14 @@ function construirAtlas(datos: Catalogo): Atlas {
   const paisesPorId = new Map(datos.paisesActuales.map((p) => [p.id, p]));
   const paises: PaisAtlas[] = [];
   const vistos = new Set<string>();
-  for (const g of HABITADO) {
+  for (const g of b.habitado) {
     if (!g.id) continue;
     const alpha2 = ISO_NUMERIC[g.id];
     if (!alpha2 || vistos.has(alpha2)) continue;
     const pais = paisesPorId.get(alpha2);
     if (!pais) continue;
     vistos.add(alpha2);
-    const f: any = feature(TOPO, g);
+    const f: any = feature(b.topo, g);
     if (!f.geometry) continue;
     paises.push({
       id: pais.id,
@@ -377,10 +435,10 @@ function construirAtlas(datos: Catalogo): Atlas {
   }
 
   const atlas: Atlas = {
-    tierra: tierra(),
+    tierra: b.tierra,
     graticula: geoGraticule10(),
-    fronteras: HABITADO.map((g) => {
-      const geo = feature(TOPO, g).geometry;
+    fronteras: b.habitado.map((g) => {
+      const geo = feature(b.topo, g).geometry;
       return { geo, env: envolvente(geo) };
     }),
     regiones,
@@ -391,7 +449,8 @@ function construirAtlas(datos: Catalogo): Atlas {
       .map((c) => ({ id: c.id, civ: c.civilizacion, nombre: c.nombre, lon: c.lon, lat: c.lat })),
     cajas,
   };
-  ATLAS.set(datos, atlas);
+  porResolucion[res] = atlas;
+  ATLAS.set(datos, porResolucion);
   return atlas;
 }
 
@@ -438,26 +497,31 @@ export function construirMapa(
   const zoom = opciones.zoom ?? 1;
   const globo = vista === 'globo';
 
-  const atlas = construirAtlas(datos);
+  const atlas = construirAtlas(datos, globo ? (opciones.detalle ?? '110m') : '50m');
   const proyeccion = crearProyeccion(ancho, alto, atlas, vista, rotacion, zoom);
   const ruta = geoPath(proyeccion);
   const proyectar = (p: [number, number]) => proyeccion(p) as [number, number];
 
+  const dibujarRegiones = opciones.regiones ?? true;
   const regiones: RegionGeo[] = atlas.regiones.map((r) => ({
     id: r.id,
-    d: visible(r.env, rotacion, globo) ? (ruta(r.geo as never) ?? '') : '',
+    d: dibujarRegiones && visible(r.env, rotacion, globo) ? (ruta(r.geo as never) ?? '') : '',
     ancla: proyectar(r.ancla),
     paises: r.paises,
     visible: visibleEnGlobo(r.ancla[0], r.ancla[1], rotacion),
   }));
 
+  const incluirTerr = opciones.territorios;
   const territorios: TerritorioGeo[] = atlas.territorios.map((t) => ({
     id: t.id,
     civ: t.civ,
     nivel: t.nivel,
     tipo: t.tipo,
     nombre: t.nombre,
-    d: visible(t.env, rotacion, globo) ? (ruta(t.geo as never) ?? '') : '',
+    d:
+      (!incluirTerr || incluirTerr.has(t.id)) && visible(t.env, rotacion, globo)
+        ? (ruta(t.geo as never) ?? '')
+        : '',
     ancla: proyectar(t.ancla),
     desde: t.desde,
     hasta: t.hasta,
@@ -466,12 +530,16 @@ export function construirMapa(
     visible: visibleEnGlobo(t.ancla[0], t.ancla[1], rotacion),
   }));
 
+  const incluirPais = opciones.paises;
   const paises: PaisGeo[] = atlas.paises.map((p) => ({
     id: p.id,
     nombre: p.nombre,
     formacion: p.formacion,
     aproximada: p.aproximada,
-    d: visible(p.env, rotacion, globo) ? (ruta(p.geo as never) ?? '') : '',
+    d:
+      (!incluirPais || incluirPais.has(p.id)) && visible(p.env, rotacion, globo)
+        ? (ruta(p.geo as never) ?? '')
+        : '',
     ancla: proyectar(p.ancla),
     visible: visibleEnGlobo(p.ancla[0], p.ancla[1], rotacion),
   }));
@@ -508,6 +576,6 @@ export function construirMapa(
     /* Los adornos de la vista plana no tienen sentido sobre el globo: se
        colocan en esquinas fijas de la pantalla. */
     rosa: globo ? [52, alto - 52] : proyectar([-26, -26]),
-    cartela: globo ? [ancho - 116, alto - 100] : proyectar([-146, -44]),
+    cartela: globo ? [ancho - 152, alto - 100] : proyectar([-146, -44]),
   };
 }
