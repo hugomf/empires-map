@@ -1,0 +1,212 @@
+/* === ESTILOS CSS === */
+/* src/components/artefacto/GaleriaArtefactos.css */
+
+.galeria-artefactos {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.galeria-encabezado {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.galeria-encabezado h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 8px 0;
+}
+
+.informacion-resultados {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.galeria-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contenedor-busqueda {
+  position: relative;
+  min-width: 300px;
+}
+
+.input-busqueda {
+  width: 100%;
+  padding: 12px 16px;
+  padding-right: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.input-busqueda:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.boton-limpiar {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.boton-limpiar:hover {
+  background: #d32f2f;
+  color: white;
+}
+
+.controles-filtros {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.boton-filtro {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.boton-filtro:hover {
+  background: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.boton-filtro.activo {
+  background: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+.contenedor-artefactos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.layout-lista {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.layout-tarjetas {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.item-artefacto {
+  opacity: 0;
+  animation: aparecer 0.5s ease-out forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.boton-pagina {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.boton-pagina:hover:not(:disabled) {
+  background: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.boton-pagina:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.numeros-paginas {
+  display: flex;
+  gap: 8px;
+}
+
+.pagina {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.pagina.activo {
+  background: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .galeria-controles {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .contenedor-busqueda {
+    min-width: 100%;
+  }
+  
+  .controles-filtros {
+    justify-content: center;
+  }
+  
+  .contenedor-artefactos {
+    grid-template-columns: 1fr;
+  }
+  
+  .galeria-encabezado h2 {
+    font-size: 24px;
+  }
+}

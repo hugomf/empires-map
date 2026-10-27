@@ -164,6 +164,7 @@ export interface Artefacto {
   icono: string;
   descripcion: string;
   material?: string;
+  escritura?: string;
 }
 
 export interface Deidad {

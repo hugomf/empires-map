@@ -60,19 +60,21 @@ export function Estados({
 
   return (
     <div className="estados">
-      <div className="estados-cab">
-        <span className="ojo">{t('estados.titulo')}</span>
-        <input
-          className="estados-buscar"
-          value={filtro}
-          onChange={(e) => setFiltro(e.target.value)}
-          placeholder={t('estados.buscar')}
-          autoFocus
-        />
-        <button className="estados-cerrar" onClick={onCerrar} title={t('estados.cerrar')}>
-          ✕
-        </button>
-      </div>
+      <header className="estados-header">
+        <h1 className="estados-titulo">{t('estados.titulo')}</h1>
+        <div className="estados-actions">
+          <input
+            className="estados-buscar"
+            value={filtro}
+            onChange={(e) => setFiltro(e.target.value)}
+            placeholder={t('estados.buscar')}
+            autoFocus
+          />
+          <button className="estados-cerrar" onClick={onCerrar} title={t('estados.cerrar')}>
+            ✕
+          </button>
+        </div>
+      </header>
       <p className="estados-sub">{t('estados.sub')}</p>
       <ul className="estados-lista">
         {lista.map((p) => {

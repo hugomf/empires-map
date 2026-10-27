@@ -48,11 +48,11 @@ export function Riel({
 
   return (
     <aside className={`riel${abierto ? ' abierto' : ''}`}>
-      <div className="riel-cabecera">
+      <header className="riel-cabecera">
         <span className="ojo">{t('riel.vivas')}</span>
         <span className="contador">{vivas.length}</span>
-      </div>
-      <div className="riel-lista">
+      </header>
+      <nav className="riel-lista" aria-label={t('riel.navegacion')}>
         {grupos.map((g) => (
           <div key={g.id}>
             <div className="riel-grupo">
@@ -96,7 +96,7 @@ export function Riel({
             </button>
           </div>
         )}
-      </div>
+      </nav>
     </aside>
   );
 }

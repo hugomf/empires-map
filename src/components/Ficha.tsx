@@ -4,6 +4,7 @@ import type { Civilizacion } from '../data/tipos-cultura';
 import type { Idioma } from '../lib/i18n';
 import { COLOR_TIPO, fase } from '../lib/dominio';
 import { anio, anioCorto, duracion, intervalo } from '../lib/tiempo';
+import ImagenArtefacto from './artefacto/ImagenArtefacto';
 
 type T = (clave: string, vars?: Record<string, string | number>) => string;
 
@@ -394,9 +395,23 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
             <ul className="artefactos">
               {artefactos.map((a) => (
                 <li key={a.id}>
+                  <div className="artefacto-imagen-container">
+                    <ImagenArtefacto
+                      artefacto={a}
+                      variante="lista"
+                      mostrarCategoria={false}
+                      mostrarPeriodo={false}
+                    />
+                  </div>
                   <div className="artefacto-nombre">{a.nombre}</div>
                   <div className="artefacto-tipo">{a.tipo}</div>
                   <p>{a.descripcion}</p>
+                  {a.escritura && (
+                    <div className="artefacto-escritura">
+                      <span className="escritura-etiqueta">{t('ficha.escritura')}:</span>
+                      <span className="escritura-valor">{a.escritura}</span>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>

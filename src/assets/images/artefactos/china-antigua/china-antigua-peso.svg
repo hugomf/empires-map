@@ -1,0 +1,7 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#DAA520" opacity="0.1"/>
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="#DAA520" stroke-width="2" rx="8"/>
+  <text x="200" y="140" font-family="Arial" font-size="80" text-anchor="middle" fill="#DAA520" opacity="0.8">⚖️</text>
+  <text x="200" y="200" font-family="Arial" font-size="16" text-anchor="middle" fill="#DAA520" opacity="0.6">peso</text>
+  <text x="200" y="230" font-family="Arial" font-size="12" text-anchor="middle" fill="#DAA520" opacity="0.4">Artefacto histórico</text>
+</svg>

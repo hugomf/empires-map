@@ -1,0 +1,248 @@
+/* === ESTILOS CSS === */
+/* src/components/artefacto/ImagenArtefacto.css */
+
+.imagen-artefacto {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.imagen-artefacto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-artefacto.imagen-artefacto-pending,
+.imagen-artefacto.imagen-artefacto-error {
+  background: #f8f9fa;
+}
+
+.imagen-artefacto.imagen-artefacto-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: cargaEstirada 1.5s infinite;
+}
+
+@keyframes cargaEstirada {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.imagen-contenedor {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imagen-contenedor img[style*="opacity: 1"] {
+  opacity: 1;
+}
+
+.imagen-placeholder,
+.imagen-loading,
+.imagen-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.icono-placeholder,
+.icono-error,
+.spinner {
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.texto-placeholder,
+.texto-carga,
+.texto-error,
+.detalle-error {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.contenido-artefacto {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado {
+  margin-bottom: 12px;
+}
+
+.nombre-artefacto {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  line-height: 1.3;
+}
+
+.tipo-artefacto {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.descripcion-artefacto {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.meta-artefacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #777;
+}
+
+.icono-original-texto {
+  font-family: monospace;
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.periodo-artefacto {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #fff8e1;
+  border-left: 3px solid #ffc107;
+  border-radius: 0 4px 4px 0;
+}
+
+.texto-periodo {
+  font-size: 12px;
+  color: #856404;
+}
+
+/* Variantes */
+
+.imagen-artefacto.imagen-artefacto-tarjeta .imagen-contenedor {
+  height: 180px;
+}
+
+.imagen-artefacto.imagen-artefacto-lista {
+  flex-direction: row;
+  min-height: 200px;
+  border: 1px solid #e0e0e0;
+}
+
+.imagen-artefacto.imagen-artefacto-lista .imagen-contenedor {
+  width: 250px;
+  height: 200px;
+}
+
+.imagen-artefacto.imagen-artefacto-lista .contenido-artefacto {
+  flex: 1;
+  padding: 16px;
+}
+
+.imagen-artefacto.imagen-artefacto-lista .encabezado {
+  margin-bottom: 8px;
+}
+
+.imagen-artefacto.imagen-artefacto-lista .nombre-artefacto {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.imagen-artefacto.imagen-artefacto-lista .descripcion-artefacto {
+  font-size: 13px;
+}
+
+.imagen-artefacto.imagen-artefacto-galleria {
+  border-radius: 8px;
+}
+
+.imagen-artefacto.imagen-artefacto-galleria .imagen-contenedor {
+  height: 160px;
+}
+
+/* Estados */
+
+.imagen-artefacto:hover .icono-placeholder,
+.imagen-artefacto:hover .icono-error {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.imagen-artefacto.imagen-artefacto-error {
+  border-color: #ffebee;
+  background: #fff8f8;
+}
+
+/* Colores por categoría */
+
+.imagen-artefacto.imagen-artefacto[data-categoria="militar"] .nombre-artefacto {
+  color: #8b0000;
+}
+
+.imagen-artefacto.imagen-artefacto[data-categoria="militar"] .tipo-artefacto {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.imagen-artefacto.imagen-artefacto[data-categoria="religioso"] .nombre-artefacto {
+  color: #8b4513;
+}
+
+.imagen-artefacto.imagen-artefacto[data-categoria="religioso"] .tipo-artefacto {
+  background: #fff8e1;
+  color: #f57c00;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .imagen-artefacto {
+    min-height: 350px;
+  }
+  
+  .imagen-artefacto.imagen-artefacto-lista {
+    flex-direction: column;
+  }
+  
+  .imagen-artefacto.imagen-artefacto-lista .imagen-contenedor {
+    width: 100%;
+    height: 180px;
+  }
+}
