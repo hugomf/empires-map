@@ -4,7 +4,7 @@ import { zoom, zoomIdentity, type ZoomTransform } from 'd3-zoom';
 import 'd3-transition';
 import type { Civilizacion } from '../data/tipos-cultura';
 import type { Catalogo } from '../data/catalogo';
-import { construirMapa } from '../lib/geo';
+import { construirMapa, type VistaMapa } from '../lib/geo';
 import { COLOR_FASE, fase, pasaFiltros, type Filtros } from '../lib/dominio';
 import { coloresReligiosos, colorFamilia, ORDEN_FAMILIAS, vigenteEn } from '../lib/religion';
 
@@ -118,6 +118,15 @@ function colocarRotulos(
   return { rotulos: salida, cajas: colocadas };
 }
 
+/** Vista inicial del globo: Europa, África y el oeste de Asia. */
+const ROTACION_INICIAL: [number, number] = [-10, -25];
+const ZOOM_MIN = 1;
+const ZOOM_MAX = 12;
+/** Tope de latitud: más allá el globo se pone del revés. */
+const LAT_MAX = 89;
+
+const limitar = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
+
 export function MapaAtlas({
   anio,
   datos,
@@ -146,6 +155,12 @@ export function MapaAtlas({
   const [tam, setTam] = useState({ w: 960, h: 560 });
   const [, setTransform] = useState<ZoomTransform>(zoomIdentity);
   const [paisHover, setPaisHover] = useState<string | null>(null);
+  /** Vista plana (Natural Earth) o globo ortógrafico rotable. */
+  const [vista, setVista] = useState<VistaMapa>('plano');
+  const [rotacion, setRotacion] = useState<[number, number]>(ROTACION_INICIAL);
+  const [zoomGlobo, setZoomGlobo] = useState(1);
+  const [arrastrando, setArrastrando] = useState(false);
+  const globo = vista === 'globo';
 
   useEffect(() => {
     const el = contRef.current;
@@ -158,13 +173,22 @@ export function MapaAtlas({
     return () => ro.disconnect();
   }, []);
 
-  const geo = useMemo(() => construirMapa(tam.w, tam.h, datos), [tam.w, tam.h, datos]);
+  const geo = useMemo(
+    () => construirMapa(tam.w, tam.h, datos, { vista, rotacion, zoom: zoomGlobo }),
+    [tam.w, tam.h, datos, vista, rotacion, zoomGlobo],
+  );
 
-  /* Zoom con d3 sobre el <svg>, aplicado a la capa principal. */
+  /* Zoom con d3 sobre el <svg>, aplicado a la capa principal. En el globo el
+   * arrastre se reserva para girar la esfera, así que d3 sólo lleva la rueda
+   * del ratón: el zoom de la esfera lo controla la escala de la proyección. */
   useEffect(() => {
     const svg = svgRef.current;
     const capa = capaRef.current;
     if (!svg || !capa) return;
+    if (globo) {
+      capa.removeAttribute('transform');
+      return;
+    }
     const z: any = zoom<SVGSVGElement, unknown>()
       .scaleExtent([1, 12])
       .translateExtent([
@@ -182,21 +206,102 @@ export function MapaAtlas({
     return () => {
       sel.on('.zoom', null);
     };
-  }, [tam.w, tam.h]);
+  }, [tam.w, tam.h, globo]);
 
   const reiniciarZoom = useCallback(() => {
+    if (globo) {
+      setRotacion(ROTACION_INICIAL);
+      setZoomGlobo(1);
+      return;
+    }
     const svg = svgRef.current;
     const z = zoomRef.current;
     if (!svg || !z) return;
     select(svg).transition().duration(420).call(z.transform, zoomIdentity);
+  }, [globo]);
+
+  const acercar = useCallback(
+    (factor: number) => {
+      if (globo) {
+        setZoomGlobo((z) => limitar(z * factor, ZOOM_MIN, ZOOM_MAX));
+        return;
+      }
+      const svg = svgRef.current;
+      const z = zoomRef.current;
+      if (!svg || !z) return;
+      select(svg).transition().duration(260).call(z.scaleBy, factor);
+    },
+    [globo],
+  );
+
+  /* --- Girar el globo con el puntero ---------------------------------- */
+
+  const arrastre = useRef<{ x: number; y: number; rot: [number, number] } | null>(null);
+  const rotPendiente = useRef<[number, number] | null>(null);
+  const rafRot = useRef(0);
+  const movido = useRef(false);
+
+  /** Un solo recálculo por fotograma, aunque el ratón emita más eventos. */
+  const programarRotacion = useCallback((r: [number, number]) => {
+    rotPendiente.current = r;
+    if (rafRot.current) return;
+    rafRot.current = requestAnimationFrame(() => {
+      rafRot.current = 0;
+      if (rotPendiente.current) setRotacion(rotPendiente.current);
+    });
   }, []);
 
-  const acercar = useCallback((factor: number) => {
+  useEffect(
+    () => () => {
+      if (rafRot.current) cancelAnimationFrame(rafRot.current);
+    },
+    [],
+  );
+
+  const empezarArrastre = (e: React.PointerEvent<SVGSVGElement>) => {
+    if (!globo || e.button !== 0) return;
+    movido.current = false;
+    arrastre.current = { x: e.clientX, y: e.clientY, rot: rotacion };
+    e.currentTarget.setPointerCapture(e.pointerId);
+    setArrastrando(true);
+  };
+
+  const moverArrastre = (e: React.PointerEvent<SVGSVGElement>) => {
+    const a = arrastre.current;
+    if (!a) return;
+    /* Sensibilidad: un radián de giro por cada radio de la esfera recorrido. */
+    const radio = Math.max(40, (Math.min(tam.w, tam.h) / 2 - 8) * zoomGlobo);
+    const k = 180 / (Math.PI * radio);
+    const dx = e.clientX - a.x;
+    const dy = e.clientY - a.y;
+    if (Math.abs(dx) + Math.abs(dy) > 2) movido.current = true;
+    programarRotacion([
+      a.rot[0] + dx * k,
+      limitar(a.rot[1] - dy * k, -LAT_MAX, LAT_MAX),
+    ]);
+  };
+
+  const terminarArrastre = (e: React.PointerEvent<SVGSVGElement>) => {
+    if (!arrastre.current) return;
+    arrastre.current = null;
+    setArrastrando(false);
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    }
+  };
+
+  /* Rueda: acerca el globo sin desplazarlo (la esfera queda centrada). */
+  useEffect(() => {
     const svg = svgRef.current;
-    const z = zoomRef.current;
-    if (!svg || !z) return;
-    select(svg).transition().duration(260).call(z.scaleBy, factor);
-  }, []);
+    if (!globo || !svg) return;
+    const alRodar = (e: WheelEvent) => {
+      e.preventDefault();
+      const factor = Math.exp(-e.deltaY * 0.0015);
+      setZoomGlobo((z) => limitar(z * factor, ZOOM_MIN, ZOOM_MAX));
+    };
+    svg.addEventListener('wheel', alRodar, { passive: false });
+    return () => svg.removeEventListener('wheel', alRodar);
+  }, [globo]);
 
   /* Cajas ocupadas por los rótulos grandes: los pequeños las esquivan. */
   const cajasRotulos = useRef<Caja[]>([]);
@@ -205,6 +310,8 @@ export function MapaAtlas({
   const rotulos = useMemo(() => {
     const items: Omit<Rotulo, 'dx' | 'dy' | 'anchor'>[] = [];
     for (const r of geo.regiones) {
+      /* En el globo, la cara oculta no lleva rótulo. */
+      if (!r.visible) continue;
       const dom = dominante.get(r.id);
       if (!dom) continue;
       if (!capaVisible(dom.id)) continue;
@@ -229,6 +336,8 @@ export function MapaAtlas({
   const territorios = useMemo(() => {
     return geo.territorios
       .filter((tt) => {
+        /* `d` vacío = descartado por caer en la cara oculta del globo. */
+        if (!tt.d) return false;
         if (tt.desde !== null && anio < tt.desde) return false;
         if (tt.hasta !== null && anio > tt.hasta) return false;
         const civ = civVivas.get(tt.civ);
@@ -241,7 +350,7 @@ export function MapaAtlas({
 
   /** Países actuales ya formados en el año seleccionado. */
   const paisesVisibles = useMemo(
-    () => geo.paises.filter((p) => p.formacion <= anio),
+    () => geo.paises.filter((p) => p.formacion <= anio && p.visible && p.d),
     [geo.paises, anio],
   );
 
@@ -254,6 +363,7 @@ export function MapaAtlas({
   const ciudades = useMemo(() => {
     const m = new Map<string, { id: string; nombre: string; x: number; y: number }[]>();
     for (const c of geo.ciudades) {
+      if (!c.visible) continue;
       const civ = civVivas.get(c.civ);
       if (!civ) continue;
       if (!capaVisible(c.civ)) continue;
@@ -274,7 +384,7 @@ export function MapaAtlas({
     const items: Omit<Rotulo, 'dx' | 'dy' | 'anchor'>[] = [];
     const candidatos = territorios
       .filter((tt) => tt.civ === seleccion || tt.civ === hover)
-      .filter((tt) => tt.nombre)
+      .filter((tt) => tt.nombre && tt.visible)
       .sort((a, b) => b.area - a.area);
     for (const tt of candidatos.slice(0, hover ? 6 : 4)) {
       const texto = tt.nombre!.replace(/^(Provincia|Province): /, '').replace(/^(Satrapía|Satrapy): /, '');
@@ -295,12 +405,21 @@ export function MapaAtlas({
   };
 
   return (
-    <div className="mapa" ref={contRef}>
+    <div className={`mapa${globo ? ' vista-globo' : ''}${arrastrando ? ' arrastrando' : ''}`} ref={contRef}>
       <svg
         ref={svgRef}
         viewBox={`0 0 ${tam.w} ${tam.h}`}
         preserveAspectRatio="xMidYMid meet"
+        onPointerDown={empezarArrastre}
+        onPointerMove={moverArrastre}
+        onPointerUp={terminarArrastre}
+        onPointerCancel={terminarArrastre}
         onClick={(e) => {
+          /* Un arrastre para girar el globo no debe deseleccionar. */
+          if (movido.current) {
+            movido.current = false;
+            return;
+          }
           if (e.target === svgRef.current) {
             onSeleccionar(null);
             onSeleccionarPais(null);
@@ -330,14 +449,49 @@ export function MapaAtlas({
             <stop offset="42%" stopColor="#243140" />
             <stop offset="100%" stopColor="#1a222d" />
           </linearGradient>
+          {/* Luz rasante del globo: el degradado radial hace de sol. */}
+          <radialGradient id="pergamino-globo" cx="36%" cy="30%" r="82%">
+            <stop offset="0%" stopColor="#2b3b4c" />
+            <stop offset="45%" stopColor="#22303e" />
+            <stop offset="100%" stopColor="#121a23" />
+          </radialGradient>
+          <radialGradient id="oceano-globo" cx="36%" cy="30%" r="85%">
+            <stop offset="0%" stopColor="#0e1822" />
+            <stop offset="65%" stopColor="#080e15" />
+            <stop offset="100%" stopColor="#04070a" />
+          </radialGradient>
         </defs>
 
         <rect width={tam.w} height={tam.h} fill="url(#foco)" pointerEvents="none" />
 
         <g ref={capaRef}>
+          {/* El globo: un disco de océano bajo la silueta de tierra. En la
+           * vista plana no hay esfera y manda el fondo del atlas. */}
+          {geo.esfera && (
+            <g className="globo-esfera" pointerEvents="none" aria-hidden>
+              <circle
+                className="globo-oceano"
+                cx={geo.esfera.cx}
+                cy={geo.esfera.cy}
+                r={geo.esfera.r}
+              />
+              <circle
+                className="globo-aro"
+                cx={geo.esfera.cx}
+                cy={geo.esfera.cy}
+                r={geo.esfera.r}
+              />
+            </g>
+          )}
           <path className="geo-graticula" d={geo.graticula} />
-          <path className="geo-halo" d={geo.tierra} />
-          <path className="geo-tierra" d={geo.tierra} fill="url(#pergamino-tierra)" />
+          {/* El halo difuminado de la costa es caro de repintar al girar:
+           * en el globo lo sustituye el aro de la esfera. */}
+          {!geo.esfera && <path className="geo-halo" d={geo.tierra} />}
+          <path
+            className="geo-tierra"
+            d={geo.tierra}
+            fill={geo.esfera ? 'url(#pergamino-globo)' : 'url(#pergamino-tierra)'}
+          />
           {/* Países actuales: sólo los formados hasta el año seleccionado.
            * Van bajo los territorios históricos para no tapar sus rellenos. */}
           {capaPaises && paisesVisibles.length > 0 && (
@@ -661,6 +815,15 @@ export function MapaAtlas({
       )}
 
       <div className="mapa-zoom">
+        <button
+          className="boton icono"
+          onClick={() => setVista((v) => (v === 'globo' ? 'plano' : 'globo'))}
+          title={globo ? t('mapa.vistaPlano') : t('mapa.vistaGlobo')}
+          aria-pressed={globo}
+          aria-label={globo ? t('mapa.vistaPlano') : t('mapa.vistaGlobo')}
+        >
+          {globo ? '▱' : '◍'}
+        </button>
         <button className="boton icono" onClick={() => acercar(1.6)} title={t('mapa.zoomIn')}>
           +
         </button>

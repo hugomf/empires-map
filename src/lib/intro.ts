@@ -1,8 +1,8 @@
 /**
  * Introducción instrumental sintetizada en el navegador.
  *
- * Toma la pieza de `assets/fields-of-dawn.mid` (modo dórico sobre re, arpa,
- * flauta de pico, metales y timbales), la lee con `leerMidi` y la toca con
+* Toma la pieza de `assets/fields-of-dawn.mid` (modo dórico sobre re, arpa,
+  * flauta de pico, metales y timbales), la lee con `readMidi` y la toca con
  * Web Audio: no se descarga ninguna grabación, solo el propio MIDI.
  *
  * Cada pista General MIDI se traduce a una voz:
@@ -22,7 +22,7 @@
  * nodos de los dos minutos de golpe.
  */
 
-import { leerMidi, type NotaMidi } from './midi';
+import { readMidi, type NotaMidi } from './midi';
 
 interface Evento extends NotaMidi {
   programa: number;
@@ -62,9 +62,9 @@ export class IntroMidi {
   }
 
   cargar(datos: ArrayBuffer): void {
-    const pieza = leerMidi(datos);
+    const pieza = readMidi(datos);
     const eventos: Evento[] = [];
-    for (const pista of pieza.pistas) {
+    for (const pista of pieza.tracks) {
       for (const nota of pista.notas) {
         eventos.push({
           ...nota,

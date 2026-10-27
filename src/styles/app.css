@@ -538,6 +538,36 @@ body::after {
   vector-effect: non-scaling-stroke;
 }
 
+/* --- Globo ortógrafico (vista 3D) ------------------------------------ */
+
+.mapa.vista-globo svg {
+  touch-action: none;
+  cursor: grab;
+}
+
+.mapa.vista-globo.arrastrando svg,
+.mapa.vista-globo svg:active {
+  cursor: grabbing;
+}
+
+/* El océano y el aro de la esfera. El aro lleva el mismo desenfoque que la
+ * costa plana: da la sensación de atmósfera sin coste de pintado. */
+.globo-oceano {
+  fill: url(#oceano-globo);
+}
+
+.globo-aro {
+  fill: none;
+  stroke: rgba(104, 132, 162, 0.5);
+  stroke-width: 1.1;
+  filter: url(#costa);
+}
+
+/* La luz del globo es radial: sustituye al degradado vertical del atlas. */
+.mapa.vista-globo .geo-tierra {
+  fill: url(#pergamino-globo);
+}
+
 .geo-fronteras path {
   fill: none;
   stroke: rgba(236, 226, 202, 0.12);

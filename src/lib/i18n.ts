@@ -191,6 +191,8 @@ const EN: Diccionario = {
   'mapa.zoomReset': 'Reset view',
   'mapa.oeste': 'W',
   'mapa.paises': 'Modern countries',
+  'mapa.vistaGlobo': 'Globe view',
+  'mapa.vistaPlano': 'Flat map',
 
   'globo.anos': '{a}–{b}',
 
@@ -381,6 +383,8 @@ const ES: Diccionario = {
   'mapa.zoomReset': 'Vista global',
   'mapa.oeste': 'O',
   'mapa.paises': 'Países actuales',
+  'mapa.vistaGlobo': 'Vista de globo',
+  'mapa.vistaPlano': 'Mapa plano',
   'globo.anos': '{a}–{b}',
 
   'estados.titulo': 'Cuándo se formaron los países actuales',
