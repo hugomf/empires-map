@@ -1,4 +1,6 @@
-// Test script to verify soundfont-player installation
+const fs = require('fs');
+const path = require('path');
+
 try {
   console.log('Testing soundfont-player installation...');
   
@@ -12,8 +14,6 @@ try {
   console.log('Package name:', pkg.name);
   
   // Check if soundfont.sf2 exists
-  const fs = require('fs');
-  const path = require('path');
   const soundfontPath = path.join(__dirname, 'node_modules/soundfont-player', 'lib', 'soundfont.json');
   
   if (fs.existsSync(soundfontPath)) {
