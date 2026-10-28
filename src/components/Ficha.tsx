@@ -35,10 +35,12 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
   );
 
   if (!civ) {
-          <div className="ficha-vacia">
-            <div className="glifo">◈</div>
-            <p style={{ fontSize: 13.5, lineHeight: 1.6 }}>{t('ficha.empty')}</p>
-          </div>
+    return (
+      <aside className={`ficha${abierta ? ' abierta' : ''}`}>
+        <div className="ficha-vacia">
+          <div className="glifo">◈</div>
+          <p style={{ fontSize: 13.5, lineHeight: 1.6 }}>{t('ficha.empty')}</p>
+        </div>
       </aside>
     );
   }
