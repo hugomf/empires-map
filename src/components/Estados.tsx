@@ -13,7 +13,7 @@ interface Props {
   onCerrar: () => void;
   t: T;
   idioma: Idioma;
-  /** País actual resaltado en el mapa. */
+  /** Currently selected country highlighted on the map. */
   paisSeleccionado: string | null;
   onSeleccionarPais: (id: string | null) => void;
 }
@@ -26,8 +26,8 @@ const normalizar = (s: string) =>
     .replace(/[\u0300-\u036f]/g, '');
 
 /**
- * Los Estados de hoy y el momento en que tomaron forma: una cronología
- * política del mundo actual, conectada con la línea de tiempo.
+ * Today's states and the moment they took form: a political chronology
+ * of the present world, connected with the timeline.
  */
 export function Estados({
   datos,

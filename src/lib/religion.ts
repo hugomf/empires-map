@@ -1,10 +1,7 @@
 import type { Religion } from '../data/tipos-cultura';
 
 /**
- * El tinte religioso colorea por familia, no por religión: 72 colores harían
- * el mapa ilegible. La familia se deduce del nombre en es o en inglés, con
- * las palabras clave de arriba hacia abajo; lo que no encaja cae en
- * «cultos locales», la familia residual.
+ * The religious tint colors by family, not by religion: 72 colors would make the map illegible. The family is deduced from the name in Spanish or English, with the keywords from top to bottom; what doesn't fit falls into 'local cults', the residual family.
  */
 export type Familia =
   | 'islam'
@@ -23,9 +20,8 @@ interface Definicion {
   color: string;
 }
 
-/* El orden decide: cuando un nombre menciona dos tradiciones
- * («Islam y hinduismo», «Confucianismo, budismo y daoismo») gana la primera
- * que encaja, que es la que marca el color del tinte. */
+/* The order decides: when a name mentions two traditions
+ * («Islam and Hinduism», «Confucianism, Buddhism and Taoism») the first that fits wins, which is the one that marks the color of the tint. */
 const FAMILIAS: Definicion[] = [
   { familia: 'cristianismo', claves: ['cristian', 'christian'], color: '#5b79c9' },
   { familia: 'judaismo', claves: ['juda'], color: '#57b8c9' },
@@ -44,8 +40,7 @@ const normalizar = (s: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
 
-/* «Religión pre-cristiana» / «pre-Christian religion» no es cristianismo:
- * se corta antes de que la palabra clave lo capture. */
+/* «Pre-Christian religion» / «Pre-Christian religion» is not Christianity: it cuts off before the keyword captures it. */
 const PRECRISTIANO = /(pre-?cristian|pre-?christian)/;
 
 export function familiaDeReligion(nombre: string): Familia {
@@ -64,14 +59,13 @@ export function colorFamilia(familia: Familia): string {
 /** Familias en el orden de la leyenda del mapa. */
 export const ORDEN_FAMILIAS = FAMILIAS.map((f) => f.familia) as Familia[];
 
-/** ¿Está la religión vigente en el año? Sin ventana, siempre. */
+/** Is the religion in force in the year? Without a window, always. */
 export function vigenteEn(religion: Religion, anio: number): boolean {
   return (religion.desde ?? -Infinity) <= anio && anio <= (religion.hasta ?? Infinity);
 }
 
-/**
- * Color de tinte por civilización: familia de la religión vigente en el
- * año seleccionado. Sin religión vigente, sin tinte.
+/*
+ * Tint color by civilization: family of the prevailing religion in the selected year. Without a prevailing religion, no tint.
  */
 export function coloresReligiosos(
   civilizaciones: { id: string }[],

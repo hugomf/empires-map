@@ -34,8 +34,8 @@ export function fase(c: Civilizacion, a: number): Fase {
   /* De la fundación a la cúspide del dato: crecimiento. Roma en −500 ya no
      era «Prime»: era una república en ascenso aún lejos de su apogeo. */
   if (a < c.apogeo[0]) return 'nacimiento';
-  /* Tras la cúspide: dominio hasta el declive documentado; si no hay
-     ventanas de declive, la regla heurística anterior (últimos 120 años). */
+/* After the peak: domain until documented decline; if there are no
+   decline windows, the previous heuristic rule (last 120 years). */
   if (c.declive) return a >= c.declive[1] ? 'decadencia' : 'dominio';
   return c.fin - a <= 120 ? 'decadencia' : 'dominio';
 }
@@ -55,7 +55,7 @@ export function pasaFiltros(c: Civilizacion, f: Filtros, regiones: Region[] = []
   return true;
 }
 
-/** Civilizaciones vivas en el año dado, tras aplicar filtros. */
+/** Living civilizations in the given year, after applying filters. */
 export function vivasEn(
   a: number,
   todas: Civilizacion[],
@@ -99,7 +99,7 @@ export function agruparPorRegion(vivas: Civilizacion[]): Map<string, Civilizacio
   return mapa;
 }
 
-/** Hitos occurring en el año exacto. */
+/** Milestones occurring in the exact year. */
 export function hitosEn(a: number, vivas: Civilizacion[]): { civ: Civilizacion; texto: string }[] {
   const out: { civ: Civilizacion; texto: string }[] = [];
   for (const c of vivas) {
@@ -108,7 +108,7 @@ export function hitosEn(a: number, vivas: Civilizacion[]): { civ: Civilizacion; 
   return out;
 }
 
-/** Cuántas civilizaciones vivas hay por año (curva de "marea"). */
+/** How many living civilizations are there by year (the "tide" curve). */
 export function curvaDeVitalidad(todas: Civilizacion[], min: number, max: number, pasos = 220) {
   const pts: { a: number; n: number }[] = [];
   const delta = (max - min) / pasos;
@@ -130,7 +130,7 @@ export const COLOR_FASE: Record<Fase, string> = {
   muerte: '#5b6672',
 };
 
-/** Color efectivo de una civilización según el modo elegido y el año. */
+/** Effective color of a civilization according to the chosen mode and the year. */
 export function colorEfectivo(
   c: Civilizacion,
   anio: number,

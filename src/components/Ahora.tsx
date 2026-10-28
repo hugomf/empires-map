@@ -16,8 +16,8 @@ interface Props {
 }
 
 /**
- * «Ahora mismo»: los hechos que ocurren en el año visible, de todas las
- * civilizaciones vivas. Es la lectura transversal que el mapa no da.
+ * «Now»: The events that occur in the visible year, from all
+ * living civilizations. It's the transversal reading that the map doesn't give.
  */
 export function Ahora({
   anio,
@@ -37,7 +37,7 @@ export function Ahora({
         if (h.anio === anio) out.push({ civ: c, texto: h.texto, anio: h.anio });
       }
     }
-    /* Los hechos del año exacto primero; si no hay, el más cercano */
+    /* Events from the exact year first; if there are none, the closest one */
     if (!out.length) {
       for (const c of filas) {
         for (const h of c.hitos) {

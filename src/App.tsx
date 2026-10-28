@@ -37,7 +37,7 @@ const TIPOS: Tipo[] = [
   'confederacion',
 ];
 
-const GRUPOS: Grupo[] = ['Europa', 'Asia', 'África', 'América', 'Oceanía'];
+const GRUPOS: Grupo[] = ['Europe', 'Asia', 'Africa', 'Americas', 'Oceania'];
 
 const VELOCIDADES = [25, 60, 150, 400];
 
@@ -48,10 +48,10 @@ const normalizar = (s: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
 
-/* --- El enlace: `#<idioma>/<anio>/<civ>` + segmentos opcionales --- */
-/* El idioma es opcional: los enlaces antiguos `#<anio>/<civ>` siguen
- * funcionando (gana `localStorage`). El resto del estado (filtros, capas,
- * densidad) viaja en segmentos; los desconocidos se ignoran. */
+/* --- Link: `#<language>/<year>/<civ>` + optional segments --- */
+/* The language is optional: old links `#<year>/<civ>` still
+ * work (wins localStorage). The rest of the state (filters, layers,
+ * density) travels in segments; unknown ones are ignored. */
 export default function App() {
   const en = useMemo(() => leerEnlace(window.location.hash), []);
   const [idioma, setIdioma] = useState<Idioma>(() => en.idioma ?? idiomaGuardado());
@@ -104,18 +104,18 @@ export default function App() {
   const [capaSolo, setCapaSolo] = useState<string | null>(en.solo);
   const [capasOcultas, setCapasOcultas] = useState<Set<string>>(() => new Set(en.ocultas));
   const [panelCapas, setPanelCapas] = useState(false);
-  /* Capas independientes de las civilizaciones. */
+  /* Layers independent of the civilizations. */
   const [capaDivisiones, setCapaDivisiones] = useState(en.divisiones);
   const [capaReligiones, setCapaReligiones] = useState(en.religiones);
   const [capaPaises, setCapaPaises] = useState(en.paises);
   const [paisSeleccionado, setPaisSeleccionado] = useState<string | null>(null);
-  /* Densidad de etiquetas del mapa. */
+  /* Map label density. */
   const [densidad, setDensidad] = useState<Densidad>(en.densidad);
-  /* Religión elegida: filtra la lista de religiones y sus civilizaciones. */
+  /* Chosen religion: filters the list of religions and their civilizations. */
   const [religionFiltro, setReligionFiltro] = useState<string | null>(null);
-  /* Aviso tras copiar el enlace. */
+  /* Alert after copying the link. */
   const [enlaceCopiado, setEnlaceCopiado] = useState(false);
-  /* Anuncio para lectores de pantalla (año, confirmaciones). */
+  /* Screen reader announcement (year, confirmations). */
   const [mensajeVivo, setMensajeVivo] = useState('');
 
   const filtros = useMemo(
@@ -125,8 +125,7 @@ export default function App() {
 
   const vivas = useMemo(() => {
     const base = vivasEn(anio, datos.civilizaciones, filtros, datos.regiones);
-    /* Una menor encontrada por la búsqueda se dibuja aunque el filtro de
-     * escala esté apagado: es lo que el usuario ha pedido mirar. */
+/* A smaller one found by the search is drawn even when the scale filter is off: it's what the user has requested to see. */
     if (seleccion && !base.some((c) => c.id === seleccion)) {
       const c = datos.civilizaciones.find((x) => x.id === seleccion);
       if (c && estaViva(c, anio)) return [...base, c];
@@ -136,7 +135,7 @@ export default function App() {
   const dominante = useMemo(() => dominantePorRegion(vivas), [vivas]);
   const civVivas = useMemo(() => new Map(vivas.map((c) => [c.id, c])), [vivas]);
 
-  /** Color efectivo de cada civilización viva según el modo de color. */
+  /** Effective color of each live civilization according to the color mode. */
   const colores = useMemo(
     () => new Map(vivas.map((c) => [c.id, colorEfectivo(c, anio, modoColor)])),
     [vivas, anio, modoColor],
@@ -147,15 +146,15 @@ export default function App() {
     [datos],
   );
 
-  /** Civilizaciones asociadas a la religión filtrada, si la hay. */
+  /** Civilizations associated with the filtered religion, if any. */
   const civsDeReligion = useMemo(() => {
     if (!religionFiltro) return null;
     const r = datos.religiones.find((x) => x.id === religionFiltro);
     return new Set(r ? [r.civilizacion] : []);
   }, [religionFiltro, datos.religiones]);
 
-  /* Con filtro de religión, el riel también se acota: la spec pide «la lista
-   * y la ficha muestran solo las civilizaciones asociadas» (el mapa no). */
+/* With religion filter, the rail is also constrained: the spec requests "the list
+ * and the fiche show only the associated civilizations" (the map does not). */
   const vivasRiel = useMemo(
     () => (civsDeReligion ? vivas.filter((c) => civsDeReligion.has(c.id)) : vivas),
     [vivas, civsDeReligion],
@@ -166,8 +165,8 @@ export default function App() {
       setReligionFiltro(id);
       if (id) {
         const r = datos.religiones.find((x) => x.id === id);
-        /* La ficha ya no puede quedarse en una civilización ajena a la
-         * religión recién elegida: se suelta la selección. */
+/* The fiche can no longer remain in a civilization unrelated to the
+ * newly chosen religion: the selection is dropped. */
         if (r && seleccion && r.civilizacion !== seleccion) setSeleccion(null);
       }
     },
@@ -176,8 +175,8 @@ export default function App() {
 
   const filas = useMemo(() => {
     const q = normalizar(busqueda.trim());
-    /* Con búsqueda activa se buscan también las menores: el usuario las ha
-     * pedido expresamente, así que el filtro de escala no las esconde. */
+/* With active search the smaller ones are also searched: the user has
+ * explicitly requested them, so the scale filter does not hide them. */
     const f = q ? { ...filtros, mostrarMenores: true } : filtros;
     return datos.civilizaciones
       .filter((c) => pasaFiltros(c, f, datos.regiones))
@@ -203,7 +202,7 @@ export default function App() {
       .sort((a, b) => a.inicio - b.inicio);
   }, [datos, filtros, busqueda, t, civsDeReligion]);
 
-  /* Menores que la búsqueda ha traído y el filtro de escala esconde. */
+  /* Smaller ones that the search has brought and the scale filter hides. */
   const menoresEnBusqueda = useMemo(
     () =>
       busqueda.trim() && !mostrarMenores
@@ -222,7 +221,7 @@ export default function App() {
     return base;
   }, [datos, seleccion]);
 
-  /* --- Reproducción automática --- */
+  /* --- Automatic reproduction --- */
   const raf = useRef(0);
   const ultimo = useRef(0);
   useEffect(() => {
@@ -241,7 +240,7 @@ export default function App() {
     return () => cancelAnimationFrame(raf.current);
   }, [reproduciendo, velocidad, datos.anioMax, datos.anioMin]);
 
-  /* --- Atajos de teclado --- */
+  /* --- Keyboard shortcuts --- */
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement) return;
@@ -270,7 +269,7 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey);
   }, [datos.anioMin, datos.anioMax, anio, t]);
 
-  /* --- La preferencia de idioma se recuerda en el navegador --- */
+  /* --- Language preference is remembered in the browser --- */
   useEffect(() => {
     try {
       localStorage.setItem('cronica-idioma', idioma);
@@ -279,7 +278,7 @@ export default function App() {
     }
   }, [idioma]);
 
-  /* --- El enlace refleja el estado completo de la vista --- */
+  /* --- The link reflects the complete state of the view --- */
   useEffect(() => {
     const h = escribirEnlace({
       idioma,
@@ -313,7 +312,7 @@ export default function App() {
     mostrarMenores,
   ]);
 
-  /** Restaura los filtros por defecto y limpia la búsqueda (acción de los estados vacíos). */
+  /** Restores the default filters and clears the search (action of the empty states). */
   const quitarFiltros = useCallback(() => {
     setBusqueda('');
     setTipos(new Set(en.tipos as Tipo[]));
@@ -322,7 +321,7 @@ export default function App() {
     setReligionFiltro(null);
   }, [en]);
 
-  /** Anuncia el año en la región viva, con antirrebote para no saturarla al deslizar. */
+  /** Announces the year in the live region, with anti-rebound to not saturate it when sliding. */
   useEffect(() => {
     const id = window.setTimeout(
       () => setMensajeVivo(t('vivo.anio', { a: anioCorto(anio, idioma) })),

@@ -11,13 +11,13 @@ type T = (clave: string, vars?: Record<string, string | number>) => string;
 const RANGO = ANIO_MAX - ANIO_MIN;
 const PAD = 26;
 
-/** Ventana visible del eje temporal: se puede ampliar y desplazar. */
+/** Visible window of the temporal axis: can be enlarged and shifted. */
 export interface Ventana {
   desde: number;
   hasta: number;
 }
 
-/** Paso de marcas "bonito" (1, 2, 5 × 10ⁿ) para una extensión dada. */
+/** Pretty tick step (1, 2, 5 × 10ⁿ) for a given extension. */
 function pasoBonito(span: number, objetivo: number): number {
   const bruto = Math.max(1, span / Math.max(2, objetivo));
   const exp = Math.pow(10, Math.floor(Math.log10(bruto)));
@@ -83,7 +83,7 @@ function RielTiempo({
     [ventana.desde, ventana.hasta, span, util],
   );
 
-  /* Escala global para el minimapa */
+  /* Global scale for the minimap */
   const xGlobal = useCallback(
     (a: number) => PAD + ((a - ANIO_MIN) / RANGO) * util,
     [util],
@@ -131,7 +131,7 @@ function RielTiempo({
   );
   const maxN = useMemo(() => Math.max(1, ...curva.map((p) => p.n)), [curva]);
 
-  /** Colocación de los rótulos de era: sólo caben los que no se pisan. */
+  /** Placement of era labels: only those that don't overlap are shown. */
   const rotulosEra = useMemo(() => {
     const salida: {
       id: string;
@@ -169,7 +169,7 @@ function RielTiempo({
     return salida;
   }, [x, t]);
 
-  /* Curva de vitalidad recortada a la ventana */
+  /* Vital sign curve clipped to the window */
   const dMarea = useMemo(() => {
     const y0 = 84;
     const y1 = 48;
@@ -180,7 +180,7 @@ function RielTiempo({
     return `M${x(ventana.desde).toFixed(1)},${y0} L${pts.join(' L')} L${x(ventana.hasta).toFixed(1)},${y0} Z`;
   }, [curva, maxN, x, ventana.desde, ventana.hasta]);
 
-  /* Minimapa: rango completo con la ventana resaltada */
+  /* Minimap: full range with the window highlighted */
   const dMini = useMemo(() => {
     const y0 = 20;
     const y1 = 4;
@@ -247,7 +247,7 @@ function RielTiempo({
           </clipPath>
         </defs>
 
-        {/* ── Minimapa: la historia entera y la ventana activa ── */}
+        {/* ── Minimap: the whole history and the active window ── */}
         <g
           className="t-mini"
           onPointerDown={(e) => {
@@ -301,7 +301,7 @@ function RielTiempo({
         </g>
 
         <g clipPath="url(#recorte-ventana)">
-          {/* Eras: sólo se rotula lo que cabe sin solaparse */}
+          {/* Eras: only labels that fit without overlapping are shown */}
           {rotulosEra.map((r) => (
             <g key={r.id}>
               <rect
@@ -318,13 +318,13 @@ function RielTiempo({
             </g>
           ))}
 
-          {/* Curva de vitalidad: cuántas civilizaciones coexisten */}
+          {/* Vital sign curve: how many civilizations coexist */}
           <path className="t-marea" d={dMarea} />
 
-          {/* Carril */}
+          {/* Track */}
           <rect className="t-track" x={PAD} y={92} width={util} height={6} rx={3} />
 
-          {/* Vida, cúspide y decadencia de la civilización seleccionada */}
+          {/* Life, peak and decline of the selected civilization */}
           {destacado && (
             <g>
               <rect
@@ -356,7 +356,7 @@ function RielTiempo({
             </g>
           )}
 
-          {/* Hitos */}
+          {/* Milestones */}
           {hitos.map((h, i) => (
             <rect
               key={i}
@@ -369,7 +369,7 @@ function RielTiempo({
           ))}
         </g>
 
-        {/* Marcas de tiempo */}
+        {/* Time markers */}
         {ticks.map((t) => (
           <g key={t}>
             <line className="t-tick" x1={x(t)} y1={98} x2={x(t)} y2={104} />
@@ -379,7 +379,7 @@ function RielTiempo({
           </g>
         ))}
 
-        {/* Cabezal */}
+        {/* Indicator */}
         <line className="t-playhead" x1={x(anio)} y1={29} x2={x(anio)} y2={121} />
         <path
           className="t-playhead-cabeza"
@@ -440,11 +440,11 @@ function Gantt({
   const ETIQ = 196;
   const pista = Math.max(60, ancho - ETIQ);
   const span = Math.max(1, ventana.hasta - ventana.desde);
-  /** Posición de un año dentro de la ventana, en porcentaje de la pista. */
+  /** Position of a year within the window, in percentage of the track. */
   const pct = (a: number) => Math.max(0, Math.min(100, ((a - ventana.desde) / span) * 100));
   const xAguja = ETIQ + (pct(anio) / 100) * pista;
 
-  /* Al seleccionar una civilización, la cronología se desplaza hasta ella. */
+  /* When a civilization is selected, the chronology scrolls to it. */
   const scroller = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (!seleccion || !scroller.current) return;
@@ -452,7 +452,7 @@ function Gantt({
     fila?.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }, [seleccion]);
 
-  /* Por región, las dinastías de un mismo territorio quedan juntas. */
+  /* By region, the dynasties of the same territory stay together. */
   const grupos = useMemo(() => {
     if (!agrupar) return [{ id: 'todas', nombre: '', filas }];
     const porRegion = new Map<string, Civilizacion[]>();
@@ -492,7 +492,7 @@ function Gantt({
             {g.nombre && <div className="g-region">{g.nombre}</div>}
             {g.filas.map((c) => {
               const viva = anio >= c.inicio && anio <= c.fin;
-              /* Sólo se dibujan las barras que tocan la ventana */
+              /* Only the bars that touch the window are drawn */
               if (c.fin < ventana.desde || c.inicio > ventana.hasta) return null;
               return (
                 <div

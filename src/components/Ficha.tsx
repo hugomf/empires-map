@@ -22,25 +22,23 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
   const rango = Math.max(1, datos.anioMax - datos.anioMin);
   const pct = (a: number) =>
     ((Math.max(datos.anioMin, Math.min(datos.anioMax, a)) - datos.anioMin) / rango) * 100;
-  /** Porcentaje acotado: las chrono más antiguas que el eje salen por la izquierda. */
+  /** Bounded percentage: the oldest chrono that exit the axis appear on the left. */
   const pct0 = (a: number) => Math.max(0, Math.min(100, pct(a)));
 
   /**
-   * El periodo elegido se guarda junto al id de la civilización: al cambiar de
-   * ficha la selección anterior deja de aplicar y se vuelve al primer periodo,
-   * sin necesidad de un efecto que reinicie el estado.
+   * The chosen period is saved along with the civilization id: when changing
+   * fiche the previous selection stops applying and returns to the first period,
+   * without needing an effect to restart the state.
    */
   const [periodoElegido, setPeriodoElegido] = useState<{ civ: string; id: string } | null>(
     null,
   );
 
   if (!civ) {
-    return (
-      <aside className={`ficha${abierta ? ' abierta' : ''}`}>
-        <div className="ficha-vacia">
-          <div className="glifo">◈</div>
-          <p style={{ fontSize: 13.5, lineHeight: 1.6 }}>{t('ficha.vacio')}</p>
-        </div>
+          <div className="ficha-vacia">
+            <div className="glifo">◈</div>
+            <p style={{ fontSize: 13.5, lineHeight: 1.6 }}>{t('ficha.empty')}</p>
+          </div>
       </aside>
     );
   }
@@ -79,8 +77,8 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
   const capitales = datos.capitales.filter((cap) => {
     if (cap.organizacion !== civ.id) return false;
     if (!periodoActivo) return true;
-    /* Si la capital declara periodo, manda esa asignación: evita mezclar,
-       por ejemplo, las capitales de Rum con las del Gran Seljuk. */
+    /* If the capital declares a period, that assignment is used: avoids mixing,
+       for example, the capitals of Rum with those of the Gran Seljuk. */
     if (cap.periodo) return cap.periodo === periodoActivo.id;
     const hasta = cap.hasta ?? civ.fin;
     return cap.desde <= periodoActivo.hasta && hasta >= periodoActivo.desde;
@@ -94,7 +92,7 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         return ciudad ? [{ ...cg, ciudad }] : [];
       });
 
-  const tituloGobierno = cargo?.plural ?? t('ficha.gobernantes');
+  const tituloGobierno = cargo?.plural ?? t('ficha.rulers');
 
   const polidades = datos.territorios.filter(
     (tt) => tt.civilizacion === civ.id && tt.nivel === 'polidad',
@@ -146,15 +144,15 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         </a>
 
         <dl className="ficha-datos">
-          <dt>{t('ficha.vigencia')}</dt>
+          <dt>{t('ficha.span')}</dt>
           <dd className="num">{intervalo(civ.inicio, civ.fin, idioma)}</dd>
-          <dt>{t('ficha.cuspide')}</dt>
+          <dt>{t('ficha.zenith')}</dt>
           <dd className="num">{intervalo(civ.apogeo[0], civ.apogeo[1], idioma)}</dd>
-          <dt>{t('ficha.decadencia')}</dt>
+          <dt>{t('ficha.decline')}</dt>
           <dd className="num">
             {civ.declive ? intervalo(civ.declive[0], civ.declive[1], idioma) : '—'}
           </dd>
-          <dt>{t('ficha.ahora')}</dt>
+          <dt>{t('ficha.now')}</dt>
           <dd className="num">
             {viva ? (
               <>
@@ -166,7 +164,7 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
               </>
             ) : (
               <span style={{ color: 'var(--pergamino-3)' }}>
-                {actual < civ.inicio ? t('ficha.aunNo') : t('ficha.yaNo')}
+                {actual < civ.inicio ? t('ficha.didNotExistYet') : t('ficha.alreadyGone')}
               </span>
             )}
           </dd>
@@ -218,17 +216,17 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         </div>
 
         <div className="ficha-bloque">
-          <h3>{t('ficha.civilizacion')}</h3>
+          <h3>{t('ficha.civilization')}</h3>
           <p>{civ.sintesis}</p>
         </div>
 
         <div className="ficha-bloque">
-          <h3>{t('ficha.caida')}</h3>
+          <h3>{t('ficha.fall')}</h3>
           <p>{civ.caida}</p>
         </div>
 
         <div className="ficha-bloque">
-          <h3>{t('ficha.legado')}</h3>
+          <h3>{t('ficha.legacy')}</h3>
           <p>{civ.legado}</p>
         </div>
 
@@ -237,7 +235,7 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
             <h3>{tituloGobierno}</h3>
 
             {periodos.length > 1 && (
-              <div className="periodos" role="tablist" aria-label={t('ficha.periodos')}>
+              <div className="periodos" role="tablist" aria-label={t('ficha.periods')}>
                 {periodos.map((p) => (
                   <button
                     key={p.id}
@@ -257,11 +255,11 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
               </div>
             )}
 
-            {periodoActivo?.nota && <p className="ficha-periodo-nota">{periodoActivo.nota}</p>}
+            {periodoActivo?.nota && <p className="ficha-period-note">{periodoActivo.nota}</p>}
 
             {capitales.length > 0 && (
               <div className="ficha-capitales">
-                <div className="ficha-capitales-titulo">{t('ficha.capitales')}</div>
+                <div className="ficha-capitales-title">{t('ficha.capitals')}</div>
                 <ul>
                   {capitales.map((cap) => {
                     const ciudad = datos.ciudades.find((c) => c.id === cap.ciudad);
@@ -323,23 +321,20 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
           </div>
         )}
 
-        <div className="ficha-bloque">
-          <h3>{t('ficha.ciudades')}</h3>
-          {ciudades.length ? (
-            <ul className="ficha-ciudades">
-              {ciudades.map((c) => (
-                <li key={c.id}>
-                  <span className="ciudad-nombre">{c.nombre}</span>
-                  {c.actual && <span className="ciudad-actual">{c.actual}</span>}
-                </li>
+          <div className="ficha-bloque">
+            <h3>{t('ficha.towns')}</h3>
+            {ciudades.length ? (
+              <ul className="ficha-ciudades">
+                {ciudades.map((c) => (
+                  <li key={c.id}>
+                    <span className="ciudad-nombre">{c.nombre}</span>
+                    {c.actual && <span className="ciudad-actual">{c.actual}</span>}
+                  </li>
               ))}
             </ul>
           ) : (
-            <p style={{ color: 'var(--pergamino-3)' }}>{t('ficha.sinRegistro')}</p>
+            <p style={{ color: 'var(--pergamino-3)' }}>{t('ficha.noRecord')}</p>
           )}
-        </div>
-
-        {religiones.length > 0 && (
           <div className="ficha-bloque">
             <h3>{t('ficha.religion')}</h3>
             {religiones.map((r) => {
@@ -365,7 +360,7 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
 
         {deidades.length > 0 && (
           <div className="ficha-bloque">
-            <h3>{t('ficha.deidades')}</h3>
+            <h3>{t('ficha.deities')}</h3>
             <ul className="deidades">
               {deidades.map((d) => (
                 <li key={d.id}>
@@ -380,17 +375,17 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         <div className="ficha-bloque">
           <h3>{t('ficha.cultura')}</h3>
           <div className="ficha-escritura">
-            <span className="ficha-escritura-titulo">{t('ficha.escritura')}</span>
+            <span className="ficha-script-title">{t('ficha.script')}: </span>
             {civ.escritura ? (
-              <span className="ficha-escritura-valor">{civ.escritura}</span>
+              <span className="ficha-script-value">{civ.script}</span>
             ) : (
-              <span className="ficha-vacio-valor">{t('ficha.sinRegistro')}</span>
+              <span className="ficha-empty-value">{t('ficha.noRecord')}</span>
             )}
           </div>
         </div>
 
         <div className="ficha-bloque">
-          <h3>{t('ficha.artefactos')}</h3>
+          <h3>{t('ficha.artifacts')}</h3>
           {artefactos.length ? (
             <ul className="artefactos">
               {artefactos.map((a) => (
@@ -466,14 +461,14 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
         )}
 
         <div className="ficha-bloque">
-          <h3>{t('ficha.hitos')}</h3>
+          <h3>{t('ficha.milestones')}</h3>
           <ul className="hitos">
             {civ.hitos.map((h, i) => (
               <li
                 key={`${civ.id}-${i}`}
                 className={`hito${h.anio === actual ? ' activo' : ''}`}
                 onClick={() => onIrA(h.anio)}
-                title={t('ficha.irAnio')}
+                title={t('ficha.goToYear')}
               >
                 <span className="h-anio">{anioCorto(h.anio, idioma)}</span>
                 <span className="h-txt">{h.texto}</span>

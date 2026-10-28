@@ -16,8 +16,8 @@ interface Props {
 }
 
 /**
- * Comparación de dos civilizaciones sobre el mismo eje: cuándo coexistieron,
- * cuál peaked primero y cuál sobrevivió más.
+ * Comparison of two civilizations on the same axis: when they coexisted,
+ * which peaked first and which survived longer.
  */
 export function Comparacion({ a, b, desde, hasta, t, idioma, onCerrar }: Props) {
   const span = Math.max(1, hasta - desde);
