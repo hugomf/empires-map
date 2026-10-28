@@ -37,7 +37,7 @@ const TIPOS: Tipo[] = [
   'confederacion',
 ];
 
-const GRUPOS: Grupo[] = ['Europe', 'Asia', 'Africa', 'Americas', 'Oceania'];
+const GRUPOS: Grupo[] = ['Europa', 'Asia', 'África', 'América', 'Oceanía'];
 
 const VELOCIDADES = [25, 60, 150, 400];
 

@@ -319,7 +319,6 @@ const ES: Diccionario = {
   'ficha.ciudades': 'Cities',
   'ficha.towns': 'Pueblos',
   'ficha.artefactos': 'Artifacts',
-  'ficha.escritura': 'Writing',
   'ficha.sinRegistro': 'No record yet',
   'ficha.vacio': 'Pick a civilization on the map, in the list or in the timeline to read its full story: its zenith, its decline and the years that defined it.',
   'ficha.tabs.historia': 'Story',

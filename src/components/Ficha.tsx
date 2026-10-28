@@ -323,20 +323,23 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
           </div>
         )}
 
-          <div className="ficha-bloque">
-            <h3>{t('ficha.towns')}</h3>
-            {ciudades.length ? (
-              <ul className="ficha-ciudades">
-                {ciudades.map((c) => (
-                  <li key={c.id}>
-                    <span className="ciudad-nombre">{c.nombre}</span>
-                    {c.actual && <span className="ciudad-actual">{c.actual}</span>}
-                  </li>
+        <div className="ficha-bloque">
+          <h3>{t('ficha.towns')}</h3>
+          {ciudades.length ? (
+            <ul className="ficha-ciudades">
+              {ciudades.map((c) => (
+                <li key={c.id}>
+                  <span className="ciudad-nombre">{c.nombre}</span>
+                  {c.actual && <span className="ciudad-actual">{c.actual}</span>}
+                </li>
               ))}
             </ul>
           ) : (
             <p style={{ color: 'var(--pergamino-3)' }}>{t('ficha.noRecord')}</p>
           )}
+        </div>
+
+        {religiones.length > 0 && (
           <div className="ficha-bloque">
             <h3>{t('ficha.religion')}</h3>
             {religiones.map((r) => {
@@ -379,7 +382,7 @@ export function Ficha({ civ, datos, anio: actual, onIrA, abierta, t, idioma }: P
           <div className="ficha-escritura">
             <span className="ficha-script-title">{t('ficha.script')}: </span>
             {civ.escritura ? (
-              <span className="ficha-script-value">{civ.script}</span>
+              <span className="ficha-script-value">{civ.escritura}</span>
             ) : (
               <span className="ficha-empty-value">{t('ficha.noRecord')}</span>
             )}
